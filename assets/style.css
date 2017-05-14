@@ -1,0 +1,187 @@
+body {
+  max-width: 640px;
+  /*margin: 2em 0 1em 6em;*/
+  margin: 36pt auto;
+  padding: 0 12pt;
+}
+
+h1 {
+  font-size: 28pt;
+  /*margin-bottom: 72pt;*/
+  max-width: 600px;
+  letter-spacing: -0.75pt;
+}
+
+h1 a {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+p a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+
+}
+
+h2 {
+  margin-top: 32pt;
+  letter-spacing: -0.35pt;
+  font-size: 16pt;
+  line-height: 16pt;
+  /*margin: 0;
+  padding: 0;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Input Sans', sans-serif;
+  font-weight: 400;
+}
+
+p, ul, ol {
+  font-family: 'Input Sans', monospace;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 11pt;
+  line-height: 17.5pt;
+  font-weight: 300;
+  letter-spacing: -0.35pt;
+}
+
+p {
+  /*margin-top: 8pt;*/
+  /*text-indent: 24pt;*/
+}
+
+a {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+h1 a:hover,
+p a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+a:visited {
+  color: inherit;
+}
+
+header {
+  margin-bottom: 36pt;
+}
+
+header svg {
+  /* logo */
+  width: 64pt;
+  margin-left: -6pt;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  float: right;
+}
+header ul li {
+  display: inline-block;
+  text-align: right;
+  padding-left: 18pt;
+
+}
+
+header ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.65);
+
+}
+
+footer {
+  border-top: 1pt solid rgba(0, 0, 0, 0.15);
+  padding-top: 24pt;
+  margin-top: 48pt;
+}
+
+footer svg {
+  /* logo */
+  width: 36pt;
+  margin-right: -2pt;
+  float: right;
+  margin-bottom: 48pt;
+}
+
+footer svg #logoPath {
+  fill: rgba(0, 0, 0, 0.15);
+}
+
+/* Work */
+
+a.post-link {
+  background-color: red;
+  color: inherit;
+  text-decoration: inherit;
+}
+/*ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 36pt;
+  width: 100%;
+}
+
+li img {
+  width: 100%;
+  height: 400px;
+  background-color: lightgrey;
+
+  object-fit: cover;
+}*/
+
+section {
+  padding-bottom: 24pt;
+}
+
+span.post-meta, time {
+  color: lightgrey;
+  white-space:nowrap;
+}
+
+
+/* ----------- */
+/* Home */
+.home h1 {
+  margin-bottom: 42pt;
+}
+
+
+/* ----------- */
+/* Posts-in-mind */
+
+img {
+  width: 100%;
+}
+
+/* ----------- */
+/* iframe */
+/*https://benmarshall.me/responsive-iframes/*/
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+/* 16x9 Aspect Ratio */
+.intrinsic-container {
+  padding-bottom: 56.25%;
+}
+
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
