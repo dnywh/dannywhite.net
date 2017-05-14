@@ -1,0 +1,165 @@
+::selection {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: white; /* #0023FF blue usually */
+  margin: 25% 15% 10%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+p {
+	font-family: 'Input Sans Narr Ex Lt', 'Menlo', -apple-system, 'Helvetica Neue', sans-serif;
+	font-kerning: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21pt;
+  line-height: 36pt;
+  margin: 0 0 18pt;
+
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.25s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+p a {
+  /* ustwo link */
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  transition: background-color 0.5s ease;
+}
+
+p a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#logo {
+  /* logo */
+  width: 80pt;
+  margin-bottom: 20pt;
+  margin-left: -2pt; /* optical */
+
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+	#logo path {
+		fill: rgba(255, 255, 255, 0.8);
+	}
+
+/*http://svgicons.sparkk.fr*/
+.svg-icon {
+  width: 24pt;
+  height: 24pt;
+  margin-top: 48pt;
+  margin-right: 16pt;
+
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.75s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: rgba(0, 0, 0, 0.2);
+  transition: all ease 0.3s;
+}
+
+.svg-icon path:hover,
+.svg-icon polygon:hover,
+.svg-icon rect:hover {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.svg-icon circle {
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 1;
+}
+
+
+/*media queries*/
+
+@media screen
+and (orientation: landscape) {
+  body {
+    margin: 7% 15% 2%;
+	}
+}
+
+@media screen
+and (orientation: landscape)
+and (max-width: 736px) {
+	.svg-icon {
+    margin-top: 12pt;
+  }
+}
+
+@media screen	and (max-width: 320px) {
+	.svg-icon {
+    margin-right: 12pt;
+  }
+}
+
+@media screen
+and (max-width: 320px)
+and (max-height: 480px) {
+	body {
+		margin: 18% 15% 2%;
+	}
+	.svg-icon {
+    margin-top: 12pt;
+  }
+}
+
+@media screen
+and (min-width: 600px)
+and (min-height: 600px) {
+	body {
+	  margin: 10% 15% 10%;
+	}
+
+	p {
+		font-size: 36pt;
+	  line-height: 48pt;
+	  margin: 0 0 18pt;
+	}
+}
+
+@media screen
+and (min-width: 600px)
+and (min-height: 768px) {
+	body {
+	  margin: 15% 15% 10%;
+	}
+}

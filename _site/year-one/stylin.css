@@ -1,0 +1,25 @@
+body {
+  max-width: 700px;
+  margin: 3em auto;
+}
+
+p {
+  font-size: 2.2em;
+  line-height: 1.4;
+  font-family: "Big Caslon Reg", serif;
+  color: #111111;
+  padding: 0 0.5em;
+}
+
+p strong {
+  font-family: "Big Caslon Bla", serif;
+}
+
+video {
+  width: 100%;
+}
+
+img {
+  width: 75px;
+  padding: 0 0.5em;
+}
