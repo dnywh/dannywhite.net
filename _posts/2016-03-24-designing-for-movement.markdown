@@ -91,8 +91,6 @@ We are beginning to find that the methodologies, patterns, and applications we a
 
 Our exploration surfaced issues with accessibility; visual distraction or unavailability. How might a person with arthritis better communicate with their loved ones through coarse gestures? [How might a blind person navigate through a metropolitan transportation system](http://www.wayfindr.net/)? The opportunities to simplify and optimize products for impaired users begins to address an important shift---**devices playing the supporting or hidden role rather than sitting at center stage**.
 
-*Co-written with [Erin LeForce](https://twitter.com/ErinLeForce). Originally published on the [ustwo blog](https://ustwo.com/blog/designing-for-movement).*
-
 [device-landscape]: /assets/posts/2016-03-24-designing-for-movement/landscape.jpg
 [studio-wearables]: /assets/posts/2016-03-24-designing-for-movement/studio-wearables.jpg
 
