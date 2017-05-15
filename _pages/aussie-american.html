@@ -83,5 +83,9 @@ permalink: aussie-american
         {% endfor %}
       </tbody>
     </table>
+
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
   </body>
 </html>

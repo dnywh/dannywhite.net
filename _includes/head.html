@@ -6,6 +6,9 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  <!-- Pinterest -->
+  <meta name="p:domain_verify" content="62a5c72a4dbb40cba45c9a57bef6a6f9"/>
+
   <link rel="stylesheet" href="{{ "/assets/normalize.css" | relative_url }}">
   <!-- Stylesheet for webtype -->
   <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
