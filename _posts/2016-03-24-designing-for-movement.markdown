@@ -9,11 +9,14 @@ feature-image: 2016-03-24-designing-for-movement/studio-wearables.jpg
 
 *Shout-out to the full client-facing team for who-can-not-be-named:*
 
--Photo of our team in NYPD-
+![Team][team]
+*Megan Wald, myself, Rimar Villaseñor, Coleman Dash, and Erin LeForce. Stuff-on-boards-and-walls obscured so I don't get in trouble.*
 
 ustwo has been working closely with organizations in [health](http://moodnotes.thriveport.com/), [wellbeing](http://pauseable.com/), [accessibility](http://wayfindr.net/), and now increasingly so in fitness. One of the major challenges the fitness domain brings with it is designing for movement. Our research shows us that runners are frustrated with the amount of interactions required to gain in-run insights on progress towards their goals.
 
 Working with a leading sports and fitness organization, we set out to improve the run experience. We focused on the varying degrees of interactivity for movement, and how we might transform relevant data into actionable insights. Our approach centered on simplification, automation, and contextualization of data.
+
+![Us using Framer][framer]
 
 ## Today's fitness offerings
 To get ourselves in the right frame of mind, we hit the pavement---joining group runs and taking a myriad of devices with us. This allowed us to better relate to the runners we would later interview, survey, and test our prototypes on. We found that most runners we talked to like having a device (or at least the *idea* of one) with them while on a run. The devices they actually carried however were described to us as cumbersome, the content overwhelming, and the dependency upon them as worrisome.
@@ -91,6 +94,8 @@ We are beginning to find that the methodologies, patterns, and applications we a
 
 Our exploration surfaced issues with accessibility; visual distraction or unavailability. How might a person with arthritis better communicate with their loved ones through coarse gestures? [How might a blind person navigate through a metropolitan transportation system](http://www.wayfindr.net/)? The opportunities to simplify and optimize products for impaired users begins to address an important shift---**devices playing the supporting or hidden role rather than sitting at center stage**.
 
+[team]: /assets/posts/2016-03-24-designing-for-movement/team.jpg
+[framer]: /assets/posts/2016-03-24-designing-for-movement/framer-reduced.jpg
 [device-landscape]: /assets/posts/2016-03-24-designing-for-movement/landscape.jpg
 [studio-wearables]: /assets/posts/2016-03-24-designing-for-movement/studio-wearables.jpg
 

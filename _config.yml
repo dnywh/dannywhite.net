@@ -34,5 +34,5 @@ exclude:
   - Gemfile.lock
 
 # http://damonbauer.me/organizing-jekyll-pages/
-include: ["_pages"]
-permalink: /:title/
+# include: ["_pages"]
+# permalink: /:title/
