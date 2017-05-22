@@ -1,9 +1,9 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: "/about/"
 ---
-Headshot.
+Headshot here.
 
 Twitter, Instagram, Github.
 
@@ -24,3 +24,7 @@ Framer Sessions. GA workshops. Open to speaking + prototyping sessions (Origami 
 [pinterest]: https://pinterest.com/dannyalright/pins/
 [linkedin]: https://linkedin.com/in/dannyalright/
 [dribbble]: http://dribbble.com/dannywhite
+
+<!-- http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/ -->
+Or,
+<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x77;&#104;&#x69;&#x74;&#x65;&#46;&#x64;&#x61;&#x6e;&#105;&#x65;&#108;&#x2e;&#106;&#x61;&#x6d;&#x65;&#x73;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">email me</a>.

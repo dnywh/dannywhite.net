@@ -59,7 +59,8 @@ a {
 }
 
 h1 a:hover,
-p a:hover {
+p a:hover,
+li a:hover {
   background-color: rgba(0, 0, 0, 0.15);
 }
 

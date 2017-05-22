@@ -32,20 +32,24 @@ layout: default
   <!-- </ul> -->
 
   <!-- <hr> -->
-  <!-- {% for page in site.pages %}
-  <a class="page-link" href="{{ page.url | relative_url }}">
-      <section class="page-item">
+  <!-- Only show pages I've explicitly said I want to show on the homepage -->
 
-      <h3>{{ page.title | escape }}</h3>
+  {% for page in site.pages %}
+    {% if page.feature %}
+    <a class="page-link" href="{{ page.url | relative_url }}">
+        <section class="page-item">
 
-      <p>
-        {{ page.excerpt | strip_html | truncatewords: 30 }}
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ page.date | date: date_format }}</span>
-      </p>
+        <h3>{{ page.title | escape }}</h3>
 
-    </section>
-  </a>
-  {% endfor %} -->
+        <p>
+          {{ page.excerpt | strip_html | truncatewords: 30 }}
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ page.date | date: date_format }}</span>
+        </p>
+
+      </section>
+    </a>
+    {% endif %}
+  {% endfor %}
 
 </div>
