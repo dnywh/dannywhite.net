@@ -5,8 +5,6 @@ permalink: "/about/"
 ---
 Headshot here.
 
-Twitter, Instagram, Github.
-
 Framer Sessions. GA workshops. Open to speaking + prototyping sessions (Origami or Framer).
 
 

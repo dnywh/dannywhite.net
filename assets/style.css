@@ -1,3 +1,9 @@
+:root {
+  scroll-behavior: smooth;
+  /*https://css-tricks.com/almanac/properties/s/scroll-behavior/*/
+  /*Only supported in Firefox right now*/
+}
+
 body {
   max-width: 640px;
   /*margin: 2em 0 1em 6em;*/
@@ -13,7 +19,7 @@ h1 {
   letter-spacing: -0.75pt;
 }
 
-h1 a {
+/*h1 a {
   text-decoration: none;
   border-bottom: 2px solid black;
 }
@@ -21,10 +27,23 @@ h1 a {
 p a {
   text-decoration: none;
   border-bottom: 1px solid black;
+}*/
+
+h1 a,
+p a {
+  text-decoration: none;
+  color: rgb(0, 112, 224);
 }
 
-figcaption {
-  font-style: italic;
+h1 a:hover,
+p a:hover,
+li a:hover {
+  background-color: rgba(0, 112, 224, 0.2);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(0, 112, 224);
 }
 
 h2 {
@@ -36,39 +55,40 @@ h2 {
   padding: 0;*/
 }
 
+h3 {
+  font-size: 11pt;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-p, ul, ol {
+p, ul, ol, figcaption {
   color: rgba(0, 0, 0, 0.55);
   font-size: 11pt;
-  line-height: 17.5pt;
+  line-height: 20pt;
   font-weight: 300;
   letter-spacing: -0.35pt;
+  margin: 0 0 4.5pt;
 }
 
-p {
-  /*margin-top: 8pt;*/
-  /*text-indent: 24pt;*/
+p + p {
+  text-indent: 18.5pt;
 }
 
-a {
-  color: rgba(0, 0, 0, 0.75);
-}
 
-h1 a:hover,
-p a:hover,
-li a:hover {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-a:visited {
-  color: inherit;
-}
 
 figure {
   margin: 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 9pt;
+  color: rgba(0, 0, 0, 0.35);
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
@@ -197,4 +217,10 @@ img {
 
 .jekyll-twitter-plugin iframe {
   margin: 0 auto;
+}
+
+.post-img,
+.intrinsic-container,
+.jekyll-twitter-plugin {
+  margin: 24pt 0;
 }

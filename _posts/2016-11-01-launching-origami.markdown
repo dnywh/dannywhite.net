@@ -5,6 +5,11 @@ date:   2016-11-01 22:33:56 -0400
 feature-image: 2016-11-01-launching-origami/facebook-ny-reduced.jpg
 ---
 
+Super proud moment for me.
+
+See some of the Origami tutorials and examples here.
+
+
 Launching Origami. With [this photo (and post?) from Facebook](https://www.facebook.com/dannyustwo/posts/10154514685990926).
 
 
