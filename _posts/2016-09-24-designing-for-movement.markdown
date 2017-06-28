@@ -72,7 +72,7 @@ We also explored how data both collected from past runs and the environment coul
 ### Contextualizing Data into Actionable Insights/Feedback
 Data that becomes contextualized often becomes an actionable insight by extension. Yet insights only truly become useful to a person when they are timely. At what points of a run is insight useful? What particular insights are useful? Here's where we mapped key moments in a runner's journey to insights that could become in-run feedback:
 
-{% include image.html name="coach-characteristics.jpg" caption-link="http://josephsmithdesign.com" caption-link-text="Joe Smith" caption=" was also involved at this point of the project, and helped create this mapping and the one below. "%}
+{% include image.html name="coach-characteristics.jpg" caption-start-link="http://josephsmithdesign.com" caption-start-link-text="Joe Smith" caption=" was also involved at this point of the project, and helped create this mapping and the one below."%}
 
 We began to see that elements of useful feedback as going beyond just timing. Could insights become more useful when executed through different coaching personalities? Where should these differing coaching personalities appear or not appear? Here's what we ended up with:
 

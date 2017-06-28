@@ -5,15 +5,21 @@ date:   2016-11-01 22:33:56 -0400
 feature-image: 2016-11-01-launching-origami/facebook-ny-reduced.jpg
 ---
 
-Super proud moment for me.
+I've been fortunate enough to have been working with the Origami team at Facebook for the last six months or so. Without going into too much detail, our NYC launch last night was a super proud moment for myself and the team.
 
-See some of the Origami tutorials and examples here.
+{% include image.html name="facebook-ny-reduced.jpg" caption="At Facebook NY. Photo by " caption-end-link="https://twitter.com/tollerton" caption-end-link-text="Shaun 'Tolly' Tollerton"%}
 
+Thanks to Madelin for joining and then running the whole shebang. Also thanks to Matej, Andrew, Rob, Blair, Julius, John, and everyone else at Facebook[^facebook] for being both some of the nicest and smartest people I've been around.
 
-Launching Origami. With [this photo (and post?) from Facebook](https://www.facebook.com/dannyustwo/posts/10154514685990926).
+The official Origami [tutorials](http://origami.design/tutorials/) and [examples](http://origami.design/examples/) are now up. Thanks also to Fisher for his expertise whilst creating the curriculum for these.
 
+### Update (refresh/date)
+The full video of my demo has been uploaded on [Vimeo](https://vimeo.com/192805834). The other demos are under the [same username](https://vimeo.com/facebookorigami).
 
-![At Facebook NY. Photo by Tolly][fb-ny]
-Photo by [Shaun Tollerton](https://twitter.com/tollerton).
+<div class="intrinsic-container">
+  <iframe src="https://player.vimeo.com/video/192805834" frameborder="0" allowfullscreen=""></iframe>
+</div>
 
-[fb-ny]: /assets/posts/2016-11-01-launching-origami/facebook-ny-reduced.jpg
+Glad I got that mop of a haircut fixed since.
+
+[^facebook]: Kara, Myles, etc. Seriously so many, and everyone is great, but I've gotta stop somewhere.

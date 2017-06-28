@@ -4,7 +4,18 @@
 {% if include.caption %}
     <figure>
         <img src="/assets/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
-        <figcaption> {% if include.caption-link %} <a href="{{ include.caption-link }}">{{ include.caption-link-text }}</a> {% endif %} {{ include.caption }}</figcaption>
+        <figcaption>
+          <!-- Caption links that are at the start of the caption -->
+          {% if include.caption-start-link %}
+            <a href="{{ include.caption-start-link }}">{{ include.caption-start-link-text }}</a>
+          {% endif %}
+            {{ include.caption }}
+
+         <!-- Caption links that are at the end of the caption -->
+         {% if include.caption-end-link %}
+           <a href="{{ include.caption-end-link }}">{{ include.caption-end-link-text }}</a>
+         {% endif %}
+         </figcaption>
     </figure>
 {% else %}
     <img src="/assets/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
