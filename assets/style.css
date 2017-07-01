@@ -1,3 +1,20 @@
+/*
+Blue links
+
+color:                            rgb(0, 112, 224)
+background-color on :hover:       rgba(0, 112, 224, 0.2)
+ */
+
+
+/*
+Shades of grey
+
+p color:                          rgba(0, 0, 0, 0.55)
+post-meta color:                  rgba(0, 0, 0, 0.17) (simlar to 'lightgrey');
+
+hr, greyscale background-color:   rgba(0, 0, 0, 0.1)
+*/
+
 :root {
   scroll-behavior: smooth;
   /*https://css-tricks.com/almanac/properties/s/scroll-behavior/*/
@@ -5,78 +22,72 @@
 }
 
 body {
-  max-width: 640px;
-  /*margin: 2em 0 1em 6em;*/
-  margin: 36pt auto;
-  padding: 0 12pt;
+  max-width: 40rem; /* 640px */
+  margin: 3rem auto;
+  padding: 0 1rem;
   font-family: 'Input Sans', sans-serif;
 }
 
+/* Headers */
 h1 {
-  font-size: 28pt;
-  /*margin-bottom: 72pt;*/
-  max-width: 600px;
-  letter-spacing: -0.75pt;
-}
-
-/*h1 a {
-  text-decoration: none;
-  border-bottom: 2px solid black;
-}
-
-p a {
-  text-decoration: none;
-  border-bottom: 1px solid black;
-}*/
-
-h1 a,
-p a {
-  text-decoration: none;
-  color: rgb(0, 112, 224);
-}
-
-h1 a:hover,
-p a:hover,
-li a:hover {
-  background-color: rgba(0, 112, 224, 0.2);
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgb(0, 112, 224);
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
 }
 
 h2 {
-  margin-top: 32pt;
-  letter-spacing: -0.35pt;
-  font-size: 16pt;
-  line-height: 16pt;
-  /*margin: 0;
-  padding: 0;*/
+  margin-top: 3rem;
+  letter-spacing: -0.06rem;
+  line-height: 1rem;
 }
 
 h3 {
-  font-size: 11pt;
+  margin-top: 2rem;
+  line-height: 0.5rem;
+}
+
+p, ul, ol, figcaption {
+  color: rgba(0, 0, 0, 0.55);
+  line-height: 1.666667rem;
+  font-weight: 300;
+  letter-spacing: -0.04rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-p, ul, ol, figcaption {
-  color: rgba(0, 0, 0, 0.55);
-  font-size: 11pt;
-  line-height: 20pt;
-  font-weight: 300;
-  letter-spacing: -0.35pt;
-  margin: 0 0 4.5pt;
+/* Links */
+a {
+  text-decoration: none;
+  color: rgb(0, 112, 224);
 }
 
+  /* All text links, so no <@> */
+h1 a:hover,
+p a:hover,
+li a:hover {
+  background-color: rgba(0, 112, 224, 0.2);
+}
+
+h1 a:visited,
+p a:visited,
+li a:visited {
+  text-decoration: none;
+  color: rgb(0, 112, 224);
+}
+
+/* Ragged paragraphs */
 p + p {
-  text-indent: 18.5pt;
+  text-indent: 1.5rem;
 }
 
-
+/* --- breaks */
+hr {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
 
 figure {
   margin: 0;
@@ -85,115 +96,79 @@ figure {
 figcaption {
   text-align: center;
   font-style: italic;
-  font-size: 9pt;
+  font-size: 0.75rem;
+  line-height: 1.3333333rem;
   color: rgba(0, 0, 0, 0.35);
   width: 80%;
-  margin: 0 auto;
+  margin: 0.5rem auto 0;
 }
 
 header {
-  margin-bottom: 36pt;
+  margin-bottom: 3rem;
 }
 
+/* <@> */
 header svg {
-  /* logo */
-  width: 64pt;
-  margin-left: -6pt;
+  width: 5.3333333333rem;
+  margin-left: -0.5rem;
 }
 
+/* Navigation on right */
 header ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
   float: right;
 }
 header ul li {
   display: inline-block;
   text-align: right;
-  padding-left: 18pt;
+  padding-left: 1rem;
 
 }
 
 header ul li a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.65);
-
 }
 
-footer {
-  /*border-top: 1pt solid rgba(0, 0, 0, 0.15);*/
-  padding-top: 24pt;
-  margin-top: 48pt;
+header ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-footer a {
-  margin: 0 auto;
-}
-footer svg {
-  /* logo */
-  width: 36pt;
-  /*margin-right: -2pt;*/
-  /*float: right;*/
-  /*margin-bottom: 48pt;*/
-  margin: 0 auto;
+header ul li a:visited {
+  color: inherit;
 }
 
-footer svg #logoPath {
-  fill: rgba(0, 0, 0, 0.15);
-}
-
-/* Work */
-
+/* Remove underlines */
 a.post-link {
-  background-color: red;
   color: inherit;
   text-decoration: inherit;
 }
-/*ul {
-  list-style: none;
-  padding-left: 0;
-}
 
-li {
-  margin-bottom: 36pt;
-  width: 100%;
-}
-
-li img {
-  width: 100%;
-  height: 400px;
-  background-color: lightgrey;
-
-  object-fit: cover;
-}*/
-
-section {
-  padding-bottom: 24pt;
-}
-
+/* Don't break the text, and keep it light */
 span.post-meta, time {
-  color: lightgrey;
+  color: rgba(0, 0, 0, 0.17);
   white-space:nowrap;
 }
 
-
-/* ----------- */
 /* Home */
 .home h1 {
-  margin-bottom: 42pt;
+  margin-bottom: 3rem;
+}
+
+.home .post-link h2 {
+  /*color: rgb(0, 112, 224);*/
 }
 
 
-/* ----------- */
-/* Posts-in-mind */
-
+/* Need 100% or they go full-size */
 img {
   width: 100%;
 }
 
-/* ----------- */
-/* iframe */
+
+/* iframes */
 /*https://benmarshall.me/responsive-iframes/*/
 .intrinsic-container {
   position: relative;
@@ -214,13 +189,13 @@ img {
   height: 100%;
 }
 
-
 .jekyll-twitter-plugin iframe {
   margin: 0 auto;
 }
 
+/* Top and bottom margins on all post media */
 .post-img,
 .intrinsic-container,
 .jekyll-twitter-plugin {
-  margin: 24pt 0;
+  margin: 1.5rem 0;
 }

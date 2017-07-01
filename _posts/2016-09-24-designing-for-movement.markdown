@@ -17,13 +17,13 @@ One last thing: I've also used the co-publishing here as an opportunity to prune
 
 ustwo has been working closely with organizations in [health](http://moodnotes.thriveport.com/), [wellbeing](http://pauseable.com/), [accessibility](http://wayfindr.net/), and now increasingly so in fitness. Working with a leading sports and fitness organization, we set out to improve the run experience. We focused on the varying degrees of interactivity for movement, and how we might transform relevant data into actionable insights. Our approach centered on simplification, automation, and contextualization of data.
 
-{% include image.html name="framer.jpg" caption="Erin and I going hard in the paint with Framer." %}
+{% include image.html name="framer.jpg" caption="Erin and I using Framer to prototype." %}
 
 ## The current situation
 
 The majority of runners’ fitness apps are data-centric, with interpretation of this information largely up to the runner. This data-focused approach is often removed from an individual’s context for working out, making it difficult to interpret results and gather actionable insights.
 
-{% include image.html name="landscape.jpg" %}
+{% include image.html name="landscape.jpg" caption="A sample of general-fitness and running apps today." %}
 
 Similar issues with interpretation and actions apply to dedicated wearables and fitness tracking devices. Raw data is often obscured or presented [unclearly](https://twitter.com/EdwardTufte/status/289208399621672960?); often with an emphasis on accountability and social sharing. These devices serve well for reflection and short-term motivation, but do little to help with analysis of performance techniques, safety and long-term motivation. In addition, glass screens requiring precise inputs and conscious interactions often fail when combined with a moving body and unfocused attention.
 
