@@ -13,21 +13,22 @@ layout: default
 
   <!-- <ul class="post-list"> -->
     {% for post in site.posts %}
-    <a class="post-link" href="{{ post.url | relative_url }}">
-        <section class="post-item">
+
+        <section>
         <!-- <img src="assets/posts/{{ post.feature-image }}"  alt=""> -->
 
 
-        <h2>{{ post.title | escape }}</h2>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <p>
           {{ post.excerpt | strip_html | truncatewords: 30 }}
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <a href="{{ post.url | relative_url }}">&#8594;</a>
         </p>
 
       </section>
-    </a>
+
     {% endfor %}
   <!-- </ul> -->
 

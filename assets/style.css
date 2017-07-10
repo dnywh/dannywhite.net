@@ -28,6 +28,10 @@ body {
   font-family: 'Input Sans', sans-serif;
 }
 
+p {
+  margin-top: 0.5rem;
+}
+
 /* Headers */
 h1 {
   font-size: 2.5rem;
@@ -42,7 +46,7 @@ h2 {
 
 h3 {
   margin-top: 2rem;
-  line-height: 0.5rem;
+  line-height: 1.5rem;
 }
 
 p, ul, ol, figcaption {
@@ -59,21 +63,25 @@ h1, h2, h3, h4, h5, h6 {
 /* Links */
 a {
   text-decoration: none;
-  color: rgb(0, 112, 224);
+  color: rgb(0, 0, 0);
 }
+
 
   /* All text links, so no <@> */
 h1 a:hover,
+h2 a:hover,
 p a:hover,
 li a:hover {
-  background-color: rgba(0, 112, 224, 0.2);
+  /*background-color: rgba(0, 112, 224, 0.2);*/
+  text-decoration: underline;
 }
 
 h1 a:visited,
 p a:visited,
 li a:visited {
   text-decoration: none;
-  color: rgb(0, 112, 224);
+  /*color: rgb(0, 112, 224);*/
+  color: inherit;
 }
 
 /* Ragged paragraphs */
@@ -128,22 +136,16 @@ header ul li {
 }
 
 header ul li a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.65);
+  /*text-decoration: none;*/
+  /*color: rgba(0, 0, 0, 0.65);*/
 }
 
 header ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  /*background-color: rgba(0, 0, 0, 0.1);*/
 }
 
 header ul li a:visited {
-  color: inherit;
-}
-
-/* Remove underlines */
-a.post-link {
-  color: inherit;
-  text-decoration: inherit;
+  /*color: inherit;*/
 }
 
 /* Don't break the text, and keep it light */
@@ -157,8 +159,8 @@ span.post-meta, time {
   margin-bottom: 3rem;
 }
 
-.home .post-link h2 {
-  /*color: rgb(0, 112, 224);*/
+.home h1 a {
+  color: rgba(0, 0, 0, 0.55);
 }
 
 
