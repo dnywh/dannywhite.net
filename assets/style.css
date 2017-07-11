@@ -1,24 +1,15 @@
 /*
-Blue links
-
-color:                            rgb(0, 112, 224)
-background-color on :hover:       rgba(0, 112, 224, 0.2)
- */
-
-
-/*
-Shades of grey
-
-p color:                          rgba(0, 0, 0, 0.55)
+p color:                          rgba(0, 0, 0, 0.7)
 post-meta color:                  rgba(0, 0, 0, 0.17) (simlar to 'lightgrey');
+figcaption color:                 rgba(0, 0, 0, 0.35);
 
 hr, greyscale background-color:   rgba(0, 0, 0, 0.1)
 */
 
 :root {
   scroll-behavior: smooth;
-  /*https://css-tricks.com/almanac/properties/s/scroll-behavior/*/
-  /*Only supported in Firefox right now*/
+  /* https://css-tricks.com/almanac/properties/s/scroll-behavior/ */
+  /* Only supported in Firefox right now */
 }
 
 body {
@@ -32,8 +23,6 @@ body {
 h1 {
   font-size: 2.5rem;
   letter-spacing: -0.1rem;
-  font-family: 'Input Sans Lt', sans-serif;
-  font-weight: normal; /* not bold */
 }
 
 h2 {
@@ -45,36 +34,34 @@ h2 {
 
 h3 {
   margin-top: 2rem;
+  letter-spacing: -0.05rem;
   line-height: 1.5rem;
+  margin-bottom: -0.5rem;
 }
 
-p, ul, ol, figcaption {
-  color: rgba(0, 0, 0, 0.55);
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; /* not bold */
+}
+
+p, ul, ol {
+  color: rgba(0, 0, 0, 0.7);
   line-height: 1.666667rem;
   letter-spacing: -0.04rem;
 }
 
-/* Links */
-a {
+/* Links except for header <@> */
+a:not(header a:first-of-type) {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
 }
-
-
-  /* All text links, so no <@> */
-h1 a:hover,
-h2 a:hover,
-p a:hover,
-li a:hover {
+a:not(header a:first-of-type):hover {
   background-color: rgba(0, 0, 0, 0.1);
-  text-decoration: underline;
 }
 
-h1 a:visited,
-p a:visited,
-li a:visited {
+a:visited {
   text-decoration: none;
-  /*color: rgb(0, 112, 224);*/
   color: inherit;
 }
 
@@ -83,7 +70,7 @@ p + p {
   text-indent: 1.5rem;
 }
 
-/* --- breaks */
+/* line breaks */
 hr {
   border-style: solid;
   border-width: 0.5px;
@@ -105,18 +92,19 @@ figcaption {
   margin: 0.5rem auto 0;
 }
 
+/* Header */
 header {
   margin-bottom: 3rem;
 }
 
-/* <@> */
+/* Header <@> */
 header svg {
   width: 5.25rem;
   margin-left: -0.5rem;
   margin-top: -0.5rem; /* Optical align with header ul*/
 }
 
-/* Navigation on right */
+/* Header navigation on right */
 header ul {
   list-style: none;
   margin: 0;
@@ -127,43 +115,28 @@ header ul li {
   display: inline-block;
   text-align: right;
   padding-left: 1rem;
-
-}
-
-header ul li a {
-  /*text-decoration: none;*/
-  /*color: rgba(0, 0, 0, 0.65);*/
-}
-
-header ul li a:hover {
-  /*background-color: rgba(0, 0, 0, 0.1);*/
-}
-
-header ul li a:visited {
-  /*color: inherit;*/
 }
 
 /* Don't break the text, and keep it light */
 span.post-meta, time {
   color: rgba(0, 0, 0, 0.17);
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
 /* Home */
-.home h1 {
-  margin-bottom: 3rem;
+.home h1,
+.home section:not(section:last-of-type) {
+  margin-bottom: 4rem;
 }
 
 .home h1 a {
   color: rgba(0, 0, 0, 0.55);
 }
 
-
 /* Need 100% or they go full-size */
 img {
   width: 100%;
 }
-
 
 /* iframes */
 /*https://benmarshall.me/responsive-iframes/*/
@@ -195,4 +168,36 @@ img {
 .intrinsic-container,
 .jekyll-twitter-plugin {
   margin: 1.5rem 0;
+}
+
+
+/* Animations */
+h1,
+.post-header {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.page-content section,
+.post-content {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.3s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
