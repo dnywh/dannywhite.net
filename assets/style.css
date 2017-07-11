@@ -25,21 +25,20 @@ body {
   max-width: 40rem; /* 640px */
   margin: 3rem auto;
   padding: 0 1rem;
-  font-family: 'Input Sans', sans-serif;
-}
-
-p {
-  margin-top: 0.5rem;
+  font-family: 'Input Sans Lt', sans-serif;
 }
 
 /* Headers */
 h1 {
   font-size: 2.5rem;
   letter-spacing: -0.1rem;
+  font-family: 'Input Sans Lt', sans-serif;
+  font-weight: normal; /* not bold */
 }
 
 h2 {
   margin-top: 3rem;
+  margin-bottom: 0.75rem;
   letter-spacing: -0.06rem;
   line-height: 1rem;
 }
@@ -52,12 +51,7 @@ h3 {
 p, ul, ol, figcaption {
   color: rgba(0, 0, 0, 0.55);
   line-height: 1.666667rem;
-  font-weight: 300;
   letter-spacing: -0.04rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
 }
 
 /* Links */
@@ -72,7 +66,7 @@ h1 a:hover,
 h2 a:hover,
 p a:hover,
 li a:hover {
-  /*background-color: rgba(0, 112, 224, 0.2);*/
+  background-color: rgba(0, 0, 0, 0.1);
   text-decoration: underline;
 }
 
@@ -117,8 +111,9 @@ header {
 
 /* <@> */
 header svg {
-  width: 5.3333333333rem;
+  width: 5.25rem;
   margin-left: -0.5rem;
+  margin-top: -0.5rem; /* Optical align with header ul*/
 }
 
 /* Navigation on right */
