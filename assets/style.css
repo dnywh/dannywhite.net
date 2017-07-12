@@ -50,13 +50,24 @@ p, ul, ol {
 }
 
 /* Links except for header <@> */
-a:not(header a:first-of-type) {
+/* Extended arguments not supported yet in browsers apart from Safari */
+/* See https://developer.mozilla.org/en-US/docs/Web/CSS/:not#Browser_compatibility */
+/*a:not(header a:first-of-type) {*/
+h1 a,
+h2 a,
+p a,
+li a {
   text-decoration: none;
   color: inherit;
   background-color: rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease;
 }
-a:not(header a:first-of-type):hover {
+
+/*a:not(header a:first-of-type):hover {*/
+h1 a:hover,
+h2 a:hover,
+p a:hover,
+li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
