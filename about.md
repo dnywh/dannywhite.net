@@ -3,6 +3,8 @@ layout: page
 title: About
 permalink: "/about/"
 ---
+{% include image.html name="danny-white.jpg" alt="Danny White" %}
+
 Originally from Australia, I've been living and working in NYC for the last two years.
 
 Right now my interests lie in prototyping and systems design. I'm also trying to figure out ways to tie my core competencies to environmentalism. I'm always open to speaking engagements and running prototyping sessions (Origami or Framer).
