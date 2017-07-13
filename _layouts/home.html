@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+  <h1>Danny White is a product designer in NYC. He works with the lovely bunch at <a href="http://ustwo.com">ustwo</a></h1>
+
+  <!-- <h2 class="page-heading">Posts</h2> -->
+
+  {{ content }}
+
+  <!-- <ul class="post-list"> -->
+    {% for post in site.posts %}
+
+        <section>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <p>
+          {{ post.excerpt | strip_html | truncatewords: 30 }}
+          <a href="{{ post.url | relative_url }}">&#8594;</a>
+        </p>
+
+      </section>
+
+    {% endfor %}
+  <!-- </ul> -->
+
+  <!-- <hr> -->
+  <!-- Only show pages I've explicitly said I want to show on the homepage -->
+
+  <!-- {% for page in site.pages %}
+    {% if page.feature %} -->
+    <!-- <a class="page-link" href="{{ page.url | relative_url }}">
+        <section class="page-item">
+
+        <h3>{{ page.title | escape }}</h3>
+
+        <p>
+          {{ page.excerpt | strip_html | truncatewords: 30 }}
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ page.date | date: date_format }}</span>
+        </p>
+
+      </section>
+    </a> -->
+    <!-- {% endif %}
+  {% endfor %} -->
+
+</div>
