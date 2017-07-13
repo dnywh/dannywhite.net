@@ -1,7 +1,9 @@
 ---
 layout: post
+type: article
 title:  "Framer Sessions"
 date:   2017-03-02 11:33:56 -0400
+featured-image: Framer-NYC-2015-11-05-003.jpg 
 ---
 
 It’s been just over a year and a half since starting Framer Sessions NYC, out of ustwo. Given the pace at which [Framer](http://framer.com) has iterated, it feels like a good time to reflect.

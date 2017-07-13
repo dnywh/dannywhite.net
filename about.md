@@ -1,7 +1,9 @@
 ---
 layout: page
+type: profile
 title: About
 permalink: "/about/"
+featured-image: danny-white.jpg
 ---
 {% include image.html name="danny-white.jpg" alt="Danny White" %}
 
