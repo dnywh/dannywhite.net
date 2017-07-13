@@ -10,7 +10,7 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:image" content="{{ site.url }}/assets/{% if page.featured-image %}posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured-image }}{% else %}images/og-image-fallback.jpg{% endif %}" />
 
-  <meta name="description twitter:description" property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="author" content="Danny White" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:locale" content="en_US" />
