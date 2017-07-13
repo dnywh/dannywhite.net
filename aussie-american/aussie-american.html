@@ -1,0 +1,92 @@
+---
+title: Aussie-American / 🇦🇺–🇺🇸
+permalink: "/aussie-american/"
+feature: true
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <title></title> -->
+    <link rel="stylesheet" href="{{ "/assets/normalize.css" | relative_url }}">
+    <link href="https://fonts.googleapis.com/css?family=Montaga" rel="stylesheet">
+    <style media="screen">
+      body {
+        font-family: 'Montaga', serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 6.25vw;
+      }
+      h1 span:first-of-type {
+        color: blue;
+      }
+      h1 span:last-of-type {
+        color: red;
+      }
+      p {
+        font-size: 3vw;
+        max-width: 600px;
+        margin: 0 auto 6.25vw;
+
+      }
+
+      table {
+        width: 100%;
+        font-size: 6.25vw;
+        border-collapse:collapse
+      }
+
+      tr {
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+      }
+
+
+      td {
+        width: 50%;
+        padding-bottom: 12pt;
+
+      }
+
+      th:first-of-type,
+      td:first-of-type {
+        text-align: left;
+        color: blue;
+      }
+      th:last-of-type,
+      td:last-of-type {
+        text-align: right;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><span>Aussie</span> / <span>American</span></h1>
+    <p>
+      A few things I've picked up over the last 2+ years here in the USA.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>🇦🇺</th>
+          <th>🇺🇸</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for word in site.data.aussie-american %}
+        <tr>
+          <td>{{ word.aussie }}</td>
+          <td>{{ word.american }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
+  </body>
+</html>
