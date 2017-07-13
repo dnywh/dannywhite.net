@@ -12,5 +12,6 @@ Things I've added onto or tweaked from the standard Jekyll theme, layouts, inclu
 - Prettify URL slugs
 - Extensive favicons
 - Responsive `iframe` elements
+- Using GitHub's project pages feature to publish from `repo-name` branch named `gh-pages` straight to `dannywhite.is/repo-name`
 
 Almost all of these features are derived from other peoples' articles or examples. They will eventually have their origin attributed, and usage extrapolated here.
