@@ -13,13 +13,6 @@ Thanks to Madelin for joining and then running the whole shebang. Also thanks to
 
 The official Origami [tutorials](http://origami.design/tutorials/) and [examples](http://origami.design/examples/) are now up. Thanks also to Fisher for his expertise whilst creating the curriculum for these.
 
-### Update (refresh/date)
-The full video of my demo has been uploaded on [Vimeo](https://vimeo.com/192805834). The other demos are under the [same username](https://vimeo.com/facebookorigami).
-
-<div class="intrinsic-container">
-  <iframe src="https://player.vimeo.com/video/192805834" frameborder="0" allowfullscreen=""></iframe>
-</div>
-
 Glad I got that mop of a haircut fixed since.
 
 [^facebook]: Kara, Myles, etc. Seriously so many, and everyone is great, but I've gotta stop somewhere.
