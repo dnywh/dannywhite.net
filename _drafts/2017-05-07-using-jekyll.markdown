@@ -1,5 +1,6 @@
 ---
 layout: post
+type: article
 title:  "Using Jekyll"
 date:   2017-05-06 15:33:56 -0400
 ---

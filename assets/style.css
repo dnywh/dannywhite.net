@@ -56,7 +56,8 @@ p, ul, ol {
 h1 a,
 h2 a,
 p a,
-li a {
+li a,
+figcaption a {
   text-decoration: none;
   color: inherit;
   background-color: rgba(0, 0, 0, 0.05);
@@ -67,7 +68,8 @@ li a {
 h1 a:hover,
 h2 a:hover,
 p a:hover,
-li a:hover {
+li a:hover,
+figcaption a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 

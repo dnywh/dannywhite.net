@@ -1,8 +1,9 @@
 ---
 layout: post
+type: article
 title:  "Designing For Movement"
 date:   2016-09-24 15:33:56 -0400
-feature-image: 2016-03-24-designing-for-movement/studio-wearables.jpg
+featured-image: team.jpg
 ---
 
 [Erin LeForce](https://twitter.com/ErinLeForce) and I co-wrote this article for publishing on the [ustwo blog](https://ustwo.com/blog/designing-for-movement). Since then, it's been picked up by the [Marvel blog](https://blog.marvelapp.com/designing-for-movement) (🎉!) and the principles have set a foundation for how we approach similar projects coming into our studio.
