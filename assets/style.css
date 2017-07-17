@@ -172,15 +172,11 @@ img {
   height: 100%;
 }
 
-.jekyll-twitter-plugin iframe {
-  margin: 0 auto;
-}
-
 /* Top and bottom margins on all post media */
 .post-img,
 .intrinsic-container,
-.jekyll-twitter-plugin {
-  margin: 1.5rem 0;
+.twitter-tweet {
+  margin: 1.5rem auto;
 }
 
 
