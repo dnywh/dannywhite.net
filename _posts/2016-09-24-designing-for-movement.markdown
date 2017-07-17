@@ -1,7 +1,7 @@
 ---
 layout: post
 type: article
-title:  "Designing For Movement"
+title: "Designing For Movement"
 date:   2016-09-24 15:33:56 -0400
 featured-image: team.jpg
 ---

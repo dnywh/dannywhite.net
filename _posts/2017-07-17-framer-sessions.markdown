@@ -1,8 +1,8 @@
 ---
 layout: post
 type: article
-title:  "Framer Sessions"
-date:   2017-07-17 09:17:01 -0400
+title: "Framer Sessions"
+date: 2017-07-17 08:17:01 -0400
 featured-image: Framer-NYC-2015-11-05-003.jpg
 ---
 
@@ -96,9 +96,7 @@ Again, refer to [Setting up a technical meet-up, a framer case-study](https://bl
 
 The most successful (collaborative, diverse, consistent turn-outs), consistent Framer meetup I’ve seen is [Framer Seattle](http://facebook.com/groups/framerjs.seattle/), run by [Stephen Crowley](https://twitter.com/stephenncrowley) and [Jordan Dobson](https://twitter.com/jordandobson). There is probably a thriving Framer meetup [close to you](http://framer.com/community/meetups/), too.
 
-
 {% twitter https://twitter.com/dannyalright/status/687705898391891969 %}
-
 
 [^recruiting]: Our most recent Framer Sessions (led by Noah) was at ClassPass. They had a recruiter float in sessions. Not at all interruptive; instead making the most of having so many talented people in one room.
 [^rsvp]: Of those who RSVPed yes or expressed interested.

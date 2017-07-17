@@ -1,8 +1,8 @@
 ---
 layout: post
 type: article
-title:  "Launching Origami"
-date:   2016-11-01 22:33:56 -0400
+title: "Launching Origami"
+date: 2016-11-01 22:33:56 -0400
 featured-image: facebook-ny.jpg
 ---
 
