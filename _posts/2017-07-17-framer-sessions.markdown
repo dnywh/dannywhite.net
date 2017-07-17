@@ -2,14 +2,14 @@
 layout: post
 type: article
 title:  "Framer Sessions"
-date:   2017-03-02 11:33:56 -0400
-featured-image: Framer-NYC-2015-11-05-003.jpg 
+date:   2017-07-17 09:17:01 -0400
+featured-image: Framer-NYC-2015-11-05-003.jpg
 ---
 
 It’s been just over a year and a half since starting Framer Sessions NYC, out of ustwo. Given the pace at which [Framer](http://framer.com) has iterated, it feels like a good time to reflect.
 
 ## How it started
-Having Framer in my back pocket was a huge asset whilst doing freelance product design from late 2014 to mid-2015. Constant high-fidelity prototypes—and prototyping as a mindset/iterative design tool—really resonated with teams and clients.
+Having Framer in my back pocket was a huge asset whilst doing freelance product design from late 2014 to mid-2015. Constant high-fidelity prototypes (and prototyping as a mindset/iterative design tool) really resonated with teams and clients.
 
 I met Koen and Jorn (founders of Framer) shortly after joining ustwo. A month or so later I had Framer NYC set up and ready to go for November 5th, 2015. A relevant throwback:
 
@@ -26,19 +26,15 @@ Some anecdotal yet useful things I've learnt along the way.
 Running the meetup is about 3-4x amount of the work that I anticipated. Take any help you can get. That includes basic logistics and set up help, as well as facilitators to run skill-level sessions.
 
 ### People flake
-This is especially true in NYC. I think the average turn-out for our meetups is somewhere between 30–50%[^rsvp]. Similarly, if it rains that day, cut your food & drinks order by half.
-
-Which is a nice segue into...
+This is especially true in NYC. I think the average turn-out for our meetups is somewhere between 30–50%[^rsvp]. Also—if it rains that day, cut your food & drinks order by half.
 
 ### Get a sponsor
-Food and drink for 20+ people gets **expensive**. Even just getting a space can be hard. Try to get a sponsor, or get your workplace to help out (like I did). It’s great for them too—if they know how to make the most of it (recruiting[^recruiting]).
+Food and drink for 20+ people gets *expensive*. Even just getting a space can be hard. Try to get a sponsor, or get your workplace to help out (like I did). It’s great for them too—if they know how to make the most of it (i.e. recruiting[^recruiting]).
 
 ### Over-prepare
 Assume people will have trouble getting into the building, finding the space, showing their work, following along, etc[^signage].
 
-Aside from clear signage, you'll need a strong yet flexible agenda. Without one, the meetup becomes an introductory course with a pretense of "I can leave this thing knowing Framer". With inevitable disappointment.
-
-Another nice segue...
+Aside from clear signage, you'll need a strong yet flexible agenda. Without one, the meetup becomes an introductory course with a pretense of "I can leave this thing knowing Framer"...with inevitable disappointment.
 
 ### Accommodate different skill-levels
 Otherwise you’ll end up with a gulf: beginners and intermediates all falling back to extreme basics (with the expectation that they’ll learn everything in this meetup), and advanced and intermediates doing something extremely complex that is likely to scare some people off[^balance].
@@ -60,7 +56,7 @@ Reiterate food, drinks, bathrooms, etc. Point out who are helpers, and who are s
 ### 3. Show and tell (20–25 min)
 Demo something that *you* have done with new Framer features (which there almost always are). Encourage others to come up and show their work, too[^showandtell].
 
-Have any special guests in town? Have them demo something[^specialguests]. This is something we're still working on, but right now I'd say to do this *after* people do their individual demos[^ordering].
+Have any special guests in town? Have them demo something[^specialguests]. This is something we're still figuring out, but right now I'd say to do this *after* people do their individual demos[^ordering].
 
 {% twitter https://twitter.com/GK3/status/753582943336030208 %}
 
@@ -72,7 +68,7 @@ Have any special guests in town? Have them demo something[^specialguests]. This 
 #### Beginners
 Have prepared a Framer 101 tutorial, followed by the step-by-step building of something simple yet real. Most learners of Framer are kinaesthetic; meaning the practice of making something (relatable, if possible) jives better than being demonstrated at.
 
-**Aim:** If you can get newbies to leave feeling confident that Framer is approachable, that’s huge. Bonus points if they leave with a foundation of Framer skills.
+**Goal:** If you can get newbies to leave feeling confident that Framer is approachable, that’s huge. Bonus points if they leave with a foundation of Framer skills.
 
 #### Intermediate & advanced
 Break out into groups for discussion and problem solving of individual prototypes. This tends to be hard, since there is always a spectrum of differing skill levels[^overrun]. Ideally you will have moderators to spot divergent skill levels and conversations, and physically separate (and therefore foster) each of them.
@@ -108,7 +104,7 @@ The most successful (collaborative, diverse, consistent turn-outs), consistent F
 [^rsvp]: Of those who RSVPed yes or expressed interested.
 [^signage]: I think I had up to six signs at one point, with people still getting lost. I've also run sessions where unless pushed, no one is willing to come forward with prototypes or questions.
 [^balance]: A nice balance is overcoming the "this is too hard for me to learn" for beginners, and "I didn't know about this neat trick/feature/approach" for more advanced people.
-[^showandtell]: This is by far the hardest part. Prizes don’t help IMO
-[^specialguests]: Definitely do not put people on the spot—this should be something you've worked out with your guest prior to the meetup. Alsp don't feel like you need to restrict guests to showing purely Framer work. If someone used it in their workflow, or even if they use something else, that's still usually interesting for people.
+[^showandtell]: This is by far the hardest part. Prizes don’t help IMO.
+[^specialguests]: Definitely do not put people on the spot—this should be something you've worked out with your guest prior to the meetup. Also don't feel like you need to restrict guests to showing purely Framer work. If someone used it in their workflow, or even if they use something else, that's still usually interesting for people.
 [^ordering]: Understandably, people tend not to want to follow a guest's presentation.
-[^overrun]: Groups can be often overrun by niche and intimidating demos or discussions that arguably aren’t a good fit for Framer (a design tool).
+[^overrun]: Groups can be often overrun by niche and intimidating demos or discussions that arguably aren’t a good fit for Framer (ultimately a design tool for validating ideas).
