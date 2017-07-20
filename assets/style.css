@@ -179,10 +179,16 @@ img {
   margin: 1.5rem auto;
 }
 
+/* Gallery layout */
+.gallery-header,
+.gallery-content {
+  text-align: center;
+}
 
 /* Animations */
 h1,
-.post-header {
+.post-header,
+.gallery-header {
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
@@ -194,7 +200,8 @@ h1,
   animation-play-state: running;
 }
 .page-content section,
-.post-content {
+.post-content,
+.gallery-content {
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
