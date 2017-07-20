@@ -16,10 +16,11 @@
 title: Danny White
 description: > # this means to ignore newlines until "baseurl:"
   Danny White is a product designer in NYC. He works with the lovely bunch at ustwo.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: ""  the subpath of your site, e.g. /blog
+url: "http://dannywhite.is" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dannyalright
 github_username:  dannyalright
+author: Danny White
 
 # Build settings
 markdown: kramdown
