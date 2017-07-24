@@ -13,10 +13,23 @@ hr, greyscale background-color:   rgba(0, 0, 0, 0.1)
 }
 
 body {
-  max-width: 40rem; /* 640px */
-  margin: 3rem auto;
-  padding: 0 1rem;
   font-family: 'Input Sans Lt', sans-serif;
+  margin: 0;
+}
+
+.container-text,
+.container-media {
+  margin: 3rem auto;
+
+}
+
+.container-text {
+  max-width: 40rem; /* 640px */
+  padding: 0 1rem;
+}
+
+.container-media {
+  max-width: 75rem; /* 1200px */
 }
 
 /* Headers */

@@ -8,14 +8,14 @@
 
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div>
         {{ content }}
       </div>
     </main>
 
     {% include footer.html %}
-    
-    {% if jekyll.environment == 'production' %}
+
+    {% if jekyll.environment == "production" %}
       {% include analytics.html %}
     {% endif %}
   </body>
