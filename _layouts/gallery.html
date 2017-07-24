@@ -17,22 +17,31 @@ layout: default
 
   <div class="gallery-content" itemprop="articleBody">
     <div class="container-text">
+      <!-- Whole gallery intro -->
       {{ content }}
     </div>
 
+    {% for spread in page.spreads %}
+    {% if spread.intro %}
+      <div class="container-text">
+        <h2>{{ spread.intro.title }}</h2>
+        <p>{{ spread.intro.text }}</p>
+      </div>
+    {% endif %}
     <div class="container-media">
-      <!-- Get the URL slug -->
-      {% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+        <div class="{{ spread.type }}">
+          {% for image in spread.photos %}
+            <img src="/assets/posts/{{ page.slug }}/{{ image }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+          {% endfor %}
 
-      <!-- Go through all images -->
-      {% assign image_files = site.static_files | where: "image", true %}
-      <!-- Only take images that match the URL slug -->
-      {% for image in site.static_files %}
-        {% if image.path contains imagePath %}
-        <img src="{{ image.path }}" alt="">
-        {% endif %}
+          {% if spread.caption %}
+            <p>{{ spread.caption }}</p>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
+
+
 
   </div>
 </article>

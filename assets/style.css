@@ -20,7 +20,6 @@ body {
 .container-text,
 .container-media {
   margin: 3rem auto;
-
 }
 
 .container-text {
@@ -31,6 +30,31 @@ body {
 .container-media {
   max-width: 75rem; /* 1200px */
 }
+
+.grid-3-up {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 3rem;
+}
+
+.grid-3-up img {
+  object-fit: cover;
+  /*background-color: lightgreen;*/
+  object-position: top;
+}
+
+.grid-3-up p {
+  text-align: left;
+  margin-top: 0;
+}
+
+.grid-6-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+
 
 /* Headers */
 h1 {
@@ -190,12 +214,6 @@ img {
 .intrinsic-container,
 .twitter-tweet {
   margin: 1.5rem auto;
-}
-
-/* Gallery layout */
-.gallery-header,
-.gallery-content {
-  text-align: center;
 }
 
 /* Animations */
