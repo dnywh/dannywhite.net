@@ -1,6 +1,6 @@
 {% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
 <!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
-<div class="container-media post-img">
+<div class="container-md post-img">
 {% if include.caption %}
     <figure>
         <img src="/assets/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>

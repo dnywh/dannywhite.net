@@ -17,16 +17,22 @@ body {
   margin: 0 1rem;
 }
 
-.page-content > div > *,
+nav,
+header,
+.home,
 .post-content > div > * {
   max-width: 40rem; /* 640px */
   margin-left: auto;
   margin-right: auto;
 }
 
-.post-content > div > .container-media {
+.post-content > div > .container-lg {
   max-width: 90rem; /* 1440px */
   margin: 0 -1rem; /* Break bounds of body margin */
+}
+
+.post-content > div > .container-md {
+  max-width: 48rem; /* 768px */
 }
 
 
@@ -64,7 +70,7 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 0.75rem;
   letter-spacing: -0.06rem;
-  line-height: 1rem;
+  line-height: 1.84rem;
 }
 
 h3 {

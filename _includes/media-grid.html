@@ -1,5 +1,5 @@
 {% capture rootPath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
-<div class="container-media grid grid-{{ include.type }}">
+<div class="container-lg grid grid-{{ include.type }}">
   {% if include.media1 %}
     <img src="/assets/posts/{{ rootPath }}/{{ include.media1 }}"/>
   {% endif %}
