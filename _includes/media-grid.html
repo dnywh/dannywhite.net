@@ -1,0 +1,25 @@
+{% capture rootPath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
+<div class="container-media grid grid-{{ include.type }}">
+  {% if include.media1 %}
+    <img src="/assets/posts/{{ rootPath }}/{{ include.media1 }}"/>
+  {% endif %}
+  {% if include.media2 %}
+    <img src="/assets/posts/{{ rootPath }}/{{ include.media2 }}"/>
+  {% endif %}
+  {% if include.media3 %}
+    <img src="/assets/posts/{{ rootPath }}/{{ include.media3 }}"/>
+  {% endif %}
+  {% if include.media4 %}
+    <img src="/assets/posts/{{ rootPath }}/{{ include.media4 }}"/>
+  {% endif %}
+  {% if include.media5 %}
+    <img src="/assets/posts/{{ rootPath }}/{{ include.media5 }}"/>
+  {% endif %}
+  {% if include.media6 %}
+    <img src="/assets/posts/{{ rootPath }}/{{ include.media6 }}"/>
+  {% endif %}
+  <!-- Caption -->
+  {% if include.caption %}
+    <label>{{ include.caption }}</label>
+  {% endif %}
+</div>
