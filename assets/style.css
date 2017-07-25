@@ -84,10 +84,10 @@ p, ul, ol {
   letter-spacing: -0.04rem;
 }
 
-/* Links except for header <@> */
+/* Links except for nav <@> */
 /* Extended arguments not supported yet in browsers apart from Safari */
 /* See https://developer.mozilla.org/en-US/docs/Web/CSS/:not#Browser_compatibility */
-/*a:not(header a:first-of-type) {*/
+/*a:not(nav a:first-of-type) {*/
 h1 a,
 h2 a,
 p a,
@@ -99,7 +99,7 @@ figcaption a {
   transition: background-color 0.3s ease;
 }
 
-/*a:not(header a:first-of-type):hover {*/
+/*a:not(nav a:first-of-type):hover {*/
 h1 a:hover,
 h2 a:hover,
 p a:hover,
@@ -142,26 +142,30 @@ figcaption {
   margin: 0.5rem auto 0;
 }
 
-/* Header */
+/* Headers */
 header {
   margin-bottom: 3rem;
 }
 
-/* Header <@> */
-header svg {
+/* Nav */
+nav {
+  margin-top: 3rem;
+}
+/* Nav <@> */
+nav svg {
   width: 5.25rem;
   margin-left: -0.5rem;
-  margin-top: -0.5rem; /* Optical align with header ul*/
+  margin-top: -0.5rem; /* Optical align with nav ul*/
 }
 
-/* Header navigation on right */
-header ul {
+/* Nav navigation on right */
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   float: right;
 }
-header ul li {
+nav ul li {
   display: inline-block;
   text-align: right;
   padding-left: 1rem;
