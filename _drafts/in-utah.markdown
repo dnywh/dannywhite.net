@@ -9,11 +9,12 @@ featured-image: in-utah-9.jpg
 Over the July 4 week my brother Noah and I traveled Utah. I think we did a pretty good job. Here are some highlights.
 
 {% include media-grid.html
-  type="3"
-  caption="This is the caption"
-  media1="in-utah-1.jpg"
-  media2="in-utah-10.jpg"
-  media3="in-utah-12.jpg" %}
+  type="tres"
+  caption="This is the caption. This is the caption."
+  media="
+  in-utah-1.jpg
+  in-utah-10.jpg
+  in-utah-12.jpg" %}
 
 ---
 
@@ -21,12 +22,12 @@ Over the July 4 week my brother Noah and I traveled Utah. I think we did a prett
 This is my new section. It's pretty great.
 
 {% include media-grid.html
-  type="6"
+  type="seis"
   caption="The Instagram set."
-  media1="in-utah-ig-1.jpg"
-  media2="in-utah-ig-2.jpg"
-  media3="in-utah-ig-3.jpg"
-  media4="in-utah-ig-4.jpg"
-  media5="in-utah-ig-5.jpg"
-  media6="in-utah-ig-6.jpg"
-%}
+  media="
+  in-utah-ig-1.jpg
+  in-utah-ig-2.jpg
+  in-utah-ig-3.jpg
+  in-utah-ig-5.mp4
+  in-utah-ig-4.jpg
+  in-utah-ig-6.jpg" %}

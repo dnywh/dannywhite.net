@@ -49,23 +49,60 @@ header,
 .grid {
   display: grid;
 }
+.grid figure {
+  background-color: lightgreen;
+}
 .grid img {
   object-fit: cover;
-  /*background-color: lightgreen;*/
   object-position: top;
 }
 
-.grid-3 {
+/* grid-tres: A 3-photo grid style for editorial */
+.grid-tres {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 3rem;
+  /*grid-template-columns: 2fr 1fr;*/
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
 
-.grid-6 {
+.grid-seis {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
+
+.grid-tres figure:nth-child(1) {
+  grid-column: 1/5;
+  grid-row: 1;
+}
+.grid-tres figure:nth-child(2) {
+  grid-column: 5/7;
+  grid-row: 1;
+}
+.grid-tres figure:nth-child(3) {
+  grid-column: 1/5;
+  grid-row: 2;
+}
+
+/* grid-tres: A 6-photo grid style for Instagram photos */
+.grid-seis figure:nth-child(1),
+.grid-seis figure:nth-child(2),
+.grid-seis figure:nth-child(3),
+.grid-seis figure:nth-child(4),
+.grid-seis figure:nth-child(5),
+.grid-seis figure:nth-child(6) {
+  grid-row: 1;
+}
+
+/* Caption */
+.grid-seis label {
+  grid-column: 5/6;
+  grid-row: 2;
+}
+
+
+
+
 
 /* Headers */
 h1 {
@@ -207,7 +244,8 @@ span.post-meta, time {
 }
 
 /* Need 100% or they go full-size */
-img {
+img,
+video {
   width: 100%;
 }
 
