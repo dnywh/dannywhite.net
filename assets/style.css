@@ -17,42 +17,90 @@ body {
   margin: 0;
 }
 
-.container-text,
-.container-media {
-  margin: 3rem auto;
-}
-
-.container-text {
+nav,
+header,
+.home,
+.post-content > div > * {
   max-width: 40rem; /* 640px */
-  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.container-media {
-  max-width: 75rem; /* 1200px */
+.post-content > div > .container-lg {
+  max-width: 90rem; /* 1440px */
+  margin: 1.5rem auto; /* Break bounds of body margin */
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.grid-3-up {
+.post-content > div > .container-md {
+  max-width: 48rem; /* 768px */
+  margin: 1.5rem auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+
+/* Grids */
+.grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 3rem;
 }
-
-.grid-3-up img {
+.grid figure {
+  background-color: lightgreen;
+}
+.grid img {
   object-fit: cover;
-  /*background-color: lightgreen;*/
   object-position: top;
 }
 
-.grid-3-up p {
-  text-align: left;
-  margin-top: 0;
+/* grid-tres: A 3-photo grid style for editorial */
+.grid-tres {
+  display: grid;
+  /*grid-template-columns: 2fr 1fr;*/
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
 
-.grid-6-up {
+.grid-seis {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
+
+.grid-tres figure:nth-child(1) {
+  grid-column: 1/5;
+  grid-row: 1;
+}
+.grid-tres figure:nth-child(2) {
+  grid-column: 5/7;
+  grid-row: 1;
+}
+.grid-tres figure:nth-child(3) {
+  grid-column: 1/5;
+  grid-row: 2;
+}
+
+/* grid-tres: A 6-photo grid style for Instagram photos */
+.grid-seis figure:nth-child(1),
+.grid-seis figure:nth-child(2),
+.grid-seis figure:nth-child(3),
+.grid-seis figure:nth-child(4),
+.grid-seis figure:nth-child(5),
+.grid-seis figure:nth-child(6) {
+  grid-row: 1;
+}
+
+/* Caption */
+.grid-seis label {
+  grid-column: 5/6;
+  grid-row: 2;
+}
+
+
 
 
 
@@ -66,7 +114,7 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 0.75rem;
   letter-spacing: -0.06rem;
-  line-height: 1rem;
+  line-height: 1.84rem;
 }
 
 h3 {
@@ -86,10 +134,10 @@ p, ul, ol {
   letter-spacing: -0.04rem;
 }
 
-/* Links except for header <@> */
+/* Links except for nav <@> */
 /* Extended arguments not supported yet in browsers apart from Safari */
 /* See https://developer.mozilla.org/en-US/docs/Web/CSS/:not#Browser_compatibility */
-/*a:not(header a:first-of-type) {*/
+/*a:not(nav a:first-of-type) {*/
 h1 a,
 h2 a,
 p a,
@@ -101,7 +149,7 @@ figcaption a {
   transition: background-color 0.3s ease;
 }
 
-/*a:not(header a:first-of-type):hover {*/
+/*a:not(nav a:first-of-type):hover {*/
 h1 a:hover,
 h2 a:hover,
 p a:hover,
@@ -120,6 +168,11 @@ p + p {
   text-indent: 1.5rem;
 }
 
+/* Lists */
+ul {
+  margin-left: 40px;
+  /* Fix */
+}
 /* line breaks */
 hr {
   border-style: solid;
@@ -134,34 +187,41 @@ figure {
 
 figcaption {
   text-align: center;
+  width: 80%;
+  margin: 0.5rem auto 0;
+}
+figcaption,
+label {
   font-style: italic;
   font-size: 0.75rem;
   line-height: 1.3333333rem;
   color: rgba(0, 0, 0, 0.35);
-  width: 80%;
-  margin: 0.5rem auto 0;
 }
 
-/* Header */
+/* Headers */
 header {
   margin-bottom: 3rem;
 }
 
-/* Header <@> */
-header svg {
+/* Nav */
+nav {
+  margin-top: 3rem;
+}
+/* Nav <@> */
+nav svg {
   width: 5.25rem;
   margin-left: -0.5rem;
-  margin-top: -0.5rem; /* Optical align with header ul*/
+  margin-top: -0.5rem; /* Optical align with nav ul*/
 }
 
-/* Header navigation on right */
-header ul {
+/* Nav navigation on right */
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   float: right;
 }
-header ul li {
+nav ul li {
   display: inline-block;
   text-align: right;
   padding-left: 1rem;
@@ -184,7 +244,8 @@ span.post-meta, time {
 }
 
 /* Need 100% or they go full-size */
-img {
+img,
+video {
   width: 100%;
 }
 
@@ -210,16 +271,20 @@ img {
 }
 
 /* Top and bottom margins on all post media */
-.post-img,
 .intrinsic-container,
 .twitter-tweet {
   margin: 1.5rem auto;
 }
 
+.twitter-tweet {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* Fix */
+}
+
 /* Animations */
 h1,
-.post-header,
-.gallery-header {
+.post-header {
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
@@ -231,8 +296,7 @@ h1,
   animation-play-state: running;
 }
 .page-content section,
-.post-content,
-.gallery-content {
+.post-content {
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
