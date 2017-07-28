@@ -9,12 +9,43 @@ featured-image: in-utah-9.jpg
 Over the July 4 week my brother Noah and I traveled Utah. I think we did a pretty good job. Here are some highlights.
 
 {% include media-grid.html
-  type="tres"
+  type="tres-rapido"
   caption="This is the caption. This is the caption."
   media="
   in-utah-1.jpg
   in-utah-10.jpg
   in-utah-12.jpg" %}
+
+{% include media-grid.html
+  type="tres-lento"
+  caption="This is the caption. This is the caption."
+  media="
+  in-utah-2.jpg
+  in-utah-4.jpg
+  in-utah-5.jpg" %}
+
+{% include media-grid.html
+  type="tres-grande"
+  caption="This is the caption. This is the caption."
+  media="
+  in-utah-13.jpg
+  in-utah-15.jpg
+  in-utah-17.jpg" %}
+
+{% include media-grid.html
+  type="tres-alto"
+  caption="This is the caption. This is the caption."
+  media="
+  in-utah-6.jpg
+  in-utah-7.jpg
+  in-utah-9.jpg" %}
+
+{% include media-grid.html
+  type="dos-retrato"
+  caption="This is the caption. This is the caption."
+  media="
+  in-utah-11.jpg
+  in-utah-16.jpg" %}
 
 ---
 

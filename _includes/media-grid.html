@@ -8,7 +8,7 @@
 {% for item in media %}
   <figure>
   {% if item contains "mov" or item contains "mp4" %}
-    <video src="/assets/posts/{{ rootPath }}/{{ item }}" autoplay loop muted></video>
+    <video src="/assets/posts/{{ rootPath }}/{{ item }}" autoplay loop muted playsinline></video>
   {% else %}
     <img src="/assets/posts/{{ rootPath }}/{{ item }}"/>
   {% endif %}
