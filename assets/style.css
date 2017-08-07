@@ -21,6 +21,13 @@ body {
   margin: 0;
 }
 
+/*  Actual italicised typeface */
+figcaption,
+label,
+em {
+   font-family: "Input Sans Lt It";
+}
+
 nav,
 header,
 .home,
@@ -291,7 +298,7 @@ figcaption {
   margin: 0.5rem auto 0;
 }
 figcaption,
-label {
+label { /* labels are captions in non figure elements */
   font-style: italic;
   font-size: 0.75rem;
   line-height: 1.3333333rem;
