@@ -147,7 +147,8 @@ span.post-meta, time {
 }
 
 /* Need 100% or they go full-size */
-img {
+img,
+video {
   width: 100%;
 }
 
