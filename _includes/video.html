@@ -1,7 +1,8 @@
 {% capture rootPath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
 <!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
 <div class="post-img">
-  <video src="/assets/posts/{{ rootPath }}" playsinline controls muted></video>
+  {% assign attributes = include.attributes | split: " " %}
+  <video src="/assets/posts/{{ rootPath }}" {% for attribute in attributes %}{{ attribute }} {% endfor %}></video>
 
   <!-- Caption -->
   {% if include.caption %}

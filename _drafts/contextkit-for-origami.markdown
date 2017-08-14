@@ -8,4 +8,4 @@ feature-image: origami-interface.png
 
 App Open Component for Origami.
 
-{% include video.html name="Notification-and-SpringBoard-App.mp4" caption="Hi" attributes="muted" %}
+{% include video.html name="Notification-and-SpringBoard-App.mp4" caption="Hi" attributes="playsinline controls muted" %}
