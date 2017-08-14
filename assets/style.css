@@ -19,6 +19,14 @@ body {
   font-family: 'Input Sans Lt', sans-serif;
 }
 
+/*  Actual italicised typeface */
+figcaption,
+label,
+em {
+  /*td:nth-child(1)*/
+   font-family: "Input Sans Lt It";
+}
+
 /* Headers */
 h1 {
   font-size: 2.5rem;
@@ -48,6 +56,38 @@ p, ul, ol {
   line-height: 1.666667rem;
   letter-spacing: -0.04rem;
 }
+
+table {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.025);
+  font-size: 0.75rem;
+
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+th, td {
+  padding: 1.25rem;
+}
+
+td {
+  vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+  /*background-color: rgba(0, 0, 0, 0.02);*/
+}
+
+thead th:nth-child(1) {
+  width: 24%;
+}
+
 
 /* Links except for header <@> */
 /* Extended arguments not supported yet in browsers apart from Safari */
@@ -95,7 +135,8 @@ figure {
   margin: 0;
 }
 
-figcaption {
+figcaption,
+label { /* labels are captions in non figure elements */
   text-align: center;
   font-style: italic;
   font-size: 0.75rem;
@@ -176,7 +217,8 @@ video {
 /* Top and bottom margins on all post media */
 .post-img,
 .intrinsic-container,
-.twitter-tweet {
+.twitter-tweet,
+table {
   margin: 1.5rem auto;
 }
 
