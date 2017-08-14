@@ -3,18 +3,17 @@ layout: post
 type: article
 title:  "ContextKit for Origami"
 date:   2017-08-13 15:33:56 -0400
-feature-image: origami-interface.png
+feature-image: contextkit-og.jpg
 ---
 
-A few times now I’ve been in a situation where I should have focused more on the context of a prototype. That means thinking about, and actually visualising, entry points such as notifications, deep links, and cold app opens. Similarly, in user testing, I’ve had a few experiences where it would have been beneficial for the subject to open the ‘app’ themselves—not being presented with the prototype directly with a verbal explanation of how they might have got there.
+I'm not sure about you, but my experience in context-giving to user testing participants is verbal and pretty minimal. Those poor souls are thrust into a whole 'lotta newness without any digital illustration of how or why they got there.
 
-Why? I think scening affects peoples’ mental models.
+In retrospect, having that context included would have been beneficial. I think staging affects peoples' reception of digital products quite heavily. There's also something to be said about the app-as-a-service shift we're seeing.
 
-TLDR: Our prototyping and testing is usually devoid of context, where instead it can be important to illustrate digitally.
-
+To fill that gap, I've begun a resource called [ContextKit][github]. Hopefully it helps to aid staging and scening in your prototypes.
 
 ## Adding context with ContextKit
-I’ve started ContextKit with two components and one template. Each are dynamic and as native-feeling as I could get them. They cover some major entry-points for mobile apps:
+ContextKit currently includes two Origami components and one Origami template. Each are dynamic and as native-feeling as I could get them. They cover some major entry-points for mobile apps:
 
 - App open from SpringBoard (the home screen)
 - App open from a Notification
@@ -25,25 +24,7 @@ You can [download these components and template on GitHub][github]. For more inf
 ### SpringBoard App component
 A SpringBoard component for Origami. Adaptive for iPhone 7, iPhone 7 Plus, and iPhone SE. Not too much work to adapt for iPad, if you need to.
 
-*[VIDEO: customizing phone size, changing icon, app name, and most importantly—app contents]*
-*[CAPTION:]*
-
-| **Inputs** | **Description**                                                                                                      |
-| ---------- | -------------------------------------------------------------------------------------------------------------------- |
-| App Icon   | An image. Doesn’t need to be rounded—the component does that for you. Is displayed on SpringBoard (the home screen). |
-| App Name   | The name of your app. Is displayed on SpringBoard (the home screen).                                                 |
-| App Tint   | The predominant colour of your App Icon and app contents. Helps blend the animation between App Icon and full-app.   |
-| Open App   | Pulse to launch your app.                                                                                            |
-| Close App  | Pulse to close your app and return to SpringBoard.                                                                   |
-| Wallpaper  | An image. The default iOS water one if unspecified.                                                                  |
-
-| **Outputs**         | **Description**                                                                              |
-| ------------------- | -------------------------------------------------------------------------------------------- |
-| App Icon Down       | Boolean for detecting when App Icon is being pressed.                                        |
-| App Icon Pulse      | Pulses when App Icon is tapped.                                                              |
-| App Launch Progress | Progress (between 0 and 1) of your app being animated open (and closed). 1 being fully open. |
-| App Launched        | Boolean that returns true when App Launch Progress is 1.                                     |
-
+{% include video.html name="springboard-example.mp4" caption="Simple example of customising the SpringBoard component." attributes="playsinline controls muted loop" %}
 
 There’s quite a lot you can do with this component. If you go under the hood, you’ll see the ability to change the app icons and names to anything you like, as well as the placement of your own app (the *App Location* variable). Each SpringBoard item is placed by anchor rather than position. I’m using this calculation for the pivot; each icon will ‘spring out’ differently depending where it’s placed.
 
@@ -63,18 +44,6 @@ To open an app from the Notification component, simply use an Interaction patch 
 
 You don’t need to use it with my SpringBoard App component, if you just want to test with notifications.
 
-| **Inputs**           | **Description**                                                                                                      |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| App Icon             | An image. Doesn’t need to be rounded—the component does that for you. Is displayed on SpringBoard (the home screen). |
-| App Name             | The name of your app. Is displayed on SpringBoard (the home screen).                                                 |
-| Notification Subject | Optional subject text of the notification.                                                                           |
-| Notification Text    | The body text of the notification.                                                                                   |
-| Show Notification    | Pulse animate-in the notification.                                                                                   |
-| Hide Notification    | Pulse animate-out the notification.                                                                                  |
-| Timeout              | An image. The default iOS water one if unspecified.                                                                  |
-
-
-
 ### Deep Link template
 A simple template for emulating the app-switching behavior in iOS. Drop your prototype contents into the ‘Your App’ group, and customise the ‘Some Other App’ group to your heart’s content.
 
@@ -82,35 +51,32 @@ A simple template for emulating the app-switching behavior in iOS. Drop your pro
 
 
 ## Installation
-There are three ways to get these components and template on your setup. The most direct way is to download the ready-to-go files and riff off them. For more extensibility, follow either of the following:
+There are three ways to get these components and template on your setup. The most direct way is to [download the ready-to-go files](https://github.com/dannyalright/contextkit/tree/master/ContextKit) and riff off them. For more extensibility, follow either of the following:
 
 ### Download the components and add to your Patch Library
-Download the ready-to-go files and open each into Origami. Right-click on a component and then click ‘Add to User Patch Library…’.
+[Download a ready-to-go file](https://github.com/dannyalright/contextkit/tree/master/ContextKit) and open into Origami. Right-click on the component and then click _Add to User Patch Library…_.
 
-*[Image]*
+{% include image.html name="add-to-patch-library.jpg" %}
 
 Next time you click on the New Layer button (+), you should see the component appear.
 
 ### Download the system and open in Origami
-This is my recommended approach, if you plan to use these extensively. You can also set this up to automatically update. Download the ComponentKit system and open in Origami. Save…
+This is my recommended approach if you plan to use these extensively. [Clone or download the ComponentKit system][github] and open in Origami Studio. If you clone the repository, and choose _Install from Current Location_, the components can be updated automatically.
 
-*[Image]*
+{% include image.html name="install-system.jpg" alt="Installing the ContextKit system in Origami Studio." caption="Installing the ContextKit system in Origami Studio." %}
 
 Next time you click on the New Layer button (+), you should see all the components appear.
 
 
 ## Extending to Android and Framer
-
 I’ve done the bare minimum to validate whether ContextKit is actually useful; a handful of iOS-only components, only for Origami. If these prove useful, I plan to extend ContextKit to include Android, more entry-points, and at least Framer.
 
 
 ## iOS 10 → 11
-
 The current animation and visual styles are modeled from the latest iOS 11 Beta. There are some inevitable inconsistencies that will be ironed out as iOS 11 matures and releases publicly this September-ish.
 
 
 ## Feedback
-
-…Is welcome. I have some ideas of what can be extended or improved, but I need a bit of a push to get it done.
+…is welcome. I have some ideas of what can be extended or improved, but I need a bit of a push to get it done.
 
 [github]:https://github.com/dannyalright/contextkit/
