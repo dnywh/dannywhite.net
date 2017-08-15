@@ -63,6 +63,7 @@ header,
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 2rem;
+  line-height: 0;
 }
 
 .grid figure {
@@ -277,9 +278,9 @@ p + p {
 
 /* Lists */
 ul {
-  margin-left: 40px;
-  /* Fix */
+  list-style-position: inside;
 }
+
 /* line breaks */
 hr {
   border-style: solid;
@@ -379,14 +380,13 @@ video {
 
 /* Top and bottom margins on all post media */
 .intrinsic-container,
-.twitter-tweet {
+.tweet {
   margin: 1.5rem auto;
 }
 
-.twitter-tweet {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  /* Fix */
+.tweet > iframe {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Animations */
