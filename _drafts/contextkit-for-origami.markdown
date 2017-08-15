@@ -24,7 +24,9 @@ A SpringBoard component for Origami. Adaptive for iPhone 7, iPhone 7 Plus, and i
 
 {% include video.html name="springboard-example.mp4" caption="Simple example of customising the SpringBoard component." attributes="playsinline controls muted loop" %}
 
-There’s quite a lot you can do with this component. If you go under the hood, you’ll see the ability to change the app icons and names to anything you like, as well as the placement of your own app (the *App Location* variable). Each SpringBoard item is positioned by the anchor property, rather than the X and Y position properties. I’m also using this calculation for the app icon pivot; each icon will ‘spring out’ differently depending where it’s placed.
+There’s quite a lot you can do with this component. If you go under the hood, you’ll see the ability to change the app icons and names to anything you like, as well as the placement of your own app (the *App Location* variable).
+
+Each SpringBoard item is positioned by the anchor property, rather than the X and Y position properties. I’m also using this calculation for the app icon pivot; each icon will ‘spring out’ differently depending where it’s placed.
 
 {% include video.html name="pivot-example.mp4" caption="A test composition that shows this dynamism nicely. Feel free to move your own app to whatever position makes sense." attributes="playsinline controls muted loop" %}
 
@@ -50,17 +52,17 @@ A simple template for emulating the app-switching behavior in iOS. Drop your pro
 
 
 ## Installation
-There are three ways to get access to these components and template. The most direct way is to [download the ready-to-go files](https://github.com/dannyalright/contextkit/tree/master/ContextKit) and riff from them. For more extensibility, follow either of the following:
+There are three ways to get access to these components and template. The most direct way is to [download the ready-to-go files](https://github.com/dannyalright/contextkit/tree/master/origami/ContextKit) and riff from them. For more extensibility, follow either of the following:
 
 ### Download the components and add to your Patch Library
-[Download a ready-to-go file](https://github.com/dannyalright/contextkit/tree/master/ContextKit) and open into Origami. Right-click on the component and then click _Add to User Patch Library…_.
+[Download a ready-to-go file](https://github.com/dannyalright/contextkit/tree/master/origami/ContextKit) and open into Origami. Right-click on the component and then click _Add to User Patch Library…_.
 
 {% include image.html name="add-to-patch-library.jpg" %}
 
 Next time you click on the New Layer button (+), you should see the component appear. This approach is good for quick-yet-global access across documents.
 
 ### Download the system and open in Origami
-This is my recommended approach if you plan to use these extensively. [Clone or download the ComponentKit system][github] and open in Origami Studio. If you clone the repository, and choose _Install from Current Location_, the components can be updated automatically[^githubsync].
+This is my recommended approach if you plan to use these extensively. [Clone or download the ComponentKit system](https://github.com/dannyalright/contextkit/tree/master/origami) and open in Origami Studio. If you clone the repository, and choose _Install from Current Location_, the components can be updated automatically[^githubsync].
 
 {% include image.html name="install-system.jpg" alt="Installing the ContextKit system in Origami Studio." caption="Installing the ContextKit system in Origami Studio." %}
 
@@ -74,6 +76,10 @@ I’ve done the bare minimum to validate whether ContextKit is actually useful; 
 ## iOS 10 → 11
 The current animation and visual styles are modeled from the latest iOS 11 Beta. There are some inevitable inconsistencies that will be ironed out as iOS 11 matures and releases publicly this September-ish.
 
+## Detailed documentation
+Information on each component's inputs and outputs is available inside its respective tool's directory. So far that includes:
+- [iOS Notification component for Origami](https://github.com/dannyalright/contextkit/blob/master/origami/notification.md)
+- [iOS SpringBoard App component for Origami](https://github.com/dannyalright/contextkit/blob/master/origami/springboard-app.md)
 
 ## Feedback
 …is welcome. I have some ideas of what can be extended or improved, but I need a bit of a push to get it done.
