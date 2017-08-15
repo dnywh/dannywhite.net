@@ -6,11 +6,9 @@ date:   2017-08-13 15:33:56 -0400
 feature-image: contextkit-og.jpg
 ---
 
-I'm not sure about you, but my experience in context-giving to user testing participants is verbal and pretty minimal. Those poor souls are thrust into a whole 'lotta newness without any digital illustration of how or why they got there.
+Picture this: you’re led to an unfamiliar room in an unfamiliar building, and sat-down in front of a mobile device. Some person called a ‘researcher’ or ‘product designer’ presses a few buttons, and then wham—you have something called a ‘prototype’ in front of you and a short verbal description as to why.
 
-In retrospect, having that context included would have been beneficial. I think staging affects peoples' reception of digital products quite heavily. There's also something to be said about the app-as-a-service shift we're seeing.
-
-To fill that gap, I've begun a resource called [ContextKit][github]. Hopefully it helps to aid staging and scening in your prototypes.
+I have a hypothesis that the more exposure (and feedback) a person has around the core app experience, the better. To test this hypothesis, I’ve built a resource called [ContextKit][github].
 
 ## Adding context with ContextKit
 ContextKit currently includes two Origami components and one Origami template. Each are dynamic and as native-feeling as I could get them. They cover some major entry-points for mobile apps:
@@ -26,11 +24,12 @@ A SpringBoard component for Origami. Adaptive for iPhone 7, iPhone 7 Plus, and i
 
 {% include video.html name="springboard-example.mp4" caption="Simple example of customising the SpringBoard component." attributes="playsinline controls muted loop" %}
 
-There’s quite a lot you can do with this component. If you go under the hood, you’ll see the ability to change the app icons and names to anything you like, as well as the placement of your own app (the *App Location* variable). Each SpringBoard item is placed by anchor rather than position. I’m using this calculation for the pivot; each icon will ‘spring out’ differently depending where it’s placed.
+There’s quite a lot you can do with this component. If you go under the hood, you’ll see the ability to change the app icons and names to anything you like, as well as the placement of your own app (the *App Location* variable). Each SpringBoard item is positioned by the anchor property, rather than the X and Y position properties. I’m also using this calculation for the app icon pivot; each icon will ‘spring out’ differently depending where it’s placed.
 
 {% include video.html name="pivot-example.mp4" caption="A test composition that shows this dynamism nicely. Feel free to move your own app to whatever position makes sense." attributes="playsinline controls muted loop" %}
 
-I spent a fair bit of timing doing what I thought was optimizing. Turns out that hardcoding assets and removing functionality doesn’t do too much for that cause. Feel free to [download the iPhone 7-only version](https://github.com/dannyalright/contextkit/blob/master/examples/SpringBoard%20App%20iPhone%207.origami) if you want to take a look or see what else can be stripped-out.
+#### Optimization
+It turns out that hardcoding assets and removing functionality doesn’t do too much for reducing file size. Feel free to [download the iPhone 7-only version](https://github.com/dannyalright/contextkit/blob/master/examples/SpringBoard%20App%20iPhone%207.origami) if you want to take a look or see what else can be stripped-out.
 
 
 ### Notification component
@@ -51,17 +50,17 @@ A simple template for emulating the app-switching behavior in iOS. Drop your pro
 
 
 ## Installation
-There are three ways to get these components and template on your setup. The most direct way is to [download the ready-to-go files](https://github.com/dannyalright/contextkit/tree/master/ContextKit) and riff off them. For more extensibility, follow either of the following:
+There are three ways to get access to these components and template. The most direct way is to [download the ready-to-go files](https://github.com/dannyalright/contextkit/tree/master/ContextKit) and riff from them. For more extensibility, follow either of the following:
 
 ### Download the components and add to your Patch Library
 [Download a ready-to-go file](https://github.com/dannyalright/contextkit/tree/master/ContextKit) and open into Origami. Right-click on the component and then click _Add to User Patch Library…_.
 
 {% include image.html name="add-to-patch-library.jpg" %}
 
-Next time you click on the New Layer button (+), you should see the component appear.
+Next time you click on the New Layer button (+), you should see the component appear. This approach is good for quick-yet-global access across documents.
 
 ### Download the system and open in Origami
-This is my recommended approach if you plan to use these extensively. [Clone or download the ComponentKit system][github] and open in Origami Studio. If you clone the repository, and choose _Install from Current Location_, the components can be updated automatically.
+This is my recommended approach if you plan to use these extensively. [Clone or download the ComponentKit system][github] and open in Origami Studio. If you clone the repository, and choose _Install from Current Location_, the components can be updated automatically[^githubsync].
 
 {% include image.html name="install-system.jpg" alt="Installing the ContextKit system in Origami Studio." caption="Installing the ContextKit system in Origami Studio." %}
 
@@ -78,5 +77,7 @@ The current animation and visual styles are modeled from the latest iOS 11 Beta.
 
 ## Feedback
 …is welcome. I have some ideas of what can be extended or improved, but I need a bit of a push to get it done.
+
+[^githubsync]: Assuming you sync the local copy of the repository from time-to-time.
 
 [github]:https://github.com/dannyalright/contextkit/
