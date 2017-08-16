@@ -53,18 +53,14 @@ We often heard from runners that touch-screen interfaces are frustrating, and th
 
 If screen-based interfaces are the today’s medium for data collection and feedback, how can we make interacting with them less frustrating and mentally-taxing? We made a series of prototypes using [Framer](http://framer.com), that allowed to ideate in the wild. We found that a focus on core workout controls (start, pause, resume, stop) work best.
 
-<div class="intrinsic-container">
-  <iframe src="https://player.vimeo.com/video/151453518" frameborder="0" allowfullscreen=""></iframe>
-</div>
+{% include iframe-video.html link="https://player.vimeo.com/video/151453518" %}
 
 Early trials brought unforeseen challenges such as variety in how people carry their device and also helped clarify what assumptions we had left to validate; such as how haptic (vibration) may support interactions.
 
 ### In-run Feedback Based on Environmental and Behavioral Factors
 What environmental triggers could we leverage to provide a user with actionable (and useful) feedback in-run? How could this feedback enhance a run? We experimented with audio and haptic feedback across a variety of in-run events and updates.
 
-<div class="intrinsic-container">
-  <iframe src="https://player.vimeo.com/video/151435603" frameborder="0" allowfullscreen=""></iframe>
-</div>
+{% include iframe-video.html link="https://player.vimeo.com/video/151435603" %}
 
 We also explored how data both collected from past runs and the environment could predict scenarios in which a runner would feel fatigue, need to change course, or adjust form. Pulling weather forecasts, traffic updates, and satellite images of the running paths alone would provide runners with insights as to when and where to workout, how to avoid injury, and even provide a user with tips on how to power up a tough hill.
 

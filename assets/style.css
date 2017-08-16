@@ -55,8 +55,6 @@ header,
 }
 
 
-
-
 /* Grids, mobile first */
 .grid {
   /* All grid cells conform to the overall 6-column grid */
@@ -207,11 +205,6 @@ header,
   }
 }
 
-
-
-
-
-
 /*  Actual italicised typeface */
 figcaption,
 label,
@@ -240,6 +233,13 @@ h3 {
   margin-bottom: -0.5rem;
 }
 
+h4 {
+  margin-top: 2rem;
+  letter-spacing: -0.05rem;
+  line-height: 1.5rem;
+  margin-bottom: -0.75rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; /* not bold */
 }
@@ -258,7 +258,8 @@ h1 a,
 h2 a,
 p a,
 li a,
-figcaption a {
+figcaption a,
+label a {
   text-decoration: none;
   color: inherit;
   background-color: rgba(0, 0, 0, 0.05);
@@ -270,7 +271,8 @@ h1 a:hover,
 h2 a:hover,
 p a:hover,
 li a:hover,
-figcaption a:hover {
+figcaption a:hover,
+label a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -301,12 +303,18 @@ figure {
   margin: 0;
 }
 
+/* labels are captions in non figure elements */
+.container-md > label {
+  display: block;
+}
+
 figcaption,
-label { /* labels are captions in non figure elements */
+.container-md > label {
   text-align: center;
   width: 80%;
   margin: 0.5rem auto 0;
 }
+
 figcaption,
 label { /* labels are captions in non figure elements */
   font-style: italic;
@@ -370,21 +378,25 @@ video {
 /*https://benmarshall.me/responsive-iframes/*/
 .intrinsic-container {
   position: relative;
-  height: 0;
-  overflow: hidden;
 }
 
 /* 16x9 Aspect Ratio */
-.intrinsic-container {
-  padding-bottom: 56.25%;
+.intrinsic-container:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
 }
 
-.intrinsic-container iframe {
+.intrinsic-container > iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
+
 }
 
 /* Top and bottom margins on all post media */

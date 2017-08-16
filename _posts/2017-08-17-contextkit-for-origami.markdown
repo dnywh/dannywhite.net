@@ -2,7 +2,7 @@
 layout: post
 type: article
 title:  "ContextKit for Origami"
-date:   2017-08-13 15:33:56 -0400
+date:   2017-08-17 11:08:01 -0400
 feature-image: contextkit-og.jpg
 ---
 
@@ -30,7 +30,7 @@ Each SpringBoard item is positioned by the anchor property, rather than the X an
 
 {% include video.html name="pivot-example.mp4" caption="A test composition that shows this dynamism nicely. Feel free to move your own app to whatever position makes sense." attributes="playsinline controls muted loop" %}
 
-#### Optimization
+#### Optimisation
 It turns out that hardcoding assets and removing functionality doesn’t do too much for reducing file size. Feel free to [download the iPhone 7-only version](https://github.com/dannyalright/contextkit/blob/master/examples/SpringBoard%20App%20iPhone%207.origami) if you want to take a look or see what else can be stripped-out.
 
 
