@@ -13,7 +13,9 @@ Having Framer in my back pocket was a huge asset whilst doing freelance product 
 
 I met Koen and Jorn (founders of Framer) shortly after joining ustwo. A month or so later I had Framer NYC set up and ready to go for November 5th, 2015. A relevant throwback:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/itsleesimpson">@itsleesimpson</a> <a href="https://twitter.com/phillackmaker">@phillackmaker</a> @aloookat <a href="https://twitter.com/framerjs">@framerjs</a> FTW 👊 <a href="https://t.co/4S7wcZplU3">pic.twitter.com/4S7wcZplU3</a></p>&mdash; ɪˈfɛm(ə)r(ə)l,ɪˈfiːm (@millsustwo) <a href="https://twitter.com/millsustwo/status/682348312222130176">December 30, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/itsleesimpson">@itsleesimpson</a> <a href="https://twitter.com/phillackmaker">@phillackmaker</a> @aloookat <a href="https://twitter.com/framerjs">@framerjs</a> FTW 👊 <a href="https://t.co/4S7wcZplU3">pic.twitter.com/4S7wcZplU3</a></p>&mdash; ɪˈfɛm(ə)r(ə)l,ɪˈfiːm (@millsustwo) <a href="https://twitter.com/millsustwo/status/682348312222130176">December 30, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 Two resources that helped start me off were [Setting up a technical meet-up, a framer case-study](https://blog.framer.com/how-to-host-to-a-framer-session-9e887ce6d7d1) and the format from Framer Seattle [from around that time](https://www.facebook.com/events/1704332906452240/). Things were adapted once we had a few Sessions under our belt, but the general approaches have more or less stuck.
 
@@ -58,9 +60,13 @@ Demo something that *you* have done with new Framer features (which there almost
 
 Have any special guests in town? Have them demo something[^specialguests]. This is something we're still figuring out, but right now I'd say to do this *after* people do their individual demos[^ordering].
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">action shot from last nights <a href="https://twitter.com/framerjs">@framerjs</a> meetup at <a href="https://twitter.com/ustwo">@ustwo</a> nyc! a+ vibes would hang out again 👌 <a href="https://t.co/OADKOVwrmh">pic.twitter.com/OADKOVwrmh</a></p>&mdash; George Kedenburg III (@GK3) <a href="https://twitter.com/GK3/status/753582943336030208">July 14, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">action shot from last nights <a href="https://twitter.com/framerjs">@framerjs</a> meetup at <a href="https://twitter.com/ustwo">@ustwo</a> nyc! a+ vibes would hang out again 👌 <a href="https://t.co/OADKOVwrmh">pic.twitter.com/OADKOVwrmh</a></p>&mdash; George Kedenburg III (@GK3) <a href="https://twitter.com/GK3/status/753582943336030208">July 14, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Tomorrow our NYC studio is hosting &quot;Making <a href="https://twitter.com/framerjs">@FramerJS</a>&quot; with the man himself, <a href="https://twitter.com/koenbok">@koenbok</a>! RSVP: <a href="https://t.co/qLbSbukT1C">https://t.co/qLbSbukT1C</a> <a href="https://t.co/UXn6XJRcPT">pic.twitter.com/UXn6XJRcPT</a></p>&mdash; ustwo (@ustwo) <a href="https://twitter.com/ustwo/status/740188709723770880">June 7, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Tomorrow our NYC studio is hosting &quot;Making <a href="https://twitter.com/framerjs">@FramerJS</a>&quot; with the man himself, <a href="https://twitter.com/koenbok">@koenbok</a>! RSVP: <a href="https://t.co/qLbSbukT1C">https://t.co/qLbSbukT1C</a> <a href="https://t.co/UXn6XJRcPT">pic.twitter.com/UXn6XJRcPT</a></p>&mdash; ustwo (@ustwo) <a href="https://twitter.com/ustwo/status/740188709723770880">June 7, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 
 ### 4. Skill-level breakouts (> 30 min)
@@ -96,7 +102,10 @@ Again, refer to [Setting up a technical meet-up, a framer case-study](https://bl
 
 The most successful (collaborative, diverse, consistent turn-outs), consistent Framer meetup I’ve seen is [Framer Seattle](http://facebook.com/groups/framerjs.seattle/), run by [Stephen Crowley](https://twitter.com/stephenncrowley) and [Jordan Dobson](https://twitter.com/jordandobson). There is probably a thriving Framer meetup [close to you](http://framer.com/community/meetups/), too.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks y&#39;all for making last night great. Until next time <a href="https://twitter.com/framerjs">@framerjs</a> <a href="https://twitter.com/ustwo">@ustwo</a> <a href="https://t.co/gK6bLW9L6d">pic.twitter.com/gK6bLW9L6d</a></p>&mdash; Danny White (@dannyalright) <a href="https://twitter.com/dannyalright/status/687705898391891969">January 14, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks y&#39;all for making last night great. Until next time <a href="https://twitter.com/framerjs">@framerjs</a> <a href="https://twitter.com/ustwo">@ustwo</a> <a href="https://t.co/gK6bLW9L6d">pic.twitter.com/gK6bLW9L6d</a></p>&mdash; Danny White (@dannyalright) <a href="https://twitter.com/dannyalright/status/687705898391891969">January 14, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 [^recruiting]: Our most recent Framer Sessions (led by Noah) was at ClassPass. They had a recruiter float in sessions. Not at all interruptive; instead making the most of having so many talented people in one room.
 [^rsvp]: Of those who RSVPed yes or expressed interested.

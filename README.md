@@ -6,7 +6,8 @@ This site uses [Jekyll](https://github.com/jekyll/jekyll) (actually all github.i
 ## Notable features
 Things I've added onto or tweaked from the standard Jekyll theme, layouts, includes, etc:
 
-- `image.html` include for inserting HTML `figure` elements, with automatic image directory hjandling
+- `image.html` include for inserting HTML `figure` elements, with automatic image directory handling
+- `media-grid` include for inserting gridded media of any format, with editorial layouts as `type` to choose from
 - auto-forwarding pages (e.g. [dannywhite.is/making](dannywhite.is/making))
 - Open Graph in Jekyll
 - Prettify URL slugs
