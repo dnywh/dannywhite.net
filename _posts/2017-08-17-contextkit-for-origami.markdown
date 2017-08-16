@@ -37,7 +37,7 @@ It turns out that hardcoding assets and removing functionality doesn’t do too 
 ### Notification component
 A drop-down notification component for Origami. Uses responsive-sizing, so can be used on an iPad, too.
 
-{% include video.html name="notification-and-springboard-app.mp4" caption="The Notification component tied to the SpringBoard App component." attributes="playsinline controls muted" %}
+{% include video.html name="notification-springboard-app.mp4" caption="The Notification component tied to the SpringBoard App component." attributes="playsinline controls muted" %}
 
 To open an app from the Notification component, simply use an Interaction patch with Notification as the target layer and connect it to the Open App input on the SpringBoard App component.
 
