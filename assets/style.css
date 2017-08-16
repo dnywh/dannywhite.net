@@ -212,6 +212,14 @@ header,
 
 
 
+/*  Actual italicised typeface */
+figcaption,
+label,
+em {
+  /*td:nth-child(1)*/
+   font-family: "Input Sans Lt It";
+}
+
 /* Headers */
 h1 {
   font-size: 2.5rem;
@@ -293,7 +301,8 @@ figure {
   margin: 0;
 }
 
-figcaption {
+figcaption,
+label { /* labels are captions in non figure elements */
   text-align: center;
   width: 80%;
   margin: 0.5rem auto 0;
