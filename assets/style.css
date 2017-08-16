@@ -12,12 +12,205 @@ hr, greyscale background-color:   rgba(0, 0, 0, 0.1)
   /* Only supported in Firefox right now */
 }
 
-body {
-  max-width: 40rem; /* 640px */
-  margin: 3rem auto;
-  padding: 0 1rem;
-  font-family: 'Input Sans Lt', sans-serif;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Input Sans Lt', sans-serif;
+  margin: 0;
+}
+
+/*  Actual italicised typeface */
+figcaption,
+label,
+em {
+   font-family: "Input Sans Lt It";
+}
+
+nav,
+header,
+.home,
+.post-content > div > * {
+  max-width: 40rem; /* 640px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.post-content > div > .container-lg {
+  max-width: 90rem; /* 1440px */
+  max-width: 1200px;
+  margin: 1.5rem auto; /* Break bounds of body margin */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.post-content > div > .container-md {
+  max-width: 48rem; /* 768px */
+  margin: 1.5rem auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+
+/* Grids, mobile first */
+.grid {
+  /* All grid cells conform to the overall 6-column grid */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  line-height: 0;
+}
+
+.grid figure {
+  background-color: lightgreen;
+}
+.grid img {
+  object-fit: cover;
+  object-position: top;
+}
+
+.grid label {
+  /*padding-right: 1rem;*/
+  /*is there a way to detect if the edge of screen is on left or right, dynamically?*/
+}
+
+/* grid-dos-retrato: A 2-photo portrait grid style */
+.grid-dos-retrato figure {
+  grid-column: span 3;
+}
+/* grid-dos-retrato caption */
+.grid-dos-retrato label {
+  grid-column: 2/6;
+  text-align: center;
+}
+
+/* grid-tres-rapido: A 3-photo grid style for editorial */
+.grid-tres-rapido figure:nth-child(1) {
+  grid-column: 1/7;
+  grid-row: 1;
+}
+.grid-tres-rapido figure:nth-child(2) {
+  grid-column: 1/5;
+  grid-row: 2;
+}
+.grid-tres-rapido figure:nth-child(3) {
+  grid-column: 1/7;
+  grid-row: 3;
+}
+/* grid-tres-rapido caption */
+.grid-tres-rapido label {
+  grid-column: 5/7;
+  grid-row: 2;
+}
+
+/* grid-tres-lento: A 3-photo grid style for editorial */
+.grid-tres-lento figure:nth-child(1) {
+  grid-column: 3/7;
+  grid-row: 1;
+}
+.grid-tres-lento figure:nth-child(2) {
+  grid-column: 4/7;
+  grid-row: 2;
+}
+.grid-tres-lento figure:nth-child(3) {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+/* grid-tres-lento caption */
+.grid-tres-lento label {
+  grid-column: 1/3;
+  grid-row: 1;
+  text-align: right;
+}
+
+/* grid-tres-alto: A 3-photo grid style for editorial */
+.grid-tres-alto figure {
+  grid-column: span 3;
+}
+/* grid-tres-alto caption */
+.grid-tres-alto label {
+  grid-column: 4/7;
+}
+
+/* grid-tres-grande: A 3-photo grid style for editorial */
+.grid-tres-grande figure:nth-child(1) {
+  grid-column: 1/5;
+  grid-row: span 2;
+}
+
+.grid-tres-grande figure:nth-child(2),
+.grid-tres-grande figure:nth-child(3){
+  grid-column: 5/7;
+}
+/* grid-tres-grande caption */
+.grid-tres-grande label {
+  grid-column: 2/5;
+  text-align: right;
+}
+
+/* grid-seis: A 6-photo grid style for Instagram photos */
+.grid-seis figure {
+  grid-column: span 2;
+}
+/* grid-seis caption */
+.grid-seis label {
+  grid-column: 2/6;
+  /*grid-row: 5;*/
+  text-align: center;
+}
+
+
+/* Tweaks for larger screens */
+@media only screen and (min-width: 640px)  {
+  /* grid-tres-rapido: A 3-photo grid style for editorial */
+  .grid-tres-rapido figure:nth-child(1) {
+    grid-column: 1/5;
+    grid-row: 1;
+  }
+  .grid-tres-rapido figure:nth-child(2) {
+    grid-column: 5/7;
+    grid-row: 1;
+  }
+  .grid-tres-rapido figure:nth-child(3) {
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+  /* grid-seis caption */
+  .grid-tres-rapido label {
+    grid-column: 5/7;
+    grid-row: 2;
+  }
+
+  /* grid-tres-alto: A 3-photo grid style for editorial */
+  .grid-tres-alto figure {
+    grid-column: span 2;
+  }
+  /* grid-tres-alto caption */
+  .grid-tres-alto label {
+    grid-column: 1/3;
+  }
+
+  /* grid-seis: A 6-photo grid style for Instagram photos */
+  .grid-seis figure {
+    grid-column: span 1;
+  }
+  /* grid-seis caption */
+  .grid-seis label {
+    grid-column: 5/7;
+    grid-row: 2;
+    text-align: left;
+  }
+}
+
+
+
+
+
 
 /*  Actual italicised typeface */
 figcaption,
@@ -37,7 +230,7 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 0.75rem;
   letter-spacing: -0.06rem;
-  line-height: 1rem;
+  line-height: 1.84rem;
 }
 
 h3 {
@@ -57,42 +250,10 @@ p, ul, ol {
   letter-spacing: -0.04rem;
 }
 
-table {
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.025);
-  font-size: 0.75rem;
-
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th {
-  font-size: 1rem;
-  font-weight: lighter;
-}
-
-th, td {
-  padding: 1.25rem;
-}
-
-td {
-  vertical-align: top;
-}
-
-tbody tr:nth-child(odd) {
-  /*background-color: rgba(0, 0, 0, 0.02);*/
-}
-
-thead th:nth-child(1) {
-  width: 24%;
-}
-
-
-/* Links except for header <@> */
+/* Links except for nav <@> */
 /* Extended arguments not supported yet in browsers apart from Safari */
 /* See https://developer.mozilla.org/en-US/docs/Web/CSS/:not#Browser_compatibility */
-/*a:not(header a:first-of-type) {*/
+/*a:not(nav a:first-of-type) {*/
 h1 a,
 h2 a,
 p a,
@@ -104,7 +265,7 @@ figcaption a {
   transition: background-color 0.3s ease;
 }
 
-/*a:not(header a:first-of-type):hover {*/
+/*a:not(nav a:first-of-type):hover {*/
 h1 a:hover,
 h2 a:hover,
 p a:hover,
@@ -123,6 +284,11 @@ p + p {
   text-indent: 1.5rem;
 }
 
+/* Lists */
+ul {
+  list-style-position: inside;
+}
+
 /* line breaks */
 hr {
   border-style: solid;
@@ -138,34 +304,41 @@ figure {
 figcaption,
 label { /* labels are captions in non figure elements */
   text-align: center;
+  width: 80%;
+  margin: 0.5rem auto 0;
+}
+figcaption,
+label { /* labels are captions in non figure elements */
   font-style: italic;
   font-size: 0.75rem;
   line-height: 1.3333333rem;
   color: rgba(0, 0, 0, 0.35);
-  width: 80%;
-  margin: 0.5rem auto 0;
 }
 
-/* Header */
+/* Headers */
 header {
   margin-bottom: 3rem;
 }
 
-/* Header <@> */
-header svg {
+/* Nav */
+nav {
+  margin-top: 3rem;
+}
+/* Nav <@> */
+nav svg {
   width: 5.25rem;
   margin-left: -0.5rem;
-  margin-top: -0.5rem; /* Optical align with header ul*/
+  margin-top: -0.5rem; /* Optical align with nav ul*/
 }
 
-/* Header navigation on right */
-header ul {
+/* Nav navigation on right */
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   float: right;
 }
-header ul li {
+nav ul li {
   display: inline-block;
   text-align: right;
   padding-left: 1rem;
@@ -215,23 +388,19 @@ video {
 }
 
 /* Top and bottom margins on all post media */
-.post-img,
 .intrinsic-container,
-.twitter-tweet,
-table {
+.tweet {
   margin: 1.5rem auto;
 }
 
-/* Gallery layout */
-.gallery-header,
-.gallery-content {
-  text-align: center;
+.tweet > iframe {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Animations */
 h1,
-.post-header,
-.gallery-header {
+.post-header {
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
@@ -243,8 +412,7 @@ h1,
   animation-play-state: running;
 }
 .page-content section,
-.post-content,
-.gallery-content {
+.post-content {
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
