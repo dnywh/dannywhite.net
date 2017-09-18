@@ -16,7 +16,9 @@ The official Origami [tutorials](http://origami.design/tutorials/) and [examples
 
 [^facebook]: Kara, Myles, etc. Seriously so many, and everyone is great, but I've gotta stop somewhere.
 
-### Update (24/11)
+---
+
+## Update (24/11)
 The full video of my demo has been uploaded on [Vimeo](https://vimeo.com/192805834). The other demos are under the [same username](https://vimeo.com/facebookorigami).
 
 {% include iframe-video.html link="https://player.vimeo.com/video/192805834" %}
