@@ -371,10 +371,15 @@ span.post-meta, time {
 img,
 video {
   width: 100%;
+  height: 100%;
 }
 
 /* iframes */
-/*https://benmarshall.me/responsive-iframes/*/
+/*
+  https://benmarshall.me/responsive-iframes/
+  superseeded by...
+  https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+*/
 .intrinsic-container {
   position: relative;
 }
