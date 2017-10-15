@@ -3,6 +3,7 @@ layout: post
 type: article
 title: "Test Post From iPad"
 date:   2017-10-13 15:33:56 -0400
+featured-image: leaves.jpg
 ---
 
 This is a test post, written and published from my iPad. Here’s a nice photo:
