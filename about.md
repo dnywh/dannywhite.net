@@ -9,7 +9,16 @@ featured-image: danny-white.jpg
 
 Originally from Australia, I've been living and working in NYC for the last two years.
 
-Right now my interests lie in prototyping and systems design. I'm also trying to figure out ways to tie my core competencies to environmentalism. I'm always open to speaking engagements and running prototyping sessions (Origami or Framer).
+Right now my interests lie in prototyping and systems design. I'm also trying to figure out ways to tie my core competencies to environmentalism. I'm always open to speaking engagements and prototyping sessions.
+
+## Events
+- [Framer Sessions New York](https://framer.com/community/) (2015–present)
+- [General Assembly guest lectures](https://generalassemb.ly/education/user-experience-design-immersive) (2016)
+
+## Projects
+- [ContextKit](http://dannywhite.is/contextkit-for-origami)
+- [Aussie American](http://dannywhite.is/aussie-american)
+- [Branded Interactions](https://github.com/ustwo/branded-interactions)
 
 ## Elsewhere
 - [Twitter][twitter]
@@ -27,6 +36,14 @@ I try to keep a running deck of what I'm working on at [dannywhite.is/making][ma
 
 For my full CV, see [dannywhite.is/cv][cv]. Same deal there with request-access.
 
+## Select clients
+- Facebook
+- AT&T
+- Google
+- Nike
+- GE
+- NYC Mayors Office
+- Commonwealth Bank
 
 
 
