@@ -2,27 +2,64 @@
 layout: default
 ---
 
-<div class="home">
+<p><strong>Danny White</strong> is an Australian product designer currently based in New York City.</p>
+
+<h2>Currently</h2>
+<ul>
+  <li>Senior Product Designer, Kickstarter, New York</li>
+  <li>Re-learning German</li>
+  <li>Pondering human extinction due to human-induced climate change</li>
+</ul>
+
+<h2>Words</h2>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    {% assign date_format = "%b %Y" %}
+    ({{ post.date | date: date_format }})
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Events</h2>
+<ul>
+  <li><a href="https://framer.com/community/">Framer Sessions New York</a> (2015–present)</li>
+  <li><a href="https://generalassemb.ly/education/user-experience-design-immersive">General Assembly guest lectures</a> (2016)</li>
+</ul>
+
+<h2>Projects</h2>
+<ul>
+  <li><a href="http://dannywhite.is/contextkit-for-origami">ContextKit</a></li>
+  <li><a href="http://dannywhite.is/aussie-american">Aussie American</a></li>
+  <li><a href="https://github.com/ustwo/branded-interactions">Branded Interactions</a></li>
+</ul>
+
+<h2>Elsewhere</h2>
+<ul>
+  <li><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x77;&#104;&#x69;&#x74;&#x65;&#46;&#x64;&#x61;&#x6e;&#105;&#x65;&#108;&#x2e;&#106;&#x61;&#x6d;&#x65;&#x73;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">Email</a></li>
+  <!-- http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/ -->
+  <li><a href="https://twitter.com/dannyalright">Twitter</a></li>
+  <li><a href="https://instagram.com/dannywhite/">Instagram</a></li>
+  <li><a href="https://github.com/dannyalright">GitHub</a></li>
+  <li><a href="https://pinterest.com/dannyalright/pins/">Pinterest</a></li>
+  <li><a href="https://linkedin.com/in/dannyalright/">LinkedIn</a></li>
+</ul>
 
 
-  <h1>Danny White is a product designer in NYC. He <s>works with the lovely bunch at ustwo</s> is starting something new at <a href="https://www.kickstarter.com/about">Kickstarter</a>.</h1>
+<h2>Past gigs &amp; clients</h2>
+<ul>
+  <li>ustwo</li>
+  <li>Facebook</li>
+  <li>AT&amp;T</li>
+  <li>Google</li>
+  <li>Nike</li>
+  <li>GE</li>
+  <li>NYC Mayors Office</li>
+  <li>Commonwealth Bank</li>
+</ul>
 
-  {{ content }}
+<h2 id="portfolio--cv">Portfolio &amp; CV</h2>
+<p>I try to keep a running deck of what I’m working on at <a href="http://dannywhite.is/making">dannywhite.is/making</a>. It’s private, meaning you’ll need to request access before seeing its contents.</p>
 
-    {% for post in site.posts %}
-
-        <section>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <p>
-          {{ post.excerpt | strip_html | truncatewords: 30 }}
-          <a href="{{ post.url | relative_url }}">&#8594;</a>
-        </p>
-
-      </section>
-
-    {% endfor %}
-
-</div>
+<p>For my full CV, see <a href="http://dannywhite.is/cv">dannywhite.is/cv</a>. Same deal there with request-access.</p>

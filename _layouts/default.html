@@ -4,7 +4,9 @@
   {% include head.html %}
 
   <body>
+    {% comment %}
     {% include nav.html %}
+    {% endcomment %}
 
 
     <main class="page-content" aria-label="Content">
@@ -13,7 +15,9 @@
       </div>
     </main>
 
+    {% comment %}
     {% include footer.html %}
+    {% endcomment %}
 
     {% if jekyll.environment == "production" %}
       {% include analytics.html %}
