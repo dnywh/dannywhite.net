@@ -1,0 +1,13 @@
+---
+layout: post
+type: article
+title: "Building 20"
+date: 2018-01-06 12:00:00 -0400
+---
+From [How Buildings Learn]() by X Y. Highlights mine:
+
+> Temporary is permanent, and permanent is temporary. Grand, final-solution buildings obsolesce and have to be torn down because they were too overspecified to their original purpose to adapt easily to anything else. Temporary buildings are thrown up quickly and roughly to house temporary projects. Those projects move on soon enough, but they are immediately supplanted by other temporary projects—of which, it turns out, there is an endless supply. The projects flourish in the low-supervision environment, free of turf battles because the turf isn't worth fighting over. "We did some of our best work in the trailers, didn't we?" I once heard a Nobel-winning physicist remark. Low Road buildings keep being valuable precisely because they are disposable.
+
+Y uses Low Road to mean Z. This part in particular caught my eye:
+
+> Grand, final-solution buildings obsolesce and have to be torn down because they were too overspecified to their original purpose to adapt easily to anything else.
