@@ -1,0 +1,12 @@
+body {
+  /* All grid cells conform to the overall 6-column grid */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1em;
+  line-height: 0;
+}
+
+section {
+  grid-column: span 2;
+  background-color: lightgrey;
+}

@@ -1,4 +1,5 @@
-## What
+# January ’18 Reset
+
 Modular enough to change over time. Unpretentious; little-to-no third-person. Lite on self-promotion also because how I see myself is always changing. A living swipefile or dashboard.
 
 ## Dynamism
@@ -15,3 +16,10 @@ Especially something like night mode. Should there be a module for date/time (my
 
 ## Modularity
 I really like CSS Grid. I also like that it's extremely [well supported](https://alistapart.com/article/the-story-of-css-grid-from-its-creators). I don't like 'accidental' or 'leftover' negative space. Can my wants of a modular site work visually with grid?
+
+---
+
+## Saturday 13th January
+- Wrote the above
+- Sketched the below
+- Experimented with modules

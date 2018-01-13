@@ -1,31 +1,7 @@
-@import url('https://rsms.me/inter/inter-ui.css');
-
 body {
   /* Defining what one em unit is */
   font-size: 14pt;
-  max-width: 640px;
-  /* font-family: "Menlo", serif; */
-  /* color: #353535; */
-  font-family: 'Rubik', sans-serif,'Inter UI';
-  /* font-weight: 300; */
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-}
-
-h1 {
-  font-weight: normal;
-  font-size: 2.25em;
-}
-h2 {
-  font-weight: normal;
-  /* text-transform: uppercase;
-
-  font-size: .75em;
-  letter-spacing: .25em; */
-  margin-top: 2em;
-  margin-bottom: 0;
+  font-family: sans-serif;
 }
 
 p {
@@ -33,35 +9,8 @@ p {
   line-height: 1.5em;
 }
 
-/* Homepage only  */
-ul {
-  padding-left: 0;
-  list-style: none;
-  margin-top: 0.5em;
-}
-
-ul li {
-  margin-bottom: .5em;
-}
-
 img,
 video {
   width: 100%;
-  height: 100%;
-}
-
-/* Links except for nav <@> */
-/* Extended arguments not supported yet in browsers apart from Safari */
-/* See https://developer.mozilla.org/en-US/docs/Web/CSS/:not#Browser_compatibility */
-/*a:not(nav a:first-of-type) {*/
-h1 a,
-h2 a,
-p a,
-li a,
-figcaption a,
-label a {
-  /* text-decoration: none;
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.05);
-  transition: background-color 0.3s ease; */
+  /* height: 100%; */
 }
