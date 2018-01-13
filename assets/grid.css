@@ -3,10 +3,24 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1em;
-  line-height: 0;
+  /* line-height: 0; */
+  margin: 0;
 }
 
 section {
   grid-column: span 2;
-  background-color: lightgrey;
+  /* background-color: rgba(200, 200, 200, 0.25); */
+  border-top: 1px solid black;
 }
+  section.max {
+    grid-column: span 4;
+  }
+  section.major {
+    grid-column: span 3;
+  }
+  section.minor {
+    grid-column: span 1;
+  }
+  section h1, h2 {
+    /* margin-top: 0; */
+  }
