@@ -1,0 +1,34 @@
+body {
+  /* Defining what one em unit is */
+  font-size: 16pt;
+  max-width: 640px;
+  /* font-family: "Menlo", serif;
+  color: #353535; */
+
+}
+
+h1 {
+  /* font-weight: 300; */
+}
+h2 {
+  /* font-weight: 300; */
+  /* font-size: 1em; */
+  /* margin-top: 1.5em; */
+}
+
+p {
+  font-size: 1em;
+  /* font-weight: 300; */
+}
+
+/* Homepage only  */
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img,
+video {
+  width: 100%;
+  height: 100%;
+}

@@ -11,3 +11,5 @@ From [How Buildings Learn]() by X Y. Highlights mine:
 Y uses Low Road to mean Z. This part in particular caught my eye:
 
 > Grand, final-solution buildings obsolesce and have to be torn down because they were too overspecified to their original purpose to adapt easily to anything else.
+
+Makes me think
