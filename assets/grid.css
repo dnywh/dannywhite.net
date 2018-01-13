@@ -7,20 +7,33 @@ body {
   margin: 0;
 }
 
+nav {
+  display: inherit;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em
+}
+
 section {
   grid-column: span 2;
-  /* background-color: rgba(200, 200, 200, 0.25); */
+  background-color: rgba(255, 0, 100, 0.1);
   border-top: 1px solid black;
 }
-  section.max {
+  section.four {
     grid-column: span 4;
   }
-  section.major {
+  section.three {
     grid-column: span 3;
   }
-  section.minor {
+  section.one {
     grid-column: span 1;
   }
   section h1, h2 {
     /* margin-top: 0; */
   }
+
+
+@media only screen and (max-width: 1023px)  {
+  body {
+    color: red;
+  }
+}
