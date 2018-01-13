@@ -24,4 +24,9 @@ figure {
 /* Nav <@> */
 nav svg {
   width: 5.25rem;
+  /* Full */
+  text-align: right;
+  float: right;
+  margin-right: 1em;
+  margin-top: 1em;
 }
