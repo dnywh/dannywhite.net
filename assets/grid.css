@@ -32,6 +32,7 @@ header, section {
   }
   /* p, h2 {
     grid-column: span 3/5;
+  } */
   header {
     grid-column: span 3/5;
   }
