@@ -1,15 +1,57 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
 * {
   box-sizing: border-box;
 }
 body {
   /* Defining what one em unit is */
   font-size: 14pt;
-  font-family: sans-serif;
+
+  font-family: 'Inter UI', 'Inter', sans-serif;
+  color: #282828;
+
 }
 
-p {
-  font-size: 1em;
-  line-height: 1.5em;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h3 {
+  line-height: 1.3em;
+}
+
+p,
+ul.inline {
+  line-height: 1.4em;
+}
+
+time {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* section, small,
+section.full p,
+section.full h2 {
+  padding: 0 18px 0 18px;
+}
+section.full {
+  padding: 0;
+} */
+
+small {
+  font-family: 'Menlo', 'Monaco', monospace;
+  color: #C9C9C9;
+  /* font-size: .5em; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: rgba(5, 242, 186, 0.2);
+  transition: background-color 0.1s ease;
+}
+a:hover {
+  background-color: rgba(5, 242, 186, 0.6);
 }
 
 img,
@@ -17,22 +59,54 @@ video {
   width: 100%;
   /* height: 100%; */
 }
-figure {
+
+ul li:not(ul.plain li) {
+  line-height: 1.5em;
+}
+
+ul.inline,
+ul.plain {
+  padding: 0;
+}
+ul.inline li {
+	display: inline;
+}
+  ul.inline li:before {
+  	content: '  /  ';
+  }
+  ul.inline li:first-child:before {
+  	content: '';
+  }
+ul.plain {
+  list-style: none;
+}
+  ul.plain h3 {
+    margin-bottom: .5em;
+    margin-top: 1.5em;
+  }
+  /* ul.plain li {
+    line-height: 1em;
+  } */
+
+figure.gallery {
   margin: 0;
+  background-color: rgba(240,240,240,0.45);
+  width: 100%;
+  height: 15em;
+  line-height: 15em;
+  text-align: center;
 }
 
-/* Nav <@> */
-nav svg {
-  width: 5.25rem;
-  /* Full */
-  /* text-align: right;
-  float: right; */
-  margin-right: 1em;
-  margin-top: 1em;
+figure.gallery img {
+  width: auto;
+  max-height: 10em;
+  /* max-height: 10em; */
+  vertical-align: middle;
+  box-shadow: 5px 10px rgba(0,0,0, .25);
 }
 
 
-img.book {
-  padding: 4em;
-  background-color: red;
+.fold {
+  margin-top: 2em;
+  background-color: rgba(240,240,240,0.45);
 }

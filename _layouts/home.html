@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
+<small>
+  Right now in NYC: 12:14 / Monday, 15th January 2018 / 2° & Sunny
+</small>
 
-<section class="major">
-  <h1>Danny White is an Australian product designer currently based in New York City.</h1>
-</section>
+<h1>Danny White is a product designer based in NYC.</h1>
 
-<section>
-  <h2>Working on</h2>
-  <ul>
+<section class="full">
+  <h2>Currently</h2>
+  <ul class="inline">
     <li>Designing the Kickstarter <a href="https://itunes.apple.com/app/apple-store/id596961532">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.kickstarter.kickstarter">Android</a> apps</li>
     <li>Rebuilding the <a href="https://www.kickstarter.com/start">Starting a project</a> part of Kickstarter</li>
     <li>Design systems at Kickstarter</li>
@@ -17,47 +18,46 @@ layout: default
   </ul>
 </section>
 
-<section class="deep">
+<section class="half">
   <h2>Writing</h2>
-  <ul>
+  <ul class="plain">
     {% for post in site.posts %}
     <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      {% assign date_format = "%b %Y" %}
-      ({{ post.date | date: date_format }})
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+      {% assign date_format = "%B %Y" %}
+      <time>{{ post.date | date: date_format }}</time>
     </li>
     {% endfor %}
   </ul>
 </section>
 
-<section class="minor">
-  <h2>Thinking about</h2>
-  <ul>
-    <li>Human extinction due to human-induced climate change</li>
-    <li>Why exactly is Virginia "for lovers"?</li>
-  </ul>
-</section>
 
-<section class="minor">
+
+<section class="half deep">
   <h2>Reading</h2>
-  <ul>
+  <ul class="plain">
     <li>
-      <img class="book" src="https://upload.wikimedia.org/wikipedia/en/9/91/How_Buildings_Learn_%28Stewart_Brand_book%29_cover.jpg" alt="How Buildings Learn by Stewart Brand">
-      <a href="https://www.youtube.com/watch?v=AvEqfg2sIH0">How Buildings Learn</a> by Stewart Brand
+      <figure class="gallery">
+        <img class="book" src="https://upload.wikimedia.org/wikipedia/en/9/91/How_Buildings_Learn_%28Stewart_Brand_book%29_cover.jpg" alt="How Buildings Learn by Stewart Brand">
+      </figure>
+      <p>
+        <a href="https://www.youtube.com/watch?v=AvEqfg2sIH0">How Buildings Learn</a> by Stewart Brand
+      </p>
+    </li>
+    <li>
+      <figure class="gallery">
+        <img class="book" src="https://images-na.ssl-images-amazon.com/images/I/51uPzq9f3ZL._SX328_BO1,204,203,200_.jpg" alt="How Buildings Learn by Stewart Brand">
+      </figure>
+      <p>
+        <a href="https://www.youtube.com/watch?v=AvEqfg2sIH0">Competing Against Luck</a> by Clayton M. Christensen
+      </p>
     </li>
   </ul>
-  <p><a href="#">All my reads ></a></p>
 </section>
 
-<section class="minor">
-  <h2>Doodling</h2>
-  <img src="assets/drawing.jpg" alt="">
-  <p><a href="#">Past drawings of the week ></a></p>
-</section>
-
-<section class="minor">
+<section class="half sink">
   <h2>Elsewhere</h2>
-  <ul>
+  <ul class="inline">
     <li><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x77;&#104;&#x69;&#x74;&#x65;&#46;&#x64;&#x61;&#x6e;&#105;&#x65;&#108;&#x2e;&#106;&#x61;&#x6d;&#x65;&#x73;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">Email</a></li>
     <!-- http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/ -->
     <li><a href="https://twitter.com/dannyalright">Twitter</a></li>
@@ -68,27 +68,65 @@ layout: default
   </ul>
 </section>
 
-<section>
+<section class="">
+  <h2>About</h2>
+
+  <p>Originally from Australia, I've been living and working in NYC for the last three years. Before Kickstarter, I worked as a product designer at design studio <a href="https://ustwo.com">ustwo</a> and contracted at Facebook in the <a href="http://facebook.design">Interfaces</a> and <a href="https://origami.design">Design Tools</a> teams.</p>
+
+  <h3>Events</h3>
+  <p>In 2015 I began and now continue to co-organise <a href="https://framer.com/community/">Framer Sessions</a> <a href="https://www.facebook.com/groups/framernyc/">New York</a>. Since 2016 I have been giving occasional workshops and lectures at General Assembly UX Design Immersive and Pratt Information Experience Design (M.S.).</p>
+
+  <h3>Projects</h3>
+  <ul>
+    <li><a href="http://dannywhite.is/contextkit-for-origami">ContextKit</a></li>
+    <li><a href="http://dannywhite.is/aussie-american">Aussie American</a></li>
+    <li><a href="https://github.com/ustwo/branded-interactions">Branded Interactions</a></li>
+  </ul>
+
+  <h3>Portfolio and CV</h3>
+  <p>I try to keep a running deck of what I’m working on at <a href="http://dannywhite.is/making">dannywhite.is/making</a>. You’ll need to request access before seeing its contents.</p>
+
+  <p>See <a href="http://dannywhite.is/cv">dannywhite.is/cv</a> for a full CV. Same deal there with request-access.</p>
+
+  <!-- <img src="/assets/posts/-about/danny-white.jpg" alt="Danny White"> -->
+</section>
+
+<!-- <section class="minor">
+  <h2>Thinking about</h2>
+  <ul>
+    <li>Human extinction due to human-induced climate change</li>
+    <li>Why exactly is Virginia "for lovers"?</li>
+  </ul>
+</section>
+<section class="minor">
+  <h2>Doodling</h2>
+  <img src="assets/drawing.jpg" alt="">
+  <p><a href="#">Past drawings of the week ></a></p>
+</section> -->
+
+
+
+<!-- <section>
   <h2>Events</h2>
   <ul>
     <li><a href="https://framer.com/community/">Framer Sessions New York</a> (2015–present)</li>
     <li><a href="https://generalassemb.ly/education/user-experience-design-immersive">General Assembly guest lectures</a> (2016)</li>
   </ul>
-</section>
+</section> -->
 
-<section>
+<!-- <section>
   <h2>Projects</h2>
   <ul>
     <li><a href="http://dannywhite.is/contextkit-for-origami">ContextKit</a> (2017–present)</li>
     <li><a href="http://dannywhite.is/aussie-american">Aussie American</a> (2017–present)</li>
     <li><a href="https://github.com/ustwo/branded-interactions">Branded Interactions</a> (2015)</li>
   </ul>
-</section>
+</section> -->
 
 
 
 
-<section>
+<!-- <section>
   <h2>Roster</h2>
   <ul>
     <li>Kickstarter</li>
@@ -101,16 +139,13 @@ layout: default
     <li>NYC Mayors Office</li>
     <li>Commonwealth Bank</li>
   </ul>
-</section>
+</section> -->
 
-<section>
+<!-- <section>
   <h2>Portfolio &amp; CV</h2>
   <p>I try to keep a running deck of what I’m working on at <a href="http://dannywhite.is/making">dannywhite.is/making</a>. You’ll need to request access before seeing its contents.</p>
 
   <p>See <a href="http://dannywhite.is/cv">dannywhite.is/cv</a> for a full CV. Same deal there with request-access.</p>
 </section>
 
-<section>
-  <h2>Physical appearance</h2>
-  <img src="/assets/posts/-about/danny-white.jpg" alt="">
-</section>
+   -->
