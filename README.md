@@ -20,4 +20,8 @@ Suppose you'd like to preview your in-progress site on your phone or iPad. This 
 
 1. Append `--host 0.0.0.0` to your `bundle exec jekyll serve` command in Terminal. So the whole command should be `$ bundle exec jekyll serve --host 0.0.0.0`.
 2. Assuming that worked, go to System Preferences > Network and find your IP address under _Status_. It should look something like `192.168.0.5`.
-3. On your other device (e.g. phone or iPad), open a web browser and navigate to that IP address followed by `:4000`. For me, that is opening Safari on my iPhone and going to `192.168.0.5:4000`
+3. On your other device (e.g. phone or iPad), open a web browser and navigate to that IP address followed by `:4000`. For me, that is opening Safari on my iPhone and going to `192.168.0.5:4000`.
+
+## Credits
+### Fonts
+Most type on the site is set in [Inter UI](https://rsms.me/inter/) by Rasmus Andersson.
