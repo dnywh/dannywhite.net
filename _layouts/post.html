@@ -1,21 +1,21 @@
 ---
 layout: default
 ---
+
 <article>
-  <footer>
-    <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-    </p>
-  </footer>
+
 
   <header>
     <h1>{{ page.title | escape }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {% assign date_format = site.minima.date_format | default: "%B %Y" %}
+      {{ page.date | date: date_format }}
+    </time>
   </header>
 
-  <!-- <section> -->
-      {{ content }}
-  <!-- </section> -->
+  <section>
+    {{ content }}
+  </section>
+
+
 </article>
