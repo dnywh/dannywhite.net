@@ -60,12 +60,9 @@ nav, article, section, h1 {
     grid-column: span 3;
   }
 
-  h1 {
-    grid-column: span 4;
-  }
-
+  h1,
   .almost {
-    grid-column: span 5;
+    grid-column: span 4;
   }
 
   .half {
