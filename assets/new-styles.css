@@ -25,19 +25,45 @@ body {
   font-size: 14pt;
   color: rgba(60, 60, 60, 1);
   font-family: 'Inter UI', sans-serif;
+
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
+
+nav svg {
+  max-width: 4em;
+  fill: rgba(60, 60, 60, 1);
+}
+
+/* Fancy back button */
+nav.back a p {
+  position: absolute;
+  top: 1.73em;
+  margin-left: -0.5em;
+  transition: 0.2s ease;
+  opacity: 0;
+  color: rgba(148, 148, 148, 1);
+}
+
+nav.back a:hover > p {
+  margin-left: -0.65em;
+  opacity: 1;
+}
+
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-h1, p {
+p {
   margin-top: .5em;
 }
 
 h1 {
   font-size: 2.2em;
+  margin-top: 0.1em;
 }
 
 h3 {
@@ -166,7 +192,7 @@ figure.gallery {
   /* 16x9 Aspect Ratio */
   .intrinsic-container:before {
     display: block;
-    content: "";
+    content: '';
     width: 100%;
     padding-top: 56.25%;
   }

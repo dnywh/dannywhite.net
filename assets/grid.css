@@ -5,9 +5,6 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 3em;
   grid-row-gap: 1em;
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 18px;
 }
 
 article, section, h1 {
@@ -15,7 +12,7 @@ article, section, h1 {
 }
 
 nav {
-  grid-column: span 4;
+  grid-column: span 6;
 }
 
 @media only screen and (min-width: 694px)  {
