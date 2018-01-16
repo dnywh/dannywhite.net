@@ -55,7 +55,7 @@ nav, article, section, h1 {
   grid-column: span 6;
 }
 
-@media screen and (min-width: 694px)  {
+@media only screen and (min-width: 694px)  {
   nav {
     grid-column: span 3;
   }
@@ -79,7 +79,6 @@ nav, article, section, h1 {
   .sink {
     align-self: end;
   }
-}
 
   article {
     display: grid;
@@ -93,6 +92,7 @@ nav, article, section, h1 {
 
   article > section {
     grid-column: 3/7;
+  }
 }
 
 /* Navigation  */
