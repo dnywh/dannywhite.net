@@ -55,7 +55,7 @@ nav, article, section, h1 {
   grid-column: span 6;
 }
 
-@media only screen and (min-width: 694px)  {
+@media screen and (min-width: 694px)  {
   nav {
     grid-column: span 3;
   }
