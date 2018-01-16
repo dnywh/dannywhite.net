@@ -1,9 +1,7 @@
 # [dannywhite.is](http://dannywhite.is/)
-Hi. Welcome to my site. I'm keeping this open because 1. I'm too stingy to pay for GitHub and 2. I've put quite a lot of work into this that might be useful for others.
+Hi. Welcome to my site. It runs on [Jekyll](https://github.com/jekyll/jekyll). If you're like me (not an engineer but like to tinker, and want to go beyond Jekyll basics), here are a few things that may help you build your site...
 
-This site uses [Jekyll](https://github.com/jekyll/jekyll) (actually all github.io sites do).
-
-## Notable features
+## Notable features and workflows
 Things I've added onto or tweaked from the standard Jekyll theme, layouts, includes, etc:
 
 - `image.html` include for inserting HTML `figure` elements, with automatic image directory handling
@@ -16,3 +14,10 @@ Things I've added onto or tweaked from the standard Jekyll theme, layouts, inclu
 - Using GitHub's project pages feature to publish from `repo-name` branch named `gh-pages` straight to `dannywhite.is/repo-name`
 
 Almost all of these features are derived from other peoples' articles or examples. They will eventually have their origin attributed, and usage extrapolated here.
+
+### Testing your Jekyll site across devices on the same network
+Suppose you'd like to preview your in-progress site on your phone or iPad. This is pretty straightforward, assuming they are on the same WiFi network as the computer you're using. Here's how:
+
+1. Append `--host 0.0.0.0` to your `bundle exec jekyll serve` command in Terminal. So the whole command should be `$ bundle exec jekyll serve --host 0.0.0.0`.
+2. Assuming that worked, go to System Preferences > Network and find your IP address under _Status_. It should look something like `192.168.0.5`.
+3. On your other device (e.g. phone or iPad), open a web browser and navigate to that IP address followed by `:4000`. For me, that is opening Safari on my iPhone and going to `192.168.0.5:4000`

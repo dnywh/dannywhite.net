@@ -14,9 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Danny White
-description: > # this means to ignore newlines until "baseurl:"
-  Danny White is a product designer in NYC. He works with the lovely bunch at ustwo.
-# baseurl: ""  the subpath of your site, e.g. /blog
+description: Danny White is a product designer in NYC.
 url: "http://dannywhite.is" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dannyalright
 github_username:  dannyalright
@@ -24,9 +22,12 @@ author: Danny White
 
 # Build settings
 markdown: kramdown
-# theme: minima
-gems:
+
+# plugins were previously called gems
+plugins:
   - jekyll-feed
+
+# Exclude directories and/or files from the conversion
 exclude:
   - Gemfile
   - Gemfile.lock
