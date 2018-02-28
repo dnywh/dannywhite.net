@@ -39,57 +39,9 @@ body {
   color: rgba(60, 60, 60, 1);
   font-family: 'Inter UI', sans-serif;
 
-  max-width: 960px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 2em 1em;
-
-  /* Grid */
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 3em;
-  grid-row-gap: 1em;
-}
-
-/* Grid */
-nav, article, section, h1 {
-  grid-column: span 6;
-}
-
-@media only screen and (min-width: 694px)  {
-  nav {
-    grid-column: span 3;
-  }
-
-  h1,
-  .almost {
-    grid-column: span 4;
-  }
-
-  .half {
-    grid-column: span 3;
-  }
-
-  .deep {
-    grid-row: span 2;
-  }
-
-  .sink {
-    align-self: end;
-  }
-
-  article {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 3em;
-    grid-row-gap: 1em;
-  }
-  article header {
-    grid-column: span 2;
-  }
-
-  article > section {
-    grid-column: 3/7;
-  }
 }
 
 /* Navigation  */

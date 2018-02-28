@@ -1,87 +1,46 @@
 ---
 layout: default
 ---
-<h1>Danny White is a product designer based in NYC.</h1>
+<h1>Danny White</h1>
 
-<section class="almost">
-  <h2>Currently</h2>
-  <ul class="inline">
-    <li>Designing the Kickstarter <a href="https://itunes.apple.com/app/apple-store/id596961532">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.kickstarter.kickstarter">Android</a> apps</li>
-    <li>(Re-)learning German</li>
-    <li>Figuring out the circle of 5ths</li>
-  </ul>
-</section>
+<p>I'm an Australian product designer based in NYC. Right now I'm making creator tools and native apps at Kickstarter. In other lives I've worked at design studio <a href="https://ustwo.com">ustwo</a> and contracted at Facebook in the <a href="http://facebook.design">Interfaces</a> and <a href="http://origami.design">Design Tools</a> teams.</p>
 
-<section class="half">
-  <h2>Writing</h2>
-  <ul class="plain">
-    {% for post in site.posts %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
-      {% assign date_format = "%B %Y" %}
-      <time>{{ post.date | date: date_format }}</time>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+<h2>Events</h2>
+<p>In 2015 I began and now continue to co-organise <a href="https://framer.com/community/">Framer Sessions</a> <a href="https://www.facebook.com/groups/framernyc/">New York</a>. Since 2016 I have been giving occasional workshops and lectures at General Assembly UX Design Immersive and Pratt Information Experience Design (M.S.).</p>
 
-<section class="half deep">
-  <h2>Reading</h2>
-  <ul class="plain">
-    <a href="https://www.youtube.com/watch?v=AvEqfg2sIH0">
-    <li>
-      <figure class="gallery">
-        <img class="book" src="https://upload.wikimedia.org/wikipedia/en/9/91/How_Buildings_Learn_%28Stewart_Brand_book%29_cover.jpg" alt="How Buildings Learn by Stewart Brand">
-      </figure>
-      <p>
-        <a href="https://www.youtube.com/watch?v=AvEqfg2sIH0">How Buildings Learn</a> by Stewart Brand
-      </p>
-    </li></a>
-    <li>
-      <a href="https://hbr.org/2016/09/know-your-customers-jobs-to-be-done">
-      <figure class="gallery">
-        <img class="book" src="https://images-na.ssl-images-amazon.com/images/I/51uPzq9f3ZL._SX328_BO1,204,203,200_.jpg" alt="Competing Against Luck by Clayton M. Christensen">
-      </figure>
-      <p>
-        <a href="https://hbr.org/2016/09/know-your-customers-jobs-to-be-done">Competing Against Luck</a> by Clayton M. Christensen
-      </p>
-    </li></a>
-  </ul>
-  <!-- <small><a href="#">See all books &rarr;</a></small> -->
-</section>
+<h2>Projects</h2>
+<ul>
+  <li><a href="http://dannywhite.is/contextkit-for-origami">ContextKit</a></li>
+  <li><a href="http://dannywhite.is/aussie-american">Aussie American</a></li>
+  <li><a href="https://github.com/ustwo/branded-interactions">Branded Interactions</a></li>
+</ul>
 
-<section class="half sink">
-  <h2>Elsewhere</h2>
-  <ul class="inline">
-    <li><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x77;&#104;&#x69;&#x74;&#x65;&#46;&#x64;&#x61;&#x6e;&#105;&#x65;&#108;&#x2e;&#106;&#x61;&#x6d;&#x65;&#x73;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">Email</a></li>
-    <!-- http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/ -->
-    <li><a href="https://github.com/dannyalright">GitHub</a></li>
-    <li><a href="https://instagram.com/dannywhite/">Instagram</a></li>
-    <li><a href="https://twitter.com/dannyalright">Twitter</a></li>
-    <li><a href="https://pinterest.com/dannyalright/pins/">Pinterest</a></li>
-    <li><a href="https://linkedin.com/in/dannyalright/">LinkedIn</a></li>
-  </ul>
-</section>
 
-<section class="almost">
-  <h2>About</h2>
+<h2>Writing</h2>
+<ul class="plain">
+  {% for post in site.posts %}
+  <li>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+    {% assign date_format = "%B %Y" %}
+    <time>{{ post.date | date: date_format }}</time>
+  </li>
+  {% endfor %}
+</ul>
 
-  <p>Originally from Australia, I've been living and working in NYC for the last three years. Before Kickstarter, I worked as a product designer at design studio <a href="https://ustwo.com">ustwo</a> and contracted at Facebook in the <a href="http://facebook.design">Interfaces</a> and <a href="http://origami.design">Design Tools</a> teams.</p>
+<h2>Elsewhere</h2>
+<ul class="inline">
+  <li><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x77;&#104;&#x69;&#x74;&#x65;&#46;&#x64;&#x61;&#x6e;&#105;&#x65;&#108;&#x2e;&#106;&#x61;&#x6d;&#x65;&#x73;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">Email</a></li>
+  <!-- http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/ -->
+  <li><a href="https://github.com/dannyalright">GitHub</a></li>
+  <li><a href="https://instagram.com/dannywhite/">Instagram</a></li>
+  <li><a href="https://twitter.com/dannyalright">Twitter</a></li>
+  <li><a href="https://pinterest.com/dannyalright/pins/">Pinterest</a></li>
+  <li><a href="https://linkedin.com/in/dannyalright/">LinkedIn</a></li>
+</ul>
 
-  <h3>Events</h3>
-  <p>In 2015 I began and now continue to co-organise <a href="https://framer.com/community/">Framer Sessions</a> <a href="https://www.facebook.com/groups/framernyc/">New York</a>. Since 2016 I have been giving occasional workshops and lectures at General Assembly UX Design Immersive and Pratt Information Experience Design (M.S.).</p>
+<h2>Portfolio and CV</h2>
+<p>I try to keep a running deck of what I’m working on at <a href="http://dannywhite.is/making">dannywhite.is/making</a>. You’ll need to request access before seeing its contents.</p>
 
-  <h3>Projects</h3>
-  <ul>
-    <li><a href="http://dannywhite.is/contextkit-for-origami">ContextKit</a></li>
-    <li><a href="http://dannywhite.is/aussie-american">Aussie American</a></li>
-    <li><a href="https://github.com/ustwo/branded-interactions">Branded Interactions</a></li>
-  </ul>
-
-  <h3>Portfolio and CV</h3>
-  <p>I try to keep a running deck of what I’m working on at <a href="http://dannywhite.is/making">dannywhite.is/making</a>. You’ll need to request access before seeing its contents.</p>
-
-  <p>See <a href="http://dannywhite.is/cv">dannywhite.is/cv</a> for a full CV. Same deal there with request-access.</p>
+<p>See <a href="http://dannywhite.is/cv">dannywhite.is/cv</a> for a full CV. Same deal there with request-access.</p>
 
   <!-- <img src="/assets/images/danny-white.jpg" alt="Danny White"> -->
-</section>
