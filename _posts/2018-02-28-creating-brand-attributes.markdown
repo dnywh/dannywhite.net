@@ -16,6 +16,8 @@ Credit to Chris Marotta from my time at ustwo for the loose method. We worked on
 4. A (roughly) shared view of aforementioned brand amongst said group of participants.
 
 ## Method
+Three design studio exercises that last about 20 minutes each. Try to do them sequentially and in the same session.
+
 ### 1. Metamorphosis
 Have every participant spend 2 minutes writing on post-it notes ‘if this brand were X, it would be Y’ for each of the following:
 
@@ -58,5 +60,5 @@ Stop when you feel attribute additions slowing or becoming worse in quality. Use
 
 {% include image.html name="KidMap-Brand-Attributes-2016-02-01-3.jpg" alt="Example of final Creating brand attributes exercise" caption="One of our themes (Comforting) and its respective attributes under the defined areas." %}
 
-# Next steps
+## Next steps
 What you do after the above exercises varies for the desired output. For most visually-orientated outputs (brand identity, visual design) the next steps is often beginning moodboards informed by the brand attributes, separated by area.
