@@ -35,12 +35,12 @@ video {
 /* Base */
 body {
   /* Defining what one em unit is */
-  font-size: 14pt;
+  font-size: 13pt;
   color: rgba(60, 60, 60, 1);
   font-family: 'Inter UI', sans-serif;
 
   max-width: 640px;
-  margin: 0 auto;
+  margin: 2em auto;
   padding: 2em 1em;
 }
 
@@ -48,11 +48,12 @@ body {
 nav svg {
   max-width: 4em;
   fill: rgba(60, 60, 60, 1);
+  margin-bottom: 0.5em;
 }
   /* Fancy back button */
   nav.back a p {
     position: absolute;
-    top: 1.73em;
+    top: 3.7em;
     margin-left: -0.5em;
     transition: 0.2s ease;
     opacity: 0;
@@ -67,22 +68,38 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-p {
+p,
+ul:not(ul.plain),
+ol {
   margin-top: .5em;
 }
 
 h1 {
   font-size: 2.2em;
   margin-top: 0.1em;
-  margin-bottom: 0.4em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 2em;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
 h3 {
-  line-height: 1.3em;
+  margin-top: 1.25em;
+  font-size: 1.3em;
+
+}
+
+h4 {
+  font-size: 1.2em;
 }
 
 p,
-/* ul.inline, */
 ul li:not(ul.plain li),
 ol li {
   line-height: 1.6em;
@@ -102,10 +119,10 @@ nav.back a p {
 
 figcaption,
 label {
-  font-family: 'Monaco', 'Inter UI', sans-serif;
-  font-size: .75em;
-  margin-top: 0.5em;
+  font-size: .8em;
+  margin-top: 0.2em;
   line-height: 1.5em;
+  letter-spacing: .015em;
 }
 
 /* Ragged paragraphs */
@@ -147,9 +164,10 @@ li a:hover {
 /* Line breaks */
 hr {
   border-style: solid;
-  border-width: 1px;
+  border-width: 0.75px;
   border-color: rgba(60, 60, 60, 0.08);
   margin: 2em 0;
+  width: 6em;
 }
 
 /* Lists */
@@ -188,33 +206,9 @@ ul.plain {
 article header {
   margin-bottom: 2em;
 }
-article figure,
-figure.gallery {
+article figure {
   margin: 0;
 }
-figure.gallery {
-  background-color: rgba(240, 240, 240, 0.45);
-  width: 100%;
-  height: 15em;
-  line-height: 15em;
-  text-align: center;
-  transition: 0.2s ease;
-}
-
-  figure.gallery img {
-    width: auto;
-    max-height: 10em;
-    vertical-align: middle;
-    /* box-shadow: 0.35em 0.82em rgba(60, 60, 60, 0.45); */
-    box-shadow: 0.3em 0.6em rgba(5, 242, 186, 0.4);
-    transition: 0.15s ease;
-  }
-  figure.gallery:hover > img {
-    /* opacity: 0.9; */
-    transform: translateY(-3px);
-    /* box-shadow: 0.35em 0.82em rgba(60, 60, 60, 0.45); */
-    box-shadow: 0.35em 0.82em rgba(5, 242, 186, 0.6);
-  }
 
 /* Post-specific: iframes */
 /*
