@@ -100,9 +100,9 @@ h4 {
 }
 
 p,
-ul li:not(ul.plain li),
+ul li,
 ol li {
-  line-height: 1.6em;
+  line-height: 1.6;
 }
 
 blockquote,
