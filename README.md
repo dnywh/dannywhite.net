@@ -12,8 +12,8 @@ What | Why
 [Open Graph tags](https://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/head.html#L8-L15) | Take the leg-work out of nicely-formatted Twitter, iMessage, or Facebook shares from your website.
 [Prettify URL slugs](https://github.com/dannyalright/dannyalright.github.io/blob/master/_config.yml#L35-L39) | Removes the post date from the URL. E.g. `dannywhite.is/2018/03/03/banana` becomes `dannywhite.is/banana`.
 [Extensive favicon format](https://github.com/dannyalright/dannyalright.github.io/tree/master/assets/images) | A lightweight format that covers most browser and OS implementations and formats.
-[Responsive `iframe` elements](https://github.com/dannyalright/dannyalright.github.io/blob/933850fe018de92401781d62ebec021256ec2c14/_includes/iframe-video.html) | Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc
-[Custom 404 page](http://dannywhite.is/banana) | Use existing `post` layout for a nicer 404 page.
+[Responsive `iframe` elements](https://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/iframe-video.html) | Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc
+[Custom 404 page](https://github.com/dannyalright/dannyalright.github.io/blob/master/404.md) | Use existing `post` layout for a nicer 404 page. [Example](http://dannywhite.is/banana).
 
 Some of these implementations derive from other peoples' articles or examples. Attributions and links should be commented within the respective resources.
 
