@@ -202,6 +202,14 @@ ul.plain {
   }
 
 
+/* Code */
+code {
+  background-color: rgba(148, 148, 148, 0.1);
+  font-family: "Monaco", monospace;
+  font-size: 0.95em;
+}
+
+
 /* Post-specific */
 article header {
   margin-bottom: 2em;
