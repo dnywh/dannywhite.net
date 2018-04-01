@@ -1,3 +1,18 @@
+.frame {
+  /* height: 600px; */
+  background-color: rgba(226, 255, 172, 1);
+  padding: 3em;
+
+  height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.frame img {
+  max-width: 100%;
+    margin:0 ;
+}
 /*  Text
     color: rgba(60, 60, 60, 1);
 
@@ -29,7 +44,7 @@
 img,
 video {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 /* Base */
