@@ -29,4 +29,4 @@ Suppose you'd like to preview your in-progress site on your phone or iPad. This 
 
 ## Credits
 ### Fonts
-Most type on the site is set in [Inter UI](https://rsms.me/inter/) by Rasmus Andersson.
+~~Most type on the site is set in [Inter UI](https://rsms.me/inter/) by Rasmus Andersson.~~

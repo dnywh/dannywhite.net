@@ -23,6 +23,12 @@ author: Danny White
 # Build settings
 markdown: kramdown
 
+# Collections
+collections:
+  ephemera:
+    output: true
+
+# Plugins
 # plugins were previously called gems
 plugins:
   - jekyll-feed

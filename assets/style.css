@@ -1,26 +1,115 @@
-nav, .info {
-  grid-column: span 1;
-}
-  .frame {
-  /* height: 600px; */
-  background-color: rgba(226, 255, 172, 1);
-  padding: 3em;
-
+.frame {
   height: 50vw;
-
-  /* width: 50vw; */
-
-  grid-column: span 1;
-
+  /* For children... */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-direction: column;
+
+  padding: 10vw;
+  background-color: lightgrey;
+}
+.frame p {
+  font-size: 12pt;
+
+}
+
+.raised {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01);
+  transition: 1s ease;
+}
+.raised:hover {
+  transform: scale(1.05);
+}
+
+.half {
+  /* 50% width */
+  grid-column: span 1;
+}
+.full {
+  /* 100% width */
+  grid-column: span 2;
 }
 
 .frame img {
-  max-width: 100%;
-  margin:0 ;
+  margin: 0;
 }
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+.screen {
+  mix-blend-mode: overlay;
+}
+
+.pink {
+  background-color: rgba(255, 150, 153, 1);
+}
+.green {
+  background-color: rgba(226, 255, 172, 1);
+}
+.lime {
+  background-color: RGBA(217, 250, 169, 1.00);
+}
+.dutch {
+  background-color: RGBA(243, 225, 184, 1.00);
+}
+.orange {
+  background-color: rgba(255, 234, 123, 1);
+}
+
+.black {
+  background-color: RGBA(28, 28, 28, 1.00)
+}
+
+.sienna {
+  background-color: RGBA(233, 124, 90, 1.00);
+}
+.lemon {
+  background-color: RGBA(231, 198, 91, 1.00);
+}
+.grey {
+  background-color: RGBA(151, 149, 151, 1.00);
+}
+
+
+.punch img {
+  box-shadow: 1vw 1vw rgba(0, 0, 0, 0.75);
+  transform: rotateZ(0.5deg);
+}
+
+.sticker {
+  /* overflow: hidden; */
+  position: relative;
+
+
+}
+
+.sticker:after {
+  background-image: url('../assets/images/ephemera/sticker.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  width: 10vmax;
+  height: 10vmax;
+  content: "";
+
+  position: absolute;
+  overflow: hidden;
+
+  top: 0;
+  right: 0;
+  transform: rotateZ(30deg) translate(20px, -30px);
+}
+
+nav, .info {
+  grid-column: span 2;
+}
+
+
 /*  Text
     color: rgba(60, 60, 60, 1);
 
@@ -51,14 +140,18 @@ nav, .info {
 
 img,
 video {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+video {
   /* height: 100%; */
 }
 
 /* Base */
 body {
   /* Defining what one em unit is */
-  font-size: 16pt;
+  font-size: 18pt;
   color: rgba(60, 60, 60, 1);
   font-family: "CenturySchoolbook", Georgia, 'Inter UI', sans-serif;
 
@@ -279,7 +372,8 @@ article figure {
 /* Animations */
 nav,
 h1,
-article header {
+article header,
+body {
   opacity: 0;
   animation-name: fadein;
   animation-duration: 1s;
