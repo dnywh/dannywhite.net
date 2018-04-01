@@ -1,17 +1,25 @@
-.frame {
+nav, .info {
+  grid-column: span 1;
+}
+  .frame {
   /* height: 600px; */
   background-color: rgba(226, 255, 172, 1);
   padding: 3em;
 
-  height: 30em;
+  height: 50vw;
+
+  /* width: 50vw; */
+
+  grid-column: span 1;
+
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .frame img {
   max-width: 100%;
-    margin:0 ;
+  margin:0 ;
 }
 /*  Text
     color: rgba(60, 60, 60, 1);
@@ -50,13 +58,17 @@ video {
 /* Base */
 body {
   /* Defining what one em unit is */
-  font-size: 13pt;
+  font-size: 16pt;
   color: rgba(60, 60, 60, 1);
-  font-family: 'Inter UI', sans-serif;
+  font-family: "CenturySchoolbook", Georgia, 'Inter UI', sans-serif;
 
-  max-width: 640px;
-  margin: 2em auto;
+  /* max-width: 640px; */
+  margin: 0;
   padding: 2em 1em;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5em;
 }
 
 /* Navigation  */
