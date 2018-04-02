@@ -1,93 +1,59 @@
 .frame {
   height: 50vw;
+
   /* For children... */
   display: flex;
   align-items: center;
   justify-content: center;
 
   flex-direction: column;
+  /* flex-shrink: 0; */
 
   padding: 10vw;
   background-color: lightgrey;
 }
 .frame p {
   font-size: 12pt;
-
 }
 
 .raised {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
   transform: scale(1.01);
   transition: 1s ease;
 }
 .raised:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
 }
-
+.raised:active {
+  transform: scale(1.08);
+  transition: .5s ease;
+}
 .half {
   /* 50% width */
   grid-column: span 1;
 }
-.full {
+.full,
+nav {
   /* 100% width */
   grid-column: span 2;
 }
 
 .frame img {
-  margin: 0;
+  /* margin: 0; */
 }
-
-.multiply {
-  mix-blend-mode: multiply;
-}
-.screen {
-  mix-blend-mode: overlay;
-}
-
-.pink {
-  background-color: rgba(255, 150, 153, 1);
-}
-.green {
-  background-color: rgba(226, 255, 172, 1);
-}
-.lime {
-  background-color: RGBA(217, 250, 169, 1.00);
-}
-.dutch {
-  background-color: RGBA(243, 225, 184, 1.00);
-}
-.orange {
-  background-color: rgba(255, 234, 123, 1);
-}
-
-.black {
-  background-color: RGBA(28, 28, 28, 1.00)
-}
-
-.sienna {
-  background-color: RGBA(233, 124, 90, 1.00);
-}
-.lemon {
-  background-color: RGBA(231, 198, 91, 1.00);
-}
-.grey {
-  background-color: RGBA(151, 149, 151, 1.00);
-}
-
 
 .punch img {
   box-shadow: 1vw 1vw rgba(0, 0, 0, 0.75);
   transform: rotateZ(0.5deg);
 }
 
-.sticker {
+/* Stickers  */
+.new {
+  /* position: relative; */
   /* overflow: hidden; */
-  position: relative;
-
-
 }
-
-.sticker:after {
+.new:after {
   background-image: url('../assets/images/ephemera/sticker.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -98,15 +64,11 @@
   content: "";
 
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   top: 0;
   right: 0;
   transform: rotateZ(30deg) translate(20px, -30px);
-}
-
-nav, .info {
-  grid-column: span 2;
 }
 
 
@@ -122,10 +84,6 @@ nav, .info {
     Gallery Grey
     color: rgba(240, 240, 240, 0.45);
 */
-
-/* I'm using the Inter UI font family */
-/* See https://rsms.me/inter */
-@import url('https://rsms.me/inter/inter-ui.css');
 
 /* Setup */
 :root {
@@ -153,15 +111,14 @@ body {
   /* Defining what one em unit is */
   font-size: 18pt;
   color: rgba(60, 60, 60, 1);
-  font-family: "CenturySchoolbook", Georgia, 'Inter UI', sans-serif;
+  font-family: "CenturySchoolbook", Georgia, serif;
 
-  /* max-width: 640px; */
   margin: 0;
-  padding: 2em 1em;
+  padding: 2em;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5em;
+  grid-gap: 2em;
 }
 
 /* Navigation  */
@@ -195,34 +152,33 @@ ol {
 }
 
 h1 {
-  font-size: 2.2em;
-  margin-top: 0.1em;
+  /* font-size: 2.2em;
+  margin-top: 0.1em; */
 }
 
 h2 {
-  font-size: 1.6em;
-  margin-top: 2em;
+  /* font-size: 1.6em;
+  margin-top: 2em; */
 }
 
 h2, h3, h4, h5, h6 {
-  margin-bottom: 0;
-  line-height: 1.4;
+  /* margin-bottom: 0;
+  line-height: 1.4; */
 }
 
 h3 {
-  margin-top: 1.25em;
-  font-size: 1.3em;
-
+  /* margin-top: 1.25em;
+  font-size: 1.3em; */
 }
 
 h4 {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
 }
 
 p,
 ul li,
 ol li {
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 
 blockquote,

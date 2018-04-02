@@ -2,80 +2,46 @@
 layout: default
 ---
 
-{% for item in site.ephemera %}
+{% assign ephemera = site.ephemera | reverse %}
+{% for item in ephemera %}
+
 {% if item.link %}
 <a href="{{ item.url }}" class="raised">
 {% endif %}
-  <div class="frame {% if item.size %}{{ item.size }}{% else %}half{% endif %}" style="background-color: {{ item.colour }};">
-    <img src="/assets/images/ephemera/{{ item.media }}" alt="{{ item.caption }}">
+  <section class="frame {% if item.size %}{{ item.size }}{% else %}half{% endif %} {{ item.feature }} {{ item.blend }}" style="background-color: {{ item.background-colour }};{% if item.text-colour %} color: {{ item.text-colour }};{% endif %}">
+    <img src="/assets/images/ephemera/{{ item.media }}" alt="{{ item.caption }}" style="{% if item.blend %}mix-blend-mode: {{ item.blend }};{% endif %}">
 
     <p>{{ item.caption }}</p>
 
-  </div>
+  </section>
   {% if item.link %}
   </a>
 {% endif %}
 {% endfor %}
 
-
 <p>End of the line...</p>
 
 
-<div class="frame half green">
-  <img src="/assets/images/ephemera/lemons.jpg" alt="A lemon">
-  <p>When life gives you lemons. When life gives you lemons. When life gives you lemons. When life gives you lemons. When life gives you lemons. When life gives you lemons. When life gives you lemons. When life gives you lemons. When life gives you lemons. </p>
-</div>
-<div class="frame half pink sticker raised">
-  <img src="/assets/images/ephemera/metrocard.png" alt="A metrocard">
-</div>
-
-<div class="frame full orange">
+<section class="frame full" style="background-color: rgba(255, 234, 123, 1);" >
   <img src="/assets/images/ephemera/bag3.png" alt="A plastic bag">
-</div>
+</section>
 
 <div class="full">
   <h1>Oh hey.</h1>
   <p>I'm an Australian product designer based in NYC. Right now I'm helping build creator tools and native apps at Kickstarter. In past lives I've worked at design studio <a href="https://ustwo.com">ustwo</a> and contracted at Facebook in the <a href="http://facebook.design">Interfaces, Design Tools</a>, and <a href="http://origami.design">Origami</a> teams.</p>
 </div>
 
-<div class="frame half pink punch raised">
+<section class="frame half punch raised" style="background-color: rgba(255, 150, 153, 1);">
   <img src="/assets/images/ephemera/2017-09-14-receipt.jpg" alt="A receipt">
-</div>
-<div class="frame half sienna raised">
+</section>
+<section class="frame half raised" style="background-color: rgba(233, 124, 90, 1);">
   <img src="/assets/images/ephemera/the-world-of-fossils.jpg" alt="The world of fossils">
   <!-- <p>When life gives you lemons</p> -->
-</div>
-<div class="full">
+</section>
+<section class="full">
   <h2>Events</h2>
   <p>In 2015 I began <a href="https://framer.com/community/">Framer Sessions</a> <a href="https://www.facebook.com/groups/framernyc/">New York</a>. Since 2016 I have also been giving occasional workshops and lectures at General Assembly UX Design Immersive and Pratt Information Experience Design (M.S.).</p>
-</div>
-
-<div class="frame full black screen">
-  <img src="/assets/images/ephemera/zine-113.jpg" alt="A zine">
-  <p>T-shirts or lines</p>
-</div>
-<div class="frame half grey">
-  <img src="/assets/images/ephemera/orange.png" alt="An orange">
-  <p>When life gives you lemons</p>
-</div>
-<div class="frame half lime">
-  <img src="/assets/images/ephemera/legs-bw.jpg" class="multiply" alt="Some legs">
-  <!-- <p>When life gives you lemons</p> -->
-</div>
-
-<div class="frame full dutch">
-  <img src="/assets/images/ephemera/bread.jpg" alt="Some bread">
-</div>
-
-<div class="info">
-  <h1>Oh, hi.</h1>
-
-  <p>You've come a long way.</p>
-  <p>You must have a lot of questions.</p>
-
-
-</div>
-
+</section>
 
 
 <h2>Projects</h2>
@@ -100,7 +66,7 @@ layout: default
 </ul>
 
 <h2>Elsewhere</h2>
-<ul class="inlin">
+<ul class="inline">
   <li><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x77;&#104;&#x69;&#x74;&#x65;&#46;&#x64;&#x61;&#x6e;&#105;&#x65;&#108;&#x2e;&#106;&#x61;&#x6d;&#x65;&#x73;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">Email</a></li>
   <!-- http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/ -->
   <li><a href="https://github.com/dannyalright">Code I write</a></li>

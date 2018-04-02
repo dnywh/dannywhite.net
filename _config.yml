@@ -27,6 +27,13 @@ markdown: kramdown
 collections:
   ephemera:
     output: true
+    permalink: /:title/
+defaults:
+- scope:
+    path: ""
+    type: ephemera
+  values:
+    layout: ephemera
 
 # Plugins
 # plugins were previously called gems

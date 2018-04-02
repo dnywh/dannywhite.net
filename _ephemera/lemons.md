@@ -1,10 +1,12 @@
 ---
-title: metrocard
+title: Lemons
+date: 2018-03-30
 type: img
 media: lemons.jpg
-caption: "A Lemon caption"
+caption: "When life gives you lemons"
 link: true
-colour: rgba(226, 255, 172, 1)
+background-colour: rgba(226, 255, 172, 1)
+text-colour: red
 size: half
 ---
-A lemondy body of text.
+A post about these lemons.
