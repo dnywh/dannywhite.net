@@ -10,6 +10,7 @@
 
   padding: 10vw;
   background-color: lightgrey;
+
 }
 .frame p {
   font-size: 12pt;
@@ -120,7 +121,7 @@ body {
 
 /* Navigation  */
 nav svg {
-  max-width: 4em;
+  width: 10vw;
   fill: rgba(60, 60, 60, 1);
   margin-bottom: 0.5em;
 }

@@ -9,7 +9,7 @@ layout: default
 <a href="{{ item.url }}" class="raised">
 {% endif %}
   <section class="frame {% if item.size %}{{ item.size }}{% else %}half{% endif %} {{ item.feature }} {{ item.blend }}" style="background-color: {{ item.background-colour }};{% if item.text-colour %} color: {{ item.text-colour }};{% endif %}">
-    <img src="/assets/images/ephemera/{{ item.media }}" alt="{{ item.caption }}" style="{% if item.blend %}mix-blend-mode: {{ item.blend }};{% endif %}">
+    <img draggable="false" src="/assets/images/ephemera/{{ item.media }}" alt="{{ item.caption }}" style="{% if item.blend %}mix-blend-mode: {{ item.blend }};{% endif %}">
 
     <p>{{ item.caption }}</p>
 
@@ -18,3 +18,69 @@ layout: default
   </a>
 {% endif %}
 {% endfor %}
+
+<p>End of the line...</p>
+
+
+<section class="frame full" style="background-color: rgba(255, 234, 123, 1);" >
+  <img src="/assets/images/ephemera/bag3.png" alt="A plastic bag">
+</section>
+
+<div class="full">
+  <h1>Oh hey.</h1>
+  <p>I'm an Australian product designer based in NYC. Right now I'm helping build creator tools and native apps at Kickstarter. In past lives I've worked at design studio <a href="https://ustwo.com">ustwo</a> and contracted at Facebook in the <a href="http://facebook.design">Interfaces, Design Tools</a>, and <a href="http://origami.design">Origami</a> teams.</p>
+</div>
+
+<section class="frame half punch raised" style="background-color: rgba(255, 150, 153, 1);">
+  <img src="/assets/images/ephemera/2017-09-14-receipt.jpg" alt="A receipt">
+</section>
+<section class="frame half raised" style="background-color: rgba(233, 124, 90, 1);">
+  <img src="/assets/images/ephemera/the-world-of-fossils.jpg" alt="The world of fossils">
+  <!-- <p>When life gives you lemons</p> -->
+</section>
+
+<section class="full">
+  <h2>Events</h2>
+  <p>In 2015 I began <a href="https://framer.com/community/">Framer Sessions</a> <a href="https://www.facebook.com/groups/framernyc/">New York</a>. Since 2016 I have also been giving occasional workshops and lectures at General Assembly UX Design Immersive and Pratt Information Experience Design (M.S.).</p>
+
+<h2>Projects</h2>
+<ul>
+  <li><a href="http://dannywhite.is/contextkit-for-origami">ContextKit</a></li>
+  <li><a href="https://origami.design/tutorials/">Origami: Learn</a></li>
+  <li><a href="https://origami.design/examples/">Origami: Example Gallery</a></li>
+  <li><a href="http://dannywhite.is/aussie-american">Aussie American</a></li>
+  <li><a href="https://github.com/ustwo/branded-interactions">Branded Interactions</a></li>
+</ul>
+
+
+<h2>Writing</h2>
+<ul class="plain">
+  {% for post in site.posts %}
+  <li>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+    {% assign date_format = "%B %Y" %}
+    <time>{{ post.date | date: date_format }}</time>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Elsewhere</h2>
+<ul class="inline">
+  <li><a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x77;&#104;&#x69;&#x74;&#x65;&#46;&#x64;&#x61;&#x6e;&#105;&#x65;&#108;&#x2e;&#106;&#x61;&#x6d;&#x65;&#x73;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">Email</a></li>
+  <!-- http://robspangler.com/blog/encrypt-mailto-links-to-stop-email-spam/ -->
+  <li><a href="https://github.com/dannyalright">Code I write</a></li>
+  <li><a href="https://instagram.com/dannywhite/">Photos I take</a></li>
+  <li><a href="https://twitter.com/dannyalright/likes">Tweets I like</a></li>
+  <li><a href="https://letterboxd.com/dannywhite/">Films I watch</a></li>
+  <li><a href="https://www.goodreads.com/dannywhite">Books I read</a></li>
+  <li><a href="https://pinboard.in/u:dwhite">Links I save</a></li>
+  <li><a href="https://pinterest.com/dannyalright/pins/">Things I pin</a></li>
+</ul>
+
+<h2>Portfolio and CV</h2>
+<p>I try to keep a running deck of what I’m working on at <a href="http://dannywhite.is/making">dannywhite.is/making</a>. You’ll need to request access before seeing its contents.</p>
+
+<p>See <a href="http://dannywhite.is/cv">dannywhite.is/cv</a> for a full CV. Same deal there with request-access.</p>
+
+  <!-- <img src="/assets/images/danny-white.jpg" alt="Danny White"> -->
+</section>
