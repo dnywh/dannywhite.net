@@ -53,6 +53,9 @@ layout: default
 <h2>Ephemera</h2>
 <ul>
   {% for item in site.data.ephemera %}
-  <li>{{ item.name }}</li>
+  <li>
+    {{ item.name }}
+    <img src="assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}">
+  </li>
   {% endfor %}
 </ul>

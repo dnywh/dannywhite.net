@@ -9,10 +9,18 @@
 # Compressed via ImageOptim
 # Maximum dimension of 1800px
 
-- test-ephemera:
+- test:
   name: Test Ephemera
   date: 2018-01-01
   tags:
     - test
     - monkey
     - beach ball
+
+- tempo-doeloe:
+  name: Tempo Doeloe
+  link: http://www.tempodoeloerestaurant.nl
+  date: 2018-07-09
+  tags:
+    - food
+    - amsterdam
