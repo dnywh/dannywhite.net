@@ -1,0 +1,18 @@
+# Scan settings:
+# 300dpi
+# Full color text/photo
+# Auto density
+# PDF uncompressed
+
+# Export settings:
+# JPG on white background
+# Compressed via ImageOptim
+# Maximum dimension of 1800px
+
+- test-ephemera:
+  name: Test Ephemera
+  date: 2018-01-01
+  tags:
+    - test
+    - monkey
+    - beach ball

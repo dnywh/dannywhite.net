@@ -49,3 +49,10 @@ layout: default
 <p>See <a href="http://dannywhite.is/cv">dannywhite.is/cv</a> for a full CV. Same deal there with request-access.</p>
 
   <!-- <img src="/assets/images/danny-white.jpg" alt="Danny White"> -->
+
+<h2>Ephemera</h2>
+<ul>
+  {% for item in site.data.ephemera %}
+  <li>{{ item.name }}</li>
+  {% endfor %}
+</ul>
