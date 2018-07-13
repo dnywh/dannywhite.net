@@ -6,21 +6,53 @@
 
 # Export settings:
 # JPG on white background
-# Compressed via ImageOptim
-# Maximum dimension of 1800px
-
-- test:
-  name: Test Ephemera
-  date: 2018-01-01
-  tags:
-    - test
-    - monkey
-    - beach ball
+# SRBG for web
+# ~Compressed via ImageOptim~
+# ~Maximum dimension of 1800px~
 
 - tempo-doeloe:
   name: Tempo Doeloe
   link: http://www.tempodoeloerestaurant.nl
   date: 2018-07-09
+  location: Amsterdam
   tags:
     - food
-    - amsterdam
+
+- utrecht-to-amsterdam:
+  name: Utrecht to Amsterdam
+  date: 2018-07-08
+  location: Utrecht
+  tags:
+    - train
+    - travel
+
+- james-turrell-ganzfeld:
+  name: James Turrell
+  date: 2018-07-02
+  location: Berlin
+  tags:
+    - art
+    - museum
+
+- jewish-museum-berlin:
+  name: Jewish Museum Berlin
+  date: 2018-07-02
+  location: Berlin
+  tags:
+    - museum
+
+- u-bahn-7-day:
+  name: U-Bahn
+  date: 2018-06-18
+  location: Berlin
+  tags:
+    - train
+    - travel
+
+- aa-nicaragua-return:
+  name: Nicaragua
+  date: 2018-05-13
+  location: Managua
+  tags:
+    - plane
+    - travel
