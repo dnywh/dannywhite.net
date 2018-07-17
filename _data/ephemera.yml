@@ -1,7 +1,7 @@
 # Scan settings:
 # 300dpi
 # Full color text/photo
-# Auto density
+# ~Auto density~
 # PDF uncompressed
 
 # Export settings:
@@ -9,6 +9,14 @@
 # SRBG for web
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
+
+- world-in-colour:
+  name: The World in Colour
+  date: 2018-07-10
+  link: http://allardpiersonmuseum.nl
+  location: Amsterdam
+  tags:
+    - museum
 
 - tempo-doeloe:
   name: Tempo Doeloe
@@ -24,7 +32,7 @@
   location: Utrecht
   tags:
     - train
-    - travel
+    - tranport
 
 - james-turrell-ganzfeld:
   name: James Turrell
@@ -47,7 +55,17 @@
   location: Berlin
   tags:
     - train
-    - travel
+    - tranport
+
+- mohonk-trail-map:
+  name: Mohonk Preserve Trail Map
+  date: 2018-06-09
+  location: Mohonk Preserve
+  tags:
+    - nature
+    - hiking
+    - camping
+    - climbing
 
 - aa-nicaragua-return:
   name: Nicaragua
@@ -55,4 +73,40 @@
   location: Managua
   tags:
     - plane
-    - travel
+    - tranport
+
+- zion:
+  name: Zion National Park
+  date: 2017-07-08
+  location: Zion Naional Park
+  tags:
+    - national-parks
+    - nature
+    - hiking
+
+- bryce-canyon:
+  name: Bryce Canyon National Park
+  date: 2017-07-07
+  location: Bryce Canyon National Park
+  tags:
+    - national-parks
+    - nature
+    - hiking
+
+- canyonlands:
+  name: Canyonlands National Park
+  date: 2017-07-05
+  location: Moab
+  tags:
+    - national-parks
+    - nature
+    - hiking
+
+- arches:
+  name: Arches National Park
+  date: 2017-07-04
+  location: Moab
+  tags:
+    - national-parks
+    - nature
+    - hiking
