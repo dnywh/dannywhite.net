@@ -10,17 +10,22 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- royal-palms-shuffleboard:
+  name: Shuffleboard
+  date: 2018-07-17
+  location: Gowanus
+  tags:
+    - kickstarter
+
 - world-in-colour:
   name: The World in Colour
   date: 2018-07-10
-  link: http://allardpiersonmuseum.nl
   location: Amsterdam
   tags:
     - museum
 
 - tempo-doeloe:
   name: Tempo Doeloe
-  link: http://www.tempodoeloerestaurant.nl
   date: 2018-07-09
   location: Amsterdam
   tags:
