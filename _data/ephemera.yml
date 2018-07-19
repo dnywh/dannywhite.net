@@ -6,6 +6,7 @@
 
 # Export settings:
 # JPG on white background
+# Pixelate effect (10px) for sensitive material
 # SRBG for web
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
@@ -72,6 +73,14 @@
     - camping
     - climbing
 
+- carole-king:
+  name: The Carole King Musical
+  date: 2018-05-20
+  location: Stephen Sondheim Theatre
+  tags:
+    - broadway
+    - show
+
 - aa-nicaragua-return:
   name: Nicaragua
   date: 2018-05-13
@@ -79,6 +88,45 @@
   tags:
     - plane
     - tranport
+
+- twenty-dollars:
+  name: Twenty Dollars
+  date: 2018-03-29
+  location: Astoria
+  tags:
+    - usa
+
+- fruit-bros:
+  name: United Fruit Brothers
+  date: 2018-02-11
+  location: Astoria
+  tags:
+    - receipt
+    - groceries
+
+- hernando-county:
+  name: Werner-Boyce Salt Springs State Park
+  date: 2017-12-22
+  location: Werner-Boyce Salt Springs State Park
+  tags:
+    - kayaking
+    - nature
+
+- ord-lga:
+  name: Chicago to New York
+  date: 2017-10-17
+  location: Chicago O'Hare
+  tags:
+    - plane
+    - transport
+
+- yvr-ord:
+  name: Vancouver to Chicago
+  date: 2017-10-17
+  location: Vancouver Airport
+  tags:
+    - plane
+    - transport
 
 - zion:
   name: Zion National Park
@@ -98,9 +146,27 @@
     - nature
     - hiking
 
+- capitol-reef:
+  name: Capitol Reef National Park
+  date: 2017-07-06
+  location: Gifford House
+  tags:
+    - national-parks
+    - nature
+    - hiking
+
 - canyonlands:
   name: Canyonlands National Park
   date: 2017-07-05
+  location: Moab
+  tags:
+    - national-parks
+    - nature
+    - hiking
+
+- arches-postcard:
+  name: Arches National Park Postcard
+  date: 2017-07-04
   location: Moab
   tags:
     - national-parks
