@@ -73,6 +73,14 @@
     - camping
     - climbing
 
+- no-postcard:
+  name: Stop Offshore Drilling
+  date: 2018-06-01
+  location: The Cliffs, LIC
+  tags:
+    - activism
+    - environment
+
 - carole-king:
   name: The Carole King Musical
   date: 2018-05-20
@@ -81,10 +89,26 @@
     - broadway
     - show
 
+- mia-lga:
+  name: Miami to NYC
+  date: 2018-05-13
+  location: Miami
+  tags:
+    - plane
+    - tranport
+
 - aa-nicaragua-return:
   name: Nicaragua
   date: 2018-05-13
   location: Managua
+  tags:
+    - plane
+    - tranport
+
+- mia-mga:
+  name: Miami to Managua
+  date: 2018-05-05
+  location: Miami
   tags:
     - plane
     - tranport
@@ -96,6 +120,28 @@
   tags:
     - usa
 
+- king-sauna:
+  name: King Sauna
+  date: 2018-02-24
+  location: Palisades Park, New Jersey
+  tags:
+    - spa
+
+- neptune-diner:
+  name: Neptune Diner
+  date: 2018-02-18
+  location: Neptune Diner, Astoria
+  tags:
+    - food
+
+- met:
+  name: The Met
+  date: 2018-02-16
+  location: The Metropolitan Museum of Art
+  tags:
+    - museum
+    - art
+
 - fruit-bros:
   name: United Fruit Brothers
   date: 2018-02-11
@@ -104,6 +150,14 @@
     - receipt
     - groceries
 
+- mco-lga:
+  name: Orlando to New York
+  date: 2017-12-31
+  location: Orlando
+  tags:
+    - plane
+    - transport
+
 - hernando-county:
   name: Werner-Boyce Salt Springs State Park
   date: 2017-12-22
@@ -111,6 +165,14 @@
   tags:
     - kayaking
     - nature
+
+- hey-arnold:
+  name: Arnold and DW
+  date: 2017-10-31
+  location: Brooklyn Bazaar
+  tags:
+    - party
+    - lexi
 
 - ord-lga:
   name: Chicago to New York
@@ -127,6 +189,30 @@
   tags:
     - plane
     - transport
+
+- ord-yvr:
+  name: Chicago to Vancouver
+  date: 2017-10-09
+  location: Chicago O'Hare
+  tags:
+    - plane
+    - transport
+
+- solo9w57:
+  name: SOLO9W57
+  date: 2017-09-22
+  location: 9 W 57th St, New York
+  tags:
+    - nyc
+    - lexi
+
+- aperitivo:
+  name: Aperitivo Seleccionado para TI
+  date: 2017-09-09
+  location: Seville, Spain
+  tags:
+    - coffee
+    - food
 
 - zion:
   name: Zion National Park
@@ -164,8 +250,8 @@
     - nature
     - hiking
 
-- arches-postcard:
-  name: Arches National Park Postcard
+- arches:
+  name: Arches National Park
   date: 2017-07-04
   location: Moab
   tags:
@@ -173,8 +259,8 @@
     - nature
     - hiking
 
-- arches:
-  name: Arches National Park
+- arches-postcard:
+  name: Arches National Park Postcard
   date: 2017-07-04
   location: Moab
   tags:
