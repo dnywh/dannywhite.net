@@ -74,7 +74,7 @@
     - climbing
 
 - no-postcard:
-  name: Stop Offshore Drilling
+  name: Dear Secretary Zinke
   date: 2018-06-01
   location: The Cliffs, LIC
   tags:
@@ -112,6 +112,20 @@
   tags:
     - plane
     - tranport
+
+- duckies:
+  name: Duckies
+  date: 2018-04-14
+  location: New York City
+  tags:
+    - unknown
+
+- isle-of-dogs:
+  name: Isle of Dogs
+  date: 2018-03-31
+  location: Kaufman 14, Astoria
+  tags:
+    - movie
 
 - twenty-dollars:
   name: Twenty Dollars
@@ -267,3 +281,10 @@
     - national-parks
     - nature
     - hiking
+
+- josh:
+  name: Josh Upton
+  date: 2017-06-06
+  location: ustwo New York
+  tags:
+    - sticker
