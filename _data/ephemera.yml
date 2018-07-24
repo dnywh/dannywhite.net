@@ -164,6 +164,55 @@
     - receipt
     - groceries
 
+- a-bronx-tale:
+  name: A Bronx Tale
+  date: 2018-01-31
+  location: Longacre Theatre
+  tags:
+    - broadway
+
+- canal-bulbs:
+  name: Canal Bulbs Inc
+  date: 2018-01-27
+  location: 313 Canal St, NY, 10013
+  tags:
+    - receipt
+
+- florida-project:
+  name: The Florida Project
+  date: 2018-01-27
+  location: Roxy Cinema, NYC
+  tags:
+    - movie
+
+- last-jedi:
+  name: The Last Jedi
+  date: 2018-01-21
+  location: Kaufman 14, Astoria
+  tags:
+    - movie
+
+- paddington-2:
+  name: Paddington 2
+  date: 2018-01-13
+  location: Kaufman 14, Astoria
+  tags:
+    - movie
+
+- coco:
+  name: Coco
+  date: 2018-01-09
+  location: AMC Loews 34th Street 14
+  tags:
+    - movie
+
+- mount-sinai:
+  name: Mount Sinai
+  date: 2018-01-02
+  location: Mountn Sinai Queens
+  tags:
+    - hospital
+
 - mco-lga:
   name: Orlando to New York
   date: 2017-12-31
@@ -179,6 +228,21 @@
   tags:
     - kayaking
     - nature
+
+- black-diamond:
+  name: Black Diamond
+  date: 2017-11-29
+  location: 58 Kent St, Brooklyn
+  tags:
+    - climbing
+
+- bag-tag:
+  name: Bag Tag
+  date: 2017-11-22
+  location: Tampa, FL
+  tags:
+    - transport
+    - plane
 
 - hey-arnold:
   name: Arnold and DW
@@ -227,6 +291,14 @@
   tags:
     - coffee
     - food
+
+- yankees-legends:
+  name: Yankees v Mariners
+  date: 2018-08-27
+  location: Yankee Stadium
+  tags:
+    - sport
+    - baseball
 
 - zion:
   name: Zion National Park
@@ -288,3 +360,10 @@
   location: ustwo New York
   tags:
     - sticker
+
+- cal-cru:
+  name: Cal Cru
+  date: 2017-05-11
+  location: Astoria, NY
+  tags:
+    - clothes
