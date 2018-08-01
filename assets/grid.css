@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1em;
+}
+
+.grid div img {
+    /* Override my setting from elsewhere */
+    height: auto;
+}

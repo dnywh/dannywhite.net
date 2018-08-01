@@ -51,11 +51,11 @@ layout: default
   <!-- <img src="/assets/images/danny-white.jpg" alt="Danny White"> -->
 
 <h2>Ephemera</h2>
-<ul>
+<div class="grid">
   {% for item in site.data.ephemera %}
-  <li>
-    {{ item.name }}
+  <div>
+    <!-- {{ item.date }} -->
     <img src="assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}">
-  </li>
+  </div>
   {% endfor %}
-</ul>
+</div>
