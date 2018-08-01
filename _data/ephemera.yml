@@ -11,6 +11,13 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- post-it:
+  name: Post it
+  date: 2018-07-25
+  location: Kickstarter New York
+  tags:
+    - kickstarter
+
 - royal-palms-shuffleboard:
   name: Shuffleboard
   date: 2018-07-17
@@ -221,6 +228,13 @@
     - plane
     - transport
 
+- hunter-springs:
+  name: Manatees at Crystal River
+  date: 2017-12-29
+  location: Crystal River, FL
+  tags:
+    - nature
+
 - hernando-county:
   name: Werner-Boyce Salt Springs State Park
   date: 2017-12-22
@@ -228,6 +242,14 @@
   tags:
     - kayaking
     - nature
+
+- framer-sticker:
+  name: Koen and Jorn
+  date: 2017-11-30
+  location: Kickstarter New York
+  tags:
+    - kickstarter
+    - framer
 
 - black-diamond:
   name: Black Diamond
