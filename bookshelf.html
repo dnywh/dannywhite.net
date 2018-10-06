@@ -1,0 +1,14 @@
+---
+layout: post
+---
+<ul class="plain">
+  {% for book in site.data.books %}
+  <li style="color: {{ book.colour }}">
+    <img src="{{ book.image }}" alt="{{ book.name }}">
+    {{ book.name }}, {{ book.author }}.
+    {% for tag in book.tags %}
+    <span>{{ tag }}</span>
+    {% endfor %}
+  </li>
+  {% endfor %}
+</ul>
