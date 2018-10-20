@@ -1,8 +1,8 @@
 ---
 layout: post
 type: article
-title:  "Mac keymappings"
-date:   2018-01-06 15:33:56 -0400
+title: "Mac keymappings"
+date: 2018-01-06 15:33:56 -0400
 ---
 
 - Sketch ones
