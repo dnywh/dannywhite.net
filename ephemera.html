@@ -1,0 +1,13 @@
+---
+layout: post
+title: What's going on
+---
+
+<div class="grid">
+  {% for item in site.data.ephemera %}
+  <div>
+    <!-- {{ item.date }} -->
+    <img src="../assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}">
+  </div>
+  {% endfor %}
+</div>
