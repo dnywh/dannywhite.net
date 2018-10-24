@@ -10,12 +10,8 @@
     {{ content }}
 
     {% comment %}
-    {% include footer.html %}
+      {% include footer.html %}
     {% endcomment %}
-
-    {% if jekyll.environment == "production" %}
-      {% include analytics.html %}
-    {% endif %}
   </body>
 
 </html>
