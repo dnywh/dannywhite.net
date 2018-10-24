@@ -11,35 +11,43 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
-- post-it:
+- ? bareburger-and-crayons
+  name: Bareburger and crayons
+  date: 2018-10-23
+  location: Bareburger Astoria
+  tags:
+    - drawing
+    - lexi
+
+- ? post-it
   name: Post it
   date: 2018-07-25
   location: Kickstarter New York
   tags:
     - kickstarter
 
-- royal-palms-shuffleboard:
+- ? royal-palms-shuffleboard
   name: Shuffleboard
   date: 2018-07-17
   location: Gowanus
   tags:
     - kickstarter
 
-- world-in-colour:
+- ? world-in-colour
   name: The World in Colour
   date: 2018-07-10
   location: Amsterdam
   tags:
     - museum
 
-- tempo-doeloe:
+- ? tempo-doeloe
   name: Tempo Doeloe
   date: 2018-07-09
   location: Amsterdam
   tags:
     - food
 
-- utrecht-to-amsterdam:
+- ? utrecht-to-amsterdam
   name: Utrecht to Amsterdam
   date: 2018-07-08
   location: Utrecht
@@ -47,7 +55,7 @@
     - train
     - tranport
 
-- james-turrell-ganzfeld:
+- ? james-turrell-ganzfeld
   name: James Turrell
   date: 2018-07-02
   location: Berlin
@@ -55,14 +63,14 @@
     - art
     - museum
 
-- jewish-museum-berlin:
+- ? jewish-museum-berlin
   name: Jewish Museum Berlin
   date: 2018-07-02
   location: Berlin
   tags:
     - museum
 
-- u-bahn-7-day:
+- ? u-bahn-7-day
   name: U-Bahn
   date: 2018-06-18
   location: Berlin
@@ -70,7 +78,7 @@
     - train
     - tranport
 
-- mohonk-trail-map:
+- ? mohonk-trail-map
   name: Mohonk Preserve Trail Map
   date: 2018-06-09
   location: Mohonk Preserve
@@ -80,7 +88,7 @@
     - camping
     - climbing
 
-- no-postcard:
+- ? no-postcard
   name: Dear Secretary Zinke
   date: 2018-06-01
   location: The Cliffs, LIC
@@ -88,7 +96,7 @@
     - activism
     - environment
 
-- carole-king:
+- ? carole-king
   name: The Carole King Musical
   date: 2018-05-20
   location: Stephen Sondheim Theatre
@@ -96,7 +104,7 @@
     - broadway
     - show
 
-- mia-lga:
+- ? mia-lga
   name: Miami to NYC
   date: 2018-05-13
   location: Miami
@@ -104,7 +112,7 @@
     - plane
     - tranport
 
-- aa-nicaragua-return:
+- ? aa-nicaragua-return
   name: Nicaragua
   date: 2018-05-13
   location: Managua
@@ -112,7 +120,7 @@
     - plane
     - tranport
 
-- mia-mga:
+- ? mia-mga
   name: Miami to Managua
   date: 2018-05-05
   location: Miami
@@ -120,42 +128,42 @@
     - plane
     - tranport
 
-- duckies:
+- ? duckies
   name: Duckies
   date: 2018-04-14
   location: New York City
   tags:
     - unknown
 
-- isle-of-dogs:
+- ? isle-of-dogs
   name: Isle of Dogs
   date: 2018-03-31
   location: Kaufman 14, Astoria
   tags:
     - movie
 
-- twenty-dollars:
+- ? twenty-dollars
   name: Twenty Dollars
   date: 2018-03-29
   location: Astoria
   tags:
     - usa
 
-- king-sauna:
+- ? king-sauna
   name: King Sauna
   date: 2018-02-24
   location: Palisades Park, New Jersey
   tags:
     - spa
 
-- neptune-diner:
+- ? neptune-diner
   name: Neptune Diner
   date: 2018-02-18
   location: Neptune Diner, Astoria
   tags:
     - food
 
-- met:
+- ? met
   name: The Met
   date: 2018-02-16
   location: The Metropolitan Museum of Art
@@ -163,7 +171,7 @@
     - museum
     - art
 
-- fruit-bros:
+- ? fruit-bros
   name: United Fruit Brothers
   date: 2018-02-11
   location: Astoria
@@ -171,56 +179,56 @@
     - receipt
     - groceries
 
-- a-bronx-tale:
+- ? a-bronx-tale
   name: A Bronx Tale
   date: 2018-01-31
   location: Longacre Theatre
   tags:
     - broadway
 
-- canal-bulbs:
+- ? canal-bulbs
   name: Canal Bulbs Inc
   date: 2018-01-27
   location: 313 Canal St, NY, 10013
   tags:
     - receipt
 
-- florida-project:
+- ? florida-project
   name: The Florida Project
   date: 2018-01-27
   location: Roxy Cinema, NYC
   tags:
     - movie
 
-- last-jedi:
+- ? last-jedi
   name: The Last Jedi
   date: 2018-01-21
   location: Kaufman 14, Astoria
   tags:
     - movie
 
-- paddington-2:
+- ? paddington-2
   name: Paddington 2
   date: 2018-01-13
   location: Kaufman 14, Astoria
   tags:
     - movie
 
-- coco:
+- ? coco
   name: Coco
   date: 2018-01-09
   location: AMC Loews 34th Street 14
   tags:
     - movie
 
-- mount-sinai:
+- ? mount-sinai
   name: Mount Sinai
   date: 2018-01-02
   location: Mountn Sinai Queens
   tags:
     - hospital
 
-- mco-lga:
+- ? mco-lga
   name: Orlando to New York
   date: 2017-12-31
   location: Orlando
@@ -228,14 +236,14 @@
     - plane
     - transport
 
-- hunter-springs:
+- ? hunter-springs
   name: Manatees at Crystal River
   date: 2017-12-29
   location: Crystal River, FL
   tags:
     - nature
 
-- hernando-county:
+- ? hernando-county
   name: Werner-Boyce Salt Springs State Park
   date: 2017-12-22
   location: Werner-Boyce Salt Springs State Park
@@ -243,7 +251,7 @@
     - kayaking
     - nature
 
-- framer-sticker:
+- ? framer-sticker
   name: Koen and Jorn
   date: 2017-11-30
   location: Kickstarter New York
@@ -251,14 +259,14 @@
     - kickstarter
     - framer
 
-- black-diamond:
+- ? black-diamond
   name: Black Diamond
   date: 2017-11-29
   location: 58 Kent St, Brooklyn
   tags:
     - climbing
 
-- bag-tag:
+- ? bag-tag
   name: Bag Tag
   date: 2017-11-22
   location: Tampa, FL
@@ -266,7 +274,7 @@
     - transport
     - plane
 
-- hey-arnold:
+- ? hey-arnold
   name: Arnold and DW
   date: 2017-10-31
   location: Brooklyn Bazaar
@@ -274,7 +282,7 @@
     - party
     - lexi
 
-- ord-lga:
+- ? ord-lga
   name: Chicago to New York
   date: 2017-10-17
   location: Chicago O'Hare
@@ -282,7 +290,7 @@
     - plane
     - transport
 
-- yvr-ord:
+- ? yvr-ord
   name: Vancouver to Chicago
   date: 2017-10-17
   location: Vancouver Airport
@@ -290,7 +298,7 @@
     - plane
     - transport
 
-- ord-yvr:
+- ? ord-yvr
   name: Chicago to Vancouver
   date: 2017-10-09
   location: Chicago O'Hare
@@ -298,7 +306,7 @@
     - plane
     - transport
 
-- solo9w57:
+- ? solo9w57
   name: SOLO9W57
   date: 2017-09-22
   location: 9 W 57th St, New York
@@ -306,7 +314,7 @@
     - nyc
     - lexi
 
-- aperitivo:
+- ? aperitivo
   name: Aperitivo Seleccionado para TI
   date: 2017-09-09
   location: Seville, Spain
@@ -314,7 +322,7 @@
     - coffee
     - food
 
-- yankees-legends:
+- ? yankees-legends
   name: Yankees v Mariners
   date: 2018-08-27
   location: Yankee Stadium
@@ -322,7 +330,7 @@
     - sport
     - baseball
 
-- zion:
+- ? zion
   name: Zion National Park
   date: 2017-07-08
   location: Zion Naional Park
@@ -331,7 +339,7 @@
     - nature
     - hiking
 
-- bryce-canyon:
+- ? bryce-canyon
   name: Bryce Canyon National Park
   date: 2017-07-07
   location: Bryce Canyon National Park
@@ -340,7 +348,7 @@
     - nature
     - hiking
 
-- capitol-reef:
+- ? capitol-reef
   name: Capitol Reef National Park
   date: 2017-07-06
   location: Gifford House
@@ -349,7 +357,7 @@
     - nature
     - hiking
 
-- canyonlands:
+- ? canyonlands
   name: Canyonlands National Park
   date: 2017-07-05
   location: Moab
@@ -358,7 +366,7 @@
     - nature
     - hiking
 
-- arches:
+- ? arches
   name: Arches National Park
   date: 2017-07-04
   location: Moab
@@ -367,7 +375,7 @@
     - nature
     - hiking
 
-- arches-postcard:
+- ? arches-postcard
   name: Arches National Park Postcard
   date: 2017-07-04
   location: Moab
@@ -376,14 +384,14 @@
     - nature
     - hiking
 
-- josh:
+- ? josh
   name: Josh Upton
   date: 2017-06-06
   location: ustwo New York
   tags:
     - sticker
 
-- cal-cru:
+- ? cal-cru
   name: Cal Cru
   date: 2017-05-11
   location: Astoria, NY
