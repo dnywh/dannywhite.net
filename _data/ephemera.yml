@@ -11,6 +11,15 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- ? bahamas-brooklyn-steel
+  name: Bahamas at Brooklyn Steel
+  date: 2018-10-25
+  location: Brooklyn Steel
+  tags:
+    - gig
+    - show
+    - lexi
+
 - ? bareburger-and-crayons
   name: Bareburger and crayons
   date: 2018-10-23
@@ -18,6 +27,13 @@
   tags:
     - drawing
     - lexi
+
+- ? momi-lunch
+  name: Lunch note
+  date: 2018-09-12
+  location: Astoria, NY
+  tags:
+    - doodle
 
 - ? post-it
   name: Post it
@@ -224,7 +240,7 @@
 - ? mount-sinai
   name: Mount Sinai
   date: 2018-01-02
-  location: Mountn Sinai Queens
+  location: Mount Sinai Queens
   tags:
     - hospital
 
