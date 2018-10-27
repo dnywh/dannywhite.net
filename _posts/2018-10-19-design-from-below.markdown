@@ -52,6 +52,8 @@ Stem from Le Corbusier, the poster-boy for high modernity.
   media="
   le-corbusier.jpg" %}
 
+Some more text.
+
 {% include media-grid.html
   type="single-left"
   caption="Buenos Aires as rendered by Le Corbusier."
@@ -66,8 +68,10 @@ And another image:
 
 {% include image.html name="radiant-city-plans.jpg" caption="The Radiant City." %}
 
+Some more text. Some more text.
+
 {% include media-grid.html
-  type="four-even"
+  type="even"
   caption="First: A handy block-size comparison chart. Second: via zijnwijdat.nl."
   media="
   block-sizes.jpg
@@ -82,21 +86,26 @@ Pruitt Igoe.
   pruitt-igoe-USGS02.jpg" %}
 
 Tenements.
+
 {% include media-grid.html
-  type="four-even"
+  type="even"
   caption="First: Berenice Abbott, 1936. Second: Vergara, Camilo J, 1970."
   media="
   hester-street.jpg
   vergara-camilo.jpg" %}
 
+Some more text.
+
 {% include media-grid.html
-  type="four-even"
+  type="even"
   caption="U.S. Department of Housing and Urban Development, 1972."
   media="
   pruitt-igoe-collapse-series-1.jpg
   pruitt-igoe-collapse-series-2.jpg
   pruitt-igoe-collapse-series-3.jpg
   pruitt-igoe-collapse-series-4.jpg" %}
+
+Some more text.
 
 ## We're in a good position, though
 
@@ -111,11 +120,16 @@ Jane Jacobs.
 > “The best way to plan for downtown is to see how people use it today
 
 ## Designing with data
+Some more text.
 
 ## Leave the office
+Some more text.
 
 ## Embrace difference
+Some more text.
 
 {% include image.html name="times-square.jpg" caption="From left: Hiroko Masuike, Damon Winter, Justin Maxon, 2009, for The New York Times." %}
+
+Some more text.
 
 Some final, sign-off copy that wraps up this post.
