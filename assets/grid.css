@@ -1,10 +1,72 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.85em;
 }
 
-.grid div img {
-    /* Override my setting from elsewhere */
-    height: auto;
+.grid div figure img {
+  /* Override my setting from elsewhere */
+  height: auto;
+  /*  */
+  object-fit: cover;
+  object-position: top;
+  /* line-height: 0; */
+}
+
+/* grid-single: a modest inline-type image  */
+.grid-single-right figure,
+.grid-single-left figure {
+  grid-column: span 6;
+  grid-row: 1;
+}
+.grid-single-right label,
+.grid-single-left label {
+  grid-column: span 5;
+  grid-row: 2;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media only screen and (min-width: 640px) {
+  .grid-single-right figure,
+  .grid-single-left figure {
+    grid-column: 2/6;
+  }
+  .grid-single-right label {
+    grid-column: 6/7;
+    grid-row: 1;
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .grid-single-left label {
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: right;
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+}
+
+/* grid-four-even: a 4-up photo grid style for editorial */
+.grid-four-even figure:nth-child(1) {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.grid-four-even figure:nth-child(2) {
+  grid-column: 4/7;
+  grid-row: 1;
+}
+.grid-four-even figure:nth-child(3) {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+.grid-four-even figure:nth-child(4) {
+  grid-column: 4/7;
+  grid-row: 2;
+}
+/* grid-four-even caption */
+.grid-four-even label,
+.grid-four-even figcaption {
+  grid-column: 1/7;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

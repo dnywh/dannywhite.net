@@ -19,7 +19,11 @@ This is something I've been mulling over for the past year or two. [Loupe 2018](
 
 The tools we're using come from print design.
 
-{% include image.html name="printing-press.jpg" caption="Woolsey, Theodore Dwight, 1876" %}
+{% include media-grid.html
+  type="single-right"
+  caption="Woolsey, Theodore Dwight, 1876."
+  media="
+  printing-press.jpg" %}
 
 ## Source of truth
 
@@ -31,7 +35,11 @@ We're more like the Fab Five.
 
 Architecture, built environment design. Bijlmeer.
 
-{% include image.html name="bijlmermeer-1962-73.jpg" caption="via artchist.wordpress.com" %}
+{% include media-grid.html
+  type="single-left"
+  caption="via artchist.wordpress.com"
+  media="
+  bijlmermeer-1962-73.jpg" %}
 
 <!-- https://artchist.wordpress.com/2016/02/17/bijlmer-neighbourhood-in-amsterdam/#jp-carousel-871 -->
 
@@ -57,13 +65,21 @@ Pruitt Igoe.
 {% include image.html name="pruitt-igoe-USGS02.jpg" caption="United States Geological Survey, 1963–72." %}
 
 Tenements.
-{% include image.html name="hester-street.jpg" caption="Berenice Abbott, 1936." %}
-{% include image.html name="vergara-camilo.jpg" caption="Vergara, Camilo J, 1970." %}
+{% include media-grid.html
+  type="four-even"
+  caption="First: Berenice Abbott, 1936. Second: Vergara, Camilo J, 1970."
+  media="
+  hester-street.jpg
+  vergara-camilo.jpg" %}
 
-{% include image.html name="pruitt-igoe-collapse-series-1.jpg" %}
-{% include image.html name="pruitt-igoe-collapse-series-2.jpg" %}
-{% include image.html name="pruitt-igoe-collapse-series-3.jpg" %}
-{% include image.html name="pruitt-igoe-collapse-series-4.jpg" caption="U.S. Department of Housing and Urban Development, 1972" %}
+{% include media-grid.html
+  type="four-even"
+  caption="U.S. Department of Housing and Urban Development, 1972."
+  media="
+  pruitt-igoe-collapse-series-1.jpg
+  pruitt-igoe-collapse-series-2.jpg
+  pruitt-igoe-collapse-series-3.jpg
+  pruitt-igoe-collapse-series-4.jpg" %}
 
 ## We're in a good position, though
 
