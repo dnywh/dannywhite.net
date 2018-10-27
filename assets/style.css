@@ -40,16 +40,33 @@ body {
   font-family: "Inter UI", sans-serif;
 
   background: #f8f8f8;
-  /* max-width: 640px; */
-  margin: 2em auto;
-  /* padding: 2em 1em; */
+  margin: 0;
 }
 
-body :not(.media):not(span) {
-  max-width: 640px;
+nav,
+header,
+article > section > *,
+article > section > .media > figure > figcaption,
+article > section > .media > label {
+  max-width: 40rem; /* 640px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+article > section > .media {
+  max-width: 90rem; /* 1440px */
+  max-width: 1200px;
+  margin: 1.5rem auto; /* Break bounds of body margin */
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Navigation  */
+nav {
+  margin-top: 3em;
+}
 nav svg {
   max-width: 4em;
   fill: rgba(60, 60, 60, 1);
@@ -58,7 +75,7 @@ nav svg {
 /* Fancy back button */
 nav.back a p {
   position: absolute;
-  top: 3.7em;
+  top: 2.72em;
   margin-left: -0.5em;
   transition: 0.2s ease;
   opacity: 0;
@@ -116,6 +133,10 @@ p,
 ul li,
 ol li {
   line-height: 1.6;
+}
+
+ul {
+  list-style-position: inside;
 }
 
 blockquote,
