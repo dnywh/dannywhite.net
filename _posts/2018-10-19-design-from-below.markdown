@@ -38,6 +38,7 @@ Architecture, built environment design. Bijlmeer.
 {% include media-grid.html
   type="single-left"
   caption="via artchist.wordpress.com"
+  hyphenate=true
   media="
   bijlmermeer-1962-73.jpg" %}
 
@@ -45,9 +46,17 @@ Architecture, built environment design. Bijlmeer.
 
 Stem from Le Corbusier, the poster-boy for high modernity.
 
-{% include image.html name="le-corbusier.jpg" %}
+{% include media-grid.html
+  type="single-right"
+  caption="Wim Dussel, 1955."
+  media="
+  le-corbusier.jpg" %}
 
-{% include image.html name="buenos-aires.jpg" caption="Buenos Aires as rendered by Le Corbusier." %}
+{% include media-grid.html
+  type="single-left"
+  caption="Buenos Aires as rendered by Le Corbusier."
+  media="
+  buenos-aires.jpg" %}
 
 Here is an image:
 
@@ -57,12 +66,20 @@ And another image:
 
 {% include image.html name="radiant-city-plans.jpg" caption="The Radiant City." %}
 
-{% include image.html name="block-sizes.jpg" caption="A handy block-size comparison chart." %}
-
-{% include image.html name="bijlmermeer-site-plan-1980s.jpg" caption="via zijnwijdat.nl." %}
+{% include media-grid.html
+  type="four-even"
+  caption="First: A handy block-size comparison chart. Second: via zijnwijdat.nl."
+  media="
+  block-sizes.jpg
+  bijlmermeer-site-plan-1980s.jpg" %}
 
 Pruitt Igoe.
-{% include image.html name="pruitt-igoe-USGS02.jpg" caption="United States Geological Survey, 1963–72." %}
+
+{% include media-grid.html
+  type="single-right"
+  caption="United States Geological Survey, 1963–72."
+  media="
+  pruitt-igoe-USGS02.jpg" %}
 
 Tenements.
 {% include media-grid.html
@@ -85,7 +102,11 @@ Tenements.
 
 Jane Jacobs.
 
-{% include image.html name="jane-jacobs.jpg" caption="Phil Stanziola, 1961." %}
+{% include media-grid.html
+  type="single-left"
+  caption="Phil Stanziola, 1961."
+  media="
+  jane-jacobs.jpg" %}
 
 > “The best way to plan for downtown is to see how people use it today
 

@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 0.85em;
+  grid-gap: 2vw;
 }
 
 .grid div figure img {
@@ -47,6 +47,7 @@
 }
 
 /* grid-four-even: a 4-up photo grid style for editorial */
+/* TODO: strip down logic to simply 'span 4' for all */
 .grid-four-even figure:nth-child(1) {
   grid-column: 1/4;
   grid-row: 1;
@@ -64,9 +65,16 @@
   grid-row: 2;
 }
 /* grid-four-even caption */
-.grid-four-even label,
-.grid-four-even figcaption {
+.grid-four-even label {
   grid-column: 1/7;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/*  */
+.grid-one-third figure:nth-child(1) {
+  grid-column: 1/3;
+}
+.grid-one-third figure:nth-child(2) {
+  grid-column: 3/7;
 }

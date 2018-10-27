@@ -17,6 +17,6 @@
 
   <!-- Caption -->
   {% if include.caption %}
-  <label>{{ include.caption }}</label>
+  <label {% if include.hyphenate %}class="hyphenate" {% endif %}>{{ include.caption }}</label>
   {% endif %}
 </div>
