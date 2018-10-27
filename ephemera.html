@@ -1,9 +1,9 @@
 ---
 layout: default
-title: What's going on
+title: Ephemera
 ---
 
-<div class="flex messy gallery">
+<div class="flex gallery">
   {% for item in site.data.ephemera %}
   <figure>
     <img src="../assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}">
@@ -13,10 +13,10 @@ title: What's going on
       {{ item.date }}
     </figcaption>
   </figure>
-  
   {% endfor %}
 </div>
 
+<!-- Generate random rotation for each piece of ephemera -->
 <script>
   function randomRotation(minRange, maxRange) {
     let num = Math.random() * (maxRange + 1) + minRange;

@@ -144,7 +144,6 @@ ol {
 
 h1 {
   font-size: 2.2em;
-  /* margin-top: 0.1em; */
   line-height: 1.5;
 }
 
@@ -235,17 +234,17 @@ label a:hover {
 
 h1 a,
 h2 a,
+h5 a,
 p a,
 li a {
   background-color: rgba(5, 242, 186, 0.4);
-  /* box-shadow: inset 0 -0.15em 0 0 rgba(5, 242, 186, 0.4); */
 }
 h1 a:hover,
 h2 a:hover,
+h5 a:hover,
 p a:hover,
 li a:hover {
   background-color: rgba(5, 242, 186, 0.7);
-  /* box-shadow: inset 0 -0.35em 0 0 rgba(5, 242, 186, 0.4); */
 }
 
 /* Line breaks */
