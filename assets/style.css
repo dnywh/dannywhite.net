@@ -204,6 +204,9 @@ label {
   line-height: 1.5em;
   letter-spacing: 0.015em;
 }
+label {
+  display: block;
+}
 label.hyphenate {
   word-break: break-all;
   -webkit-hyphens: auto;
