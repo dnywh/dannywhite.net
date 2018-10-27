@@ -39,9 +39,14 @@ body {
   color: rgba(60, 60, 60, 1);
   font-family: "Inter UI", sans-serif;
 
-  max-width: 640px;
+  background: #f8f8f8;
+  /* max-width: 640px; */
   margin: 2em auto;
-  padding: 2em 1em;
+  /* padding: 2em 1em; */
+}
+
+body :not(.media):not(span) {
+  max-width: 640px;
 }
 
 /* Navigation  */
