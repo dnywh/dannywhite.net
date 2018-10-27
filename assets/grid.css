@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 2vw;
+  /* necessary for flush image bottoms: */
+  line-height: 0;
 }
 
 .grid div figure img {

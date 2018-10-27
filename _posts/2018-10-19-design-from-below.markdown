@@ -117,3 +117,5 @@ Jane Jacobs.
 ## Embrace difference
 
 {% include image.html name="times-square.jpg" caption="From left: Hiroko Masuike, Damon Winter, Justin Maxon, 2009, for The New York Times." %}
+
+Some final, sign-off copy that wraps up this post.

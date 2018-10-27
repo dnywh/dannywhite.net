@@ -1,5 +1,36 @@
 .flex {
   display: flex;
+}
+
+.directory {
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
+}
+
+.messy {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  overflow: hidden;
+}
+
+.messy > .month-marker {
+  background: red;
+  height: 25vw;
+}
+
+.messy > figure,
+.messy > .month-marker {
+  flex-basis: 45vw;
+  transform-origin: bottom left;
+  margin-bottom: 3em;
+}
+@media only screen and (min-width: 640px) {
+  .messy > figure,
+  .messy > .month-marker {
+    flex-basis: 16vw;
+  }
 }

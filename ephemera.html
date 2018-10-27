@@ -3,11 +3,38 @@ layout: default
 title: What's going on
 ---
 
-<div class="grid">
+<div class="flex messy gallery">
   {% for item in site.data.ephemera %}
-  <div>
-    <!-- {{ item.date }} -->
+  <figure>
     <img src="../assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}">
-  </div>
+    <figcaption>
+      {{ item.name }},<br>
+      {{ item.location }}<br>
+      {{ item.date }}
+    </figcaption>
+  </figure>
+  {% comment %}
+    {% if item.firstOfMonth == true %}
+    <div>
+      woah
+    </div>
+    {% endif %}
+  {% endcomment %}
+
   {% endfor %}
 </div>
+
+<script>
+  function randomRotation(minRange, maxRange) {
+    let num = Math.random() * (maxRange + 1) + minRange;
+    num *= Math.floor(Math.random()*2) == 1 ? 1 : -1;
+    return num;
+  }
+
+  const figures = document.querySelectorAll("figure");
+  
+  for (i = 0; i < figures.length; i++) {
+    const rand = randomRotation(0, 1);
+    figures[i].style.transform = `rotate(${rand}deg)`;
+  }
+</script>
