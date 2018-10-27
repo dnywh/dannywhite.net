@@ -77,10 +77,11 @@ article > section > .media {
 
 /* Navigation  */
 nav {
-  margin-top: 3em;
+  margin: 3em;
+  
 }
 nav svg {
-  max-width: 4em;
+  width: 4em;
   fill: rgba(60, 60, 60, 1);
   margin-bottom: 0.5em;
 }
