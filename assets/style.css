@@ -260,10 +260,9 @@ hr {
 }
 
 /* Lists */
-/* ul.inline,
-ul.plain {
-  padding: 0;
-} */
+ul.inside {
+  list-style: inside;
+}
 ul.inline li {
   display: inline;
 }

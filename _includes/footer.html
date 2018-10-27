@@ -1,6 +1,6 @@
 <footer>
-  {% if page.layout == "post" %}
-  <h5>&#x261d; <a href="#">Jump to top</a></h5>
+  {% if page.layout != "home" %}
+  <h5>&#x261d;&#xFE0E; <a href="#">Jump to top</a></h5>
   {% else %}
   
   <h5>&#x263a;</h5>
@@ -8,6 +8,6 @@
 
   {% if page.title != "Ephemera" %}
   {% assign latest = site.data.ephemera |  first %}
-  <h5><a href="../ephemera">{{ latest.name }}</a> &#x261e;</h5>
+  <h5><a href="../ephemera">{{ latest.name }}</a> &#x261e;&#xFE0E;</h5>
   {% endif %}
 </footer>
