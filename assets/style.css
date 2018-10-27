@@ -144,7 +144,12 @@ ol {
 
 h1 {
   font-size: 2.2em;
-  line-height: 1.5;
+  line-height: 1.25;
+}
+
+h1.intro {
+  font-size: 1.9em;
+  line-height: 1.35;
 }
 
 h2 {
