@@ -8,7 +8,7 @@ featured-image: facebook-ny.jpg
 
 I've been fortunate enough to have been working with the Origami team at Facebook for the last six months or so. Without going into too much detail, our NYC launch last night was a super proud moment for myself and the team.
 
-{% include image.html name="facebook-ny.jpg" caption="At Facebook NY. Photo by " caption-end-link="https://twitter.com/tollerton" caption-end-link-text="Shaun 'Tolly' Tollerton"%}
+{% include image.html name="facebook-ny.jpg" caption="At Facebook NY. Photo by " caption-end-link="https://twitter.com/tollerton" caption-end-link-text="Shaun Tollerton"%}
 
 Thanks to Madelin for joining and then running the whole shebang. Also thanks to Matej, Andrew, Rob, Blair, Julius, John, and everyone else at Facebook[^facebook] for being both some of the nicest and smartest people I've been around.
 
