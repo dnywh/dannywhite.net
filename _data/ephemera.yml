@@ -23,10 +23,35 @@
 - ? bareburger-and-crayons
   name: Bareburger and crayons
   date: 2018-10-23
-  location: Bareburger Astoria
+  location: Bareburger, Astoria, Y
   tags:
     - drawing
     - lexi
+  
+- ? comfortland
+  name: Comfortland
+  date: 2018-10-06
+  location: Comfortland, Astoria, NY
+  tags:
+    - receipt
+    - yum
+    - lexi
+
+- ? huis-van-alijn
+  name: The House of Alijn
+  date: 2018-09-28
+  location: Ghent, Belgium
+  tags:
+    - receipt
+    - museum
+
+- ? stam
+  name: Ghent City Museum
+  date: 2018-09-27
+  location: Ghent, Belgium
+  tags:
+    - receipt
+    - museum
 
 - ? momi-lunch
   name: Lunch note
@@ -401,7 +426,7 @@
     - hiking
 
 - ? josh
-  name: Josh Upton
+  name: Josh
   date: 2017-06-06
   location: ustwo New York
   tags:
