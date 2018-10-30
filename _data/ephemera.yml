@@ -20,14 +20,21 @@
     - show
     - lexi
 
+- ? one-year-kickstarter
+  name: One year at Kickstarter
+  date: 2018-10-24
+  location: Kickstarter New York
+  tags:
+    - kickstarter
+
 - ? bareburger-and-crayons
   name: Bareburger and crayons
   date: 2018-10-23
-  location: Bareburger, Astoria, Y
+  location: Bareburger, Astoria, NY
   tags:
     - drawing
     - lexi
-  
+
 - ? comfortland
   name: Comfortland
   date: 2018-10-06
