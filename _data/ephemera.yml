@@ -44,6 +44,22 @@
     - yum
     - lexi
 
+- ? paris-metro
+  name: Paris Metro
+  date: 2018-10-02
+  location: Paris, France
+  tags:
+    - train
+    - tranport
+
+- ? baetens-bb
+  name: Baeten's B&B
+  date: 2018-09-29
+  location: Ghent, Belgium
+  tags:
+    - receipt
+    - accommodation
+
 - ? huis-van-alijn
   name: The House of Alijn
   date: 2018-09-28
@@ -59,6 +75,21 @@
   tags:
     - receipt
     - museum
+
+- ? sir-adam-bag-tag
+  name: Sir Adam
+  date: 2018-09-19
+  location: Amsterdam Noord, Netherlands
+  tags:
+    - accommodation
+
+- ? schiphol-to-centraal
+  name: Schiphol to Centraal
+  date: 2018-09-19
+  location: Amsterdam, Netherlands
+  tags:
+    - train
+    - tranport
 
 - ? momi-lunch
   name: Lunch note
@@ -77,28 +108,28 @@
 - ? royal-palms-shuffleboard
   name: Shuffleboard
   date: 2018-07-17
-  location: Gowanus
+  location: Gowanus, NY
   tags:
     - kickstarter
 
 - ? world-in-colour
   name: The World in Colour
   date: 2018-07-10
-  location: Amsterdam
+  location: Amsterdam, Netherlands
   tags:
     - museum
 
 - ? tempo-doeloe
   name: Tempo Doeloe
   date: 2018-07-09
-  location: Amsterdam
+  location: Amsterdam, Netherlands
   tags:
     - food
 
 - ? utrecht-to-amsterdam
   name: Utrecht to Amsterdam
   date: 2018-07-08
-  location: Utrecht
+  location: Utrecht, Netherlands
   tags:
     - train
     - tranport
@@ -106,7 +137,7 @@
 - ? james-turrell-ganzfeld
   name: James Turrell
   date: 2018-07-02
-  location: Berlin
+  location: Berlin, Germany
   tags:
     - art
     - museum
@@ -114,14 +145,14 @@
 - ? jewish-museum-berlin
   name: Jewish Museum Berlin
   date: 2018-07-02
-  location: Berlin
+  location: Berlin, Germany
   tags:
     - museum
 
 - ? u-bahn-7-day
   name: U-Bahn
   date: 2018-06-18
-  location: Berlin
+  location: Berlin, Germany
   tags:
     - train
     - tranport
@@ -129,7 +160,7 @@
 - ? mohonk-trail-map
   name: Mohonk Preserve Trail Map
   date: 2018-06-09
-  location: Mohonk Preserve
+  location: Mohonk Preserve, NY
   tags:
     - nature
     - hiking
