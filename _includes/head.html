@@ -2,7 +2,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title |
+    escape }}{% endif %}</title>
   <meta name="author" content="Danny White" />
 
   <!-- Open Graph meta -->
@@ -14,8 +15,8 @@
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:locale" content="en_GB" />
 
-  <!-- Twitter Card meta (OG fallback doesn't work) -->
-  <meta name="twitter:card" content="summary_large_image">
+  <!-- Twitter Card meta -->
+  <meta name="twitter:card" content="{% if page.card %}{{ page.card }}{% else %}summary_large_image{% endif %}">
   <meta name="twitter:site" content="@dannyalright" />
   <meta name="twitter:creator" content="@dannyalright" />
   <meta name="twitter:title" content="{{ page.title }}">
@@ -23,7 +24,7 @@
   <meta name="twitter:image" content="{{ site.url }}/assets/{% if page.featured-image %}posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured-image }}{% else %}images/og-image-fallback.jpg{% endif %}">
 
   <!-- Pinterest -->
-  <meta name="p:domain_verify" content="62a5c72a4dbb40cba45c9a57bef6a6f9"/>
+  <meta name="p:domain_verify" content="62a5c72a4dbb40cba45c9a57bef6a6f9" />
 
   <!-- Normalize CSS -->
   <link rel="stylesheet" href="{{ "/assets/normalize.css" | relative_url }}">

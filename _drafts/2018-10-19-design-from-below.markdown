@@ -120,12 +120,15 @@ Jane Jacobs.
 > “The best way to plan for downtown is to see how people use it today
 
 ## Designing with data
+
 Some more text.
 
 ## Leave the office
+
 Some more text.
 
 ## Embrace difference
+
 Some more text.
 
 {% include image.html name="times-square.jpg" caption="From left: Hiroko Masuike, Damon Winter, Justin Maxon, 2009, for The New York Times." %}
