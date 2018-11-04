@@ -120,28 +120,11 @@ The most successful (collaborative, diverse, consistent turn-outs), consistent F
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks y&#39;all for making last night great. Until next time <a href="http://twitter.com/framerjs">@framerjs</a> <a href="http://twitter.com/ustwo">@ustwo</a> <a href="http://t.co/gK6bLW9L6d">pic.twitter.com/gK6bLW9L6d</a></p>&mdash; Danny White (@dannyalright) <a href="http://twitter.com/dannyalright/status/687705898391891969">January 14, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-[^recruiting]:
-
-  Our most recent Framer Sessions (led by Noah) was at ClassPass. They had a recruiter float in sessions. Not at all interruptive; instead making the most of having so many talented people in one room.
-
+[^recruiting]: Our most recent Framer Sessions (led by Noah) was at ClassPass. They had a recruiter float in sessions. Not at all interruptive; instead making the most of having so many talented people in one room.
 [^rsvp]: Of those who RSVPed yes or expressed interested.
-[^signage]:
-
-  I think I had up to six signs at one point, with people still getting lost. I've also run sessions where unless pushed, no one is willing to come forward with prototypes or questions.
-
-[^balance]:
-
-  A nice balance is overcoming the "this is too hard for me to learn" for beginners, and "I didn't know about this neat trick/feature/approach" for more advanced people.
-
+[^signage]: I think I had up to six signs at one point, with people still getting lost. I've also run sessions where unless pushed, no one is willing to come forward with prototypes or questions.
+[^balance]: A nice balance is overcoming the "this is too hard for me to learn" for beginners, and "I didn't know about this neat trick/feature/approach" for more advanced people.
 [^showandtell]: This is by far the hardest part. Prizes don’t help IMO.
-[^specialguests]:
-
-  Definitely do not put people on the spot—this should be something you've worked out with your guest prior to the meetup. Also don't feel like you need to restrict guests to showing purely Framer work. If someone used it in their workflow, or even if they use something else, that's still usually interesting for people.
-
-[^ordering]:
-
-  Understandably, people tend not to want to follow a guest's presentation.
-
-[^overrun]:
-
-  Groups can be often overrun by niche and intimidating demos or discussions that arguably aren’t a good fit for Framer (ultimately a design tool for validating ideas).
+[^specialguests]: Definitely do not put people on the spot—this should be something you've worked out with your guest prior to the meetup. Also don't feel like you need to restrict guests to showing purely Framer work. If someone used it in their workflow, or even if they use something else, that's still usually interesting for people.
+[^ordering]: Understandably, people tend not to want to follow a guest's presentation.
+[^overrun]: Groups can be often overrun by niche and intimidating demos or discussions that arguably aren’t a good fit for Framer (ultimately a design tool for validating ideas).
