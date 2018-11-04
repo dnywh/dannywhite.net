@@ -24,6 +24,6 @@ The official Origami [tutorials](http://origami.design/tutorials/) and [examples
 
 The full video of my demo has been uploaded on [Vimeo](http://vimeo.com/192805834). The other demos are under the [same username](http://vimeo.com/facebookorigami).
 
-{% include iframe-video.html link="http://player.vimeo.com/video/192805834" %}
+{% include iframe-video.html link="https://player.vimeo.com/video/192805834" %}
 
 Glad I got that mop of a haircut fixed since.

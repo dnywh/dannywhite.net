@@ -10,7 +10,7 @@ We're in the middle of a revolution in design tooling right now. They're making 
 
 This is something I've been mulling over for the past year or two. [Loupe 2018]() forced me to take this out of my brain and make it comprehendable. So here it is.
 
-{% include iframe-video.html link="http://www.youtube.com/embed/foSkKVtHkM4" %}
+{% include iframe-video.html link="https://www.youtube.com/embed/foSkKVtHkM4" %}
 
 > A comparison of our, digital design, situation with that of urban design in the 1900s. Diving deep on some of the flawed assumptions of High Modernism and how it’s the easy path for us if we’re not careful.
 

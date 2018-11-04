@@ -20,4 +20,4 @@ Later this month I’ll be going in-house: joining the mobile team at Kickstarte
 
 Much love to my ustwo family. This reel still holds up:
 
-{% include iframe-video.html link="http://player.vimeo.com/video/189642924" %}
+{% include iframe-video.html link="https://player.vimeo.com/video/189642924" %}
