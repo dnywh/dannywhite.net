@@ -1,21 +1,6 @@
-/*  Text
-    color: rgba(60, 60, 60, 1);
-
-    Subtle Text
-    color: rgba(148, 148, 148, 1);
-
-    Highlight Green
-    color: rgba(5, 242, 186, 0.4);
-
-    Gallery Grey
-    color: rgba(240, 240, 240, 0.45);
-*/
-
-/* I'm using the Inter UI font family */
-/* See http://rsms.me/inter */
+/* http://rsms.me/inter */
 @import url("http://rsms.me/inter/inter-ui.css");
 
-/* Setup */
 :root {
   /* http://css-tricks.com/almanac/properties/s/scroll-behavior/ */
   /* Only supported in Firefox right now */
@@ -66,10 +51,6 @@ body {
   font-family: "Inter UI", sans-serif;
   background: var(--color-background);
   margin: 0;
-
-  /* -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
- */
 }
 
 /* Homepage content */
