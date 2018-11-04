@@ -20,7 +20,8 @@ footer {
   justify-content: space-between;
   padding-left: 3vw;
   padding-right: 3vw;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .gallery > figure {
