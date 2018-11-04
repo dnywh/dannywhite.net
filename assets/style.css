@@ -12,13 +12,13 @@
 */
 
 /* I'm using the Inter UI font family */
-/* See https://rsms.me/inter */
-@import url("https://rsms.me/inter/inter-ui.css");
+/* See http://rsms.me/inter */
+@import url("http://rsms.me/inter/inter-ui.css");
 
 /* Setup */
 :root {
   scroll-behavior: smooth;
-  /* https://css-tricks.com/almanac/properties/s/scroll-behavior/ */
+  /* http://css-tricks.com/almanac/properties/s/scroll-behavior/ */
   /* Only supported in Firefox right now */
 }
 
@@ -52,7 +52,7 @@ body {
 
 /* Homepage content */
 body > h1,
-body > h2, 
+body > h2,
 body > p,
 body > ul {
   max-width: 60rem; /* 640px */
@@ -93,13 +93,15 @@ figure {
   margin: 0;
 }
 
-nav, footer {
+nav,
+footer {
   margin-left: 3vw;
   margin-right: 3vw;
 }
 
 /* Navigation  */
-nav, footer {
+nav,
+footer {
   margin-top: 3em;
   margin-bottom: 3em;
 }
@@ -311,9 +313,9 @@ article header {
 
 /* Post-specific: iframes */
 /*
-  https://benmarshall.me/responsive-iframes/
+  http://benmarshall.me/responsive-iframes/
   superseeded by...
-  https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+  http://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
 */
 .intrinsic-container {
   position: relative;
