@@ -3,6 +3,7 @@ layout: post
 type: article
 title: "Design from below"
 # date: 2018-10-30 15:33:56 -0400
+featured-image: loupe-recap-asset-3-danny@2x.jpg
 ---
 
 We're in the middle of a revolution in design tooling right now. They're making [Kickstarter]() [projects](), [Forbes]()... Yet at times, design tools feels like _all_ we're talking about within the design community. Oddly, the even-more-rapid context in which what we make is used is rarely discussed or misunderstood. It's odd because it's ultimately what we're serving. I have some thoughts on how we can do that better/flip this around.

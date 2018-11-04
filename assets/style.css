@@ -20,6 +20,20 @@
   scroll-behavior: smooth;
   /* http://css-tricks.com/almanac/properties/s/scroll-behavior/ */
   /* Only supported in Firefox right now */
+  --color-background: #ff0000;
+  --color-border: #cacfd5;
+  --color-text-default: #0a79ff;
+  --color-base: #f4f5f6;
+  --color-accent: #ba0d37;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #38444c;
+    --color-border: #697278;
+    --color-text-default: #f0f2f3;
+    --color-base: #293238;
+    --color-accent: #ec1a62;
+  }
 }
 
 * {
@@ -39,10 +53,11 @@ video {
 body {
   /* Defining what one em unit is */
   font-size: 13pt;
-  color: rgba(60, 60, 60, 1);
+  /* color: rgba(60, 60, 60, 1); */
   font-family: "Inter UI", sans-serif;
 
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
+  background: var(--color-background);
   margin: 0;
 
   /* -webkit-font-smoothing: antialiased;

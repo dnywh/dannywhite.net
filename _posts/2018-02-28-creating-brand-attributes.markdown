@@ -3,11 +3,12 @@ layout: post
 type: article
 title: "Creating brand attributes"
 date: 2018-02-28 09:12:00 -0400
+featured-image: KidMap-Metamorphosis-2016-02-01-2.jpg
 ---
 
 These three design studio exercises are intended to elicit tangible attributes for designing product whilst keeping multiple people's opinions heard and considered.
 
-Credit to Chris Marotta from my time at ustwo for the loose method. We worked on multiple projects together that made use of some or all parts. The photo examples below are from the [Growing Up NYC](http://growingupnyc.cityofnewyork.us)—before it turned into the weird state it is in today.
+Credit to Chris Marotta from my time at ustwo for the loose method. We worked on multiple projects together that made use of some or all parts. The photo examples below are from the [Growing Up NYC](https://growingupnyc.cityofnewyork.us)—before it turned into the weird state it is in today.
 
 ## Requirements
 
