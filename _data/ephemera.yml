@@ -35,6 +35,13 @@
     - drawing
     - lexi
 
+- ? ohny-2018
+  name: Open House New York
+  date: 2018-10-13
+  location: Gowanus, NY
+  tags:
+    - brochure
+
 - ? comfortland
   name: Comfortland
   date: 2018-10-06
@@ -76,6 +83,13 @@
     - receipt
     - museum
 
+- ? framer-loupe-note
+  name: Welcome from Framer
+  date: 2018-09-19
+  location: Amsterdam Noord, Netherlands
+  tags:
+    - note
+
 - ? sir-adam-bag-tag
   name: Sir Adam
   date: 2018-09-19
@@ -91,12 +105,27 @@
     - train
     - tranport
 
+- ? nypl-le-corbusier
+  name: Architecture Reading Room
+  date: 2018-09-16
+  location: NYPL, Bryant Park, NY
+  tags:
+    - receipt
+
 - ? momi-lunch
   name: Lunch note
   date: 2018-09-12
   location: Astoria, NY
   tags:
     - doodle
+
+- ? momi-sept-2018
+  name: Museum of Moving Image
+  date: 2018-09-09
+  location: Astoria, NY
+  tags:
+    - receipt
+    - museum
 
 - ? post-it
   name: Post it
@@ -111,6 +140,14 @@
   location: Gowanus, NY
   tags:
     - kickstarter
+
+- ? ams-jfk-july-2018
+  name: Amsterdam to NYC
+  date: 2018-07-10
+  location: Amsterdam, Netherlands
+  tags:
+    - plane
+    - tranport
 
 - ? world-in-colour
   name: The World in Colour
@@ -197,6 +234,14 @@
   location: Managua
   tags:
     - plane
+    - tranport
+
+- ? nicaragua-tourist-card
+  name: Tarjeta de turismo
+  date: 2018-05-05
+  location: Managua
+  tags:
+    - receipt
     - tranport
 
 - ? mia-mga
@@ -408,6 +453,13 @@
   tags:
     - sport
     - baseball
+
+- ? spanish-flip-card
+  name: Spanish flip card
+  date: 2018-08-19
+  location: Astoria, NY
+  tags:
+    - note
 
 - ? zion
   name: Zion National Park
