@@ -99,9 +99,7 @@ Information on each component's inputs and outputs is available inside its respe
 
 Chris Slowik over at [designers.how][designershow] has [published a 5 minute video tutorial on ContextKit][designershow]. Specifically SpringBoard App component. It's a great walkthrough of the installation process and a real-world use case.
 
-[^githubsync]:
-
-  Assuming you sync the local copy of the repository from time-to-time.
+[^githubsync]: Assuming you sync the local copy of the repository from time-to-time.
 
 [github]: http://github.com/dannyalright/contextkit/
 [designershow]: http://designers.how/episodes/start-by-building-context

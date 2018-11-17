@@ -14,9 +14,7 @@ Thanks to Madelin for joining and then running the whole shebang. Also thanks to
 
 The official Origami [tutorials](http://origami.design/tutorials/) and [examples](http://origami.design/examples/) are now up. Thanks also to Fisher for his expertise whilst creating the curriculum for these.
 
-[^facebook]:
-
-  Kara, Myles, etc. Seriously so many, and everyone is great, but I've gotta stop somewhere.
+[^facebook]: Kara, Myles, etc. Seriously so many, and everyone is great, but I've gotta stop somewhere.
 
 ---
 
