@@ -53,6 +53,10 @@ body {
   margin: 0;
 }
 
+body.white {
+  background: white;
+}
+
 /* Homepage content */
 body > h1,
 body > h2,

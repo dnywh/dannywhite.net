@@ -11,7 +11,7 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
-- ? rams-metrograph
+- rams-metrograph:
   name: Rams
   date: 2018-12-05
   location: Metrograph Theatre, NY
@@ -20,14 +20,38 @@
     - movie
     - kickstarter
 
-- ? netflix-new-york
+- museo-frida-kahlo:
+  name: Museo Frida Kahlo
+  date: 2018-11-22
+  location: Del Carmen, Mexico City, Mexico
+  tags:
+    - receipt
+    - museum
+
+- museo-de-arte-popular:
+  name: Museo de Arte Popular
+  date: 2018-11-20
+  location: Colonia Centro, Mexico City, Mexico
+  tags:
+    - receipt
+    - museum
+
+- jfk-mex-nov-2018:
+  name: Interjet
+  date: 2018-11-18
+  location: Mexico City, Mexico
+  tags:
+    - plane
+    - tranport
+
+- netflix-new-york:
   name: Netflix in New York
   date: 2018-11-08
   location: Rare View, NY
   tags:
     - design
 
-- ? bahamas-brooklyn-steel
+- bahamas-brooklyn-steel:
   name: Bahamas @ Brooklyn Steel
   date: 2018-10-25
   location: Brooklyn Steel
@@ -36,14 +60,14 @@
     - show
     - lexi
 
-- ? one-year-kickstarter
+- one-year-kickstarter:
   name: One year at Kickstarter
   date: 2018-10-24
   location: Kickstarter New York
   tags:
     - kickstarter
 
-- ? bareburger-and-crayons
+- bareburger-and-crayons:
   name: Bareburger and crayons
   date: 2018-10-23
   location: Bareburger, Astoria, NY
@@ -51,14 +75,14 @@
     - drawing
     - lexi
 
-- ? ohny-2018
+- ohny-2018:
   name: Open House New York
   date: 2018-10-13
   location: Gowanus, NY
   tags:
     - brochure
 
-- ? comfortland
+- comfortland:
   name: Comfortland
   date: 2018-10-06
   location: Comfortland, Astoria, NY
@@ -67,7 +91,7 @@
     - yum
     - lexi
 
-- ? paris-metro
+- paris-metro:
   name: Paris Metro
   date: 2018-10-02
   location: Paris, France
@@ -75,7 +99,7 @@
     - train
     - tranport
 
-- ? baetens-bb
+- baetens-bb:
   name: Baeten's B&B
   date: 2018-09-29
   location: Ghent, Belgium
@@ -83,7 +107,7 @@
     - receipt
     - accommodation
 
-- ? huis-van-alijn
+- huis-van-alijn:
   name: The House of Alijn
   date: 2018-09-28
   location: Ghent, Belgium
@@ -91,7 +115,7 @@
     - receipt
     - museum
 
-- ? stam
+- stam:
   name: Ghent City Museum
   date: 2018-09-27
   location: Ghent, Belgium
@@ -99,21 +123,21 @@
     - receipt
     - museum
 
-- ? framer-loupe-note
+- framer-loupe-note:
   name: Welcome from Framer
   date: 2018-09-19
   location: Amsterdam Noord, Netherlands
   tags:
     - note
 
-- ? sir-adam-bag-tag
+- sir-adam-bag-tag:
   name: Sir Adam
   date: 2018-09-19
   location: Amsterdam Noord, Netherlands
   tags:
     - accommodation
 
-- ? schiphol-to-centraal
+- schiphol-to-centraal:
   name: Schiphol to Centraal
   date: 2018-09-19
   location: Amsterdam, Netherlands
@@ -121,21 +145,21 @@
     - train
     - tranport
 
-- ? nypl-le-corbusier
+- nypl-le-corbusier:
   name: Architecture Reading Room
   date: 2018-09-16
   location: NYPL, Bryant Park, NY
   tags:
     - receipt
 
-- ? momi-lunch
+- momi-lunch:
   name: Lunch note
   date: 2018-09-12
   location: Astoria, NY
   tags:
     - doodle
 
-- ? momi-sept-2018
+- momi-sept-2018:
   name: Museum of Moving Image
   date: 2018-09-09
   location: Astoria, NY
@@ -143,21 +167,28 @@
     - receipt
     - museum
 
-- ? post-it
+- wsh-flight-planning:
+  name: Cancelled flight
+  date: 2018-09-05
+  location: Astoria, NY
+  tags:
+    - doodle
+
+- post-it:
   name: Post it
   date: 2018-07-25
   location: Kickstarter New York
   tags:
     - kickstarter
 
-- ? royal-palms-shuffleboard
+- royal-palms-shuffleboard:
   name: Shuffleboard
   date: 2018-07-17
   location: Gowanus, NY
   tags:
     - kickstarter
 
-- ? ams-jfk-july-2018
+- ams-jfk-july-2018:
   name: Amsterdam to NYC
   date: 2018-07-10
   location: Amsterdam, Netherlands
@@ -165,21 +196,21 @@
     - plane
     - tranport
 
-- ? world-in-colour
+- world-in-colour:
   name: The World in Colour
   date: 2018-07-10
   location: Amsterdam, Netherlands
   tags:
     - museum
 
-- ? tempo-doeloe
+- tempo-doeloe:
   name: Tempo Doeloe
   date: 2018-07-09
   location: Amsterdam, Netherlands
   tags:
     - food
 
-- ? utrecht-to-amsterdam
+- utrecht-to-amsterdam:
   name: Utrecht to Amsterdam
   date: 2018-07-08
   location: Utrecht, Netherlands
@@ -187,7 +218,7 @@
     - train
     - tranport
 
-- ? james-turrell-ganzfeld
+- james-turrell-ganzfeld:
   name: James Turrell
   date: 2018-07-02
   location: Berlin, Germany
@@ -195,14 +226,14 @@
     - art
     - museum
 
-- ? jewish-museum-berlin
+- jewish-museum-berlin:
   name: Jewish Museum Berlin
   date: 2018-07-02
   location: Berlin, Germany
   tags:
     - museum
 
-- ? u-bahn-7-day
+- u-bahn-7-day:
   name: U-Bahn
   date: 2018-06-18
   location: Berlin, Germany
@@ -210,7 +241,7 @@
     - train
     - tranport
 
-- ? mohonk-trail-map
+- mohonk-trail-map:
   name: Mohonk Preserve Trail Map
   date: 2018-06-09
   location: Mohonk Preserve, NY
@@ -220,7 +251,7 @@
     - camping
     - climbing
 
-- ? no-postcard
+- no-postcard:
   name: Dear Secretary Zinke
   date: 2018-06-01
   location: The Cliffs, LIC
@@ -228,7 +259,7 @@
     - activism
     - environment
 
-- ? carole-king
+- carole-king:
   name: The Carole King Musical
   date: 2018-05-20
   location: Stephen Sondheim Theatre
@@ -236,7 +267,7 @@
     - broadway
     - show
 
-- ? mia-lga
+- mia-lga:
   name: Miami to NYC
   date: 2018-05-13
   location: Miami
@@ -244,7 +275,7 @@
     - plane
     - tranport
 
-- ? aa-nicaragua-return
+- aa-nicaragua-return:
   name: Nicaragua
   date: 2018-05-13
   location: Managua
@@ -252,7 +283,7 @@
     - plane
     - tranport
 
-- ? nicaragua-tourist-card
+- nicaragua-tourist-card:
   name: Tarjeta de turismo
   date: 2018-05-05
   location: Managua
@@ -260,7 +291,7 @@
     - receipt
     - tranport
 
-- ? mia-mga
+- mia-mga:
   name: Miami to Managua
   date: 2018-05-05
   location: Miami
@@ -268,42 +299,42 @@
     - plane
     - tranport
 
-- ? duckies
+- duckies:
   name: Duckies
   date: 2018-04-14
   location: New York City
   tags:
     - unknown
 
-- ? isle-of-dogs
+- isle-of-dogs:
   name: Isle of Dogs
   date: 2018-03-31
   location: Kaufman 14, Astoria
   tags:
     - movie
 
-- ? twenty-dollars
+- twenty-dollars:
   name: Twenty Dollars
   date: 2018-03-29
   location: Astoria
   tags:
     - usa
 
-- ? king-sauna
+- king-sauna:
   name: King Sauna
   date: 2018-02-24
   location: Palisades Park, New Jersey
   tags:
     - spa
 
-- ? neptune-diner
+- neptune-diner:
   name: Neptune Diner
   date: 2018-02-18
   location: Neptune Diner, Astoria
   tags:
     - food
 
-- ? met
+- met:
   name: The Met
   date: 2018-02-16
   location: The Metropolitan Museum of Art
@@ -311,7 +342,7 @@
     - museum
     - art
 
-- ? fruit-bros
+- fruit-bros:
   name: United Fruit Brothers
   date: 2018-02-11
   location: Astoria
@@ -319,56 +350,56 @@
     - receipt
     - groceries
 
-- ? a-bronx-tale
+- a-bronx-tale:
   name: A Bronx Tale
   date: 2018-01-31
   location: Longacre Theatre
   tags:
     - broadway
 
-- ? canal-bulbs
+- canal-bulbs:
   name: Canal Bulbs Inc
   date: 2018-01-27
   location: 313 Canal St, NY, 10013
   tags:
     - receipt
 
-- ? florida-project
+- florida-project:
   name: The Florida Project
   date: 2018-01-27
   location: Roxy Cinema, NYC
   tags:
     - movie
 
-- ? last-jedi
+- last-jedi:
   name: The Last Jedi
   date: 2018-01-21
   location: Kaufman 14, Astoria
   tags:
     - movie
 
-- ? paddington-2
+- paddington-2:
   name: Paddington 2
   date: 2018-01-13
   location: Kaufman 14, Astoria
   tags:
     - movie
 
-- ? coco
+- coco:
   name: Coco
   date: 2018-01-09
   location: AMC Loews 34th Street 14
   tags:
     - movie
 
-- ? mount-sinai
+- mount-sinai:
   name: Mount Sinai
   date: 2018-01-02
   location: Mount Sinai Queens
   tags:
     - hospital
 
-- ? mco-lga
+- mco-lga:
   name: Orlando to New York
   date: 2017-12-31
   location: Orlando
@@ -376,14 +407,14 @@
     - plane
     - transport
 
-- ? hunter-springs
+- hunter-springs:
   name: Manatees at Crystal River
   date: 2017-12-29
   location: Crystal River, FL
   tags:
     - nature
 
-- ? hernando-county
+- hernando-county:
   name: Werner-Boyce Salt Springs State Park
   date: 2017-12-22
   location: Werner-Boyce Salt Springs State Park
@@ -391,7 +422,7 @@
     - kayaking
     - nature
 
-- ? framer-sticker
+- framer-sticker:
   name: Koen and Jorn
   date: 2017-11-30
   location: Kickstarter New York
@@ -399,14 +430,14 @@
     - kickstarter
     - framer
 
-- ? black-diamond
+- black-diamond:
   name: Black Diamond
   date: 2017-11-29
   location: 58 Kent St, Brooklyn
   tags:
     - climbing
 
-- ? bag-tag
+- bag-tag:
   name: Bag Tag
   date: 2017-11-22
   location: Tampa, FL
@@ -414,7 +445,7 @@
     - transport
     - plane
 
-- ? hey-arnold
+- hey-arnold:
   name: Arnold and DW
   date: 2017-10-31
   location: Brooklyn Bazaar
@@ -422,7 +453,7 @@
     - party
     - lexi
 
-- ? ord-lga
+- ord-lga:
   name: Chicago to New York
   date: 2017-10-17
   location: Chicago O'Hare
@@ -430,7 +461,7 @@
     - plane
     - transport
 
-- ? yvr-ord
+- yvr-ord:
   name: Vancouver to Chicago
   date: 2017-10-17
   location: Vancouver Airport
@@ -438,7 +469,7 @@
     - plane
     - transport
 
-- ? ord-yvr
+- ord-yvr:
   name: Chicago to Vancouver
   date: 2017-10-09
   location: Chicago O'Hare
@@ -446,7 +477,7 @@
     - plane
     - transport
 
-- ? solo9w57
+- solo9w57:
   name: SOLO9W57
   date: 2017-09-22
   location: 9 W 57th St, New York
@@ -454,7 +485,7 @@
     - nyc
     - lexi
 
-- ? aperitivo
+- aperitivo:
   name: Aperitivo Seleccionado para TI
   date: 2017-09-09
   location: Seville, Spain
@@ -462,7 +493,7 @@
     - coffee
     - food
 
-- ? yankees-legends
+- yankees-legends:
   name: Yankees v Mariners
   date: 2018-08-27
   location: Yankee Stadium
@@ -470,14 +501,14 @@
     - sport
     - baseball
 
-- ? spanish-flip-card
+- spanish-flip-card:
   name: Spanish flip card
   date: 2018-08-19
   location: Astoria, NY
   tags:
     - note
 
-- ? zion
+- zion:
   name: Zion National Park
   date: 2017-07-08
   location: Zion Naional Park
@@ -486,7 +517,7 @@
     - nature
     - hiking
 
-- ? bryce-canyon
+- bryce-canyon:
   name: Bryce Canyon National Park
   date: 2017-07-07
   location: Bryce Canyon National Park
@@ -495,7 +526,7 @@
     - nature
     - hiking
 
-- ? capitol-reef
+- capitol-reef:
   name: Capitol Reef National Park
   date: 2017-07-06
   location: Gifford House
@@ -504,7 +535,7 @@
     - nature
     - hiking
 
-- ? canyonlands
+- canyonlands:
   name: Canyonlands National Park
   date: 2017-07-05
   location: Moab
@@ -513,7 +544,7 @@
     - nature
     - hiking
 
-- ? arches
+- arches:
   name: Arches National Park
   date: 2017-07-04
   location: Moab
@@ -522,7 +553,7 @@
     - nature
     - hiking
 
-- ? arches-postcard
+- arches-postcard:
   name: Arches National Park Postcard
   date: 2017-07-04
   location: Moab
@@ -531,14 +562,14 @@
     - nature
     - hiking
 
-- ? josh
+- josh:
   name: Josh
   date: 2017-06-06
   location: ustwo New York
   tags:
     - sticker
 
-- ? cal-cru
+- cal-cru:
   name: Cal Cru
   date: 2017-05-11
   location: Astoria, NY

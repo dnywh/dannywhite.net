@@ -1,17 +1,22 @@
 ---
-layout: default
+layout: ephemera
 title: Ephemera
 ---
 
-<!-- Physical fragments from the life of Danny. In an increasingly digital world. Of interest to no one except himself. -->
+<!--
+  Physical fragments from the life of Danny. In an increasingly digital world. Of interest to no one except himself.
+-->
 
 <div class="flex gallery">
   {% for item in site.data.ephemera %}
   <figure>
-    <img src="../assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}">
+    <img
+      src="../assets/images/ephemera/{{ item.first }}.jpg"
+      alt="{{ item.name }}"
+    />
     <figcaption>
-      {{ item.name }},<br>
-      {{ item.location }}<br>
+      {{ item.name }},<br />
+      {{ item.location }}<br />
       {{ item.date }}
     </figcaption>
   </figure>
@@ -27,7 +32,7 @@ title: Ephemera
   }
 
   const figures = document.querySelectorAll("figure");
-  
+
   for (i = 0; i < figures.length; i++) {
     const rand = randomRotation(0, 1);
     figures[i].style.transform = `rotate(${rand}deg)`;
