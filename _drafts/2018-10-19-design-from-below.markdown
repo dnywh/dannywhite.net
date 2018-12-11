@@ -55,7 +55,7 @@ It's kind of hard to visually represent this, so I've come up with the best anal
 
 ### The Fab Five model
 
-If you haven't seen Queer Eye, you should. It's a great lesson on humanity and collaboration.
+Queer Eye is a great lesson on humanity. It's also a great lesson on collaboration.
 
 {% include media-grid.html
   type="single-right"
@@ -63,20 +63,23 @@ If you haven't seen Queer Eye, you should. It's a great lesson on humanity and c
   media="
   fab-five.jpg" %}
 
-They do something similar, except their medium is a human being. They all have their individual expertise, their own tools, and their own disciplines. Yet instead of doing one at a time and then handing off, Antony will come and see Jonathan give the guy a haircut and wow "now it's my turn to up the game with cooking". You know—there's this kind of back-and-forth always
+These guys do something similar to the games industry—except the medium is a human being. Each member has their own individual expertise and tools, yet work concurrently on the same subject. Antony will be prepping a meal plan whilst Jonathan is doing the man's grooming, and whilst Bobby is at the hardware store. They'll check in and out, both with the central subject and eachother.
 
 ### Surrounding context
 
-If you've seen an episode; it's not actually about the haircut or the house that's the most interesting part. It's actually the output of each episode, that person's life has been completely transformed.
+If you've seen an episode you know the haircut and the house are not the lasting takeaways. It's almost always the _softer_ output; the life transformation brought about by virtue of the Fab Five's technical skillsets.
 
-And it's that surrounding context that we need to be cognizant of in our world, too. Because whilst all of this has been going on in design in terms of workflow and our tooling being disrupted; actually the things that we've made/make from the tools has been completely changed. Think about the way that you last:
+And it's this same softer output we need to be conizant of in our world, too. Our workflow and tooling are being disrupted like never before—as are the social and cultural conduits they help build.
+
+Think about the way that you last:
 
 - rented a movie
-- said happy birthday
-- how you went on that last date
-- etc
+- said happy birthday to a friend
+- found and organised that last date
+- had food show up to your house
+- found your current place of work
 
-It can be kind of overwhelming, But (luckily) we're not the first design discipline to go through this...
+We were asking a technical question with _"should designers code?"_ and ended up with an overwhelming answer. Luckily, we're not the first design discipline to go through this kind of transformation...
 
 ## Pouring slabs
 
