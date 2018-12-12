@@ -28,13 +28,13 @@ Gutenburg 7th century, China before that, movable type, the printing press... Al
   media="
   printing-press.jpg" %}
 
-We kept on using these same print tools through to digital interface design—except to make _models_; high fidelity models of the actual thing.
+**We kept on using these same print tools through to digital interface design—except to make _models_; high fidelity models of the actual thing.**
 
-I think we always knew this, and then tools like the original Framer exposed this workflow is indeed backwards. Made most palpable by the great question of 2016:
+I think we always knew this, and then tools like the original Framer exposed this workflow is indeed backwards. Then the question of 2016 came along and made it even more palpable:
 
 > Should designers code?
 
-I think this was a bad question as it equated code as another model-making tool. The _intent_ of the question is much more interesting:
+It's a poor question because it equated code as another model-making tool. The _intent_ of the question however is quite interesting:
 
 > How do we (designers) work with code?
 
@@ -49,9 +49,7 @@ We're certainly not the first to have this realisation. The games industry for e
 - SFX specialists
 - lighting specialists
 
-...all building upon each-others work.
-
-It's kind of hard to visually represent this, so I've come up with the best analogy I could...
+...all building upon each-others work. It's kind of hard to visually represent this, so I've come up with the best analogy I could...
 
 ### The Fab Five model
 
@@ -63,13 +61,13 @@ Queer Eye is a great lesson on humanity. It's also a great lesson on collaborati
   media="
   fab-five.jpg" %}
 
-These guys do something similar to the games industry—except the medium is a human being. Each member has their own individual expertise and tools, yet work concurrently on the same subject. Antony will be prepping a meal plan whilst Jonathan is doing the man's grooming, and whilst Bobby is at the hardware store. They'll check in and out, both with the central subject and eachother.
+These guys do something similar to the games industry—except the medium is a human being. Each member has their own individual expertise and tools, yet work concurrently on the same subject. Antony will be prepping a meal plan whilst Jonathan is doing the guy's grooming, whilst Bobby is grabbing a few things at the hardware store. They'll check in and out, both with the central subject and eachother.
 
 ### Surrounding context
 
 If you've seen an episode you know the haircut and the house are not the lasting takeaways. It's almost always the _softer_ output; the life transformation brought about by virtue of the Fab Five's technical skillsets.
 
-And it's this same softer output we need to be conizant of in our world, too. Our workflow and tooling are being disrupted like never before—as are the social and cultural conduits they help build.
+And it's this same softer output we need to be aware of (and arguably building for) in our world, too. Our workflow and tooling are being disrupted like never before—as are the social and cultural conduits they help build.
 
 Think about the way that you last:
 
