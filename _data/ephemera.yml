@@ -11,6 +11,14 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- moma-ps1-artbook:
+  name: MoMA PS1 Artbook
+  date: 2018-12-09
+  location: Moma PS1, Long Island City, NY
+  tags:
+    - receipt
+    - museum
+
 - rams-metrograph:
   name: Rams
   date: 2018-12-05
