@@ -67,9 +67,7 @@ These guys do something similar to the games industry—except the medium is a h
 
 If you've seen an episode you know the haircut and the house are not the lasting takeaways. It's almost always the _softer_ output; the life transformation brought about by virtue of the Fab Five's technical skillsets.
 
-And it's this same softer output we need to be aware of (and arguably building for) in our world, too. Our workflow and tooling are being disrupted like never before—as are the social and cultural conduits they help build.
-
-Think about the way that you last:
+It's this softer output that _we_ need to be aware of (and arguably building for) in our world, too. Interface design workflows and tooling are being disrupted like never before—as are the social and cultural implications of what they help build. Think about the way that you last:
 
 - rented a movie
 - said happy birthday to a friend
@@ -77,7 +75,13 @@ Think about the way that you last:
 - had food show up to your house
 - found your current place of work
 
-We were asking a technical question with _"should designers code?"_ and ended up with an overwhelming answer. Luckily, we're not the first design discipline to go through this kind of transformation...
+We were asking a technical question with _"should designers code?"_ and ended up with an overwhelming answer.
+
+1. Our tooling has changed dramatically.
+2. Our audience is now the entire world. Digital interfaces are commonplace, even in developing countries.
+3. Our roles are broadening to include product and organisational leadership.
+
+Luckily, we're not the first design discipline to go through this kind of transformation...
 
 ## Pouring slabs
 
@@ -86,17 +90,19 @@ Not too far from central Amsterdam is an incredible piece of living history; the
 {% include media-grid.html
   type="single-left"
   caption="via artchist.wordpress.com"
-  hyphenate=true
+  hyphenate=false
   media="
   bijlmermeer-1962-73.jpg" %}
 
-<!-- http://artchist.wordpress.com/2016/02/17/bijlmer-neighbourhood-in-amsterdam/#jp-carousel-871 -->
+The Bijlmermeer was conceived-of and built as the design of built environment was facing a transformation from multiple fronts:
 
-The Bijlmermeer is a living, visitable example from a time when the design of built environment actually had a really similar trifecta as what we do in design in product design. Tooling being reinforced concrete but more importantly, their audience was general urbanisation in the word. Especially in Europe post-war cities that needed restructuring, and architecture as a practice went through a remit change.
+1. Revolutionary tooling, materials, and construction methods (such as reinforced concrete) reached maturity.
+2. People and cities across the world were generally urbanising, and post-war cities re-structuring.
+3. Architects because formally responsible for the health and safety of the people who interacted with and inhabited the buildings that they designed.
 
-Like _our_ new seat at the table; architects because formally responsible for the health and safety of the people who interacted with and inhabited the buildings that they designed.
+As well as being built at this time, the Bijlmermeer is also an example of a specific _approach_ to urban design. One with an **unrelenting belief on technological progress alone to advance the human condition**. An approach that I worry interface designers are moving towards.
 
-So the Bijlmer is an example of a specific _approach_ to urban design. I think it's actually one we could go down _if_—not something I think we're doing right now, but if we were to focus only on our toolkits and not actually think about the surrounding context. Because this approach is one that is an **unrelenting belief on technological progress being the thing that advances or 'solves' the human condition**. It sounds kind of weird, and the poster boy of this movement Le Corbusier _was_ kind of weird.
+It sounds preposterous that designers would forget what they're ultimately building towards, but it has happened before and can happen again. Let's explore the world of High Modernity in the design of built environment. You can't explore High Modernist architecture without first understanding Le Corbusier—the poster boy of this movement.
 
 {% include media-grid.html
   type="single-right"
@@ -139,11 +145,11 @@ He also left us this:
 
 ...which goes into detail with the different sizes of his 'super' blocks compared to blocks that existed back then and still do (thankfully) today. So Paris, New York, Buenos Aires.
 
-So the Bijlmer wasn't built by Le Corbusier but it was definitely done in his footsteps, and int he footsteps of high modernity.
+So the Bijlmermeer wasn't built by Le Corbusier but it was definitely done in his footsteps, and int he footsteps of high modernity.
 
 ### Designing from above
 
-I think the intentions of the designers of the Bijlmer and Le Corbusier were actually quite good; it was about improving the human condition. In hindsight it's easy to realise it was a little naive because this kind of 'designing from above' is actually the antithesis of what people need in design because we are complex beings—we're not as simple as having something very regimented given to us.
+I think the intentions of the designers of the Bijlmermeer and Le Corbusier were actually quite good; it was about improving the human condition. In hindsight it's easy to realise it was a little naive because this kind of 'designing from above' is actually the antithesis of what people need in design because we are complex beings—we're not as simple as having something very regimented given to us.
 
 There's funny examples; there's the story about the Bijlmermeer, and in Brasilia (an entire city built in this same way, too) where people couldn't find their apartment they couldn't set a meeting place with someone just because the way these things were built.
 
@@ -233,4 +239,4 @@ Only by having different people on our teams do we really have the diversity of 
 
 High Modernity, for all its faults, was a legitimate response to what was happening in the world at its ascendency, 50–60 years ago. What we're making now is impacting the world severely. Good and bad. It's used by people to decide who to vote for or how or why to take action on a complex issue like climate change. People use what we make to meet their life partners. And as their primary form of communication.
 
-This is a lot, but ultimately I'm an optimist about this. Because our digital medium has something that the design of built environment _doesn't_ have, and it's why places likes the Bijlmer or Brasilia are still around in their flawed form. It takes generations to suffer through, and then eventually modify or replace bad urban design. But in our world, we can make strides; we can go to our streets and design from below, and put it in peoples' hands next week. And then we can do the same thing the week after.
+This is a lot, but ultimately I'm an optimist about this. Because our digital medium has something that the design of built environment _doesn't_ have, and it's why places likes the Bijlmermeer or Brasilia are still around in their flawed form. It takes generations to suffer through, and then eventually modify or replace bad urban design. But in our world, we can make strides; we can go to our streets and design from below, and put it in peoples' hands next week. And then we can do the same thing the week after.
