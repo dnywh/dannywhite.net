@@ -100,9 +100,7 @@ The Bijlmermeer was conceived-of and built as the design of built environment wa
 2. People and cities across the world were generally urbanising, and post-war cities re-structuring.
 3. Architects because formally responsible for the health and safety of the people who interacted with and inhabited the buildings that they designed.
 
-As well as being built at this time, the Bijlmermeer is also an example of a specific _approach_ to urban design. One with an **unrelenting belief on technological progress alone to advance the human condition**. An approach that I worry interface designers are moving towards.
-
-It sounds preposterous that designers would forget what they're ultimately building towards, but it has happened before and can happen again. Let's explore the world of High Modernity in the design of built environment. You can't explore High Modernist architecture without first understanding Le Corbusier—the poster boy of this movement.
+As well as being built at this time, the Bijlmermeer is also an example of a specific _approach_ to urban design. One with an **unrelenting belief on technological progress alone to advance the human condition**. An approach that I worry interface designers are moving towards. An approach with a lot to do with Le Corbusier.
 
 {% include media-grid.html
   type="single-right"
@@ -110,11 +108,9 @@ It sounds preposterous that designers would forget what they're ultimately build
   media="
   le-corbusier.jpg" %}
 
-If you've ever seen any of his work; he wrote a book called _Radiant City_ amongst others. He had a vision for what High Modernitiy was whilst overlooking Paris in an aeroplane, and I think that speaks volumes about High Moderinty as a philosophy which is: if things can be standardised and made perfect from a technological point of view, then they should be duplicated down to the screw size across the world—wherever it will be implemented.
+Le Corbusier's vision for High Modernist design came to him whilst overlooking Paris from an aeroplane. I think that speaks volumes about its philosophy; if things can be standardised and made perfect from a technological point of view, then they should be duplicated down to the screw size across the world—wherever it will be implemented.
 
-So. He wrote the book _Radiant City_. He was also one of those designers that does a bit of everything, has his hand in every kind of discipline. So he's left us a lot of artefacts.
-
-This is his rendition of a future Beunos Aires.
+This is his rendition of a future Buenos Aires—drawn from well off the coast of the city:
 
 {% include media-grid.html
   type="single-left"
@@ -122,19 +118,18 @@ This is his rendition of a future Beunos Aires.
   media="
   buenos-aires.jpg" %}
 
-Funny angle, yeah? All the way back form the sea.
-
-This one he did after after coming down from an aeroplane in Rio De Janerio. If you've been there, you know it's pretty geographically gnarly. So this kind of expressway or aqueduct type thing is pretty amazing.
+He drew the following sketch shortly after a flight over Rio De Janerio:
 
 {% include image.html name="rio.jpg" caption="Rio De Janeiro as rendered by Le Corbusier." %}
 
-And this one breaks my heart. If you've been to Paris, maybe it does to yours too. This is his blueprint for the Radiant City, but specifically applied to Paris.
+And this last one breaks my heart. If you've been to Paris, maybe it does to yours too. This is his blueprint for his Radiant City—specifically applied to Paris.
 
 {% include image.html name="radiant-city-plans.jpg" caption="The Radiant City." %}
 
-You can see in the distance you have these high-rise buildings, that are the designer perfect places to work. In the mid-to-foreground you have these medium-rise buildings that are the perfect places to live, and then kind of in the middle here we have these massive vistas of parks for people to play. And then super highways to get between all three of these because there's no concept of a sidewalk or a footpath or house-facing street.
+Le Corbusier's urban utopia; high-rise buildings (in the distance) for the optimal work environment. Medium-rise buildings (in the mid to-foreground) for the perfect living conditions. Massive vistas (taking up most of the middle) for leisure. Lastly, superhighways connecting these three purpose-built environments and their _superblocks_ as there is no concept of a footpath or gradual transition between zones.
 
-He also left us this:
+
+_Radiant City_ is his seminal book on this philosophy and proposed city, and it's well worth a read. He left us this gem, for example:
 
 {% include media-grid.html
   type="even"
@@ -143,13 +138,13 @@ He also left us this:
   block-sizes.jpg
   bijlmermeer-site-plan-1980s.jpg" %}
 
-...which goes into detail with the different sizes of his 'super' blocks compared to blocks that existed back then and still do (thankfully) today. So Paris, New York, Buenos Aires.
+...which illustrates exactly how his superblocks compare to blocks that existed in historic cities (and for these examples, thankfully still do to a degree).
 
-So the Bijlmermeer wasn't built by Le Corbusier but it was definitely done in his footsteps, and int he footsteps of high modernity.
+The Bijlmermeer wasn't built by Le Corbusier but it was done in his footsteps—under the influence of high modernity.
 
 ### Designing from above
 
-I think the intentions of the designers of the Bijlmermeer and Le Corbusier were actually quite good; it was about improving the human condition. In hindsight it's easy to realise it was a little naive because this kind of 'designing from above' is actually the antithesis of what people need in design because we are complex beings—we're not as simple as having something very regimented given to us.
+I believe the intentions of the designers of the Bijlmermeer and Le Corbusier were actually quite good; it was about improving the human condition. In hindsight it's easy to realise it was a little naive because this kind of 'designing from above' is actually the antithesis of what people need in design because we are complex beings—we're not as simple as having something very regimented given to us.
 
 There's funny examples; there's the story about the Bijlmermeer, and in Brasilia (an entire city built in this same way, too) where people couldn't find their apartment they couldn't set a meeting place with someone just because the way these things were built.
 
