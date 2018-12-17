@@ -128,7 +128,6 @@ And this last one breaks my heart. If you've been to Paris, maybe it does to you
 
 Le Corbusier's urban utopia; high-rise buildings (in the distance) for the optimal work environment. Medium-rise buildings (in the mid to-foreground) for the perfect living conditions. Massive vistas (taking up most of the middle) for leisure. Lastly, superhighways connecting these three purpose-built environments and their _superblocks_ as there is no concept of a footpath or gradual transition between zones.
 
-
 _Radiant City_ is his seminal book on this philosophy and proposed city, and it's well worth a read. He left us this gem, for example:
 
 {% include media-grid.html

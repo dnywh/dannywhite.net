@@ -325,6 +325,7 @@ article header {
 */
 .intrinsic-container {
   position: relative;
+  background: var(--color-text-offset);
 }
 /* 16x9 Aspect Ratio */
 .intrinsic-container:before {
