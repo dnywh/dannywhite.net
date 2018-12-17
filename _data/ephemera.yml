@@ -11,6 +11,23 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- elsewhere-kickstarter:
+  name: Elsewhere
+  date: 2018-12-13
+  location: Elsewhere, Brooklyn, NY
+  tags:
+    - party
+    - kickstarter
+
+- mission-chinese:
+  name: Mission Chinese
+  date: 2018-12-13
+  location: Elsewhere, Brooklyn, NY
+  tags:
+    - packaging
+    - food
+    - kickstarter
+
 - moma-ps1-artbook:
   name: MoMA PS1 Artbook
   date: 2018-12-09
@@ -500,6 +517,7 @@
   tags:
     - coffee
     - food
+    - packaging
 
 - yankees-legends:
   name: Yankees v Mariners
@@ -569,6 +587,15 @@
     - national-parks
     - nature
     - hiking
+
+- mta-bicycle-permit:
+  name: Bicycle Permit
+  date: 2017-06-16
+  location: Montauk, NY
+  tags:
+    - train
+    - tranport
+    - bike
 
 - josh:
   name: Josh
