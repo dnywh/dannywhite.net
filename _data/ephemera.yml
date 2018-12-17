@@ -588,6 +588,15 @@
     - nature
     - hiking
 
+- mta-bicycle-permit:
+  name: Bicycle Permit
+  date: 2017-06-16
+  location: Montauk, NY
+  tags:
+    - train
+    - tranport
+    - bike
+
 - josh:
   name: Josh
   date: 2017-06-06
