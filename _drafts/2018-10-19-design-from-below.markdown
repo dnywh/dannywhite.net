@@ -108,9 +108,9 @@ As well as being built at this time, the Bijlmermeer is also an example of a spe
   media="
   le-corbusier.jpg" %}
 
-Le Corbusier's vision for High Modernist design came to him whilst overlooking Paris from an aeroplane. I think that speaks volumes about its philosophy; if things can be standardised and made perfect from a technological point of view, then they should be duplicated down to the screw size across the world—wherever it will be implemented.
+Le Corbusier's vision for High Modernist design came to him whilst overlooking Paris from an aeroplane. That speaks volumes about its philosophy; if things can be standardised and made perfect from a technological point of view, then they should be duplicated down to the screw size—wherever it will be implemented across the world.
 
-This is his rendition of a future Buenos Aires—drawn from well off the coast of the city:
+This is his rendition of a future Buenos Aires, drawn from well-off the coast of the city:
 
 {% include media-grid.html
   type="single-left"
@@ -122,28 +122,35 @@ He drew the following sketch shortly after a flight over Rio De Janerio:
 
 {% include image.html name="rio.jpg" caption="Rio De Janeiro as rendered by Le Corbusier." %}
 
-And this last one breaks my heart. If you've been to Paris, maybe it does to yours too. This is his blueprint for his Radiant City—specifically applied to Paris.
+And this last one breaks my heart. If you've been to Paris, maybe it breaks yours, too. This is his blueprint for his Radiant City—specifically applied to Paris.
 
 {% include image.html name="radiant-city-plans.jpg" caption="The Radiant City." %}
 
-Le Corbusier's urban utopia; high-rise buildings (in the distance) for the optimal work environment. Medium-rise buildings (in the mid to-foreground) for the perfect living conditions. Massive vistas (taking up most of the middle) for leisure. Lastly, superhighways connecting these three purpose-built environments and their _superblocks_ as there is no concept of a footpath or gradual transition between zones.
+Le Corbusier's urban utopia; high-rise buildings (in the distance) for the optimal work environment. Medium-rise buildings (in the mid to-foreground) for the perfect living conditions. Massive vistas (taking up most of the middle) for leisure. Superhighways connecting these three purpose-built environments and their _superblocks_ as there is no concept of a footpath or gradual transition between zones.
 
-_Radiant City_ is his seminal book on this philosophy and proposed city, and it's well worth a read. He left us this gem, for example:
+_Radiant City_ is his seminal book on this philosophy and proposed city. It's well worth a read. For example, the below gem illustrates exactly how his superblocks compare to blocks that existed in historic cities (and for these examples, thankfully still do to a degree).
+
+{% include media-grid.html
+  type="single-right"
+  caption="A handy block-size comparison chart."
+  media="
+  block-sizes.jpg" %}
+
+The Bijlmermeer wasn't built by Le Corbusier but it was done in his footsteps—within the school of high modernity.
 
 {% include media-grid.html
   type="even"
-  caption="First: A handy block-size comparison chart. Second: via zijnwijdat.nl."
+  caption="First: Biljmermeer site plan, via zijnwijdat.nl. Second: Central Amsterdam, at a similar scale."
   media="
-  block-sizes.jpg
-  bijlmermeer-site-plan-1980s.jpg" %}
-
-...which illustrates exactly how his superblocks compare to blocks that existed in historic cities (and for these examples, thankfully still do to a degree).
-
-The Bijlmermeer wasn't built by Le Corbusier but it was done in his footsteps—under the influence of high modernity.
+  bijlmermeer-site-plan-1980s.jpg
+  amsterdam-jordaan.jpg
+  " %}
 
 ### Designing from above
 
-I believe the intentions of the designers of the Bijlmermeer and Le Corbusier were actually quite good; it was about improving the human condition. In hindsight it's easy to realise it was a little naive because this kind of 'designing from above' is actually the antithesis of what people need in design because we are complex beings—we're not as simple as having something very regimented given to us.
+I believe the intentions of the designers of the Bijlmermeer and Le Corbusier were actually quite good; they were ultimately about improving the human condition. The naivity in the _designing from above_ methodology is only made obvious in hindsight—after these places have been built and interacted with.
+
+In hindsight it's easy to realise it was a little naive because this kind of 'designing from above' is actually the antithesis of what people need in design because we are complex beings—we're not as simple as having something very regimented given to us.
 
 There's funny examples; there's the story about the Bijlmermeer, and in Brasilia (an entire city built in this same way, too) where people couldn't find their apartment they couldn't set a meeting place with someone just because the way these things were built.
 
