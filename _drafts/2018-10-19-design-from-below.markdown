@@ -150,11 +150,12 @@ The Bijlmermeer wasn't built by Le Corbusier but it was done in his footsteps—
 
 I believe the intentions of the designers of the Bijlmermeer and Le Corbusier were actually quite good; they were ultimately about improving the human condition. The naivity in the _designing from above_ methodology is only made obvious in hindsight—after these places have been built and interacted with.
 
-In hindsight it's easy to realise it was a little naive because this kind of 'designing from above' is actually the antithesis of what people need in design because we are complex beings—we're not as simple as having something very regimented given to us.
+Designing from above is actually the antithesis of what people need. We are complex beings that do not deal well with reduction regimentation in our interactions.
 
-There's funny examples; there's the story about the Bijlmermeer, and in Brasilia (an entire city built in this same way, too) where people couldn't find their apartment they couldn't set a meeting place with someone just because the way these things were built.
+Brasilia and the Bijlmermeer—two environments built from above—shared a strange phenomenon that illustrates this well. Residents of both consistently had difficulty in finding their own apartment or setting a recognisable meeting place.
 
-But there's actually more severe examples of how this architecture and how this type of design and workflow has failed people.
+
+Sadly, there are ozone more severe examples of how this methodology has failed people. The infamous Pruitt-Igoe in St Louis is one of them.
 
 {% include media-grid.html
   type="single-right"
@@ -162,13 +163,11 @@ But there's actually more severe examples of how this architecture and how this 
   media="
   pruitt-igoe-USGS02.jpg" %}
 
-This was Pruitt-Igoe in St, Louis, MI. It was a housing development. Built from a blank slate as you can see its cleared-away land in the centre. The surrounding buildings are tenement buildings. To understand why Pruitt-Igoe was a failure, you need to think about the things it replaced (other tenement buildings).
+Pruitt-Igoe was a housing development designed and built from a blank slate. Notice the surrounding tenement buildings in the photo above; to understand a key reason for its demise, we need to consider what Pruitt-Igoe replaced.
 
-Designers had a blank slate. They had this land cleared and put in these kind of Le Corbusier Radiant City-style super-blocks which were the 'perfect' places to live. With enough green space, ventilation, air, all the things that were technologically deemed to be important at the time.
+<!-- Designers had a blank slate. They had this land cleared and put in these kind of Le Corbusier Radiant City-style super-blocks which were the 'perfect' places to live. With enough green space, ventilation, air, all the things that were technologically deemed to be important at the time. -->
 
-But the tenement buildings that they replaced—
-
-I live in New York by the way, so I like to use New York examples. This is Hester Street, I think it still looks a bit like this on the Lower East Side:
+I live in New York so like to use New York examples. This first photo below was taken on Hester Street, on the Lower East Side. The second photo was taken from somewhere around Alphabet City. Although heavily gentrified, both areas still _generally_ maintain their structure and density.
 
 {% include media-grid.html
   type="even"
@@ -177,11 +176,11 @@ I live in New York by the way, so I like to use New York examples. This is Heste
   hester-street.jpg
   vergara-camilo.jpg" %}
 
-...these are the types of buildings that Pruitt-Igoe replaced. You see these mixed-use type buildings with people hanging out the front. There are shops, there are houses up those stoops, people are selling things on the street.
+Their structure and density are similar to that of the tenement buildings Pruitt-Igoe replaced. Buildings with eclectic groups of people, of all ages, on the street. Shops, street venders, and stoops. Mischief.
 
-This one is maybe a little closer to Alphabet City. These kids are mucking around with a fire hydrant. They're not at school, they're not at home, but they're also not in a defined 'playground' / 'play area'. This kind of living, this kind of sidewalk-facing street is complex and seemingly chaotic **because it is, and because _we_ are too**.
+The kids mucking around with a fire hydrant are not at school or at home—nor are they in a defined play-area. These diverse interactions occurring on a sidewalk-facing street are complex and seemingly chaotic **because they are, and because _we_ are too**.
 
-But it's also quite hard for designers to map and to systemise these sort of things. Combine that with some socio-economic problems like in St Louis in that particular part and you have yourself a situation where this kind of design or urban environment is to blame for peoples' problems and then gets wiped-out and gets replaced by a type of design that actually got demolished on TV.
+**We designers tend to conflate complexity with true distorter**. We have a hard time mapping organic interactions—we'll often do what we can to avoid it all together. Combine that attitude with some socio-economic problems like St Louis' and naturally this organic, decentralised, urban design is to blame for peoples' problems. Pruitt-Igoe set out to be Le Corbusier's urban utopia but ended up prematurely yet spectacularly demolished (on live television).
 
 {% include media-grid.html
   type="even"
