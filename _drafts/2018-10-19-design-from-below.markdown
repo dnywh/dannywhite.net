@@ -152,10 +152,9 @@ I believe the intentions of the designers of the Bijlmermeer and Le Corbusier we
 
 Designing from above is actually the antithesis of what people need. We are complex beings that do not deal well with reduction regimentation in our interactions.
 
-Brasilia and the Bijlmermeer—two environments built from above—shared a strange phenomenon that illustrates this well. Residents of both consistently had difficulty in finding their own apartment or setting a recognisable meeting place.
+Brasilia and the Bijlmermeer, two environments built from above, shared a strange phenomenon that illustrates this well. Residents of both consistently had difficulty in finding their own apartment or setting a recognisable meeting place.
 
-
-Sadly, there are ozone more severe examples of how this methodology has failed people. The infamous Pruitt-Igoe in St Louis is one of them.
+Sadly, there are more severe examples of how this methodology has failed people. The infamous Pruitt-Igoe in St Louis was one of them.
 
 {% include media-grid.html
   type="single-right"
@@ -165,9 +164,7 @@ Sadly, there are ozone more severe examples of how this methodology has failed p
 
 Pruitt-Igoe was a housing development designed and built from a blank slate. Notice the surrounding tenement buildings in the photo above; to understand a key reason for its demise, we need to consider what Pruitt-Igoe replaced.
 
-<!-- Designers had a blank slate. They had this land cleared and put in these kind of Le Corbusier Radiant City-style super-blocks which were the 'perfect' places to live. With enough green space, ventilation, air, all the things that were technologically deemed to be important at the time. -->
-
-I live in New York so like to use New York examples. This first photo below was taken on Hester Street, on the Lower East Side. The second photo was taken from somewhere around Alphabet City. Although heavily gentrified, both areas still _generally_ maintain their structure and density.
+I live in New York so like to use New York examples. This first photo below was taken on Hester Street, on the Lower East Side. The second photo was taken from somewhere around Alphabet City. Although heavily gentrified, both areas still generally maintain their structure and density.
 
 {% include media-grid.html
   type="even"
@@ -178,9 +175,11 @@ I live in New York so like to use New York examples. This first photo below was 
 
 Their structure and density are similar to that of the tenement buildings Pruitt-Igoe replaced. Buildings with eclectic groups of people, of all ages, on the street. Shops, street venders, and stoops. Mischief.
 
-The kids mucking around with a fire hydrant are not at school or at home—nor are they in a defined play-area. These diverse interactions occurring on a sidewalk-facing street are complex and seemingly chaotic **because they are, and because _we_ are too**.
+The kids playing with a fire hydrant are not at school or at home—nor are they in a defined play-area. These diverse interactions occurring on a sidewalk-facing street are complex and seemingly chaotic **because they are, and because _we_ are too**.
 
-**We designers tend to conflate complexity with true distorter**. We have a hard time mapping organic interactions—we'll often do what we can to avoid it all together. Combine that attitude with some socio-economic problems like St Louis' and naturally this organic, decentralised, urban design is to blame for peoples' problems. Pruitt-Igoe set out to be Le Corbusier's urban utopia but ended up prematurely yet spectacularly demolished (on live television).
+**Designers tend to conflate complexity with disorder**. We have a hard time mapping organic interactions and often avoid it all together. It's only natural that this organic, decentralised, urban design is to blame for social and economic problems in St Louis.
+
+Pruitt-Igoe set out to be Le Corbusier's urban utopia but ended up prematurely yet spectacularly demolished (on live television).
 
 {% include media-grid.html
   type="even"
@@ -191,13 +190,13 @@ The kids mucking around with a fire hydrant are not at school or at home—nor a
   pruitt-igoe-collapse-series-3.jpg
   pruitt-igoe-collapse-series-4.jpg" %}
 
-I don't think there's a Pruitt Igoe, Bijlmermeer, or Brasilia of product design yet—but I do worry that the \*\*failures of these designers are ones we could make too if we're not too careful with thinking about our surrounding context. In our world we _have_ to simplify and systemise just to be able to work with our design tools and our computers, and then to design something that goes into someone's hand they can peck away at.
+I don't think there's a Pruitt Igoe, Bijlmermeer, or Brasilia of product design, but I do worry that the failures made by their designers are ones we could also make. In our world we _have_ to simplify and systemise just to be able to work with our already-abstracted design tools and our computers—let alone design something coherent that fits into the palm of a hand.
+
+Designing from above is an easy option for us.
 
 ## Designing from below
 
-But I'm optimist about this because I think we're actually in a really good position to handle this and with our new workflows.
-
-This is one my of my personal heroes; her name is Jane Jacobs, and she was a professional writer—but also an activist and expert in what makes good urban environments.
+In a similar window of time as Le Corbusier and Robert Moses was Jane Jacobs; an architectural journalist, author, and hardcore urban activist rooted in Greenwich Village. Jane Jacobs was an expert in what makes good urban design and a significant figure in New York City history.
 
 {% include media-grid.html
   type="single-left"
@@ -205,9 +204,11 @@ This is one my of my personal heroes; her name is Jane Jacobs, and she was a pro
   media="
   jane-jacobs.jpg" %}
 
-One of my favourite passages from her is:
+One of my favourite Jane Jacobs is this:
 
 > The best way to plan for downtown is to see how people use it today.
+
+With _our_ new ways of working, mixed with some Jane Jacobs awareness, I believe product designers are actually in a good position to steer towards designing with context—designing from below.
 
 ### Designing with data
 
