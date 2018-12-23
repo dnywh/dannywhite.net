@@ -180,7 +180,8 @@ h3 {
   font-size: 1.3em;
 }
 
-h4 {
+h4,
+blockquote {
   font-size: 1.2em;
 }
 
@@ -265,11 +266,17 @@ li a:hover {
 
 /* Line breaks */
 hr {
-  border-style: solid;
   border-width: 0.75px;
+  border-style: solid;
   border-color: var(--color-border);
   margin: 2em 0;
   width: 60vw;
+}
+
+.footnotes {
+  border-top: 1px solid var(--color-border);
+  margin-top: 4rem;
+  padding-top: 3em;
 }
 
 /* Lists */

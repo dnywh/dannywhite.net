@@ -12,7 +12,7 @@ This is something I've been mulling over for the past year or two. Loupe 2018 fo
 
 {% include iframe-video.html link="https://www.youtube.com/embed/_03kSKPoO-Y" %}
 
-I've written a condensed version for your reading pleasure and (mostly) for my own archiving. Enjoy.
+I've written a condensed version for your reading pleasure as well as my own archiving. Enjoy.
 
 ---
 
@@ -204,40 +204,45 @@ In a similar window of time as Le Corbusier and Robert Moses was Jane Jacobs; an
   media="
   jane-jacobs.jpg" %}
 
-One of my favourite Jane Jacobs is this:
+One of my favourite passages written by Jane Jacobs[^jane-jacobs-passage] follows:
 
 > The best way to plan for downtown is to see how people use it today.
 
-With _our_ new ways of working, mixed with some Jane Jacobs awareness, I believe product designers are actually in a good position to steer towards designing with context—designing from below.
+With _our_ new ways of working, mixed with some Jane Jacobs-style awareness, I believe product designers are actually in a good position to steer towards designing with context—designing from below.
 
 ### Designing with data
 
-There are obviously different degrees to this, but it turns out that even the easy one has a lot of wins for us. And being a design (tools) conference, I'm sure a lot of you already do this with injecting data, or data into avatars and strings, but there's actually a whole lot of different degrees we can do this _within_ an easy degree. Because if we inform our interfaces inherently from whatever our downtowns are, it produces something that actually reflects the people we're making it for.
+There are many degrees to designing with data, but even the easiest ones have a huge impact. Being at a design (tools) conference, I'm sure a lot of you already do this; injecting data into avatars, names, and other UI surfaces. A few notches up lies designing with a more representative dataset, and then of course real (obscured) data.
 
-This also can extend itself to using the same hard hardware, the same software, the same network speeds even as the people you're designing for—because it's probably different from what you use.
+This practice can extend itself upwards to the _shape_ of elements being filled; their types and reason for being, dependent on and reflective of the people using them. Our interfaces can become inherently informed from our respective 'downtowns'.
+
+Designing with data also means using similar hardware, software, and network conditions as the people you're designing for. There's a chance that your fibre-optic internet connection and 21&Prime; Retina display are different from what your constituents have access to.
 
 ### Leaving the office
 
-But of course to be more true to Jane Jacobs; those of who can, should be able to leave the office and take our increasingly mobile/remote setup and physically embed ourselves in the communities that we're designing for.
+Those of us who can should leave the office and—taking our profession's increasingly mobile setup—physically embed ourselves in the communities that we are designing for.
 
-It can be hard to justify sitting on a park bench to your colleagues or your bosses or maybe, but that kind of ethnographic research is invaluable. And like designing with data, this inform what we're doing from the very beginning and not be something that we stress test or do at the very end.
+It can be hard to justify the value in sitting on a park bench to your boss, but that kind of ethnographic research (over time) is invaluable. Inversly, rigidly-defined user testing sessions without a clear goal can lull designers into a false understanding of their communities.
 
-I have another New York example. This is Times Square; still kind of looks like this from some angles.
+Like designing with data, leaving the office informs what we're making _from the very beginning_. Take in the below image; the left-most block is one average day at Times Square, in 2009. The then-transport commissioner (Janette Sadik-Khan) and her team ran an experiment. 5 blocks of Times Square became off-limits for cars. The team visited the local hardware store, picked up some paint and lawn chairs, and set them out on the newly-cleared streets.
 
 {% include image.html name="times-square.jpg" caption="From left: Hiroko Masuike, Damon Winter, Justin Maxon, 2009, for The New York Times." %}
 
-This is from one day in 2009. The then-transport commissioner and her team they as an experiment shut down 5 blocks to cars. They went to the local hardware store, picked up some paint and lawn chairs, and set them out. People turned out, started to hang out, and then they had to go and buy some more lawn chairs.
-
-This temporary plaza was so successful it was eventually made permanent.
+People turned out, started to hang out, and then they had to go and buy some more lawn chairs. This temporary plaza was so successful it was eventually made permanent[^times-square].
 
 ### Embracing difference
 
-I'm showing you this because this an artefact of the design of built environment learning from its past and making changes. This design process was informed by city data, prototyped on the cheap with cheap materials, and involved a mix of people to get right.
+Times Square is living proof of a built environment having learnt from its past. Its most recent design process was informed by city data, prototyped with cheap materials, and required the skills of different people to get right.
 
-Only by having different people on our teams do we really have the diversity of thought that we need to make things that really resonate with our different audiences. And so as the makers, advocates, users, and stewards of tools we are responsible for ensuring they are open to our non-traditional designer and non-designer teammates.
+Only **by having different people on our teams do we have the diversity of thought** necessary to make interfaces that resonate with our diverse audience. As the makers, advocates, stewards, and users of design tools we are responsible for ensuring they are open to our non-traditional designer and non-designer teammates. For our own good.
 
-## Git push
+## Looking forward
 
-High Modernity, for all its faults, was a legitimate response to what was happening in the world at its ascendency, 50–60 years ago. What we're making now is impacting the world severely. Good and bad. It's used by people to decide who to vote for or how or why to take action on a complex issue like climate change. People use what we make to meet their life partners. And as their primary form of communication.
+For all its faults, High Modernity was a legitimate response to what was happening in the world, 50–60 years ago. What we're making, and our philosophies on _how_ to make, are shaping today's world.
 
-This is a lot, but ultimately I'm an optimist about this. Because our digital medium has something that the design of built environment _doesn't_ have, and it's why places likes the Bijlmermeer or Brasilia are still around in their flawed form. It takes generations to suffer through, and then eventually modify or replace bad urban design. But in our world, we can make strides; we can go to our streets and design from below, and put it in peoples' hands next week. And then we can do the same thing the week after.
+What we make is used by people to decide who to vote for, or how or why to take action on climate change. People use what we make as their primary form of communication, and to meet their life partners.
+
+I'm optimistic because our digital medium has something that the design of built environment doesn't have—it's why places likes the Bijlmermeer or Brasilia are still around in their flawed form. It takes generations to suffer through, and then eventually modify or replace bad urban design. **We can design from below; go to our streets, and put the result in peoples' hands next week.** And then we can do the same thing the week after.
+
+[^jane-jacobs-passage]: Found in [Vital Little Plans: The Short Works of Jane Jacobs](https://books.google.com/books?id=TOylCwAAQBAJ&lpg=PT85&ots=U2bNWa70Gt&dq=%22The%20best%20way%20to%20plan%20for%20downtown%20is%20to%20see%20how%20people%20use%20it%20today%22%20jane%20jacobs&pg=PT85#v=onepage&q=%22The%20best%20way%20to%20plan%20for%20downtown%20is%20to%20see%20how%20people%20use%20it%20today%22%20jane%20jacobs&f=false). Also quoted in the film [Citizen Jane](http://www.altimeterfilms.com/citizen-jane-battle-for-the-city/), which, if you've made it down here, you should watch.
+[^times-square]: [Gothamist](http://gothamist.com/2017/04/19/times_square_good_new_days.php) has the best photo comparison and write-up that I've seen.
