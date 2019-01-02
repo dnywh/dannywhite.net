@@ -12,7 +12,7 @@
 # ~Maximum dimension of 1800px~
 
 - stop-n-play-token:
-  name: Stop N&rsquo; Play
+  name: Stop N' Play
   date: 2018-12-27
   location: Port Richey, FL
   tags:
@@ -139,7 +139,7 @@
     - tranport
 
 - baetens-bb:
-  name: Baeten&rsquo;s B&B
+  name: Baeten's B&B
   date: 2018-09-29
   location: Ghent, Belgium
   tags:
@@ -495,7 +495,7 @@
 - ord-lga:
   name: Chicago to New York
   date: 2017-10-17
-  location: Chicago O&rsquo;Hare
+  location: Chicago O'Hare
   tags:
     - plane
     - transport
