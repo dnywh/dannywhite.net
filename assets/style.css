@@ -91,7 +91,7 @@ article > section > .media:not(.grid) > label {
 article > section > .media {
   max-width: 90rem; /* 1440px */
   max-width: 1200px;
-  margin: 1.5rem auto; /* Break bounds of body margin */
+  margin: 4vmax auto; /* Break bounds of body margin */
   padding-left: 0;
   padding-right: 0;
 }
@@ -163,7 +163,7 @@ h1.intro {
 
 h2 {
   font-size: 1.6em;
-  margin-top: 2em;
+  margin-top: 6vmax;
 }
 
 h2,
@@ -176,7 +176,7 @@ h6 {
 }
 
 h3 {
-  margin-top: 1.25em;
+  margin-top: 4vmax;
   font-size: 1.3em;
 }
 
@@ -269,7 +269,7 @@ hr {
   border-width: 0.75px;
   border-style: solid;
   border-color: var(--color-border);
-  margin: 2em 0;
+  margin: 4vmax 0;
   width: 60vw;
 }
 
