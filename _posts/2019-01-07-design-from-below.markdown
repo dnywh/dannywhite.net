@@ -2,7 +2,7 @@
 layout: post
 type: article
 title: "Design from below"
-# date: 2018-12-09 15:33:56 -0400
+date: 2019-01-07 09:33:56 -0400
 featured-image: loupe-recap-asset-3-danny@2x.jpg
 ---
 
