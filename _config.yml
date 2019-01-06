@@ -23,6 +23,10 @@ author: Danny White
 # Build settings
 markdown: kramdown
 
+# Stop Apple's emoji preference
+kramdown:
+  footnote_backlink: "&#8617;&#65038;"
+
 # plugins were previously called gems
 plugins:
   - jekyll-feed
