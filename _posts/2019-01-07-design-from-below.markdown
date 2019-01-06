@@ -20,7 +20,7 @@ I've written a condensed version for your reading pleasure as well as my own arc
 
 I grew into digital design through Photoshop, and Paint before that. From there I began to rely on built-for-digital-design tools like Sketch and Figma. I'd argue that all of these—including Sketch—are inherently (and perhaps accidentally) print design tools.
 
-Gutenburg in the 7th century, China 700 years before that. Movable type, the printing press, down to offset printing. All of these tools that we've used through to desktop publishing come from a world where designers physically set the type, mixed the colours, and handled the paper stock.
+Gutenburg in the 14th century, China 700 years before that. Movable type, the printing press, down to offset printing. All of these tools that we've used through to desktop publishing come from a world where designers physically set the type, mixed the colours, and handled the paper stock.
 
 {% include media-grid.html
   type="single-right"
