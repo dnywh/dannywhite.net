@@ -18,7 +18,7 @@ I've written a condensed version for your reading pleasure as well as my own arc
 
 ## Reality check
 
-I grew into digital design through Photoshop, and Paint before that. From there I began to rely on built-for-digital-design tools like Sketch and Figma. I'd argue that all of these—including Sketch—are inherintely (and perhaps accidentally) print design tools.
+I grew into digital design through Photoshop, and Paint before that. From there I began to rely on built-for-digital-design tools like Sketch and Figma. I'd argue that all of these—including Sketch—are inherently (and perhaps accidentally) print design tools.
 
 Gutenburg in the 7th century, China 700 years before that. Movable type, the printing press, down to offset printing. All of these tools that we've used through to desktop publishing come from a world where designers physically set the type, mixed the colours, and handled the paper stock.
 
@@ -30,7 +30,7 @@ Gutenburg in the 7th century, China 700 years before that. Movable type, the pri
 
 Fast forward to the last 10–20 years. We kept on using these same print tools through to digital interface design—except to make _models_; **high fidelity models of the actual thing being made.**
 
-I think sort-of knew this all along. Then tools like Framer (Classic) irrevoacably exposed this workflow as indeed backwards. Soon after, the great question of 2016 came along and made the awkwardness even more palpable:
+I think sort-of knew this all along. Then tools like Framer (Classic) irrevocably exposed this workflow as indeed backwards. Soon after, the great question of 2016 came along and made the awkwardness even more palpable:
 
 > Should designers code?
 
@@ -63,11 +63,11 @@ Queer Eye is a great lesson on humanity. It's also a great lesson on team dynami
   media="
   fab-five.jpg" %}
 
-These guys do something similar to the games industry except, instead of code, the medium is a human being. Each member has their own individual expertise and tools, yet work simultaneously on the same subject. Antony will be prepping a meal plan whilst Jonathan is doing the guy's grooming, whilst Bobby is grabbing a few things at the hardware store. They'll check in occasionally, both with the medium and eachother.
+These guys do something similar to the games industry except, instead of code, the medium is a human being. Each member has their own individual expertise and tools, yet work simultaneously on the same subject. Antony will be prepping a meal plan whilst Jonathan is doing the guy's grooming, whilst Bobby is grabbing a few things at the hardware store. They'll check in occasionally, both with the medium and each-other.
 
 ### Surrounding context
 
-If you've seen an episode you know the haircut and the house are not the lasting takeaways. The real tearjerker is the _softer_ output; the life transformation brought about by the Fab Five's technical skillsets.
+If you've seen an episode you know the haircut and the house are not the lasting takeaways. The real tear-jerker is the _softer_ output; the life transformation brought about by the Fab Five's technical skillsets.
 
 It's this softer output that us designers need to be aware of (and arguably building for) in our world. **Interface design workflows and tooling are being disrupted like never before—as are the social and cultural implications of what they help build**. Think about the way that you last:
 
@@ -87,7 +87,7 @@ Luckily, we're not the first design discipline to go through this kind of transf
 
 ## Pouring slabs
 
-Not too far from central Amsterdam is a bizzare piece of living history: the Bijlmermeer.
+Not too far from central Amsterdam is a bizarre piece of living history: the Bijlmermeer.
 
 {% include media-grid.html
   type="single-left"
@@ -150,7 +150,7 @@ The Bijlmermeer wasn't built by Le Corbusier, but it was done in his footsteps a
 
 ### Designing from above
 
-I believe the intentions of the Bijlmermeer designers and Le Corbusier were actually quite good; they were ultimately about improving the human condition. The naivity in _designing from above_ is only made obvious in hindsight—after these places have been built and interacted with.
+I believe the intentions of the Bijlmermeer designers and Le Corbusier were actually quite good; they were ultimately about improving the human condition. The naivety in _designing from above_ is only made obvious in hindsight—after these places have been built and interacted with.
 
 **Designing from above is actually the antithesis of what people need. We are complex beings that do not deal well with reduction regimentation in our interactions.**
 
@@ -224,7 +224,7 @@ Designing with data also means using similar hardware, software, and network con
 
 Those of us who can should leave the office and physically embed ourselves in the communities that we are designing for.
 
-It can be hard to justify the value in sitting on a park bench to your boss, but ethnographic research (done over time and done right) can clarify needs and explain or help predict behavior. Inversly, user testing sessions (often unscientific and without a clear goal) can lull designers into a false understanding of their communities.
+It can be hard to justify the value in sitting on a park bench to your boss, but ethnographic research (done over time and done right) can clarify needs and explain or help predict behaviour. Inversely, user testing sessions (often unscientific and without a clear goal) can lull designers into a false understanding of their communities.
 
 Like designing with data, leaving the office informs what we're making _from the very beginning_. And if that's not possible, it gives us indicators on how to adapt.
 
