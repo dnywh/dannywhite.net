@@ -11,6 +11,22 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- empanadas-cafe:
+  name: Empanadas Cafe
+  date: 2019-01-06
+  location: Corona, Queens, NY
+  tags:
+    - food
+
+- louis-armstrong-house:
+  name: Louis Armstrong House Museum
+  date: 2019-01-06
+  location: Corona, Queens, NY
+  tags:
+    - receipt
+    - ticket
+    - museum
+
 - stop-n-play-token:
   name: Stop N' Play
   date: 2018-12-27
