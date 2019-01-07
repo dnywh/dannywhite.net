@@ -20,7 +20,7 @@ I've written a condensed version for your reading pleasure as well as my own arc
 
 I grew into digital design through Photoshop, and Paint before that. From there I began to rely on built-for-digital-design tools like Sketch and Figma. I'd argue that all of these—including Sketch—are inherently (and perhaps accidentally) print design tools.
 
-Gutenburg in the 14th century, China 700 years before that. Movable type, the printing press, down to offset printing. All of these tools that we've used through to desktop publishing come from a world where designers physically set the type, mixed the colours, and handled the paper stock.
+Gutenberg in the 14th century, China 700 years before that. Movable type, the printing press, down to offset printing. All of these tools that we've used through to desktop publishing come from a world where designers physically set the type, mixed the colours, and handled the paper stock.
 
 {% include media-grid.html
   type="single-right"
@@ -67,7 +67,7 @@ These guys do something similar to the games industry except, instead of code, t
 
 ### Surrounding context
 
-If you've seen an episode you know the haircut and the house are not the lasting takeaways. The real tear-jerker is the _softer_ output; the life transformation brought about by the Fab Five's technical skillsets.
+If you've seen an episode you know the haircut and the house are not the lasting takeaways. The real tear-jerker is the _softer_ output; the life transformation brought about by the Fab Five's respective skills.
 
 It's this softer output that us designers need to be aware of (and arguably building for) in our world. **Interface design workflows and tooling are being disrupted like never before—as are the social and cultural implications of what they help build**. Think about the way that you last:
 
@@ -99,7 +99,7 @@ Not too far from central Amsterdam is a bizarre piece of living history: the Bij
 The Bijlmermeer was conceived-of and built as the design of built environment was facing a transformation from multiple fronts:
 
 1. Revolutionary tooling, materials, and construction methods (such as reinforced concrete) reaching maturity.
-2. People and cities across the world generally urbanising, and post-war cities re-structuring.
+2. People and cities across the world generally urbanising, and post-war cities restructuring.
 3. Architects becoming formally responsible for the health and safety of the people who interacted with and inhabited the buildings they designed.
 
 As well as being built during this time, the Bijlmermeer became a prime example of a specific _approach_ to urban design. One with an **unrelenting belief in technological progress to advance the human condition**. An approach that I worry interface designers are moving towards. An approach with a lot to do with Le Corbusier.
@@ -142,7 +142,7 @@ The Bijlmermeer wasn't built by Le Corbusier, but it was done in his footsteps a
 
 {% include media-grid.html
   type="even"
-  caption="First: Biljmermeer site plan, via zijnwijdat.nl. Second: Central Amsterdam (~10km away), at a similar scale."
+  caption="First: Bijlmermeer site plan, via zijnwijdat.nl. Second: Central Amsterdam (~10km away), at a similar scale."
   media="
   bijlmermeer-site-plan-1980s.jpg
   amsterdam-jordaan.jpg
@@ -164,7 +164,7 @@ Sadly, there are more severe examples of how this methodology has failed people.
   media="
   pruitt-igoe-USGS02.jpg" %}
 
-Pruitt-Igoe was a housing development designed and built from a blank slate. Take a peak at the photo above and note the surrounding buildings. To understand a key reason for its demise, we need to consider what Pruitt-Igoe replaced.
+Pruitt-Igoe was a housing development designed and built from a blank slate. Take a peek at the photo above and note the surrounding buildings. To understand a key reason for its demise, we need to consider what Pruitt-Igoe replaced.
 
 I live in New York so like to use New York examples. This first photo below was taken on Hester Street, on the Lower East Side. The second photo was taken from somewhere around Alphabet City. Although more gentrified and car-heavy, both areas still generally maintain their density.
 
@@ -175,7 +175,7 @@ I live in New York so like to use New York examples. This first photo below was 
   hester-street.jpg
   vergara-camilo.jpg" %}
 
-Their structure and density are similar to that of the tenement buildings Pruitt-Igoe replaced. Buildings with eclectic groups of people of all types on the street. Shops, street venders, and stoops. Mischief and cheek.
+Their structure and density are similar to that of the tenement buildings Pruitt-Igoe replaced. Buildings with eclectic groups of people of all types on the street. Shops, street vendors, and stoops. Mischief and cheek.
 
 The kids playing with a fire hydrant are not at school or at home, nor are they in a defined play area. These nebulous interactions occurring on a sidewalk-facing street are complex and seemingly chaotic—**because they are and _we_ are too**.
 
