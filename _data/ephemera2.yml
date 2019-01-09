@@ -1,0 +1,49 @@
+# Scan settings:
+# 300dpi
+# Full color text/photo
+# ~Auto density~
+# PDF uncompressed
+
+# Export settings:
+# JPG on white background
+# Pixelate effect (10px) for sensitive material
+# SRBG for web
+# ~Compressed via ImageOptim~
+# ~Maximum dimension of 1800px~
+
+- empanadas-cafe:
+  name: Empanadas Cafe
+  date: 2019-01-06 09:33:56 -0400
+  location: Corona, Queens, NY
+  tags:
+    - food
+
+- stop-n-play-token:
+  name: Stop N' Play
+  date: 2018-12-27 09:33:56 -0400
+  location: Port Richey, FL
+  tags:
+    - receipt
+
+- mta-bicycle-permit:
+  name: Bicycle Permit
+  date: 2017-06-16 09:33:56 -0400
+  location: Montauk, NY
+  tags:
+    - train
+    - tranport
+    - bike
+
+- josh:
+  name: Josh
+  date: 2017-06-06 09:33:56 -0400
+  location: ustwo New York
+  tags:
+    - sticker
+
+- cal-cru:
+  name: Cal Cru
+  date: 2017-05-11 09:33:56 -0400
+  location: Astoria, NY
+  tags:
+    - clothes

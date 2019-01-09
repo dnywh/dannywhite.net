@@ -1,0 +1,24 @@
+---
+layout: default
+title: All
+---
+
+{% assign posts = site.posts %}
+{% assign ephemera2 = site.data.ephemera2 %}
+{% assign all = posts | concat: ephemera2 %}
+{% assign allSorted = all | sort: 'date' | reverse %}
+
+<ul>
+  {% for item in allSorted %}
+  <li>
+
+
+    {% if item.name %}
+    <img src="../assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}" style="width: 100px;" />
+    {% endif %}
+    {% if item.title %}
+    <h1>{{ item.title }}</h1>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
