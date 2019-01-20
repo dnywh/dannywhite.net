@@ -11,7 +11,7 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta property="og:image" content="{{ site.url }}/assets/{% if page.featured-image %}posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured-image }}{% else %}images/og-image-fallback.jpg{% endif %}">
+  <meta property="og:image" content="{% if page.featured-image %}{{ site.url }}/assets/posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured-image }}{% elsif page.featured-image-remote %}https://ik.imagekit.io/dw/posts/{{ page.featured-image-remote }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:locale" content="en_GB" />
 
@@ -21,7 +21,7 @@
   <meta name="twitter:creator" content="@dannyalright" />
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="twitter:image" content="{{ site.url }}/assets/{% if page.featured-image %}posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured-image }}{% else %}images/og-image-fallback.jpg{% endif %}">
+  <meta name="twitter:image" content="{% if page.featured-image %}{{ site.url }}/assets/posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured-image }}{% elsif page.featured-image-remote %}https://ik.imagekit.io/dw/posts/{{ page.featured-image-remote }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}">
 
   <!-- Pinterest -->
   <meta name="p:domain_verify" content="62a5c72a4dbb40cba45c9a57bef6a6f9" />
