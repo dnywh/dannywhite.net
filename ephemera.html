@@ -3,17 +3,11 @@ layout: ephemera
 title: Ephemera
 ---
 
-<!--
-  Physical fragments from the life of Danny. In an increasingly digital world. Of interest to no one except himself.
--->
-
 <div class="flex gallery">
   {% for item in site.data.ephemera %}
   <figure>
-    <img
-      src="../assets/images/ephemera/{{ item.first }}.jpg"
-      alt="{{ item.name }}"
-    />
+    <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg"
+      alt="{{ item.name }}" />
     <figcaption>
       {{ item.name }},<br />
       {{ item.location }}<br />
