@@ -3,7 +3,7 @@ layout: post
 type: article
 title: "Design from below"
 date: 2019-01-07 09:33:56 -0400
-featured-image: loupe-recap-asset-3-danny@2x.jpg
+featured-image-remote: loupe-recap-asset-3-danny_2x.jpg
 ---
 
 We're in the middle of a design tool and process revolution. Yet it seems as if design tools and processes are the extent of conversation within the design community. Mention of how the things we design are loved or hated, addicting or abusive, don't seem to make good conversation or panel topics.
@@ -25,6 +25,7 @@ Gutenberg in the 14th century, China 700 years before that. Movable type, the pr
 {% include media-grid.html
   type="single-right"
   caption="Woolsey, Theodore Dwight, 1876."
+  remote=true 
   media="
   printing-press.jpg" %}
 
@@ -60,6 +61,7 @@ Queer Eye is a great lesson on humanity. It's also a great lesson on team dynami
 {% include media-grid.html
   type="single-right"
   caption="Bobby, Karamo, Antony, Jonathan, Tan."
+  remote=true
   media="
   fab-five.jpg" %}
 
@@ -93,6 +95,7 @@ Not too far from central Amsterdam is a bizarre piece of living history: the Bij
   type="single-left"
   caption="via artchist.wordpress.com"
   hyphenate=false
+  remote=true
   media="
   bijlmermeer-1962-73.jpg" %}
 
@@ -107,6 +110,7 @@ As well as being built during this time, the Bijlmermeer became a prime example 
 {% include media-grid.html
   type="single-right"
   caption="Wim Dussel, 1955."
+  remote=true
   media="
   le-corbusier.jpg" %}
 
@@ -117,16 +121,17 @@ This is his rendition of an improved Buenos Aires:
 {% include media-grid.html
   type="single-left"
   caption="Buenos Aires as rendered by Le Corbusier."
+  remote=true
   media="
   buenos-aires.jpg" %}
 
 He drew the following sketch shortly after a flight over Rio De Janerio:
 
-{% include image.html name="rio.jpg" caption="Rio De Janeiro as rendered by Le Corbusier." %}
+{% include image.html remote=true name="rio.jpg" caption="Rio De Janeiro as rendered by Le Corbusier." %}
 
 And this last one breaks my heart. This is his blueprint for his Radiant City—specifically applied to Paris.
 
-{% include image.html name="radiant-city-plans.jpg" caption="The Radiant City." %}
+{% include image.html remote=true name="radiant-city-plans.jpg" caption="The Radiant City." %}
 
 Le Corbusier's urban utopia: high-rise buildings (in the distance) for the optimal work environment, medium-rise buildings (in the mid-to-foreground) for the perfect living conditions, massive vistas (taking up most of the middle) for leisure. Superhighways connecting these three purpose-built environments and their _superblocks_ as there is no concept of a footpath or gradual transition between zones.
 
@@ -135,6 +140,7 @@ _Radiant City_[^radiant-city] is his seminal book on this philosophy and propose
 {% include media-grid.html
   type="single-right"
   caption="A handy block-size comparison chart."
+  remote=true
   media="
   block-sizes.jpg" %}
 
@@ -143,6 +149,7 @@ The Bijlmermeer wasn't built by Le Corbusier, but it was done in his footsteps a
 {% include media-grid.html
   type="even"
   caption="First: Bijlmermeer site plan, via zijnwijdat.nl. Second: Central Amsterdam (~10km away), at a similar scale."
+  remote=true
   media="
   bijlmermeer-site-plan-1980s.jpg
   amsterdam-jordaan.jpg
@@ -161,6 +168,7 @@ Sadly, there are more severe examples of how this methodology has failed people.
 {% include media-grid.html
   type="single-right"
   caption="United States Geological Survey, 1963–72."
+  remote=true
   media="
   pruitt-igoe-USGS02.jpg" %}
 
@@ -171,6 +179,7 @@ I live in New York so like to use New York examples. This first photo below was 
 {% include media-grid.html
   type="even"
   caption="First: Berenice Abbott, 1936. Second: Vergara, Camilo J, 1970."
+  remote=true
   media="
   hester-street.jpg
   vergara-camilo.jpg" %}
@@ -186,6 +195,7 @@ Pruitt-Igoe set out to be Le Corbusier's urban utopia but ended up prematurely y
 {% include media-grid.html
   type="even"
   caption="U.S. Department of Housing and Urban Development, 1972."
+  remote=true
   media="
   pruitt-igoe-collapse-series-1.jpg
   pruitt-igoe-collapse-series-2.jpg
@@ -203,6 +213,7 @@ In a similar window of time as Le Corbusier was Jane Jacobs; an architectural jo
 {% include media-grid.html
   type="single-left"
   caption="Phil Stanziola, 1961."
+  remote=true
   media="
   jane-jacobs.jpg" %}
 
@@ -230,7 +241,7 @@ Like designing with data, leaving the office informs what we're making _from the
 
 Take a look at the below image. The left-most block is one average day at Times Square in 2009. Janette Sadik-Khan[^sadik-khan], the then-transport commissioner, and her team ran an experiment; 5 blocks of Times Square were to temporarily become off-limits for cars. The team visited the local hardware store, picked up some paint and lawn chairs, and set them out on the newly-cleared streets.
 
-{% include image.html name="times-square.jpg" caption="From left: Hiroko Masuike, Damon Winter, Justin Maxon, 2009, for The New York Times." %}
+{% include image.html remote=true name="times-square.jpg" caption="From left: Hiroko Masuike, Damon Winter, Justin Maxon, 2009, for The New York Times." %}
 
 People turned out, started to hang out, and stuck around. The DOT team had to go and buy some more lawn chairs. This temporary plaza was so successful it was eventually made permanent[^times-square].
 

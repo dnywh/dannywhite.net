@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body id=# class="white">
-    {% include nav.html %}
+<!-- lzy.js uses the Intersection Observer API, which isn't yet well supported -->
+<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> </script>
+<!-- lzy.js -->
+<script src="../assets/lzy.min.js"></script>
+
+<body id=# class="white">
+  {% include nav.html %}
 
 
-    {{ content }}
+  {{ content }}
 
-    {% include footer.html %}
-  </body>
+  {% include footer.html %}
+</body>
+
+<!-- Lazy-load images -->
+<script>lzy();</script>
 
 </html>

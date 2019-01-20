@@ -3,14 +3,14 @@ layout: post
 type: article
 title: "Designing For Movement"
 date: 2016-09-24 15:33:56 -0400
-featured-image: team.jpg
+featured-image: ustwo-team-nypd.jpg
 ---
 
 [Erin LeForce](http://twitter.com/ErinLeForce) and I co-wrote this article for publishing on the [ustwo blog](http://ustwo.com/blog/designing-for-movement). Since then, it's been picked up by the [Marvel blog](http://blog.marvelapp.com/designing-for-movement) (🎉!) and the principles have set a foundation for how we approach similar projects coming into our studio.
 
 I'm going to use the co-publishing over here as an opportunity to give a shout-out to the full client-facing team:
 
-{% include image.html name="team.jpg" caption="Megan Wald, myself, Rimar Villaseñor, Coleman Dash, and Erin LeForce. Bunch of legends." %}
+{% include image.html name="ustwo-team-nypd.jpg" caption="Megan Wald, myself, Rimar Villaseñor, Coleman Dash, and Erin LeForce. Bunch of legends." %}
 
 One last thing: I've also used the co-publishing here as an opportunity to prune to the good stuff. And leave out a lot of processes, testing, and results. See the original blog post for those things. Alright. Let's get to it...
 
@@ -18,13 +18,13 @@ One last thing: I've also used the co-publishing here as an opportunity to prune
 
 ustwo has been working closely with organizations in [health](http://moodnotes.thriveport.com/), [wellbeing](http://pauseable.com/), [accessibility](http://wayfindr.net/), and now increasingly so in fitness. Working with a leading sports and fitness organization, we set out to improve the run experience. We focused on the varying degrees of interactivity for movement, and how we might transform relevant data into actionable insights. Our approach centered on simplification, automation, and contextualization of data.
 
-{% include image.html name="framer.jpg" caption="Erin and I using Framer to prototype." %}
+{% include image.html name="erin-danny-framer.jpg" caption="Erin and I using Framer to prototype." %}
 
 ## The current situation
 
 The majority of runners’ fitness apps are data-centric, with interpretation of this information largely up to the runner. This data-focused approach is often removed from an individual’s context for working out, making it difficult to interpret results and gather actionable insights.
 
-{% include image.html name="landscape.jpg" caption="A sample of general-fitness and running apps today." %}
+{% include image.html name="fitness-apps-landscape.jpg" caption="A sample of general-fitness and running apps today." %}
 
 Similar issues with interpretation and actions apply to dedicated wearables and fitness tracking devices. Raw data is often obscured or presented [unclearly](http://twitter.com/EdwardTufte/status/289208399621672960?); often with an emphasis on accountability and social sharing. These devices serve well for reflection and short-term motivation, but do little to help with analysis of performance techniques, safety and long-term motivation. In addition, glass screens requiring precise inputs and conscious interactions often fail when combined with a moving body and unfocused attention.
 
@@ -70,7 +70,7 @@ What environmental triggers could we leverage to provide a user with actionable 
 
 We also explored how data both collected from past runs and the environment could predict scenarios in which a runner would feel fatigue, need to change course, or adjust form. Pulling weather forecasts, traffic updates, and satellite images of the running paths alone would provide runners with insights as to when and where to workout, how to avoid injury, and even provide a user with tips on how to power up a tough hill.
 
-{% include image.html name="running-track.jpg" caption="Taking this baby on the running track." %}
+{% include image.html name="east-river-park-running-track.jpg" caption="Taking this baby on the running track." %}
 
 ### Contextualizing Data into Actionable Insights/Feedback
 
