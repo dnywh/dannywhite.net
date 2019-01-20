@@ -16,7 +16,7 @@ Things I've added onto or tweaked from the standard Jekyll theme, layouts, inclu
 | [Extensive favicon format](http://github.com/dannyalright/dannyalright.github.io/tree/master/assets/images)                   | A lightweight format that covers most browser and OS implementations and formats.                                          |
 | [Responsive `iframe` elements](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/iframe-video.html) | Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc.                                                 |
 | [Custom 404 page](http://github.com/dannyalright/dannyalright.github.io/blob/master/404.md)                                   | Use existing `post` layout for a nicer 404 page. [Example](http://dannywhite.site/banana).                                 |
-|[Lazy-loaded images](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/) | Get your non-essential images to load only when scrolled-to. I'm using [lzy.js](https://github.com/neefrehman/lzy), and then [ImageKit](https://imagekit.io) to do some fancy progressive-enhancement. |
+|[Lazy-loaded images](https://github.com/dannyalright/dannyalright.github.io/blob/master/assets/lzy.min.js) | Get your non-essential images to load only when scrolled-to. I'm using [lzy.js](https://github.com/neefrehman/lzy), and then [ImageKit](https://imagekit.io) to do some fancy progressive-enhancement. |
 
 Some of these implementations derive from other peoples' articles or examples. Attributions and links should be commented within the respective resources.
 
