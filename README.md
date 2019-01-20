@@ -14,8 +14,9 @@ Things I've added onto or tweaked from the standard Jekyll theme, layouts, inclu
 | [Open Graph tags](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/head.html#L8-L15)               | Take the leg-work out of nicely-formatted Twitter, iMessage, or Facebook shares from your website.                         |
 | [Prettify URL slugs](http://github.com/dannyalright/dannyalright.github.io/blob/master/_config.yml#L35-L39)                   | Removes the post date from the URL. E.g. `dannywhite.site/2018/03/03/banana` becomes `dannywhite.site/banana`.             |
 | [Extensive favicon format](http://github.com/dannyalright/dannyalright.github.io/tree/master/assets/images)                   | A lightweight format that covers most browser and OS implementations and formats.                                          |
-| [Responsive `iframe` elements](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/iframe-video.html) | Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc                                                  |
+| [Responsive `iframe` elements](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/iframe-video.html) | Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc.                                                 |
 | [Custom 404 page](http://github.com/dannyalright/dannyalright.github.io/blob/master/404.md)                                   | Use existing `post` layout for a nicer 404 page. [Example](http://dannywhite.site/banana).                                 |
+|[Lazy-loaded images](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/) | Get your non-essential images to load only when scrolled-to. I'm using [lzy.js](https://github.com/neefrehman/lzy), and then [ImageKit](https://imagekit.io) to do some fancy progressive-enhancement. |
 
 Some of these implementations derive from other peoples' articles or examples. Attributions and links should be commented within the respective resources.
 
