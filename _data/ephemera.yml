@@ -13,14 +13,14 @@
 
 - empanadas-cafe:
   name: Empanadas Cafe
-  date: 2019-01-06
+  date: 2019-01-06 09:00:00 -0400
   location: Corona, Queens, NY
   tags:
     - food
 
 - louis-armstrong-house:
   name: Louis Armstrong House Museum
-  date: 2019-01-06
+  date: 2019-01-06 09:00:00 -0400
   location: Corona, Queens, NY
   tags:
     - receipt
@@ -29,21 +29,21 @@
 
 - stop-n-play-token:
   name: Stop N' Play
-  date: 2018-12-27
+  date: 2018-12-27 09:00:00 -0400
   location: Port Richey, FL
   tags:
     - receipt
 
 - stop-n-play-voucher:
   name: Secret Santa
-  date: 2018-12-24
+  date: 2018-12-24 09:00:00 -0400
   location: Port Richey, FL
   tags:
     - receipt
 
 - elsewhere-kickstarter:
   name: Elsewhere
-  date: 2018-12-13
+  date: 2018-12-13 09:00:00 -0400
   location: Elsewhere, Brooklyn, NY
   tags:
     - party
@@ -51,7 +51,7 @@
 
 - mission-chinese:
   name: Mission Chinese
-  date: 2018-12-13
+  date: 2018-12-13 09:00:00 -0400
   location: Elsewhere, Brooklyn, NY
   tags:
     - packaging
@@ -60,7 +60,7 @@
 
 - moma-ps1-artbook:
   name: MoMA PS1 Artbook
-  date: 2018-12-09
+  date: 2018-12-09 09:00:00 -0400
   location: Moma PS1, Long Island City, NY
   tags:
     - receipt
@@ -68,7 +68,7 @@
 
 - rams-metrograph:
   name: Rams
-  date: 2018-12-05
+  date: 2018-12-05 09:00:00 -0400
   location: Metrograph Theatre, NY
   tags:
     - design
@@ -77,7 +77,7 @@
 
 - museo-frida-kahlo:
   name: Museo Frida Kahlo
-  date: 2018-11-22
+  date: 2018-11-22 09:00:00 -0400
   location: Del Carmen, Mexico City, Mexico
   tags:
     - receipt
@@ -85,7 +85,7 @@
 
 - museo-de-arte-popular:
   name: Museo de Arte Popular
-  date: 2018-11-20
+  date: 2018-11-20 09:00:00 -0400
   location: Colonia Centro, Mexico City, Mexico
   tags:
     - receipt
@@ -93,7 +93,7 @@
 
 - jfk-mex-nov-2018:
   name: Interjet
-  date: 2018-11-18
+  date: 2018-11-18 09:00:00 -0400
   location: Mexico City, Mexico
   tags:
     - plane
@@ -101,14 +101,14 @@
 
 - netflix-new-york:
   name: Netflix in New York
-  date: 2018-11-08
+  date: 2018-11-08 09:00:00 -0400
   location: Rare View, NY
   tags:
     - design
 
 - bahamas-brooklyn-steel:
   name: Bahamas @ Brooklyn Steel
-  date: 2018-10-25
+  date: 2018-10-25 09:00:00 -0400
   location: Brooklyn Steel
   tags:
     - gig
@@ -117,14 +117,14 @@
 
 - one-year-kickstarter:
   name: One year at Kickstarter
-  date: 2018-10-24
+  date: 2018-10-24 09:00:00 -0400
   location: Kickstarter New York
   tags:
     - kickstarter
 
 - bareburger-and-crayons:
   name: Bareburger and crayons
-  date: 2018-10-23
+  date: 2018-10-23 09:00:00 -0400
   location: Bareburger, Astoria, NY
   tags:
     - drawing
@@ -132,14 +132,14 @@
 
 - ohny-2018:
   name: Open House New York
-  date: 2018-10-13
+  date: 2018-10-13 09:00:00 -0400
   location: Gowanus, NY
   tags:
     - brochure
 
 - comfortland:
   name: Comfortland
-  date: 2018-10-06
+  date: 2018-10-06 09:00:00 -0400
   location: Comfortland, Astoria, NY
   tags:
     - receipt
@@ -148,7 +148,7 @@
 
 - paris-metro:
   name: Paris Metro
-  date: 2018-10-02
+  date: 2018-10-02 09:00:00 -0400
   location: Paris, France
   tags:
     - train
@@ -156,7 +156,7 @@
 
 - baetens-bb:
   name: Baeten's B&B
-  date: 2018-09-29
+  date: 2018-09-29 09:00:00 -0400
   location: Ghent, Belgium
   tags:
     - receipt
@@ -164,7 +164,7 @@
 
 - huis-van-alijn:
   name: The House of Alijn
-  date: 2018-09-28
+  date: 2018-09-28 09:00:00 -0400
   location: Ghent, Belgium
   tags:
     - receipt
@@ -172,7 +172,7 @@
 
 - stam:
   name: Ghent City Museum
-  date: 2018-09-27
+  date: 2018-09-27 09:00:00 -0400
   location: Ghent, Belgium
   tags:
     - receipt
@@ -180,21 +180,21 @@
 
 - framer-loupe-note:
   name: Welcome from Framer
-  date: 2018-09-19
+  date: 2018-09-19 09:00:00 -0400
   location: Amsterdam Noord, Netherlands
   tags:
     - note
 
 - sir-adam-bag-tag:
   name: Sir Adam
-  date: 2018-09-19
+  date: 2018-09-19 09:00:00 -0400
   location: Amsterdam Noord, Netherlands
   tags:
     - accommodation
 
 - schiphol-to-centraal:
   name: Schiphol to Centraal
-  date: 2018-09-19
+  date: 2018-09-19 09:00:00 -0400
   location: Amsterdam, Netherlands
   tags:
     - train
@@ -202,21 +202,21 @@
 
 - nypl-le-corbusier:
   name: Architecture Reading Room
-  date: 2018-09-16
+  date: 2018-09-16 09:00:00 -0400
   location: NYPL, Bryant Park, NY
   tags:
     - receipt
 
 - momi-lunch:
   name: Lunch note
-  date: 2018-09-12
+  date: 2018-09-12 09:00:00 -0400
   location: Astoria, NY
   tags:
     - doodle
 
 - momi-sept-2018:
   name: Museum of Moving Image
-  date: 2018-09-09
+  date: 2018-09-09 09:00:00 -0400
   location: Astoria, NY
   tags:
     - receipt
@@ -224,28 +224,28 @@
 
 - wsh-flight-planning:
   name: Cancelled flight
-  date: 2018-09-05
+  date: 2018-09-05 09:00:00 -0400
   location: Astoria, NY
   tags:
     - doodle
 
 - post-it:
   name: Post it
-  date: 2018-07-25
+  date: 2018-07-25 09:00:00 -0400
   location: Kickstarter New York
   tags:
     - kickstarter
 
 - royal-palms-shuffleboard:
   name: Shuffleboard
-  date: 2018-07-17
+  date: 2018-07-17 09:00:00 -0400
   location: Gowanus, NY
   tags:
     - kickstarter
 
 - ams-jfk-july-2018:
   name: Amsterdam to NYC
-  date: 2018-07-10
+  date: 2018-07-10 09:00:00 -0400
   location: Amsterdam, Netherlands
   tags:
     - plane
@@ -253,21 +253,21 @@
 
 - world-in-colour:
   name: The World in Colour
-  date: 2018-07-10
+  date: 2018-07-10 09:00:00 -0400
   location: Amsterdam, Netherlands
   tags:
     - museum
 
 - tempo-doeloe:
   name: Tempo Doeloe
-  date: 2018-07-09
+  date: 2018-07-09 09:00:00 -0400
   location: Amsterdam, Netherlands
   tags:
     - food
 
 - utrecht-to-amsterdam:
   name: Utrecht to Amsterdam
-  date: 2018-07-08
+  date: 2018-07-08 09:00:00 -0400
   location: Utrecht, Netherlands
   tags:
     - train
@@ -275,7 +275,7 @@
 
 - james-turrell-ganzfeld:
   name: James Turrell
-  date: 2018-07-02
+  date: 2018-07-02 09:00:00 -0400
   location: Berlin, Germany
   tags:
     - art
@@ -283,14 +283,14 @@
 
 - jewish-museum-berlin:
   name: Jewish Museum Berlin
-  date: 2018-07-02
+  date: 2018-07-02 09:00:00 -0400
   location: Berlin, Germany
   tags:
     - museum
 
 - u-bahn-7-day:
   name: U-Bahn
-  date: 2018-06-18
+  date: 2018-06-18 09:00:00 -0400
   location: Berlin, Germany
   tags:
     - train
@@ -298,7 +298,7 @@
 
 - mohonk-trail-map:
   name: Mohonk Preserve Trail Map
-  date: 2018-06-09
+  date: 2018-06-09 09:00:00 -0400
   location: Mohonk Preserve, NY
   tags:
     - nature
@@ -308,7 +308,7 @@
 
 - no-postcard:
   name: Dear Secretary Zinke
-  date: 2018-06-01
+  date: 2018-06-01 09:00:00 -0400
   location: The Cliffs, LIC
   tags:
     - activism
@@ -316,7 +316,7 @@
 
 - carole-king:
   name: The Carole King Musical
-  date: 2018-05-20
+  date: 2018-05-20 09:00:00 -0400
   location: Stephen Sondheim Theatre
   tags:
     - broadway
@@ -324,7 +324,7 @@
 
 - mia-lga:
   name: Miami to NYC
-  date: 2018-05-13
+  date: 2018-05-13 09:00:00 -0400
   location: Miami
   tags:
     - plane
@@ -332,7 +332,7 @@
 
 - aa-nicaragua-return:
   name: Nicaragua
-  date: 2018-05-13
+  date: 2018-05-13 09:00:00 -0400
   location: Managua
   tags:
     - plane
@@ -340,7 +340,7 @@
 
 - nicaragua-tourist-card:
   name: Tarjeta de turismo
-  date: 2018-05-05
+  date: 2018-05-05 09:00:00 -0400
   location: Managua
   tags:
     - receipt
@@ -348,7 +348,7 @@
 
 - mia-mga:
   name: Miami to Managua
-  date: 2018-05-05
+  date: 2018-05-05 09:00:00 -0400
   location: Miami
   tags:
     - plane
@@ -356,42 +356,42 @@
 
 - duckies:
   name: Duckies
-  date: 2018-04-14
+  date: 2018-04-14 09:00:00 -0400
   location: New York City
   tags:
     - unknown
 
 - isle-of-dogs:
   name: Isle of Dogs
-  date: 2018-03-31
+  date: 2018-03-31 09:00:00 -0400
   location: Kaufman 14, Astoria
   tags:
     - movie
 
 - twenty-dollars:
   name: Twenty Dollars
-  date: 2018-03-29
+  date: 2018-03-29 09:00:00 -0400
   location: Astoria
   tags:
     - usa
 
 - king-sauna:
   name: King Sauna
-  date: 2018-02-24
+  date: 2018-02-24 09:00:00 -0400
   location: Palisades Park, New Jersey
   tags:
     - spa
 
 - neptune-diner:
   name: Neptune Diner
-  date: 2018-02-18
+  date: 2018-02-18 09:00:00 -0400
   location: Neptune Diner, Astoria
   tags:
     - food
 
 - met:
   name: The Met
-  date: 2018-02-16
+  date: 2018-02-16 09:00:00 -0400
   location: The Metropolitan Museum of Art
   tags:
     - museum
@@ -399,7 +399,7 @@
 
 - fruit-bros:
   name: United Fruit Brothers
-  date: 2018-02-11
+  date: 2018-02-11 09:00:00 -0400
   location: Astoria
   tags:
     - receipt
@@ -407,56 +407,56 @@
 
 - a-bronx-tale:
   name: A Bronx Tale
-  date: 2018-01-31
+  date: 2018-01-31 09:00:00 -0400
   location: Longacre Theatre
   tags:
     - broadway
 
 - canal-bulbs:
   name: Canal Bulbs Inc
-  date: 2018-01-27
+  date: 2018-01-27 09:00:00 -0400
   location: 313 Canal St, NY, 10013
   tags:
     - receipt
 
 - florida-project:
   name: The Florida Project
-  date: 2018-01-27
+  date: 2018-01-27 09:00:00 -0400
   location: Roxy Cinema, NYC
   tags:
     - movie
 
 - last-jedi:
   name: The Last Jedi
-  date: 2018-01-21
+  date: 2018-01-21 09:00:00 -0400
   location: Kaufman 14, Astoria
   tags:
     - movie
 
 - paddington-2:
   name: Paddington 2
-  date: 2018-01-13
+  date: 2018-01-13 09:00:00 -0400
   location: Kaufman 14, Astoria
   tags:
     - movie
 
 - coco:
   name: Coco
-  date: 2018-01-09
+  date: 2018-01-09 09:00:00 -0400
   location: AMC Loews 34th Street 14
   tags:
     - movie
 
 - mount-sinai:
   name: Mount Sinai
-  date: 2018-01-02
+  date: 2018-01-02 09:00:00 -0400
   location: Mount Sinai Queens
   tags:
     - hospital
 
 - mco-lga:
   name: Orlando to New York
-  date: 2017-12-31
+  date: 2017-12-31 09:00:00 -0400
   location: Orlando
   tags:
     - plane
@@ -464,14 +464,14 @@
 
 - hunter-springs:
   name: Manatees at Crystal River
-  date: 2017-12-29
+  date: 2017-12-29 09:00:00 -0400
   location: Crystal River, FL
   tags:
     - nature
 
 - hernando-county:
   name: Werner-Boyce Salt Springs State Park
-  date: 2017-12-22
+  date: 2017-12-22 09:00:00 -0400
   location: Werner-Boyce Salt Springs State Park
   tags:
     - kayaking
@@ -479,7 +479,7 @@
 
 - framer-sticker:
   name: Koen and Jorn
-  date: 2017-11-30
+  date: 2017-11-30 09:00:00 -0400
   location: Kickstarter New York
   tags:
     - kickstarter
@@ -487,14 +487,14 @@
 
 - black-diamond:
   name: Black Diamond
-  date: 2017-11-29
+  date: 2017-11-29 09:00:00 -0400
   location: 58 Kent St, Brooklyn
   tags:
     - climbing
 
 - bag-tag:
   name: Bag Tag
-  date: 2017-11-22
+  date: 2017-11-22 09:00:00 -0400
   location: Tampa, FL
   tags:
     - transport
@@ -502,7 +502,7 @@
 
 - hey-arnold:
   name: Arnold and DW
-  date: 2017-10-31
+  date: 2017-10-31 09:00:00 -0400
   location: Brooklyn Bazaar
   tags:
     - party
@@ -510,7 +510,7 @@
 
 - ord-lga:
   name: Chicago to New York
-  date: 2017-10-17
+  date: 2017-10-17 09:00:00 -0400
   location: Chicago O'Hare
   tags:
     - plane
@@ -518,7 +518,7 @@
 
 - yvr-ord:
   name: Vancouver to Chicago
-  date: 2017-10-17
+  date: 2017-10-17 09:00:00 -0400
   location: Vancouver Airport
   tags:
     - plane
@@ -526,7 +526,7 @@
 
 - ord-yvr:
   name: Chicago to Vancouver
-  date: 2017-10-09
+  date: 2017-10-09 09:00:00 -0400
   location: Chicago O'Hare
   tags:
     - plane
@@ -534,7 +534,7 @@
 
 - solo9w57:
   name: SOLO9W57
-  date: 2017-09-22
+  date: 2017-09-22 09:00:00 -0400
   location: 9 W 57th St, New York
   tags:
     - nyc
@@ -542,7 +542,7 @@
 
 - aperitivo:
   name: Aperitivo Seleccionado para TI
-  date: 2017-09-09
+  date: 2017-09-09 09:00:00 -0400
   location: Seville, Spain
   tags:
     - coffee
@@ -551,7 +551,7 @@
 
 - yankees-legends:
   name: Yankees v Mariners
-  date: 2018-08-27
+  date: 2018-08-27 09:00:00 -0400
   location: Yankee Stadium
   tags:
     - sport
@@ -559,14 +559,14 @@
 
 - spanish-flip-card:
   name: Spanish flip card
-  date: 2018-08-19
+  date: 2018-08-19 09:00:00 -0400
   location: Astoria, NY
   tags:
     - note
 
 - zion:
   name: Zion National Park
-  date: 2017-07-08
+  date: 2017-07-08 09:00:00 -0400
   location: Zion Naional Park
   tags:
     - national-parks
@@ -575,7 +575,7 @@
 
 - bryce-canyon:
   name: Bryce Canyon National Park
-  date: 2017-07-07
+  date: 2017-07-07 09:00:00 -0400
   location: Bryce Canyon National Park
   tags:
     - national-parks
@@ -584,7 +584,7 @@
 
 - capitol-reef:
   name: Capitol Reef National Park
-  date: 2017-07-06
+  date: 2017-07-06 09:00:00 -0400
   location: Gifford House
   tags:
     - national-parks
@@ -593,7 +593,7 @@
 
 - canyonlands:
   name: Canyonlands National Park
-  date: 2017-07-05
+  date: 2017-07-05 09:00:00 -0400
   location: Moab
   tags:
     - national-parks
@@ -602,7 +602,7 @@
 
 - arches:
   name: Arches National Park
-  date: 2017-07-04
+  date: 2017-07-04 09:00:00 -0400
   location: Moab
   tags:
     - national-parks
@@ -611,7 +611,7 @@
 
 - arches-postcard:
   name: Arches National Park Postcard
-  date: 2017-07-04
+  date: 2017-07-04 09:00:00 -0400
   location: Moab
   tags:
     - national-parks
@@ -620,7 +620,7 @@
 
 - mta-bicycle-permit:
   name: Bicycle Permit
-  date: 2017-06-16
+  date: 2017-06-16 09:00:00 -0400
   location: Montauk, NY
   tags:
     - train
@@ -629,14 +629,14 @@
 
 - josh:
   name: Josh
-  date: 2017-06-06
+  date: 2017-06-06 09:00:00 -0400
   location: ustwo New York
   tags:
     - sticker
 
 - cal-cru:
   name: Cal Cru
-  date: 2017-05-11
+  date: 2017-05-11 09:00:00 -0400
   location: Astoria, NY
   tags:
     - clothes

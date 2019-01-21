@@ -5,9 +5,9 @@ title: All
 <!-- Gather posts -->
 {% assign posts = site.posts %}
 <!-- Gather ephemera -->
-{% assign ephemera2 = site.data.ephemera2 %}
+{% assign ephemera = site.data.ephemera %}
 <!-- Join both, and then sort them -->
-{% assign all = posts | concat: ephemera2 | sort: 'date' | reverse %}
+{% assign all = posts | concat: ephemera | sort: 'date' | reverse %}
 
 <!-- Make a new array with just the complex dates of the above -->
 {% assign datesOnlyVerbose = all | map: 'date' | uniq %}
@@ -16,7 +16,7 @@ title: All
 
 {% for verboseDate in datesOnlyVerbose %}
 <!-- Create a simpler date, and use impossible'_' character to make it array-friendly -->
-{% assign simpleDate = verboseDate | date: "%A %B %-d, %Y" | split: '_' %}
+{% assign simpleDate = verboseDate | date: "%B %Y" | split: '_' %}
 <!-- Push this simple date to the simple array  -->
 {% assign datesOnlySimple = datesOnlySimple | concat: simpleDate | uniq %}
 {% endfor %}
@@ -26,23 +26,25 @@ title: All
   {% for simpleDate in datesOnlySimple %}
 
   <li>
-    <h1>{{ simpleDate }}</h1>
+    <h6>{{ simpleDate }}</h6>
 
     <!-- Posts -->
     {% for item in posts %}
     <!-- Prepare post item dates to match comparison array -->
-    {% assign simplePostDate = item.date | date: "%A %B %-d, %Y" %}
+    {% assign simplePostDate = item.date | date: "%B %Y" %}
     {% if simplePostDate == simpleDate %}
-    <p>{{ item.title }}</p>
+    <h1>
+      <a href="{{ post.url | relative_url }}">{{ item.title | escape }}</a>
+    </h1>
     {% endif %}
     {% endfor %}
 
     <!-- Ephemera -->
-    {% for item in ephemera2 %}
+    {% for item in ephemera %}
     <!-- Prepare post item dates to match comparison array -->
-    {% assign simpleEphemeraDate = item.date | date: "%A %B %-d, %Y" %}
+    {% assign simpleEphemeraDate = item.date | date: "%B %Y" %}
     {% if simpleEphemeraDate == simpleDate %}
-    <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-100"
+    <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg"
       alt="{{ item.name }}" style="width: 100px;" />
     {% endif %}
     {% endfor %}
