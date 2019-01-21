@@ -2,23 +2,50 @@
 layout: default
 title: All
 ---
-
+<!-- Gather posts -->
 {% assign posts = site.posts %}
+<!-- Gather ephemera -->
 {% assign ephemera2 = site.data.ephemera2 %}
-{% assign all = posts | concat: ephemera2 %}
-{% assign allSorted = all | sort: 'date' | reverse %}
+<!-- Join both, and then sort them -->
+{% assign all = posts | concat: ephemera2 | sort: 'date' | reverse %}
+
+<!-- Make a new array with just the complex dates of the above -->
+{% assign datesOnlyVerbose = all | map: 'date' | uniq %}
+<!-- Make an empty array to be later pushed to with simple dates -->
+{% assign datesOnlySimple = '' | split: '' %}
+
+{% for verboseDate in datesOnlyVerbose %}
+<!-- Create a simpler date, and use impossible'_' character to make it array-friendly -->
+{% assign simpleDate = verboseDate | date: "%A %B %-d, %Y" | split: '_' %}
+<!-- Push this simple date to the simple array  -->
+{% assign datesOnlySimple = datesOnlySimple | concat: simpleDate | uniq %}
+{% endfor %}
+
 
 <ul>
-  {% for item in allSorted %}
+  {% for simpleDate in datesOnlySimple %}
+
   <li>
+    <h1>{{ simpleDate }}</h1>
 
+    <!-- Posts -->
+    {% for item in posts %}
+    <!-- Prepare post item dates to match comparison array -->
+    {% assign simplePostDate = item.date | date: "%A %B %-d, %Y" %}
+    {% if simplePostDate == simpleDate %}
+    <p>{{ item.title }}</p>
+    {% endif %}
+    {% endfor %}
 
-    {% if item.name %}
-    <img src="../assets/images/ephemera/{{ item.first }}.jpg" alt="{{ item.name }}" style="width: 100px;" />
+    <!-- Ephemera -->
+    {% for item in ephemera2 %}
+    <!-- Prepare post item dates to match comparison array -->
+    {% assign simpleEphemeraDate = item.date | date: "%A %B %-d, %Y" %}
+    {% if simpleEphemeraDate == simpleDate %}
+    <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-100"
+      alt="{{ item.name }}" style="width: 100px;" />
     {% endif %}
-    {% if item.title %}
-    <h1>{{ item.title }}</h1>
-    {% endif %}
+    {% endfor %}
   </li>
   {% endfor %}
 </ul>
