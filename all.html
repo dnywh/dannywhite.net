@@ -44,7 +44,7 @@ title: All
     <!-- Prepare post item dates to match comparison array -->
     {% assign simpleEphemeraDate = item.date | date: "%B %Y" %}
     {% if simpleEphemeraDate == simpleDate %}
-    <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg"
+    <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-500"
       alt="{{ item.name }}" style="width: 100px;" />
     {% endif %}
     {% endfor %}
