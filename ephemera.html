@@ -5,15 +5,12 @@ title: Ephemera
 
 <div class="flex gallery">
   {% for item in site.data.ephemera %}
+  {% if item.hidden != true %}
   <figure>
     <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-500"
       alt="{{ item.name }}" />
-    <figcaption>
-      {{ item.name }},<br />
-      {{ item.location }}<br />
-      {{ item.date | date: '%B %-d, %Y'}}
-    </figcaption>
   </figure>
+  {% endif %}
   {% endfor %}
 </div>
 

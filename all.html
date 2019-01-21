@@ -41,11 +41,14 @@ title: All
 
     <!-- Ephemera -->
     {% for item in ephemera %}
+    <!-- Only go through ones that aren't marked as hidden -->
+    {% if item.hidden != true %}
     <!-- Prepare post item dates to match comparison array -->
     {% assign simpleEphemeraDate = item.date | date: "%B %Y" %}
     {% if simpleEphemeraDate == simpleDate %}
     <img src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/ephemera/{{ item.first }}.jpg?tr=w-500"
       alt="{{ item.name }}" style="width: 100px;" />
+    {% endif %}
     {% endif %}
     {% endfor %}
   </li>

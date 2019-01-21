@@ -75,6 +75,31 @@
     - movie
     - kickstarter
 
+- workout-note:
+  name: Workout note
+  date: 2018-11-30 09:00:00 -0400
+  location: Astoria, NY
+  tags:
+    - doodle
+  hidden: true
+
+- interjet-copia-pasajero:
+  name: Interjet Copia Pasajero
+  date: 2018-11-25 16:35:00 -0600
+  location: Mexico City, Mexico
+  tags:
+    - plane
+    - tranport
+    - receipt
+
+- museo-nacional-de-las-culturas:
+  name: Museo Nacional de las Culturas
+  date: 2018-11-22 09:00:00 -0400
+  location: Mexico City, Mexico
+  tags:
+    - receipt
+    - museum
+
 - museo-frida-kahlo:
   name: Museo Frida Kahlo
   date: 2018-11-22 09:00:00 -0400
@@ -161,6 +186,13 @@
     - drawing
     - lexi
 
+- mr-corpo:
+  name: Mr Corpo
+  date: 2018-10-15 09:00:00 -0400
+  location: Astoria, NY
+  tags:
+    - note
+
 - ohny-2018:
   name: Open House New York
   date: 2018-10-13 09:00:00 -0400
@@ -208,6 +240,31 @@
   tags:
     - receipt
     - museum
+
+- gravensteen:
+  name: Gravensteen
+  date: 2018-09-27 09:00:00 -0400
+  location: Ghent, Belgium
+  tags:
+    - receipt
+    - museum
+
+- city-card-gent-back:
+  name: City Card Gent
+  date: 2018-09-24 09:00:00 -0400
+  location: Ghent, Belgium
+  tags:
+    - museum
+    - pass
+
+- dutch-keycard-steps:
+  name: KeyCard
+  date: 2018-09-24 09:00:00 -0400
+  location: Amsterdam Centraal Station, Netherlands
+  tags:
+    - train
+    - tranport
+    - pass
 
 - stedelijk-unfolded:
   name: Stedelijk map
@@ -264,6 +321,22 @@
   name: Schiphol to Centraal
   date: 2018-09-19 09:00:00 -0400
   location: Amsterdam, Netherlands
+  tags:
+    - train
+    - tranport
+
+- jfk-ams-sep-2018:
+  name: New York to Amsterdam
+  date: 2018-11-18 22:15:00 -0400
+  location: JFK Airport, NY
+  tags:
+    - plane
+    - tranport
+
+- woodside-to-jamaica:
+  name: Woodside to Jamaica
+  date: 2018-09-18 09:00:00 -0400
+  location: Woodside, NY
   tags:
     - train
     - tranport
