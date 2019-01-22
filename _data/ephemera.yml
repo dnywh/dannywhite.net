@@ -11,6 +11,14 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- workout-note:
+  name: Workout note
+  date: 2019-01-07 07:00:00 -0400
+  location: Astoria, NY
+  tags:
+    - doodle
+  hidden: true
+
 - empanadas-cafe:
   name: Empanadas Cafe
   date: 2019-01-06 09:00:00 -0400
@@ -74,14 +82,6 @@
     - design
     - movie
     - kickstarter
-
-- workout-note:
-  name: Workout note
-  date: 2018-11-30 09:00:00 -0400
-  location: Astoria, NY
-  tags:
-    - doodle
-  hidden: true
 
 - interjet-copia-pasajero:
   name: Interjet Copia Pasajero
@@ -147,6 +147,7 @@
   tags:
     - plane
     - tranport
+    - ticket
 
 - tailor-shop:
   name: Tailor Shop
@@ -358,7 +359,7 @@
 - momi-sept-2018:
   name: Museum of Moving Image
   date: 2018-09-09 09:00:00 -0400
-  location: Astoria, NY
+  location: Museum of Moving Image, Astoria, NY
   tags:
     - receipt
     - museum
@@ -662,7 +663,7 @@
   date: 2017-10-17 09:00:00 -0400
   location: Vancouver Airport
   tags:
-    - plane
+    - plane 
     - transport
 
 - ord-yvr:
@@ -690,9 +691,18 @@
     - food
     - packaging
 
+- iberia-jfk-mad:
+  name: New York to Madrid
+  date: 2017-09-09 17:00:00 -0400
+  location: JFK Airport, NY
+  tags:
+    - plane
+    - tranport
+    - ticket
+
 - yankees-legends:
   name: Yankees v Mariners
-  date: 2018-08-27 09:00:00 -0400
+  date: 2017-08-27 09:00:00 -0400
   location: Yankee Stadium
   tags:
     - sport
@@ -700,10 +710,33 @@
 
 - spanish-flip-card:
   name: Spanish flip card
-  date: 2018-08-19 09:00:00 -0400
+  date: 2017-08-19 09:00:00 -0400
   location: Astoria, NY
   tags:
     - note
+
+- google-guest:
+  name: Google Guest
+  date: 2017-08-02 09:00:00 -0400
+  location: Google New York
+  tags:
+    - pass
+
+- jim-henson-momi:
+  name: Jim Henson Exhibition
+  date: 2017-07-28 19:00:00 -0400
+  location: Museum of Moving Image, Astoria, NY
+  tags:
+    - receipt
+    - museum
+
+- adult-lap-swim:
+  name: NYC Parks Adult Lap Swim
+  date: 2017-07-18 09:00:00 -0400
+  location: Astoria Pool, Astoria, NY
+  tags:
+    - pass
+    - card
 
 - zion:
   name: Zion National Park
@@ -781,3 +814,10 @@
   location: Astoria, NY
   tags:
     - clothes
+
+- metrocard-singleride:
+  name: MetroCard SingleRide
+  date: 2017-02-28 09:00:00 -0400
+  location: Astoria, NY
+  tags:
+    - ticket
