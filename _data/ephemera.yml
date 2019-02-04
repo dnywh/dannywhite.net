@@ -11,6 +11,13 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- say-it-with-flowers:
+  name: Say it with flowers
+  date: 2019-02-04 14:00:00 -0400
+  location: Astoria, NY
+  tags:
+    - packaging
+
 - workout-note:
   name: Workout note
   date: 2019-01-07 07:00:00 -0400
@@ -225,6 +232,14 @@
   tags:
     - receipt
     - accommodation
+
+- huis-van-alijn-photobooth:
+  name: The House of Alijn Photo Booth
+  date: 2018-09-28 10:00:00 -0400
+  location: Ghent, Belgium
+  tags:
+    - photo
+    - museum
 
 - huis-van-alijn:
   name: The House of Alijn
