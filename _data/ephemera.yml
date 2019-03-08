@@ -11,6 +11,76 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- qantas-lax-bri-mar-2019:
+  name: New York to LA
+  date: 2019-03-05 23:00:00 -0400
+  location: LAX, LA
+  tags:
+      - plane
+      - tranport
+      - ticket
+
+- qantas-jfk-lax-mar-2019:
+  name: New York to LA
+  date: 2019-03-05 16:00:00 -0400
+  location: LAX, LA
+  tags:
+      - plane
+      - tranport
+      - ticket
+
+- whitney-warhol:
+  name: Andy Warhol at Whitney
+  date: 2019-03-04 16:30:00 -0400
+  location: Whitney Museum of American Art, New York, NY
+  tags:
+      - ticket
+      - museum
+
+- susu-aus-trip:
+  name: SuSu note
+  date: 2019-03-04 11:40:00 -0400
+  location: SuSu, LIC, NY
+  tags:
+      - doodle
+      - post-it
+
+- lexi-aus-card-front:
+  name: Lexi's going away card
+  date: 2019-03-03 09:00:00 -0400
+  location: Astoria, NY
+  tags:
+      - doodle
+      - card
+      - lexi
+
+- lexi-aus-card-inside:
+  name: Lexi's going away card
+  date: 2019-03-03 09:00:00 -0400
+  location: Astoria, NY
+  tags:
+      - doodle
+      - card
+      - lexi
+
+- lexi-aus-card-back:
+  name: Lexi's going away card
+  date: 2019-03-03 09:00:00 -0400
+  location: Astoria, NY
+  tags:
+      - doodle
+      - card
+      - lexi
+
+- cat-empire-brooklyn-steel:
+  name: Cat Empire @ Brooklyn Steel
+  date: 2018-02-28 21:00:00 -0400
+  location: Brooklyn Steel, Brooklyn, NY
+  tags:
+      - gig
+      - show
+      - lexi
+
 - bruce-nauman-ps1:
   name: Bruce Nauman at MoMA PS1
   date: 2019-02-22 17:00:00 -0400
@@ -181,7 +251,7 @@
 - bahamas-brooklyn-steel:
   name: Bahamas @ Brooklyn Steel
   date: 2018-10-25 09:00:00 -0400
-  location: Brooklyn Steel
+  location: Brooklyn Steel, Brooklyn, NY
   tags:
       - gig
       - show
@@ -199,7 +269,7 @@
   date: 2018-10-23 09:00:00 -0400
   location: Bareburger, Astoria, NY
   tags:
-      - drawing
+      - doodle
       - lexi
 
 - mr-corpo:
