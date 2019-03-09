@@ -53,6 +53,7 @@
       - doodle
       - card
       - lexi
+  hidden: true
 
 - lexi-aus-card-inside:
   name: Lexi's going away card
@@ -62,6 +63,7 @@
       - doodle
       - card
       - lexi
+  hidden: true
 
 - lexi-aus-card-back:
   name: Lexi's going away card
@@ -71,6 +73,7 @@
       - doodle
       - card
       - lexi
+  hidden: true
 
 - cat-empire-brooklyn-steel:
   name: Cat Empire @ Brooklyn Steel
