@@ -11,6 +11,14 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- mapleton-falls:
+  name: Mapleton Falls
+  date: 2019-05-16 11:00:00 -0400
+  location: Mapleton, QLD, Australia
+  tags:
+      - map
+      - driving
+
 - qantas-lax-bri-mar-2019:
   name: New York to LA
   date: 2019-03-05 23:00:00 -0400
