@@ -11,9 +11,32 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- lego-movie-2:
+  name: Lego Movie 2
+  date: 2019-03-25 10:33:00 +1100
+  location: Cremorne Orpheum Theatre, Cremorne, NSW
+  tags:
+      - movie
+
+- jetstar-carry-on-mcy-syd:
+  name: Jetstar stinginess
+  date: 2019-03-22 07:00:00 +1000
+  location: Sunshine Coast Airport, Mudjimba, QLD
+  tags:
+      - plane
+      - tranport
+
+- fraser-barge:
+  name: K'gari barge
+  date: 2019-03-17 10:15:00 +1000
+  location: River Heads
+  tags:
+      - ticket
+      - driving
+
 - mapleton-falls:
   name: Mapleton Falls
-  date: 2019-05-16 11:00:00 -0400
+  date: 2019-05-16 11:00:00 +1000
   location: Mapleton, QLD, Australia
   tags:
       - map
