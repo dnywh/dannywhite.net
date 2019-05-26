@@ -11,6 +11,50 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- 2040:
+  name: 2040
+  date: 2019-05-26 12:00:00 +1000
+  location: Event Cinemas, Maroochydore, QLD
+  tags:
+      - movie
+
+- coolum-newsagent-back:
+  name: Coolum Beach Newsagency
+  date: 2019-05-12 16:30:00 +1000
+  location: Coolum Beach, QLD
+  tags:
+      - bag
+
+- maun-shopping-list:
+  name: Maun Shopping List
+  date: 2018-04-29 13:00:00 +0200
+  location: Maun, Botswana
+  tags:
+      - scribble
+      - groceries
+
+- maun-directions:
+  name: Maun Directions
+  date: 2018-04-29 09:00:00 +0200
+  location: Maun, Botswana
+  tags:
+      - scribble
+      - doodle
+
+- lion-safety-matches:
+  name: Lion Safety Matches
+  date: 2019-04-06 14:00:00 +0200
+  location: Muchenje Safari Lodge, Botswana
+  tags:
+      - packaging
+
+- tracks-4-africa:
+  name: Tracks4Africa
+  date: 2019-04-06 14:00:00 +0200
+  location: Paarl, Western Cape, South Africa
+  tags:
+      - sticker
+
 - lego-movie-2:
   name: Lego Movie 2
   date: 2019-03-25 10:33:00 +1100
