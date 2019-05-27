@@ -25,6 +25,32 @@
   tags:
       - bag
 
+- saa-per-bri-may-2019:
+  name: Perth to Brisbane
+  date: 2019-05-10 17:15:00 +0800
+  location: Perth Airport, WA
+  tags:
+      - plane
+      - tranport
+      - ticket
+
+- saa-jnb-per-may-2019:
+  name: Johannesburg to Perth
+  date: 2019-05-09 21:15:00 +0200
+  location: O. R. Tambo International Airport, Johannesburg, South Africa
+  tags:
+      - plane
+      - tranport
+      - ticket
+
+- botswana-footprints-central-khalahari:
+  name: Central Kalahari Game Reserve
+  date: 2019-05-04 09:00:00 +0200
+  location: Central Kalahari Game Reserve, Botswana
+  tags:
+      - ticket
+      - form
+
 - maun-shopping-list:
   name: Maun Shopping List
   date: 2018-04-29 13:00:00 +0200
@@ -43,10 +69,18 @@
 
 - lion-safety-matches:
   name: Lion Safety Matches
-  date: 2019-04-06 14:00:00 +0200
+  date: 2019-04-24 14:00:00 +0200
   location: Muchenje Safari Lodge, Botswana
   tags:
       - packaging
+
+- maun-park-fees:
+  name: Botswana Park Fees
+  date: 2019-04-26 09:00:00 +0200
+  location: Maun, Botswana
+  tags:
+      - ticket
+      - form
 
 - tracks-4-africa:
   name: Tracks4Africa
@@ -54,6 +88,32 @@
   location: Paarl, Western Cape, South Africa
   tags:
       - sticker
+
+- virgin-per-jnb-apr-2019:
+  name: Perth to Johannesburg
+  date: 2019-04-02 22:55:00 +0800
+  location: Perth Airport, WA
+  tags:
+      - plane
+      - tranport
+      - ticket
+
+- virgin-bri-per-apr-2019:
+  name: Brisbane to Perth
+  date: 2019-04-02 17:30:00 +1100
+  location: Brisbane Airport, QLD
+  tags:
+      - plane
+      - tranport
+      - ticket
+
+- perth-cape-town-luggage-transfer-front:
+  name: Transfer Bag Tag
+  date: 2019-04-02 14:50:00 +1100
+  location: Brisbane Airport, QLD
+  tags:
+      - transport
+      - plane
 
 - lego-movie-2:
   name: Lego Movie 2
