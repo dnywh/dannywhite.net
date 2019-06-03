@@ -11,6 +11,24 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- qantas-lax-jfk-may-2019:
+  name: LA to New York
+  date: 2019-05-28 07:30:00 -0700
+  location: LAX, LA
+  tags:
+      - plane
+      - tranport
+      - ticket
+
+- qantas-bri-lax-may-2019:
+  name: Brisbane to LA
+  date: 2019-05-28 09:00:00 +1000
+  location: Brisbane Airport, QLD
+  tags:
+      - plane
+      - tranport
+      - ticket
+
 - 2040:
   name: 2040
   date: 2019-05-26 12:00:00 +1000
