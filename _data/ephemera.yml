@@ -11,6 +11,14 @@
 # ~Compressed via ImageOptim~
 # ~Maximum dimension of 1800px~
 
+- myles-birthday:
+  name: Myles' Birthday
+  date: 2019-06-09 18:00:00 -0400
+  location: Williamsburg, NY
+  tags:
+      - polaroid
+      - photo
+
 - qantas-lax-jfk-may-2019:
   name: LA to New York
   date: 2019-05-28 07:30:00 -0700
