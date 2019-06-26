@@ -63,7 +63,7 @@ Simply add any of your desired shortcuts to the bottom of this file, above `sour
 
 ## The pro zone
 
-I don't even need to fuss in Terminal now that I have an application shortcut for Atom. Instead of writing the command `nano .bash_profile`, I can use my fancy shortcut `atom .bash_profile` for a nicer experience.
+I don't even need to fuss in Terminal now that I have an application shortcut for Atom. Instead of writing the command `nano .bash_profile`, I can use my fancy shortcut `atom .bash_profile` for a nicer experience. Just make sure to restart Terminal after saving your changes.
 
 {% include image.html name="atom-bash_profile.png" %}
 
