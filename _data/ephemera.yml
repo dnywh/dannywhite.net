@@ -51,6 +51,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - qantas-bri-lax-may-2019:
   name: Brisbane to LA
@@ -60,6 +61,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - 2040:
   name: 2040
@@ -83,6 +85,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - saa-jnb-per-may-2019:
   name: Johannesburg to Perth
@@ -92,6 +95,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - botswana-footprints-central-khalahari:
   name: Central Kalahari Game Reserve
@@ -147,6 +151,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - virgin-bri-per-apr-2019:
   name: Brisbane to Perth
@@ -156,6 +161,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - perth-cape-town-luggage-transfer-front:
   name: Transfer Bag Tag
@@ -164,6 +170,8 @@
   tags:
       - transport
       - plane
+  hidden: true
+
 
 - lego-movie-2:
   name: Lego Movie 2
@@ -179,6 +187,7 @@
   tags:
       - plane
       - tranport
+  hidden: true
 
 - fraser-barge:
   name: K'gari barge
@@ -204,6 +213,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - qantas-jfk-lax-mar-2019:
   name: New York to LA
@@ -213,6 +223,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - whitney-warhol:
   name: Andy Warhol at Whitney
@@ -364,6 +375,7 @@
       - plane
       - tranport
       - receipt
+  hidden: true
 
 - museo-nacional-de-las-culturas:
   name: Museo Nacional de las Culturas
@@ -421,6 +433,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - tailor-shop:
   name: Tailor Shop
@@ -614,6 +627,7 @@
   tags:
       - plane
       - tranport
+  hidden: true
 
 - woodside-to-jamaica:
   name: Woodside to Jamaica
@@ -673,6 +687,7 @@
   tags:
       - plane
       - tranport
+  hidden: true
 
 - world-in-colour:
   name: The World in Colour
@@ -752,6 +767,7 @@
   tags:
       - plane
       - tranport
+  hidden: true
 
 - aa-nicaragua-return:
   name: Nicaragua
@@ -760,6 +776,7 @@
   tags:
       - plane
       - tranport
+  hidden: true
 
 - nicaragua-tourist-card:
   name: Tarjeta de turismo
@@ -776,6 +793,7 @@
   tags:
       - plane
       - tranport
+  hidden: true
 
 - duckies:
   name: Duckies
@@ -884,6 +902,7 @@
   tags:
       - plane
       - transport
+  hidden: true
 
 - hunter-springs:
   name: Manatees at Crystal River
@@ -922,6 +941,7 @@
   tags:
       - transport
       - plane
+  hidden: true
 
 - hey-arnold:
   name: Arnold and DW
@@ -938,6 +958,7 @@
   tags:
       - plane
       - transport
+  hidden: true
 
 - yvr-ord:
   name: Vancouver to Chicago
@@ -946,6 +967,7 @@
   tags:
       - plane
       - transport
+  hidden: true
 
 - ord-yvr:
   name: Chicago to Vancouver
@@ -954,6 +976,7 @@
   tags:
       - plane
       - transport
+  hidden: true
 
 - solo9w57:
   name: SOLO9W57
@@ -980,6 +1003,7 @@
       - plane
       - tranport
       - ticket
+  hidden: true
 
 - yankees-legends:
   name: Yankees v Mariners
