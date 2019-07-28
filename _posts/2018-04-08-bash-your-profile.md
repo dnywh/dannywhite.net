@@ -69,4 +69,4 @@ I don't even need to fuss in Terminal now that I have an application shortcut fo
 
 Keep an eye on an nearby engineer as they use Terminal. You might see them use shortcuts beyond applications and directories such as using `gc` for `git commit`. It's all up to you. Colours, ASCII art, and things I'm yet to figure out are also customisable via _.bash_profile_.
 
-Shout out to Stephanie Coleman who introduced me to all of this at Kickstarter.
+Shout out to Stephanie Coleman who introduced me to all of this at Kickstarter. My .bash_profile lives in a [Gist](https://gist.github.com/dannyalright/5856920a9579200f59bbcc8bfe76b05c) if you've like to use it as a starting-point.
