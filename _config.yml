@@ -32,6 +32,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  - projects
+
 # Exclude directories and/or files from the conversion
 exclude:
   - Gemfile
