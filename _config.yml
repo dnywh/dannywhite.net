@@ -33,19 +33,16 @@ plugins:
   - jekyll-seo-tag
 
 collections:
-  - projects
+  projects:
+    output: true
 
 # Exclude directories and/or files from the conversion
 exclude:
   - Gemfile
   - Gemfile.lock
 
-# http://damonbauer.me/organizing-jekyll-pages/
-# Organizing pages (commented out for now—doesn't allow for regeneration of posts, pages)
-# include: ["_pages"]
-# Remove dates
-permalink: /:title/
+# Slugs
+permalink: /:categories/:year/:month/:title:output_ext
 
 # Handling drafts
-# http://www.fizerkhan.com/blog/posts/Working-with-upcoming-posts-in-Jekyll.html
 show_drafts: false
