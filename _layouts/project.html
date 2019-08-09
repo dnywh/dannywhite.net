@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+    <h2>{{ page.story }}</h2>
+    <h3>{{ page.client }}</h3>
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {% assign date_format = site.minima.date_format | default: "%B %Y" %}
+      {{ page.date | date: date_format }}
+    </time>
+  </header>
+
+  <section>
+    <hr>
+    {{ content }}
+  </section>
+
+  <section>
+    <hr>
+    <h2>The details</h2>
+    <p>Role: {{ page.role }}</p>
+    <p>Locations: {{ page.locations }}</p>
+    <p>Organisations: {{ page.organisations }}</p>
+    <p>Collaborators: {{ page.collaborators }}</p>
+    <p>Press: {{ page.press }}</p>
+  </section>
+
+
+</article>

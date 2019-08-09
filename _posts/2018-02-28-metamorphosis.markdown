@@ -28,7 +28,7 @@ Have every participant spend 2 minutes writing on post-it notes ‘if this brand
 - Furniture
 - Animal
 - Brand
-- Food & Drink
+- Food & drink
 - Kids toy
 - Location
 - Personality

@@ -35,6 +35,14 @@ plugins:
 collections:
   projects:
     output: true
+  
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 # Exclude directories and/or files from the conversion
 exclude:
@@ -42,7 +50,7 @@ exclude:
   - Gemfile.lock
 
 # Slugs
-permalink: /:categories/:year/:month/:title:output_ext
+permalink: /:categories/:year/:month/:title/
 
 # Handling drafts
 show_drafts: false
