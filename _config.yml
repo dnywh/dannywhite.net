@@ -35,14 +35,8 @@ plugins:
 collections:
   projects:
     output: true
-  
-defaults:
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
+  books:
+    output: true
 
 # Exclude directories and/or files from the conversion
 exclude:
