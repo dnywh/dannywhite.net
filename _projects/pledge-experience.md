@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Reimaginging the project pledge experience
 client: Kickstarter
 story: Taking an error-prone, multi-platform experience into a fully-native experience. Incrementally rolling out changes to change as we go and support a cross-functional future.

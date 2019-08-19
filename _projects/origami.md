@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Origami
 date: 2016-10-27 09:00:00 -0400
 role: Led design for educational curriculum on [origami.design](http://origami.design). Contributed to interface design and onboarding.

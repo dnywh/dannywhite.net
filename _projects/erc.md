@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Kickstarter Environmental Resources Center
 date: 2018-11-29 09:00:00 -0400
 role: Led the site product design and development.
