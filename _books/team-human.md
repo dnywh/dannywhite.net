@@ -1,8 +1,9 @@
 ---
+layout: book
 title: Team Human
 author: Douglass Rushkoff
 date: 2019-08-17 18:00:00 -0400
-photo-url: https://rushkoff.com/wp-content/uploads/2018/07/unnamed.jpg
+image-url: https://rushkoff.com/wp-content/uploads/2018/07/unnamed.jpg
 link-url: https://rushkoff.com/books/team-human-book/
 summary: "Technology and the markets that drive them are a threat to our humanity. We are increasingly pressured to behave individually and conform to binary measures in order to serve corrupt systems. We are finding our selves more isolated, polarised, and machine-like than ever.
 

@@ -37,7 +37,6 @@
 img {
   object-fit: cover;
 }
-img,
 video {
   width: 100%;
   height: 100%;
@@ -163,7 +162,6 @@ h1.intro {
 
 h2 {
   font-size: 1.6em;
-  margin-top: 6vmax;
 }
 
 h2,
@@ -171,7 +169,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   line-height: 1.4;
 }
 
@@ -396,4 +394,13 @@ section {
   to {
     opacity: 1;
   }
+}
+
+/* Books */
+ul.book {
+  display: flex; 
+}
+header.book {
+  display: flex;
+  grid-gap: 2em;
 }
