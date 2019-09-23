@@ -18,9 +18,17 @@ locations:
 ## Gist
 Overview of project and it's impact.
 
-![tk]({{ site.url }}/assets/projects/time-is-running-out/dan-stacking.jpg)
-![tk]({{ site.url }}/assets/projects/time-is-running-out/danny-poster.jpg)
+- ![tk]({{ site.url }}/assets/projects/time-is-running-out/heather-craig.jpg)
+- _Caption: From 350.org's 'Best of Climate Strike' [gallery](https://350org.widencollective.com/portals/iucshiv3/GlobalClimateStrikesMultimediaHub/c/0891419c-b1be-43df-a7a5-0b6699bacf59). Copyright Heather Craig | Survival Media Agency._
 
+- Photo of girls with posters from Krys
+- My own strike photos that came out well
+
+- One or two key process photos:
+- ![tk]({{ site.url }}/assets/projects/time-is-running-out/dan-stacking.jpg)
+- ![tk]({{ site.url }}/assets/projects/time-is-running-out/danny-poster.jpg)
+
+---
 
 ## Process
 It all started with a text message.
@@ -67,6 +75,9 @@ Paper was a snafu. So we went to print in two parts.
 ![tk]({{ site.url }}/assets/projects/time-is-running-out/arm-tour.m4v)
 
 ![Cassie using the Vandercook]({{ site.url }}/assets/projects/time-is-running-out/arm-vandercook.m4v)
+
+- More printing photos from later run(s)
+- Car shot
 
 
 
