@@ -18,22 +18,24 @@ locations:
 ## Gist
 Overview of project and it's impact.
 
-- ![tk]({{ site.url }}/assets/projects/time-is-running-out/heather-craig.jpg)
-- _Caption: From 350.org's 'Best of Climate Strike' [gallery](https://350org.widencollective.com/portals/iucshiv3/GlobalClimateStrikesMultimediaHub/c/0891419c-b1be-43df-a7a5-0b6699bacf59). Copyright Heather Craig | Survival Media Agency._
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/heather-craig.jpg)
+_From 350.org's 'Best of Climate Strike' [gallery](https://350org.widencollective.com/portals/iucshiv3/GlobalClimateStrikesMultimediaHub/c/0891419c-b1be-43df-a7a5-0b6699bacf59). Copyright Heather Craig | Survival Media Agency._
 
-- Photo of girls with posters from Krys
+ ![TODO]({{ site.url }}/assets/projects/time-is-running-out/krys-maniecki.jpg)
+_Photo by Krys Maniecki._
+
 - My own strike photos that came out well
 
 - One or two key process photos:
-- ![tk]({{ site.url }}/assets/projects/time-is-running-out/dan-stacking.jpg)
-- ![tk]({{ site.url }}/assets/projects/time-is-running-out/danny-poster.jpg)
+- ![TODO]({{ site.url }}/assets/projects/time-is-running-out/dan-stacking.jpg)
+- ![TODO]({{ site.url }}/assets/projects/time-is-running-out/danny-poster.jpg)
 
 ---
 
 ## Process
 It all started with a text message.
 
-![tk]({{ site.url }}/assets/projects/time-is-running-out/message.png)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/message.png)
 
 Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was taking all of our attention.
 
@@ -42,7 +44,7 @@ Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was ta
 - [Pinterest](https://pin.it/ocszhdomrxblat)
     - I am a man
 
-![tk](https://freight.cargo.site/w/607/i/b2cfbb7f1338b22301c858b5c44593b24810e3c614f41ca4f3b4626a7cd34de9/man6_o.jpg)
+![TODO](https://freight.cargo.site/w/607/i/b2cfbb7f1338b22301c858b5c44593b24810e3c614f41ca4f3b4626a7cd34de9/man6_o.jpg)
 
 - Defining tone and messaging
 
@@ -52,7 +54,7 @@ Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was ta
     - Would have preferred not to; and just gone straight to Dan to hash it out, analog. Had to given the Sept 20 deadline and need to visualise on Kickstarter.
     - Kept it as short as possible and stressed the nature of change on Kickstarter
 
-![tk]({{ site.url }}/assets/projects/time-is-running-out/figma-process.png)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/figma-process.png)
 
 - Deciding feasible printing options
 - Artwork for campaign, Instagram
@@ -60,19 +62,19 @@ Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was ta
 ## Going with letterpress
 The Arm, specifically Dan who runs the join, was by far the most receptive and flexible.
 
-![tk]({{ site.url }}/assets/projects/time-is-running-out/dan-setup.jpg)
-![tk]({{ site.url }}/assets/projects/time-is-running-out/hand-setup.jpg)
-![tk]({{ site.url }}/assets/projects/time-is-running-out/trio-composition.jpg)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/dan-setup.jpg)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/hand-setup.jpg)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/trio-composition.jpg)
 
-![tk]({{ site.url }}/assets/projects/time-is-running-out/cassie-insta.jpg)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/cassie-insta.jpg)
 
 ## Printing
 Paper was a snafu. So we went to print in two parts.
 
-![tk]({{ site.url }}/assets/projects/time-is-running-out/dan-composition.jpg)
-![tk]({{ site.url }}/assets/projects/time-is-running-out/dan-measuring.jpg)
-![tk]({{ site.url }}/assets/projects/time-is-running-out/jon-scoring.jpg)
-![tk]({{ site.url }}/assets/projects/time-is-running-out/arm-tour.m4v)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/dan-composition.jpg)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/dan-measuring.jpg)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/jon-scoring.jpg)
+![TODO]({{ site.url }}/assets/projects/time-is-running-out/arm-tour.m4v)
 
 ![Cassie using the Vandercook]({{ site.url }}/assets/projects/time-is-running-out/arm-vandercook.m4v)
 
