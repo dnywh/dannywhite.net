@@ -27,9 +27,9 @@ markdown: kramdown
 kramdown:
   footnote_backlink: "&#8617;&#65038;"
 
-# plugins were previously called gems
-plugins_dir:
+plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 collections:
