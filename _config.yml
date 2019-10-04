@@ -28,7 +28,7 @@ kramdown:
   footnote_backlink: "&#8617;&#65038;"
 
 # plugins were previously called gems
-plugins:
+plugins_dir:
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -51,4 +51,4 @@ exclude:
 
 # Handling drafts
 # http://www.fizerkhan.com/blog/posts/Working-with-upcoming-posts-in-Jekyll.html
-show_drafts: false
+# show_drafts: false
