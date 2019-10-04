@@ -51,4 +51,4 @@ exclude:
 
 # Handling drafts
 # http://www.fizerkhan.com/blog/posts/Working-with-upcoming-posts-in-Jekyll.html
-# show_drafts: false
+show_drafts: false
