@@ -47,7 +47,7 @@ exclude:
 # Organizing pages (commented out for now—doesn't allow for regeneration of posts, pages)
 # include: ["_pages"]
 # Remove dates
-permalink: /:title/
+# permalink: /:title/
 
 # Handling drafts
 # http://www.fizerkhan.com/blog/posts/Working-with-upcoming-posts-in-Jekyll.html
