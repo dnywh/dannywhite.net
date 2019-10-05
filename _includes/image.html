@@ -1,42 +1,114 @@
-{% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+{% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{
+  page.title | slugify
+}}/{{ include.name }}{% endcapture %}
 <!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
 <div class="media">
   {% if include.caption %}
   <figure>
     {% if include.remote %}
     <!-- Opt-in to remote image hosting with remote=true -->
-    <img src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}"
-      {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {%
-      endif %} />
+    <img
+      src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1"
+      data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}"
+      {%
+      if
+      include.alt
+      %}
+      alt="{{ include.alt }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      include.width
+      %}
+      width="{{ include.width }}"
+      {%
+      endif
+      %}
+    />
     {% else %}
     <!-- Host images locally by default -->
-    <img data-src="/assets/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if
-      include.width %} width="{{ include.width }}" {% endif %} />
+    <img
+      data-src="/assets/posts/{{ imagePath }}"
+      {%
+      if
+      include.alt
+      %}
+      alt="{{ include.alt }}"
+      {%
+      endif
+      %}
+      {%
+      if
+      include.width
+      %}
+      width="{{ include.width }}"
+      {%
+      endif
+      %}
+    />
     {% endif %}
 
     <figcaption>
       <!-- Caption links that are at the start of the caption -->
       {% if include.caption-start-link %}
-      <a href="{{ include.caption-start-link }}">{{ include.caption-start-link-text }}</a>
+      <a href="{{ include.caption - start - link }}">{{
+        include.caption - start - link - text
+      }}</a>
       {% endif %}
       {{ include.caption }}
 
       <!-- Caption links that are at the end of the caption -->
       {% if include.caption-end-link %}
-      <a href="{{ include.caption-end-link }}">{{ include.caption-end-link-text }}</a>
+      <a href="{{ include.caption - end - link }}">{{
+        include.caption - end - link - text
+      }}</a>
       {% endif %}
     </figcaption>
   </figure>
-  {% else %}
-  {% if include.local %}
+  {% else %} {% if include.local %}
   <!-- Opt-in to remote image hosting with remote=true -->
-  <img src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}"
-    {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {%
-    endif %} />
+  <img
+    src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1"
+    data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}"
+    {%
+    if
+    include.alt
+    %}
+    alt="{{ include.alt }}"
+    {%
+    endif
+    %}
+    {%
+    if
+    include.width
+    %}
+    width="{{ include.width }}"
+    {%
+    endif
+    %}
+  />
   {% else %}
   <!-- Host images locally by default -->
-  <img data-src="/assets/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if
-    include.width %} width="{{ include.width }}" {% endif %} />
-  {% endif %}
-  {% endif %}
+  <img
+    data-src="/assets/posts/{{ imagePath }}"
+    {%
+    if
+    include.alt
+    %}
+    alt="{{ include.alt }}"
+    {%
+    endif
+    %}
+    {%
+    if
+    include.width
+    %}
+    width="{{ include.width }}"
+    {%
+    endif
+    %}
+  />
+  {% endif %} {% endif %}
 </div>

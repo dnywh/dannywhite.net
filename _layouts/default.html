@@ -6,7 +6,7 @@
 <!-- lzy.js uses the Intersection Observer API, which isn't yet well supported -->
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> </script>
 <!-- lzy.js -->
-<script src="../assets/lzy.min.js"></script>
+<script src="/assets/lzy.min.js"></script>
 
 <body id=#>
   {% include nav.html %}
@@ -15,18 +15,6 @@
   {{ content }}
 
   {% include footer.html %}
-
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 
 <!-- Lazy-load images -->

@@ -2,7 +2,7 @@
 layout: post
 type: article
 title: "ContextKit for Origami"
-date: 2017-08-17 11:08:01 -0400
+date: 2017-08-17 07:08:01 -0400
 featured-image: contextkit-og.jpg
 ---
 
