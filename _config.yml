@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Danny White
 description: Danny White is a product designer in NYC.
-url: "http://dannywhite.site" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dannywhite.studio" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dannyalright
 github_username: dannyalright
 author: Danny White
@@ -27,9 +27,9 @@ markdown: kramdown
 kramdown:
   footnote_backlink: "&#8617;&#65038;"
 
-# plugins were previously called gems
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 collections:

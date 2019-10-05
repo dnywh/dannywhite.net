@@ -1,4 +1,4 @@
-# [dannywhite.site](http://dannywhite.site/)
+# [dannywhite.studio](http://dannywhite.studio/)
 
 Hi. This website runs on [Jekyll](http://github.com/jekyll/jekyll). Here are some things that I've slowly built-out that might also help you:
 
@@ -21,8 +21,6 @@ Things I've added onto or tweaked from the standard Jekyll theme, layouts, inclu
 Some of these implementations derive from other peoples' articles or examples. Attributions and links should be commented within the respective resources.
 
 ## Workflows
-
-I find it useful to have this repo setup in the `your-username.github.io` format. This lets me publish the completely separate repository `banana` to `dannywhite.site/banana` with a simple `gh-pages` branch `push`.
 
 ### Testing your Jekyll site across devices on the same network
 
