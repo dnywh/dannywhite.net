@@ -1,4 +1,4 @@
-# [dannywhite.studio](http://dannywhite.studio/)
+# [dannywhite.site](http://dannywhite.site/)
 
 Hi. This website runs on [Jekyll](http://github.com/jekyll/jekyll). Here are some things that I've slowly built-out that might also help you:
 
