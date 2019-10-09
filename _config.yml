@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Danny White
 description: Danny White is a product designer in NYC.
-url: "https://dannywhite.studio" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dannywhite.site" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dannyalright
 github_username: dannyalright
 author: Danny White
@@ -33,6 +33,10 @@ plugins:
   - jekyll-seo-tag
 
 collections:
+  posts:
+    output: true
+    # permalink: /notes/:year/:month/:day/:title/
+    permalink: /notes/:title/
   projects:
     output: true
   books:
@@ -42,9 +46,6 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
-
-# Slugs
-permalink: /:categories/:year/:month/:title/
 
 # Handling drafts
 show_drafts: false

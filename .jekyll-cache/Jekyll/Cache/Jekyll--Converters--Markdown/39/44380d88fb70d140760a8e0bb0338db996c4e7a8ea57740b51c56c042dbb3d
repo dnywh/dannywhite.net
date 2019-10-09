@@ -1,0 +1,48 @@
+I"<p>I’ve been fortunate enough to have been working with the Origami team at Facebook for the last six months or so. Without going into too much detail, our NYC launch last night was a super proud moment for myself and the team.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+  
+  <figure>
+    
+    <!-- Host images locally by default -->
+    <img data-src="/assets/posts/2016-11-02-launching-origami/facebook-ny.jpg" />
+    
+
+    <figcaption>
+      <!-- Caption links that are at the start of the caption -->
+      
+      At Facebook NY. Photo by 
+
+      <!-- Caption links that are at the end of the caption -->
+      
+      <a href="At Facebook NY. Photo by ">At Facebook NY. Photo by </a>
+      
+    </figcaption>
+  </figure>
+  
+</div>
+
+<p>Thanks to Madelin for joining and then running the whole shebang. Also thanks to Matej, Andrew, Rob, Blair, Julius, John, and everyone else at Facebook<sup id="fnref:facebook"><a href="#fn:facebook" class="footnote">1</a></sup> for being both some of the nicest and smartest people I’ve been around.</p>
+
+<p>The official Origami <a href="http://origami.design/tutorials/">tutorials</a> and <a href="http://origami.design/examples/">examples</a> are now up. Thanks also to Fisher for his expertise whilst creating the curriculum for these.</p>
+
+<hr />
+
+<h2 id="update-2411">Update (24/11)</h2>
+
+<p>The full video of my demo has been uploaded on <a href="http://vimeo.com/192805834">Vimeo</a>. The other demos are under the <a href="http://vimeo.com/facebookorigami">same username</a>.</p>
+
+<div class="media intrinsic-container">
+  <iframe src="https://player.vimeo.com/video/192805834" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<p>Glad I got that mop of a haircut fixed since.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:facebook">
+      <p>Kara, Myles, etc. Seriously so many, and everyone is great, but I’ve gotta stop somewhere. <a href="#fnref:facebook" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

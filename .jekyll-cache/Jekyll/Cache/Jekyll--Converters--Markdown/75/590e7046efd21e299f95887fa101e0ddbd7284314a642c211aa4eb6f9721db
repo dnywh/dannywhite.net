@@ -1,0 +1,172 @@
+I"�"<p>Picture this: you’re led to an unfamiliar room in an unfamiliar building, and sat-down in front of a mobile device. Some person called a ‘researcher’ or ‘product designer’ presses a few buttons, and then wham—you have something called a ‘prototype’ in front of you and a short verbal description as to why.</p>
+
+<p>I have a hypothesis that the more exposure (and feedback) a person has around the core app experience, the better. To test this hypothesis, I’ve built a resource called <a href="http://github.com/dannyalright/contextkit/">ContextKit</a>.</p>
+
+<h2 id="adding-context-with-contextkit">Adding context with ContextKit</h2>
+
+<p>ContextKit currently includes two Origami components and one Origami template. Each are dynamic and as native-feeling as I could get them. They cover some major entry-points for mobile apps:</p>
+
+<ul>
+  <li>App open from SpringBoard (the home screen)</li>
+  <li>App open from a Notification</li>
+  <li>App open from another app (Deep Link)</li>
+</ul>
+
+<p>You can <a href="http://github.com/dannyalright/contextkit/">download these components and template on GitHub</a>. For more information on each, read on below.</p>
+
+<h3 id="springboard-app-component">SpringBoard App component</h3>
+
+<p>A SpringBoard component for Origami. Adaptive for iPhone 7, iPhone 7 Plus, and iPhone SE. Not too much work to adapt for iPad, if you need to.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media video">
+  
+  <video src="/assets/posts/2017-08-17-contextkit-for-origami/springboard-example.mp4" playsinline="" controls="" muted="" loop=""></video>
+
+  <!-- Caption -->
+  
+  <label>Simple example of customising the SpringBoard component.</label>
+  
+</div>
+
+<p>There’s quite a lot you can do with this component. If you go under the hood, you’ll see the ability to change the app icons and names to anything you like, as well as the placement of your own app (the <em>App Location</em> variable).</p>
+
+<p>Each SpringBoard item is positioned by the anchor property, rather than the X and Y position properties. I’m also using this calculation for the app icon pivot; each icon will ‘spring out’ differently depending where it’s placed.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media video">
+  
+  <video src="/assets/posts/2017-08-17-contextkit-for-origami/pivot-example.mp4" playsinline="" controls="" muted="" loop=""></video>
+
+  <!-- Caption -->
+  
+  <label>A test composition that shows this dynamism nicely. Feel free to move your own app to whatever position makes sense.</label>
+  
+</div>
+
+<h4 id="optimisation">Optimisation</h4>
+
+<p>It turns out that hardcoding assets and removing functionality doesn’t do too much for reducing file size. Feel free to <a href="http://github.com/dannyalright/contextkit/blob/master/examples/SpringBoard%20App%20iPhone%207.origami">download the iPhone 7-only version</a> if you want to take a look or see what else can be stripped-out.</p>
+
+<h3 id="notification-component">Notification component</h3>
+
+<p>A drop-down notification component for Origami. Uses responsive-sizing, so can be used on an iPad, too.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media video">
+  
+  <video src="/assets/posts/2017-08-17-contextkit-for-origami/notification-springboard-app.mp4" playsinline="" controls="" muted=""></video>
+
+  <!-- Caption -->
+  
+  <label>The Notification component tied to the SpringBoard App component.</label>
+  
+</div>
+
+<p>To open an app from the Notification component, simply use an Interaction patch with Notification as the target layer and connect it to the Open App input on the SpringBoard App component.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+   
+  <!-- Host images locally by default -->
+  <img data-src="/assets/posts/2017-08-17-contextkit-for-origami/notification-app-open.jpg" />
+   
+</div>
+
+<p>You don’t need to use it with my SpringBoard App component, if you just want to test with notifications.</p>
+
+<h3 id="deep-link-template">Deep Link template</h3>
+
+<p>A simple template for emulating the app-switching behavior in iOS. Drop your prototype contents into the ‘Your App’ group, and customise the ‘Some Other App’ group to your heart’s content.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media video">
+  
+  <video src="/assets/posts/2017-08-17-contextkit-for-origami/deep-link.mp4" playsinline="" controls="" muted="" loop=""></video>
+
+  <!-- Caption -->
+  
+  <label>Simple example of the Deep Link template.</label>
+  
+</div>
+
+<h2 id="installation">Installation</h2>
+
+<p>There are three ways to get access to these components and template. The most direct way is to <a href="http://github.com/dannyalright/contextkit/tree/master/origami/ContextKit">download the ready-to-go files</a> and riff from them. For more extensibility, follow either of the following:</p>
+
+<h3 id="download-the-components-and-add-to-your-patch-library">Download the components and add to your Patch Library</h3>
+
+<p><a href="http://github.com/dannyalright/contextkit/tree/master/origami/ContextKit">Download a ready-to-go file</a> and open into Origami. Right-click on the component and then click <em>Add to User Patch Library…</em>.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+   
+  <!-- Host images locally by default -->
+  <img data-src="/assets/posts/2017-08-17-contextkit-for-origami/add-to-patch-library.jpg" />
+   
+</div>
+
+<p>Next time you click on the New Layer button (+), you should see the component appear. This approach is good for quick-yet-global access across documents.</p>
+
+<h3 id="download-the-system-and-open-in-origami">Download the system and open in Origami</h3>
+
+<p>This is my recommended approach if you plan to use these extensively. <a href="http://github.com/dannyalright/contextkit/tree/master/origami">Clone or download the ComponentKit system</a> and open in Origami Studio. If you clone the repository, and choose <em>Install from Current Location</em>, the components can be updated automatically<sup id="fnref:githubsync"><a href="#fn:githubsync" class="footnote">1</a></sup>.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+  
+  <figure>
+    
+    <!-- Host images locally by default -->
+    <img data-src="/assets/posts/2017-08-17-contextkit-for-origami/install-system.jpg" alt="Installing the ContextKit system in Origami Studio." />
+    
+
+    <figcaption>
+      <!-- Caption links that are at the start of the caption -->
+      
+      Installing the ContextKit system in Origami Studio.
+
+      <!-- Caption links that are at the end of the caption -->
+      
+    </figcaption>
+  </figure>
+  
+</div>
+
+<p>Next time you click on the New Layer button (+), you should see all the components appear.</p>
+
+<h2 id="extending-to-android-and-framer">Extending to Android and Framer</h2>
+
+<p>I’ve done the bare minimum to validate whether ContextKit is actually useful; a handful of iOS-only components, only for Origami. If these prove useful, I plan to extend ContextKit to include Android, more entry-points, and at least Framer.</p>
+
+<h2 id="ios-10--11">iOS 10 → 11</h2>
+
+<p>The current animation and visual styles are modeled from the latest iOS 11 Beta. There are some inevitable inconsistencies that will be ironed out as iOS 11 matures and releases publicly this September-ish.</p>
+
+<h2 id="detailed-documentation">Detailed documentation</h2>
+
+<p>Information on each component’s inputs and outputs is available inside its respective tool’s directory. So far that includes:</p>
+
+<ul>
+  <li><a href="http://github.com/dannyalright/contextkit/blob/master/origami/notification.md">iOS Notification component for Origami</a></li>
+  <li><a href="http://github.com/dannyalright/contextkit/blob/master/origami/springboard-app.md">iOS SpringBoard App component for Origami</a></li>
+</ul>
+
+<h2 id="feedback">Feedback</h2>
+
+<p>…is welcome. I have some ideas of what can be extended or improved, but I need a bit of a push to get it done.</p>
+
+<hr />
+
+<h2 id="update-1809">Update (18/09)</h2>
+
+<p>Chris Slowik over at <a href="http://designers.how/episodes/start-by-building-context">designers.how</a> has <a href="http://designers.how/episodes/start-by-building-context">published a 5 minute video tutorial on ContextKit</a>. Specifically SpringBoard App component. It’s a great walkthrough of the installation process and a real-world use case.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:githubsync">
+      <p>Assuming you sync the local copy of the repository from time-to-time. <a href="#fnref:githubsync" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

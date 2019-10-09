@@ -1,0 +1,195 @@
+I"~6<p>It’s been just over a year and a half since starting Framer Sessions NYC, out of ustwo. Given the pace at which <a href="http://framer.com">Framer</a> has iterated, it feels like a good time to reflect.</p>
+
+<h2 id="how-it-started">How it started</h2>
+
+<p>Having Framer in my back pocket was a huge asset whilst doing freelance product design from late 2014 to mid-2015. Constant high-fidelity prototypes (and prototyping as a mindset/iterative design tool) really resonated with teams and clients.</p>
+
+<p>I met Koen and Jorn (founders of Framer) shortly after joining ustwo. A month or so later I had Framer NYC set up and ready to go for November 5th, 2015. A relevant throwback:</p>
+
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="http://twitter.com/itsleesimpson">@itsleesimpson</a> <a href="http://twitter.com/phillackmaker">@phillackmaker</a> @aloookat <a href="http://twitter.com/framerjs">@framerjs</a> FTW 👊 <a href="http://t.co/4S7wcZplU3">pic.twitter.com/4S7wcZplU3</a></p>&mdash; ɪˈfɛm(ə)r(ə)l,ɪˈfiːm (@millsustwo) <a href="http://twitter.com/millsustwo/status/682348312222130176">December 30, 2015</a></blockquote> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<p>Two resources that helped start me off were <a href="http://blog.framer.com/how-to-host-to-a-framer-session-9e887ce6d7d1">Setting up a technical meet-up, a framer case-study</a> and the format from Framer Seattle <a href="http://www.facebook.com/events/1704332906452240/">from around that time</a>. Things were adapted once we had a few Sessions under our belt, but the general approaches have more or less stuck.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+  
+  <figure>
+    
+    <!-- Host images locally by default -->
+    <img data-src="/assets/posts/2017-07-17-framer-sessions/Framer-NYC-2015-11-05-003.jpg" />
+    
+
+    <figcaption>
+      <!-- Caption links that are at the start of the caption -->
+      
+      The first Framer NYC meet up.
+
+      <!-- Caption links that are at the end of the caption -->
+      
+    </figcaption>
+  </figure>
+  
+</div>
+
+<h2 id="lessons-learnt">Lessons learnt</h2>
+
+<p>Some anecdotal yet useful things I’ve learnt along the way.</p>
+
+<h3 id="you-need-help">You need help</h3>
+
+<p>Running the meetup is about 3-4x amount of the work that I anticipated. Take any help you can get. That includes basic logistics and set up help, as well as facilitators to run skill-level sessions.</p>
+
+<h3 id="people-flake">People flake</h3>
+
+<p>This is especially true in NYC. I think the average turn-out for our meetups is somewhere between 30–50%<sup id="fnref:rsvp"><a href="#fn:rsvp" class="footnote">1</a></sup>. Also—if it rains that day, cut your food &amp; drinks order by half.</p>
+
+<h3 id="get-a-sponsor">Get a sponsor</h3>
+
+<p>Food and drink for 20+ people gets <em>expensive</em>. Even just getting a space can be hard. Try to get a sponsor, or get your workplace to help out (like I did). It’s great for them too—if they know how to make the most of it (i.e. recruiting<sup id="fnref:recruiting"><a href="#fn:recruiting" class="footnote">2</a></sup>).</p>
+
+<h3 id="over-prepare">Over-prepare</h3>
+
+<p>Assume people will have trouble getting into the building, finding the space, showing their work, following along, etc<sup id="fnref:signage"><a href="#fn:signage" class="footnote">3</a></sup>.</p>
+
+<p>Aside from clear signage, you’ll need a strong yet flexible agenda. Without one, the meetup becomes an introductory course with a pretense of “I can leave this thing knowing Framer”…with inevitable disappointment.</p>
+
+<h3 id="accommodate-different-skill-levels">Accommodate different skill-levels</h3>
+
+<p>Otherwise you’ll end up with a gulf: beginners and intermediates all falling back to extreme basics (with the expectation that they’ll learn everything in this meetup), and advanced and intermediates doing something extremely complex that is likely to scare some people off<sup id="fnref:balance"><a href="#fn:balance" class="footnote">4</a></sup>.</p>
+
+<h3 id="dont-limit-your-crowd">Don’t limit your crowd</h3>
+
+<p>Framer is cool. There are some seriously creative use cases, and people behind those. Get out of just the tech and design circles—spread the word far and wide. Although meetup photos don’t reflect it too well, I’ve been pretty happy at how diverse our meetups are becoming.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+   
+  <!-- Host images locally by default -->
+  <img data-src="/assets/posts/2017-07-17-framer-sessions/Framer-NYC-2016-01-13-030.jpg" />
+   
+</div>
+
+<h2 id="our-current-approach">Our current approach</h2>
+
+<p>Many of the above points are around format and delivery. Below is how we try and address that in meetups now. Our approach is far from perfect, but is the most successful so far.</p>
+
+<h3 id="1-mingling-1015-min">1. Mingling (10–15 min)</h3>
+
+<p>Allow people to get to know each other. This happens organically sometimes, and not at all at other times. If you have some, your food and drink should be out in full force.</p>
+
+<h3 id="2-intros-510-min">2. Intros (5–10 min)</h3>
+
+<p>Reiterate food, drinks, bathrooms, etc. Point out who are helpers, and who are special guests. Give people a heads up so they can prepare for the imminent Show and tell.</p>
+
+<h3 id="3-show-and-tell-2025-min">3. Show and tell (20–25 min)</h3>
+
+<p>Demo something that <em>you</em> have done with new Framer features (which there almost always are). Encourage others to come up and show their work, too<sup id="fnref:showandtell"><a href="#fn:showandtell" class="footnote">5</a></sup>.</p>
+
+<p>Have any special guests in town? Have them demo something<sup id="fnref:specialguests"><a href="#fn:specialguests" class="footnote">6</a></sup>. This is something we’re still figuring out, but right now I’d say to do this <em>after</em> people do their individual demos<sup id="fnref:ordering"><a href="#fn:ordering" class="footnote">7</a></sup>.</p>
+
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">action shot from last nights <a href="http://twitter.com/framerjs">@framerjs</a> meetup at <a href="http://twitter.com/ustwo">@ustwo</a> nyc! a+ vibes would hang out again 👌 <a href="http://t.co/OADKOVwrmh">pic.twitter.com/OADKOVwrmh</a></p>&mdash; George Kedenburg III (@GK3) <a href="http://twitter.com/GK3/status/753582943336030208">July 14, 2016</a></blockquote> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Tomorrow our NYC studio is hosting &quot;Making <a href="http://twitter.com/framerjs">@FramerJS</a>&quot; with the man himself, <a href="http://twitter.com/koenbok">@koenbok</a>! RSVP: <a href="http://t.co/qLbSbukT1C">http://t.co/qLbSbukT1C</a> <a href="http://t.co/UXn6XJRcPT">pic.twitter.com/UXn6XJRcPT</a></p>&mdash; ustwo (@ustwo) <a href="http://twitter.com/ustwo/status/740188709723770880">June 7, 2016</a></blockquote> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<h3 id="4-skill-level-breakouts--30-min">4. Skill-level breakouts (&gt; 30 min)</h3>
+
+<h4 id="beginners">Beginners</h4>
+
+<p>Have prepared a Framer 101 tutorial, followed by the step-by-step building of something simple yet real. Most learners of Framer are kinaesthetic; meaning the practice of making something (relatable, if possible) jives better than being demonstrated at.</p>
+
+<p><strong>Goal:</strong> If you can get newbies to leave feeling confident that Framer is approachable, that’s huge. Bonus points if they leave with a foundation of Framer skills.</p>
+
+<h4 id="intermediate--advanced">Intermediate &amp; advanced</h4>
+
+<p>Break out into groups for discussion and problem solving of individual prototypes. This tends to be hard, since there is always a spectrum of differing skill levels<sup id="fnref:overrun"><a href="#fn:overrun" class="footnote">8</a></sup>. Ideally you will have moderators to spot divergent skill levels and conversations, and physically separate (and therefore foster) each of them.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+   
+  <!-- Host images locally by default -->
+  <img data-src="/assets/posts/2017-07-17-framer-sessions/Framer-Sessions-14-July-2016-09.jpg" />
+   
+</div>
+
+<h3 id="5-after-the-meetup">5. After the meetup</h3>
+
+<p>Share a notes list on your group page with anything mentioned throughout the meetup. Allow others to add notes which might have been missed. Did you take any good photos? It doesn’t hurt to share those too, especially when spruiking the next Framer Sessions.</p>
+
+<h2 id="going-forward">Going forward</h2>
+
+<p>I started Framer NYC solo, with some generous logistics and event setup with the likes of ustwobies such as <a href="http://twitter.com/simonlindsay">Simon Lindsay</a>, and new friends such as <a href="http://twitter.com/JoshuaRule">Josh Dobson</a>. Since then, <a href="http://twitter.com/nlevin">Noah Levin</a> and <a href="http://twitter.com/jaredpalmer">Jared Palmer</a> have joined to help run these things going forward.</p>
+
+<p>I’ve broadened my focus to other design tools such as <a href="http://origami.design">Origami</a>, where you may or may not hear my voice on <a href="http://origami.design/tutorials/getting-started/Getting-Started.html">the tutorial videos</a>. I have a feeling these meetups will broaden over time, too.</p>
+
+<!-- Wrapping in div necessary to avoid Markdown rendering as <code> -->
+<div class="media">
+  
+  <figure>
+    
+    <!-- Host images locally by default -->
+    <img data-src="/assets/posts/2017-07-17-framer-sessions/Framer-Sessions-05-June-2016-016.jpg" />
+    
+
+    <figcaption>
+      <!-- Caption links that are at the start of the caption -->
+      
+      So stock-photo!!
+
+      <!-- Caption links that are at the end of the caption -->
+      
+    </figcaption>
+  </figure>
+  
+</div>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="http://fb.com/groups/framernyc/">Framer NYC Facebook group</a></li>
+  <li><a href="http://framer.com/community/meetups/">Framer’s Meetups page</a></li>
+  <li><a href="http://framer.com/community/groups/">Framer’s Groups page</a></li>
+</ul>
+
+<p>Again, refer to <a href="http://blog.framer.com/how-to-host-to-a-framer-session-9e887ce6d7d1">Setting up a technical meet-up, a framer case-study</a> for a more comprehensive checklist.</p>
+
+<p>The most successful (collaborative, diverse, consistent turn-outs), consistent Framer meetup I’ve seen is <a href="http://facebook.com/groups/framerjs.seattle/">Framer Seattle</a>, run by <a href="http://twitter.com/stephenncrowley">Stephen Crowley</a> and <a href="http://twitter.com/jordandobson">Jordan Dobson</a>. There is probably a thriving Framer meetup <a href="http://framer.com/community/meetups/">close to you</a>, too.</p>
+
+<div class="tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks y&#39;all for making last night great. Until next time <a href="http://twitter.com/framerjs">@framerjs</a> <a href="http://twitter.com/ustwo">@ustwo</a> <a href="http://t.co/gK6bLW9L6d">pic.twitter.com/gK6bLW9L6d</a></p>&mdash; Danny White (@dannyalright) <a href="http://twitter.com/dannyalright/status/687705898391891969">January 14, 2016</a></blockquote> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:rsvp">
+      <p>Of those who RSVPed yes or expressed interested. <a href="#fnref:rsvp" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+    <li id="fn:recruiting">
+      <p>Our most recent Framer Sessions (led by Noah) was at ClassPass. They had a recruiter float in sessions. Not at all interruptive; instead making the most of having so many talented people in one room. <a href="#fnref:recruiting" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+    <li id="fn:signage">
+      <p>I think I had up to six signs at one point, with people still getting lost. I’ve also run sessions where unless pushed, no one is willing to come forward with prototypes or questions. <a href="#fnref:signage" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+    <li id="fn:balance">
+      <p>A nice balance is overcoming the “this is too hard for me to learn” for beginners, and “I didn’t know about this neat trick/feature/approach” for more advanced people. <a href="#fnref:balance" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+    <li id="fn:showandtell">
+      <p>This is by far the hardest part. Prizes don’t help IMO. <a href="#fnref:showandtell" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+    <li id="fn:specialguests">
+      <p>Definitely do not put people on the spot—this should be something you’ve worked out with your guest prior to the meetup. Also don’t feel like you need to restrict guests to showing purely Framer work. If someone used it in their workflow, or even if they use something else, that’s still usually interesting for people. <a href="#fnref:specialguests" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+    <li id="fn:ordering">
+      <p>Understandably, people tend not to want to follow a guest’s presentation. <a href="#fnref:ordering" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+    <li id="fn:overrun">
+      <p>Groups can be often overrun by niche and intimidating demos or discussions that arguably aren’t a good fit for Framer (ultimately a design tool for validating ideas). <a href="#fnref:overrun" class="reversefootnote">&#8617;&#65038;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
