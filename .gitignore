@@ -4,4 +4,3 @@ Gemfile.lock
 .DS_Store
 .tweet-cache
 .vscode
-.netlify
