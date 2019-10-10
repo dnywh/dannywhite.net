@@ -2,6 +2,7 @@
 layout: project
 title: Kickstarter Environmental Resources Center
 date: 2018-11-29 09:00:00 -0400
+featured_image: transparent-speaker.jpg
 role: Led the site product design and development.
 collaborators:
   - Alexandra Criscuolo
@@ -9,8 +10,9 @@ collaborators:
   - Heather Corcoran
   - Jon Leland
   - Maura Lynch
-locations: 
+locations:
   - New York, NY
+client: Kickstarter
 organisations:
   - Kickstarter
   - Environmental Defence Fund

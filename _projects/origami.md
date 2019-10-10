@@ -2,6 +2,7 @@
 layout: project
 title: Origami
 date: 2016-10-27 09:00:00 -0400
+featured_image: learn-origami.png
 role: Led design for educational curriculum on [origami.design](http://origami.design). Contributed to interface design and onboarding.
 collaborators:
   - Matej Hrescak
@@ -12,9 +13,10 @@ collaborators:
   - Madelin Woods
   - John Evans
   - Kara Fong
-locations: 
+locations:
   - New York, NY
   - Menlo Park, CA
+client: Facebook
 organisations:
   - Facebook
   - ustwo

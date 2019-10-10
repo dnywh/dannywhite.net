@@ -3,29 +3,41 @@ layout: default
 ---
 
 <article>
+  <div class="{{ page.image_arrangement }}">
+    {% for item in page.top_images %}
+    <img src="/assets/projects/{{ page.slug }}{{ item.name | relative_url }}" alt="{{ item.alt }}">
+    {% endfor %}
+  </div>
+
   <header>
-    <h1>{{ page.title | escape }}</h1>
-    <h2>{{ page.story }}</h2>
-    <h3>{{ page.client }}</h3>
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {% assign date_format = site.minima.date_format | default: "%B %Y" %}
-      {{ page.date | date: date_format }}
-    </time>
+    <div>
+      <h1>{{ page.title | escape }}</h1>
+      <h2>{{ page.story }}</h2>
+    </div>
+
+    <ul>
+      <li>For: {{ page.client }}</li>
+      <li>Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {% assign date_format = site.minima.date_format | default: "%B %Y" %}
+          {{ page.date | date: date_format }}
+        </time></li>
+      <li>Role: {{ page.role }}</li>
+      <li>Locations: {{ page.locations }}</li>
+      <li>Organisations: {{ page.organisations }}</li>
+      <li>Collaborators: {{ page.collaborators }}</li>
+      <li>Press: {{ page.press }}</li>
+    </ul>
   </header>
 
+
   <section>
-    <hr>
     {{ content }}
   </section>
 
   <section>
     <hr>
-    <h2>The details</h2>
-    <p>Role: {{ page.role }}</p>
-    <p>Locations: {{ page.locations }}</p>
-    <p>Organisations: {{ page.organisations }}</p>
-    <p>Collaborators: {{ page.collaborators }}</p>
-    <p>Press: {{ page.press }}</p>
+
+    <h2>Similar projects...</h2>
   </section>
 
 

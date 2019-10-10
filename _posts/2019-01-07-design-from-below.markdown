@@ -3,7 +3,7 @@ layout: post
 type: article
 title: "Design from below"
 date: 2019-01-07 09:33:56 -0400
-featured-image-remote: loupe-recap-asset-3-danny_2x.jpg
+featured_image-remote: loupe-recap-asset-3-danny_2x.jpg
 ---
 
 We're in the middle of a design tool and process revolution. Yet it seems as if design tools and processes are the extent of conversation within the design community. Mention of how the things we design are loved or hated, addicting or abusive, don't seem to make good conversation or panel topics.

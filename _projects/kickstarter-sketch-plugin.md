@@ -7,4 +7,6 @@ collaborators:
   - Walter Beller-Morales
 organisations:
   - Kickstarter
+client: Kickstarter
+featured_image: kickstarter-data-angled.jpg
 ---

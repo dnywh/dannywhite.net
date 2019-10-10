@@ -1,1 +1,33 @@
-<footer></footer>
+<hr />
+<footer class="grid">
+  <div class="span-1">
+    {{ site.description }}
+  </div>
+  <div class="span-1">
+    <ul>
+      <li>
+        {% include email.html %}
+      </li>
+    </ul>
+    <nav>
+      <ul>
+        <li>
+          <a href="{{ "/" | relative_url }}">Home</a>
+        </li>
+        <li>
+          <a href="/notes">Notes</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <ul class="span-1">
+    <li><a href="http://github.com/dannyalright">GitHub</a></li>
+    <li><a href="http://instagram.com/dannywhite/">Instagram</a></li>
+    <li><a href="http://twitter.com/dannyalright">Twitter</a></li>
+    <li><a href="http://pinterest.com/dannyalright/pins/">Pinterest</a></li>
+    <li><a href="http://linkedin.com/in/dannyalright/">LinkedIn</a></li>
+  </ul>
+</footer>

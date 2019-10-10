@@ -1,24 +1,27 @@
 ---
 layout: default
 ---
+<div class="grid">
+  <h1 class="span-2">
+    {{ site.description }}
+  </h1>
+</div>
 
-<h1 class="intro">
-  Danny White is an Australian product designer based in NYC. Right now he's
-  building creator tools and native apps at
-  <a href="http://kickstarter.com/profile/dannywhite">Kickstarter</a>. In past
-  lives he's worked at design studio <a href="http://ustwo.com">ustwo</a> and
-  contracted at Facebook in the
-  <a href="http://facebook.design">Interfaces, Design Tools</a>, and
-  <a href="http://origami.design">Origami</a> teams.
-</h1>
-
-<h2>Projects</h2>
-<ul class="inside">
+<!-- <h2>Projects</h2> -->
+<ul class="projects">
   {% for project in site.projects %}
   <li>
-    <a href="{{ project.url }}">{{ project.title | escape }}</a>
+    <a class="grid" href="{{ project.url }}">
+      <img class="span-2" src="assets/projects/{{ project.slug }}{{ project.featured_image | relative_url }}"
+        alt="A photo from the {{ project.title }} project" />
+      <div class="span-1">
+        <h4>{{ project.client | escape }}</h4>
+        <h3>{{ project.title | escape }}</h3>
+      </div>
+    </a>
   </li>
   {% endfor %}
+  <!--   
   <li></li>
   <li><em>Begin static projects:</em></li>
   <li></li>
@@ -36,33 +39,5 @@ layout: default
     <a href="http://github.com/ustwo/branded-interactions"
       >Branded Interactions</a
     >
-  </li>
-</ul>
-
-<h2>Writing</h2>
-<ul class="plain">
-  {% for post in site.posts %}
-  <li>
-    <h3>
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    </h3>
-    {% assign date_format = "%B %Y" %}
-    <time>{{ post.date | date: date_format }}</time>
-  </li>
-  {% endfor %}
-</ul>
-
-<h2>Elsewhere</h2>
-<ul class="inline">
-  <li>
-    <a
-      href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#x64;&#x61;&#x6e;&#x6e;&#x79;&#64;&#x64;&#x61;&#x6e;&#110;&#x79;&#119;&#x68;&#105;&#x74;&#x65;&#x2e;&#x73;&#105;&#116;&#101;"
-      >Email</a
-    >
-  </li>
-  <li><a href="http://github.com/dannyalright">GitHub</a></li>
-  <li><a href="http://instagram.com/dannywhite/">Instagram</a></li>
-  <li><a href="http://twitter.com/dannyalright">Twitter</a></li>
-  <li><a href="http://pinterest.com/dannyalright/pins/">Pinterest</a></li>
-  <li><a href="http://linkedin.com/in/dannyalright/">LinkedIn</a></li>
+  </li> -->
 </ul>

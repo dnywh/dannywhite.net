@@ -3,7 +3,7 @@ layout: post
 type: article
 title: "Bash your profile"
 date: 2018-04-07 09:12:00 -0400
-featured-image: atom-bash_profile.png
+featured_image: atom-bash_profile.png
 card-type: summary
 ---
 
