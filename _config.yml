@@ -26,7 +26,7 @@ url: "https://dannywhite.site" # the base hostname & protocol for your site, e.g
 author: Danny White
 
 # Build settings
-# markdown: kramdown
+markdown: kramdown
 
 # Stop Apple's emoji preference
 kramdown:
@@ -40,10 +40,10 @@ plugins:
 collections:
   posts:
     output: true
-    # permalink: /notes/:year/:month/:day/:title/
-    permalink: /notes/:year/:title/
+    permalink: /notes/:year/:title
   projects:
     output: true
+    permalink: /projects/:title
     order:
       - time-is-running-out.md
       - environmental-resources-center.md
@@ -51,8 +51,10 @@ collections:
       - loupe.md
       - kickstarter-sketch-plugin.md
       - origami.md
+      - contextkit
+      - branded-interactions.md
   books:
-    output: true
+    output: false
 
 # Exclude directories and/or files from the conversion
 exclude:

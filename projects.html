@@ -1,0 +1,24 @@
+---
+layout: default
+title: Projects
+---
+
+<h1>Temporary Projects header</h1>
+<h2>Here's another way to see all my projects</h2>
+
+<p>Maybe I should add a filter thing here.</p>
+
+<ul class="projects">
+    {% for project in site.projects %}
+    <li>
+        <a href="{{ project.url }}">
+            <img data-src="{{ site.url }}/assets/projects/{{ project.slug }}/{{ project.featured_image }}"
+                alt="A photo from the {{ project.title }} project" />
+            <div>
+                <h4>{{ project.client | escape }}</h4>
+                <h3>{{ project.title | escape }}</h3>
+            </div>
+        </a>
+    </li>
+    {% endfor %}
+</ul>

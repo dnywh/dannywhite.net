@@ -5,7 +5,7 @@ layout: default
 <article>
   <div class="{{ page.image_arrangement }}">
     {% for item in page.top_images %}
-    <img src="/assets/projects/{{ page.slug }}{{ item.name | relative_url }}" alt="{{ item.alt }}">
+    <img data-src="/assets/projects/{{ page.slug }}{{ item.name | relative_url }}" alt="{{ item.alt }}">
     {% endfor %}
   </div>
 

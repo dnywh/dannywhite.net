@@ -4,7 +4,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>
     {% if page.title %}
-    {{ page.title | strip_html | strip_newlines | truncate: 160 }}
+    {{ page.title | strip_html | strip_newlines | truncate: 160 }} &mdash; {{ site.title | escape }}
     {% else %}
     {{ site.title | escape }}
     {% endif %}

@@ -2,6 +2,7 @@
 :root {
     --itemGap: 1rem;
     --foregroundColor: black;
+    --halfColor: rgba(0, 0, 0, 0.15);
     --gridStructure: 1fr 1fr 1fr;
 }
 
@@ -10,24 +11,11 @@ h1 {
 }
 img {
     max-width: 100%;
+    background-color: var(--halfColor);
 }
 
 body {
     margin: var(--itemGap);
-}
-
-/* Grid */
-.grid {
-    display: grid;
-    grid-template-columns: var(--gridStructure);
-    grid-gap: var(--itemGap);
-}
-
-.span-1 {
-    grid-column: span 1;
-}
-.span-2 {
-    grid-column: span 2;
 }
 
 
@@ -61,6 +49,10 @@ footer ul {
 }
 
 /* Home */
+h1.home-intro {
+    max-width: 66%;
+}
+
 ul.projects {
     list-style-type: none;
     padding-left: 0;
@@ -69,6 +61,19 @@ ul.projects {
 ul.projects li {
     margin-bottom: var(--itemGap);
 }
+
+ul.projects li a {
+    text-decoration: none;
+    color: inherit;
+    display: grid;
+    grid-template-columns: var(--gridStructure);
+    gap: var(--itemGap);
+}
+
+ul.projects li a img {
+    grid-column: span 2;
+}
+
 
 /* Project */
 article > header {

@@ -1,20 +1,18 @@
 ---
 layout: default
 ---
-<div class="grid">
-  <h1 class="span-2">
-    {{ site.description }}
-  </h1>
-</div>
+<h1 class="home-intro">
+  {{ site.description }}
+</h1>
 
 <!-- <h2>Projects</h2> -->
 <ul class="projects">
   {% for project in site.projects %}
   <li>
-    <a class="grid" href="{{ project.url }}">
-      <img class="span-2" src="assets/projects/{{ project.slug }}{{ project.featured_image | relative_url }}"
+    <a href="{{ project.url }}">
+      <img data-src="assets/projects/{{ project.slug }}{{ project.featured_image | relative_url }}"
         alt="A photo from the {{ project.title }} project" />
-      <div class="span-1">
+      <div>
         <h4>{{ project.client | escape }}</h4>
         <h3>{{ project.title | escape }}</h3>
       </div>
