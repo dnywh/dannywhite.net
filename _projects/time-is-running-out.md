@@ -8,13 +8,13 @@ image_arrangement: one-vertical-two-horizontal
 top_images:
   - 
     name: heather-craig.jpg
-    alt: test 1 alt
+    alt: Girl at Climate March with Time Is Running Out poster behind her
   - 
     name: krys-maniecki.jpg
-    alt: test 2 alt
+    alt: Four kids sitting on garbage bins and holding Climate Strike posters
   - 
     name: dan-stacking.jpg
-    alt: test 3 alt
+    alt: Dan stacking freshly-printed posters
 date: 2019-09-11 09:00:00 -0400
 timeline:
   start: 2019-08-28
@@ -87,7 +87,7 @@ Paper was a snafu. So we went to print in two parts.
 
 ## In retrospect
 
-I dont' regret the visual simplicity of the posters. Yes, we were too time and resource sconstrainted to do anyhting more intricate—but the execution matches the message.
+I don't regret the visual simplicity of the posters. Yes, we were too time and resource sconstrainted to do anyhting more intricate—but the execution matches the message.
 
 Perhaps we could have scouted similar efforts sooner, such as 350.org's art builds that were occuring weekends prior to the march.
 

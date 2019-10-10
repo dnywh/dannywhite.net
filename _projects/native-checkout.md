@@ -2,10 +2,8 @@
 layout: project
 title: Kickstarter native checkout
 story: Taking an error-prone, multi-platform experience into a fully-native experience. Incrementally rolling out changes to change as we go and support a cross-functional future.
-# TODO add featured image
 featured_image: edit-pledge-amount.jpg
-# TODO fix year to 2019
-date: 2018-09-01 09:00:00 -0400
+date: 2019-09-01 09:00:00 -0400
 # timeline:
 #   start: 2018-09-01
 #   end: 2019-08-09

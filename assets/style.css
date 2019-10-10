@@ -2,6 +2,7 @@
 :root {
     --itemGap: 1rem;
     --foregroundColor: black;
+    --gridStructure: 1fr 1fr 1fr;
 }
 
 h1 {
@@ -18,7 +19,7 @@ body {
 /* Grid */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: var(--gridStructure);
     grid-gap: var(--itemGap);
 }
 
@@ -50,8 +51,8 @@ body > header nav ul li {
 
 /* Footer */
 footer {
-    /* display: flex;
-    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: var(--gridStructure);
 }
 
 footer ul {
@@ -73,7 +74,7 @@ ul.projects li {
 article > header {
     /* Consider replacing with flex once all browsers support `gap` for flex */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: var(--gridStructure);
     gap: var(--itemGap);
 }
 
@@ -92,7 +93,7 @@ article > header ul {
 /* Project: grid templates */
 .one-vertical-two-horizontal {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: var(--gridStructure);
     grid-template-rows: 1fr 1fr;
     grid-gap: var(--itemGap);
     /* Must match Safari definitions below */
