@@ -1,0 +1,21 @@
+---
+layout: default
+title: Notes Archive
+---
+
+<h1>Notes archive</h1>
+<h2>Hi there. This is my archive. Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</h2>
+
+<ul>
+    {% for post in site.posts %}
+    <hr>
+    <li>
+        <h3>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h3>
+        {% assign date_format = "%B %Y" %}
+        <time>{{ post.date | date: date_format }}</time>
+    </li>
+
+    {% endfor %}
+</ul>
