@@ -4,6 +4,53 @@ title: About
 ---
 <img class="single-hero" data-src="{{ "assets/images/danny-mbq-panel.jpg" | relative_url }}"
     alt="Danny speaking at a panel">
+
 <h1>About</h1>
-<p>A longer page that goes over who I am, what I stand for, and my back-story. Add a bit more for education, Pratt, and
-    all that. Go through the old CV for it.</p>
+
+{% capture about_bio_include %}{% include_relative _includes/about-bio.md %}{% endcapture %}
+{{ about_bio_include | markdownify }}
+
+<h2>Client roster</h2>
+{% capture about_client_list_include %}{% include_relative _includes/about-client-list.md %}{% endcapture %}
+{{ about_client_list_include | markdownify }}
+
+<h2>Engagements</h2>
+<ul>
+    <li>Loupe 2018 opening speaker</li>
+    <li>Pratt</li>
+    <li>GA</li>
+    <li>Framer NYC organiser</li>
+</ul>
+
+<h2>Press &amp; publications</h2>
+<ul>
+    <li><a href="">Loupe video</a></li>
+    <li><a href="">Framer blog post</a></li>
+    <li><a href="">Marvel blog post</a></li>
+</ul>
+
+<h2>Education</h2>
+<ul>
+    <li>
+        <ul>
+            <li>Bachelor of Design, Visual Communication</li>
+            <li>University of Technology, Sydney</li>
+            <li> Educational Equivalent in United States:
+                Bachelor of Fine Arts Degree in Visual Communication Design
+                Evaluated by The Trustforte Corporation
+            </li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+            <li>Bachelor of Design in Industrial Design (transfer)</li>
+            <li>University of Technology, Sydney</li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+            <li>Creative Leadership, Unconscious Bias, Diversity Training</li>
+            <li>Kaospilot</li>
+        </ul>
+    </li>
+</ul>
