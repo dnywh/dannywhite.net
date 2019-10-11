@@ -1,0 +1,14 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Imports: shared components
+@import "base";
+@import "home";
+@import "header";
+@import "footer";
+
+// Imports: page specific
+@import "projects";
+@import "about";
+@import "notes";

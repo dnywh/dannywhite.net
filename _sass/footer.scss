@@ -1,0 +1,10 @@
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: var(--grid-column-structure);
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}

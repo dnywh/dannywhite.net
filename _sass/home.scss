@@ -1,0 +1,29 @@
+/* Home */
+h1.home-intro {
+  max-width: 66%;
+}
+
+ul.projects {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.projects li {
+  margin-bottom: var(--gap-small);
+}
+
+ul.projects li a {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  grid-template-columns: var(--grid-column-structure);
+  gap: var(--gap-small);
+}
+
+ul.projects li a:hover {
+  opacity: var(--opacity-hover-block);
+}
+
+ul.projects li a img {
+  grid-column: span 2;
+}

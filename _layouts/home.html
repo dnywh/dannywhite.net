@@ -5,6 +5,8 @@ layout: default
   {{ site.description }}
 </h1>
 
+<hr>
+
 <h2>Select projects</h2>
 <p> <a href="/projects">See all</a></p>
 
@@ -15,29 +17,10 @@ layout: default
       <img data-src="assets/projects/{{ project.slug }}{{ project.featured_image | relative_url }}"
         alt="A photo from the {{ project.title }} project" />
       <div>
-        <h4>{{ project.client | escape }}</h4>
+        <!-- <h4>{{ project.client | escape }}</h4> -->
         <h3>{{ project.title | escape }}</h3>
       </div>
     </a>
   </li>
   {% endfor %}
-  <!--   
-  <li></li>
-  <li><em>Begin static projects:</em></li>
-  <li></li>
-  <li>
-    <a href="/projects/contextkit">ContextKit</a>
-  </li>
-  <li><a href="http://origami.design/tutorials/">Origami: Learn</a></li>
-  <li>
-    <a href="http://origami.design/examples/">Origami: Example Gallery</a>
-  </li>
-  <li>
-    <a href="http://dannywhite.site/aussie-american">Aussie American</a>
-  </li>
-  <li>
-    <a href="http://github.com/ustwo/branded-interactions"
-      >Branded Interactions</a
-    >
-  </li> -->
 </ul>
