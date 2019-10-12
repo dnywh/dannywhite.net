@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 featured: true
 title: Kickstarter Native Checkout
 story: Taking an error-prone, multi-platform experience into a fully-native experience. Incrementally rolling out changes to change as we go and support a cross-functional future.

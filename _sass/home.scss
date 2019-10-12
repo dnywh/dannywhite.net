@@ -4,16 +4,16 @@ h1.home-intro {
   font-size: 5vmax;
 }
 
-ul.projects {
+ul.work {
   list-style-type: none;
   padding-left: 0;
 }
 
-ul.projects li {
+ul.work li {
   margin-bottom: var(--gap-small);
 }
 
-ul.projects li a {
+ul.work li a {
   text-decoration: none;
   color: inherit;
   display: grid;
@@ -21,10 +21,10 @@ ul.projects li a {
   gap: var(--gap-small);
 }
 
-ul.projects li a:hover {
+ul.work li a:hover {
   opacity: var(--opacity-hover-block);
 }
 
-ul.projects li a img {
+ul.work li a img {
   grid-column: span 2;
 }

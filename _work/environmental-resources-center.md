@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 featured: true
 image_arrangement: single-horizontal
 image_arrangement_images:

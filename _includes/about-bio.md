@@ -1,6 +1,6 @@
 ## Work history
 
-Most recently I was a Senior and then Staff Designer at Kickstarter, where I led the design for its iOS and Android applications. I also led design for Kickstarter's environmental work, including the <a href="{% link _projects/environmental-resources-center.md %}">Environmental Resources Center</a>, and help design the project creation experience.
+Most recently I was a Senior and then Staff Designer at Kickstarter, where I led the design for its iOS and Android applications. I also led design for Kickstarter's environmental work, including the <a href="{% link _work/environmental-resources-center.md %}">Environmental Resources Center</a>, and help design the project creation experience.
 
 At ustwo, I helped create and foster projects with the likes of Facebook, Nike, Google, GE, AT&T, and the Office of the Mayor of New York City. The work we did for the Office of the Mayor of New York City went on to receive an Adobe Government Creativity Award in 2018.
 

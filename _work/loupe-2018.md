@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 featured: true
 title: "Loupe 2018: Danny White on Designing for People"
 byline: Opening the inaugural Loupe conference with a talk on human-centred design.

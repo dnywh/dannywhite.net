@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 featured: true
 image_arrangement: one-vertical-two-horizontal
 image_arrangement_images:
@@ -33,7 +33,7 @@ Overview of project and it's impact.
 
 It all started with a text message.
 
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/message.png" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/message.png" alt="TODO">
 
 Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was taking all of our attention.
 
@@ -52,7 +52,7 @@ Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was ta
   - Would have preferred not to; and just gone straight to Dan to hash it out, analog. Had to given the Sept 20 deadline and need to visualise on Kickstarter.
   - Kept it as short as possible and stressed the nature of change on Kickstarter
 
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/figma-process.png" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/figma-process.png" alt="TODO">
 
 - Deciding feasible printing options
 - Artwork for campaign, Instagram
@@ -61,22 +61,22 @@ Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was ta
 
 The Arm, specifically Dan who runs the join, was by far the most receptive and flexible.
 
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/dan-setup.jpg" alt="Dan setting up the wooden type">
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/hand-setup.jpg" alt="TODO">
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/trio-composition.jpg" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/dan-setup.jpg" alt="Dan setting up the wooden type">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/hand-setup.jpg" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/trio-composition.jpg" alt="TODO">
 
 ## Printing
 
 Paper was a snafu. So we went to print in two parts.
 
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/dan-composition.jpg" alt="TODO">
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/dan-measuring.jpg" alt="TODO">
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/jon-scoring.jpg" alt="TODO">
-<img data-src="{{ site.url }}/assets/projects/time-is-running-out/danny-poster.jpg" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/dan-composition.jpg" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/dan-measuring.jpg" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/jon-scoring.jpg" alt="TODO">
+<img data-src="{{ site.url }}/assets/work/time-is-running-out/danny-poster.jpg" alt="TODO">
 
-![TODO]({{ site.url }}/assets/projects/time-is-running-out/arm-tour.m4v)
+![TODO]({{ site.url }}/assets/work/time-is-running-out/arm-tour.m4v)
 
-![Cassie using the Vandercook]({{ site.url }}/assets/projects/time-is-running-out/arm-vandercook.m4v)
+![Cassie using the Vandercook]({{ site.url }}/assets/work/time-is-running-out/arm-vandercook.m4v)
 
 - More printing photos from later run(s)
 - Car shot

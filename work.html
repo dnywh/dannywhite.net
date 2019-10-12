@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Projects
+title: Work
 ---
 
-<h1>Projects</h1>
-<h2>A collection of in-house, agency, and personal work.</h2>
-<ul class="projects">
-    {% for project in site.projects %}
+<h1>Work</h1>
+<h2>A collection of in-house, agency, and personal projects.</h2>
+<ul class="work">
+    {% for project in site.work %}
     <li>
         <a href="{{ project.url }}">
-            <img data-src="{% link /assets/projects/{{ project.slug }}/{{ project.featured_image }} %}"
+            <img data-src="{% link /assets/work/{{ project.slug }}/{{ project.featured_image }} %}"
                 alt="A photo from the {{ project.title }} project" />
             <div>
                 <!-- <h4>{{ project.client | escape }}</h4> -->

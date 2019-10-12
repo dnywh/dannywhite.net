@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 featured: true
 title: Kickstarter Sketch Plugin
 byline: Increasing the fidelity and rigidity at which the Kickstarter design team ideates, prototypes, and creates.

@@ -52,9 +52,9 @@ collections:
   posts:
     output: true
     permalink: /notes/:year/:title
-  projects:
+  work:
     output: true
-    permalink: /projects/:title
+    permalink: /work/:title
     order:
       - time-is-running-out.md
       - environmental-resources-center.md

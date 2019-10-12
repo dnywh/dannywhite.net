@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 featured: true
 title: Origami
 date: 2016-10-27 09:00:00 -0400

@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: work
 # image_arrangement: single-horizontal
 # image_arrangement_images:
 #   - name: temp-screenshot.png
@@ -20,4 +20,4 @@ organisations:
 
 ## Assets
 
-- <a href="{% link assets/projects/syd/syd-trains-style-guide.pdf %}">Sydney Trains Style Guidelines</a>
+- <a href="{% link assets/work/syd/syd-trains-style-guide.pdf %}">Sydney Trains Style Guidelines</a>
