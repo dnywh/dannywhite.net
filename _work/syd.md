@@ -11,6 +11,9 @@ featured_image: syd-livery.jpg
 roles:
   - Graphic design
   - Branding
+tags:
+  - early
+  - student work
 locations:
   - Sydney, Australia
 organisations:

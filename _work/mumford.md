@@ -11,6 +11,8 @@ featured_image: mumford-truck-front.jpg
 roles:
   - Graphic design
   - Branding
+tags:
+  - early
 locations:
   - Sydney, Australia
 organisations:
