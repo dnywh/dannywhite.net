@@ -1,5 +1,6 @@
 ---
 layout: project
+featured: true
 title: Kickstarter Sketch Plugin
 tagline: Increasing the fidelity and rigidity at which the Kickstarter design team ideates, prototypes, and creates.
 date: 2019-06-26 09:00:00 -0400

@@ -1,13 +1,13 @@
 ---
 layout: project
-image_arrangement: single-horizontal
-image_arrangement_images:
-  - name: temp-screenshot.png
-    alt: A screenshot of the Environmental Resources Center
-title: Kickstarter Environmental Resources Center
-tagline: Helping indepedent creators evaluate and reduce the environmental impact of their products.
-date: 2018-11-29 09:00:00 -0400
-featured_image: transparent-speaker.jpg
+# image_arrangement: single-horizontal
+# image_arrangement_images:
+#   - name: temp-screenshot.png
+#     alt: A screenshot of the Environmental Resources Center
+title: Syd
+tagline: A cohesive identity for the trains, buses, and ferries that connect Sydney's diverse geography.
+date: 2014-05-13 09:00:00 +1000
+featured_image: syd-livery.jpg
 roles:
   - Graphic design
   - Branding
@@ -17,3 +17,7 @@ organisations:
   - University of Technology, Sydney
   - Transport for NSW
 ---
+
+## Assets
+
+- <a href="{% link assets/projects/syd/syd-trains-style-guide.pdf %}">Sydney Trains Style Guidelines</a>

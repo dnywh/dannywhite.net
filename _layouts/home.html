@@ -9,6 +9,7 @@ layout: default
 
 <ul class="projects">
   {% for project in site.projects %}
+  {% if project.featured == true %}
   <li>
     <a href="{{ project.url }}">
       <img data-src="assets/projects/{{ project.slug }}{{ project.featured_image | relative_url }}"
@@ -19,6 +20,7 @@ layout: default
       </div>
     </a>
   </li>
+  {% endif %}
   {% endfor %}
 </ul>
 

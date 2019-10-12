@@ -1,5 +1,6 @@
 ---
 layout: project
+featured: true
 image_arrangement: one-vertical-two-horizontal
 image_arrangement_images:
   - name: heather-craig.jpg

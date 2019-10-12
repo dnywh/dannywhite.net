@@ -62,8 +62,10 @@ collections:
       - loupe-2018.md
       - kickstarter-sketch-plugin.md
       - origami.md
-      - contextkit
+      - contextkit.md
       - branded-interactions.md
+      - syd.md
+      - mumford.md
 
 # Exclude directories and/or files from the conversion
 exclude:
