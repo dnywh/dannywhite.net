@@ -17,13 +17,13 @@ Repeatedly typing in the same commands into Terminal is annoying, takes time, an
 
 To navigate to my personal site's local folder, I'd manually type:
 
-```
+```shell
 cd ~/Projects/dannywhite.site
 ```
 
 That would almost always be followed up by the command to start the local Jekyll server to preview changes to that site:
 
-```
+```shell
 bundle exec jekyll serve
 ```
 
@@ -35,7 +35,7 @@ A bit painful.
 
 You can shorten these commands into shortcuts of your choosing. My shortcuts for the above three commands are `me`, `jek`, and `atom` respectively. So to get those same three things done, I'd instead write:
 
-```
+```shell
 me
 jek
 atom .
@@ -49,7 +49,7 @@ Here's what mine looks like with shortcuts already made at the bottom:
 
 Notice the syntax that each of my shortcuts are using? Here's a breakdown:
 
-```
+```shell
 alias your-shortcut-name="whatever-you're-shortening"
 ```
 

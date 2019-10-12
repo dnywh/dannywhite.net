@@ -20,15 +20,22 @@
 
 title: Danny White
 description: >- # this means to ignore newlines until "baseurl:"
-  Danny White is a digital designer working on climate mobilisation and
+  Danny White is a digital product designer working on climate mobilisation and
   sustainability.
 url: "https://dannywhite.site" # the base hostname & protocol for your site, e.g. http://example.com
 author: Danny White
 
 # Build settings
 markdown: kramdown
+# The below seem to be now built-in
+# kramdown:
+#   syntax_highlighter: rouge
+# highlighter: rouge
 sass:
   style: compressed
+compress_html:
+  comments: ["<!-- ", " -->"]
+  blanklines: true
 
 # Stop Apple's emoji preference
 kramdown:

@@ -1,19 +1,14 @@
 /* Notes */
-ul.notes {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul.notes li {
+article.note {
   display: grid;
   grid-template-columns: var(--grid-column-structure);
   gap: var(--gap-small);
 }
 
-ul.notes li div:nth-child(1) {
+article.note header {
   grid-column: 1;
 }
 
-ul.notes li div:nth-child(2) {
+article.note section {
   grid-column: 2 / 4;
 }

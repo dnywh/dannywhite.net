@@ -1,16 +1,16 @@
 /* Project */
-article > header {
+article.project > header {
   /* Consider replacing with flex once all browsers support `gap` for flex */
   display: grid;
   grid-template-columns: var(--grid-column-structure);
   gap: var(--gap-small);
 }
 
-article > header div {
+article.project > header div {
   grid-column: span 2;
 }
 
-article > header ul {
+article.project > header ul {
   grid-column: 3;
   list-style-type: none;
   padding-left: 0;

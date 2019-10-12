@@ -2,6 +2,7 @@
 footer {
   display: grid;
   grid-template-columns: var(--grid-column-structure);
+  gap: var(--gap-small);
 }
 
 footer ul {

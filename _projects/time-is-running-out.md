@@ -1,19 +1,16 @@
 ---
 layout: project
+image_arrangement: one-vertical-two-horizontal
 title: "Time is Running Out: Strike for Climate!"
 story: Posters for the 2019 Global Climate Strike and beyond.
 client: Personal project
 featured_image: krys-maniecki.jpg
-image_arrangement: one-vertical-two-horizontal
 top_images:
-  - 
-    name: heather-craig.jpg
+  - name: heather-craig.jpg
     alt: Girl at Climate March with Time Is Running Out poster behind her
-  - 
-    name: krys-maniecki.jpg
+  - name: krys-maniecki.jpg
     alt: Four kids sitting on garbage bins and holding Climate Strike posters
-  - 
-    name: dan-stacking.jpg
+  - name: dan-stacking.jpg
     alt: Dan stacking freshly-printed posters
 date: 2019-09-11 09:00:00 -0400
 timeline:
@@ -79,7 +76,6 @@ Paper was a snafu. So we went to print in two parts.
 
 ![TODO]({{ site.url }}/assets/projects/time-is-running-out/arm-tour.m4v)
 
-
 ![Cassie using the Vandercook]({{ site.url }}/assets/projects/time-is-running-out/arm-vandercook.m4v)
 
 - More printing photos from later run(s)
@@ -91,8 +87,8 @@ I don't regret the visual simplicity of the posters. Yes, we were too time and r
 
 Perhaps we could have scouted similar efforts sooner, such as 350.org's art builds that were occuring weekends prior to the march.
 
-
 ## Additional credits
+
 _Top image copyright Heather Craig, Survival Media Agency. Found on 350.org's 'Best of Climate Strike' [gallery](https://350org.widencollective.com/portals/iucshiv3/GlobalClimateStrikesMultimediaHub/c/0891419c-b1be-43df-a7a5-0b6699bacf59)._
 
 _Second photo of four kids by Krys Maniecki._

@@ -7,21 +7,19 @@ title: Notes
 <h2>I write occasionally. Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a> or <a
         href="{{ "/notes/archive" | relative_url }}">view the archive</a>.</h2>
 
-<ul class="notes">
-    {% for post in site.posts %}
-    <hr>
-    <li>
-        <div>
-            <h3>
-                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h3>
-            {% assign date_format = "%B %Y" %}
-            <time>{{ post.date | date: date_format }}</time>
-        </div>
-        <div>
-            {{ post.content }}
-        </div>
-    </li>
+{% for post in site.posts %}
+<hr>
+<article class="note">
+    <header>
+        <h3>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h3>
+        {% assign date_format = "%B %Y" %}
+        <time>{{ post.date | date: date_format }}</time>
+    </header>
+    <section>
+        {{ post.content }}
+    </section>
+</article>
 
-    {% endfor %}
-</ul>
+{% endfor %}

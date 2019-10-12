@@ -1,5 +1,6 @@
 ---
 layout: project
+image_arrangement: one-vertical-two-horizontal
 title: Kickstarter Environmental Resources Center
 date: 2018-11-29 09:00:00 -0400
 featured_image: transparent-speaker.jpg
@@ -33,4 +34,14 @@ press:
     url: https://twitter.com/kickstarter/status/1067500854478086144
 ---
 
-https://www.figma.com/file/DlAeA2ExdFfj5Oo0JQSvgdgB/Environmental-Resource-Center?node-id=73%3A0
+<!-- https://www.figma.com/file/DlAeA2ExdFfj5Oo0JQSvgdgB/Environmental-Resource-Center?node-id=73%3A0 -->
+
+## Problem
+
+Design & technology projects on Kickstarter have the largest environmental footprint on the platform. We hypothesised that providing creators with tools to assess, mitigate, and communicate the environmental impacts of their planned projects would incentivise them to consider environmentally conscious production choices.
+
+## Role and collaborators
+
+I was the sole designer on a non-team comprised of a product strategist (Jon Leland), design & technology outreach specialist (Heather Corcoran), and sustainability officer (Alexandra Criscuolo). My responsibilities included the design direction for project creation changes, project presentation changes, and any resources or guidelines.
+
+I also led engineering on what ultimately became the [Environmental Resources Center](), with help from software engineer Rob Lum.

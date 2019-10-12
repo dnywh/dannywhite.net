@@ -12,6 +12,8 @@
   // Custom properties: opacity
   --opacity-hover-block: 0.75;
   --opacity-hover-text: 0.5;
+  // Custom properties: time
+  --time-hover: 0.33s;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -24,7 +26,6 @@
 
 * {
   box-sizing: border-box;
-  transition: 0.33s;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
 
 a {
   color: var(--color-foreground);
+  transition: opacity var(--time-hover);
 }
 
 a:hover {
@@ -45,6 +47,27 @@ h1 {
   font-size: 3.5rem;
 }
 
+@media only screen and (min-width: 40rem) {
+  h1,
+  h2,
+  h3,
+  article p,
+  article ul,
+  pre {
+    max-width: 40rem;
+  }
+}
+pre {
+  white-space: pre-wrap;
+  // line-height: 1.2rem;
+}
+
+// code {
+//   background-color: var(--color-foreground-faded);
+//   padding: 0.125rem 0.25rem;
+//   border-radius: 0.125rem;
+//   border: 1px solid var(--color-foreground-faded);
+// }
 img,
 video {
   max-width: 100%;
