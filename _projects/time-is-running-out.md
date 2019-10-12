@@ -1,22 +1,21 @@
 ---
 layout: project
 image_arrangement: one-vertical-two-horizontal
-title: "Time is Running Out: Strike for Climate!"
-story: Posters for the 2019 Global Climate Strike and beyond.
-client: Personal project
-featured_image: krys-maniecki.jpg
-top_images:
+image_arrangement_images:
   - name: heather-craig.jpg
     alt: Girl at Climate March with Time Is Running Out poster behind her
   - name: krys-maniecki.jpg
     alt: Four kids sitting on garbage bins and holding Climate Strike posters
   - name: dan-stacking.jpg
     alt: Dan stacking freshly-printed posters
+title: "Time is Running Out: Strike for Climate!"
+tagline: Posters for the 2019 Global Climate Strike and beyond.
+featured_image: krys-maniecki.jpg
 date: 2019-09-11 09:00:00 -0400
-timeline:
-  start: 2019-08-28
-  end: 2019-09-20
-role: Art direction, graphic design, letterpress printing, fulfillment.
+roles: 
+  - Art direction
+  - Graphic design
+  - Letterpress printing
 collaborators:
   - Jon Leland
   - Cassie Marketos

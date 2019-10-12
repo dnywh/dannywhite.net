@@ -39,6 +39,5 @@ Suppose you'd like to preview your in-progress site on your phone or iPad. This 
 
 ## Credits
 
-### Fonts
-
-Most type on the site is set in [Inter UI](http://rsms.me/inter/) by Rasmus Andersson.
+#### Email encoding
+I used www.email-encoder.com.

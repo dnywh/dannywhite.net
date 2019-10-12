@@ -7,9 +7,6 @@ layout: default
 
 <hr>
 
-<h2>Select projects</h2>
-<p> <a href="/projects">See all</a></p>
-
 <ul class="projects">
   {% for project in site.projects %}
   <li>
@@ -18,9 +15,11 @@ layout: default
         alt="A photo from the {{ project.title }} project" />
       <div>
         <!-- <h4>{{ project.client | escape }}</h4> -->
-        <h3>{{ project.title | escape }}</h3>
+        <h2>{{ project.title | escape }}</h2>
       </div>
     </a>
   </li>
   {% endfor %}
 </ul>
+
+<p> <a href="/projects">See all projects</a></p>

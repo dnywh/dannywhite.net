@@ -1,8 +1,10 @@
 <nav>
     <ul>
+        {% if page.layout != "home" %}
         <li>
             <a href="{{ "/" | relative_url }}">Home</a>
         </li>
+        {% endif %}
         <li>
             <a href="/projects">Projects</a>
         </li>

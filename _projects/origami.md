@@ -3,16 +3,21 @@ layout: project
 title: Origami
 date: 2016-10-27 09:00:00 -0400
 featured_image: learn-origami.png
-role: Led design for educational curriculum on [origami.design](http://origami.design). Contributed to interface design and onboarding.
+tagline: Led design for Origami's curriculum. Contributed to interface design and onboarding.
+roles:
+  - UX research
+  - Product design
+  - Video production
+  - Video editing
 collaborators:
-  - Matej Hrescak
-  - David Fisher
-  - Julius Tarng
   - Andrew Pouliot
   - Blair Heuer
-  - Madelin Woods
+  - David Fisher
   - John Evans
+  - Julius Tarng
   - Kara Fong
+  - Madelin Woods
+  - Matej Hrescak
 locations:
   - New York, NY
   - Menlo Park, CA

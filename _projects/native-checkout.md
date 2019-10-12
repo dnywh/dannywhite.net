@@ -4,10 +4,18 @@ title: Kickstarter Native Checkout
 story: Taking an error-prone, multi-platform experience into a fully-native experience. Incrementally rolling out changes to change as we go and support a cross-functional future.
 featured_image: edit-pledge-amount.jpg
 date: 2019-09-01 09:00:00 -0400
-# timeline:
-#   start: 2018-09-01
-#   end: 2019-08-09
-role: Product design.
+roles:
+  - UX research
+  - Product design
+collaborators:
+  - Christella Dolmo
+  - Isabel Barrera
+  - Izzy Oji
+  - Justin Swart
+  - Nino Collaço
+  - Nneka Bolden
+  - Pavel Dusatko
+  - Jamie Roth
 locations:
   - New York, NY
   - Vancouver, Canada

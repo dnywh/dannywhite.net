@@ -1,12 +1,20 @@
 ---
 layout: project
 title: Kickstarter Sketch Plugin
+tagline: Increasing the fidelity and rigidity at which the Kickstarter design team ideates, prototypes, and creates.
 date: 2019-06-26 09:00:00 -0400
-role: Designed plugin capabilities and wrote code alongside Walter.
+roles:
+  - Strategy
+  - Sketch plugin development (JavaScript)
+  - Product design
 collaborators:
   - Walter Beller-Morales
-organisations:
-  - Kickstarter
+locations:
+  - New York, NY
 client: Kickstarter
 featured_image: kickstarter-data-angled.jpg
 ---
+
+<!-- Making Kickstarter data available to the Kickstarter design team (and soon to the general public) for more honest prototyping and stress-testing -->
+
+<!-- Designed plugin capabilities and wrote code alongside Walter. -->

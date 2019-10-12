@@ -37,9 +37,11 @@ compress_html:
   comments: ["<!-- ", " -->"]
   blanklines: true
 
-# Stop Apple's emoji preference
 kramdown:
+  # Stop Apple's emoji preference
   footnote_backlink: "&#8617;&#65038;"
+  # Prevent automatic h2, h3, etc, ids
+  auto_ids: false
 
 plugins:
   - jekyll-feed
@@ -57,13 +59,11 @@ collections:
       - time-is-running-out.md
       - environmental-resources-center.md
       - native-checkout.md
-      - loupe.md
+      - loupe-2018.md
       - kickstarter-sketch-plugin.md
       - origami.md
       - contextkit
       - branded-interactions.md
-  books:
-    output: false
 
 # Exclude directories and/or files from the conversion
 exclude:

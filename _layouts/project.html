@@ -4,7 +4,7 @@ layout: default
 
 <article class="project">
   <div class="{{ page.image_arrangement }}">
-    {% for item in page.top_images %}
+    {% for item in page.image_arrangement_images %}
     <img data-src="/assets/projects/{{ page.slug }}{{ item.name | relative_url }}" alt="{{ item.alt }}">
     {% endfor %}
   </div>
@@ -12,7 +12,7 @@ layout: default
   <header>
     <div>
       <h1>{{ page.title | escape }}</h1>
-      <h2>{{ page.story }}</h2>
+      <h2>{{ page.tagline }}</h2>
     </div>
 
     <ul>
@@ -21,24 +21,54 @@ layout: default
           {% assign date_format = site.minima.date_format | default: "%B %Y" %}
           {{ page.date | date: date_format }}
         </time></li>
-      <li>Role: {{ page.role }}</li>
-      <li>Locations: {{ page.locations }}</li>
-      <li>Organisations: {{ page.organisations }}</li>
-      <li>Collaborators: {{ page.collaborators }}</li>
-      <li>Press: {{ page.press }}</li>
+      <li>Roles:
+        {% assign rolesArray = '' | split:':' %}
+        {% for item in page.roles %}
+        {% assign rolesArray = rolesArray | push: item %}
+        {% endfor %}
+
+        {{ rolesArray | array_to_sentence_string }}
+      </li>
+      <li>Locations:
+        {% assign locationsArray = '' | split:':' %}
+        {% for item in page.locations %}
+        {% assign locationsArray = locationsArray | push: item %}
+        {% endfor %}
+
+        {{ locationsArray | array_to_sentence_string }}
+      </li>
+      <li>Organisations:
+        {% assign organisationsArray = '' | split:':' %}
+        {% for item in page.organisations %}
+        {% assign organisationsArray = organisationsArray | push: item %}
+        {% endfor %}
+
+        {{ organisationsArray | array_to_sentence_string }}
+      </li>
+      <li>Collaborators:
+        {% assign collaboratorsArray = '' | split:':' %}
+        {% for item in page.collaborators %}
+        {% assign collaboratorsArray = collaboratorsArray | push: item %}
+        {% endfor %}
+
+        {{ collaboratorsArray | array_to_sentence_string }}
+      </li>
     </ul>
   </header>
 
 
   <section>
     {{ content }}
+    {% if page.press %}
+    <h2>Press</h2>
+    <ul class="press">
+      {% for item in page.press %}
+      <li>
+        <p><strong>{{ item.title }}</strong>
+          <br><a href="{{ item.url }}" target="_blank">{{ item.outlet }}</a></p>
+      </li>
+      {% endfor%}
+    </ul>
+    {% endif %}
   </section>
-
-  <section>
-    <hr>
-
-    <h2>Similar projects...</h2>
-  </section>
-
-
 </article>
