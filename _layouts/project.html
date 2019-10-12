@@ -5,14 +5,14 @@ layout: default
 <article class="project">
   <div class="{{ page.image_arrangement }}">
     {% for item in page.image_arrangement_images %}
-    <img data-src="/assets/projects/{{ page.slug }}{{ item.name | relative_url }}" alt="{{ item.alt }}">
+    <img data-src="{% link /assets/projects/{{ page.slug }}/{{ item.name }} %}" alt="{{ item.alt }}">
     {% endfor %}
   </div>
 
   <header>
     <div>
       <h1>{{ page.title | escape }}</h1>
-      <h2>{{ page.tagline }}</h2>
+      <h2>{{ page.byline }}</h2>
     </div>
 
     <ul>

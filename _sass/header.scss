@@ -5,7 +5,7 @@ body > header {
   align-items: center;
 }
 body > header svg {
-  width: 8rem;
+  width: 9vw;
   fill: var(--color-foreground);
 }
 
@@ -15,6 +15,7 @@ body > header nav ul {
 body > header nav ul li {
   display: inline;
   margin-left: var(--gap-small);
+  font-family: var(--type-display);
 }
 
 body > header nav ul li a {

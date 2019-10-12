@@ -10,7 +10,7 @@ image_arrangement_images:
   - name: dan-stacking.jpg
     alt: Dan stacking freshly-printed posters
 title: "Time is Running Out: Strike for Climate!"
-tagline: Posters for the 2019 Global Climate Strike and beyond.
+byline: Posters for the 2019 Global Climate Strike and beyond.
 featured_image: krys-maniecki.jpg
 date: 2019-09-11 09:00:00 -0400
 roles: 

@@ -6,7 +6,7 @@
   --color-background: white;
   --color-foreground-faded: rgba(0, 0, 0, 0.05);
   /* Custom properties: grid and spacing */
-  --gap-large: 2.5rem;
+  --gap-large: 3vw;
   --gap-small: 1rem;
   --grid-column-structure: repeat(3, 1fr);
   // Custom properties: opacity
@@ -14,6 +14,9 @@
   --opacity-hover-text: 0.5;
   // Custom properties: time
   --time-hover: 0.33s;
+  // Custom properties: type
+  --type-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --type-body: serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -45,6 +48,10 @@ a:hover {
 
 h1 {
   font-size: 3.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--type-display);
 }
 
 @media only screen and (min-width: 40rem) {
