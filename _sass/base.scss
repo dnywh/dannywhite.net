@@ -4,8 +4,10 @@
   /* Custom properties: colour */
   --color-foreground: black;
   --color-background: white;
-  --color-foreground-faded: rgba(0, 0, 0, 0.05);
+  --color-foreground-light: rgba(0, 0, 0, 0.05);
+  --color-foreground-medium: rgba(0, 0, 0, 0.5);
   /* Custom properties: grid and spacing */
+  --gap-content: 4rem;
   --gap-large: 3vw;
   --gap-small: 1rem;
   --grid-column-structure: repeat(3, 1fr);
@@ -23,7 +25,8 @@
     /* Custom properties: colour */
     --color-foreground: white;
     --color-background: black;
-    --color-foreground-faded: rgba(255, 255, 255, 0.05);
+    --color-foreground-light: rgba(255, 255, 255, 0.05);
+    --color-foreground-medium: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -70,15 +73,23 @@ pre {
 }
 
 // code {
-//   background-color: var(--color-foreground-faded);
+//   background-color: var(--color-foreground-light);
 //   padding: 0.125rem 0.25rem;
 //   border-radius: 0.125rem;
-//   border: 1px solid var(--color-foreground-faded);
+//   border: 1px solid var(--color-foreground-light);
 // }
 img,
 video {
   max-width: 100%;
-  background-color: var(--color-foreground-faded);
+  background-color: var(--color-foreground-light);
+}
+
+figure {
+  margin: 0;
+}
+
+img.clear {
+  background-color: var(--color-foreground-light);
 }
 
 hr {

@@ -3,11 +3,13 @@ layout: default
 ---
 
 <article class="project">
+  {% if page.image_arrangement %}
   <div class="{{ page.image_arrangement }}">
     {% for item in page.image_arrangement_images %}
     <img data-src="{% link /assets/work/{{ page.slug }}/{{ item.name }} %}" alt="{{ item.alt }}">
     {% endfor %}
   </div>
+  {% endif %}
 
   <header>
     <div>
@@ -16,42 +18,51 @@ layout: default
     </div>
 
     <ul>
-      <li>For: {{ page.client }}</li>
-      <li>Date: <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {% assign date_format = site.minima.date_format | default: "%B %Y" %}
-          {{ page.date | date: date_format }}
-        </time></li>
-      <li>Roles:
-        {% assign rolesArray = '' | split:':' %}
-        {% for item in page.roles %}
-        {% assign rolesArray = rolesArray | push: item %}
-        {% endfor %}
-
-        {{ rolesArray | array_to_sentence_string }}
+      <li>
+        <h4>For</h4>
+        <p>{{ page.client }}</p>
       </li>
-      <li>Locations:
-        {% assign locationsArray = '' | split:':' %}
-        {% for item in page.locations %}
-        {% assign locationsArray = locationsArray | push: item %}
-        {% endfor %}
-
-        {{ locationsArray | array_to_sentence_string }}
+      <li>
+        <h4>Date</h4>
+        <p>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.minima.date_format | default: "%B %Y" %}
+            {{ page.date | date: date_format }}
+          </time>
+        </p>
       </li>
-      <li>Organisations:
-        {% assign organisationsArray = '' | split:':' %}
-        {% for item in page.organisations %}
-        {% assign organisationsArray = organisationsArray | push: item %}
-        {% endfor %}
-
-        {{ organisationsArray | array_to_sentence_string }}
+      <li>
+        <h4>Roles</h4>
+        <p>
+            {% assign rolesArray = '' | split:':' %}
+            {% for item in page.roles %}
+            {% assign rolesArray = rolesArray | push: item %}
+            {% endfor %}
+    
+            {{ rolesArray | array_to_sentence_string }}
+        </p>
       </li>
-      <li>Collaborators:
-        {% assign collaboratorsArray = '' | split:':' %}
-        {% for item in page.collaborators %}
-        {% assign collaboratorsArray = collaboratorsArray | push: item %}
-        {% endfor %}
-
-        {{ collaboratorsArray | array_to_sentence_string }}
+      <li>
+        <h4>Organisations</h4>
+        <p>
+            {% assign organisationsArray = '' | split:':' %}
+            {% for item in page.organisations %}
+            {% assign organisationsArray = organisationsArray | push: item %}
+            {% endfor %}
+    
+            {{ organisationsArray | array_to_sentence_string }}
+        </p>
+      </li>
+      <li>
+        <h4>Collaborators</h4>
+        <p>
+            {% assign collaboratorsArray = '' | split:':' %}
+            {% for item in page.collaborators %}
+            {% assign collaboratorsArray = collaboratorsArray | push: item %}
+            {% endfor %}
+    
+            {{ collaboratorsArray | array_to_sentence_string }}
+        </p>
       </li>
     </ul>
   </header>

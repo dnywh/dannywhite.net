@@ -33,7 +33,10 @@ Overview of project and it's impact.
 
 It all started with a text message.
 
-<img data-src="{{ site.url }}/assets/work/time-is-running-out/message.png" alt="TODO">
+<figure>
+  <img data-src="{% link /assets/work/time-is-running-out/message.png %}" alt="TODO">
+  <figcaption>A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. </figcaption>
+</figure>
 
 Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was taking all of our attention.
 

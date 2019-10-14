@@ -4,18 +4,43 @@ article.project > header {
   display: grid;
   grid-template-columns: var(--grid-column-structure);
   gap: var(--gap-small);
+  align-items: last baseline;
+  margin-bottom: var(--gap-large);
 }
 
 article.project > header div {
   grid-column: span 2;
 }
 
+// Metadata list
 article.project > header ul {
   grid-column: 3;
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
+article.project > header ul h4 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin: 0;
+  color: var(--color-foreground-medium);
+}
+
+article.project > header ul p {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+// article.project > header ul p:last-of-type {
+//   margin-bottom: 0;
+// }
+
+article.project > section h2:not(:first-child) {
+  margin-top: var(--gap-content);
+}
+
+// Press list
 ul.press {
   list-style-type: none;
   padding-left: 0;
@@ -63,4 +88,51 @@ ul.press {
   grid-row: 2;
   /* Explicitly declare height for Safari */
   height: calc(40vh - 0.5rem);
+}
+
+
+// Testing ground
+// article.project section,
+// article.project section figure {
+//   display: grid;
+//   column-gap: 2rem;
+//   grid-template-columns: repeat(6, 1fr);
+// }
+// article.project section figure {
+//   grid-column: span 6;
+// }
+// article.project section figure figcaption,
+// article.project section h2 {
+//   // color: red;
+//   grid-column: 1 / 4;
+// }
+
+// article.project section p {
+//   margin-bottom: 14rem;
+// }
+
+// article.project section figure img,
+// article.project section p {
+//   // color: green;
+//   grid-column: 4 / 7;
+// }
+
+
+article.project section figure {
+  display: grid;
+  column-gap: var(--gap-large);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  // align-items: end;
+  margin: var(--gap-large) auto;
+}
+
+article.project section figure img {
+  grid-column: 1 / 5;
+  grid-row: 1;
+}
+
+article.project section figure figcaption {
+  grid-column: 5 / 7;
+  grid-row: 1;
 }

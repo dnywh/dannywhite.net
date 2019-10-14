@@ -1,10 +1,6 @@
 ---
 layout: work
 featured: true
-image_arrangement: single-horizontal
-image_arrangement_images:
-  - name: temp-screenshot.png
-    alt: A screenshot of the Environmental Resources Center
 title: Kickstarter Environmental Resources Center
 byline: Helping indepedent creators evaluate and reduce the environmental impact of their products.
 date: 2018-11-29 09:00:00 -0400
@@ -52,21 +48,34 @@ press:
 
 Design & technology projects on Kickstarter have the largest environmental footprint on the platform. We hypothesised that providing creators with tools to assess, mitigate, and communicate the environmental impacts of their planned projects would incentivise them to consider environmentally conscious production choices, thus reducing the category's environmental footprint.
 
+
+
 ## Roles, collaborators, and scope
 
-I was the sole designer on a working group comprised of myself, product strategist (Jon Leland), design & technology outreach specialist (Heather Corcoran), and Environmental Defence Fund fellow (Alexandra Criscuolo). As a working group and _not_ a fully resourced team, we limited the scope of the project to three months, part time.
+I was the sole designer on a working group comprised of myself, product strategist Jon Leland, design & technology outreach specialist Heather Corcoran, and Environmental Defence Fund fellow Alexandra Criscuolo. As a working group and _not_ a fully resourced team, we limited the scope of the project to three months, part time.
 
-My responsibilities included the design direction for project creation changes, project presentation changes, and any resources or guidelines. I also led engineering on what ultimately became the <a href="http://kickstarter.com/environment" target="_blank">Environmental Resources Center</a>, with help from software engineers Rob Lum and Pritika Nilaratna.
+My responsibilities included the design direction for project creation changes, project presentation changes, and any resulting resources or guidelines. I also led engineering on what ultimately became the <a href="http://kickstarter.com/environment" target="_blank">Environmental Resources Center</a>, with help from software engineers Rob Lum and Pritika Nilaratna.
+
+
 
 ## Shaping the proposed solution
 
-Members of our team (namely Alexandra and Heather) interviewed creators and Kickstarter outreach members who deal with design & technology creators. Alexandra then created a gap analysis to determine what information these creators find underserved. Collectively, using this information, we decided the most appropriate solution (given the scope) would be a five-part framework in the form of an online resource centre.
+Members of our team (namely Alexandra and Heather) interviewed creators and Kickstarter outreach members who deal with design & technology creators. Alexandra then created a gap analysis to determine what information these creators find underserved. Collectively, using this information, we decided that the most appropriate solution would be a five-part framework in the form of an online resource centre.
 
 Past interviews with Kickstarter creators (done often since I joined Kickstarter and then established as a recurring, open process) had shown us that prompts in the project creation process were often necessary for discoverability of onsite educational material. This fact did not change even when some educational material was deemed more useful than others.
+
+
 
 ## Building the solution
 
 Over a series of drafts, Alexandra collated the information design & technology creators found underserved into the five-point framework. I took this information and prototyped multiple presentation types and entry points for creators.
+
+<figure>
+  <img data-src="{% link /assets/work/environmental-resources-center/early-renderings.png %}" alt="TODO">
+  <figcaption>A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. </figcaption>
+</figure>
+
+
 
 ## Challenges faced
 
@@ -75,6 +84,8 @@ We experimented with embedding educational resources dynamically in the project 
 Additionally, our creator-facing environmental impacts prompts receiving less usage than anticipated. This was partially due to the nature of when creators engage with the Kickstarter project creation experience, but mostly because the prompts lacked specificity.
 
 Another challenge was presenting the necessarily vast amount of information in a digestible format. Early attempts at isolating segments (such as sustainable materials, reusability & recyclability) actually increased anxiety in the creators we showed this to.
+
+
 
 ## Changes made
 
