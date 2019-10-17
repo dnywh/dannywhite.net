@@ -6,15 +6,15 @@ layout: default
 </h1>
 
 <ul class="work">
-  {% for project in site.work %}
-  {% if project.featured %}
-  <li {% if project.draft %}class="draft"{% endif %}>
-    <a href="{{ project.url }}">
-      <img data-src="{% link /assets/work/{{ project.slug }}/{{ project.featured_image }} %}"
-        alt="A photo from the {{ project.title }} project" />
+  {% for item in site.work %}
+  {% if item.featured %}
+  <li {% if item.draft %}class="draft"{% endif %}>
+    <a href="{{ item.url }}">
+      <img data-src="{{ site.baseurl }}/assets/work/{{ item.slug }}/{{ item.featured_image }}"
+        alt="A photo from the {{ item.title }} project" />
       <div>
-        <!-- <h4>{{ project.client | escape }}</h4> -->
-        <h2>{{ project.title | escape }}</h2>
+        <!-- <h4>{{ item.client | escape }}</h4> -->
+        <h2>{{ item.title | escape }}</h2>
       </div>
     </a>
   </li>

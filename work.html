@@ -12,7 +12,7 @@ title: Work
     {% if item.hidden != true %}
     <li {% if item.draft %}class="draft"{% endif %}>
         <a href="{{ item.url }}">
-            <img data-src="{% link /assets/work/{{ item.slug }}/{{ item.featured_image }} %}"
+            <img data-src="{{ site.baseurl }}/assets/work/{{ item.slug }}/{{ item.featured_image }}"
                 alt="A photo from the {{ item.title }} project" />
             <div>
                 <!-- <h4>{{ item.client | escape }}</h4> -->
