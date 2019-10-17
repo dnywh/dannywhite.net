@@ -41,7 +41,7 @@ $grid-column-structure: repeat(3, 1fr);
 %section-border-bottom {
   border-bottom: 0.125rem solid var(--color-foreground);
   margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 %section-border-top {
   margin-top: var(--gap-content);
