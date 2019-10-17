@@ -127,7 +127,8 @@ article.project section figure {
   margin: var(--gap-large) auto;
 }
 
-article.project section figure img {
+article.project section figure img,
+article.project section figure video {
   grid-column: 1 / 5;
   grid-row: 1;
 }

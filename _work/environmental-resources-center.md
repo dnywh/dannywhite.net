@@ -46,7 +46,7 @@ press:
 
 ## Issue
 
-Design & technology projects on Kickstarter have the largest environmental footprint on the platform. We hypothesised that providing creators with tools to assess, mitigate, and communicate the environmental impacts of their planned projects would incentivise them to consider environmentally conscious production choices, thus reducing the category's environmental footprint.
+Design & technology projects on Kickstarter have the largest environmental footprint on the platform. We hypothesised that providing creators with tools to assess, mitigate, and communicate the environmental commitments for their planned projects would incentivise them to consider environmentally conscious production choices, thus reducing the category's environmental footprint.
 
 
 
@@ -71,8 +71,8 @@ Past interviews with Kickstarter creators (done often since I joined Kickstarter
 Over a series of drafts, Alexandra collated the information design & technology creators found underserved into the five-point framework. I took this information and prototyped multiple presentation types and entry points for creators.
 
 <figure>
-  <img data-src="{% link /assets/work/environmental-resources-center/early-renderings.png %}" alt="TODO">
-  <figcaption>A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. </figcaption>
+  <img data-src="{% link /assets/work/environmental-resources-center/desktop-header-section.jpg %}" alt="TODO">
+  <figcaption>One example of a presentation type and resulting desktop-sized mockup. We had a good idea of the information density at this point, so most of my focus was on parsability. That included interlinking, theming, and staging of various pieces of content.</figcaption>
 </figure>
 
 
@@ -81,7 +81,13 @@ Over a series of drafts, Alexandra collated the information design & technology 
 
 We experimented with embedding educational resources dynamically in the project creation experience, depending on how the creator defined their project. We found however that the vast majority of creators compose their project almost fully off-platform before entering the Kickstarter project creation experience.
 
-Additionally, our creator-facing environmental impacts prompts receiving less usage than anticipated. This was partially due to the nature of when creators engage with the Kickstarter project creation experience, but mostly because the prompts lacked specificity.
+Additionally, our creator-facing environmental commitment prompts receiving less usage than anticipated. This was partially due to the nature of when creators engage with the Kickstarter project creation experience, but mostly because the prompts lacked specificity.
+
+
+<figure>
+  <img data-src="{% link /assets/work/environmental-resources-center/environmental-commitments-prompts.jpg %}" alt="TODO">
+  <figcaption>We had originally kept the commitment area open to encourage thoughtful, original response. The lack of specificity, combined with an unclear entry into the resources center, meant creators didn't know where to start.</figcaption>
+</figure>
 
 Another challenge was presenting the necessarily vast amount of information in a digestible format. Early attempts at isolating segments (such as sustainable materials, reusability & recyclability) actually increased anxiety in the creators we showed this to.
 
@@ -91,15 +97,20 @@ Another challenge was presenting the necessarily vast amount of information in a
 
 We reverted the nested structure of the educational resources into one Environmental Resources Center that could be more easily scanned. Each section and subsection received a unique ID for direct hyperlinking from other sections and future improvements to the Kickstarter project creation experience.
 
-I also redesigned the creator-facing environmental impacts prompts to provide more guidance on how approach the five parts of our framework.
+I also redesigned the creator-facing environmental commitment prompts to provide more guidance on how approach the five parts of our framework. Creators could now opt-in to environmental commitments via a checkbox, and gain more information about each commitment through the addition of direct-to-section hyperlinking.
+
+<figure>
+  <video muted loop playsinline controls>
+  <source src="{% link /assets/work/environmental-resources-center/environmental-commitments-changes.mp4 %}" type="video/mp4">    
+  </video>
+  <figcaption>A comparison video of the original implementation of creator-facing environmental commitments and my CodePen prototype for the updated version. Note the direct-to-section hyperlinking for each checkbox, and the 'unlocking' of freeform text-fields for those that would like to expand.</figcaption>
+</figure>
 
 Both of these changes were impacted by the nature of how late Kickstarter's project creation experience overlapped with that of the creator. We recognised that future iterations must be done in collaboration with the Creator Development team, who oversee creator education and project development.
 
 ## Effects on users and business
 
-Desired page view metrics for the first three months after launching the Environmental Resources Center were achieved within two weeks. Kickstarter design & technology outreach specialists noted an increase in projects that provided information on the environmental impacts of their production and fulfilment.
-
-Additionally, the success of the Environmental Resources Center allowed Kickstarter to run more sustainability-based creative prompts such as <a href="https://kickstarter.com/shapeshift" target="_blank">Shapeshift</a>—which in turn encourage aspiring design & technology creators to consider environmental impacts.
+Desired page view metrics for the first three months after launching the Environmental Resources Center were achieved within two weeks. Kickstarter design & technology outreach specialists noted an increase in projects that provided information on the environmental commitments for their production and fulfilment.
 
 ## Was was learned
 

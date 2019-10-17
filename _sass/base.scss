@@ -88,6 +88,10 @@ figure {
   margin: 0;
 }
 
+figcaption {
+  color: var(--color-foreground-medium);
+}
+
 img.clear {
   background-color: var(--color-foreground-light);
 }
