@@ -54,12 +54,12 @@ $grid-column-structure: repeat(3, 1fr);
 
 body {
   margin: 0; // TODO: wil become redundant when .container is removed
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
 
 // TODO remove container and revert to body
 .container {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
   margin: var(--gap-large);
 }
 
