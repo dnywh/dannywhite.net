@@ -13,7 +13,7 @@ body header.temp-header-class svg {
 }
 
 body header.temp-header-class nav ul {
-  padding-left: 0;
+  @extend %ul-plain;
 }
 body header.temp-header-class nav ul li {
   display: inline;

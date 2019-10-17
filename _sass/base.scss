@@ -43,9 +43,15 @@ $grid-column-structure: repeat(3, 1fr);
   margin-bottom: 2rem;
   padding-bottom: 2rem;
 }
+
 %section-border-top {
   margin-top: var(--gap-content);
   border-top: 0.125rem solid var(--color-foreground);
+}
+
+%ul-plain {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 * {

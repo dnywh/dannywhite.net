@@ -1,4 +1,4 @@
-/* Notes */
+// Notes
 article.note {
   display: grid;
   grid-template-columns: $grid-column-structure;
@@ -15,4 +15,14 @@ article.note header {
 
 article.note section {
   grid-column: 2 / 4;
+}
+
+
+// Notes: Archive
+ul.archive {
+  @extend %ul-plain;
+
+  li {
+    @extend %section-border-top;
+  }
 }

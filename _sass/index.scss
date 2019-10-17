@@ -5,8 +5,7 @@ h1.index-intro {
 }
 
 ul.work {
-  list-style-type: none;
-  padding-left: 0;
+  @extend %ul-plain;
   @extend %section-border-top;
   padding-top: var(--gap-content);
 }
