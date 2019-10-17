@@ -1,3 +1,4 @@
+<!-- TODO: delete this include -->
 {% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{
   page.title | slugify
 }}/{{ include.name }}{% endcapture %}
@@ -7,47 +8,31 @@
   <figure>
     {% if include.remote %}
     <!-- Opt-in to remote image hosting with remote=true -->
-    <img
-      src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1"
-      data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}"
-      {%
+    <img src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1"
+      data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}" {%
       if
       include.alt
-      %}
-      alt="{{ include.alt }}"
-      {%
+      %} alt="{{ include.alt }}" {%
       endif
-      %}
-      {%
+      %} {%
       if
       include.width
-      %}
-      width="{{ include.width }}"
-      {%
+      %} width="{{ include.width }}" {%
       endif
-      %}
-    />
+      %} />
     {% else %}
     <!-- Host images locally by default -->
-    <img
-      data-src="/assets/posts/{{ imagePath }}"
-      {%
+    <img data-src="/assets/posts/{{ imagePath }}" {%
       if
       include.alt
-      %}
-      alt="{{ include.alt }}"
-      {%
+      %} alt="{{ include.alt }}" {%
       endif
-      %}
-      {%
+      %} {%
       if
       include.width
-      %}
-      width="{{ include.width }}"
-      {%
+      %} width="{{ include.width }}" {%
       endif
-      %}
-    />
+      %} />
     {% endif %}
 
     <figcaption>
@@ -69,46 +54,30 @@
   </figure>
   {% else %} {% if include.local %}
   <!-- Opt-in to remote image hosting with remote=true -->
-  <img
-    src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1"
-    data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}"
-    {%
+  <img src="https://ik.imagekit.io/dw/posts/{{ include.name }}?tr=w-1,h-1"
+    data-src="https://ik.imagekit.io/dw/posts/{{ include.name }}" {%
     if
     include.alt
-    %}
-    alt="{{ include.alt }}"
-    {%
+    %} alt="{{ include.alt }}" {%
     endif
-    %}
-    {%
+    %} {%
     if
     include.width
-    %}
-    width="{{ include.width }}"
-    {%
+    %} width="{{ include.width }}" {%
     endif
-    %}
-  />
+    %} />
   {% else %}
   <!-- Host images locally by default -->
-  <img
-    data-src="/assets/posts/{{ imagePath }}"
-    {%
+  <img data-src="/assets/posts/{{ imagePath }}" {%
     if
     include.alt
-    %}
-    alt="{{ include.alt }}"
-    {%
+    %} alt="{{ include.alt }}" {%
     endif
-    %}
-    {%
+    %} {%
     if
     include.width
-    %}
-    width="{{ include.width }}"
-    {%
+    %} width="{{ include.width }}" {%
     endif
-    %}
-  />
+    %} />
   {% endif %} {% endif %}
 </div>

@@ -1,13 +1,10 @@
 <footer>
-  {% if page.layout != "home" %}
-  <h5>&#x261d;&#xFE0E; <a href="#">Jump to top</a></h5>
-  {% else %}
-  
-  <h5>&#x263a;&#xFE0E;</h5>
-  {% endif %}
+  <div>
+    <p>{{ site.description }}</p>
+    <p>{% include email.html %}</p>
+  </div>
 
-  {% if page.title != "Ephemera" %}
-  {% assign latest = site.data.ephemera |  first %}
-  <h5><a href="../ephemera">{{ latest.name }}</a> &#x261e;&#xFE0E;</h5>
-  {% endif %}
+  {% include nav.html %}
+
+  {% include social.html %}
 </footer>

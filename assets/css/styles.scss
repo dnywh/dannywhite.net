@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Imports: global styles
+@import "base";
+@import "media";
+
+@import "marquee";
+
+// Imports: shared component styles
+@import "header";
+@import "footer";
+
+// Imports: page styles
+@import "index";
+@import "work";
+@import "about";
+@import "notes";
+
+// Imports: code
+@import "code";

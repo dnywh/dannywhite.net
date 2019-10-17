@@ -1,0 +1,92 @@
+---
+layout: default
+title: About
+---
+<article>
+        
+    <img class="single-hero" data-src="{% link /assets/images/danny-mbq-panel.jpg %}"
+        alt="Danny speaking at a panel">
+
+    <h1>About</h1>
+
+    {% capture about_bio_include %}{% include_relative _includes/about-bio.md %}{% endcapture %}
+    {{ about_bio_include | markdownify }}
+
+    <h2>Today</h2>
+    <p>The climate crisis in unequivocally the most pressing issue of our time. After several years attempting to
+        incorporate sustainability into my design practice, I've decided to work on it full-time. Please
+        {% include email-inline.html %} if you think we could collaborate on climate mobilisation or other
+        sustainability work.</p>
+
+    <h2>Clients</h2>
+    {% capture about_client_list_include %}{% include_relative _includes/about-client-list.md %}{% endcapture %}
+    {{ about_client_list_include | markdownify }}
+
+    <h2>Engagements</h2>
+    <ul>
+        <li>Panelist on Managed By Q Breakpoints series</li>
+        <li>Loupe 2018 opening speaker</li>
+        <li>Guest lecturer for Pratt Information Experience Design (M.S.)</li>
+        <li>Guest lecturer for General Assembly UX Design Immersive</li>
+        <li>Original organiser for Framer Sessions New York</li>
+    </ul>
+
+    <h2>Press &amp; publications</h2>
+    <ul class="press">
+        <li>
+            <p><strong>Loupe 2018: Danny White on Designing for People</strong>
+                <br><a href="{% link _work/loupe-2018.md %}" target="_blank">Loupe</a></p>
+        </li>
+        <li>
+            <p><strong>Deliveroo goes to Framer Loupe: 5 things that stuck with us</strong>
+                <br><a
+                    href="https://medium.com/deliveroo-design/deliveroo-goes-to-framer-loupe-5-things-that-stuck-with-us-1f5f8e68e3b7"
+                    target="_blank">Deliveroo Design</a></p>
+        </li>
+        <li>
+            <p><strong>The Official Loupe 2018 Recap</strong>
+                <br><a href="https://www.framer.com/blog/posts/loupe-2018-recap/" target="_blank">Framer Blog</a></p>
+        </li>
+        <li>
+            <p><strong>Kickstarter On Cross-disciplinary Collaboration</strong>
+                <br><a href="https://www.framer.com/blog/posts/closing-the-gap-between-ideation-and-production/"
+                    target="_blank">Framer Blog</a></p>
+        </li>
+        <li>
+            <p><strong>A Brief History of Framer Sessions NYC</strong>
+                <br><a href="https://blog.framer.com/framer-sessions-24a36e17b793" target="_blank">Framer Blog</a></p>
+        </li>
+        <li>
+            <p><strong>Designing For Movement</strong>
+                <br><a href="https://blog.marvelapp.com/designing-for-movement/" target="_blank">Marvel Blog</a></p>
+        </li>
+        <li>
+            <p><strong>Designing For Movement</strong>
+                <br><a href="https://www.ustwo.com/blog/designing-for-movement" target="_blank">ustwo Blog</a></p>
+        </li>
+
+    </ul>
+
+    <h2>Education</h2>
+    <ul class="education">
+        <li>
+            <p>
+                <strong>Bachelor of Design, Visual Communication</strong>
+                <br>University of Technology, Sydney</p>
+            <p>
+                <em>Educational Equivalent in United States:</em>
+                <br>Bachelor of Fine Arts Degree in Visual Communication Design
+                <br>(Evaluated by The Trustforte Corporation).</p>
+        </li>
+        <li>
+            <p><strong>Bachelor of Design in Industrial Design (transfer)</strong>
+                <br>University of Technology, Sydney
+            </p>
+        </li>
+        <li>
+            <p><strong>Creative Leadership, Unconscious Bias, Diversity Training</strong>
+                <br>Kaospilot
+            </p>
+        </li>
+    </ul>
+</article>

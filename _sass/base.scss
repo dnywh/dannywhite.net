@@ -1,0 +1,123 @@
+// Base: shared or global styles
+
+:root {
+  scroll-behavior: smooth;
+  /* Custom properties: colour */
+  --color-foreground: black;
+  --color-background: white;
+  --color-foreground-light: rgba(0, 0, 0, 0.05);
+  --color-foreground-medium: rgba(0, 0, 0, 0.5);
+  /* Custom properties: grid and spacing */
+  --test-var: 40rem;
+  --gap-content: 4rem;
+  --gap-large: 3vw;
+  --gap-small: 1rem;
+  --gap-medium: 2.5rem
+  --grid-column-structure: repeat(3, 1fr);
+  // Custom properties: opacity
+  --opacity-hover-block: 0.75;
+  --opacity-hover-text: 0.5;
+  // Custom properties: time
+  --time-hover: 0.33s;
+  // Custom properties: type
+  --type-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --type-body: serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Custom properties: colour */
+    --color-foreground: white;
+    --color-background: black;
+    --color-foreground-light: rgba(255, 255, 255, 0.05);
+    --color-foreground-medium: rgba(255, 255, 255, 0.66);
+  }
+}
+
+// SCSS variables
+// For use where native CSS custom properties don't work (such as within media queries)
+$grid-column-structure: repeat(3, 1fr);
+
+// Sass placeholder classes
+%section-border-bottom {
+  border-bottom: 0.125rem solid var(--color-foreground);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+%section-border-top {
+  margin-top: var(--gap-content);
+  border-top: 0.125rem solid var(--color-foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; // TODO: wil become redundant when .container is removed
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+// TODO remove container and revert to body
+.container {
+  margin: var(--gap-large);
+}
+
+a {
+  color: var(--color-foreground);
+  transition: opacity var(--time-hover);
+}
+
+a:hover {
+  opacity: var(--opacity-hover-text);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--type-display);
+  overflow-wrap: break-word;
+}
+
+@media only screen and (min-width: 640px) {
+  h1,
+  h2,
+  h3,
+  article p,
+  article ul,
+  pre,
+  hr {
+    max-width: 40rem;
+  }
+}
+pre {
+  white-space: pre-wrap;
+  // line-height: 1.2rem;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+// code {
+//   background-color: var(--color-foreground-light);
+//   padding: 0.125rem 0.25rem;
+//   border-radius: 0.125rem;
+//   border: 1px solid var(--color-foreground-light);
+// }
+
+
+hr {
+  border: 1px solid var(--color-foreground-light);
+  margin-top: var(--gap-large);
+  margin-bottom: var(--gap-large);
+  margin-left: 0;
+}

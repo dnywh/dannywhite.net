@@ -1,0 +1,18 @@
+/* Notes */
+article.note {
+  display: grid;
+  grid-template-columns: $grid-column-structure;
+  gap: var(--gap-small);
+
+  @extend %section-border-top;
+  // margin-top: var(--gap-content);
+  padding-top: 1rem;
+}
+
+article.note header {
+  grid-column: 1;
+}
+
+article.note section {
+  grid-column: 2 / 4;
+}

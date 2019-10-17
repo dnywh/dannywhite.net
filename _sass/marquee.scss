@@ -1,0 +1,14 @@
+.marquee {
+  background: yellow;
+}
+
+.marquee p {
+  margin: 0 0.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: var(--type-display);
+}
+
+.marquee p, .marquee p a {
+  color: black;
+}

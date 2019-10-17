@@ -3,7 +3,7 @@ layout: post
 type: article
 title: "Designing For Movement"
 date: 2016-09-24 15:33:56 -0400
-featured-image: ustwo-team-nypd.jpg
+featured_image: ustwo-team-nypd.jpg
 ---
 
 [Erin LeForce](http://twitter.com/ErinLeForce) and I co-wrote this article for publishing on the [ustwo blog](http://ustwo.com/blog/designing-for-movement). Since then, it's been picked up by the [Marvel blog](http://blog.marvelapp.com/designing-for-movement) (🎉!) and the principles have set a foundation for how we approach similar projects coming into our studio.

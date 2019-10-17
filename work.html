@@ -1,0 +1,25 @@
+---
+layout: default
+title: Work
+---
+
+<h1>Work</h1>
+<h2>A collection of in-house, agency, and personal projects.</h2>
+<!-- TODO: combine roles and tags arrays into one for a filter bar -->
+<!-- TODO: remove draft class -->
+<ul class="work">
+    {% for item in site.work %}
+    {% if item.hidden != true %}
+    <li {% if item.draft %}class="draft"{% endif %}>
+        <a href="{{ item.url }}">
+            <img data-src="{% link /assets/work/{{ item.slug }}/{{ item.featured_image }} %}"
+                alt="A photo from the {{ item.title }} project" />
+            <div>
+                <!-- <h4>{{ item.client | escape }}</h4> -->
+                <h3>{{ item.title | escape }}</h3>
+            </div>
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

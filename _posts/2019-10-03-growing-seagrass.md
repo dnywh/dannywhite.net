@@ -7,8 +7,6 @@ date: 2019-10-03 10:30:00 +1000
 
 I just flew from New York to Brisbane via LA. It was an unavoidable trip due to visa legalese, but one that gave me a chance to explore carbon credits. I eventually settled on The Ocean Foundation’s SeaGrass Grow program, for which I spent about \$40 to cover the one-way flight.
 
-{% include image.html name="receipt.jpg" alt="Receipt from SeaGrass Grow." %}
-
 Googling ‘how to offset the carbon from my flight’ returns about five million results; the majority being informational rather than actionable. Many of the actionable ones that I explored expect the buyer to trust that the money will be put to good use.
 
 I chose SeaGrass Grow because it’s the most cost-effective carbon offset program I’ve come across. [Their own website](https://www.oceanfdn.org/calculator/whyblue) does a great job of describing the benefits of growing seagrass over other offset options such as reforestation. The program was also personally recommended to me, putting the trust factor at ease.

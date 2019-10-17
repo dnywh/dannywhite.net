@@ -1,0 +1,8 @@
+{% assign newArray = '' | split:':' %}
+{% for item in {{ include.array }} %}
+{% assign newArray = newArray | push: item %}
+{% endfor %}
+
+{{ newArray | array_to_sentence_string }}
+
+<h1>hi</h1>

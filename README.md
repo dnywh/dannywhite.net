@@ -7,13 +7,13 @@ Hi. This website runs on [Jekyll](http://github.com/jekyll/jekyll). Here are som
 1. Clone the repo
 2. Install [Jekyll](https://jekyllrb.com)
 3. `cd` into the repo
-4. Run `gem install bundler jekyll`
+4. Run `bundle exec jekyll serve`
 
 ## Features
 
 Things I've added onto or tweaked from the standard Jekyll theme, layouts, includes, etc:
 
-| What                                                                                                                          | Why                                                                                                                                                                                                                                                                           |
+| What | Why                                                                                                                                                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`image.html` include](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/image.html)                | For inserting HTML `figure` elements, with automatic image directory handling and rudimentary caption linking.                                                                                                                                                                |
 | [`media-grid` include](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/media-grid.html)           | Simple way to embed a video within a post. Grid functionality temporarily killed-off.                                                                                                                                                                                         |
@@ -39,6 +39,5 @@ Suppose you'd like to preview your in-progress site on your phone or iPad. This 
 
 ## Credits
 
-### Fonts
-
-Most type on the site is set in [Inter UI](http://rsms.me/inter/) by Rasmus Andersson.
+#### Email encoding
+I used www.email-encoder.com.

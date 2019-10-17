@@ -7,25 +7,40 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Danny White
-description: Danny White is a product designer in NYC.
+description: Danny White is a digital product designer working on climate mobilisation and
+  sustainability.
 url: "https://dannywhite.site" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dannyalright
-github_username: dannyalright
 author: Danny White
 
 # Build settings
 markdown: kramdown
+# The below seem to be now built-in
+# kramdown:
+#   syntax_highlighter: rouge
+# highlighter: rouge
+sass:
+  style: compressed
+compress_html:
+  comments: ["<!-- ", " -->"]
+  blanklines: true
 
-# Stop Apple's emoji preference
 kramdown:
+  # Stop Apple's emoji preference
   footnote_backlink: "&#8617;&#65038;"
+  # Prevent automatic h2, h3, etc, ids
+  auto_ids: false
 
 plugins:
   - jekyll-feed
@@ -33,22 +48,41 @@ plugins:
   - jekyll-seo-tag
 
 collections:
-  projects:
-    output: false
-  books:
+  posts:
     output: true
+    permalink: /notes/:year/:title
+  work:
+    output: true
+    permalink: /work/:title
+    order:
+      - environmental-resources-center.md
+      - loupe-2018.md
+      - time-is-running-out.md
+      - native-checkout.md
+      - kickstarter-sketch-plugin.md
+      - origami.md
+      - contextkit.md
+      - branded-interactions.md
+      - syd.md
+      - mumford.md
+
+# TODO: change order to below:
+# order:
+#       - time-is-running-out.md
+#       - environmental-resources-center.md
+#       - native-checkout.md
+#       - loupe-2018.md
+#       - kickstarter-sketch-plugin.md
+#       - origami.md
+#       - contextkit.md
+#       - branded-interactions.md
+#       - syd.md
+#       - mumford.md
 
 # Exclude directories and/or files from the conversion
 exclude:
   - Gemfile
   - Gemfile.lock
 
-# http://damonbauer.me/organizing-jekyll-pages/
-# Organizing pages (commented out for now—doesn't allow for regeneration of posts, pages)
-# include: ["_pages"]
-# Remove dates
-# permalink: /:title/
-
 # Handling drafts
-# http://www.fizerkhan.com/blog/posts/Working-with-upcoming-posts-in-Jekyll.html
 show_drafts: false

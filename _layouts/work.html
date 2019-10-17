@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+<article class="project">
+  {% if page.image_arrangement %}
+  <div class="{{ page.image_arrangement }}">
+    {% for item in page.image_arrangement_images %}
+    <img data-src="{% link /assets/work/{{ page.slug }}/{{ item.name }} %}" alt="{{ item.alt }}">
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <header>
+    <div>
+      <h1>{{ page.title | escape }}</h1>
+      <h2>{{ page.byline }}</h2>
+    </div>
+
+    <ul>
+      {% if page.client %}
+      <li>
+        <h4>For</h4>
+        <p>{{ page.client }}</p>
+      </li>
+      {% endif %}
+      <li>
+        <h4>Date</h4>
+        <p>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.minima.date_format | default: "%B %Y" %}
+            {{ page.date | date: date_format }}
+          </time>
+        </p>
+      </li>
+      {% if page.roles %}
+      <li>
+        <h4>Roles</h4>
+        <p>
+            {% assign rolesArray = '' | split:':' %}
+            {% for item in page.roles %}
+            {% assign rolesArray = rolesArray | push: item %}
+            {% endfor %}
+    
+            {{ rolesArray | array_to_sentence_string }}
+        </p>
+      </li>
+      {% endif %}
+      {% if page.organisations %}
+      <li>
+        <h4>Organisations</h4>
+        <p>
+            {% assign organisationsArray = '' | split:':' %}
+            {% for item in page.organisations %}
+            {% assign organisationsArray = organisationsArray | push: item %}
+            {% endfor %}
+    
+            {{ organisationsArray | array_to_sentence_string }}
+        </p>
+      </li>
+      {% endif %}
+      {% if page.collaborators %}
+      <li>
+        <h4>Collaborators</h4>
+        <p>
+            {% assign collaboratorsArray = '' | split:':' %}
+            {% for item in page.collaborators %}
+            {% assign collaboratorsArray = collaboratorsArray | push: item %}
+            {% endfor %}
+    
+            {{ collaboratorsArray | array_to_sentence_string }}
+        </p>
+      </li>
+      {% endif %}
+    </ul>
+  </header>
+
+  <!-- TODO: remove draft concept once properly launched -->
+  {% if page.draft %}
+  <section>
+    <p>The documentation for this project is in progress. Please check back in a few days.</p>
+  </section>
+  {% else %}
+  <section>
+    {{ content }}
+  </section>
+
+  {% if page.links %}
+    <section>
+    <h2>Links</h2>
+    <ul class="press">
+      {% for item in page.links %}
+      <li>
+        <p><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+    {% if page.press %}
+    <section>
+    <h2>Press</h2>
+    <ul class="press">
+      {% for item in page.press %}
+      <li>
+        <p><strong>{{ item.title }}</strong>
+          <br><a href="{{ item.url }}" target="_blank">{{ item.outlet }}</a></p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  {% endif %}
+  
+</article>

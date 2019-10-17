@@ -1,0 +1,46 @@
+// Index
+h1.index-intro {
+  max-width: 840px; //TODO
+  font-size: 5vmax;
+}
+
+ul.work {
+  list-style-type: none;
+  padding-left: 0;
+  @extend %section-border-top;
+  padding-top: var(--gap-content);
+}
+
+ul.work li {
+  margin-bottom: var(--gap-small);
+}
+
+// TODO: remove this
+ul.work li.draft {
+  opacity: 0.5;
+}
+
+ul.work li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (min-width: 640px) {
+  ul.work li a {
+    display: grid;
+    grid-template-columns: $grid-column-structure;
+    gap: var(--gap-small);
+  }
+}
+
+ul.work li a:hover {
+  opacity: var(--opacity-hover-block);
+}
+
+ul.work li a img {
+  grid-column: span 2;
+}
+
+p.cta {
+  text-align: right;
+}
