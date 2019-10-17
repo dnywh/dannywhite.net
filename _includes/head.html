@@ -18,7 +18,7 @@
       page.title | strip_html | strip_newlines | truncate: 160
     }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta property="og:description" content="{{
-      page.excerpt
+      page.byline
         | default: site.description
         | strip_html
         | normalize_whitespace

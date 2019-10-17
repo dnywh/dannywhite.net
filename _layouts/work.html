@@ -31,6 +31,7 @@ layout: default
           </time>
         </p>
       </li>
+      {% if page.roles %}
       <li>
         <h4>Roles</h4>
         <p>
@@ -42,6 +43,7 @@ layout: default
             {{ rolesArray | array_to_sentence_string }}
         </p>
       </li>
+      {% endif %}
       <li>
         <h4>Organisations</h4>
         <p>
@@ -53,6 +55,7 @@ layout: default
             {{ organisationsArray | array_to_sentence_string }}
         </p>
       </li>
+      {% if page.collaborators %}
       <li>
         <h4>Collaborators</h4>
         <p>
@@ -64,6 +67,7 @@ layout: default
             {{ collaboratorsArray | array_to_sentence_string }}
         </p>
       </li>
+      {% endif %}
     </ul>
   </header>
 

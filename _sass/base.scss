@@ -1,9 +1,5 @@
 // Base: shared or global styles
 
-// SCSS variables
-// For use where native CSS custom properties don't work (such as within media queries)
-$grid-column-structure: repeat(3, 1fr);
-
 :root {
   scroll-behavior: smooth;
   /* Custom properties: colour */
@@ -35,6 +31,21 @@ $grid-column-structure: repeat(3, 1fr);
     --color-foreground-light: rgba(255, 255, 255, 0.05);
     --color-foreground-medium: rgba(255, 255, 255, 0.66);
   }
+}
+
+// SCSS variables
+// For use where native CSS custom properties don't work (such as within media queries)
+$grid-column-structure: repeat(3, 1fr);
+
+// Sass placeholder classes
+%section-border-bottom {
+  border-bottom: 0.125rem solid var(--color-foreground);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+%section-border-top {
+  margin-top: var(--gap-content);
+  border-top: 0.125rem solid var(--color-foreground);
 }
 
 * {
@@ -77,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   h3,
   article p,
   article ul,
-  pre {
+  pre,
+  hr {
     max-width: 40rem;
   }
 }
@@ -86,34 +98,21 @@ pre {
   // line-height: 1.2rem;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 // code {
 //   background-color: var(--color-foreground-light);
 //   padding: 0.125rem 0.25rem;
 //   border-radius: 0.125rem;
 //   border: 1px solid var(--color-foreground-light);
 // }
-img,
-video {
-  max-width: 100%;
-  background-color: var(--color-foreground-light);
-}
 
-figure {
-  // Reset browser defaults
-  margin: 0;
-}
-
-figcaption {
-  color: var(--color-foreground-medium);
-}
-
-img.clear {
-  background-color: var(--color-foreground-light);
-}
 
 hr {
-  /* background-color: red; */
-  border: 1px solid var(--color-foreground);
+  border: 1px solid var(--color-foreground-light);
   margin-top: var(--gap-large);
   margin-bottom: var(--gap-large);
+  margin-left: 0;
 }

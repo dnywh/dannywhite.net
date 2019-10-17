@@ -3,9 +3,7 @@ body > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 0.125rem solid var(--color-foreground);
+  @extend %section-border-bottom;
 }
 body > header svg {
   width: 9vw;

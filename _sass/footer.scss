@@ -1,8 +1,8 @@
 // Footer
 footer {
-  margin-top: var(--gap-content);
+  @extend %section-border-top;
+  // margin-top: var(--gap-content);
   padding-top: 1rem;
-  border-top: 0.125rem solid var(--color-foreground);
 }
 
 footer ul {
