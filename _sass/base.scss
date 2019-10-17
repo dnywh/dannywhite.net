@@ -1,4 +1,9 @@
-/* General */
+// Base: shared or global styles
+
+// SCSS variables
+// For use where native CSS custom properties don't work (such as within media queries)
+$grid-column-structure: repeat(3, 1fr);
+
 :root {
   scroll-behavior: smooth;
   /* Custom properties: colour */
@@ -7,9 +12,11 @@
   --color-foreground-light: rgba(0, 0, 0, 0.05);
   --color-foreground-medium: rgba(0, 0, 0, 0.5);
   /* Custom properties: grid and spacing */
+  --test-var: 40rem;
   --gap-content: 4rem;
   --gap-large: 3vw;
   --gap-small: 1rem;
+  --gap-medium: 2.5rem
   --grid-column-structure: repeat(3, 1fr);
   // Custom properties: opacity
   --opacity-hover-block: 0.75;
@@ -26,7 +33,7 @@
     --color-foreground: white;
     --color-background: black;
     --color-foreground-light: rgba(255, 255, 255, 0.05);
-    --color-foreground-medium: rgba(255, 255, 255, 0.5);
+    --color-foreground-medium: rgba(255, 255, 255, 0.66);
   }
 }
 
@@ -50,14 +57,21 @@ a:hover {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--type-display);
+  overflow-wrap: break-word;
 }
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 640px) {
   h1,
   h2,
   h3,
@@ -85,6 +99,7 @@ video {
 }
 
 figure {
+  // Reset browser defaults
   margin: 0;
 }
 

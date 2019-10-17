@@ -1,5 +1,5 @@
-/* Home */
-h1.home-intro {
+// Index
+h1.index-intro {
   max-width: 840px; //TODO
   font-size: 5vmax;
 }
@@ -16,9 +16,14 @@ ul.work li {
 ul.work li a {
   text-decoration: none;
   color: inherit;
-  display: grid;
-  grid-template-columns: var(--grid-column-structure);
-  gap: var(--gap-small);
+}
+
+@media only screen and (min-width: 640px) {
+  ul.work li a {
+    display: grid;
+    grid-template-columns: $grid-column-structure;
+    gap: var(--gap-small);
+  }
 }
 
 ul.work li a:hover {
@@ -27,4 +32,8 @@ ul.work li a:hover {
 
 ul.work li a img {
   grid-column: span 2;
+}
+
+p.cta {
+  text-align: right;
 }

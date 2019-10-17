@@ -1,11 +1,19 @@
-/* Footer */
+// Footer
 footer {
-  display: grid;
-  grid-template-columns: var(--grid-column-structure);
-  gap: var(--gap-small);
+  margin-top: var(--gap-content);
+  padding-top: 1rem;
+  border-top: 0.125rem solid var(--color-foreground);
 }
 
 footer ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+@media only screen and (min-width: 640px) {
+  footer {
+    display: grid;
+    grid-template-columns: $grid-column-structure;
+    gap: var(--gap-small);
+  }
 }

@@ -1,5 +1,5 @@
 <header>
-  {% if page.layout != "home" %}
+  {% if page.layout != "index" %}
   <a href="{{ "/" | relative_url }}">
     {% endif %}
     <svg viewBox="0 0 677.6 344">
@@ -16,9 +16,8 @@
               c-3.9,31.4-19.6,61-58.4,61c-27,0-43.6-24-43.6-49.7c0-31.8,22.2-66.7,57.5-66.7C369.3,118.9,388,139,383.7,174.2z">
       </path>
     </svg>
-    {% if page.layout != "home" %}
+    {% if page.layout != "index" %}
   </a>
   {% endif %}
   {% include nav.html %}
 </header>
-<hr />

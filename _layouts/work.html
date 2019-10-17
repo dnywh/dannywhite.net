@@ -70,7 +70,23 @@ layout: default
 
   <section>
     {{ content }}
+  </section>
+
+  {% if page.links %}
+    <section>
+    <h2>Links</h2>
+    <ul class="press">
+      {% for item in page.links %}
+      <li>
+        <p><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
     {% if page.press %}
+    <section>
     <h2>Press</h2>
     <ul class="press">
       {% for item in page.press %}
@@ -78,8 +94,9 @@ layout: default
         <p><strong>{{ item.title }}</strong>
           <br><a href="{{ item.url }}" target="_blank">{{ item.outlet }}</a></p>
       </li>
-      {% endfor%}
+      {% endfor %}
     </ul>
-    {% endif %}
   </section>
+  {% endif %}
+  
 </article>
