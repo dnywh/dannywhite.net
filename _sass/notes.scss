@@ -1,8 +1,12 @@
 /* Notes */
 article.note {
   display: grid;
-  grid-template-columns: var(--grid-column-structure);
+  grid-template-columns: $grid-column-structure;
   gap: var(--gap-small);
+
+  @extend %section-border-top;
+  // margin-top: var(--gap-content);
+  padding-top: 1rem;
 }
 
 article.note header {

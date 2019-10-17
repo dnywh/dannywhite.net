@@ -10,12 +10,14 @@ layout: compress
 <script src="/assets/lzy.min.js"></script>
 
 <body>
-  {% include header.html %}
+  {% include marquee.html %}
+  <div class="container">
+      {% include header.html %}
 
-
-  {{ content }}
-
-  {% include footer.html %}
+      {{ content }}
+    
+      {% include footer.html %}
+  </div>
 </body>
 
 <script>lzy();</script>

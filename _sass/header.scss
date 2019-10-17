@@ -1,29 +1,31 @@
 // Header
-body > header {
+// TODO: once marquee is gone, change instances here of `body header.temp-header-class` to `body > header`
+
+body header.temp-header-class {
   display: flex;
   justify-content: space-between;
   align-items: center;
   @extend %section-border-bottom;
 }
-body > header svg {
+body header.temp-header-class svg {
   width: 9vw;
   fill: var(--color-foreground);
 }
 
-body > header nav ul {
+body header.temp-header-class nav ul {
   padding-left: 0;
 }
-body > header nav ul li {
+body header.temp-header-class nav ul li {
   display: inline;
   margin-left: var(--gap-small);
   font-family: var(--type-display);
 }
 
-body > header nav ul li a {
+body header.temp-header-class nav ul li a {
   // font-size: 1.25rem;
   text-decoration: none;
 }
 
-// body > header nav ul li:hover {
+// body header.temp-header-class nav ul li:hover {
 //   opacity: var(--opacity-hover-text);
 // }

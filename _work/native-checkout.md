@@ -1,6 +1,7 @@
 ---
 layout: work
 featured: true
+draft: true
 title: Kickstarter Native Checkout
 story: Taking an error-prone, multi-platform experience into a fully-native experience. Incrementally rolling out changes to change as we go and support a cross-functional future.
 featured_image: edit-pledge-amount.jpg

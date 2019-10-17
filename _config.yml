@@ -55,16 +55,29 @@ collections:
     output: true
     permalink: /work/:title
     order:
-      - time-is-running-out.md
       - environmental-resources-center.md
-      - native-checkout.md
       - loupe-2018.md
+      - time-is-running-out.md
+      - native-checkout.md
       - kickstarter-sketch-plugin.md
       - origami.md
       - contextkit.md
       - branded-interactions.md
       - syd.md
       - mumford.md
+
+# TODO: change order to below:
+# order:
+#       - time-is-running-out.md
+#       - environmental-resources-center.md
+#       - native-checkout.md
+#       - loupe-2018.md
+#       - kickstarter-sketch-plugin.md
+#       - origami.md
+#       - contextkit.md
+#       - branded-interactions.md
+#       - syd.md
+#       - mumford.md
 
 # Exclude directories and/or files from the conversion
 exclude:

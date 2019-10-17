@@ -18,10 +18,12 @@ layout: default
     </div>
 
     <ul>
+      {% if page.client %}
       <li>
         <h4>For</h4>
         <p>{{ page.client }}</p>
       </li>
+      {% endif %}
       <li>
         <h4>Date</h4>
         <p>
@@ -44,6 +46,7 @@ layout: default
         </p>
       </li>
       {% endif %}
+      {% if page.organisations %}
       <li>
         <h4>Organisations</h4>
         <p>
@@ -55,6 +58,7 @@ layout: default
             {{ organisationsArray | array_to_sentence_string }}
         </p>
       </li>
+      {% endif %}
       {% if page.collaborators %}
       <li>
         <h4>Collaborators</h4>
@@ -71,7 +75,12 @@ layout: default
     </ul>
   </header>
 
-
+  <!-- TODO: remove draft concept once properly launched -->
+  {% if page.draft %}
+  <section>
+    <p>The documentation for this project is in progress. Please check back in a few days.</p>
+  </section>
+  {% else %}
   <section>
     {{ content }}
   </section>
@@ -101,6 +110,7 @@ layout: default
       {% endfor %}
     </ul>
   </section>
+  {% endif %}
   {% endif %}
   
 </article>

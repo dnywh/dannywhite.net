@@ -1,6 +1,7 @@
 ---
 layout: work
 featured: true
+draft: true
 title: Origami
 date: 2016-10-27 09:00:00 -0400
 featured_image: learn-origami.png

@@ -7,8 +7,8 @@ layout: default
 
 <ul class="work">
   {% for project in site.work %}
-  {% if project.featured == true %}
-  <li>
+  {% if project.featured %}
+  <li {% if project.draft %}class="draft"{% endif %}>
     <a href="{{ project.url }}">
       <img data-src="{% link /assets/work/{{ project.slug }}/{{ project.featured_image }} %}"
         alt="A photo from the {{ project.title }} project" />
