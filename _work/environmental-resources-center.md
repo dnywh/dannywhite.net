@@ -47,9 +47,11 @@ press:
   - outlet: Environmental Defence Fund
     title: Kickstarter and EDF Team Up to Push for Greener Product Development
     url: https://www.edf.org/media/kickstarter-and-edf-team-push-greener-product-development
+tags:
+  - sustainability
+  - web
+  - react
 ---
-
-<!-- https://www.figma.com/file/DlAeA2ExdFfj5Oo0JQSvgdgB/Environmental-Resource-Center?node-id=73%3A0 -->
 
 ## Issue
 
@@ -113,7 +115,7 @@ I also redesigned the creator-facing environmental commitment prompts to provide
 
 <figure>
   <video muted loop playsinline controls>
-  <source src="{% link /assets/work/environmental-resources-center/environmental-commitments-changes.mp4 %}" type="video/mp4">    
+  <source src="https://ik.imagekit.io/dw/video/video/environmental-commitments-changes.mp4" type="video/mp4">    
   </video>
   <figcaption>A comparison video of the original implementation of creator-facing environmental commitments and my CodePen prototype for the updated version. Note the direct-to-section hyperlinking for each checkbox, and the 'unlocking' of freeform text-fields for those that would like to expand.</figcaption>
 </figure>
@@ -123,6 +125,8 @@ Both of these changes were impacted by the nature of how late Kickstarter's proj
 ## Effects on users and business
 
 Desired page view metrics for the first three months after launching the Environmental Resources Center were achieved within two weeks. Kickstarter design & technology outreach specialists noted an increase in projects that provided information on the environmental commitments for their production and fulfilment.
+
+Additionally, the success of the Environmental Resources Center allowed Kickstarter to run more sustainability-based creative prompts such as  <a href="https://kickstarter.com/shapeshift" target="_blank">Shapeshift</a>—which in turn encourages aspiring design & technology creators to consider environmental impacts.
 
 ## Was was learned
 
