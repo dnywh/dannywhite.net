@@ -2,6 +2,9 @@
 title: Getting (sort of) off Google
 description: "This is a guide for those, like me, who wanted to cut the Google cord yet still be able to receive Google Calendar invitations and collaborate on Google Docs."
 date: 2019-10-20 10:30:00 +1000
+tags:
+  - email
+  - guide
 ---
 
 There are a lot of good reasons for killing-off the Gmail address and going with your own, custom email address. The current reality though is that a lot of folks still use Google Drive, Google Docs, and Google Calendar. Unless you want to fork out money for G Suite (and then once again give your data to Google), you're in danger of cutting yourself off from collaboration.

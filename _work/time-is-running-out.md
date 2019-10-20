@@ -1,16 +1,8 @@
 ---
 featured: true
-image_arrangement: one-vertical-two-horizontal
-image_arrangement_images:
-  - name: heather-craig.jpg
-    alt: Girl at Climate March with Time Is Running Out poster behind her
-  - name: krys-maniecki.jpg
-    alt: Four kids sitting on garbage bins and holding Climate Strike posters
-  - name: dan-stacking.jpg
-    alt: Dan stacking freshly-printed posters
 title: "Time is Running Out: Strike for Climate!"
 description: Posters for the 2019 Global Climate Strike and beyond.
-featured_image: krys-maniecki.jpg
+featured_image: poster-hand-out-1.jpg
 date: 2019-09-11 09:00:00 -0400
 roles: 
   - Art direction
@@ -52,7 +44,7 @@ The Kickstarter project needed graphics indicative of what the posters might loo
 Given the environmental nature of the project, we wanted to work with a local (New York area) printer. We hoped for recycled card stock and a less-intensive printing method. I contacted Dan at [The Arm](http://thearmnyc.com){:target="_blank"}, a print shop in Williamsburg, Brooklyn that specialises in Risograph and letterpress printing. Thankfully, Dan was willing to give us estimates and express design constraints within the first hours of contact. These design constraints informed the indicative poster mockups for the imminent [Kickstarter campaign](https://www.kickstarter.com/projects/jonleland/time-is-running-out){:target="_blank"} graphics.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/hasty-visuals.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/hasty-visuals.jpg" alt="A paper sketch alongside some digital renderings">
   <figcaption>Some of the hasty, unglamorous poster format sketches and digital renders to give Dan at The Arm for colour and type direction.</figcaption>
 </figure>
 
@@ -60,9 +52,9 @@ Given the environmental nature of the project, we wanted to work with a local (N
 The analog nature of letterpress meant that the rest of the design process would take place on-site at The Arm. We chose appropriate wooden type, paint colours, and ordered recycled paper stock.
 
 <figure>
-  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/wooden-type.jpg" alt="TODO">
-  <img style="grid-column: span 2; grid-row: span 2;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/cassie-jon-dan.jpg" alt="TODO">
-  <img style="grid-column: span 2; grid-row: span 2; text-align: right" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/poster-mockup.jpg" alt="TODO">
+  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/wooden-type.jpg" alt="A drawer full of wooden type">
+  <img style="grid-column: span 2; grid-row: span 2;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/cassie-jon-dan.jpg" alt="Three people aligning type on a piece of paper">
+  <img style="grid-column: span 2; grid-row: span 2; text-align: right" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/poster-mockup.jpg" alt="A person's hand arranging type on a piece of paper">
   <figcaption class="caption-right" style="grid-column: span 2; grid-row: 2;">The four of us deciding on typography and paint details. The repeated <em>We will be...</em> format on three of the four posters would end up saving us a lot of time in a soon-to-be tight printing process, as we would only needs to change the last line's wooden type.</figcaption>
 </figure>
 
@@ -70,14 +62,20 @@ Another deciding factor for letterpress was the vibrancy and tactility of the pr
 
 Aside from the delivery challenge (which is described below), the remaining tasks within the design process were fairly mechanical. Dan helped set up the plates and Vandercook letterpresses. Cassie, Jon, and I alternated printing the poster backgrounds gradients and foreground text.
 
-// TODO
-[videos]
-_Caption: Inside The Arm as we knocked out the posters._
+<figure class="even-two">
+  <video playsinline controls>
+    <source src="https://ik.imagekit.io/dw/video/cassie-vandercook.mp4" type="video/mp4">
+  </video>
+  <video playsinline controls>
+    <source src="https://ik.imagekit.io/dw/video/the-arm-process.mp4" type="video/mp4">
+  </video>
+  <figcaption>Inside The Arm as we knocked out the posters.</figcaption>
+</figure>
 
 <figure>
-  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/dan-setting-up-colours.jpg" alt="TODO">
-  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/time-is-running-out-press.jpg" alt="TODO">
-  <img style="grid-column: span 2; grid-row: span 2;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/we-will-be-hungry-press.jpg" alt="TODO">
+  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/dan-setting-up-colours.jpg" alt="Dan printing background colours on paper">
+  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/time-is-running-out-press.jpg" alt="A printed poster coming out of the letterpress">
+  <img style="grid-column: span 2; grid-row: span 2;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/we-will-be-hungry-press.jpg" alt="A printed poster coming out of the letterpress">
   <figcaption class="caption-right" style="grid-column: 3 / 5; grid-row: 2;">First: Dan setting up the first run of paint on the Vandercook. Second: A 'Time is Running Out` poster. Third: A 'We Will Be Hungry' poster.</figcaption>
 </figure>
 
@@ -91,17 +89,17 @@ Another helping factor was our simplified poster layout. Constraining ourselves 
 
 <!-- Was even-three, now manual -->
 <figure class="even-three">
-  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/type-stack.jpg" alt="TODO">
-  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/dan-with-test-posters.jpg" alt="TODO">
-  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/danny-with-test-poster.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/type-stack.jpg" alt="A hand arranging type on a plate, in preparation for printing">
+  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/dan-with-test-posters.jpg" alt="Dan holding up two test prints">
+  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/danny-with-test-poster.jpg" alt="Danny proudly holding up a completed print">
   <figcaption>A series of test plates and prints using our self-imposed constraints.</figcaption>
 </figure>
 
 We finished the printing process with just enough time to spare for non-New York delivery, and then local delivery, and pick-up.
 
 <figure class="even-two">
-  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/jon-scoring-envelopes.jpg" alt="TODO">
-  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/jon-packing.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/jon-scoring-envelopes.jpg" alt="Jon scoring envelopes to properly fit posters">
+  <img data-src="https://ik.imagekit.io/dw/work/time-is-running-out/jon-packing.jpg" alt="Jon packing an envelope with posters">
   <figcaption>Jon sending posters to non-New York backers, just in time to make the Climate Strike.</figcaption>
 </figure>
 
@@ -109,16 +107,16 @@ We finished the printing process with just enough time to spare for non-New York
 Excess funds from the Kickstarter project allowed us to print more posters to hand out on the day. 
 
 <figure>
-  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/poster-hand-out-2.jpg" alt="TODO">
-  <img style="grid-column: span 4; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/poster-hand-out-1.jpg" alt="TODO">
+  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/poster-hand-out-2.jpg" alt="Myles handing out a poster">
+  <img style="grid-column: span 4; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/poster-hand-out-1.jpg" alt="Myles handing out a poster">
   <figcaption>Myles and Tyler giving us a hand distributing posters. The posters went within minutes.</figcaption>
 </figure>
 
 We also had some friends send photos through of posters they saw in the wild.
 
 <figure>
-  <img style="grid-column: span 4; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/krys-maniecki.jpg" alt="TODO">
-  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/heather-craig.jpg" alt="TODO">
+  <img style="grid-column: span 4; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/krys-maniecki.jpg" alt="Four kids sitting on garbage bins and holding Climate Strike posters">
+  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/heather-craig.jpg" alt="Girl at Climate March with 'Time is Running Out' poster behind her">
   <figcaption>First: Some kids with our posters. Photo by Krys Maniecki. Second: Another poster spotted in the wild. Photo by Heather Craig.</figcaption>
 </figure>
 

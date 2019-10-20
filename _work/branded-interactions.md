@@ -6,10 +6,6 @@ locations:
   - New York, NY
 client: ustwo
 featured_image: ipad-in-situ.jpg
-image_arrangement: single-horizontal
-image_arrangement_images:
-  - name: ipad-in-situ.jpg
-    alt: Erin using the Branded Interactions prototype on an iPad
 links:
   - title: Branded Interactions on GitHub
     url: https://www.github.com/ustwo/branded-interactions

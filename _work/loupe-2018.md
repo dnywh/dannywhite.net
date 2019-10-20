@@ -24,7 +24,7 @@ I grew into digital design through Photoshop, and Paint before that. From there 
 Gutenberg in the 14th century, China 700 years before that. Movable type, the printing press, down to offset printing. All of these tools that we've used through to desktop publishing come from a world where designers physically set the type, mixed the colours, and handled the paper stock.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/printing-press.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/printing-press.jpg" alt="A drawing of a printing press">
   <figcaption>Woolsey, Theodore Dwight, 1876.</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ We're certainly not the first design discipline to have this realisation. The ga
 Queer Eye is a great lesson on humanity. It's also a great lesson on team dynamics.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/fab-five.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/fab-five.jpg" alt="The Fab Five from Queer Eye, all posing for a photo">
   <figcaption>Bobby, Karamo, Antony, Jonathan, Tan.</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ Luckily, we're not the first design discipline to go through this kind of transf
 Not too far from central Amsterdam is a bizarre piece of living history: the Bijlmermeer.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/bijlmermeer-1962-73.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/bijlmermeer-1962-73.jpg" alt="An aerial photo of the Bijlmermeer housing housing development">
   <figcaption>via artchist.wordpress.com</figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ The Bijlmermeer was conceived-of and built as the design of built environment wa
 As well as being built during this time, the Bijlmermeer became a prime example of a specific _approach_ to urban design. One with an **unrelenting belief in technological progress to advance the human condition**. An approach that I worry interface designers are moving towards. An approach with a lot to do with Le Corbusier.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/le-corbusier.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/le-corbusier.jpg" alt="Le Corbuisier at his desk">
   <figcaption>Wim Dussel, 1955.</figcaption>
 </figure>
 
@@ -111,21 +111,21 @@ Legend has it that Le Corbusier's vision for High Modernist design came to him w
 This is his rendition of an improved Buenos Aires:
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/buenos-aires.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/buenos-aires.jpg" alt="A sketch of Buenos Aires, from the sea">
   <figcaption>Buenos Aires as rendered by Le Corbusier.</figcaption>
 </figure>
 
 He drew the following sketch shortly after a flight over Rio De Janerio:
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/rio.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/rio.jpg" alt="A sketch of Rio De Janerio, from the sky">
   <figcaption>Rio De Janeiro as rendered by Le Corbusier.</figcaption>
 </figure>
 
 And this last one breaks my heart. This is his blueprint for his Radiant City—specifically applied to Paris.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/radiant-city-plans.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/radiant-city-plans.jpg" alt="A sketch of the proposed Radiant City">
   <figcaption>The Radiant City.</figcaption>
 </figure>
 
@@ -134,15 +134,15 @@ Le Corbusier's urban utopia: high-rise buildings (in the distance) for the optim
 _Radiant City_[^radiant-city] is his seminal book on this philosophy and proposed city. It's well worth a read. For example, the below gem illustrates exactly how his superblocks compare to blocks that existed in historic cities (and for these examples, thankfully still do to a degree).
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/block-sizes.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/block-sizes.jpg" alt="A diagram comparing city block sizes">
   <figcaption>A handy block-size comparison chart.</figcaption>
 </figure>
 
 The Bijlmermeer wasn't built by Le Corbusier, but it was done in his footsteps and core tenets—well within the school of high modernity[^bijlmermeer].
 
 <figure class="even-two">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/bijlmermeer-site-plan-1980s.jpg" alt="TODO">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/amsterdam-jordaan.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/bijlmermeer-site-plan-1980s.jpg" alt="A site plan for Bijlmermeer">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/amsterdam-jordaan.jpg" alt="A screenshot of Apple Maps for Amsterdam">
   <figcaption>First: Bijlmermeer site plan, via zijnwijdat.nl. Second: Central Amsterdam (~10km away), at a similar scale.</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ Brasilia and the Bijlmermeer, two environments built from above, shared a funny 
 Sadly, there are more severe examples of how this methodology has failed people. The infamous Pruitt-Igoe in St Louis was one of them.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-USGS02.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-USGS02.jpg" alt="An aerial photo of the Pruitt-Igoe housing development">
   <figcaption>United States Geological Survey, 1963–72.</figcaption>
 </figure>
 
@@ -166,8 +166,8 @@ Pruitt-Igoe was a housing development designed and built from a blank slate. Tak
 I live in New York so like to use New York examples. This first photo below was taken on Hester Street, on the Lower East Side. The second photo was taken from somewhere around Alphabet City. Although more gentrified and car-heavy, both areas still generally maintain their density.
 
 <figure class="even-two">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/hester-street.jpg" alt="TODO">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/vergara-camilo.jpg" alt="TODO">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/hester-street.jpg" alt="Merchants selling their wares on the street">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/vergara-camilo.jpg" alt="Two kids playing with a fire hydrant">
   <figcaption>First: Berenice Abbott, 1936. Second: Vergara, Camilo J, 1970.</figcaption>
 </figure>
 
@@ -180,14 +180,14 @@ The kids playing with a fire hydrant are not at school or at home, nor are they 
 Pruitt-Igoe set out to be Le Corbusier's urban utopia but ended up prematurely yet amazingly demolished (on live television[^pruitt-igoe-demolition]).
 
 <figure class="even-four">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-1.jpg" alt="A building being demolished">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-2.jpg" alt="A building being demolished">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-3.jpg" alt="A building being demolished">
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-4.jpg" alt="A building being demolished">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-1.jpg" alt="Pruitt-Igoe being demolished">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-2.jpg" alt="Pruitt-Igoe being demolished">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-3.jpg" alt="Pruitt-Igoe being demolished">
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/pruitt-igoe-collapse-series-4.jpg" alt="Pruitt-Igoe being demolished">
   <figcaption>U.S. Department of Housing and Urban Development, 1972.</figcaption>
 </figure>
 
-I don't think there's a Pruitt Igoe, Bijlmermeer, or Brasilia of product design. I instead worry that the failures made by their designers are ones we could soon make. In our world we _have to_ simplify and systemise, just to be able to work with our already-abstracted design tools and computers—let alone design something coherent that fits into the palm of a hand.
+I don't think there's a Pruitt-Igoe, Bijlmermeer, or Brasilia of product design. I instead worry that the failures made by their designers are ones we could soon make. In our world we _have to_ simplify and systemise, just to be able to work with our already-abstracted design tools and computers—let alone design something coherent that fits into the palm of a hand.
 
 Designing from above is an easy option for us.
 
@@ -225,8 +225,8 @@ Like designing with data, leaving the office informs what we're making _from the
 Take a look at the below image. The left-most block is one average day at Times Square in 2009. Janette Sadik-Khan[^sadik-khan], the then-transport commissioner, and her team ran an experiment; 5 blocks of Times Square were to temporarily become off-limits for cars. The team visited the local hardware store, picked up some paint and lawn chairs, and set them out on the newly-cleared streets.
 
 <figure>
-  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/times-square.jpg" alt="TODO">
-  <figcaption>Three photos of crowds in Times Square, New York</figcaption>
+  <img data-src="https://ik.imagekit.io/dw/work/loupe-2018/times-square.jpg" alt="Three photos of crowds in Times Square, New York">
+  <figcaption>From left: Hiroko Masuike, Damon Winter, Justin Maxon, 2009, for The New York Times.</figcaption>
 </figure>
 
 

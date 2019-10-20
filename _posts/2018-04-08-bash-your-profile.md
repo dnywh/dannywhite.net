@@ -2,6 +2,8 @@
 title: "Bash your profile"
 date: 2018-04-07 09:12:00 -0400
 featured_image: atom-bash_profile.png
+tags:
+    - guide
 ---
 
 It seems like everyone has a use for Terminal these days but the people most uncomfortable with it (think PMs, designers) have the heaviest lifting to do. Shortcuts are so wildly helpful for making Terminal approachable—yet are somehow unexplained and impenetrable for those that need them.

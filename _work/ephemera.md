@@ -13,10 +13,4 @@ tags:
 #   - New York, NY
 # client: ustwo
 featured_image: ephemera-snippet.jpg
-# image_arrangement: single-horizontal
-# image_arrangement_images:
-#   - name: ipad-in-situ.jpg
-#     alt: Erin using the Branded Interactions prototype on an iPad
 ---
-
-<!-- Do the same for Aussie/American -->

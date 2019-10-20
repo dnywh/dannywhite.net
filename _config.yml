@@ -25,11 +25,6 @@ url: "https://dannywhite.site" # the base hostname & protocol for your site, e.g
 author: Danny White
 
 # Build settings
-markdown: kramdown
-# The below seem to be now built-in
-# kramdown:
-#   syntax_highlighter: rouge
-# highlighter: rouge
 sass:
   style: compressed
 compress_html:
@@ -55,29 +50,16 @@ collections:
     output: true
     permalink: /work/:title
     order:
-      - environmental-resources-center.md
-      - loupe-2018.md
       - time-is-running-out.md
+      - environmental-resources-center.md
       - native-checkout.md
+      - loupe-2018.md
       - kickstarter-sketch-plugin.md
       - origami.md
       - contextkit.md
       - branded-interactions.md
       - syd.md
       - mumford.md
-
-# TODO: change order to below:
-# order:
-#       - time-is-running-out.md
-#       - environmental-resources-center.md
-#       - native-checkout.md
-#       - loupe-2018.md
-#       - kickstarter-sketch-plugin.md
-#       - origami.md
-#       - contextkit.md
-#       - branded-interactions.md
-#       - syd.md
-#       - mumford.md
 
 # Set some defaults to save repetition
 defaults:

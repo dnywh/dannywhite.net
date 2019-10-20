@@ -37,6 +37,7 @@ article figure {
   
     // Often-reused grid layouts
     article figure.even-two img,
+    article figure.even-two video,
     article figure.even-three img,
     article figure.even-four img {
       grid-column: span 2;

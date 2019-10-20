@@ -1,4 +1,11 @@
 // Work
+// Introductory image
+article.project > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 80vh;
+}
+
 // Header
 article.project > header {
   @extend %section-border-bottom;
@@ -58,30 +65,4 @@ article.project > header ul p {
 ul.press {
   @extend %ul-plain;
 }
-
-/* Project: grid templates */
-.single-horizontal img,
-.one-vertical-two-horizontal img {
-  object-fit: cover;
-  align-self: stretch;
-}
-
-.one-vertical-two-horizontal {
-  @extend %grid-base;
-  grid-template-rows: 40vh 40vh;
-}
-
-.one-vertical-two-horizontal img:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-.one-vertical-two-horizontal img:nth-child(2) {
-  grid-column: 3 / 7;
-  grid-row: 1;
-}
-.one-vertical-two-horizontal img:nth-child(3) {
-  grid-column: 3 / 7;
-  grid-row: 2;
-}
-
 
