@@ -1,9 +1,7 @@
 ---
-layout: post
-type: article
 title: "ContextKit for Origami"
 date: 2017-08-17 07:08:01 -0400
-featured-image: contextkit-og.jpg
+featured_image: contextkit-og.jpg
 ---
 
 Picture this: you’re led to an unfamiliar room in an unfamiliar building, and sat-down in front of a mobile device. Some person called a ‘researcher’ or ‘product designer’ presses a few buttons, and then wham—you have something called a ‘prototype’ in front of you and a short verbal description as to why.

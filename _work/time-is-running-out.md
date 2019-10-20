@@ -1,8 +1,7 @@
 ---
-layout: work
 featured: true
-image-arrangement: one-vertical-two-horizontal
-image-arrangement-images:
+image_arrangement: one-vertical-two-horizontal
+image_arrangement_images:
   - name: heather-craig.jpg
     alt: Girl at Climate March with Time Is Running Out poster behind her
   - name: krys-maniecki.jpg
@@ -10,8 +9,8 @@ image-arrangement-images:
   - name: dan-stacking.jpg
     alt: Dan stacking freshly-printed posters
 title: "Time is Running Out: Strike for Climate!"
-byline: Posters for the 2019 Global Climate Strike and beyond.
-featured-image: krys-maniecki.jpg
+description: Posters for the 2019 Global Climate Strike and beyond.
+featured_image: krys-maniecki.jpg
 date: 2019-09-11 09:00:00 -0400
 roles: 
   - Art direction

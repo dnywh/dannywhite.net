@@ -1,7 +1,6 @@
 ---
-layout: post
-type: article
 title: Getting (sort of) off Google
+description: "This is a guide for those, like me, who wanted to cut the Google cord yet still be able to receive Google Calendar invitations and collaborate on Google Docs."
 date: 2019-10-20 10:30:00 +1000
 ---
 

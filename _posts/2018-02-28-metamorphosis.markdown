@@ -1,9 +1,7 @@
 ---
-layout: post
-type: article
 title: "Metamorphosis"
 date: 2018-02-28 09:12:00 -0400
-featured-image: KidMap-Metamorphosis-2016-02-01-2.jpg
+featured_image: KidMap-Metamorphosis-2016-02-01-2.jpg
 ---
 
 These three design studio exercises are intended to elicit tangible attributes for designing product whilst keeping multiple people's opinions heard and considered.

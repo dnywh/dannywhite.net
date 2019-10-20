@@ -79,6 +79,24 @@ collections:
 #       - syd.md
 #       - mumford.md
 
+# Set some defaults to save repetition
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      type: "article"
+  -
+    scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+      type: "article"
+      twitter_card_type: "summary_large_image"
+
 # Exclude directories and/or files from the conversion
 exclude:
   - Gemfile

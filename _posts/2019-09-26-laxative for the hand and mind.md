@@ -1,6 +1,4 @@
 ---
-layout: post
-type: article
 title: "Laxative for the hand and mind"
 date: 2019-09-26 10:30:00 -0400
 ---

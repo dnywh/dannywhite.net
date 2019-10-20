@@ -2,67 +2,25 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>
-    {% if page.title %}
-    {{ page.title | strip_html | strip_newlines | truncate: 160 }} &mdash; {{ site.title | escape }}
-    {% else %}
-    {{ site.title | escape }}
-    {% endif %}
+  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }} &middot; {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
   </title>
   <meta content="Danny White" name="author" />
 
   <!-- Open Graph meta -->
   <meta property="og:type" content="{{ page.type }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:title" content="{% if page.title %}{{
-      page.title | strip_html | strip_newlines | truncate: 160
-    }}{% else %}{{ site.title | escape }}{% endif %}" />
-  <meta property="og:description" content="{{
-      page.byline
-        | default: site.description
-        | strip_html
-        | normalize_whitespace
-        | truncate: 160
-        | escape
-    }}" />
-  <meta property="og:image" content="{% if page.featured-image %}{{ site.url }}/assets/posts/{{
-      page.date | date: '%Y-%m-%d'
-    }}-{{ page.title | slugify }}/{{
-      page.featured - image
-    }}{% elsif page.featured-image-remote %}https://ik.imagekit.io/dw/posts/{{
-      page.featured - image - remote
-    }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <!-- Open Graph meta: Description: Begin with explicit description, backed up by excerpt, backed up by site description  -->
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}" />
+  <meta property="og:image" content="{% if page.featured_image %}{{ site.url }}/assets/posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured_image }}{% elsif page.featured_image_remote %}https://ik.imagekit.io/dw/posts/{{ page.featured_image_remote }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta content="en_GB" property="og:locale" />
 
-  <!-- Twitter Card meta -->
-  <meta name="twitter:card" content="{% if page.card-type %}{{
-      page.card - type
-    }}{% else %}summary_large_image{% endif %}" />
-  <meta content="@dannyalright" name="twitter:site" />
-  <meta content="@dannyalright" name="twitter:creator" />
-  <meta name="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:description" content="{{
-      page.excerpt
-        | default: site.description
-        | strip_html
-        | normalize_whitespace
-        | truncate: 160
-        | escape
-    }}" />
-  <meta name="twitter:image" content="{% if page.featured-image %}{{ site.url }}/assets/posts/{{
-      page.date | date: '%Y-%m-%d'
-    }}-{{ page.title | slugify }}/{{
-      page.featured - image
-    }}{% elsif page.featured-image-remote %}https://ik.imagekit.io/dw/posts/{{
-      page.featured - image - remote
-    }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
+  <!-- Twitter-specific meta -->
+  <meta name="twitter:card" content="{% if page.twitter_card_type %}{{ page.twitter_card_type }}{% else %}summary{% endif %}" />
 
   <!-- Pinterest -->
   <meta content="62a5c72a4dbb40cba45c9a57bef6a6f9" name="p:domain_verify" />
-
-  <!-- Normalize CSS -->
-  <!-- <link rel="stylesheet" href="{{ "/assets/normalize.css" | relative_url }}"> -->
 
   <!-- Custom styles -->
   <link rel="stylesheet" href="{{

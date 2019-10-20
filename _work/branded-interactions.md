@@ -1,14 +1,13 @@
 ---
-layout: work
 title: Branded Interactions
-byline: Allowing any organisation to identify and express unique motion and interactions.
+description: Allowing any organisation to identify and express unique motion and interactions.
 date: 2016-01-20 09:00:00 -0400
 locations:
   - New York, NY
 client: ustwo
-featured-image: ipad-in-situ.jpg
-image-arrangement: single-horizontal
-image-arrangement-images:
+featured_image: ipad-in-situ.jpg
+image_arrangement: single-horizontal
+image_arrangement_images:
   - name: ipad-in-situ.jpg
     alt: Erin using the Branded Interactions prototype on an iPad
 links:

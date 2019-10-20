@@ -1,9 +1,7 @@
 ---
-layout: post
-type: article
 title: "Keith Haring on image and action"
 date: 2019-09-16 08:00:00 -0400
-featured-image: basquiat.jpg
+featured_image: basquiat.jpg
 ---
 
 Lexi and I visited the Guggenheim over the weekend.

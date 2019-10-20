@@ -1,12 +1,11 @@
 ---
-layout: work
 featured: true
 title: Kickstarter Environmental Resources Center
-byline: Helping independent creators evaluate and reduce the environmental impact of their products.
+description: Helping independent creators evaluate and reduce the environmental impact of their products.
 date: 2018-11-29 09:00:00 -0400
-featured-image: collage.jpg
-image-arrangement: single-horizontal
-image-arrangement-images:
+featured_image: collage.jpg
+image_arrangement: single-horizontal
+image_arrangement_images:
   - name: collage.jpg
     alt: A collage of images and text from the Environmental Resources Center
 roles:

@@ -1,8 +1,7 @@
 ---
-layout: work
 hidden: true
 title: Aussie American
-# byline: Allowing brands to create unique motion and interactions.
+# description: Allowing brands to create unique motion and interactions.
 roles:
   - Product design
   - Development (JavaScript)
@@ -13,9 +12,9 @@ tags:
 # locations:
 #   - New York, NY
 # client: ustwo
-featured-image: ephemera-snippet.jpg
-# image-arrangement: single-horizontal
-# image-arrangement-images:
+featured_image: ephemera-snippet.jpg
+# image_arrangement: single-horizontal
+# image_arrangement_images:
 #   - name: ipad-in-situ.jpg
 #     alt: Erin using the Branded Interactions prototype on an iPad
 ---

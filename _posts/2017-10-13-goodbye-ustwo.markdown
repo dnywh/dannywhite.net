@@ -1,6 +1,4 @@
 ---
-layout: post
-type: article
 title: "Goodbye ustwo"
 date: 2017-10-13 09:12:00 -0400
 ---

@@ -1,9 +1,8 @@
 ---
-layout: work
 featured: true
 draft: true
 title: Kickstarter Sketch Plugin
-byline: Increasing the fidelity and rigidity at which the Kickstarter design team ideates, prototypes, and creates.
+description: Increasing the fidelity and rigidity at which the Kickstarter design team ideates, prototypes, and creates.
 date: 2019-06-26 09:00:00 -0400
 roles:
   - Strategy
@@ -14,7 +13,7 @@ collaborators:
 locations:
   - New York, NY
 client: Kickstarter
-featured-image: kickstarter-data-angled.jpg
+featured_image: kickstarter-data-angled.jpg
 ---
 
 <!-- Making Kickstarter data available to the Kickstarter design team (and soon to the general public) for more honest prototyping and stress-testing -->
