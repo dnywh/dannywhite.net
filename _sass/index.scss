@@ -24,11 +24,11 @@ ul.work li a {
   color: inherit;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: $breakpoint-grid) {
   ul.work li a {
     display: grid;
     grid-template-columns: $grid-column-structure;
-    gap: var(--gap-small);
+    gap: $grid-gap;
   }
 }
 
@@ -37,7 +37,11 @@ ul.work li a:hover {
 }
 
 ul.work li a img {
-  grid-column: span 2;
+  grid-column: span 4;
+}
+
+ul.work li a div {
+  grid-column: 5 / 7;
 }
 
 p.cta {

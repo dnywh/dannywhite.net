@@ -2,11 +2,11 @@
 layout: default
 title: About
 ---
-<article>
-        
-    <img class="single-hero" data-src="{% link /assets/images/danny-mbq-panel.jpg %}"
+<article>  
+    <figure>
+        <img style="grid-column: span 4;" data-src="{% link /assets/images/danny-mbq-panel.jpg %}"
         alt="Danny speaking at a panel">
-
+    </figure>
     <h1>About</h1>
 
     {% capture about_bio_include %}{% include_relative _includes/about-bio.md %}{% endcapture %}

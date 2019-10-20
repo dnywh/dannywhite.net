@@ -60,7 +60,7 @@ Design & technology projects on Kickstarter have the largest environmental footp
 
 I was the sole designer on a working group comprised of myself, product strategist Jon Leland, design & technology outreach specialist Heather Corcoran, and Environmental Defence Fund fellow Alexandra Criscuolo. As a working group and _not_ a fully resourced team, we limited the scope of the project to three months, part time.
 
-My responsibilities included the design direction for project creation changes, project presentation changes, and any resulting resources or guidelines. I also led engineering on what ultimately became the <a href="http://kickstarter.com/environment" target="_blank">Environmental Resources Center</a>, with help from software engineers Rob Lum and Pritika Nilaratna.
+My responsibilities included the design direction for project creation changes, project presentation changes, and any resulting resources or guidelines. I also led engineering on what ultimately became the [Environmental Resources Center](http://kickstarter.com/environment){:target="_blank"}, with help from software engineers Rob Lum and Pritika Nilaratna.
 
 ## Shaping the proposed solution
 
@@ -125,7 +125,7 @@ Both of these changes were impacted by the nature of how late Kickstarter's proj
 
 Desired page view metrics for the first three months after launching the Environmental Resources Center were achieved within two weeks. Kickstarter design & technology outreach specialists noted an increase in projects that provided information on the environmental commitments for their production and fulfilment.
 
-Additionally, the success of the Environmental Resources Center allowed Kickstarter to run more sustainability-based creative prompts such as  <a href="https://kickstarter.com/shapeshift" target="_blank">Shapeshift</a>—which in turn encourages aspiring design & technology creators to consider environmental impacts.
+Additionally, the success of the Environmental Resources Center allowed Kickstarter to run more sustainability-based creative prompts such as [Shapeshift](https://kickstarter.com/shapeshift){:target="_blank"}—which in turn encourages aspiring design & technology creators to consider environmental impacts.
 
 ## Was was learned
 

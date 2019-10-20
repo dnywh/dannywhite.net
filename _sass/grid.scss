@@ -1,0 +1,53 @@
+// Grid
+// Shared grid uses
+
+// Project imagery and video
+// TODO: I changed `article.project` to `article` so Notes could inherit it. I need to move the below, general, stuff into a more general scss file.
+article figure {
+    margin: 3rem auto;
+  }
+  article figure figcaption {
+    margin-top: 0.5rem;
+  }
+  
+  @media only screen and (min-width: $breakpoint-grid) {
+    article figure {
+      display: grid;
+      grid-template-columns: $grid-column-structure;
+      gap: $grid-gap;
+    }
+    article figure figcaption {
+      margin-top: 0;
+      grid-column: 5 / 7;
+    }
+    article figure figcaption.caption-right {
+      text-align: right;
+    }
+  
+    // Defaults to be overridden inline
+    article figure img,
+    article figure video {
+      grid-column: span 4;
+    }
+  
+    article figure img {
+      align-self: stretch;
+      object-fit: cover;
+    }
+  
+    // Often-reused grid layouts
+    article figure.even-two img,
+    article figure.even-three img,
+    article figure.even-four img {
+      grid-column: span 2;
+    }
+  
+     article figure.even-four img:nth-child(2), 
+     article figure.even-four img:nth-child(1) {
+      grid-row: 1;
+    }
+    article figure.even-four img:nth-child(3),
+    article figure.even-four img:nth-child(4) {
+      grid-row: 2;
+    }
+  }

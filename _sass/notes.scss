@@ -1,20 +1,23 @@
 // Notes
+@media only screen and (min-width: $breakpoint-grid) {
+  article.note {
+    display: grid;
+    grid-template-columns: $grid-column-structure;
+    gap: $grid-gap;
+  }
+}
 article.note {
-  display: grid;
-  grid-template-columns: $grid-column-structure;
-  gap: var(--gap-small);
-
   @extend %section-border-top;
   // margin-top: var(--gap-content);
   padding-top: 1rem;
 }
 
 article.note header {
-  grid-column: 1;
+  grid-column: span 2;
 }
 
 article.note section {
-  grid-column: 2 / 4;
+  grid-column: 3 / 7;
 }
 
 
