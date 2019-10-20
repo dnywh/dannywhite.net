@@ -25,11 +25,11 @@
         | truncate: 160
         | escape
     }}" />
-  <meta property="og:image" content="{% if page.featured_image %}{{ site.url }}/assets/posts/{{
+  <meta property="og:image" content="{% if page.featured-image %}{{ site.url }}/assets/posts/{{
       page.date | date: '%Y-%m-%d'
     }}-{{ page.title | slugify }}/{{
       page.featured - image
-    }}{% elsif page.featured_image-remote %}https://ik.imagekit.io/dw/posts/{{
+    }}{% elsif page.featured-image-remote %}https://ik.imagekit.io/dw/posts/{{
       page.featured - image - remote
     }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
@@ -50,11 +50,11 @@
         | truncate: 160
         | escape
     }}" />
-  <meta name="twitter:image" content="{% if page.featured_image %}{{ site.url }}/assets/posts/{{
+  <meta name="twitter:image" content="{% if page.featured-image %}{{ site.url }}/assets/posts/{{
       page.date | date: '%Y-%m-%d'
     }}-{{ page.title | slugify }}/{{
       page.featured - image
-    }}{% elsif page.featured_image-remote %}https://ik.imagekit.io/dw/posts/{{
+    }}{% elsif page.featured-image-remote %}https://ik.imagekit.io/dw/posts/{{
       page.featured - image - remote
     }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
 

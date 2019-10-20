@@ -1,9 +1,8 @@
 ---
 layout: work
 featured: true
-draft: true
-image_arrangement: one-vertical-two-horizontal
-image_arrangement_images:
+image-arrangement: one-vertical-two-horizontal
+image-arrangement-images:
   - name: heather-craig.jpg
     alt: Girl at Climate March with Time Is Running Out poster behind her
   - name: krys-maniecki.jpg
@@ -12,18 +11,25 @@ image_arrangement_images:
     alt: Dan stacking freshly-printed posters
 title: "Time is Running Out: Strike for Climate!"
 byline: Posters for the 2019 Global Climate Strike and beyond.
-featured_image: krys-maniecki.jpg
+featured-image: krys-maniecki.jpg
 date: 2019-09-11 09:00:00 -0400
 roles: 
   - Art direction
-  - Graphic design
-  - Letterpress printing
+  - graphic design
+  - letterpress printing
 collaborators:
   - Jon Leland
   - Cassie Marketos
-  - Daniel Gardiner Morris
+  - Dan Gardiner Morris
 locations:
   - New York, NY
+links:
+  - title: "Time is Running Out: Strike for Climate! on Kickstarter"
+    url: https://www.kickstarter.com/projects/jonleland/time-is-running-out
+tags:
+  - side project
+  - print design
+  - experimental
 ---
 
 ## Gist
@@ -33,11 +39,6 @@ Overview of project and it's impact.
 ## Process
 
 It all started with a text message.
-
-<figure>
-  <img data-src="{% link /assets/work/time-is-running-out/message.png %}" alt="TODO">
-  <figcaption>A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. A very fancy caption for a very fancy and cool image. </figcaption>
-</figure>
 
 Lexi and I were halfway through a [cross-country roadtrip](leaf-url) that was taking all of our attention.
 

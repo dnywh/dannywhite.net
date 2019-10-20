@@ -3,9 +3,9 @@ layout: default
 ---
 
 <article class="project">
-  {% if page.image_arrangement %}
-  <div class="{{ page.image_arrangement }}">
-    {% for item in page.image_arrangement_images %}
+  {% if page.image-arrangement %}
+  <div class="{{ page.image-arrangement }}">
+    {% for item in page.image-arrangement-images %}
     <img data-src="{{ site.baseurl }}/assets/work/{{ page.slug }}/{{ item.name }}" alt="{{ item.alt }}">
     {% endfor %}
   </div>
@@ -41,7 +41,7 @@ layout: default
             {% for item in page.roles %}
             {% assign rolesArray = rolesArray | push: item %}
             {% endfor %}
-    
+            
             {{ rolesArray | array_to_sentence_string }}
         </p>
       </li>
@@ -54,7 +54,7 @@ layout: default
             {% for item in page.organisations %}
             {% assign organisationsArray = organisationsArray | push: item %}
             {% endfor %}
-    
+
             {{ organisationsArray | array_to_sentence_string }}
         </p>
       </li>

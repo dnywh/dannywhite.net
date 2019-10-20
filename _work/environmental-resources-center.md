@@ -4,9 +4,9 @@ featured: true
 title: Kickstarter Environmental Resources Center
 byline: Helping independent creators evaluate and reduce the environmental impact of their products.
 date: 2018-11-29 09:00:00 -0400
-featured_image: collage.jpg
-image_arrangement: single-horizontal
-image_arrangement_images:
+featured-image: collage.jpg
+image-arrangement: single-horizontal
+image-arrangement-images:
   - name: collage.jpg
     alt: A collage of images and text from the Environmental Resources Center
 roles:
@@ -74,12 +74,12 @@ Past interviews with Kickstarter creators (done often since I joined Kickstarter
 Over a series of drafts, Alexandra collated the information design & technology creators found underserved into the five-point framework. I took this information and prototyped multiple presentation types and entry points for creators.
 
 <figure>
-  <img data-src="{% link /assets/work/environmental-resources-center/desktop-header-section.jpg %}" alt="A hand-drawn sketch next to a digital mockup">
+  <img data-src="https://ik.imagekit.io/dw/work/environmental-resources-center/desktop-header-section.jpg" alt="A hand-drawn sketch next to a digital mockup">
   <figcaption>One example of a presentation type and resulting desktop-sized mockup. We had a good idea of the information density at this point, so most of my focus was on parsability. That included interlinking, theming, and staging of various pieces of content.</figcaption>
 </figure>
 
 <figure>
-  <img data-src="{% link /assets/work/environmental-resources-center/multi-section-directory.jpg %}" alt="Two digital mockups next to each other">
+  <img data-src="https://ik.imagekit.io/dw/work/environmental-resources-center/multi-section-directory.jpg" alt="Two digital mockups next to each other">
   <figcaption>If successful amongst design & technology creators, our team had plans to expand the resource center to other categories. We prepended (some light) exploration of navigational structures that would work for both single and multi-categories, but stopped after realising we didn't know enough about how content might be shared across categories.</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ Additionally, our creator-facing environmental commitment prompts receiving less
 
 
 <figure>
-  <img data-src="{% link /assets/work/environmental-resources-center/environmental-commitments-prompts.jpg %}" alt="An early hand-drawn sketch of a text input">
+  <img data-src="https://ik.imagekit.io/dw/work/environmental-resources-center/environmental-commitments-prompts.jpg" alt="An early hand-drawn sketch of a text input">
   <figcaption>We had originally kept the commitment area open to encourage thoughtful, original response. The lack of specificity, combined with an unclear entry into the resources center, meant creators didn't know where to start.</figcaption>
 </figure>
 
@@ -102,12 +102,12 @@ Another challenge was presenting the necessarily vast amount of information in a
 We reverted the nested structure of the educational resources into one Environmental Resources Center that could be more easily scanned. Each section and subsection received a unique ID for direct hyperlinking from other sections and future improvements to the Kickstarter project creation experience.
 
 <figure>
-  <img data-src="{% link /assets/work/environmental-resources-center/page-sections-theming.jpg %}" alt="A screenshot of JavaScript code inside a code editor">
+  <img data-src="https://ik.imagekit.io/dw/work/environmental-resources-center/page-sections-theming.jpg" alt="A screenshot of JavaScript code inside a code editor">
   <figcaption>Each section retained key identifier and theme information in order to allow the now-larger (or more dense) Environmental Resources Center to retain scannability. Setting up structures such as this in React allowed us to prototype structural variations quite quickly.</figcaption>
 </figure>
 
 <figure>
-  <img data-src="{% link /assets/work/environmental-resources-center/responsive-sizing.jpg %}" alt="Two screenshots of the eventual Kickstarter Environmental Resources Center">
+  <img data-src="https://ik.imagekit.io/dw/work/environmental-resources-center/responsive-sizing.jpg" alt="Two screenshots of the eventual Kickstarter Environmental Resources Center">
   <figcaption>Theme was represented through colour and labelling. This differs depending on screen size.</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ I also redesigned the creator-facing environmental commitment prompts to provide
 
 <figure>
   <video muted loop playsinline controls>
-  <source src="https://ik.imagekit.io/dw/video/video/environmental-commitments-changes.mp4" type="video/mp4">    
+  <source src="https://ik.imagekit.io/dw/video/environmental-commitments-changes.mp4" type="video/mp4">    
   </video>
   <figcaption>A comparison video of the original implementation of creator-facing environmental commitments and my CodePen prototype for the updated version. Note the direct-to-section hyperlinking for each checkbox, and the 'unlocking' of freeform text-fields for those that would like to expand.</figcaption>
 </figure>

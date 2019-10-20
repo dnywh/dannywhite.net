@@ -1,15 +1,14 @@
 ---
 layout: work
-featured: true
 title: Branded Interactions
 byline: Allowing any organisation to identify and express unique motion and interactions.
 date: 2016-01-20 09:00:00 -0400
 locations:
   - New York, NY
 client: ustwo
-featured_image: ipad-in-situ.jpg
-image_arrangement: single-horizontal
-image_arrangement_images:
+featured-image: ipad-in-situ.jpg
+image-arrangement: single-horizontal
+image-arrangement-images:
   - name: ipad-in-situ.jpg
     alt: Erin using the Branded Interactions prototype on an iPad
 links:
@@ -19,6 +18,7 @@ tags:
   - prototyping
   - framer
   - native
+  - experimental
 ---
 
 ## Issue
@@ -60,7 +60,7 @@ Presets were named for to well-known affordances such as 'smooth', 'snappy', and
   <figcaption>Exploration into common interface elements that could be generalised enough for the Branded Interactions tool, whilst also giving enough indication of how a preset behaves.</figcaption>
 </figure>
 
-Our largest unknowns and amgibuities had now been clarified. At this point we were ready to iterate within Framer. The iteration process became simply piecing together editable presets and interactive interface elements into a coherent experience. Designers and project managers at ustwo (who were routinely exposed to the aforementioned client requests) could then provide multiple rounds of precise feedback.
+Our largest unknowns and ambiguities had now been clarified. At this point we were ready to iterate within Framer. The iteration process became simply piecing together editable presets and interactive interface elements into a coherent experience. Designers and project managers at ustwo (who were routinely exposed to the aforementioned client requests) could then provide multiple rounds of precise feedback.
 
 <figure>
   <video muted loop playsinline controls autoplay>

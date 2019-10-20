@@ -14,7 +14,7 @@ collaborators:
 locations:
   - New York, NY
 client: Kickstarter
-featured_image: kickstarter-data-angled.jpg
+featured-image: kickstarter-data-angled.jpg
 ---
 
 <!-- Making Kickstarter data available to the Kickstarter design team (and soon to the general public) for more honest prototyping and stress-testing -->

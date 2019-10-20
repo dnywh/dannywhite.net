@@ -1,14 +1,14 @@
 ---
 layout: work
 draft: true
-# image_arrangement: single-horizontal
-# image_arrangement_images:
+# image-arrangement: single-horizontal
+# image-arrangement-images:
 #   - name: temp-screenshot.png
 #     alt: A screenshot of the Environmental Resources Center
 title: Mumford
 # byline: A cohesive identity for the trains, buses, and ferries that connect Sydney's diverse geography.
 date: 2013-01-30 09:00:00 +1000
-featured_image: mumford-truck-front.jpg
+featured-image: mumford-truck-front.jpg
 roles:
   - Graphic design
   - Branding
