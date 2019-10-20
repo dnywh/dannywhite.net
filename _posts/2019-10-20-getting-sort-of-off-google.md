@@ -48,8 +48,8 @@ Account URL: `https://calendar.google.com/calendar/dav/your@emailaddress.com/use
 Be sure to swap out the `your@emailaddress.com` with your own.
 
 <figure class="even-two">
-  <img data-src="https://ik.imagekit.io/dw/notes/verifying.png" alt="An iPad screenshot showing calendar settings">
-  <img data-src="https://ik.imagekit.io/dw/notes/advanced-settings.png" alt="An iPad screenshot showing calendar settings">
+  <img data-src="https://ik.imagekit.io/dw/notes/getting-sort-of-off-google/verifying.png" alt="An iPad screenshot showing calendar settings">
+  <img data-src="https://ik.imagekit.io/dw/notes/getting-sort-of-off-google/advanced-settings.png" alt="An iPad screenshot showing calendar settings">
   <figcaption>First: <em>Advanced Settings</em> appears as an option, after a bit of finagling. Second: The information I inputted within <em>Advanced Settings</em>.</figcaption>
 </figure>
 

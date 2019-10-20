@@ -12,7 +12,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title | escape }}{% endif %}" />
   <!-- Open Graph meta: Description: Begin with explicit description, backed up by excerpt, backed up by site description  -->
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}" />
-  <meta property="og:image" content="{% if page.featured_image %}{{ site.url }}/assets/posts/{{ page.date | date: '%Y-%m-%d' }}-{{ page.title | slugify }}/{{ page.featured_image }}{% elsif page.featured_image_remote %}https://ik.imagekit.io/dw/posts/{{ page.featured_image_remote }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
+  <meta property="og:image" content="{% if page.featured_image %}https://ik.imagekit.io/dw/{% if page.layout == "work" %}work/{% elsif page.layout == "post" %}notes/{% endif %}{{ page.slug }}/{{ page.featured_image }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta content="en_GB" property="og:locale" />
 
