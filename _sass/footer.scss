@@ -1,7 +1,7 @@
 // Footer
 footer {
+  // @extend %section-top;
   @extend %section-border-top;
-  // margin-top: var(--gap-content);
   padding-top: 1rem;
 }
 

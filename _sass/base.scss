@@ -55,8 +55,12 @@ $breakpoint-grid: calc((640px / 6) * 8);
   border-bottom: 0.125rem solid var(--color-foreground);
 }
 
-%section-border-top {
+%section-top {
   margin-top: var(--gap-content);
+}
+
+%section-border-top {
+  @extend %section-top;
   border-top: 0.125rem solid var(--color-foreground);
 }
 
@@ -99,7 +103,7 @@ a:hover {
 
 // Typography
 p {
-  // font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.4rem;
 }
 
