@@ -34,12 +34,11 @@ compress_html:
 kramdown:
   # Stop Apple's emoji preference
   footnote_backlink: "&#8617;&#65038;"
-  # Prevent automatic h2, h3, etc, ids
-  auto_ids: false
+  # auto_ids: false: would prevent automatic ids for h2, h3, etc
+  auto_ids: true
 
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
 
 collections:

@@ -8,7 +8,8 @@ article.project > img {
 
 // Header
 article.project > header {
-  @extend %section-border-bottom;
+  // @extend %section-border-bottom;
+  @extend %section-bottom;
 }
 
 article.project > header ul {

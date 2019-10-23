@@ -1,5 +1,6 @@
 ---
-draft: true
+# hidden: true
+hidden: true
 title: Syd
 description: A cohesive identity for the trains, buses, and ferries that connect Sydney's diverse geography.
 date: 2014-05-13 09:00:00 +1000

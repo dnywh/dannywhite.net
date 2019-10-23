@@ -68,9 +68,9 @@ Conducting a technological audit of the pledge flow across iOS and Android revea
   <figcaption>A snapshot of the Android audit. Orange labels indicate web views; the vast majority of views in the flow.</figcaption>
 </figure>
 
-Our pledge flow audit was then mapped against the aforementioned usability issues (TODO: see _Opportunity 2: Fix longstanding usability issues within the pledge flow_, above). This revealed how closely our usability issues overlapped with how the respective interface was built; natively or as a web view. We could then prioritise product *and* technical updates intelligently against technical rewrites.
+Our pledge flow audit was then mapped against the [aforementioned usability issues](#opportunity-2-fix-long-standing-usability-issues-within-the-pledge-flow). This revealed how closely our usability issues overlapped with how the respective interface was built; natively or as a web view. We could then prioritise product *and* technical updates intelligently against technical rewrites.
 
-Density and imbalance issues (TODO: see _Projects were overwhelming and imbalanced_, above) informed our secondary focus on improving the experience of entering and exiting a project's rewards. Known interface confusion throughout the flow (combined with the mapping results) informed our primary focus on improving the reward comparison and pledging (payment) experiences.
+The [aforementioned density and imbalance issues](#projects-were-overwhelming-and-imbalanced) informed our secondary focus on improving the experience of entering and exiting a project's rewards. Known interface confusion throughout the flow (combined with the mapping results) informed our primary focus on improving the reward comparison and pledging (payment) experiences.
 
 ### Improving the reward comparison and pledging experiences
 I employed a technique called 'breadboarding' to rapidly explore possible design solutions for allowing reward comparison and progression to pledging. Breadboarding placed focus on the intent and expected outcome—reducing the lure of retrofitting intent onto a predefined architecture.
@@ -124,24 +124,20 @@ Engineers become more heavily involved as testing began. They worked with myself
 
 Initial tests were done with click-through prototypes; enough to find where we needed to improve how the flow translated to user experience. Later tests increasingly focused on reward entry, reward entry, and completing a pledge. These would increase in fidelity as the issues reported by respondents did too.
 
-<figure>
+<figure class="even-two">
   <video muted playsinline controls>
-  <source src="https://ik.imagekit.io/dw/video/stage-three-full-flow-testing.mp4" type="video/mp4">
+    <source src="https://ik.imagekit.io/dw/video/stage-three-full-flow-testing.mp4" type="video/mp4">
   </video>
-  <figcaption>A later, mid-fidelity prototype that also began to validate future features such as reward sorting and multiple selection.</figcaption>
+  <video muted playsinline controls>
+    <source src="https://ik.imagekit.io/dw/video/stage-six-android-variations-and-control.mp4" type="video/mp4">
+  </video>
+  <figcaption>First: a mid-fidelity prototype that also began to validate future features such as reward sorting and multiple selection. Second: a series of reward entry and reward comparison options (including a control variant) for later, higher-fidelity testing.</figcaption>
 </figure>
 
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/work/native-checkout/reward-selection-improvements.jpg" alt="Two hand-drawn sketches">
   <figcaption>Improving interface and micro-interaction details as usability testers began to have less issues with the flow and began to focus more on reward comparison specifics.</figcaption>
-</figure>
-
-<figure>
-  <video muted playsinline controls>
-  <source src="https://ik.imagekit.io/dw/video/stage-six-android-variations-and-control.mp4" type="video/mp4">
-  </video>
-  <figcaption>A series of reward entry and reward comparison options (including a control variant) for later, higher-fidelity testing.</figcaption>
 </figure>
 
 Reward comparison architecture became contentious as fidelity increased. Usability tests showed mixed results between horizontally-scrolling rewards and vertically-scrolling rewards (with clarified interface elements). Thankfully, earlier engineering investigation had shown that making later changes in architecture—even split testing—would only require a small amount of work. We could move forward now with confidence and, if necessary, iterate from real-world results later.
@@ -151,7 +147,7 @@ Reward comparison architecture became contentious as fidelity increased. Usabili
   <figcaption>A high-level rendering of the pledge flow once we had enough confidence to begin implementing changes. This was shown at a company-wide All Hands.</figcaption>
 </figure>
 
-The earlier [breadboarding](TODO) exercises provided approximate scope for major backer behaviours. We were now ready to build the iOS and Android interface changes based on what had been validated through testing.
+The [aforementioned breadboarding exercises](#improving-the-reward-comparison-and-pledging-experiences) provided approximate scope for major backer behaviours. We were now ready to build the iOS and Android interface changes based on what had been validated through testing.
 
 I created an 'experience map'—a blend of a service blueprint and decisions tree—to cover the complex landscape of _all_ backer behaviours. The experience map acted as a checklist for engineering and design as we resolved outstanding interface questions and built out each component.
 

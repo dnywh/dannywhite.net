@@ -1,5 +1,6 @@
 ---
-draft: true
+# hidden: true
+hidden: true
 title: Mumford
 # description: A cohesive identity for the trains, buses, and ferries that connect Sydney's diverse geography.
 date: 2013-01-30 09:00:00 +1000

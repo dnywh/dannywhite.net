@@ -5,7 +5,8 @@ body header.temp-header-class {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @extend %section-border-bottom;
+  // @extend %section-border-bottom;
+  @extend %section-bottom;
 }
 body header.temp-header-class svg {
   width: 9vw;

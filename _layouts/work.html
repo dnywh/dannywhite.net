@@ -70,12 +70,6 @@ layout: default
     </ul>
   </header>
 
-  <!-- TODO: remove draft concept once properly launched -->
-  {% if page.draft %}
-  <section>
-    <p>The documentation for this project is in progress. Please check back in a few days.</p>
-  </section>
-  {% else %}
   <section>
     {{ content }}
   </section>
@@ -105,7 +99,6 @@ layout: default
       {% endfor %}
     </ul>
   </section>
-  {% endif %}
   {% endif %}
   
 </article>

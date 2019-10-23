@@ -1,7 +1,7 @@
 ---
 featured: true
 title: "Time is Running Out: Strike for Climate!"
-description: Posters for the 2019 Global Climate Strike and beyond.
+description: Creating letterpressed posters for the 2019 Global Climate Strike and beyond.
 featured_image: poster-hand-out-1.jpg
 date: 2019-09-11 09:00:00 -0400
 roles: 

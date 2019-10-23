@@ -45,10 +45,14 @@ $breakpoint-grid: calc((640px / 6) * 8);
   gap: $grid-gap;
 }
 
-%section-border-bottom {
-  border-bottom: 0.125rem solid var(--color-foreground);
+%section-bottom {
   margin-bottom: 2rem;
+}
+
+%section-border-bottom {
+  @extend %section-bottom;
   padding-bottom: 2rem;
+  border-bottom: 0.125rem solid var(--color-foreground);
 }
 
 %section-border-top {
@@ -73,9 +77,17 @@ body {
 
 // TODO remove container and revert to body
 .container {
-  margin: var(--gap-large);
+  // margin: var(--gap-large);
+  margin: 2vw 4vw;
 }
 
+// @media only screen and (min-width: $breakpoint-grid) {
+//   .container {
+//     margin: 2vw 8vw;
+//   }
+// }
+
+// Hyperlinks
 a {
   color: var(--color-foreground);
   transition: opacity var(--time-hover);
@@ -85,7 +97,9 @@ a:hover {
   opacity: var(--opacity-hover-text);
 }
 
+// Typography
 p {
+  // font-size: 1.1rem;
   line-height: 1.4rem;
 }
 
@@ -93,9 +107,17 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: $breakpoint-grid) {
   h1 {
     font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
   }
 }
 

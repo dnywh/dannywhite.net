@@ -6,17 +6,12 @@ h1.index-intro {
 
 ul.work {
   @extend %ul-plain;
-  @extend %section-border-top;
+  // @extend %section-border-top;
   padding-top: var(--gap-content);
 }
 
 ul.work li {
-  margin-bottom: var(--gap-small);
-}
-
-// TODO: remove this
-ul.work li.draft {
-  opacity: 0.5;
+  margin-bottom: 6rem;
 }
 
 ul.work li a {
@@ -32,15 +27,20 @@ ul.work li a {
   }
 }
 
-ul.work li a:hover {
-  opacity: var(--opacity-hover-block);
-}
-
-ul.work li a img {
-  grid-column: span 4;
+// ul.work li a:hover {
+  ul.work li a div:hover {
+  opacity: var(--opacity-hover-block); //TODO: fix
 }
 
 ul.work li a div {
+  grid-column: span 3;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+ul.work li a img {
   grid-column: 5 / 7;
 }
 

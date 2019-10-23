@@ -5,17 +5,18 @@ layout: default
   {{ site.description }}
 </h1>
 
+<h3>Some of his most recent work includes...</h3>
+
 <ul class="work">
   {% for item in site.work %}
   {% if item.featured %}
-  <li {% if item.draft %}class="draft"{% endif %}>
+  <li>
     <a href="{{ item.url }}">
+      <div>
+        <h2>{{ item.description | escape }}</h2>
+      </div>
       <img data-src="https://ik.imagekit.io/dw/work/{{ item.slug }}/{{ item.featured_image }}"
         alt="An illustrative image from the {{ item.title }} project" />
-      <div>
-        <!-- <h4>{{ item.client | escape }}</h4> -->
-        <h2>{{ item.title | escape }}</h2>
-      </div>
     </a>
   </li>
   {% endif %}
