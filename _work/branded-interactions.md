@@ -2,13 +2,15 @@
 title: Branded Interactions
 description: Allowing any organisation to identify and express unique motion and interactions.
 date: 2016-01-20 09:00:00 -0400
+client: ustwo
 locations:
   - New York, NY
-client: ustwo
 featured_image: ipad-in-situ.jpg
 links:
   - title: Branded Interactions on GitHub
     url: https://www.github.com/ustwo/branded-interactions
+roles:
+  - prototyping
 tags:
   - prototyping
   - framer

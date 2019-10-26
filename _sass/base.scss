@@ -75,22 +75,10 @@ $breakpoint-grid: calc((640px / 6) * 8);
 }
 
 body {
-  margin: 0; // TODO: wil become redundant when .container is removed
   background-color: var(--color-background);
   color: var(--color-foreground);
-}
-
-// TODO remove container and revert to body
-.container {
-  // margin: var(--gap-large);
   margin: 2vw 4vw;
 }
-
-// @media only screen and (min-width: $breakpoint-grid) {
-//   .container {
-//     margin: 2vw 8vw;
-//   }
-// }
 
 // Hyperlinks
 a {

@@ -6,7 +6,7 @@ tags:
   - life
 ---
 
-Found this nugget whilst cleaning up my files. It's from Tamara Shopsin's [Arbitrary Stupid Goal](https://www.mcdbooks.com/books/arbitrary-stupid-goal){:target="_blank"}.
+Found this nugget whilst cleaning up some files. It's from Tamara Shopsin's [Arbitrary Stupid Goal](https://www.mcdbooks.com/books/arbitrary-stupid-goal){:target="_blank"}.
 
 <figure>
 <img data-src="https://ik.imagekit.io/dw/notes/the-wolfawitzes/the-wolfawitzes.jpg" alt="Two scanned pages from the Arbitrary Stupid Goal book about the Wolfawitzes">

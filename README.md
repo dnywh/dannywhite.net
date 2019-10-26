@@ -13,6 +13,12 @@ This website runs on [Jekyll](http://github.com/jekyll/jekyll). Here are some th
 
 Things I've added onto or tweaked from the standard Jekyll theme, layouts, includes, etc.
 
+### Image optimisation
+I'm using [ImageKit](https://imagekit.io) to host all my images and video. There are more hoops than simply putting them in an assets folder on this repo, but the advantages make it worth the effort:
+
+- Faster Jekyll build times as the largest files are just referenced
+- Images and video can be stored at full-resolution and then served dynamically (e.g. 80% quality, max-width 1800px for desktop)
+
 ### Navigation item selection
 [Source](https://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/nav.html). An item from the top-most `<header><nav></nav></header>` will be dimmed if that item's page is active. E.g. if the '/notes' page is active, then the 'Notes' navigation item will be dimmed.
 
