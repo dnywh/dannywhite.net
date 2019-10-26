@@ -18,13 +18,15 @@ Honestly, I don't fully get what he means. He seems to be going back-and-forth o
 
 Haring attributes this ability to the _indirect_ manipulation nature of the computer(s) he knew. We now live in an age where image and action are one. (think Apple Pencil and iPad, for example). We now have endless manipulation of what is now _direct_ manipulation.
 
----
+<hr>
 
 I'm trying to get back into shooting with my X-T10. Below are some rusty shots from the day.
 
-{% include image.html name="basquiat.jpg" alt="A museum guide explaining a Basquiat painting to people." %}
-{% include image.html name="framed.jpg" alt="A lady looking at a series of portraits, with her back to the camera." %}
-{% include image.html name="arms-crossed.jpg" alt="Two ladies with their arms folded, one level apart." %}
-{% include image.html name="couple.jpg" alt="An older couple investigated some art." %}
-{% include image.html name="gunpowder.jpg" alt="People walking past an artwork." %}
-{% include image.html name="yellow.jpg" alt="People walking past an artwork." %}
+<figure>
+    <img src="https://ik.imagekit.io/dw/notes/keith-haring-on-image-and-action/basquiat.jpg" alt="A museum guide explaining a Basquiat painting to people.">
+    <img src="https://ik.imagekit.io/dw/notes/keith-haring-on-image-and-action/framed.jpg" alt="A lady looking at a series of portraits, with her back to the camera.">
+    <img src="https://ik.imagekit.io/dw/notes/keith-haring-on-image-and-action/arms-crossed.jpg" alt="Two ladies with their arms folded, one level apart.">
+    <img src="https://ik.imagekit.io/dw/notes/keith-haring-on-image-and-action/couple.jpg" alt="An older couple investigated some art">
+    <img src="https://ik.imagekit.io/dw/notes/keith-haring-on-image-and-action/gunpowder.jpg" alt="People walking past an artwork">
+    <img src="https://ik.imagekit.io/dw/notes/keith-haring-on-image-and-action/yellow.jpg" alt="People walking past an artwork">
+</figure>
