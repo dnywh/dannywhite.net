@@ -4,13 +4,24 @@
 body header.temp-header-class {
   display: flex;
   justify-content: space-between;
+  // align-items: start; TODO: Fixes shuffling yet doesn't work on small screens
   align-items: center;
+  // height: 10rem;
   // @extend %section-border-bottom;
-  @extend %section-bottom;
+  // @extend %section-bottom;
+  margin-bottom: 8rem;
+  margin-top: 3rem; //TODO consider removing when marquee is gone
 }
 body header.temp-header-class svg {
-  width: 9vw;
+  width: 4rem;
+  margin-left: -0.1rem;
   fill: var(--color-foreground);
+}
+@media only screen and (min-width: $breakpoint-grid) {
+  body header.temp-header-class svg {
+    width: 7rem;
+    margin-left: -0.75rem;
+  }
 }
 
 body header.temp-header-class nav ul {
@@ -26,7 +37,6 @@ body header.temp-header-class nav ul li a {
   // font-size: 1.25rem;
   text-decoration: none;
 }
-
-// body header.temp-header-class nav ul li:hover {
-//   opacity: var(--opacity-hover-text);
-// }
+body header.temp-header-class nav ul li a.current {
+  opacity: var(--opacity-selected-text);
+}

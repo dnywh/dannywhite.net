@@ -15,6 +15,7 @@
   // Custom properties: opacity
   --opacity-hover-block: 0.75;
   --opacity-hover-text: 0.5;
+  --opacity-selected-text: 0.33;
   // Custom properties: time
   --time-hover: 0.33s;
   // Custom properties: type
@@ -102,7 +103,7 @@ a:hover {
 }
 
 // Typography
-p {
+p, footer, nav {
   font-size: 1.2rem;
   line-height: 1.4rem;
 }
