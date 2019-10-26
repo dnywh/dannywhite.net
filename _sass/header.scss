@@ -37,5 +37,5 @@ body > header nav ul li a {
   text-decoration: none;
 }
 body > header nav ul li a.current {
-  opacity: var(--opacity-selected-text);
+  opacity: var(--opacity-hover-text);
 }

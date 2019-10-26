@@ -4,13 +4,14 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }} &middot; {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
   </title>
-  <meta content="Danny White" name="author" />
+  <meta name="author" content="Danny White" />
+  <meta name="Description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">
 
   <!-- Open Graph meta -->
   <meta property="og:type" content="{{ page.type }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title | escape }}{% endif %}" />
-  <!-- Open Graph meta: Description: Begin with explicit description, backed up by excerpt, backed up by site description  -->
+  <!-- Open Graph meta: Description: Same as general meta Description: Begin with explicit description, backed up by excerpt, backed up by site description  -->
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}" />
   <meta property="og:image" content="{% if page.featured_image %}https://ik.imagekit.io/dw/{% if page.layout == "work" %}work/{% elsif page.layout == "post" %}notes/{% endif %}{{ page.slug }}/{{ page.featured_image }}{% else %}{{ site.url }}/assets/images/og-image-fallback.jpg{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
