@@ -19,9 +19,9 @@ Things I've added onto or tweaked from the standard Jekyll theme, layouts, inclu
 I built this out 'dumb' as some of the [other options](https://stackoverflow.com/a/9138259) are a bit heavy-handed.
 
 ### Email encoding
-I used [email-encoder.com](http://www.email-encoder.com) to display my real email address whilst also making it difficult to scrape. Not sure how it works—I'll guess I'll keep an eye on the spam levels.
+[Source](https://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/email.html). I use [email-encoder.com](http://www.email-encoder.com) to display my real email address whilst also making it difficult for bots to scrape. Not sure how it works—I'll guess I'll keep an eye on the spam levels.
 
-### Other features:
+### Other features
 
 [Auto-forwarding pages](http://github.com/dannyalright/dannyalright.github.io/blob/master/making.html)
 A lightweight format for when you'd like to link directly to an external source. [Example](http://dannywhite.site/making).

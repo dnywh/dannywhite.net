@@ -29,7 +29,8 @@ body header.temp-header-class nav ul {
 }
 body header.temp-header-class nav ul li {
   display: inline;
-  margin-left: var(--gap-small);
+  // margin-left: var(--gap-small);
+  margin-left: 1.5rem;
   font-family: var(--type-display);
 }
 

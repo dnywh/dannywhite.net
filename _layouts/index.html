@@ -8,7 +8,10 @@ layout: default
 <h3>Some of his most recent work includes...</h3>
 
 <ul class="work">
-  {% for item in site.work %}
+  {% comment %} TODO: replace below array trickiness with easier Jekyll 4.0.0 config ordering {% endcomment %}
+  {% assign itemsByDate = site.work | sort: 'date' %}
+  {% assign itemsByDateReversed = itemsByDate | reverse %}
+  {% for item in itemsByDateReversed %}
   {% if item.featured %}
   <li>
     <a href="{{ item.url }}">

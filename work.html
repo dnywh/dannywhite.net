@@ -7,7 +7,10 @@ title: Work
 <h2>A collection of in-house, agency, and personal projects.</h2>
 <!-- TODO: combine roles and tags arrays into one for a filter bar -->
 <ul class="work">
-    {% for item in site.work %}
+    {% comment %} TODO: replace below array trickiness with easier Jekyll 4.0.0 config ordering {% endcomment %}
+    {% assign itemsByDate = site.work | sort: 'date' %}
+    {% assign itemsByDateReversed = itemsByDate | reverse %}
+    {% for item in itemsByDateReversed %}
     <!-- TODO: remove concept of hidden globally -->
     {% if item.hidden %}
     {% else %}
