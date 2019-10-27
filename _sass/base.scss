@@ -95,10 +95,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: $breakpoint-text) {
   // h1,
-  // h2,
-  // h3,
+  h2,
+  h3,
   article p,
   article ul,
+  article ol,
   pre,
   hr {
     max-width: $breakpoint-text;
