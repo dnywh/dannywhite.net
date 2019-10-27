@@ -105,9 +105,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-p, footer, nav {
+p,
+footer,
+nav,
+article ul,
+article ol {
   font-size: 1.2rem;
   line-height: 1.4rem;
+}
+
+ul, ol {
+  padding-inline-start: 1.2rem;
 }
 
 h1 {
@@ -121,7 +129,8 @@ h2 {
 // Subtitles for headers
 header > p,
 header > section > p {
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  line-height: 1.7rem;
 }
 
 @media only screen and (min-width: $breakpoint-grid) {

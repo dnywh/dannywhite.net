@@ -1,7 +1,8 @@
 // TODO: prefers-dark theming
 // Custom
 .highlighter-rouge {
-  max-width: $breakpoint-text;
+  // max-width: $breakpoint-text;
+  overflow-wrap: break-word;
   background-color: #f0f0f0;
 }
 // Theme: Friendly
