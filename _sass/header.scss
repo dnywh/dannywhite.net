@@ -7,17 +7,17 @@ body > header {
   // height: 10rem;
   // @extend %section-border-bottom;
   // @extend %section-bottom;
-  margin-top: 3rem;
-  margin-bottom: 8rem;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
 }
 body > header svg {
-  width: 4rem;
-  margin-left: -0.1rem;
+  width: 15vw;
+  max-width: 7rem;
+  margin-left: -0.25rem;
   fill: var(--color-foreground);
 }
 @media only screen and (min-width: $breakpoint-grid) {
   body > header svg {
-    width: 7rem;
     margin-left: -0.75rem;
   }
 }
@@ -28,8 +28,13 @@ body > header nav ul {
 body > header nav ul li {
   display: inline;
   // margin-left: var(--gap-small);
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   font-family: var(--type-display);
+}
+@media only screen and (min-width: $breakpoint-grid) {
+  body > header nav ul li {
+    margin-left: 1.5rem;
+  }
 }
 
 body > header nav ul li a {

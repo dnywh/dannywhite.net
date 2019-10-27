@@ -1,20 +1,22 @@
 ---
 layout: default
-title: Notes Archive
+title: Notes/Archive
 ---
-
-<h1>Notes archive</h1>
-<h2>View <a href="{{ "/notes" | relative_url }}">all notes</a> or subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>.</h2>
+<header>
+    <h1>Notes/Archive</h1>
+    <p>Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a> or <a href="{{ "/notes" | relative_url }}">view all notes</a>.</p>
+</header>
 
 <ul class="archive">
     {% for post in site.posts %}
     <li>
-        <h3>
+        <h2>
             <a href="{{ post.url }}">{{ post.title | escape }}</a>
-        </h3>
+        </h2>
         {% assign date_format = "%B %Y" %}
-        <time>{{ post.date | date: date_format }}</time>
+        <h3>
+            <time>{{ post.date | date: date_format }}</time>
+        </h3>
     </li>
-
     {% endfor %}
 </ul>

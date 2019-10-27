@@ -2,25 +2,23 @@
 layout: default
 ---
 
-<article class="project">
-
-  <img data-src="https://ik.imagekit.io/dw/work/{{ page.slug }}/{{ page.featured_image }}" alt="An illustrative image from the {{ page.title | escape }} project">
-
+<article class="work">
   <header>
-    <div>
+    <img data-src="https://ik.imagekit.io/dw/work/{{ page.slug }}/{{ page.featured_image }}" alt="An illustrative image from the {{ page.title | escape }} project">
+    <section>
       <h1>{{ page.title | escape }}</h1>
-      <h2>{{ page.description }}</h2>
-    </div>
+      <p>{{ page.description }}</p>
+    </section>
 
     <ul>
       {% if page.client %}
       <li>
-        <h4>For</h4>
+        <h2>For</h2>
         <p>{{ page.client }}</p>
       </li>
       {% endif %}
       <li>
-        <h4>When</h4>
+        <h2>When</h2>
         <p>
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {% assign date_format = site.minima.date_format | default: "%B %Y" %}
@@ -30,7 +28,7 @@ layout: default
       </li>
       {% if page.roles %}
       <li>
-        <h4>Roles</h4>
+        <h2>Roles</h2>
         <p>
             {% assign rolesArray = '' | split:':' %}
             {% for item in page.roles %}
@@ -43,7 +41,7 @@ layout: default
       {% endif %}
       {% if page.organisations %}
       <li>
-        <h4>Organisations</h4>
+        <h2>Organisations</h2>
         <p>
             {% assign organisationsArray = '' | split:':' %}
             {% for item in page.organisations %}
@@ -56,7 +54,7 @@ layout: default
       {% endif %}
       {% if page.collaborators %}
       <li>
-        <h4>Collaborators</h4>
+        <h2>Collaborators</h2>
         <p>
             {% assign collaboratorsArray = '' | split:':' %}
             {% for item in page.collaborators %}
@@ -75,7 +73,7 @@ layout: default
   </section>
 
   {% if page.links %}
-    <section>
+  <section>
     <h2>Links</h2>
     <ul class="press">
       {% for item in page.links %}
@@ -87,17 +85,17 @@ layout: default
   </section>
   {% endif %}
 
-    {% if page.press %}
-    <section>
-    <h2>Press</h2>
-    <ul class="press">
-      {% for item in page.press %}
-      <li>
-        <p><strong>{{ item.title }}</strong>
-          <br><a href="{{ item.url }}" target="_blank">{{ item.outlet }}</a></p>
-      </li>
-      {% endfor %}
-    </ul>
+  {% if page.press %}
+  <section>
+  <h2>Press</h2>
+  <ul class="press">
+    {% for item in page.press %}
+    <li>
+      <p><strong>{{ item.title }}</strong>
+        <br><a href="{{ item.url }}" target="_blank">{{ item.outlet }}</a></p>
+    </li>
+    {% endfor %}
+  </ul>
   </section>
   {% endif %}
   

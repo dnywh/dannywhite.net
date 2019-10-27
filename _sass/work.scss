@@ -1,64 +1,78 @@
 // Work
-// Introductory image
-article.project > img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 80vh;
-}
-
 // Header
-article.project > header {
+article.work > header {
   // @extend %section-border-bottom;
-  @extend %section-bottom;
+  // @extend %section-bottom;
+  display: grid;
+  grid-template-columns: $grid-column-structure;
+  gap: $grid-gap;
+
+  margin-bottom: 3rem;
+
+  img, section, ul {
+    grid-column: span 6;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 80vh;
+  }
 }
 
-article.project > header ul {
-  margin: 3rem 0 0 0;
+article.work > header ul {
+  margin: 0;
   @extend %ul-plain;
+
+  li:not(:first-child) {
+    margin-top: 1.5rem;
+  }
 }
 
-article.project > header ul h4 {
+article.work > header ul h2 {
   text-transform: uppercase;
   font-size: 0.75rem;
   margin: 0;
   color: var(--color-foreground-medium);
 }
 
-article.project > header ul p {
+article.work > header ul p {
   margin-top: 0.25rem;
   margin-bottom: 1rem;
 }
 
-// article.project > header ul p:last-of-type {
+// article.work > header ul p:last-of-type {
 //   margin-bottom: 0;
 // }
 
 @media only screen and (min-width: $breakpoint-grid) {
-  article.project > header {
-    /* Consider replacing with flex once all browsers support `gap` for flex */
-    display: grid;
-    grid-template-columns: $grid-column-structure;
-    gap: $grid-gap;
+  article.work > header {
     align-items: last baseline;
-    // margin-bottom: var(--gap-large);
-  }
 
-  article.project > header div {
-    grid-column: span 4;
-  }
+    img {
+      grid-column: span 6;
+      grid-row: 1;
+    }
 
-  article.project > header ul {
-    grid-column: 5 / 7;
-    margin: 0;
+    section {
+      grid-column: span 4;
+      grid-row: 2;
+    }
+
+    ul {
+      grid-column: 5 / 7;
+      grid-row: 2;
+      margin: 0;
+    }
   }
 }
 
 
 // Content
-// article.project > section h2:not(:first-child) {
-// article.project > section h2 {
+// article.work > section h2:not(:first-child) {
+// article.work > section h2 {
 // Generalised to work on About page, Notes etc. TODO: move to general 'general.scss' file
-  article > h2 {
+  article h2:not(:first-child) {
   margin-top: var(--gap-content);
 }
 

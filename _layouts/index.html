@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-<h1 class="index-intro">
-  {{ site.description }}
-</h1>
-
-<h3>Some of his most recent work includes...</h3>
+<header class="index">
+  <h1>{{ site.description }}</h1>
+  <p>Some of his most recent work includes...</p>
+</header>
 
 <ul class="work">
   {% comment %} TODO: replace below array trickiness with easier Jekyll 4.0.0 config ordering {% endcomment %}
@@ -15,9 +14,7 @@ layout: default
   {% if item.featured %}
   <li>
     <a href="{{ item.url }}">
-      <div>
-        <h2>{{ item.description | escape }}</h2>
-      </div>
+      <h2>{{ item.description | escape }}</h2>
       <img data-src="https://ik.imagekit.io/dw/work/{{ item.slug }}/{{ item.featured_image }}"
         alt="An illustrative image from the {{ item.title }} project" />
     </a>

@@ -9,9 +9,6 @@
   --color-foreground-medium: rgba(0, 0, 0, 0.5);
   /* Custom properties: grid and spacing */
   --gap-content: 4rem;
-  --gap-large: 3vw;
-  --gap-small: 1rem;
-  --gap-medium: 2.5rem
   // Custom properties: opacity
   --opacity-hover-block: 0.75;
   --opacity-hover-text: 0.56;
@@ -76,7 +73,7 @@ $breakpoint-grid: calc((640px / 6) * 8);
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
-  margin: 2vw 4vw;
+  margin: 0 4vw;
 }
 
 // Hyperlinks
@@ -90,38 +87,16 @@ a:hover {
 }
 
 // Typography
-p, footer, nav {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-@media only screen and (min-width: $breakpoint-grid) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--type-display);
   overflow-wrap: break-word;
+  margin-top: 0;
 }
 
 @media only screen and (min-width: $breakpoint-text) {
-  h1,
-  h2,
-  h3,
+  // h1,
+  // h2,
+  // h3,
   article p,
   article ul,
   pre,
@@ -129,6 +104,36 @@ h1, h2, h3, h4, h5, h6 {
     max-width: $breakpoint-text;
   }
 }
+
+p, footer, nav {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+// Subtitles for headers
+header > p,
+header > section > p {
+  font-size: 1.5rem
+}
+
+@media only screen and (min-width: $breakpoint-grid) {
+  h1 {
+    font-size: 4.5rem; // 72px
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
 pre {
   white-space: pre-wrap;
   // line-height: 1.2rem;
@@ -148,7 +153,7 @@ blockquote {
 
 hr {
   border: 1px solid var(--color-foreground-light);
-  margin-top: var(--gap-large);
-  margin-bottom: var(--gap-large);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   margin-left: 0;
 }

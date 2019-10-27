@@ -2,13 +2,12 @@
 layout: default
 title: About
 ---
-<article>  
-    <figure>
-        <img style="grid-column: span 4;" data-src="{% link /assets/images/danny-mbq-panel.jpg %}"
-        alt="Danny speaking at a panel">
-    </figure>
+<header class="about">
+    <img data-src="{% link /assets/images/danny-mbq-panel.jpg %}"
+    alt="Danny speaking at a panel">
     <h1>About</h1>
-
+</header>
+<article>
     {% capture about_bio_include %}{% include_relative _includes/about-bio.md %}{% endcapture %}
     {{ about_bio_include | markdownify }}
 

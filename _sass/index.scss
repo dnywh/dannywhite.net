@@ -1,9 +1,30 @@
 // Index
-h1.index-intro {
-  max-width: 940px; //TODO
-  font-size: 5vmax;
+// header.index {
+//   h1 {
+//     max-width: 940px; //TODO
+//     // font-size: 5vmax;
+//   }
+// }
+
+@media only screen and (min-width: $breakpoint-grid) {
+  header.index {
+    display: grid;
+    grid-template-columns: $grid-column-structure;
+    gap: $grid-gap;
+
+    h1 {
+      grid-column: span 5;
+      grid-row: 1;
+    }
+
+    p {
+      grid-column: span 6;
+      grid-row: 2;
+    }
+  }
 }
 
+// List of work (shared on /work.html)
 ul.work {
   @extend %ul-plain;
   // @extend %section-border-top;
@@ -27,17 +48,13 @@ ul.work li a {
   }
 }
 
-// ul.work li a:hover {
-  ul.work li a div:hover {
-  opacity: var(--opacity-hover-block); //TODO: fix
+  ul.work li a:hover {
+  opacity: var(--opacity-hover-block);
 }
 
-ul.work li a div {
+ul.work li a h2 {
   grid-column: span 3;
-
-  h2 {
-    margin-top: 0;
-  }
+  margin-top: 0;
 }
 
 ul.work li a img {

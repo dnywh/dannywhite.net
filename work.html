@@ -2,9 +2,10 @@
 layout: default
 title: Work
 ---
-
-<h1>Work</h1>
-<h2>A collection of in-house, agency, and personal projects.</h2>
+<header>
+    <h1>Work</h1>
+    <p>A collection of in-house, agency, and personal projects.</p>
+</header>
 <!-- TODO: combine roles and tags arrays into one for a filter bar -->
 <ul class="work">
     {% comment %} TODO: replace below array trickiness with easier Jekyll 4.0.0 config ordering {% endcomment %}
@@ -16,10 +17,7 @@ title: Work
     {% else %}
     <li>
         <a href="{{ item.url }}">
-            <div>
-                <!-- <h4>{{ item.client | escape }}</h4> -->
-                <h2>{{ item.title | escape }}</h2>
-            </div>
+            <h2>{{ item.title | escape }}</h2>
             <img src="https://ik.imagekit.io/dw/work/{{ item.slug }}/{{ item.featured_image }}?tr=w-1,h-1" data-src="https://ik.imagekit.io/dw/work/{{ item.slug }}/{{ item.featured_image }}"
                 alt="A photo from the {{ item.title }} project" />
         </a>
