@@ -1,0 +1,97 @@
+// Type
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--type-display);
+    overflow-wrap: break-word;
+    margin-top: 0;
+}
+
+@media only screen and (min-width: $breakpoint-text) {
+    // h1,
+    h2,
+    h3,
+    article p,
+    article ul,
+    article ol,
+    pre,
+    hr {
+        max-width: $breakpoint-text;
+    }
+}
+  
+p,
+footer,
+nav,
+article ul,
+article ol {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-family: var(--type-display); //TODO
+    // font-weight: 300;
+    // letter-spacing: 0.2px;
+    // Inter
+}
+
+figcaption {
+font-size: 1rem;
+line-height: 1.4rem;
+font-family: var(--type-display); //TODO
+font-weight: 300;
+color: var(--color-foreground-medium);
+}
+
+ul, ol {
+    padding-inline-start: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    // letter-spacing: -1px;
+    // Inter
+    letter-spacing: -2.5px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    // Inter
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+// Subtitles for headers
+header > p,
+header > section > p {
+    font-size: 1.5rem;
+    // line-height: 1.7rem;
+    // Inter
+    line-height: 1.9rem;
+}
+
+@media only screen and (min-width: $breakpoint-grid) {
+h1 {
+    font-size: 4.5rem; // 72px
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+}
+}
+
+pre {
+white-space: pre-wrap;
+// line-height: 1.2rem;
+}
+
+blockquote {
+font-style: italic;
+}
+
+// code {
+//   background-color: var(--color-foreground-light);
+//   padding: 0.125rem 0.25rem;
+//   border-radius: 0.125rem;
+//   border: 1px solid var(--color-foreground-light);
+// }
+  

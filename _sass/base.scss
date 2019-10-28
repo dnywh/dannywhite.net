@@ -1,10 +1,27 @@
 // Base: shared or global styles
+// Imports
+// Inter
+@import url('https://rsms.me/inter/inter.css');
 
+// @font-face {
+//   font-family: Telegraf;
+//   src: url(Telegraf-Regular.otf);
+//   font-weight: regular;
+// }
+
+// @font-face {
+//   font-family: Telegraf;
+//   src: url(Telegraf-UltraBold.otf);
+//   font-weight: bold;
+// }
+
+// Custom properties
 :root {
   scroll-behavior: smooth;
   /* Custom properties: colour */
-  --color-foreground: black;
-  --color-background: white;
+  // --color-foreground: rgb(24, 24, 24);
+  --color-foreground: rgb(32, 41, 33);
+  --color-background: rgb(255, 250, 242);
   --color-foreground-light: rgba(0, 0, 0, 0.05);
   --color-foreground-medium: rgba(0, 0, 0, 0.5);
   /* Custom properties: grid and spacing */
@@ -15,17 +32,24 @@
   // Custom properties: time
   --time-hover: 0.33s;
   // Custom properties: type
-  --type-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --type-body: serif;
+  // Inter
+  --type-display: 'Inter', Telegraf, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // --type-body: serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Custom properties: colour */
+    // Custom properties: colour
     --color-foreground: white;
     --color-background: black;
     --color-foreground-light: rgba(255, 255, 255, 0.2);
     --color-foreground-medium: rgba(255, 255, 255, 0.66);
   }
+}
+
+// Needed at this level so alt tags are included
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 // SCSS variables
@@ -73,7 +97,7 @@ $breakpoint-grid: calc((640px / 6) * 8);
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
-  margin: 0 4vw;
+  margin: 0 3vw;
 }
 
 // Hyperlinks
@@ -85,81 +109,6 @@ a {
 a:hover {
   opacity: var(--opacity-hover-text);
 }
-
-// Typography
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--type-display);
-  overflow-wrap: break-word;
-  margin-top: 0;
-}
-
-@media only screen and (min-width: $breakpoint-text) {
-  // h1,
-  h2,
-  h3,
-  article p,
-  article ul,
-  article ol,
-  pre,
-  hr {
-    max-width: $breakpoint-text;
-  }
-}
-
-p,
-footer,
-nav,
-article ul,
-article ol {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-}
-
-ul, ol {
-  padding-inline-start: 1.2rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-// Subtitles for headers
-header > p,
-header > section > p {
-  font-size: 1.5rem;
-  line-height: 1.7rem;
-}
-
-@media only screen and (min-width: $breakpoint-grid) {
-  h1 {
-    font-size: 4.5rem; // 72px
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-
-pre {
-  white-space: pre-wrap;
-  // line-height: 1.2rem;
-}
-
-blockquote {
-  font-style: italic;
-}
-
-// code {
-//   background-color: var(--color-foreground-light);
-//   padding: 0.125rem 0.25rem;
-//   border-radius: 0.125rem;
-//   border: 1px solid var(--color-foreground-light);
-// }
-
 
 hr {
   border: 1px solid var(--color-foreground-light);

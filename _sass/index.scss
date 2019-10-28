@@ -58,7 +58,7 @@ ul.work li a h2 {
 }
 
 ul.work li a img {
-  grid-column: 5 / 7;
+  grid-column: span 3;
 }
 
 p.cta {

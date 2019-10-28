@@ -6,10 +6,10 @@ layout: default
   <header>
     <h1>{{ page.title | escape }}</h1>
     {% if page.date %}
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <h2><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {% assign date_format = site.minima.date_format | default: "%B %Y" %}
       {{ page.date | date: date_format }}
-    </time>
+    </time></h2>
     {% endif %}
   </header>
 
