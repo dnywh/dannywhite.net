@@ -1,13 +1,22 @@
 // Footer
 footer {
-  // @extend %section-border-top;
-  // padding-top: 1rem;
+  @extend %section-border-top;
+  padding-top: 1rem;
   margin-top: 8rem;
   margin-bottom: 4rem;
+  
 }
 
 footer ul {
   @extend %ul-plain;
+}
+
+footer p, a {
+  color: var(--color-foreground-medium);
+}
+
+footer a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: $breakpoint-grid) {

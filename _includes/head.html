@@ -2,7 +2,7 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }} &middot; {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
+  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }} &mdash; {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
   </title>
   <meta name="author" content="Danny White" />
   <meta name="Description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">

@@ -39,8 +39,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     // Custom properties: colour
-    --color-foreground: white;
-    --color-background: black;
+    // --color-foreground: white;
+    --color-foreground: rgb(245, 240, 211);
+    // --color-background: black;
+    --color-background: rgb(21, 15, 0);
     --color-foreground-light: rgba(255, 255, 255, 0.2);
     --color-foreground-medium: rgba(255, 255, 255, 0.66);
   }
@@ -82,7 +84,7 @@ $breakpoint-grid: calc((640px / 6) * 8);
 
 %section-border-top {
   @extend %section-top;
-  border-top: 0.125rem solid var(--color-foreground);
+  border-top: 0.125rem solid var(--color-foreground-light);
 }
 
 %ul-plain {

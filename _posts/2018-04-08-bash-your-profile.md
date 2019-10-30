@@ -16,15 +16,11 @@ Repeatedly typing in the same commands into Terminal is annoying, takes time, an
 
 To navigate to my personal site's local folder, I'd manually type:
 
-```shell
-cd ~/projects/dannywhite.site
-```
+`cd ~/projects/dannywhite.site`
 
 That would almost always be followed up by the command to start the local Jekyll server to preview changes to that site:
 
-```shell
-bundle exec jekyll serve
-```
+`bundle exec jekyll serve`
 
 And then I'd want to open this folder up in Atom. I don't even know how to do this long-hand in Terminal so would probably just navigate to said folder via Finder and drag it onto Atom's app icon.
 
@@ -44,13 +40,14 @@ Let's give it a try. Open Terminal and type `nano .bash_profile`. This should cr
 
 Here's what mine looks like with shortcuts already made at the bottom:
 
-{% include image.html name="nano-bash_profile.png" %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/bash-your-profile/nano-bash_profile.png" alt="A screenshot of the macOS Terminal">
+  <figcaption>Yours should appear empty.</figcaption>
+</figure>
 
 Notice the syntax that each of my shortcuts are using? Here's a breakdown:
 
-```shell
-alias your-shortcut-name="whatever-you're-shortening"
-```
+`alias your-shortcut-name="whatever-you're-shortening"`
 
 `alias`: as the word suggests, this defines the following will be an 'alias', or shortcut.
 
@@ -64,7 +61,10 @@ Simply add any of your desired shortcuts to the bottom of this file, above `sour
 
 I don't even need to fuss in Terminal now that I have an application shortcut for Atom. Instead of writing the command `nano .bash_profile`, I can use my fancy shortcut `atom .bash_profile` for a nicer experience. Just make sure to restart Terminal after saving your changes.
 
-{% include image.html name="atom-bash_profile.png" %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/bash-your-profile/atom-bash_profile.png" alt="A screenshot of the Atom text editor">
+  <figcaption>You can of course use your text editor of choice. Atom has no special tie-in to Terminal or bash profiles.</figcaption>
+</figure>
 
 Keep an eye on an nearby engineer as they use Terminal. You might see them use shortcuts beyond applications and directories such as using `gc` for `git commit`. It's all up to you. Colours, ASCII art, and things I'm yet to figure out are also customisable via _.bash_profile_.
 

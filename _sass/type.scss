@@ -2,13 +2,16 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--type-display);
     overflow-wrap: break-word;
-    margin-top: 0;
+    // margin: 0;
 }
 
 @media only screen and (min-width: $breakpoint-text) {
     // h1,
     h2,
     h3,
+    h4,
+    h5,
+    h6,
     article p,
     article ul,
     article ol,
@@ -31,6 +34,10 @@ article ol {
     // Inter
 }
 
+p strong {
+    font-weight: 600;
+}
+
 figcaption {
 font-size: 1rem;
 line-height: 1.4rem;
@@ -47,16 +54,70 @@ h1 {
     font-size: 2.5rem;
     // letter-spacing: -1px;
     // Inter
-    letter-spacing: -2.5px;
+    letter-spacing: -1px;
     font-weight: 800;
 }
 
 h2 {
-    font-size: 1.5rem;
-    line-height: 1.7rem;
+    font-size: 1.6rem;
+    line-height: 2.15rem;
     // Inter
-    letter-spacing: -1px;
-    font-weight: 800;
+    letter-spacing: -0.33px;
+    font-weight: 700;
+    
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    // Inter
+    letter-spacing: -0.25px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    // Inter
+    letter-spacing: -0.15px;
+    font-weight: 700;
+}
+
+// h3, h4, h5, h6 {
+//     color: var(--color-foreground-medium);
+// }
+
+@media only screen and (min-width: $breakpoint-grid) {
+    h1 {
+        font-size: 4.5rem; // 72px
+        letter-spacing: -2.5px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+        letter-spacing: -1px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        // Inter
+        letter-spacing: -0.33px;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        // Inter
+        letter-spacing: -0.33px;
+        font-weight: 700;
+    }
+
+    h4 {
+
+    }
 }
 
 // Subtitles for headers
@@ -66,32 +127,9 @@ header > section > p {
     // line-height: 1.7rem;
     // Inter
     line-height: 1.9rem;
-}
-
-@media only screen and (min-width: $breakpoint-grid) {
-h1 {
-    font-size: 4.5rem; // 72px
-}
-
-h2 {
-    font-size: 2.5rem;
-    line-height: 2.8rem;
-}
-}
-
-pre {
-white-space: pre-wrap;
-// line-height: 1.2rem;
+    letter-spacing: -0.5px;
 }
 
 blockquote {
-font-style: italic;
+    font-style: italic;
 }
-
-// code {
-//   background-color: var(--color-foreground-light);
-//   padding: 0.125rem 0.25rem;
-//   border-radius: 0.125rem;
-//   border: 1px solid var(--color-foreground-light);
-// }
-  

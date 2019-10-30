@@ -1,10 +1,10 @@
 ---
-# featured: true
 hidden: true
-title: Origami
+# featured: true
+title: Origami Studio
 date: 2016-10-27 09:00:00 -0400
-featured_image: learn-origami.png
-description: Led design for Origami's curriculum. Contributed to interface design and onboarding.
+featured_image: facebook-ny.jpg
+description: Bringing UI prototyping to the masses.
 roles:
   - UX research
   - Product design
@@ -26,11 +26,18 @@ client: Facebook
 organisations:
   - Facebook
   - ustwo
+links:
+  - title: Origami Studio — Design Prototyping
+    url: https://origami.design
 press:
   - outlet: The Next Web
     url: https://thenextweb.com/dd/2016/04/14/facebook-origami-studio/
-  - outlet: ProductHunt
+  - outlet: "ProductHunt: #2 Product of the Day"
     url: https://www.producthunt.com/posts/origami-studio-by-facebook
   - outlet: F8
     url: https://developers.facebook.com/videos/f8-2016/rapid-prototyping-made-easy-with-origami-studio/
+tags:
+  - prototyping
+  - origami
+  - native
 ---
