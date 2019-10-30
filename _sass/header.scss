@@ -41,6 +41,7 @@ body > header nav ul li a {
   // font-size: 1.25rem;
   text-decoration: none;
 }
-body > header nav ul li a.current {
+body > header nav ul li a.current,    // Support footer, too
+body > footer nav ul li a.current {
   opacity: var(--opacity-hover-text);
 }

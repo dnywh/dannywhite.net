@@ -22,7 +22,7 @@
   // --color-foreground: rgb(24, 24, 24);
   --color-foreground: rgb(32, 41, 33);
   --color-background: rgb(255, 250, 242);
-  --color-foreground-light: rgba(0, 0, 0, 0.05);
+  --color-foreground-light: rgba(0, 0, 0, 0.1);
   --color-foreground-medium: rgba(0, 0, 0, 0.5);
   /* Custom properties: grid and spacing */
   --gap-content: 4rem;
@@ -46,6 +46,10 @@
     --color-foreground-light: rgba(255, 255, 255, 0.2);
     --color-foreground-medium: rgba(255, 255, 255, 0.66);
   }
+}
+
+::selection {
+  background: var(--color-foreground-light);
 }
 
 // Needed at this level so alt tags are included
