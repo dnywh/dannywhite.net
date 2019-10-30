@@ -12,8 +12,7 @@ tags:
   - student work
 locations:
   - Sydney, Australia
-organisations:
-  - University of Technology, Sydney
+client:
   - Transport for NSW
 ---
 

@@ -42,19 +42,6 @@ layout: default
         </p>
       </li>
       {% endif %}
-      {% if page.organisations %}
-      <li>
-        <h2>Organisations</h2>
-        <p>
-            {% assign organisationsArray = '' | split:':' %}
-            {% for item in page.organisations %}
-            {% assign organisationsArray = organisationsArray | push: item %}
-            {% endfor %}
-
-            {{ organisationsArray | array_to_sentence_string }}
-        </p>
-      </li>
-      {% endif %}
       {% if page.collaborators %}
       <li>
         <h2>Collaborators</h2>

@@ -1,6 +1,6 @@
 ---
 title: Origami Studio
-description: Bringing UI prototyping to the masses.
+description: Bringing UI prototyping to the masses with visual, auditory, and kinesthetic learning methods.
 featured_image: facebook-ny.jpg
 date: 2016-10-27 09:00:00 -0400
 roles:
@@ -21,9 +21,6 @@ locations:
   - New York, NY
   - Menlo Park, CA
 client: Facebook
-organisations:
-  - Facebook
-  - ustwo
 links:
   - title: Origami Studio — Design Prototyping
     url: https://origami.design

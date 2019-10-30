@@ -46,9 +46,10 @@ font-weight: 300;
 color: var(--color-foreground-medium);
 }
 
-ul, ol {
-    padding-inline-start: 1.2rem;
-}
+// moved to desktop class
+// ul, ol {
+//     padding-inline-start: 1.2rem;
+// }
 
 h1 {
     font-size: 2.5rem;
@@ -90,6 +91,7 @@ h4 {
 @media only screen and (min-width: $breakpoint-grid) {
     h1 {
         font-size: 4.5rem; // 72px
+        line-height: 5.15rem;
         letter-spacing: -2.5px;
     }
 
@@ -118,6 +120,10 @@ h4 {
     h4 {
 
     }
+
+    // ul, ol {
+    //     padding-inline-start: 1.2rem;
+    // }
 }
 
 // Subtitles for headers

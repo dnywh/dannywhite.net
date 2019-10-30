@@ -20,8 +20,6 @@ locations:
   - New York, NY
   - Vancouver, Canada
 client: Kickstarter
-organisations:
-  - Kickstarter
 links:
   - title: Kickstarter for iOS and Android
     url: https://www.kickstarter.com/mobile

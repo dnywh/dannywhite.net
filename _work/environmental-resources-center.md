@@ -18,9 +18,6 @@ collaborators:
 locations:
   - New York, NY
 client: Kickstarter
-organisations:
-  - Kickstarter
-  - Environmental Defence Fund
 links:
   - title: Kickstarter Environmental Resources Center
     url: https://www.kickstarter.com/environment
