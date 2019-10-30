@@ -8,6 +8,9 @@ layout: default
     <section>
       <h1>{{ page.title | escape }}</h1>
       <p>{{ page.description }}</p>
+      {% if page.links %}
+      <p><a href="{{ page.links[0].url }}" target="_blank">See it live &#8594;</a></p>
+      {% endif %}
     </section>
 
     <ul>

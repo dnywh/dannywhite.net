@@ -22,6 +22,18 @@ locations:
 client: Kickstarter
 organisations:
   - Kickstarter
+links:
+  - title: Kickstarter for iOS and Android
+    url: https://www.kickstarter.com/mobile
+  - title: Kickstarter on the App Store
+    url: https://www.kickstarter.com/download/ios
+  - title: Kickstarter on Google Play
+    url: https://www.kickstarter.com/download/android
+  - title: Kickstarter for iOS on GitHub
+    url: https://github.com/kickstarter/ios-oss
+  - title: Kickstarter for Android on GitHub
+    url: https://github.com/kickstarter/android-oss
+
 tags:
   - prototyping
   - origami

@@ -1,10 +1,8 @@
 ---
-hidden: true
-# featured: true
 title: Origami Studio
-date: 2016-10-27 09:00:00 -0400
-featured_image: facebook-ny.jpg
 description: Bringing UI prototyping to the masses.
+featured_image: facebook-ny.jpg
+date: 2016-10-27 09:00:00 -0400
 roles:
   - UX research
   - Product design

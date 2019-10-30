@@ -2,8 +2,9 @@
 featured: true
 title: Kickstarter Environmental Resources Center
 description: Helping independent creators evaluate and reduce the environmental impact of their products.
-date: 2018-11-29 09:00:00 -0400
 featured_image: collage.jpg
+url: https://www.kickstarter.com/environment
+date: 2018-11-29 09:00:00 -0400
 roles:
   - Product design
   - Strategy
