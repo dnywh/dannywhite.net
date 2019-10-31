@@ -26,7 +26,8 @@ article figure {
   
     // Defaults to be overridden inline
     article figure img,
-    article figure video {
+    article figure video,
+    article figure div {
       grid-column: span 4;
     }
   

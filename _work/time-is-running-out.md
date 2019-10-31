@@ -103,7 +103,7 @@ We finished the printing process with just enough time to spare for non-New York
   <figcaption>Jon sending posters to non-New York backers, just in time to make the Climate Strike.</figcaption>
 </figure>
 
-## The Climate March
+## The Climate Strike
 Excess funds from the Kickstarter project allowed us to print more posters to hand out on the day. 
 
 <figure>
@@ -116,7 +116,7 @@ We also had some friends send photos through of posters they saw in the wild.
 
 <figure>
   <img style="grid-column: span 4; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/krys-maniecki.jpg" alt="Four kids sitting on garbage bins and holding Climate Strike posters">
-  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/heather-craig.jpg" alt="Girl at Climate March with 'Time is Running Out' poster behind her">
+  <img style="grid-column: span 2; grid-row: 1;" data-src="https://ik.imagekit.io/dw/work/time-is-running-out/heather-craig.jpg" alt="Girl at Climate Strike with 'Time is Running Out' poster behind her">
   <figcaption>First: Some kids with our posters. Photo by Krys Maniecki. Second: Another poster spotted in the wild. Photo by Heather Craig.</figcaption>
 </figure>
 
