@@ -5,9 +5,9 @@ description: Creating letterpressed posters for the 2019 Global Climate Strike a
 featured_image: poster-hand-out-1.jpg
 date: 2019-09-11 09:00:00 -0400
 roles: 
-  - Art direction
-  - graphic design
-  - letterpress printing
+  - Art Direction
+  - Graphic Design
+  - Letterpress Printing
 collaborators:
   - Jon Leland
   - Cassie Marketos

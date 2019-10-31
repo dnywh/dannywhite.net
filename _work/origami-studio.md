@@ -4,10 +4,10 @@ description: Bringing UI prototyping to the masses through visual, auditory, and
 featured_image: facebook-ny.jpg
 date: 2016-10-27 09:00:00 -0400
 roles:
-  - UX research
-  - Product design
-  - Video production
-  - Video editing
+  - UX Research
+  - Product Design
+  - Video Production
+  - Video Editing
 collaborators:
   - Andrew Pouliot
   - Blair Heuer
@@ -32,7 +32,7 @@ press:
   - outlet: F8
     url: https://developers.facebook.com/videos/f8-2016/rapid-prototyping-made-easy-with-origami-studio/
   - outlet: "Notes: Launching Origami"
-    url: https://dannywhite.site/notes/2016/launching-origami
+    url: ../notes/2016/launching-origami
 tags:
   - prototyping
   - origami

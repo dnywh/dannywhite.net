@@ -1,12 +1,13 @@
 ---
-hidden: true
 title: Syd
-description: A cohesive identity for the trains, buses, and ferries that connect Sydney's diverse geography.
+description: Creating a cohesive identity for the trains, buses, and ferries that connect Sydney's diverse geography.
+featured_image: syd-livery-train-intercity.jpg
 date: 2014-05-13 09:00:00 +1000
-featured_image: syd-livery.jpg
 roles:
-  - Graphic design
+  - Graphic Design
   - Branding
+  - Strategy
+  - Product Design
 tags:
   - early
   - student work
@@ -14,6 +15,7 @@ locations:
   - Sydney, Australia
 client:
   - Transport for NSW
+links:
+  - title: Sydney Trains Style Guidelines
+    url: ../assets/work/syd/syd-trains-style-guide.pdf
 ---
-
-<!-- assets/work/syd/syd-trains-style-guide.pdf / Sydney Trains Style Guidelines -->

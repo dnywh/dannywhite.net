@@ -1,13 +1,12 @@
 ---
-# featured: true
 title: Kickstarter Sketch Plugin
 description: Increasing the fidelity at which the Kickstarter design team ideates, prototypes, and creates.
 featured_image: kickstarter-data-angled.jpg
 date: 2019-06-26 09:00:00 -0400
 roles:
   - Strategy
-  - Sketch plugin development (JavaScript)
-  - Product design
+  - Sketch Plugin Development (JavaScript)
+  - Product Design
 collaborators:
   - Walter Beller-Morales
 locations:

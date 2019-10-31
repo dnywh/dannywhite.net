@@ -5,8 +5,8 @@ description: Reimagining the project pledge experience from error-prone and frag
 featured_image: log-in-modal.jpg
 date: 2019-09-01 09:00:00 -0400
 roles:
-  - UX research
-  - Product design
+  - UX Research
+  - Product Design
 collaborators:
   - Christella Dolmo
   - Isabel Barrera

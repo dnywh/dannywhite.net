@@ -10,7 +10,7 @@ links:
   - title: Branded Interactions on GitHub
     url: https://www.github.com/ustwo/branded-interactions
 roles:
-  - prototyping
+  - Prototyping
 tags:
   - prototyping
   - framer

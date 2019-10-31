@@ -7,7 +7,7 @@ client: ustwo
 locations:
   - New York, NY
 roles:
-  - prototyping
+  - Prototyping
 tags:
   - prototyping
   - origami
