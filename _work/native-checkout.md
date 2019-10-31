@@ -181,7 +181,7 @@ Lastly, I created a design package that contained detailed information about, an
 ## How we fared against the original issues and opportunities
 Our two-pronged approach freed Kickstarter's native applications from impenetrable checkout failures whilst also delivering future-ready user experience updates. We achieved these results in a similar amount of engineering time as simply rewriting the web views as native ones.
 
-Backing a Kickstarter project is now completely native on both iOS and Android. This means every view is testable by the Native team; bugs are much easier to spot and diagnose. Future iOS and Android-specific product requests and changes no longer require the availability of both web and native engineers.
+Backing a Kickstarter project is now completely native on both iOS and Android. This means every view is testable by the native team; bugs are much easier to spot and diagnose. Future iOS and Android-specific product requests and changes no longer require the availability of both web and native engineers.
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/work/native-checkout/cancel-pledge.jpg" alt="Photo of several phones with various parts of the Kickstarter checkout process displayed on their screens">

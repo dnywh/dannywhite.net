@@ -16,6 +16,4 @@ client:
   - Transport for NSW
 ---
 
-## Assets
-
-- <a href="{% link assets/work/syd/syd-trains-style-guide.pdf %}">Sydney Trains Style Guidelines</a>
+<!-- assets/work/syd/syd-trains-style-guide.pdf / Sydney Trains Style Guidelines -->

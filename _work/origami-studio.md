@@ -98,7 +98,7 @@ The incoming educational content began to advance the fidelity of the learning w
 <figure class="even-two">
   <img data-src="https://ik.imagekit.io/dw/work/origami-studio/sketch-to-execution-learn.jpg" alt="A hand-drawn sketch next to a resulting web page">
   <img data-src="https://ik.imagekit.io/dw/work/origami-studio/sketch-to-execution-example.jpg" alt="A hand-drawn sketch next to a resulting web page">
-  <figcaption>Two examples of how curriculum structure sketches informed the final outcome. Note the interlinking between tutorial and examples.</figcaption>
+  <figcaption>Two examples of how curriculum structure sketches informed the final outcome. Note the interlinking between tutorial and examples. Credit also to Dan Lebowitz for helped shape the final website.</figcaption>
 </figure>
 
 ### Producing the master content
