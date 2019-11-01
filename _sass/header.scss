@@ -2,20 +2,23 @@
 body > header {
   display: flex;
   justify-content: space-between;
-  // align-items: start; TODO: Fixes shuffling yet doesn't work on small screens
   align-items: center;
-  // height: 10rem;
-  // @extend %section-border-bottom;
-  // @extend %section-bottom;
   margin-top: 3vw;
   margin-bottom: 6vw;
 }
+
+body > header a {
+  // Optical alignment
+  margin-top: 0.25rem;
+}
+
 body > header svg {
   width: 15vw;
   max-width: 7rem;
   margin-left: -0.25rem;
   fill: var(--color-foreground);
 }
+
 @media only screen and (min-width: $breakpoint-grid) {
   body > header svg {
     margin-left: -0.75rem;
@@ -27,9 +30,7 @@ body > header nav ul {
 }
 body > header nav ul li {
   display: inline;
-  // margin-left: var(--gap-small);
   margin-left: 1rem;
-  font-family: var(--type-display);
 }
 @media only screen and (min-width: $breakpoint-grid) {
   body > header nav ul li {
@@ -38,7 +39,6 @@ body > header nav ul li {
 }
 
 body > header nav ul li a {
-  // font-size: 1.25rem;
   text-decoration: none;
 }
 body > header nav ul li a.current,    // Support footer, too

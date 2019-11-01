@@ -12,9 +12,6 @@ title: Work
     {% assign itemsByDate = site.work | sort: 'date' %}
     {% assign itemsByDateReversed = itemsByDate | reverse %}
     {% for item in itemsByDateReversed %}
-    <!-- TODO: remove concept of hidden globally -->
-    {% if item.hidden %}
-    {% else %}
     <li>
         <a href="{{ item.url }}">
             <h2>{{ item.title | escape }}</h2>
@@ -22,6 +19,5 @@ title: Work
                 alt="A photo from the {{ item.title }} project" />
         </a>
     </li>
-    {% endif %}
     {% endfor %}
 </ul>

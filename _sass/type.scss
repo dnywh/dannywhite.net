@@ -1,87 +1,100 @@
 // Type
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--type-display);
-    overflow-wrap: break-word;
-    // margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--type-display);
+  overflow-wrap: break-word;
+  // margin: 0;
 }
 
 @media only screen and (min-width: $breakpoint-text) {
-    article h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    article p,
-    article ul,
-    article ol,
-    pre,
-    hr {
-        max-width: $breakpoint-text;
-    }
+  article h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  article p,
+  article ul,
+  article ol,
+  pre,
+  hr {
+    max-width: $breakpoint-text;
+  }
 }
-  
+
 p,
-footer,
-nav,
 article ul,
 article ol {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-family: var(--type-body);
+  // font-weight: 300;
+  // letter-spacing: 0.2px;
+  // Inter
+}
+
+footer,
+nav {
+  font-family: var(--type-display);
+}
+
+footer ul {
+  line-height: 1.7rem;
+}
+
+@media only screen and (min-width: $breakpoint-text) {
+  header nav ul {
     font-size: 1.2rem;
     line-height: 1.7rem;
-    font-family: var(--type-display); //TODO
-    // font-weight: 300;
-    // letter-spacing: 0.2px;
-    // Inter
+  }
 }
 
 p strong {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 figcaption {
-font-size: 1rem;
-line-height: 1.4rem;
-font-family: var(--type-display); //TODO
-font-weight: 300;
-color: var(--color-foreground-medium);
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-family: var(--type-body);
+  font-weight: 300;
+  color: var(--color-foreground-medium);
 }
 
-// moved to desktop class
-// ul, ol {
-//     padding-inline-start: 1.2rem;
-// }
-
 h1 {
-    font-size: 2.5rem;
-    // letter-spacing: -1px;
-    // Inter
-    letter-spacing: -1px;
-    font-weight: 800;
+  font-size: 2.5rem;
+  // letter-spacing: -1px;
+  // Inter
+  letter-spacing: -1px;
+  font-weight: 800;
 }
 
 h2 {
-    font-size: 1.6rem;
-    line-height: 2.15rem;
-    // Inter
-    letter-spacing: -0.33px;
-    font-weight: 700;
-    
+  font-size: 1.6rem;
+  line-height: 2.15rem;
+  // Inter
+  letter-spacing: -0.33px;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 1.4rem;
-    line-height: 1.75rem;
-    // Inter
-    letter-spacing: -0.25px;
-    font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+  // Inter
+  letter-spacing: -0.25px;
+  font-weight: 700;
 }
 
 h4 {
-    font-size: 1.25rem;
-    line-height: 1.6rem;
-    // Inter
-    letter-spacing: -0.15px;
-    font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  // Inter
+  letter-spacing: -0.15px;
+  font-weight: 700;
 }
 
 // h3, h4, h5, h6 {
@@ -89,81 +102,99 @@ h4 {
 // }
 
 @media only screen and (min-width: $breakpoint-grid) {
-    h1 {
-        font-size: 4.5rem; // 72px
-        line-height: 5.15rem;
-        letter-spacing: -2.5px;
-    }
+  h1 {
+    font-size: 4.5rem; // 72px
+    line-height: 5.15rem;
+    letter-spacing: -2.5px;
+  }
 
-    h2 {
-        font-size: 2.5rem;
-        line-height: 2.8rem;
-        letter-spacing: -1px;
-    }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    letter-spacing: -1px;
+  }
 
-    h3 {
-        font-size: 1.6rem;
-        line-height: 2rem;
-        // Inter
-        letter-spacing: -0.33px;
-        font-weight: 700;
-    }
-    
-    h4 {
-        font-size: 1.4rem;
-        line-height: 2rem;
-        // Inter
-        letter-spacing: -0.33px;
-        font-weight: 700;
-    }
+  h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    // Inter
+    letter-spacing: -0.33px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    // Inter
+    letter-spacing: -0.33px;
+    font-weight: 700;
+  }
+}
+
+// Content headers (used almost everywhere)
+// Add margin-top to any heading text in an article—except for those in headers
+article section,
+article > {
+  h2 {
+    margin-top: 4rem;
+  }
+
+  h3,
+  h4 {
+    margin-top: 3rem;
+  }
+}
+// Press list
+ul.press {
+  @extend %ul-plain;
 }
 
 // Subtitles for headers
 header > p,
 header > section > p {
-    font-size: 1.5rem;
-    // line-height: 1.7rem;
-    // Inter
-    line-height: 1.9rem;
-    letter-spacing: -0.5px;
+  font-size: 1.5rem;
+  // line-height: 1.7rem;
+  // Inter
+  line-height: 1.9rem;
+  letter-spacing: -0.5px;
 }
 
 blockquote {
-    font-style: italic;
+  font-style: italic;
 }
 
 // Tables
 table {
-    text-align: left;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 640px;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 640px;
 
-    thead tr {
-        border-bottom: 1px solid var(--color-foreground-medium);
+  thead tr {
+    border-bottom: 1px solid var(--color-foreground-medium);
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--color-foreground-light);
+  }
+
+  tr {
+    th:first-of-type,
+    td:first-of-type {
+      padding-right: 3rem;
     }
 
-    tbody tr {
-        border-bottom: 1px solid var(--color-foreground-light);
+    th,
+    td {
+      padding: 1rem 0.5rem;
     }
 
-    tr {
-        th:first-of-type,
-        td:first-of-type {
-            padding-right: 3rem;
-        }
-
-        th,
-        td {
-            padding: 1rem 0.5rem;
-        }
-
-        th {
-            width: 60%;
-        }
-
-        td {
-            width: 40%; 
-        }
+    th {
+      width: 60%;
     }
+
+    td {
+      width: 40%;
+    }
+  }
 }

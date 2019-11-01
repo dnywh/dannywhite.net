@@ -1,14 +1,14 @@
-/* About */
+// About
 header.about {
   display: grid;
   grid-template-columns: $grid-column-structure;
   gap: $grid-gap;
 
-  img, h1 {
+  img,
+  h1 {
     grid-column: span 6;
   }
 }
-
 
 @media only screen and (min-width: $breakpoint-grid) {
   header.about {
@@ -21,8 +21,6 @@ header.about {
       grid-row: 2;
     }
   }
-
-  
 }
 ul.education {
   @extend %ul-plain;

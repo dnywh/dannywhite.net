@@ -33,8 +33,9 @@
   --time-hover: 0.33s;
   // Custom properties: type
   // Inter
-  --type-display: 'Inter', Telegraf, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --type-display: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   // --type-body: serif;
+  --type-body: var(--type-display);
 }
 @media (prefers-color-scheme: dark) {
   :root {

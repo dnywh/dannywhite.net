@@ -81,18 +81,3 @@ article.work > header ul p {
     }
   }
 }
-
-
-// Content
-// article.work > section h2:not(:first-child) {
-// article.work > section h2 {
-// Generalised to work on About page, Notes etc. TODO: move to general 'general.scss' file
-  article h2:not(:first-child) {
-  margin-top: var(--gap-content);
-}
-
-// Press list
-ul.press {
-  @extend %ul-plain;
-}
-
