@@ -9,7 +9,7 @@ tags:
   - talks
 ---
 
-Andy McMillan, co-organiser of XXXO and Framer's Loupe conferences, and Jorn van Dijk, cofounder at Framer, asked me if I'd like to speak at the inaugural Loupe conference. The process of deciding on a resonant topic, distilling that down to a conference talk format, and delivering it, was arduous yet incredibly fulfilling. You can read more about that process in my <a href="{% link notes.html %}">notes</a>.
+Andy McMillan, co-organiser of XXXO and Framer's Loupe conferences, and Jorn van Dijk, cofounder at Framer, asked me if I'd like to speak at the inaugural Loupe conference. The process of deciding on a resonant topic, distilling that down to a conference talk format, and delivering it, was arduous yet incredibly fulfilling. You can read more about that process in my <a href="{% link _posts/2019-11-01-that-time-i-underestimated-a-conference-talk.md %}">notes</a>.
 
 I ultimately settled on what I knew best at the time; the design tools and process revolution we are currently experiencing. More specifically, how these new ways of working are perhaps part of a larger pattern in human and design history. Below is the talk in full, followed by a condensed textual version.
 
