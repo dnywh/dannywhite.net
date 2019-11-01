@@ -1,5 +1,5 @@
 ---
-title: "Designing For Movement"
+title: Designing For Movement
 date: 2016-09-24 15:33:56 -0400
 featured_image: ustwo-team-nypd.jpg
 ---
@@ -8,21 +8,30 @@ featured_image: ustwo-team-nypd.jpg
 
 I'm going to use the co-publishing over here as an opportunity to give a shout-out to the full client-facing team:
 
-{% include image.html name="ustwo-team-nypd.jpg" caption="Megan Wald, myself, Rimar Villaseñor, Coleman Dash, and Erin LeForce. Bunch of legends." %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/designing-for-movement/ustwo-team-nypd.jpg" alt="A group of people smiling at the camera, with sticky notes and drawings on the walls behind them">
+  <figcaption>Megan Wald, myself, Rimar Villaseñor, Coleman Dash, and Erin LeForce.</figcaption>
+</figure>
 
 One last thing: I've also used the co-publishing here as an opportunity to prune to the good stuff. And leave out a lot of processes, testing, and results. See the original blog post for those things. Alright. Let's get to it...
 
----
+<hr>
 
 ustwo has been working closely with organizations in [health](http://moodnotes.thriveport.com/), [wellbeing](http://pauseable.com/), [accessibility](http://wayfindr.net/), and now increasingly so in fitness. Working with a leading sports and fitness organization, we set out to improve the run experience. We focused on the varying degrees of interactivity for movement, and how we might transform relevant data into actionable insights. Our approach centered on simplification, automation, and contextualization of data.
 
-{% include image.html name="erin-danny-framer.jpg" caption="Erin and I using Framer to prototype." %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/designing-for-movement/erin-danny-framer.jpg" alt="Two people experimenting with a phone prototype, in front of a computer display">
+  <figcaption>Erin and I using Framer to prototype.</figcaption>
+</figure>
 
 ## The current situation
 
 The majority of runners’ fitness apps are data-centric, with interpretation of this information largely up to the runner. This data-focused approach is often removed from an individual’s context for working out, making it difficult to interpret results and gather actionable insights.
 
-{% include image.html name="fitness-apps-landscape.jpg" caption="A sample of general-fitness and running apps today." %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/designing-for-movement/fitness-apps-landscape.jpg" alt="40 iOS app screenshots in a digital collage">
+  <figcaption>A sample of general-fitness and running apps today.</figcaption>
+</figure>
 
 Similar issues with interpretation and actions apply to dedicated wearables and fitness tracking devices. Raw data is often obscured or presented [unclearly](http://twitter.com/EdwardTufte/status/289208399621672960?); often with an emphasis on accountability and social sharing. These devices serve well for reflection and short-term motivation, but do little to help with analysis of performance techniques, safety and long-term motivation. In addition, glass screens requiring precise inputs and conscious interactions often fail when combined with a moving body and unfocused attention.
 
@@ -68,17 +77,26 @@ What environmental triggers could we leverage to provide a user with actionable 
 
 We also explored how data both collected from past runs and the environment could predict scenarios in which a runner would feel fatigue, need to change course, or adjust form. Pulling weather forecasts, traffic updates, and satellite images of the running paths alone would provide runners with insights as to when and where to workout, how to avoid injury, and even provide a user with tips on how to power up a tough hill.
 
-{% include image.html name="east-river-park-running-track.jpg" caption="Taking this baby on the running track." %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/designing-for-movement/east-river-park-running-track.jpg" alt="A trainer running on a track with the prototype attached to his arm">
+  <figcaption>Taking this baby on the running track.</figcaption>
+</figure>
 
 ### Contextualizing Data into Actionable Insights/Feedback
 
 Data that becomes contextualized often becomes an actionable insight by extension. Yet insights only truly become useful to a person when they are timely. At what points of a run is insight useful? What particular insights are useful? Here's where we mapped key moments in a runner's journey to insights that could become in-run feedback:
 
-{% include image.html name="coach-characteristics.jpg" caption-start-link="http://josephsmithdesign.com" caption-start-link-text="Joe Smith" caption=" was also involved at this point of the project, and helped create this mapping and the one below."%}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/designing-for-movement/coach-characteristics.jpg" alt="A digital table containing major parts of a typical runner's journey">
+  <figcaption><a href="http://www.josephsmithdesign.com" target="_blank">Joe Smith</a> was also involved at this point of the project, helping create this mapping and the one below.</figcaption>
+</figure>
 
 We began to see that elements of useful feedback as going beyond just timing. Could insights become more useful when executed through different coaching personalities? Where should these differing coaching personalities appear or not appear? Here's what we ended up with:
 
-{% include image.html name="coach-types.jpg" %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/designing-for-movement/coach-types.jpg" alt="A digital drawing of where coaching personality types might fit into a typical runner's journey ">
+  <figcaption>Note the overall symmetry in the journey; starting with the Personal Assistant, Guru, and Mr Gym...and then reversing as the workout ends.</figcaption>
+</figure>
 
 Again, see the original write-up on the [ustwo blog](http://ustwo.com/blog/designing-for-movement) for how these assumptions were tested and the results from this testing.
 

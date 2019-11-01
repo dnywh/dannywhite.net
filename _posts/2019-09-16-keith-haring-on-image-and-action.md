@@ -1,5 +1,5 @@
 ---
-title: "Keith Haring on image and action"
+title: Keith Haring on image and action
 date: 2019-09-16 08:00:00 -0400
 featured_image: basquiat.jpg
 ---

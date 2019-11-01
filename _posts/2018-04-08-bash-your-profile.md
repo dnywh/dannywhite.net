@@ -1,5 +1,5 @@
 ---
-title: "Bash your profile"
+title: Bash your profile
 date: 2018-04-07 09:12:00 -0400
 featured_image: atom-bash_profile.png
 tags:

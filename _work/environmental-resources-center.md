@@ -6,9 +6,9 @@ featured_image: collage.jpg
 url: https://www.kickstarter.com/environment
 date: 2018-11-29 09:00:00 -0400
 roles:
-  - Product design
+  - Product Design
   - Strategy
-  - Engineering (React)
+  - Engineering (JavaScript, React)
 collaborators:
   - Alexandra Criscuolo
   - Rob Lum

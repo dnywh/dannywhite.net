@@ -1,5 +1,5 @@
 ---
-title: "Framer Sessions"
+title: Framer Sessions
 date: 2017-07-17 09:17:01 -0400
 featured_image: Framer-NYC-2015-11-05-003.jpg
 ---
@@ -18,7 +18,10 @@ I met Koen and Jorn (founders of Framer) shortly after joining ustwo. A month or
 
 Two resources that helped start me off were [Setting up a technical meet-up, a framer case-study](http://blog.framer.com/how-to-host-to-a-framer-session-9e887ce6d7d1) and the format from Framer Seattle [from around that time](http://www.facebook.com/events/1704332906452240/). Things were adapted once we had a few Sessions under our belt, but the general approaches have more or less stuck.
 
-{% include image.html name="Framer-NYC-2015-11-05-003.jpg" caption="The first Framer NYC meet up." %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/framer-sessions/framer-nyc-2015-11-05-003.jpg" alt="A group of people at a meet up, watching a presentation">
+  <figcaption>The first ever Framer NYC meet up.</figcaption>
+</figure>
 
 ## Lessons learnt
 
@@ -50,7 +53,10 @@ Otherwise you’ll end up with a gulf: beginners and intermediates all falling b
 
 Framer is cool. There are some seriously creative use cases, and people behind those. Get out of just the tech and design circles—spread the word far and wide. Although meetup photos don't reflect it too well, I've been pretty happy at how diverse our meetups are becoming.
 
-{% include image.html name="Framer-NYC-2016-01-13-030.jpg" %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/framer-sessions/framer-nyc-2016-01-13-030.jpg" alt="A group of people at a meet up, watching a presentation">
+  <figcaption>Some folks at the second Framer Sessions in NYC.</figcaption>
+</figure>
 
 ## Our current approach
 
@@ -90,7 +96,10 @@ Have prepared a Framer 101 tutorial, followed by the step-by-step building of so
 
 Break out into groups for discussion and problem solving of individual prototypes. This tends to be hard, since there is always a spectrum of differing skill levels[^overrun]. Ideally you will have moderators to spot divergent skill levels and conversations, and physically separate (and therefore foster) each of them.
 
-{% include image.html name="Framer-Sessions-14-July-2016-09.jpg" %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/framer-sessions/framer-nyc-2016-07-14-009.jpg" alt="Several people looking at a computer">
+  <figcaption>George showing the ropes.</figcaption>
+</figure>
 
 ### 5. After the meetup
 
@@ -102,7 +111,10 @@ I started Framer NYC solo, with some generous logistics and event setup with the
 
 I’ve broadened my focus to other design tools such as [Origami](http://origami.design), where you may or may not hear my voice on [the tutorial videos](http://origami.design/tutorials/getting-started/Getting-Started.html). I have a feeling these meetups will broaden over time, too.
 
-{% include image.html name="Framer-Sessions-05-June-2016-016.jpg" caption="So stock-photo!!" %}
+<figure>
+  <img data-src="https://ik.imagekit.io/dw/notes/framer-sessions/framer-nyc-2016-06-05-016.jpg" alt="Several people in a circle, chatting">
+  <figcaption>Accidental stock photo.</figcaption>
+</figure>
 
 ## Resources
 
