@@ -27,25 +27,23 @@ I built this out 'dumb' as some of the [other options](https://stackoverflow.com
 ### Email encoding
 [Source](https://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/email.html). I use [email-encoder.com](http://www.email-encoder.com) to display my real email address whilst also making it difficult for bots to scrape. Not sure how it works—I'll guess I'll keep an eye on the spam levels.
 
-### Other features
+### Open Graph smartness
+[Source](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/head.html#L10-L21). Takes the leg-work out of nicely-formatted Twitter, iMessage, or Facebook shares from your website. The `jekyll-seo` plugin is a little too basic for my needs.
 
-[Auto-forwarding pages](http://github.com/dannyalright/dannyalright.github.io/blob/master/making.html)
-A lightweight format for when you'd like to link directly to an external source. [Example](http://dannywhite.site/making).
+### Prettify URL slugs
+[Source](http://github.com/dannyalright/dannyalright.github.io/blob/master/_config.yml#L47). Removes the post date from the URL. E.g. `dannywhite.site/2018/03/03/banana` becomes `dannywhite.site/banana`.
 
-[Open Graph tags](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/head.html#L8-L15)
-Takes the leg-work out of nicely-formatted Twitter, iMessage, or Facebook shares from your website. The `jekyll-seo` plugin is fine but a little too basic for my needs.
+### Extensive favicon format
+[Source](http://github.com/dannyalright/dannyalright.github.io/tree/master/assets/images). A lightweight format that covers most browser and OS implementations and formats.
 
-[Prettify URL slugs](http://github.com/dannyalright/dannyalright.github.io/blob/master/_config.yml#L35-L39)
-Removes the post date from the URL. E.g. `dannywhite.site/2018/03/03/banana` becomes `dannywhite.site/banana`.
+### Responsive `iframe` elements
+[Source](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/iframe-video.html). Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc.
 
-[Extensive favicon format](http://github.com/dannyalright/dannyalright.github.io/tree/master/assets/images)
-A lightweight format that covers most browser and OS implementations and formats.
+### Custom 404 page
+[Source](http://github.com/dannyalright/dannyalright.github.io/blob/master/404.md). Use existing `post` layout for a nicer 404 page. [Example](http://dannywhite.site/blah).
 
-[Responsive `iframe` elements](http://github.com/dannyalright/dannyalright.github.io/blob/master/_includes/iframe-video.html)
-Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc.
+### Lazy-loaded images
+[Source](https://github.com/dannyalright/dannyalright.github.io/blob/master/assets/lzy.min.js). Get your non-essential images to load only when scrolled-to. I'm using [lzy.js](https://github.com/neefrehman/lzy), and then [ImageKit](https://imagekit.io) to do some fancier [progressive-enhancement](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/).
 
-[Custom 404 page](http://github.com/dannyalright/dannyalright.github.io/blob/master/404.md)
-Use existing `post` layout for a nicer 404 page. [Example](http://dannywhite.site/banana).
-
-[Lazy-loaded images](https://github.com/dannyalright/dannyalright.github.io/blob/master/assets/lzy.min.js)
-Get your non-essential images to load only when scrolled-to. I'm using [lzy.js](https://github.com/neefrehman/lzy), and then [ImageKit](https://imagekit.io) to do some fancier [progressive-enhancement](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/).
+### Variable fonts
+[Source](https://rsms.me/inter/#variable). I'm currently using the lovely Inter typeface by Rasmus Andersson.
