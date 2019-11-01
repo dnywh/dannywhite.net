@@ -40,6 +40,7 @@ body > header nav ul li {
 
 body > header nav ul li a {
   text-decoration: none;
+  color: var(--color-foreground-medium);
 }
 body > header nav ul li a.current,    // Support footer, too
 body > footer nav ul li a.current {
