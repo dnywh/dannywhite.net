@@ -218,7 +218,7 @@ Affordances to help parse projects with large amounts of rewards were also remov
 </figure>
 
 ## Effects on users and business
-API endpoint challenges pushed the final releases to beyond my departure at Kickstarter so I do not have quantitative evidence of how the releases faired. High-confidence results are available however from earlier data analysis and testing projections. They include:
+**The first (A/B tested) release of the new checkout showed an almost 8% lift in conversion**. API endpoint challenges pushed the final releases to beyond my departure at Kickstarter so I do not have quantitative evidence of how the remaining releases faired. High-confidence results are available however from earlier data analysis and testing projections. They include:
 
 - Potential income loss reduced drastically given checkout breakages must be platform-wide to affect iOS and Android
 - Reduced engineering costs due to less ambiguous breakages
