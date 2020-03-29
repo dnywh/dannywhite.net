@@ -9,7 +9,7 @@ tags:
 
 There are a lot of good reasons for killing-off the Gmail address and going with your own, custom email address. The current reality though is that a lot of folks still use Google Drive, Google Docs, and Google Calendar. Unless you want to fork out money for G Suite (and then once again give your data to Google), you're in danger of cutting yourself off from collaboration.
 
-This is a guide for those, like me, who wanted to cut the Google cord yet still be able to receive Google Calendar invitations and collaborate on Google Docs.
+This is a guide for those, like me, who wanted to cut the Google cord yet still be able to meet via Google Calendar and collaborate via Google Docs.
 
 ## Setting up a non-Google email address
 I like [Soverin](http://soverin.net) because they're independent, have good uptime, and use clean energy for their servers. They are also extremely responsive if you ever need personalised support. You can use pretty much any email service you like, however. The Google process should still work.
@@ -23,43 +23,43 @@ Follow the first few steps to [create a personal Google account](https://account
 You should probably add a profile picture to your Google account. The default one, combined with a non-Gmail/G Suite email address, can look a bit suspicious to folks who invite you to collaborate on Google services such as Docs and Calendar. A photo of yourself, combined with a custom email address, will make it look like you're just a G Suite customer.
 
 ### Syncing your custom email Google Calendar with iOS and macOS Calendar apps
-This is easy on macOS and, as of writing this, hard on iOS.
+#### macOS
+Sign in via the Google flow in System Preferences > Internet Accounts. Once signed in, deselect everything except for calendar.
 
-On macOS: sign in via the Google flow in System Preferences > Internet Accounts. Once signed in, deselect everything except for calendar.
+#### iOS
+The Google flow won't work for us here.
 
-On iOS: ignore the Google flow and instead sign in via CalDAV. Here's how:
+##### Generating an app password
+Follow this guide if you have 2-Step Verification enabled on your Google account.
+
+1. Open a new browser tab on any device from which you're signed into your Google account.
+1. Go to _Manage your Google Account_.
+2. On the left navigation panel, select _Security_.
+3. On the _Signing in to Google panel_, select _App Passwords_.
+3. At the bottom, select _Select app_ and select _Calendar_.
+4. Select _Select device_ and select the device you’re using (_iPhone_ or _iPad_).
+5. Select Generate.
+6. A new app password should appear on your screen. Keep this at hand.
+
+##### Signing in via CalDAV
+Again, we cannot use the Google flow like we can on macOS. We need to use CalDAV.
+
+On your iOS device:
 
 1. Go to _Settings_ > _Passwords & Accounts_ > _Add Account_
 2. Select _Other_
-3. Select _Add CalDav Account_
-
-Enter the following details:
+3. Select _Add CalDAV Account_
+4. Enter the following details:
 
 Server: `calendar.google.com`<br>
 Username: `your@emailaddress.com`<br>
-Password: `yourgooglepassword`
+Password: `your-google-password-or-app-password`
 
-Be sure to swap out the `your@emailaddress.com` and `yourgooglepassword` with your own information.
+Be sure to swap out the `your@emailaddress.com` and `your-google-password-or-app-password` with your own information. Remember to use your app password instead of your Google account password as per the instructions in _Generating an app password_.
 
-There is another crucial field called _Advanced Settings_ which, for whatever reason, doesn't appear until you jump through some hoops. For me, that was a combination of tapping _Save_ at least twice, re-opening the modal, or swiping and tapping aimlessly on the modal. Just keep trying and it should appear.
+5. Select _Save_.
 
-Once Advanced Settings does appear, tap into it and enter the following details:
-
-Port: `443`<br>
-Account URL: `https://calendar.google.com/calendar/dav/your@emailaddress.com/user/`
-
-Be sure to swap out the `your@emailaddress.com` with your own.
-
-<figure class="even-two">
-  <img data-src="https://ik.imagekit.io/dw/notes/getting-sort-of-off-google/verifying.png" alt="An iPad screenshot showing calendar settings">
-  <img data-src="https://ik.imagekit.io/dw/notes/getting-sort-of-off-google/advanced-settings.png" alt="An iPad screenshot showing calendar settings">
-  <figcaption>First: <em>Advanced Settings</em> appears as an option, after a bit of finagling. Second: The information I inputted within <em>Advanced Settings</em>.</figcaption>
-</figure>
-
-Tap the back (_< CalDAV_) navigation button, and then Save. It will likely take another few seconds to verify. It took me a few tries to have it work; so if it fails, give it more time and/or try again.
-
-## Finishing up
-That should be it for most folks. You can now use your custom email address for private emailing and for Google services. 
+If that doesn't work, double-check your password situation: did you use your regular Google account password instead of an app password?
 
 ### Making sure you don't end up in the Junk folder
 Some email services, such as Gmail, find custom email addresses suspicious and mark emails sent by them as junk. You can mark your email address as 'safe' by authenticating it through a method such as [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail). I did it with my [Soverin](https://support.soverin.net/hc/en-us/articles/360000213874-Setup-DKIM) email address and haven't had any issues since.
