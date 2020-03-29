@@ -57,8 +57,6 @@ Password: `your-google-password-or-app-password`
 
 Be sure to swap out the `your@emailaddress.com` and `your-google-password-or-app-password` with your own information. Remember to use your app password instead of your Google account password as per the instructions in _Generating an app password_.
 
-5. Select _Save_.
-
 If that doesn't work, double-check your password situation: did you use your regular Google account password instead of an app password?
 
 ### Making sure you don't end up in the Junk folder
