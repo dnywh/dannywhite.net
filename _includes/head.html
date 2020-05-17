@@ -2,26 +2,32 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }} &mdash; {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
+  <title>{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }} &mdash;
+    {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
   </title>
   <meta name="author" content="Danny White" />
-  <meta name="Description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">
+  <meta name="Description"
+    content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">
 
   <!-- Open Graph meta -->
   <meta property="og:type" content="{{ page.type }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:title"
+    content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title | escape }}{% endif %}" />
   <!-- Open Graph meta: Description: Same as general meta Description: Begin with explicit description, backed up by excerpt, backed up by site description  -->
-  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}" />
-  <meta property="og:image" content="{% if page.featured_image %}https://ik.imagekit.io/dw/{% if page.layout == "work" %}work/{% elsif page.layout == "post" %}notes/{% endif %}{{ page.slug }}/{{ page.featured_image }}{% else %}{{ site.url }}/assets/images/danny-mbq-panel.jpg{% endif %}" />
+  <meta property="og:description"
+    content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}" />
+  <meta property="og:image"
+    content="{% if page.featured_image %}https://ik.imagekit.io/dw/{% if page.layout == "work" %}work/{% elsif page.layout == "post" %}notes/{% endif %}{{ page.slug }}/{{ page.featured_image }}{% else %}{{ site.url }}/assets/images/danny-mbq-panel.jpg{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta content="en_GB" property="og:locale" />
 
   <!-- Twitter-specific meta -->
-  <meta name="twitter:card" content="{% if page.twitter_card_type %}{{ page.twitter_card_type }}{% else %}summary{% endif %}" />
+  <meta name="twitter:card"
+    content="{% if page.twitter_card_type %}{{ page.twitter_card_type }}{% else %}summary{% endif %}" />
 
   <!-- Pinterest -->
-  <meta content="62a5c72a4dbb40cba45c9a57bef6a6f9" name="p:domain_verify" />
+  <meta name="p:domain_verify" content="ccc8f17a0887c3d97360e2249f884b86" />
 
   <!-- Custom styles -->
   <link rel="stylesheet" href="{{
