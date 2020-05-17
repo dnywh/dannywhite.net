@@ -15,6 +15,6 @@ It took me a fair bit longer than I estimated: 20 odd hours instead of 12. Towar
   <figcaption>The well-timed screenshot from <a href="https://68.netlify.app">68 Bits of Unsolicited Advice, One At a Time</a>.</figcaption>
 </figure>
 
-90% of 12 hours is 10.8 hours. Following the _*_there's another 90% after the first 90% rule_: two sets of 10.8 hours equals 21.6 hours.
+90% of 12 hours is 10.8 hours. Following the _there's another 90% after the first 90% rule_: two sets of 10.8 hours equals 21.6 hours.
 
 That's pretty spot-on.
