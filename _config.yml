@@ -84,4 +84,4 @@ exclude:
 
 # Filtering content
 show_drafts: false
-future: false
+# future: false
