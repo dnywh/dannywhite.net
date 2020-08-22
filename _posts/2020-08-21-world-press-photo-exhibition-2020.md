@@ -1,6 +1,7 @@
 ---
 title: World Press Photo Exhibition 2020
 date: 2020-08-21 21:15:00 +1000
+featured_image: world-press-photo-exhibition-2020-a
 tags:
   - photography
   - exhibition
