@@ -1,6 +1,6 @@
 ---
 title: Shovelling shit from a sitting position
-date: 2020-09-20 10:00:00 +1000
+date: 2020-09-20 18:00:00 +1000
 tags:
   - process
 ---
