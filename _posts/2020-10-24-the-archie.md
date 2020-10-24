@@ -1,7 +1,7 @@
 ---
 title: The Archie
 date: 2020-10-24 17:15:00 +1100
-featured_image: world-press-photo-exhibition-2020-a
+featured_image: day-and-night-titjikala-pension-day.jpg
 tags:
   - art
   - exhibition
