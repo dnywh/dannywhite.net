@@ -69,7 +69,7 @@ That one on the right reminds me of [a model](https://github.com/taki0112/SPADE-
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/notes/the-archie/spade-face.jpg" alt="A screenshot of the SPADE-FACE tool on RunwayML">
-  <figcaption><a href="https://www.artgallery.nsw.gov.au/prizes/archibald/2020/30251/">SPADE-FACE</a> on RunwayML.</figcaption>
+  <figcaption><a href="https://app.runwayml.com/models/sree_harsha/SPADE-FACE">SPADE-FACE</a> on RunwayML.</figcaption>
 </figure>
 
 Anyway, back to it. Here are the other Archibald finalists I dug:
