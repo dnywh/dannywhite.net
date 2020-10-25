@@ -8,7 +8,7 @@ tags:
   - drawing
 ---
 
-A sprained ankle on a rainy day mean I'm actually making good on [yesterday's plan](the-archie) to try [SPADE-FACE on RunwayML](https://app.runwayml.com/models/sree_harsha/SPADE-FACE).
+A sprained ankle on a rainy day means I'm actually making good on [yesterday's plan](the-archie) to try [SPADE-FACE on RunwayML](https://app.runwayml.com/models/sree_harsha/SPADE-FACE).
 
 Here’s what that's looking like:
 
