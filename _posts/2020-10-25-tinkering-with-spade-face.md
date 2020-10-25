@@ -26,8 +26,6 @@ There were a couple versions that didn't work out so well. They were ones I sket
    <figcaption>Randall Flagg on a good day.</figcaption>
 </figure>
 
-Demonic.
-
 You can see the difference in black; the prior versions are pure `#000000`. The imported, demonic, one has gone through some unwanted colour profile changes. Same deal with all other colours. Similar results with PNG where there should be less colour differences.
 
 <figure>
