@@ -33,13 +33,13 @@ You can see the difference in black; the prior versions are pure `#000000`. The 
    <figcaption>Each of these hex codes must be matched exactly for the model to do its magic.</figcaption>
 </figure>
 
-I had an idea to outsource the sketch creation to a whole bunch of people, ideally hand-rendered in crayon, marker, or acyclic. How would the output from a five year old kid in the U.S. differ from that of an adult in Sydney?
+I had an idea to outsource the sketch creation to a whole bunch of people, ideally hand-rendered in crayon, marker, or acrylic. How would the output from a five year old kid in the U.S. differ from that of an adult in Sydney?
 
 This colour matching snafu puts a damper on these plans as it means the segmentation sketch must be done in RunwayML or have been exported with the exact right colours and colour profile. That stuff is a black hole.
 
 Anyway. There's gotta be a way. I'll figure something out.
 
-Here's a speedrun of live-editing a segmentation:
+Here's a speed-run of live-editing a segmentation:
 
 <figure>
   <video muted playsinline controls loop>
