@@ -8,7 +8,7 @@ tags:
   - sydney
 ---
 
-I went and saw John Boker's _Inner World_ exhibition today at King Street Gallery, Darlinghurst. He's a friend of and similar painter to my art teacher—who I'm trying to emulate—so I thought the trip would be a no brainer (it was).
+I went and saw John Boker's _Inner World_ exhibition today at King Street Gallery, Darlinghurst. He's a friend of (and similar painter to) my art teacher. I'm doing my best to emulate my art teacher, so thought the trip would be worth it. It was.
 
 <figure class="even-four">
   <img data-src="https://ik.imagekit.io/dw/notes/inner-world/inner-world-1.jpeg" alt="An empty art exhibition with paintings on the wall">
