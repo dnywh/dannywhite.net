@@ -29,6 +29,6 @@ notYetTweetedEphemera.map((i) => {
 });
 ```
 
-That applies a `true` value to each record's _tweeted_ value. The Airtable interface updates almost instantly.
+That applies a `true` value to each record's _tweeted_ field. The Airtable interface updates almost instantly.
 
 Cleaner and simpler than what I was doing before: reading from and writing to a JSON file on the file system.
