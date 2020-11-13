@@ -7,7 +7,7 @@ tags:
   - experiment
 ---
 
-It turns out that Ephemerabot was tweeting the same few bits of ephemera every day for the last week. Apologies to my three followers. One of which is myself.
+Ephemerabot has been tweeting the same few bits of ephemera every day for the last week. Apologies to my three followers. One of which is myself.
 
 This is a note-to-self for similar situations in the future: [Heroku apps must be stateless](https://stackoverflow.com/a/24769708/2009441). Any changes made to files on Heroku will be lost the next time your dyno starts. Heroku's file system is, uh, ephemeral.
 
