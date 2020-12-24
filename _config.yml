@@ -43,6 +43,9 @@ plugins:
   - jekyll-sitemap
 
 collections:
+  cheatsheets:
+    output: true
+    permalink: /cheatsheets/:title
   posts:
     output: true
     permalink: /notes/:year/:title
@@ -63,6 +66,12 @@ collections:
 
 # Set some defaults to save repetition
 defaults:
+  - scope:
+      path: ""
+      type: "cheatsheets"
+    values:
+      layout: "cheatsheet"
+      type: "article"
   - scope:
       path: ""
       type: "posts"
