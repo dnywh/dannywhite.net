@@ -8,11 +8,11 @@ layout: default
     <p>An ever-growing cheatsheet for <a href="{{ page.docUrl }}" target="_blank" rel="noopener noreferrer">{{ page.title | escape }}</a>. I add things that I think are useful but difficult to unearth or understand.</p>
 
     {% if page.contents %}
-    <ul>
+    <ol>
       {% for item in page.contents %}
       <li><a href="#{{ item | slugify }}">{{ item }}</a></li>
       {% endfor %}
-    </ul>
+    </ol>
     {% endif %}
   </header>
 
