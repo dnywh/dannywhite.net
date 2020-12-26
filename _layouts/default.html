@@ -4,7 +4,7 @@ layout: compress
 {% assign current = page.title | downcase %}
 
 <!DOCTYPE html>
-<html {% if current == "" %}class="orbs"{% endif %} lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include head.html %}
 <!-- lzy.js -->
