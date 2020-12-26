@@ -53,7 +53,7 @@ Each SpringBoard item is positioned by the anchor property, rather than the X an
 
 #### Optimisation
 
-It turns out that hard-coding assets and removing functionality doesn’t do too much for reducing file size. Feel free to [download the iPhone 7-only version](http://github.com/dnywh/contextkit/blob/master/examples/SpringBoard%20App%20iPhone%207.origami) if you want to take a look or see what else can be stripped-out.
+It turns out that hard-coding assets and removing functionality doesn’t do too much for reducing file size. Feel free to [download the iPhone 7-only version](http://github.com/dnywh/contextkit/blob/main/examples/SpringBoard%20App%20iPhone%207.origami) if you want to take a look or see what else can be stripped-out.
 
 ### Notification component
 
@@ -124,8 +124,8 @@ The current animation and visual styles are modelled from the latest iOS 11 Beta
 
 Information on each component's inputs and outputs is available inside its respective tool's directory. So far that includes:
 
-- [iOS Notification component for Origami](http://github.com/dnywh/contextkit/blob/master/origami/notification.md)
-- [iOS SpringBoard App component for Origami](http://github.com/dnywh/contextkit/blob/master/origami/springboard-app.md)
+- [iOS Notification component for Origami](http://github.com/dnywh/contextkit/blob/main/origami/notification.md)
+- [iOS SpringBoard App component for Origami](http://github.com/dnywh/contextkit/blob/main/origami/springboard-app.md)
 
 ## Tutorials
 

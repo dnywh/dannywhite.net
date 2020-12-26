@@ -1,9 +1,10 @@
 ---
 layout: compress
 ---
+{% assign current = page.title | downcase %}
 
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html {% if current == "" %}class="orbs"{% endif %} lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include head.html %}
 <!-- lzy.js -->
@@ -11,6 +12,7 @@ layout: compress
 <!-- https://web.dev/browser-level-image-lazy-loading/ -->
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> </script>
 <script src="/assets/lzy.min.js"></script>
+
 
 <body>
   {% include header.html %}
