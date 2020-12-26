@@ -30,8 +30,7 @@ collections:
     output: true
     permalink: /notes/:year/:title
   work:
-    # output: true
-    output: false
+    output: true
     permalink: /work/:title
     order:
       - time-is-running-out.md

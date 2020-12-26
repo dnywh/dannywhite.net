@@ -7,7 +7,7 @@ tags:
 
 I'm on creative retreat at the moment. One of my self-imposed jobs has been to go through every one of my sketch books and sift out ideas, notes, ...and sketches that I may have missed or prematurely let go.
 
-It's a pretty rude shock seeing, with the fresh eyes that time produces, how much a particular project consumes you. This time it was the <a href="{% link _work/loupe-2018.md %}">Loupe talk</a> I gave at Framer's inaugural Loupe conference in 2018. I spent _months_ on it. Probably very inefficiently, but definitely diligently; almost every weekend.
+It's a pretty rude shock seeing, with the fresh eyes that time produces, how much a particular project consumes you. This time it was the [Loupe talk]({% link _work/loupe-2018.md %}) I gave at Framer's inaugural Loupe conference in 2018. I spent _months_ on it. Probably very inefficiently, but definitely diligently; almost every weekend.
 
 Here's a small portion:
 
