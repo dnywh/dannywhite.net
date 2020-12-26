@@ -6,12 +6,9 @@ title: Work
     <h1>Work</h1>
     <p>A collection of in-house, agency, and personal projects.</p>
 </header>
-<!-- TODO: combine roles and tags arrays into one for a filter bar -->
+
 <ul class="work">
-    {% comment %} TODO: replace below array trickiness with easier Jekyll 4.0.0 config ordering {% endcomment %}
-    {% assign itemsByDate = site.work | sort: 'date' %}
-    {% assign itemsByDateReversed = itemsByDate | reverse %}
-    {% for item in itemsByDateReversed %}
+    {% for item in site.work %}
     <li>
         <a href="{{ item.url }}">
             <h2>{{ item.title | escape }}</h2>

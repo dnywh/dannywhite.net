@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
-# gem 'jekyll'
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.2.0"
 
 group :jekyll_plugins do
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-sitemap"
 end

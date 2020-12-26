@@ -6,7 +6,7 @@ featured_image: organizing-attributes.jpg
 
 These three design studio exercises are intended to elicit tangible attributes for designing product whilst keeping multiple people's opinions heard and considered.
 
-Credit to Chris Marotta from my time at ustwo for a lot of this. We worked on multiple projects together that made use of some or all parts. The photo examples below are from the [Growing Up NYC](https://growingupnyc.cityofnewyork.us).
+Credit to Chris Marotta from my time at ustwo for a lot of this. We worked on multiple projects together that made use of some or all parts. The photo examples below are from the [Growing Up NYC](https://growingupnyc.cityofnewyork.us) project.
 
 ## Requirements
 

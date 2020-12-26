@@ -1,10 +1,13 @@
+{% assign current = page.title | downcase %}
 <footer>
   <section>
+  {% if current != "" %}
     <p>{{ site.description }}</p>
+    {% endif %}
     <p>{% include email.html %}</p>
   </section>
 
   {% include nav.html cheatsheets="true" %}
 
-  {% include social.html newsletter="true" %}
+  {% include social.html %}
 </footer>

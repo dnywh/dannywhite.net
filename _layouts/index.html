@@ -1,26 +1,7 @@
 ---
 layout: default
 ---
+
 <header class="index">
   <h1>{{ site.description }}</h1>
-  <p>Some of his most recent work includes...</p>
 </header>
-
-<ul class="work">
-  {% comment %} TODO: replace below array trickiness with easier Jekyll 4.0.0 config ordering {% endcomment %}
-  {% assign itemsByDate = site.work | sort: 'date' %}
-  {% assign itemsByDateReversed = itemsByDate | reverse %}
-  {% for item in itemsByDateReversed %}
-  {% if item.featured %}
-  <li>
-    <a href="{{ item.url }}">
-      <h2>{{ item.description | escape }}</h2>
-      <img data-src="https://ik.imagekit.io/dw/work/{{ item.slug }}/{{ item.featured_image }}"
-        alt="An illustrative image from the {{ item.title }} project" />
-    </a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-<p class="cta"><a href="/work">See all work &#8594;</a></p>

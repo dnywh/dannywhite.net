@@ -53,7 +53,7 @@ Each SpringBoard item is positioned by the anchor property, rather than the X an
 
 #### Optimisation
 
-It turns out that hard-coding assets and removing functionality doesn’t do too much for reducing file size. Feel free to [download the iPhone 7-only version](http://github.com/dannyalright/contextkit/blob/master/examples/SpringBoard%20App%20iPhone%207.origami) if you want to take a look or see what else can be stripped-out.
+It turns out that hard-coding assets and removing functionality doesn’t do too much for reducing file size. Feel free to [download the iPhone 7-only version](http://github.com/dnywh/contextkit/blob/master/examples/SpringBoard%20App%20iPhone%207.origami) if you want to take a look or see what else can be stripped-out.
 
 ### Notification component
 
@@ -88,23 +88,22 @@ A simple template for emulating the app-switching behaviour in iOS. Drop your pr
 
 ## Installation
 
-There are three ways to get access to these components and template. The most direct way is to [download the ready-to-go files](http://github.com/dannyalright/contextkit/tree/master/origami/ContextKit) and riff from them. For more extensibility, follow either of the following:
+There are three ways to get access to these components and template. The most direct way is to [download the ready-to-go files](http://github.com/dnywh/contextkit/tree/master/origami/ContextKit) and riff from them. For more extensibility, follow either of the following:
 
 ### Download the components and add to your Patch Library
 
-[Download a ready-to-go file](http://github.com/dannyalright/contextkit/tree/master/origami/ContextKit) and open into Origami. Right-click on the component and then click _Add to User Patch Library…_.
+[Download a ready-to-go file](http://github.com/dnywh/contextkit/tree/master/origami/ContextKit) and open into Origami. Right-click on the component and then click _Add to User Patch Library…_.
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/work/contextkit/add-to-patch-library.jpg" alt="A screenshot of the Origami Mac app">
   <figcaption>Adding the ContextKit Notification component to your Patch Library.</figcaption>
 </figure>
 
-
 Next time you click on the New Layer button (+), you should see the component appear. This approach is good for quick-yet-global access across documents.
 
 ### Download the system and open in Origami
 
-This is my recommended approach if you plan to use these extensively. [Clone or download the ComponentKit system](http://github.com/dannyalright/contextkit/tree/master/origami) and open in Origami Studio. If you clone the repository, and choose _Install from Current Location_, the components will automatically update whenever you pull from the repository.
+This is my recommended approach if you plan to use these extensively. [Clone or download the ComponentKit system](http://github.com/dnywh/contextkit/tree/master/origami) and open in Origami Studio. If you clone the repository, and choose _Install from Current Location_, the components will automatically update whenever you pull from the repository.
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/work/contextkit/install-system.jpg" alt="Installing the ContextKit system in Origami Studio">
@@ -125,13 +124,12 @@ The current animation and visual styles are modelled from the latest iOS 11 Beta
 
 Information on each component's inputs and outputs is available inside its respective tool's directory. So far that includes:
 
-- [iOS Notification component for Origami](http://github.com/dannyalright/contextkit/blob/master/origami/notification.md)
-- [iOS SpringBoard App component for Origami](http://github.com/dannyalright/contextkit/blob/master/origami/springboard-app.md)
-
+- [iOS Notification component for Origami](http://github.com/dnywh/contextkit/blob/master/origami/notification.md)
+- [iOS SpringBoard App component for Origami](http://github.com/dnywh/contextkit/blob/master/origami/springboard-app.md)
 
 ## Tutorials
 
 Chris Slowik over at [designers.how][designershow] has [published a 5 minute video tutorial on ContextKit][designershow]. Specifically SpringBoard App component. It's a great walk-through of the installation process and a real-world use case.
 
-[github]: http://github.com/dannyalright/contextkit/
+[github]: http://github.com/dnywh/contextkit/
 [designershow]: http://designers.how/episodes/start-by-building-context

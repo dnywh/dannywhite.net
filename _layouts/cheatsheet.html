@@ -5,7 +5,7 @@ layout: default
 <article>
   <header>
     <h1>{{ page.title | escape }}</h1>
-    <p>An ever-growing cheatsheet for <a href="{{ page.docUrl }}" target="_blank" rel="noopener noreferrer">{{ page.title | escape }}</a>. I add things that I think are useful but difficult to unearth or understand.</p>
+    <p>An ever-growing cheatsheet for {% if page.docUrl %}<a href="{{ page.docUrl }}" target="_blank" rel="noopener noreferrer">{{ page.title | escape }}</a>{% else %}{{ page.title | escape }}{% endif %}. I add things that I think are useful but difficult to unearth or understand.</p>
 
     {% if page.contents %}
     <ol>

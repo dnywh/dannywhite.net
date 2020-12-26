@@ -6,7 +6,7 @@ tags:
     - guide
 ---
 
-It seems like everyone has a use for Terminal these days but the people most uncomfortable with it (think PMs, designers) have the heaviest lifting to do. Shortcuts are so wildly helpful for making Terminal approachable—yet are somehow unexplained and impenetrable for those that need them.
+It seems like everyone has a use for Terminal these days but the people most uncomfortable with it (think PMs, designers) have the heaviest lifting to do. Shortcuts are so wildly helpful for making Terminal approachable yet are somehow unexplained and impenetrable for those that need them.
 
 Here's my attempt to fix that.
 
@@ -68,4 +68,8 @@ I don't even need to fuss in Terminal now that I have an application shortcut fo
 
 Keep an eye on an nearby engineer as they use Terminal. You might see them use shortcuts beyond applications and directories such as using `gc` for `git commit`. It's all up to you. Colours, ASCII art, and things I'm yet to figure out are also customisable via _.bash_profile_.
 
-Shout out to Stephanie Coleman who introduced me to all of this at Kickstarter. My .bash_profile lives in a [Gist](https://gist.github.com/dannyalright/5856920a9579200f59bbcc8bfe76b05c) if you've like to use it as a starting-point.
+Shout out to Stephanie Coleman who introduced me to all of this at Kickstarter. My .bash_profile lives in a [Gist](https://gist.github.com/dnywh/5856920a9579200f59bbcc8bfe76b05c) if you've like to use it as a starting-point.
+
+## Update (December 2020)
+
+The default macOS shell has changed from Bash to zsh as of macOS Catalina. This post's advice is _generally_ applicable to zsh but with syntax differences. E.g. `nano .zshenv` instead of the above `nano .bash_profile`. See my [Terminal cheatsheet]({% link _cheatsheets/terminal.md %}) for more info.

@@ -4,17 +4,14 @@
         <li>
             <a href="{{ "/" | relative_url }}" {% if current == "" %} class="current"{% endif %}>Index</a>
         </li>
-        <li>
-            <a href="/work" {% if current == "work" %}class="current"{% endif %}>Work</a>
-        </li>
-        <li>
-            <a href="/notes" {% if current == "notes" %}class="current"{% endif %}>Notes</a>
-        </li>
         {% if include.cheatsheets %}
         <li>
             <a href="/cheatsheets" {% if current == "cheatsheets" %}class="current"{% endif %}>Cheatsheets</a>
         </li>
         {% endif %}
+        <li>
+            <a href="/notes" {% if current == "notes" %}class="current"{% endif %}>Notes</a>
+        </li>
         <li>
             <a href="/about" {% if current == "about" %}class="current"{% endif %}>About</a>
         </li>
