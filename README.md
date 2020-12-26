@@ -22,37 +22,37 @@ I'm using [ImageKit](https://imagekit.io) to host all my images and video. There
 
 ### Navigation item selection
 
-[Source](https://github.com/dnywh/dnywh.github.io/blob/main/_includes/nav.html). An item from the top-most `<header><nav></nav></header>` will be dimmed if that item's page is active. E.g. if the '/notes' page is active, then the 'Notes' navigation item will be dimmed.
+[Source](https://github.com/dnywh/dannywhite.org/blob/main/_includes/nav.html). An item from the top-most `<header><nav></nav></header>` will be dimmed if that item's page is active. E.g. if the '/notes' page is active, then the 'Notes' navigation item will be dimmed.
 
 I built this out 'dumb' as some of the [other options](https://stackoverflow.com/a/9138259) are a bit heavy-handed.
 
 ### Email encoding
 
-[Source](https://github.com/dnywh/dnywh.github.io/blob/main/_includes/email.html). I use [email-encoder.com](http://www.email-encoder.com) to display my real email address whilst also making it difficult for bots to scrape. Not sure how it works—I'll guess I'll keep an eye on the spam levels.
+[Source](https://github.com/dnywh/dannywhite.org/blob/main/_includes/email.html). I use [email-encoder.com](http://www.email-encoder.com) to display my real email address whilst also making it difficult for bots to scrape. Not sure how it works—I'll guess I'll keep an eye on the spam levels.
 
 ### Open Graph smartness
 
-[Source](http://github.com/dnywh/dnywh.github.io/blob/main/_includes/head.html#L10-L21). Takes the leg-work out of nicely-formatted Twitter, iMessage, or Facebook shares from your website. The `jekyll-seo` plugin is a little too basic for my needs.
+[Source](http://github.com/dnywh/dannywhite.org/blob/main/_includes/head.html#L10-L21). Takes the leg-work out of nicely-formatted Twitter, iMessage, or Facebook shares from your website. The `jekyll-seo` plugin is a little too basic for my needs.
 
 ### Prettify URL slugs
 
-[Source](http://github.com/dnywh/dnywh.github.io/blob/main/_config.yml#L47). Removes the post date from the URL. E.g. `dannywhite.org/2018/03/03/banana` becomes `dannywhite.org/banana`.
+[Source](http://github.com/dnywh/dannywhite.org/blob/main/_config.yml#L47). Removes the post date from the URL. E.g. `dannywhite.org/2018/03/03/banana` becomes `dannywhite.org/banana`.
 
 ### Extensive favicon format
 
-[Source](http://github.com/dnywh/dnywh.github.io/tree/master/assets/images). A lightweight format that covers most browser and OS implementations and formats.
+[Source](http://github.com/dnywh/dannywhite.org/tree/master/assets/images). A lightweight format that covers most browser and OS implementations and formats.
 
 ### Responsive `iframe` elements
 
-[Source](http://github.com/dnywh/dnywh.github.io/blob/main/_includes/iframe-video.html). Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc.
+[Source](http://github.com/dnywh/dannywhite.org/blob/main/_includes/iframe-video.html). Simple styling 'normalisers' for embeds from Vimeo, YouTube, Twitter, etc.
 
 ### Custom 404 page
 
-[Source](http://github.com/dnywh/dnywh.github.io/blob/main/404.md). Use existing `post` layout for a nicer 404 page. [Example](http://dannywhite.org/blah).
+[Source](http://github.com/dnywh/dannywhite.org/blob/main/404.md). Use existing `post` layout for a nicer 404 page. [Example](http://dannywhite.org/blah).
 
 ### Lazy-loaded images
 
-[Source](https://github.com/dnywh/dnywh.github.io/blob/main/assets/lzy.min.js). Get your non-essential images to load only when scrolled-to. I'm using [lzy.js](https://github.com/neefrehman/lzy), and then [ImageKit](https://imagekit.io) to do some fancier [progressive-enhancement](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/).
+[Source](https://github.com/dnywh/dannywhite.org/blob/main/assets/lzy.min.js). Get your non-essential images to load only when scrolled-to. I'm using [lzy.js](https://github.com/neefrehman/lzy), and then [ImageKit](https://imagekit.io) to do some fancier [progressive-enhancement](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/).
 
 ### Variable fonts
 
@@ -60,4 +60,4 @@ I built this out 'dumb' as some of the [other options](https://stackoverflow.com
 
 ### Markdown file table of contents
 
-[Source](https://github.com/dnywh/dnywh.github.io/blob/main/_layouts/cheatsheet.html#L10). A simpler alternative to `{toc}` or plugins. Must be declared in front matter using the same text string as the corresponding H2 element.
+[Source](https://github.com/dnywh/dannywhite.org/blob/main/_layouts/cheatsheet.html#L10). A simpler alternative to `{toc}` or plugins. Must be declared in front matter using the same text string as the corresponding H2 element.
