@@ -1,6 +1,5 @@
 ---
 title: CSS
-docUrl: https://developer.mozilla.org/en-US/docs/Web/CSS
 contents:
     - Create gaps between table rows
 ---
