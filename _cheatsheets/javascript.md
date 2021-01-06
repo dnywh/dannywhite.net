@@ -11,7 +11,7 @@ seeAlso:
 
 ## Only apply CSS if JavaScript is enabled
 
-I believe JavaScript should be opt-in. Icing on the cake.
+Too many websites break entirely if a visitor has JavaScript disabled. I think JavaScript should be opt-in; icing on the cake.
 
 Say you want JavaScript to decide when to turn a `div` from `opacity: 0` to `opacity: 1`. If the user does not have JavaScript enabled, that `div` will never be visible. That `opacity: 0` should therefore only be set _if_ JavaScript is enabled.
 
