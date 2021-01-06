@@ -2,6 +2,11 @@
 title: CSS
 contents:
     - Create gaps between table rows
+otherResources:
+    - name: CSS Tricks
+      url: "https://css-tricks.com"
+    - name: MDN Web Docs
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
 ---
 
 ## Create gaps between table rows

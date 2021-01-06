@@ -1,6 +1,9 @@
 ---
 title: Eleventy
-docUrl: https://www.11ty.dev
+url: https://www.11ty.dev
+otherResources:
+    - name: Learn Eleventy From Scratch
+      url: "https://piccalil.li/course/learn-eleventy-from-scratch/"
 contents:
     - Render all collection item page content on page
 ---

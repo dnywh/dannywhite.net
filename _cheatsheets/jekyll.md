@@ -1,8 +1,11 @@
 ---
 title: Jekyll
-docUrl: https://jekyllrb.com/
+url: https://jekyllrb.com/
 contents:
     - Escape Liquid tags
+otherResources:
+    - name: CloudCannon Academy
+      url: "https://learn.cloudcannon.com"
 ---
 
 ## Escape Liquid tags

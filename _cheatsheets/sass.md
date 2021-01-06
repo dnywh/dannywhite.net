@@ -1,6 +1,6 @@
 ---
 title: Sass
-docUrl: https://sass-lang.com/
+url: https://sass-lang.com/
 contents:
     - Break out of the nesting structure
 ---

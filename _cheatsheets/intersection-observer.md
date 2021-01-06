@@ -1,6 +1,6 @@
 ---
 title: Intersection Observer
-docUrl: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+url: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 contents:
     - Affect other elements based on target element
 ---

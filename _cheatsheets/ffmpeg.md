@@ -1,6 +1,6 @@
 ---
 title: ffmpeg
-docUrl: https://ffmpeg.org
+url: https://ffmpeg.org
 contents:
     - Create a stop-motion video based on still images
     - Add a padded border around a video
