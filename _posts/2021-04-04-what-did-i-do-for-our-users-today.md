@@ -1,5 +1,5 @@
 ---
-title: What's not going to change in the next 10 years?
+title: What did I do for our users today?
 date: 2021-04-04 18:10:00 +1000
 tags:
   - product
