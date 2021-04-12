@@ -67,7 +67,7 @@ For each of your new themes, and openly as a group, list attributes under the fo
 
 Attributes from the Metamorphosis exercises can be recycled.
 
-Stop when you feel attribute additions slowing or becoming worse in quality. Use this as your cutting off point—play back the group-created attributes to the participants to seal the deal.
+Stop when you feel attribute additions slowing or becoming worse in quality. Play back the attributes to the group to reinforce their communal origin; it's much harder to deviate later on if you've all previously agreed on the guardrails.
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/notes/metamorphosis/brand-attributes.jpg" alt="Sticky notes arranged on a wall">
@@ -76,4 +76,4 @@ Stop when you feel attribute additions slowing or becoming worse in quality. Use
 
 ## Next steps
 
-What you do after the above exercises varies for the desired output. For most visually-orientated outputs (brand identity, visual design) the next steps is often beginning moodboards informed by the brand attributes, separated by area.
+What you do after the above exercises varies for the desired output. For most visually-orientated outputs (such as visual brand identity) the next step is often a moodboard for each theme, informed by your new brand attributes.
