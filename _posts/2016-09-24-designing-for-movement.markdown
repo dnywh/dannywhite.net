@@ -88,7 +88,7 @@ Data that becomes contextualized often becomes an actionable insight by extensio
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/notes/designing-for-movement/coach-characteristics.jpg" alt="A digital table containing major parts of a typical runner's journey">
-  <figcaption><a href="http://www.josephsmithdesign.com" target="_blank">Joe Smith</a> was also involved at this point of the project, helping create this mapping and the one below.</figcaption>
+  <figcaption><a href="http://www.josephsmithdesign.com" target="_blank" rel="noopener noreferrer">Joe Smith</a> was also involved at this point of the project, helping create this mapping and the one below.</figcaption>
 </figure>
 
 We began to see that elements of useful feedback as going beyond just timing. Could insights become more useful when executed through different coaching personalities? Where should these differing coaching personalities appear or not appear? Here's what we ended up with:

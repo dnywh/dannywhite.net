@@ -92,7 +92,7 @@ The incoming educational content began to advance the fidelity of the learning w
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/work/origami-studio/origami-website-structure-high-fidelity.png" alt="A digital mockup of a website">
-  <figcaption>A higher-fidelity mockup done to help solidify the Origami Studio website structure and visual language. Full resolution image <a href="https://ik.imagekit.io/dw/work/origami-studio/tr:w-0.99,q-100/origami-website-structure-high-fidelity.png" target="_blank">here</a>.</figcaption>
+  <figcaption>A higher-fidelity mockup done to help solidify the Origami Studio website structure and visual language. Full resolution image <a href="https://ik.imagekit.io/dw/work/origami-studio/tr:w-0.99,q-100/origami-website-structure-high-fidelity.png" target="_blank" rel="noopener noreferrer">here</a>.</figcaption>
 </figure>
 
 <figure class="even-two">
@@ -109,7 +109,7 @@ I wrote, recorded, and edited video for all 12 tutorials. I also created 22 exam
   <div class="media intrinsic-container">
     <iframe src="https://player.vimeo.com/video/188694226?portrait=0&amp;title=0&amp;byline=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
-    <figcaption>An example of a final video. Accompanying tutorial <a href="https://origami.design/tutorials/getting-started/Getting-Started.html" target="_blank">here</a>.</figcaption>
+    <figcaption>An example of a final video. Accompanying tutorial <a href="https://origami.design/tutorials/getting-started/Getting-Started.html" target="_blank" rel="noopener noreferrer">here</a>.</figcaption>
 </figure>
 
 ## Challenges faced

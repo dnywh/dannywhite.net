@@ -9,7 +9,7 @@ layout: default
       <h1>{{ page.title | escape }}</h1>
       <p>{{ page.description }}</p>
       {% if page.links %}
-      <p><a href="{{ page.links[0].url }}" target="_blank">See it live &#8594;</a></p>
+      <p><a href="{{ page.links[0].url }}" target="_blank" rel="noopener noreferrer">See it live &#8594;</a></p>
       {% endif %}
     </section>
 
@@ -68,7 +68,7 @@ layout: default
     <ul class="press">
       {% for item in page.links %}
       <li>
-        <p><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></p>
+        <p><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></p>
       </li>
       {% endfor %}
     </ul>
@@ -82,7 +82,7 @@ layout: default
     {% for item in page.press %}
     <li>
       <p><strong>{{ item.title }}</strong>
-        <br><a href="{{ item.url }}" target="_blank">{{ item.outlet }}</a></p>
+        <br><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.outlet }}</a></p>
     </li>
     {% endfor %}
   </ul>
