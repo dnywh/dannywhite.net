@@ -4,13 +4,13 @@ date: 2018-02-28 09:12:00 -0400
 featured_image: organizing-attributes.jpg
 ---
 
-These three design studio exercises are intended to elicit tangible attributes for designing product whilst keeping multiple people's opinions heard and considered.
+These three design studio exercises are intended to elicit tangible attributes for brand identity. Together, they allow for a whole team (or company) of people to have their opinions inform the output.
 
 Credit to Chris Marotta from my time at ustwo for a lot of this. We worked on multiple projects together that made use of some or all parts. The photo examples below are from the [Growing Up NYC](https://growingupnyc.cityofnewyork.us) project.
 
 ## Requirements
 
-1. An existing or in-process brand, product.
+1. An existing or in-process visual identity or brand idea.
 2. Yourself and hopefully another designer as moderators.
 3. A group of participants (preferably stakeholders).
 4. A (roughly) shared view of aforementioned brand amongst said group of participants.
@@ -42,7 +42,7 @@ The sticky notes can go up as they are created, or at the end of the 20 minutes.
 
 ### 2. Organising attributes
 
-Spend a minute as a group observing and clarifying the results of the above. As moderators, take fresh sticky notes and cluster similar ideas into high-level themes. Confirm with participants and then make it real by naming each theme.
+Spend a few minutes (as a group) observing and clarifying the results of the above. As moderators, take fresh sticky notes and cluster similar ideas into high-level themes. Confirm with participants and then make it real by naming each theme.
 
 An example: sticky notes take from different categories such as ‘warm’, ‘dependable’, ‘wise’, and ‘role-model’ might be themed as ‘Guiding Light’.
 
@@ -67,7 +67,7 @@ For each of your new themes, and openly as a group, list attributes under the fo
 
 Attributes from the Metamorphosis exercises can be recycled.
 
-Stop when you feel attribute additions slowing or becoming worse in quality. Use this as your cutting off point—play back the group-created attributes to the participants to seal the deal.
+Stop when you feel attribute additions slowing or becoming worse in quality. Play back the attributes to the group to reinforce their communal origin; it's much harder to deviate later on if you've all previously agreed on the guardrails.
 
 <figure>
   <img data-src="https://ik.imagekit.io/dw/notes/metamorphosis/brand-attributes.jpg" alt="Sticky notes arranged on a wall">
@@ -76,4 +76,4 @@ Stop when you feel attribute additions slowing or becoming worse in quality. Use
 
 ## Next steps
 
-What you do after the above exercises varies for the desired output. For most visually-orientated outputs (brand identity, visual design) the next steps is often beginning moodboards informed by the brand attributes, separated by area.
+What you do after the above exercises varies for the desired output. For most visually-orientated outputs (such as visual brand identity) the next step is often a moodboard for each theme, informed by your new brand attributes.

@@ -11,4 +11,4 @@ tags:
 
 I'm neither a Bezos nor an Amazon fan but this makes too much sense to ignore. It's one of those "yeah of course" ways of thinking that, in my experience, is seldom used. Most places I've worked try (and fail) to predict the future to pad out their product roadmap.
 
-[^1]: [Farnam Street's *Brain Food* newsletter](https://fs.blog/newsletter/){:target="_blank" rel="noopener noreferrer"}. One of the few I keep around.
+[^1]: [Farnam Street's *Brain Food* newsletter](https://fs.blog/newsletter/). One of the few I keep around.
