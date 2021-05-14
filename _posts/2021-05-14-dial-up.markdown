@@ -1,6 +1,8 @@
 ---
 title: Dial Up
 date: 2021-05-14 21:00:00 +1000
+featured_image: troopy-speedometer.jpg
+twitter_card_type: summary_large_image
 tags:
   - process
   - design
