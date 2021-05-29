@@ -6,7 +6,9 @@ contents:
     - Understanding the wildcard selector
     - Resize, flip, or rotate a selection of images
     - Brighten a selection of images
-    - Make a spritesheet
+    - Make a spritesheet from a selection of images
+    - Get rid of EXIF data
+    - Change the format of a selection of images
 otherResources:
     - name: ImageMagick's documentation
       url: https://imagemagick.org/script/command-line-options.php
@@ -84,7 +86,6 @@ Resize by just the _height_ pixel dimension, with width calculated automatically
 mogrify -resize x600 step-*.jpg
 ```
 
-
 ## Brighten a selection of images
 
 Pass in `-brightness-contrast` and a value between `-100` and `100`. Example:
@@ -93,13 +94,25 @@ Pass in `-brightness-contrast` and a value between `-100` and `100`. Example:
 mogrify -brightness-contrast 20 step-*.jpg
 ```
 
-## Make a spritesheet
+## Make a spritesheet from a selection of images
 
 Use `-append` for a vertical spritesheet and `+append` for a horizontal one.
 
 ```shell
 convert step-*.jpg -append spritesheet.jpg
 ```
+
+Note that ImageMagick will order images by the first digit it encounters. In other words, if I name my individual files _step-1.jpg_, _step-2.jpg_, _step-3.jpg_, ..., _step-10.jpg_, _step-11.jpg_, _step-12.jpg_, ImageMagick will order them like so:
+
+1. _step-1.jpg_
+2. _step-10.jpg_
+3. _step-11.jpg_
+4. _step-12.jpg_
+5. _step-2.jpg_
+6. _step-3.jpg_
+7. ...
+
+Prevent this by 'padding' each file with as many digits as you go up to. Since I'm going up to `-12` in this case, which is two digits, I'd pad the names like this: _step-01.jpg_, _step-02.jpg_, and so on.
 
 You can [apparently](https://stackoverflow.com/a/88720/2009441) also use the `montage` command (which lets you place images on a grid), although it [looks problematic](https://stackoverflow.com/questions/88711/how-to-concatenate-icons-into-a-single-image-with-imagemagick#comment90016528_10655028).
 
@@ -112,3 +125,11 @@ convert original-image.jpg -strip private-image.jpg
 ```
 
 `-strip` will also remove all these profiles, comments, and chunks: bKGD,cHRM,EXIF,gAMA,iCCP,iTXt,sRGB,tEXt,zCCP,zTXt,date.
+
+## Change the format of a selection of images
+
+Here's how to change all TIFF files in the current directory to JPG:
+
+```shell
+mogrify -format jpg *.tiff
+```
