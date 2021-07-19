@@ -3,7 +3,7 @@ title: rename
 url: http://plasmasturm.org/code/rename/
 contents:
     - Install rename
-    Batch renaming files
+    - Batch renaming files
 otherResources:
     - name: rename's tutorial
       url: http://plasmasturm.org/code/rename/#TUTORIAL

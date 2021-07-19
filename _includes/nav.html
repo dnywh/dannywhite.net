@@ -9,9 +9,11 @@
             <a href="/cheatsheets" {% if current == "cheatsheets" %}class="current"{% endif %}>Cheatsheets</a>
         </li>
         {% endif %}
+        {% if include.notes %}
         <li>
             <a href="/notes" {% if current == "notes" %}class="current"{% endif %}>Notes</a>
         </li>
+        {% endif %}
         <li>
             <a href="/about" {% if current == "about" %}class="current"{% endif %}>About</a>
         </li>
