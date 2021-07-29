@@ -2,9 +2,18 @@
 title: ffmpeg
 url: https://ffmpeg.org
 contents:
+    - Speed up a video by 2x
     - Create a stop-motion video based on still images
     - Add a padded border around a video
 ---
+
+## Speed up a video by 2x
+
+```shell
+ffmpeg -i input.webm -filter:v "setpts=0.5*PTS" output.mp4
+```
+
+[Source](https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video)
 
 ## Create a stop-motion video based on still images
 
