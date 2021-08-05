@@ -1,3 +1,7 @@
+// Prep element variables for placing and sizing the canvas
+let parentEl, windowInnerWidth;
+
+// Prep image variables
 let ala, checkers, nativeCheckout;
 
 // Global lerp amount variable (as it should be shared)
@@ -33,17 +37,27 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight, WEBGL);
+    // Set a screen-reader accessible description of entire sketch
+    describe("A floating eyeball being orbited by ephemeral, decorative, content");
+
+    // Prepare the canvas container on the DOM
+    parentEl = select('#canvas-container');
+    // Set the width for the canvas to the windowWidth minus scrollbars
+    windowInnerWidth = parentEl.width;
+    
+    // Make the canvas
+    const canvas = createCanvas(windowInnerWidth, windowHeight, WEBGL);
+    canvas.parent(parentEl);
 
     // Prep outer-sphere inner-wall images
-    gr = createGraphics(windowWidth, windowHeight);
+    gr = createGraphics(windowInnerWidth, windowHeight);
     gr.image(checkers, 0, 0, 500, 500);
-    gr.image(checkers, canvas.width - windowWidth - 500, 0, 500, 500);
+    gr.image(checkers, canvas.width - windowInnerWidth - 500, 0, 500, 500);
     
     aspectRatio = nativeCheckout.height / nativeCheckout.width;
     console.log(aspectRatio)
-    gr.image(nativeCheckout, canvas.width - windowWidth - (canvas.width * 0.1), canvas.height - windowHeight - ((canvas.width * 0.1) * aspectRatio), canvas.width * 0.1, (canvas.width * 0.1) * aspectRatio);
-    // gr.image(nativeCheckout, (canvas.width - windowWidth - 250) / 2, canvas.height - windowHeight - 250, 250);
+    gr.image(nativeCheckout, canvas.width - windowInnerWidth - (canvas.width * 0.1), canvas.height - windowHeight - ((canvas.width * 0.1) * aspectRatio), canvas.width * 0.1, (canvas.width * 0.1) * aspectRatio);
+    // gr.image(nativeCheckout, (canvas.width - windowInnerWidth - 250) / 2, canvas.height - windowHeight - 250, 250);
 
 }
 
@@ -72,12 +86,12 @@ function draw() {
     scale(-1, 1);
     texture(gr);
     rotateY(angle * 0.02);
-    sphere(windowWidth * 1)
+    sphere(windowInnerWidth * 1)
     pop();
 
     // Control rotation of the eye
     eyeLerpX = lerp(eyeLerpX, -(mouseY - windowHeight / 2) / 500, lerpAmt);
-    eyeLerpY = lerp(eyeLerpY, (mouseX - windowWidth / 2) / 1000, lerpAmt);
+    eyeLerpY = lerp(eyeLerpY, (mouseX - windowInnerWidth / 2) / 1000, lerpAmt);
 
     if (touch) {
         // console.log(ms)
@@ -113,10 +127,10 @@ function draw() {
         rotateY(eyeLerpY);
     }
 
-    //   The colour of the eye's shadow
+    // Set colour of the eye's shadow
     ambientLight(225, 225, 225);
 
-    //   The colour of the eye
+    // Set colour of the eye
     let str = 1.75;
     dirLerpX = lerp(dirLerpX, (mouseX / width - 0.5) * str, lerpAmt);
     dirLerpY = lerp(dirLerpY, (mouseY / height - 0.5) * str, lerpAmt);
@@ -127,11 +141,12 @@ function draw() {
     texture(ala);
     // Create the inner-sphere with detail of 50
     sphere((cWidth * 0.25) * 0.4, 50, 50);
-
-    // TODO: Make eyeball blink
-
 }
 
+// Handle resizing of window
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    // Recalculate windowWidth minus scrollbar
+    parentEl = select('#canvas-container');
+    windowInnerWidth = parentEl.width;
+    resizeCanvas(windowInnerWidth, windowHeight);
 }

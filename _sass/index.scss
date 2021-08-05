@@ -58,34 +58,55 @@ body,
 html,
 main {
   margin: 0; // Do I need this override?
-  width: 100%;
-  height: 100%;
-}
-main {
-  // Allow for canvas to be positioned absolutely
-  position: relative;
-  // Stop from scrolling on touch devices
   // width: 100%;
   // height: 100%;
-  position: fixed;
+}
+
+#canvas-container {
+  // position: absolute;
+  // width: 100%;
+  height: 100vh;
+  
   canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: relative;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
     z-index: -1;
+
+    // Avoid scrollbars
+    // display: block; // Doesn't seem to do anything?
+    // overflow: hidden;
+
     // Prevent selection
     user-select: none;
-    // ...on iOS especially
--webkit-user-select: none;
+    -webkit-user-select: none;
   }
 
-  .custom-text {
-    * {
-      margin: 0;
-    }
-    h1 {
-      font-size: 1rem;
-    }
+  .overlay {
+    position: absolute;
+    z-index: 1;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.95);
 
+    // Background blur
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);  
+    }
   }
+}
+
+main {
+  margin: 0;
+  // Allow for canvas to be positioned absolutely
+  // position: relative;
+
+  // Stop from scrolling on touch devices
+  // width: 100vw;
+  // height: 100%;
 }
