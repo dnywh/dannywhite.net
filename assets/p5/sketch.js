@@ -1,5 +1,4 @@
-let ala;
-let checkers;
+let ala, checkers, nativeCheckout;
 
 // Global lerp amount variable (as it should be shared)
 let lerpAmt = 0.15;
@@ -19,6 +18,10 @@ let angle = 0;
 // Outer-sphere image loading
 let gr;
 
+// Prepare variable for calculating width and height of images
+let aspectRatio = 1;
+
+
 // Store touch variables
 let hasBeenTouched = false;
 const touch = matchMedia('(hover: none)').matches;
@@ -26,6 +29,7 @@ const touch = matchMedia('(hover: none)').matches;
 function preload() {
     ala = loadImage("assets/images/ala-2-to-1-small-split.png");
     checkers = loadImage("assets/images/checkers.jpg");
+    nativeCheckout = loadImage("https://ik.imagekit.io/dw/work/native-checkout/log-in-modal.jpg")
 }
 
 function setup() {
@@ -33,14 +37,23 @@ function setup() {
 
     // Prep outer-sphere inner-wall images
     gr = createGraphics(windowWidth, windowHeight);
-    loadImage("assets/images/danny-mbq-panel.jpg", (img) => {
-        gr.image(img, 0, 0);
-    });
+    gr.image(checkers, 0, 0, 500, 500);
+    gr.image(checkers, canvas.width - windowWidth - 500, 0, 500, 500);
+    
+    aspectRatio = nativeCheckout.height / nativeCheckout.width;
+    console.log(aspectRatio)
+    gr.image(nativeCheckout, canvas.width - windowWidth - (canvas.width * 0.1), canvas.height - windowHeight - ((canvas.width * 0.1) * aspectRatio), canvas.width * 0.1, (canvas.width * 0.1) * aspectRatio);
+    // gr.image(nativeCheckout, (canvas.width - windowWidth - 250) / 2, canvas.height - windowHeight - 250, 250);
+
 }
 
 function draw() {
     background(255);
     noStroke();
+
+    // Store variables for use later
+    let cWidth = canvas.width;
+    let cHeight = canvas.height;
 
     // Set up a camera that follows the mouse slightly
     camLerpX = lerp(camLerpX, mouseX, lerpAmt);
@@ -52,7 +65,7 @@ function draw() {
     camera(camX, camY, width, 0, 0, 0, 0, 1, 0);
 
     // Set angle for ambient rotation
-    angle -= 0.03;
+    angle -= 0.05;
 
     // Create the outer sphere
     push();
@@ -65,6 +78,7 @@ function draw() {
     // Control rotation of the eye
     eyeLerpX = lerp(eyeLerpX, -(mouseY - windowHeight / 2) / 500, lerpAmt);
     eyeLerpY = lerp(eyeLerpY, (mouseX - windowWidth / 2) / 1000, lerpAmt);
+
     if (touch) {
         // console.log(ms)
         // Slow down lerp amount for touch devices
@@ -112,7 +126,7 @@ function draw() {
     // Apply the image
     texture(ala);
     // Create the inner-sphere with detail of 50
-    sphere(150, 50, 50);
+    sphere((cWidth * 0.25) * 0.4, 50, 50);
 
     // TODO: Make eyeball blink
 

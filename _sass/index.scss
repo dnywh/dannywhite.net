@@ -58,6 +58,8 @@ body,
 html,
 main {
   margin: 0; // Do I need this override?
+  width: 100%;
+  height: 100%;
 }
 main {
   // Allow for canvas to be positioned absolutely
