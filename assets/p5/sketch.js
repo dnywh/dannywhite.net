@@ -1,5 +1,5 @@
-let angle = 0;
 let ala;
+let checkers;
 
 // Global lerp amount variable (as it should be shared)
 let lerpAmt = 0.15;
@@ -9,24 +9,60 @@ let eyeLerpY = 0;
 // Directional light lerp variables
 let dirLerpX = 0;
 let dirLerpY = 0;
+// Camera lerp variables
+let camLerpX = 0;
+let camLerpY = 0;
 
+// Allow for angle manipulation
+let angle = 0;
+
+// Outer-sphere image loading
+let gr;
+
+// Store touch variables
 let hasBeenTouched = false;
-
 const touch = matchMedia('(hover: none)').matches;
 
 function preload() {
     ala = loadImage("assets/images/ala-2-to-1-small-split.png");
+    checkers = loadImage("assets/images/checkers.jpg");
 }
-
 
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
 
+    // Prep outer-sphere inner-wall images
+    gr = createGraphics(windowWidth, windowHeight);
+    loadImage("assets/images/danny-mbq-panel.jpg", (img) => {
+        gr.image(img, 0, 0);
+    });
 }
 
 function draw() {
     background(255);
-    // Control rotation
+    noStroke();
+
+    // Set up a camera that follows the mouse slightly
+    camLerpX = lerp(camLerpX, mouseX, lerpAmt);
+    camLerpY = lerp(camLerpY, mouseY, lerpAmt);
+
+    let camStr = 0.05;
+    let camX = map(camLerpX, 0, width, width * camStr, width * -camStr);
+    let camY = map(camLerpY, 0, height, height * camStr, height * -camStr);
+    camera(camX, camY, width, 0, 0, 0, 0, 1, 0);
+
+    // Set angle for ambient rotation
+    angle -= 0.03;
+
+    // Create the outer sphere
+    push();
+    scale(-1, 1);
+    texture(gr);
+    rotateY(angle * 0.02);
+    sphere(windowWidth * 1)
+    pop();
+
+    // Control rotation of the eye
     eyeLerpX = lerp(eyeLerpX, -(mouseY - windowHeight / 2) / 500, lerpAmt);
     eyeLerpY = lerp(eyeLerpY, (mouseX - windowWidth / 2) / 1000, lerpAmt);
     if (touch) {
@@ -72,10 +108,10 @@ function draw() {
     dirLerpY = lerp(dirLerpY, (mouseY / height - 0.5) * str, lerpAmt);
     directionalLight(255, 255, 255, -dirLerpX, -dirLerpY, -1);
 
-    noStroke();
+
     // Apply the image
     texture(ala);
-    // Create a sphere with detail of 50
+    // Create the inner-sphere with detail of 50
     sphere(150, 50, 50);
 
     // TODO: Make eyeball blink
