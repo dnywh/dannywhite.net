@@ -7,17 +7,22 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
 {% include head.html %}
+
 <!-- p5.js -->
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-<script src="/assets/p5/sketch.js"></script>
+<script src="/assets/p5/orbit.js"></script>
 
 
-<body>
+<body class="orbit">
   <div id="canvas-container">
-    <div class="overlay">Who?</div>
+    <div class="overlay">
+      <a href="#main">
+        <p>Who?</p>
+      </a>
+     </div>
   </div>
   
-  <main>
+  <main id="main">
       {{ content }}
   </main>
 </body>

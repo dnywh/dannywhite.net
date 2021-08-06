@@ -53,20 +53,16 @@ ul.work li a img {
   grid-column: span 3;
 }
 
-// p5
-body,
-html,
-main {
-  margin: 0; // Do I need this override?
-  // width: 100%;
-  // height: 100%;
-}
+// p5 homepage overrides
+.orbit {
+  background: white;
+  margin: 0;
 
 #canvas-container {
   // position: absolute;
   // width: 100%;
   height: 100vh;
-  
+
   canvas {
     // position: relative;
     // top: 0;
@@ -86,17 +82,55 @@ main {
   .overlay {
     position: absolute;
     z-index: 1;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    background: rgba(255, 255, 255, 0.95);
+    bottom: 1rem;
+    right: 1rem;
+    width: 7rem;
+    height: 7rem;
+    clip-path: path("M112 100V12.9706C112 2.27975 99.0743 -3.07427 91.5148 4.4853L4.48531 91.5148C-3.07427 99.0743 2.27973 112 12.9706 112H100C106.627 112 112 106.627 112 100Z");
+    // padding: 2rem;
+    // border-radius: 2rem;
+
+    background: rgba(240, 240, 240, 0.95);
+    transition: background 500ms ease;
 
     // Background blur
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(240, 240, 240, 0.5);
+    }
+
+    &:hover {
+      background: rgba(200, 200, 200, 0.95);
+      @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.5);  
+        background-color: rgba(200, 200, 200, 0.5);
+      }
+
+      a {
+        p {
+          color: black;
+        }
+      }
+    }
+
+    a {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+      p {
+        text-align: center;
+        transform: rotate(-45deg);
+        padding-top: 2.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -109,4 +143,5 @@ main {
   // Stop from scrolling on touch devices
   // width: 100vw;
   // height: 100%;
+}
 }
