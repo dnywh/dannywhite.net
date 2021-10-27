@@ -1,8 +1,17 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-Gemfile.lock
+# Misc
+*.log
+npm-debug.*
+*.scssc
+*.swp
 .DS_Store
-.tweet-cache
-.vscode
+Thumbs.db
+.sass-cache
+.env
+.cache
+
+# Node modules and output
+node_modules
+public
+
+# other things
+package-lock.json

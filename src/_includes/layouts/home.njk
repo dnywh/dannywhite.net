@@ -1,0 +1,51 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+  <main>
+    <header>
+        {% include "partials/logo.svg" %}
+        <h1><span>Danny White</span> is an interaction and digital product designer based in Sydney, Australia.</h1>
+    </header>
+
+    <section>
+      <h2>Some happy clients include</h2>
+      <dl class="clients">
+      {% for client in clients %}
+        <dt>{{ client.name }}</dt>
+        <dd>
+        <ul class="skills">
+          {% for skill in client.skills %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+        </dd>
+      {% endfor %}
+      </dl>
+    </section>
+  
+    <section>
+      <h2>He does what?</h2>
+      <div class="textual">
+        {{ content | safe }}
+      </div>
+      </section>
+
+        <section>
+        <h2>Elsewhere</h2>
+        <ul class="socials">
+          <li>Email</li>
+          {% for social in socials %}
+          <li><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.platform }}</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+
+    <section class="full">
+      <h2>Stream</h2>
+      <ul class="posts">
+      {% for post in collections.blog %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </section>
+  </main>
+{% endblock %}

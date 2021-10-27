@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Unity",
+    "skills": ["Design Systems", "iOS, Android, Desktop Interface Design"]
+  },
+  {
+    "name": "Facebook",
+    "skills": [
+      "Design Systems",
+      "Software Design",
+      "iOS, Android Interface Design"
+    ]
+  },
+  {
+    "name": "Kickstarter",
+    "skills": ["iOS, Android Interface Design", "Web Design", "Web Development"]
+  },
+  {
+    "name": "Future Super",
+    "skills": ["Brand Identity", "Web Design", "Web Development"]
+  }
+]

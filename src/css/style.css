@@ -1,0 +1,227 @@
+:root {
+  --grid-gap-sm: 1rem;
+  --grid-gap-lg: 2rem;
+  --breakpoint-col: 640px;
+  --color-primary: #0c0c0c;
+  --color-secondary: #757575;
+  /* --color-tertiary: #757575; */
+  --color-spot: blue;
+  --line-height-h: 120%;
+  --line-height-p: 170%;
+  --radii: 12px;
+}
+
+/* Resets */
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it combine with normalize.css
+*/
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* Styles */
+/* Links */
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-spot);
+}
+/* Type */
+body {
+  color: var(--color-primary);
+}
+p {
+  line-height: var(--line-height-p);
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  line-height: var(--line-height-h);
+}
+
+h2 {
+  font-size: 18px;
+  color: var(--color-secondary);
+}
+
+/* Grid */
+main {
+  padding: 0 var(--grid-gap-sm) 0 var(--grid-gap-sm);
+  margin: 10vh auto 5vh auto;
+  /* Set as flex for easy rhythm between vertical sections */
+  display: flex;
+  flex-direction: column;
+  /* Customise vertical section rhythm on flex */
+  gap: 12rem;
+}
+
+header,
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* Set gap between rows */
+  grid-row-gap: var(--grid-gap-lg);
+}
+
+header > svg,
+section > h2 {
+  /* Limit headers to a narrow width */
+  grid-column: span 4;
+}
+
+header > *:not(svg),
+section > *:not(h2) {
+  /* Inset contents slightly, in a row below their header */
+  grid-column: 2 / 12;
+  grid-row: 2;
+}
+
+@media (min-width: 640px) {
+  main {
+    max-width: 960px;
+    margin: 20vh auto 10vh auto;
+    gap: 14rem;
+  }
+
+  header,
+  section {
+    /* Set gap between columns */
+    grid-column-gap: var(--grid-gap-lg);
+    /* Do the same for the odd situations where full sections exist */
+    grid-row-gap: var(--grid-gap-lg);
+  }
+
+  section.full > *:not(h2) {
+    /* Style grid for full sections */
+    grid-row: 2;
+    grid-column: span 12;
+  }
+
+  header > svg,
+  section > h2 {
+    grid-column: span 3;
+  }
+
+  header > *:not(svg),
+  section > *:not(h2) {
+    grid-column: 6 / 13;
+    grid-row: 1;
+  }
+}
+
+/* Everything else */
+body {
+  font-family: sans-serif;
+}
+
+header h1 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+header h1 span {
+  font-weight: bold;
+}
+
+header svg {
+  width: 100px;
+  height: auto;
+}
+
+/* Clients */
+dl.clients dt {
+  /* line-height: var(--line-height-p); */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+dl.clients dd:not(:last-of-type) {
+  margin-bottom: 2.5rem;
+}
+
+dl.clients ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--color-secondary);
+}
+
+dl.clients ul li:not(:last-of-type)::after {
+  content: " •";
+  margin-left: 0.25rem;
+}
+
+/* Description */
+.textual ul {
+  list-style-type: disc;
+  margin: 1.5rem 0;
+}
+
+.textual ul li {
+  line-height: var(--line-height-p);
+}
+
+/* Socials */
+ul.socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Match column gap from parent grid */
+  grid-column-gap: var(--grid-gap-lg);
+  grid-row-gap: 1rem;
+}
+
+/* Posts */
+ul.posts {
+  /* Match grid and gap from parent */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 120px;
+  gap: var(--grid-gap-lg);
+}
+
+ul.posts li {
+  grid-column: span 4;
+  background-color: var(--color-secondary);
+  border-radius: var(--radii);
+}

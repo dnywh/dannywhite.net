@@ -1,0 +1,30 @@
+{
+  "name": "dannywhite",
+  "version": "1.0.0",
+  "description": "My home on the internet.",
+  "main": "eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnywh/dannywhite.org.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Danny White",
+    "url": "https://dannywhite.org/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnywh/dannywhite.org/issues"
+  },
+  "homepage": "https://github.com/dnywh/dannywhite.org#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
