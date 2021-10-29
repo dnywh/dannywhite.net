@@ -1,46 +1,67 @@
-const cube = document.querySelector(".object-3d.cube");
-// console.log("hello from client spinner!", cube);
+const prism = document.querySelector(".object-3d.prism");
+const front = document.querySelector(".object-3d.face.front");
+const base = document.querySelector(".object-3d.face.base");
+const back = document.querySelector(".object-3d.face.back");
+const upper = document.querySelector(".object-3d.face.upper");
+
+const allSides = [front, base, back, upper];
+
 let count = 0;
 let angle = 0;
 let currentClass = "";
 
-const intervalTest = setInterval(rotateCube, 2000);
+const intervalTest = setInterval(updatePrism, 2000);
 
-function rotateCube() {
+function updatePrism() {
     switch (count) {
         case 0:
-            changeClassTo("bottom");
+            rotateSide();
+            prepareText("base");
             count += 1;
             break;
         case 1:
-            changeClassTo("back");
+            rotateSide();
+            prepareText("back");
             count += 1;
             break;
         case 2:
-            changeClassTo("top");
+            rotateSide();
+            prepareText("upper");
             count += 1;
             break;
         case 3:
-            changeClassTo("front");
+            rotateSide();
+            prepareText("front");
             count = 0;
             break;
 
     }
 }
 
-function changeClassTo(side) {
-    /*
-    // Check if there is already a "to-side" class applied
-    if (currentClass) {
-        // Remove it if so
-        cube.classList.remove(currentClass);
-    }
-    // Add the new "to-side" to the classList
-    cube.classList.add(`to-${side}`);
-    // Add it to the currentClass variable to check against next time
-    currentClass = `to-${side}`;
-    */
-
+// 'Dumb' rotate the prism since we never want it to reset to 0
+function rotateSide() {
     angle += 90;
-    cube.style = `transform: translateZ(-100px) rotateX(${angle}deg);`
+    prism.style = `transform: translateZ(-2rem) rotateX(${angle}deg);`
 }
+
+// 'Smart' rotate the class so text can be faded in and out
+function prepareText(activeSide) {
+    // Get the element for the active side
+    const activeSideEl = document.querySelector(`.object-3d.face.${activeSide}`);
+    // Get a list of the *other* sides only
+    const otherSides = allSides.filter(item => item !== activeSideEl);
+
+    // Show the active side's text
+    activeSideEl.classList.remove("hidden");
+    activeSideEl.classList.add('active');
+
+    // Hide the other sides
+    otherSides.forEach(item => {
+        item.classList.remove("active");
+        item.classList.add("hidden");
+    }
+    )
+
+
+}
+

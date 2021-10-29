@@ -1,9 +1,11 @@
 {% extends "layouts/base.njk" %}
 {% block headContent %}
+  {# Add client spinner to homepage, defer until document has been parsed as it relies on DOM elements #}
+  <script defer src="/js/clientSpinner.js"></script>
   {# Add p5 stuff only to homepage #}
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-  <script src="/js/p5/header.js"></script>
-  
+  {# TODO: will async on the p5.js library break header.js if it loads after header.js? #}
+  {# <script async src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <script async src="/js/p5/header.js"></script> #}
 {% endblock %}
 
 {% block bodyContent %}
@@ -17,7 +19,7 @@
       <h2>Some happy clients include</h2>
       <dl class="clients">
         {# {% for client in clients %} #}
-        <div class="object-3d cube">
+        <div class="object-3d prism">
           <div class="object-3d face front">
             <dt>Client Name</dt>
             <dd>
@@ -29,8 +31,8 @@
               </ul>
             </dd>
           </div>
-          <div class="object-3d face bottom">
-            <dt>Some Other Client on the Bottom</dt>
+          <div class="object-3d face base">
+            <dt>Some Other Client on the base</dt>
             <dd>
               <ul>
                 {# {% for skill in client.skills %}
@@ -41,7 +43,6 @@
             </dd>
           </div>
           <div class="object-3d face back">
-          <div class="inner">
             <dt>Yet Other Client on the Back</dt>
             <dd>
               <ul>
@@ -51,9 +52,8 @@
                 <li>Skill Here</li>
               </ul>
             </dd>
-            </div>
           </div>
-          <div class="object-3d face top">Top</div>
+          <div class="object-3d face upper">upper</div>
         </div>
         {# {% endfor %} #}
       </dl>
@@ -85,6 +85,4 @@
       </ul>
     </section>
   </main>
-  {# Add client spinner to homepage #}
-  <script src="/js/clientSpinner.js"></script>
 {% endblock %}

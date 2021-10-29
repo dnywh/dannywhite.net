@@ -165,7 +165,7 @@ header h1 span {
 }
 
 header svg {
-  width: 100px;
+  width: 2rem;
   height: auto;
 }
 
@@ -173,13 +173,13 @@ header svg {
 dl.clients {
   /* Set 3D scene */
   width: 100%;
-  height: 200px;
+  height: 4rem;
   perspective: 600px;
   /* perspective-origin: 50% 50%; */
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
 }
 
-dl.clients .object-3d.cube {
+dl.clients .object-3d.prism {
   /* Set full size so transform-origin occurs in center of container  */
   width: 100%;
   height: 100%;
@@ -187,7 +187,7 @@ dl.clients .object-3d.cube {
   position: relative;
   transform-style: preserve-3d;
   /* Push 3D object back to original Z origin */
-  transform: rotateX(0deg) translateZ(-100px);
+  transform: rotateX(0deg) translateZ(-2rem);
   /* Set transition */
   transition: transform 1s;
 }
@@ -198,46 +198,41 @@ dl.clients .object-3d.cube {
 
 .object-3d.face {
   width: 100%;
-  height: 200px;
+  height: 4rem;
   position: absolute;
   backface-visibility: hidden;
-  background: rgba(200, 200, 200, 0.5);
+  /* TODO: remove once no longer needed */
+  /* https://caniuse.com/mdn-css_properties_backface-visibility */
+  -webkit-backface-visibility: hidden;
+  /* background: rgba(200, 200, 200, 0.5); */
+  /* Set transition */
+  transition: opacity 0.25s;
+  transition-delay: 0.1s;
+}
+
+.object-3d.face.active {
+  opacity: 1;
+}
+
+.object-3d.face.hidden {
+  opacity: 0;
 }
 
 .object-3d.face.front {
-  transform: rotateY(0deg) translateZ(100px);
-  /* background: red; */
+  transform: rotateY(0deg) translateZ(2rem);
 }
 
 .object-3d.face.back {
-  transform: rotateY(180deg) translateZ(100px);
-  /* background: green; */
+  transform: rotateY(180deg) rotateZ(180deg) translateZ(2rem);
 }
 
-.object-3d.face.back .inner {
-  transform: rotateY(180deg);
-  color: pink;
+.object-3d.face.upper {
+  transform: rotateX(90deg) translateZ(2rem);
 }
 
-.object-3d.face.top {
-  transform: rotateX(90deg) translateZ(100px);
-  /* background: blue; */
+.object-3d.face.base {
+  transform: rotateX(-90deg) translateZ(2rem);
 }
-
-.object-3d.face.bottom {
-  transform: rotateX(-90deg) translateZ(100px);
-  /* background: purple; */
-}
-/* 
-dl.clients .object-3d.to-bottom {
-  transform: rotateX(90deg) translateZ(-100px);
-}
-dl.clients .object-3d.to-back {
-  transform: rotateX(180deg) translateZ(-100px);
-}
-dl.clients .object-3d.to-top {
-  transform: rotateX(270deg) translateZ(-100px);
-} */
 
 /* Non 3d stuff */
 dl.clients dt {
