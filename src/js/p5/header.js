@@ -1,12 +1,13 @@
-let xPos, yPos, xOff;
+let xPos, yPos, xOffA, xOffB, speed;
 
 function setup() {
     const canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 48);
     canvas.style("z-index", "-1");
     xPos = random(windowWidth * 0.75);
-    xOff = 0;
-
+    xOffA = 0;
+    xOffB = 1000;
+    speed = 0.002;
 }
 
 function draw() {
@@ -14,17 +15,19 @@ function draw() {
     fill(200);
     noStroke();
 
-    yPos = map(noise(xOff), 0, 1, 380 / 2, 380);
+    xPos = map(noise(xOffA), 0, 1, 0, windowWidth);
+    yPos = map(noise(xOffB), 0, 1, 380 / 2, 380);
 
     ellipse(xPos, yPos, 380, 380);
 
-    if (xPos < windowWidth) {
-        xPos += 0.5;
-    } else {
-        xPos = 0;
-    }
+    // if (xPos === 0) {
+    //     xPos += speed;
+    // } else if (xPos === windowWidth) {
+    //     xPos -= speed;
+    // }
 
-    xOff += 0.001;
+    xOffA += speed;
+    xOffB += speed;
 }
 
 

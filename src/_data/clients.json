@@ -4,7 +4,7 @@
     "skills": ["Design Systems", "iOS, Android, Desktop Interface Design"]
   },
   {
-    "name": "Facebook",
+    "name": "Facebook (Meta)",
     "skills": [
       "Design Systems",
       "Software Design",
@@ -18,5 +18,41 @@
   {
     "name": "Future Super",
     "skills": ["Brand Identity", "Web Design", "Web Development"]
+  },
+  {
+    "name": "Google",
+    "skills": ["Wear OS Design"]
+  },
+  {
+    "name": "Office of the Mayor of New York City",
+    "skills": ["Ethnographic Research", "Web Design"]
+  },
+  {
+    "name": "Telstra",
+    "skills": ["Print Design"]
+  },
+  {
+    "name": "Commonwealth Bank",
+    "skills": ["Web Design"]
+  },
+  {
+    "name": "Nike",
+    "skills": ["watchOS Design", "Exploratory Interface Design"]
+  },
+  {
+    "name": "AT&T",
+    "skills": ["TV Interface Design", "Ecosystem Design"]
+  },
+  {
+    "name": "Nickelodeon",
+    "skills": ["Game Design"]
+  },
+  {
+    "name": "Snap",
+    "skills": ["Interface Design"]
+  },
+  {
+    "name": "Dan Murphy's",
+    "skills": ["Web Design"]
   }
 ]

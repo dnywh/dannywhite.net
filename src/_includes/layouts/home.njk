@@ -2,7 +2,8 @@
 {% block headContent %}
   {# Add p5 stuff only to homepage #}
   <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-  <script src="/p5/header.js"></script>
+  <script src="/js/p5/header.js"></script>
+  
 {% endblock %}
 
 {% block bodyContent %}
@@ -15,16 +16,46 @@
     <section>
       <h2>Some happy clients include</h2>
       <dl class="clients">
-      {% for client in clients %}
-        <dt>{{ client.name }}</dt>
-        <dd>
-        <ul class="skills">
-          {% for skill in client.skills %}
-          <li>{{ skill }}</li>
-          {% endfor %}
-        </ul>
-        </dd>
-      {% endfor %}
+        {# {% for client in clients %} #}
+        <div class="object-3d cube">
+          <div class="object-3d face front">
+            <dt>Client Name</dt>
+            <dd>
+              <ul>
+                {# {% for skill in client.skills %} #}
+                {# <li>{{ skill }}</li> #}
+                {# {% endfor %} #}
+                <li>Skill Here</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="object-3d face bottom">
+            <dt>Some Other Client on the Bottom</dt>
+            <dd>
+              <ul>
+                {# {% for skill in client.skills %}
+                <li>{{ skill }}</li>
+                {% endfor %} #}
+                <li>Skill Here</li>
+              </ul>
+            </dd>
+          </div>
+          <div class="object-3d face back">
+          <div class="inner">
+            <dt>Yet Other Client on the Back</dt>
+            <dd>
+              <ul>
+                {# {% for skill in client.skills %}
+                <li>{{ skill }}</li>
+                {% endfor %} #}
+                <li>Skill Here</li>
+              </ul>
+            </dd>
+            </div>
+          </div>
+          <div class="object-3d face top">Top</div>
+        </div>
+        {# {% endfor %} #}
       </dl>
     </section>
   
@@ -54,4 +85,6 @@
       </ul>
     </section>
   </main>
+  {# Add client spinner to homepage #}
+  <script src="/js/clientSpinner.js"></script>
 {% endblock %}
