@@ -17,45 +17,53 @@
 
     <section>
       <h2>Some happy clients include</h2>
-      <dl class="clients">
-        {# {% for client in clients %} #}
+      <dl class="clients scene">
+        {% for pair in clients %}
         <div class="object-3d prism">
           <div class="object-3d face front">
-            <dt>Client Name</dt>
+            <dt>{{ pair[0].name }}</dt>
             <dd>
               <ul>
-                {# {% for skill in client.skills %} #}
-                {# <li>{{ skill }}</li> #}
-                {# {% endfor %} #}
-                <li>Skill Here</li>
-              </ul>
-            </dd>
-          </div>
-          <div class="object-3d face base">
-            <dt>Some Other Client on the base</dt>
-            <dd>
-              <ul>
-                {# {% for skill in client.skills %}
+                {% for skill in pair[0].skills %}
                 <li>{{ skill }}</li>
-                {% endfor %} #}
-                <li>Skill Here</li>
+                {% endfor %}
               </ul>
             </dd>
           </div>
-          <div class="object-3d face back">
-            <dt>Yet Other Client on the Back</dt>
+          <div class="object-3d face base hidden">
+            <dt>{{ pair[1].name }}</dt>
             <dd>
               <ul>
-                {# {% for skill in client.skills %}
+                {% for skill in pair[1].skills %}
                 <li>{{ skill }}</li>
-                {% endfor %} #}
-                <li>Skill Here</li>
+                {% endfor %}
               </ul>
             </dd>
           </div>
-          <div class="object-3d face upper">upper</div>
+          {# Repeat front #}
+          <div aria-hidden="true" class="object-3d face back hidden">
+            <dt>{{ pair[0].name }}</dt>
+            <dd>
+              <ul>
+                {% for skill in pair[0].skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+              </ul>
+            </dd>
+          </div>
+          {# Repeat back #}
+          <div aria-hidden="true" class="object-3d face upper hidden">
+          <dt>{{ pair[1].name }}</dt>
+            <dd>
+              <ul>
+                {% for skill in pair[1].skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+              </ul>
+            </dd>
+          </div>
         </div>
-        {# {% endfor %} #}
+        {% endfor %}
       </dl>
     </section>
   

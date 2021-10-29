@@ -1,58 +1,62 @@
 [
-  {
-    "name": "Unity",
-    "skills": ["Design Systems", "iOS, Android, Desktop Interface Design"]
-  },
-  {
-    "name": "Facebook (Meta)",
-    "skills": [
-      "Design Systems",
-      "Software Design",
-      "iOS, Android Interface Design"
-    ]
-  },
-  {
-    "name": "Kickstarter",
-    "skills": ["iOS, Android Interface Design", "Web Design", "Web Development"]
-  },
-  {
-    "name": "Future Super",
-    "skills": ["Brand Identity", "Web Design", "Web Development"]
-  },
-  {
-    "name": "Google",
-    "skills": ["Wear OS Design"]
-  },
-  {
-    "name": "Office of the Mayor of New York City",
-    "skills": ["Ethnographic Research", "Web Design"]
-  },
-  {
-    "name": "Telstra",
-    "skills": ["Print Design"]
-  },
-  {
-    "name": "Commonwealth Bank",
-    "skills": ["Web Design"]
-  },
-  {
-    "name": "Nike",
-    "skills": ["watchOS Design", "Exploratory Interface Design"]
-  },
-  {
-    "name": "AT&T",
-    "skills": ["TV Interface Design", "Ecosystem Design"]
-  },
-  {
-    "name": "Nickelodeon",
-    "skills": ["Game Design"]
-  },
-  {
-    "name": "Snap",
-    "skills": ["Interface Design"]
-  },
-  {
-    "name": "Dan Murphy's",
-    "skills": ["Web Design"]
-  }
+  [
+    {
+      "name": "Unity",
+      "skills": ["iOS, Android, Desktop Design", "Design Systems"]
+    },
+    {
+      "name": "Kickstarter",
+      "skills": ["iOS, Android Design", "Web Design and Development"]
+    }
+  ],
+  [
+    {
+      "name": "Facebook (Meta)",
+      "skills": ["iOS, Android, macOS Design", "Design Systems"]
+    },
+    {
+      "name": "Future Super",
+      "skills": ["Brand Identity", "Web Design and Development"]
+    }
+  ],
+  [
+    {
+      "name": "Nike",
+      "skills": ["watchOS Design", "Exploratory Interface Design"]
+    },
+    {
+      "name": "General Electric",
+      "skills": ["iOS, Android Design"]
+    }
+  ],
+  [
+    {
+      "name": "Google",
+      "skills": ["Wear OS Design"]
+    },
+    {
+      "name": "AT&T",
+      "skills": ["Service Design"]
+    }
+  ],
+  [
+    {
+      "name": "Nickelodeon",
+      "skills": ["Game Interface Design", "Prototyping"]
+    },
+    {
+      "name": "Office of the Mayor of New York City",
+      "skills": ["Ethnographic Research", "Web Design"]
+    }
+  ],
+  [
+    {
+      "name": "Commonwealth Bank",
+      "skills": ["Web Design", "Service Design"]
+    },
+    {
+      "name": "Telstra",
+      "skills": ["Print Design"]
+    }
+  ]
 ]
