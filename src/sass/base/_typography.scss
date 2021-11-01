@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-spot);
+}
+/* Type */
+body {
+  color: var(--color-primary);
+}
+p {
+  line-height: var(--line-height-p);
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  line-height: var(--line-height-h);
+}
+
+h2 {
+  font-size: 18px;
+  color: var(--color-secondary);
+}

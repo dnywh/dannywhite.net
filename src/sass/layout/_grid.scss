@@ -1,0 +1,64 @@
+/* Grid */
+main {
+  padding: 0 var(--grid-gap-sm) 0 var(--grid-gap-sm);
+  margin: 10vh auto 5vh auto;
+  /* Set as flex for easy rhythm between vertical sections */
+  display: flex;
+  flex-direction: column;
+  /* Customise vertical section rhythm on flex */
+  gap: 12rem;
+}
+
+header,
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* Set gap between rows */
+  grid-row-gap: var(--grid-gap-lg);
+}
+
+header > svg,
+section > h2 {
+  /* Limit headers to a narrow width */
+  grid-column: span 6;
+}
+
+header > *:not(svg),
+section > *:not(h2) {
+  /* Inset contents slightly, in a row below their header */
+  grid-column: 2 / 12;
+  grid-row: 2;
+}
+
+@media (min-width: 640px) {
+  main {
+    max-width: 960px;
+    margin: 20vh auto 10vh auto;
+    gap: 14rem;
+  }
+
+  header,
+  section {
+    /* Set gap between columns */
+    grid-column-gap: var(--grid-gap-lg);
+    /* Do the same for the odd situations where full sections exist */
+    grid-row-gap: var(--grid-gap-lg);
+  }
+
+  section.full > *:not(h2) {
+    /* Style grid for full sections */
+    grid-row: 2;
+    grid-column: span 12;
+  }
+
+  header > svg,
+  section > h2 {
+    grid-column: span 3;
+  }
+
+  header > *:not(svg),
+  section > *:not(h2) {
+    grid-column: 6 / 13;
+    grid-row: 1;
+  }
+}

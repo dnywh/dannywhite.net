@@ -1,0 +1,36 @@
+/* Posts */
+ul.posts {
+}
+
+ul.posts {
+  /* Match grid and gap from parent */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 120px;
+  gap: var(--grid-gap-lg);
+
+  li {
+    grid-column: span 4;
+    // Set to flex so <a/> child can take full size
+    display: flex;
+
+    a {
+      // Take full size of parent container
+      flex-grow: 1;
+      // Style
+      color: var(--color-text-on-spot);
+      background-color: var(--color-spot);
+      border-radius: var(--radii);
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      &:hover {
+        background: red;
+      }
+    }
+  }
+}
