@@ -1,5 +1,5 @@
 const prisms = document.querySelectorAll(".object-3d.prism");
-let timeOffset = 4000;
+let timeOffset = 6500;
 
 // Go through each prism
 prisms.forEach((prism, index) => {

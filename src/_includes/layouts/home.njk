@@ -77,7 +77,7 @@
         <section>
         <h2>Elsewhere</h2>
         <ul class="socials">
-          <li>Email</li>
+          <li>{% include "partials/email.html" %}</li>
           {% for social in socials %}
           <li><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.platform }}</a></li>
           {% endfor %}

@@ -106,7 +106,7 @@ section {
 header > svg,
 section > h2 {
   /* Limit headers to a narrow width */
-  grid-column: span 4;
+  grid-column: span 6;
 }
 
 header > *:not(svg),
