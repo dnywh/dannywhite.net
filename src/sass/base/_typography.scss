@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: franklin-gothic-urw, sans-serif;
 }
 
 a {
@@ -14,6 +14,15 @@ a:hover {
 body {
   color: var(--color-primary);
 }
+
+p,
+dt,
+dd,
+li {
+  font-size: 18px;
+  letter-spacing: calc(-1 * 18px * 0.008);
+}
+
 p {
   line-height: var(--line-height-p);
   margin-bottom: 1.5rem;
@@ -21,11 +30,28 @@ p {
 
 h1,
 h2 {
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--line-height-h);
 }
 
+h1 {
+  font-size: 32px;
+  letter-spacing: calc(-1 * 32px * 0.015);
+  line-height: 120%;
+}
+
 h2 {
-  font-size: 18px;
+  font-size: 21px;
+  letter-spacing: calc(-1 * 21px * 0.01);
   color: var(--color-secondary);
+}
+
+h3 {
+  font-size: 21px;
+  letter-spacing: calc(-1 * 21px * 0.01);
+}
+
+h4 {
+  font-size: 1rem;
+  letter-spacing: calc(-1 * 1rem * 0.008);
 }

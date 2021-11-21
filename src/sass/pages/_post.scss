@@ -1,0 +1,24 @@
+.post {
+  article {
+    h1,
+    p,
+    pre {
+      max-width: 632px;
+    }
+
+    header,
+    .article-content {
+      grid-column: 2 / 10;
+    }
+
+    p,
+    pre {
+      grid-column: 3 / 10;
+    }
+
+    figure,
+    img {
+      grid-column: 2 / 11;
+    }
+  }
+}

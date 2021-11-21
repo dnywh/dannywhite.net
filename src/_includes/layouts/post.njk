@@ -1,4 +1,15 @@
 {% extends "layouts/base.njk" %}
+
 {% block bodyContent %}
-<article>{{ content | safe }}</article>
+<main class="post">
+    <header><a href="/">Home</a></header>
+    <article>
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
+        <div class="article-content">
+            {{ content | safe }}
+        </div>
+    </article>
+</main>
 {% endblock %}

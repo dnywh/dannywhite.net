@@ -18,5 +18,17 @@
   {
     "platform": "Pinterest",
     "url": "https://pinterest.com/dnywhi/"
+  },
+  {
+    "platform": "Letterboxd",
+    "url": "https://letterboxd.com/dannywhite/"
+  },
+  {
+    "platform": "Spotify",
+    "url": "https://open.spotify.com/user/1230992209"
+  },
+  {
+    "platform": "Foundation",
+    "url": "http://foundation.app/dannywhite"
   }
 ]

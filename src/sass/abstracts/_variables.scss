@@ -1,13 +1,17 @@
 :root {
+  --grid-template-cols-main: repeat(12, 1fr);
   --grid-gap-sm: 1rem;
   --grid-gap-lg: 2rem;
   --breakpoint-col: 640px;
   --color-primary: #0c0c0c;
   --color-secondary: #757575;
   /* --color-tertiary: #757575; */
-  --color-spot: blue;
-  --color-text-on-spot: white;
+  --color-spot: #a9e56d;
+  --color-spot-hover: #bce990;
+  --color-text-on-spot: rgba(0 0 0 / 0.72);
   --line-height-h: 120%;
   --line-height-p: 170%;
   --radii: 12px;
+  --transition-text-opacity: opacity 150ms;
+  --transition-background-color: background-color 150ms;
 }

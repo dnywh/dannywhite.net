@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block bodyContent %}
-  <main>
+  <main class="home">
     <header>
         {% include "partials/logo.svg" %}
         <h1><span>Danny White</span> is an interaction and digital product designer based in Sydney, Australia.</h1>
@@ -71,6 +71,7 @@
       <h2>He does what?</h2>
       <div class="textual">
         {{ content | safe }}
+        <p>I opened the virtual doors to my studio in August 2021. Given you’re still reading, I think we might work well together. Please &#32; {% include "partials/email-reach-out.html" %} &#32; if you agree.</p>
       </div>
       </section>
 
@@ -88,7 +89,12 @@
       <h2>Stream</h2>
       <ul class="posts">
       {% for post in collections.blog %}
-      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      <li>
+        <a href="{{ post.url }}">
+          <h3>{{ post.data.title }}</h3>
+          <h4>{{ post.data.custTags[0] }}</h4>
+        </a>
+      </li>
       {% endfor %}
       </ul>
     </section>

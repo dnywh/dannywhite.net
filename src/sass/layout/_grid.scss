@@ -10,9 +10,14 @@ main {
 }
 
 header,
-section {
+section,
+article {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: var(--grid-template-cols-main);
+}
+
+header,
+section {
   /* Set gap between rows */
   grid-row-gap: var(--grid-gap-lg);
 }
@@ -38,7 +43,8 @@ section > *:not(h2) {
   }
 
   header,
-  section {
+  section,
+  article {
     /* Set gap between columns */
     grid-column-gap: var(--grid-gap-lg);
     /* Do the same for the odd situations where full sections exist */
