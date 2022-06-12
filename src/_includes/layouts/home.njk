@@ -86,13 +86,13 @@
       </section>
 
     <section class="full">
-      <h2>Stream</h2>
-      <ul class="posts">
-      {% for post in collections.blog %}
+      <h2>Notes</h2>
+      <ul class="notes">
+      {% for note in collections.blog %}
       <li>
-        <a href="{{ post.url }}">
-          <h3>{{ post.data.title }}</h3>
-          <h4>{{ post.data.custTags[0] }}</h4>
+        <a href="{{ note.url }}">
+          <h3>{{ note.data.title }}</h3>
+          <h4>{{ note.data.custTags[0] }}</h4>
         </a>
       </li>
       {% endfor %}
