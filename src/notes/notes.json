@@ -1,4 +1,5 @@
 {
   "layout": "layouts/note",
-  "tags": "blog"
+  "tags": "blog",
+  "permalink": "/notes/{{ date | date: '%Y' }}/{{ title | slugify }}/"
 }

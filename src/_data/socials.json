@@ -1,5 +1,9 @@
 [
   {
+    "platform": "CV",
+    "url": "https://read.cv/dannywhite"
+  },
+  {
     "platform": "Instagram",
     "url": "https://www.instagram.com/dannywhite/"
   },
@@ -24,11 +28,7 @@
     "url": "https://letterboxd.com/dannywhite/"
   },
   {
-    "platform": "Spotify",
-    "url": "https://open.spotify.com/user/1230992209"
-  },
-  {
-    "platform": "Foundation",
-    "url": "http://foundation.app/dannywhite"
+    "platform": "Literal",
+    "url": "https://literal.club/danny"
   }
 ]

@@ -1,5 +1,6 @@
 ---
 title: Save a sketch to image
+date: 2016-04-01
 custTags:
   - p5.js
 ---

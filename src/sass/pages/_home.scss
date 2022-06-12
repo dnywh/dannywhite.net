@@ -32,4 +32,9 @@
     grid-column-gap: var(--grid-gap-lg);
     grid-row-gap: 1rem;
   }
+
+  // Projects
+  ul.projects li strong {
+    text-transform: uppercase;
+  }
 }

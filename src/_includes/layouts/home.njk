@@ -73,9 +73,9 @@
         {{ content | safe }}
         <p>I opened the virtual doors to my studio in August 2021. Given you’re still reading, I think we might work well together. Please &#32; {% include "partials/email-reach-out.html" %} &#32; if you agree.</p>
       </div>
-      </section>
+    </section>
 
-        <section>
+      <section>
         <h2>Elsewhere</h2>
         <ul class="socials">
           <li>{% include "partials/email.html" %}</li>
@@ -83,6 +83,16 @@
           <li><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.platform }}</a></li>
           {% endfor %}
         </ul>
+      </section>
+
+      <section>
+      <h2>Ongoing</h2>
+      <p>Here are some ongoing projects</p>
+      <ul class="projects">
+      {% for project in projects %}
+      <li><strong>{{ project.name }}</strong> {{ project.desc }} • </li>
+      {% endfor %}
+      </ul>
       </section>
 
     <section class="full">
