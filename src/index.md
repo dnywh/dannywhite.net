@@ -3,13 +3,4 @@ title: Danny White
 layout: layouts/home
 ---
 
-I’m a multi-disciplinary designer working across digital product and brand. A product designer you might say. Or graphic designer with a penchant for designing software.
-
-I just tell my mum that I make websites and apps look good.
-
-In recent times I have...
-
-- Been the founding product designer at [Future Super](#TODO)
-- Led design for Kickstarter’s [iOS and Android](#TODO) apps
-- Helped bring Facebook’s [Origami](#TODO) design prototyping tool to life
-- Opened Framer’s inaugural [Loupe](#TODO) conference in Amsterdam
+**Right now** I’m interested in food waste diversion and alternate food production. Particularly how product design may (or may not) be helpful to new ideas trying to survive the ‘valley of death’ in the circular economy. I expand on that [here](#TODO).

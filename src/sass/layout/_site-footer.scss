@@ -1,0 +1,58 @@
+body > footer {
+  border-top: var(--stroke-thick) solid var(--color-primary);
+  padding-top: var(--grid-gap-lg);
+  margin-top: var(--grid-gap-lg);
+
+  display: grid;
+  gap: var(--grid-gap-lg);
+
+  .logo-link {
+    grid-row: 1;
+  }
+  .socials {
+    grid-row: 2;
+  }
+
+  .co2 {
+    grid-row: 3;
+  }
+
+  @media (min-width: 640px) {
+    // Match grid and gap from parent
+    grid-template-columns: var(--grid-template-cols-main);
+
+    .logo-link,
+    .co2,
+    .socials {
+      grid-row: 1;
+    }
+
+    .logo-link {
+      grid-column: 1;
+    }
+
+    .co2 {
+      grid-column: span 4;
+    }
+
+    .socials {
+      grid-column: 8 / 13;
+    }
+  }
+
+  .co2 {
+    p {
+      font-size: 12px;
+      color: var(--color-secondary);
+    }
+  }
+
+  /* Socials */
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Match column gap from parent grid */
+    grid-column-gap: var(--grid-gap-lg);
+    grid-row-gap: 1rem;
+  }
+}

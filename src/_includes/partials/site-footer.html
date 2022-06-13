@@ -1,0 +1,27 @@
+<footer>
+  <a class="logo-link" href="/" aria-label="Home">
+    {% include "partials/logo.svg" %}
+  </a>
+
+  <section class="co2">
+    <p>
+      This page weighs in at 10g CO2e*, which is about the same as growing a
+      single carrot and driving it to a nearby supermarket. Sparse use of
+      imagery, limited fonts, and other tricks help bring it down. I dream of a
+      soon-to-be-real world where a clean electrical and HVAC supply would mean
+      serving this site — and all others — results in zero emissions.
+    </p>
+    <p>*as of the 10th of June 2022.</p>
+  </section>
+
+  <ul class="socials">
+    <li>{% include "partials/email.html" %}</li>
+    {% for social in socials %}
+    <li>
+      <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer"
+        >{{ social.platform }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</footer>

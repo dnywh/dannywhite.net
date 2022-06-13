@@ -1,40 +1,139 @@
 .home {
-  header {
-    h1 {
-      font-weight: normal;
+  display: grid;
+  gap: var(--grid-gap-lg);
 
-      span {
-        font-weight: bold;
+  @media (min-width: 640px) {
+    // Match grid and gap from parent
+    grid-template-columns: var(--grid-template-cols-main);
+
+    .hero,
+    .notes {
+      grid-column: span 8;
+      // grid-row: 1;
+    }
+    .intro,
+    .projects {
+      grid-column: span 4;
+      // grid-row: 1;
+    }
+  }
+
+  .hero {
+    background-color: var(--color-hero);
+    padding: var(--padding-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .hero {
+      padding: 3rem;
+
+      h1 {
+        text-align: left;
       }
     }
+  }
 
-    svg {
-      width: 6.25rem;
-      height: auto;
+  .projects {
+    ul {
+      li {
+        display: inline;
+
+        &:not(:last-of-type)::after {
+          content: " • ";
+        }
+
+        strong {
+          text-transform: uppercase;
+        }
+      }
     }
   }
 
-  /* Description */
-  .textual ul {
-    list-style-type: disc;
-    margin: 1.5rem 0;
-  }
+  .notes {
+    display: flex;
+    flex-direction: column;
 
-  .textual ul li {
-    line-height: var(--line-height-p);
-  }
+    // overflow-inline: scroll;
+    overflow-x: hidden;
 
-  /* Socials */
-  ul.socials {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Match column gap from parent grid */
-    grid-column-gap: var(--grid-gap-lg);
-    grid-row-gap: 1rem;
-  }
+    ul {
+      display: flex;
+      gap: var(--grid-gap-lg);
+      flex-direction: row;
+      flex-grow: 1;
 
-  // Projects
-  ul.projects li strong {
-    text-transform: uppercase;
+      overflow-x: scroll;
+      // margin-left: -2rem;
+
+      li {
+        display: flex;
+
+        a {
+          //       color: var(--color-text-on-spot);
+          background-color: var(--color-hero);
+          //       transition: var(--transition-background-color);
+          padding: var(--padding-md);
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          //       text-decoration: none;
+          //       font-weight: 700;
+
+          //       &:hover {
+          //         background-color: var(--color-spot-hover);
+          //       }
+        }
+
+        // 'More' button
+        &:last-of-type {
+          width: 102px;
+          height: 102px;
+          align-self: center;
+          a {
+            width: 100%;
+            border-radius: 100%;
+            padding: 0;
+          }
+        }
+      }
+    }
   }
 }
+//   header {
+//     h1 {
+//       font-weight: normal;
+
+//       span {
+//         font-weight: bold;
+//       }
+//     }
+
+//     svg {
+//       width: 6.25rem;
+//       height: auto;
+//     }
+//   }
+
+//   /* Description */
+//   .textual ul {
+//     list-style-type: disc;
+//     margin: 1.5rem 0;
+//   }
+
+//   .textual ul li {
+//     line-height: var(--line-height-p);
+//   }
+
+//   // Projects
+//   ul.projects li strong {
+//     text-transform: uppercase;
+//   }

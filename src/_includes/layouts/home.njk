@@ -1,103 +1,19 @@
 {% extends "layouts/base.njk" %}
-{% block headContent %}
-  {# Add client spinner to homepage, defer until document has been parsed as it relies on DOM elements #}
-  <script defer src="/js/clientSpinner.js"></script>
-  {# Add p5 stuff only to homepage #}
-  {# TODO: will async on the p5.js library break header.js if it loads after header.js? #}
-  {# <script async src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-  <script async src="/js/p5/header.js"></script> #}
-{% endblock %}
+
 
 {% block bodyContent %}
   <main class="home">
-    <header>
-        {% include "partials/logo.svg" %}
-        <h1><span>Danny White</span> is an interaction and digital product designer based in Sydney, Australia.</h1>
-    </header>
-
-    <section>
-      <h2>Some happy clients include</h2>
-      <dl class="clients scene">
-        {% for pair in clients %}
-        <div class="object-3d prism">
-          <div class="object-3d face front">
-            <dt>{{ pair[0].name }}</dt>
-            <dd>
-              <ul>
-                {% for skill in pair[0].skills %}
-                <li>{{ skill }}</li>
-                {% endfor %}
-              </ul>
-            </dd>
-          </div>
-          <div class="object-3d face base hidden">
-            <dt>{{ pair[1].name }}</dt>
-            <dd>
-              <ul>
-                {% for skill in pair[1].skills %}
-                <li>{{ skill }}</li>
-                {% endfor %}
-              </ul>
-            </dd>
-          </div>
-          {# Repeat front #}
-          <div aria-hidden="true" class="object-3d face back hidden">
-            <dt>{{ pair[0].name }}</dt>
-            <dd>
-              <ul>
-                {% for skill in pair[0].skills %}
-                <li>{{ skill }}</li>
-                {% endfor %}
-              </ul>
-            </dd>
-          </div>
-          {# Repeat back #}
-          <div aria-hidden="true" class="object-3d face upper hidden">
-          <dt>{{ pair[1].name }}</dt>
-            <dd>
-              <ul>
-                {% for skill in pair[1].skills %}
-                <li>{{ skill }}</li>
-                {% endfor %}
-              </ul>
-            </dd>
-          </div>
-        </div>
-        {% endfor %}
-      </dl>
+    <section class="hero">
+      <h1>I design products that get us closer to net zero.</h1>
     </section>
-  
-    <section>
-      <h2>He does what?</h2>
-      <div class="textual">
-        {{ content | safe }}
-        <p>I opened the virtual doors to my studio in August 2021. Given you’re still reading, I think we might work well together. Please &#32; {% include "partials/email-reach-out.html" %} &#32; if you agree.</p>
-      </div>
+    <section class="intro">
+      <p><strong>Recently</strong> I was the founding product designer at Future Super, Australia’s first fossil free super fund. Before that I designed Kickstarter’s iOS and Android apps, as well as its Environmental Resource Center and creator tools. I helped design tools like Origami Studio and worked on projects with Unity, Meta, General Electric, City of New York, and Nike.</p>
+    {{ content | safe }}
     </section>
-
-      <section>
-        <h2>Elsewhere</h2>
-        <ul class="socials">
-          <li>{% include "partials/email.html" %}</li>
-          {% for social in socials %}
-          <li><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.platform }}</a></li>
-          {% endfor %}
-        </ul>
-      </section>
-
-      <section>
-      <h2>Ongoing</h2>
-      <p>Here are some ongoing projects</p>
-      <ul class="projects">
-      {% for project in projects %}
-      <li><strong>{{ project.name }}</strong> {{ project.desc }} • </li>
-      {% endfor %}
-      </ul>
-      </section>
-
-    <section class="full">
-      <h2>Notes</h2>
-      <ul class="notes">
+    
+  <section class="notes">
+      <h2>Briefly</h2>
+      <ul>
       {% for note in collections.blog %}
       <li>
         <a href="{{ note.url }}">
@@ -106,7 +22,20 @@
         </a>
       </li>
       {% endfor %}
+      <li><a href="#">More →</a></li>
       </ul>
-    </section>
+  </section>
+      
+
+  <section class="projects">
+    <h2>Ongoing</h2>
+    <ul>
+    {% for project in projects %}
+    <li><strong>{{ project.name }}</strong> {{ project.desc }}</li>
+    {% endfor %}
+    </ul>
+  </section>
+
+   
   </main>
 {% endblock %}

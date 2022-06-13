@@ -1,24 +1,32 @@
 .note {
   article {
-    h1,
-    p,
-    pre {
-      max-width: 632px;
+    header {
+      border-bottom: var(--stroke-thin) solid var(--color-primary);
     }
 
-    header,
     .article-content {
-      grid-column: 2 / 10;
+      max-width: var(--breakpoint-col);
     }
 
-    p,
-    pre {
-      grid-column: 3 / 10;
-    }
+    //     h1,
+    //     p,
+    //     pre {
+    //       max-width: 632px;
+    //     }
 
-    figure,
-    img {
-      grid-column: 2 / 11;
-    }
+    //     header,
+    //     .article-content {
+    //       grid-column: 2 / 10;
+    //     }
+
+    //     p,
+    //     pre {
+    //       grid-column: 3 / 10;
+    //     }
+
+    //     figure,
+    //     img {
+    //       grid-column: 2 / 11;
+    //     }
   }
 }

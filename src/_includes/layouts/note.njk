@@ -2,10 +2,11 @@
 
 {% block bodyContent %}
 <main class="note">
-    <header><a href="/">Home</a></header>
     <article>
         <header>
             <h1>{{ title }}</h1>
+            {# TODO: fix date formatting #}
+            <time itemprop="dateCreated datePublished" datetime="{{ date }}">{{ date }}</time>
         </header>
         <div class="article-content">
             {{ content | safe }}

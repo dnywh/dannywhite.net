@@ -3,8 +3,9 @@
   --grid-gap-sm: 1rem;
   --grid-gap-lg: 2rem;
   --breakpoint-col: 640px;
-  --color-primary: #0c0c0c;
-  --color-secondary: #757575;
+
+  --padding-md: 1.5rem;
+
   /* --color-tertiary: #757575; */
   --color-spot: #a9e56d;
   --color-spot-hover: #bce990;
@@ -14,4 +15,13 @@
   --radii: 12px;
   --transition-text-opacity: opacity 150ms;
   --transition-background-color: background-color 150ms;
+
+  // New
+  --stroke-thick: 2px;
+  --stroke-thin: 1px;
+  --color-background: #ffffff;
+  --color-primary: #0c0c0c;
+  --color-secondary: #717171;
+  --color-tertiary: #6d6d6d;
+  --color-hero: hsla(36, 58%, 59%, 0.12);
 }
