@@ -2,7 +2,7 @@
   display: grid;
   gap: var(--grid-gap-lg);
 
-  @media (min-width: 640px) {
+  @media (min-width: 1024px) {
     // Match grid and gap from parent
     grid-template-columns: var(--grid-template-cols-main);
 
@@ -19,11 +19,23 @@
   }
 
   .hero {
-    background-color: var(--color-hero);
-    padding: var(--padding-md);
+    padding: calc(var(--padding-md) * 4) var(--padding-md);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    animation: fadeIn ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeIn {
+      0% {
+        background-color: var(--color-background);
+      }
+      100% {
+        background-color: var(--color-hero);
+      }
+    }
 
     h1 {
       font-weight: 400;
@@ -31,17 +43,95 @@
     }
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 1024px) {
     .hero {
       padding: 3rem;
 
       h1 {
         text-align: left;
+        max-width: 17ch;
       }
     }
   }
 
+  .intro {
+    .recently {
+      border-bottom: var(--stroke-thick) solid var(--color-primary);
+
+      // Begin styling collapsible functionality
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+      // https://www.digitalocean.com/community/tutorials/css-collapsible
+      #expand-toggle {
+        display: none;
+      }
+
+      .expandable-content {
+        max-height: 32vh;
+        overflow: hidden;
+        transition: max-height 250ms ease-in-out;
+
+        // Break typography rule briefly
+        p:last-child {
+          margin-bottom: var(--padding-md);
+        }
+      }
+
+      .expand-btn {
+        display: block;
+        padding: var(--grid-gap-sm);
+        border-top: var(--stroke-thin) solid var(--color-primary);
+        cursor: pointer;
+
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        // color: var(--color-tertiary);
+        letter-spacing: 0.1em;
+
+        &:hover {
+          color: #7c5a0b;
+        }
+      }
+
+      #expand-toggle:checked ~ .expandable-content {
+        // Must be explicit height value (i.e. not `fit-content`) for transition to work
+        // Explicit height is used for transition, so be frugal with it
+        max-height: 125vh;
+      }
+
+      // End styling collapsible functionality
+      @media (min-width: 1024px) {
+        border-bottom: var(--stroke-thin) solid var(--color-primary);
+        padding-bottom: var(--grid-gap-lg);
+
+        .expandable-content {
+          max-height: fit-content;
+
+          // Restore broken typography rule (above)
+          p:last-child {
+            margin-bottom: inherit;
+          }
+        }
+        .expand-btn {
+          display: none;
+        }
+      }
+    }
+
+    .right-now {
+      margin-top: var(--grid-gap-lg);
+    }
+  }
+
   .projects {
+    padding-top: var(--grid-gap-lg);
+    border-top: var(--stroke-thick) solid var(--color-primary);
+
+    @media (min-width: 1024px) {
+      border-top: var(--stroke-thin) solid var(--color-primary);
+    }
+
     ul {
       li {
         display: inline;
@@ -50,14 +140,41 @@
           content: " • ";
         }
 
-        strong {
-          text-transform: uppercase;
+        a {
+          text-decoration: none;
+          //   text-decoration: underline;
+          //   text-decoration-color: transparent;
+          //   -webkit-text-decoration-color: transparent;
+          //   -moz-text-decoration-color: transparent;
+          //   transition: var(--transition-text-decoration-color);
+          // }
+
+          // a:hover {
+          //   text-decoration-color: black;
+          //   -webkit-text-decoration-color: black;
+          //   -moz-text-decoration-color: black;
+        }
+
+        p {
+          display: inline;
+
+          strong {
+            text-transform: uppercase;
+            text-decoration: underline;
+          }
         }
       }
     }
   }
 
   .notes {
+    padding-top: var(--grid-gap-lg);
+    border-top: var(--stroke-thick) solid var(--color-primary);
+
+    @media (min-width: 1024px) {
+      border-top: var(--stroke-thin) solid var(--color-primary);
+    }
+
     display: flex;
     flex-direction: column;
 
@@ -108,32 +225,3 @@
     }
   }
 }
-//   header {
-//     h1 {
-//       font-weight: normal;
-
-//       span {
-//         font-weight: bold;
-//       }
-//     }
-
-//     svg {
-//       width: 6.25rem;
-//       height: auto;
-//     }
-//   }
-
-//   /* Description */
-//   .textual ul {
-//     list-style-type: disc;
-//     margin: 1.5rem 0;
-//   }
-
-//   .textual ul li {
-//     line-height: var(--line-height-p);
-//   }
-
-//   // Projects
-//   ul.projects li strong {
-//     text-transform: uppercase;
-//   }

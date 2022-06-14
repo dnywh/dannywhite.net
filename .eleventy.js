@@ -4,6 +4,7 @@ module.exports = function (config) {
     // Copy folders into output directory
     config.addWatchTarget("./src/sass/");
     config.addPassthroughCopy("./src/img/");
+    config.addPassthroughCopy("./src/js/");
 
     // Year shortcode for copyright date(s)
     // https://11ty.rocks/eleventyjs/dates/#year-shortcode
@@ -27,9 +28,9 @@ module.exports = function (config) {
             let minified = htmlmin.minify(content, {
                 useShortDoctype: true,
                 removeComments: true,
-                collapseWhitespace: true,
+                // collapseWhitespace: true,
                 preserveLineBreaks: false,
-                // minifyJS: true,
+                minifyJS: true,
                 minifyURLs: true
             });
             return minified;

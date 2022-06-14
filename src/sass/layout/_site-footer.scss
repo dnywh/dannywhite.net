@@ -1,6 +1,10 @@
 body > footer {
   border-top: var(--stroke-thick) solid var(--color-primary);
-  padding-top: var(--grid-gap-lg);
+  // box-shadow for second visual border
+  box-shadow: inset 0 4px 0 0 var(--color-background),
+    inset 0 5px 0 0 var(--color-primary);
+  // Increase padding-top to take into account above border
+  padding-top: calc(var(--grid-gap-lg) + 5px);
   margin-top: var(--grid-gap-lg);
 
   display: grid;
@@ -17,7 +21,7 @@ body > footer {
     grid-row: 3;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 1024px) {
     // Match grid and gap from parent
     grid-template-columns: var(--grid-template-cols-main);
 

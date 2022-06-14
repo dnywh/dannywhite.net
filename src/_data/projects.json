@@ -1,17 +1,17 @@
 [
   {
     "name": "Ephemera",
-    "url": "https://www.instagram.com/todo/",
+    "url": "http://ephemera.herokuapp.com",
     "desc": "You know those scraps of paper and receipts that clog up your wallet and pockets? This is a living, digital archive of that"
   },
   {
     "name": "Ephemerabot",
-    "url": "https://twitter.com/todo/",
+    "url": "https://twitter.com/ephemerabot",
     "desc": "A Twitter bot cousin of the Ephemera project. Checks for and tweets out new scraps of ephemera daily"
   },
   {
     "name": "Museum of COVID",
-    "url": "https://www.github.com/todo/",
+    "url": "https://www.instagram.com/museumofcovid",
     "desc": "Preserving graphic design history from a 1.5 metre distance"
   }
 ]

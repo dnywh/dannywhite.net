@@ -1,5 +1,5 @@
 body {
-  font-family: "ITC Franklin Gothic Std", franklin-gothic-urw, sans-serif;
+  font-family: franklin-gothic-urw, sans-serif;
 }
 
 strong {
@@ -38,7 +38,10 @@ li {
 
 p {
   line-height: var(--line-height-p);
-  margin-bottom: 1.5rem;
+
+  &:not(:last-child) {
+    margin-bottom: var(--padding-md);
+  }
 }
 
 h1,
@@ -48,15 +51,16 @@ h2 {
 }
 
 h1 {
-  font-size: 32px;
-  letter-spacing: calc(-1 * 32px * 0.015);
+  font-size: 48px;
+  letter-spacing: calc(-1 * 48px * 0.015);
   line-height: 120%;
 }
 
 h2 {
-  font-size: 21px;
-  letter-spacing: calc(-1 * 21px * 0.01);
+  font-size: 32px;
+  letter-spacing: calc(-1 * 32px * 0.01);
   //   color: var(--color-secondary);
+  margin-bottom: var(--padding-md);
 }
 
 h3 {

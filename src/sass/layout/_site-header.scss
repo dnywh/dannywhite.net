@@ -21,10 +21,19 @@ body > header {
     border-top: var(--stroke-thick) solid var(--color-primary);
     border-bottom: var(--stroke-thin) solid var(--color-primary);
     padding: 1rem 0;
-    transition: var(--transition-background-color);
+    transition: var(--transition-text-opacity);
 
     &:hover {
-      background-color: var(--color-hero);
+      // background-color: var(--color-hero);
+      opacity: 0.5;
+    }
+
+    // Name
+    span {
+      font-weight: 600;
+      // Emulate from typography.scss
+      font-size: 18px;
+      letter-spacing: calc(-1 * 18px * 0.008);
     }
   }
 }

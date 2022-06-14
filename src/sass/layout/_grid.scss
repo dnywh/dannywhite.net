@@ -1,6 +1,10 @@
 /* Grid */
 body {
-  padding: var(--grid-gap-lg);
+  padding: var(--grid-gap-lg) var(--grid-gap-sm);
+
+  @media (min-width: 1024px) {
+    padding: var(--grid-gap-lg);
+  }
 }
 // main {
 //   padding: 0 var(--grid-gap-sm) 0 var(--grid-gap-sm);
@@ -38,7 +42,7 @@ body {
 //   grid-row: 2;
 // }
 
-// @media (min-width: 640px) {
+// @media (min-width: 1024px) {
 //   main {
 //     max-width: 960px;
 //     margin: 20vh auto 10vh auto;

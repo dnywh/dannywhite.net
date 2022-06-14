@@ -1,8 +1,9 @@
 :root {
   --grid-template-cols-main: repeat(12, 1fr);
-  --grid-gap-sm: 1rem;
-  --grid-gap-lg: 2rem;
-  --breakpoint-col: 640px;
+  --grid-gap-sm: 1.5rem;
+  --grid-gap-md: 2.5rem;
+  --grid-gap-lg: 3.5rem;
+  --breakpoint-col: 1024px;
 
   --padding-md: 1.5rem;
 
@@ -13,8 +14,9 @@
   --line-height-h: 120%;
   --line-height-p: 170%;
   --radii: 12px;
-  --transition-text-opacity: opacity 150ms;
-  --transition-background-color: background-color 150ms;
+  --transition-text-decoration-color: text-decoration-color 150ms ease-in-out;
+  --transition-text-opacity: opacity 150ms ease-in-out;
+  --transition-background-color: background-color 150ms ease-in-out;
 
   // New
   --stroke-thick: 2px;

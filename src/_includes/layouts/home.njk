@@ -1,5 +1,8 @@
 {% extends "layouts/base.njk" %}
-
+{% block headContent %}
+  {# Add client spinner only to homepage, defer until document has been parsed as it relies on DOM elements #}
+  <script defer src="/js/expand.js"></script>
+{% endblock %}
 
 {% block bodyContent %}
   <main class="home">
@@ -7,8 +10,17 @@
       <h1>I design products that get us closer to net zero.</h1>
     </section>
     <section class="intro">
-      <p><strong>Recently</strong> I was the founding product designer at Future Super, Australia’s first fossil free super fund. Before that I designed Kickstarter’s iOS and Android apps, as well as its Environmental Resource Center and creator tools. I helped design tools like Origami Studio and worked on projects with Unity, Meta, General Electric, City of New York, and Nike.</p>
-    {{ content | safe }}
+    <div class="recently">
+    <input type="checkbox" id="expand-toggle" />
+      <div class="expandable-content">
+        {{ content | safe }}
+      </div>
+      <label for="expand-toggle" class="expand-btn" tabindex="0">More</label>
+    </div>
+    <div class="right-now">
+          <p><strong>Right now</strong> I’m running my freelance design practice. I’m also exploring how to lend my skills to alternate food production and food waste reduction ideas trying to survive the ‘valley of death’. Think circular economy projects like textiles or edible cutlery made from diverted (food) waste materials.</p>
+          <p>Please {% include "partials/email-reach-out.html" %} if you have ideas or just want to say hello.</p>
+    </div>
     </section>
     
   <section class="notes">
@@ -31,7 +43,14 @@
     <h2>Ongoing</h2>
     <ul>
     {% for project in projects %}
-    <li><strong>{{ project.name }}</strong> {{ project.desc }}</li>
+    <li>
+    
+    <p>
+    <a href="{{ project.url }}">
+    <strong>{{ project.name }}</strong> {{ project.desc }}
+    </a>
+    </p>
+    </li>
     {% endfor %}
     </ul>
   </section>
