@@ -63,6 +63,7 @@ body > footer {
       font-weight: 500;
       display: flex;
       align-items: center;
+      line-height: normal;
 
       // Add a border after each 'row' except for the last
       &:not(:nth-last-child(-n + 2)) {

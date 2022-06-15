@@ -1,7 +1,19 @@
 <header>
   <section class="meta">
     <span class="small-text">☺ {% year %}</span>
-    <span class="small-text">Last updated {{ generated }}</span>
+    <div>
+      <span class="small-text">Last updated {{ siteGeneratedDate }}</span>
+      <span class="small-text"
+        >∙ Edition
+        <a
+          class="edition-link"
+          href="https://github.com/dnywh/dannywhite.org/commits/main"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ ISOSiteGeneratedDate }}</a
+        ></span
+      >
+    </div>
   </section>
 
   <section class="strip">

@@ -7,11 +7,11 @@
     margin: 0 auto;
 
     header {
-      margin-top: var(--spacing-lg);
       padding-bottom: var(--spacing-lg);
       border-bottom: var(--stroke-thin) solid var(--color-border-primary);
 
       @media (min-width: 1024px) {
+        margin-top: var(--spacing-lg);
         max-width: var(--breakpoint-article);
       }
 
@@ -23,14 +23,16 @@
         color: var(--color-text-secondary);
         display: block;
 
-        @media (min-width: 1024px) {
-          // text-align: center;
-        }
+        // @media (min-width: 1024px) {
+        // text-align: center;
+        // }
       }
     }
 
     .article-content {
-      margin-bottom: var(--spacing-lg);
+      @media (min-width: 1024px) {
+        margin-bottom: var(--spacing-lg);
+      }
     }
   }
 }

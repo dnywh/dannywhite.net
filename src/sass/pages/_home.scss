@@ -168,84 +168,84 @@
     display: flex;
     flex-direction: column;
 
-    // .x-scroll-wrapper {
+    overflow-x: hidden;
 
-    //   //
-    //   overflow: hidden;
-    // }
+    .x-scroll-wrapper {
+      overflow-x: scroll;
 
-    overflow-x: scroll;
-
-    ul {
       // Take full remaining height of area
       flex-grow: 1;
-      // Display notes items as flex too
-      display: flex;
-      gap: var(--spacing-sm);
 
-      // margin-left: -2rem;
+      ul {
+        // Take full remaining height of area
+        height: 100%;
 
-      li {
+        // Display notes items as flex too
         display: flex;
+        gap: var(--spacing-sm);
 
-        // &:first-of-type {
-        //   // margin-left: 2rem;
-        // }
-
-        a {
-          padding: var(--spacing-sm);
+        li {
           display: flex;
 
-          flex-direction: column;
-          justify-content: space-between;
-          gap: var(--spacing-lg);
-
-          @media (min-width: 1024px) {
-            gap: var(--spacing-xs);
-            // flex: 1;
-          }
-        }
-
-        &:not(:last-of-type) {
-          min-width: 20ch;
-        }
-
-        // 'More' button
-        &:last-of-type {
-          background-color: var(--color-blue);
-          align-self: center;
-          clip-path: circle();
-          // width: 102px;
-          flex-basis: 102px;
-          height: 102px;
-          flex-grow: 0;
-          flex-shrink: 0;
+          // &:first-of-type {
+          //   // margin-left: 2rem;
+          // }
 
           a {
-            text-align: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            font-weight: 600;
+            padding: var(--spacing-sm);
+            display: flex;
+
+            flex-direction: column;
+            justify-content: space-between;
+            gap: var(--spacing-lg);
+
+            @media (min-width: 1024px) {
+              gap: var(--spacing-xs);
+              // flex: 1;
+            }
           }
-        }
 
-        // Traffic light colors
-        &:nth-child(1) {
-          background-color: var(--color-red);
-        }
-        &:nth-child(2) {
-          background-color: var(--color-yellow);
-        }
-        &:nth-child(3) {
-          background-color: var(--color-green);
-        }
+          &:not(:last-of-type) {
+            min-width: 20ch;
+          }
 
-        transition: var(--transition-text-opacity);
+          // 'More' button
+          &:last-of-type {
+            background-color: var(--color-blue);
+            align-self: center;
+            clip-path: circle();
+            // width: 102px;
+            flex-basis: 102px;
+            height: 102px;
+            flex-grow: 0;
+            flex-shrink: 0;
 
-        &:hover {
-          opacity: var(--transition-text-opacity-result);
+            a {
+              text-align: center;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              padding: 0;
+              font-weight: 600;
+            }
+          }
+
+          // Traffic light colors
+          &:nth-child(1) {
+            background-color: var(--color-red);
+          }
+          &:nth-child(2) {
+            background-color: var(--color-yellow);
+          }
+          &:nth-child(3) {
+            background-color: var(--color-green);
+          }
+
+          transition: var(--transition-text-opacity);
+
+          &:hover {
+            opacity: var(--transition-text-opacity-result);
+          }
         }
       }
     }

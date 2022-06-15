@@ -25,9 +25,9 @@
     
   <section class="notes">
       <h2>Notes</h2>
-      {# <div class="x-scroll-wrapper"> #}
+      <div class="x-scroll-wrapper">
       <ul>
-      {% for note in collections.blog %}
+      {% for note in collections.blog | reverse %}
       <li>
         <a href="{{ note.url }}">
           <h3>{{ note.data.title }}</h3>
@@ -37,7 +37,7 @@
       {% endfor %}
       <li><a href="#" class="small-text">More</a></li>
       </ul>
-      {# </div> #}
+      </div>
   </section>
       
 
