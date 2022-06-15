@@ -1,14 +1,14 @@
 body > footer {
-  border-top: var(--stroke-thick) solid var(--color-primary);
+  border-top: var(--stroke-thick) solid var(--color-border-primary);
   // box-shadow for second visual border
   box-shadow: inset 0 4px 0 0 var(--color-background),
-    inset 0 5px 0 0 var(--color-primary);
+    inset 0 5px 0 0 var(--color-border-primary);
   // Increase padding-top to take into account above border
-  padding-top: calc(var(--grid-gap-lg) + 5px);
-  margin-top: var(--grid-gap-lg);
+  padding-top: calc(var(--grid-gap-main) + 5px);
+  margin-top: calc(var(--grid-gap-main) * 1.5);
 
   display: grid;
-  gap: var(--grid-gap-lg);
+  gap: var(--grid-gap-main);
 
   .logo-link {
     grid-row: 1;
@@ -40,14 +40,14 @@ body > footer {
     }
 
     .socials {
-      grid-column: 8 / 13;
+      grid-column: 9 / 13;
     }
   }
 
   .co2 {
     p {
       font-size: 12px;
-      color: var(--color-secondary);
+      color: var(--color-text-secondary);
     }
   }
 
@@ -56,7 +56,28 @@ body > footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* Match column gap from parent grid */
-    grid-column-gap: var(--grid-gap-lg);
-    grid-row-gap: 1rem;
+    // grid-row-gap: 1rem;
+
+    li {
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      // Add a border after each 'row' except for the last
+      &:not(:nth-last-child(-n + 2)) {
+        border-bottom: var(--stroke-thin) solid var(--color-border-secondary);
+      }
+
+      a {
+        // Set link text to full size of container, visually at center left
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.75rem 0;
+      }
+    }
   }
 }

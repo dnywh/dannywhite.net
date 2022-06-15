@@ -1,29 +1,51 @@
+// TODO: expose as Sass variable (@use) to other stylesheets
+// and remove use of hardcoded 1024px there
+// $mq-desktop: 1024px;
+
 :root {
+  // Spacing
+  --spacing-xs: 1rem;
+  --spacing-sm: 1.5rem;
+  --spacing-md: 2.5rem;
+  --spacing-lg: 3.5rem;
+
+  // Layout
+  --breakpoint-article: 640px;
   --grid-template-cols-main: repeat(12, 1fr);
-  --grid-gap-sm: 1.5rem;
-  --grid-gap-md: 2.5rem;
-  --grid-gap-lg: 3.5rem;
-  --breakpoint-col: 1024px;
+  --grid-gap-main: var(--spacing-lg);
 
-  --padding-md: 1.5rem;
+  // @media (min-width: 1024px) {
+  //   --grid-gap-main: var(--spacing-lg);
+  // }
 
-  /* --color-tertiary: #757575; */
-  --color-spot: #a9e56d;
-  --color-spot-hover: #bce990;
-  --color-text-on-spot: rgba(0 0 0 / 0.72);
-  --line-height-h: 120%;
-  --line-height-p: 170%;
-  --radii: 12px;
+  // Borders
+  --stroke-thick: 2px;
+  --stroke-thin: 1px;
+
+  // Type
+  --letter-spacing-wide: 0.1em;
+  --letter-spacing-reg: -0.01em;
+  --letter-spacing-tight: -0.0125em;
+  --letter-spacing-xtight: -0.02em;
+  --line-height-wide: 175%;
+  --line-height-tight: 135%;
+  --line-height-xtight: 120%;
+
+  // Transitions
   --transition-text-decoration-color: text-decoration-color 150ms ease-in-out;
   --transition-text-opacity: opacity 150ms ease-in-out;
   --transition-background-color: background-color 150ms ease-in-out;
+  --transition-text-opacity-result: 0.5;
 
-  // New
-  --stroke-thick: 2px;
-  --stroke-thin: 1px;
+  // Colors
+  --color-text-primary: rgba(0 0 0 / 0.85);
+  --color-border-primary: rgba(0 0 0 / 0.7);
+  --color-text-secondary: #868686;
+  --color-border-secondary: #cccccc;
   --color-background: #ffffff;
-  --color-primary: #111111;
-  --color-secondary: #868686;
-  --color-tertiary: #6d6d6d;
-  --color-hero: hsla(36, 58%, 59%, 0.12);
+  --color-brown: hsla(36, 58%, 59%, 0.12);
+  --color-red: #f8e4d7;
+  --color-yellow: #faf8d2;
+  --color-green: #edf3da;
+  --color-blue: #e4fcf0;
 }

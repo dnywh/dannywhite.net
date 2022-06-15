@@ -1,4 +1,5 @@
 const htmlmin = require("html-minifier");
+const { DateTime } = require("luxon");
 
 module.exports = function (config) {
     // Copy folders into output directory
@@ -7,9 +8,19 @@ module.exports = function (config) {
     config.addPassthroughCopy("./src/fonts/");
     config.addPassthroughCopy("./src/js/");
 
-    // Year shortcode for copyright date(s)
-    // https://11ty.rocks/eleventyjs/dates/#year-shortcode
-    config.addShortcode("year", () => `${new Date().getFullYear()}`);
+    // Readable dates filter for blog posts
+    // https://11ty.rocks/eleventyjs/dates/
+    config.addFilter("postDate", (dateObj) => {
+        // https://moment.github.io/luxon/#/formatting?id=toformat
+        return DateTime.fromJSDate(dateObj).toFormat('MMMM yyyy');
+    });
+
+    //  ISO format dates filter
+    // It is used for <time> elements in places such as blog posts
+    // https://learneleventyfromscratch.com/lesson/12.html#filters
+    config.addFilter("w3PostDate", (dateObj) => {
+        return dateObj.toISOString();
+    });
 
     // Last build date 'X hours ago'
     // https://www.stefanjudis.com/snippets/how-to-display-the-build-date-in-eleventy/#edit%3A-eleventy-1.0-comes-with-%60addglobaldata%60
@@ -17,11 +28,13 @@ module.exports = function (config) {
     // https://writingjavascript.com/format-5-days-ago-localized-relative-date-strings-in-a-few-lines-with-native-javascript
     config.addGlobalData("generated", () => {
         let now = new Date();
-        return new Intl.DateTimeFormat(
-            'en-US', { dateStyle: 'full' }
-        ).format(now);
+        return DateTime.fromJSDate(now).toFormat('EEEE, MMMM d ∙ X');
 
     });
+
+    // Year shortcode for copyright date(s)
+    // https://11ty.rocks/eleventyjs/dates/#year-shortcode
+    config.addShortcode("year", () => `${new Date().getFullYear()}`);
 
     // Minify HTML and some other things
     config.addTransform("htmlmin", function (content, outputPath) {

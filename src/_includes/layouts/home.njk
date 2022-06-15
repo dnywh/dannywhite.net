@@ -15,7 +15,7 @@
       <div class="expandable-content">
         {{ content | safe }}
       </div>
-      <label for="expand-toggle" class="expand-btn" tabindex="0">More</label>
+      <label for="expand-toggle" class="expand-btn small-text" tabindex="0">More</label>
     </div>
     <div class="right-now">
           <p><strong>Right now</strong> I’m running my freelance design practice. I’m also exploring how to lend my skills to alternate food production and food waste reduction ideas trying to survive the ‘valley of death’. Think circular economy projects like textiles or edible cutlery made from diverted (food) waste materials.</p>
@@ -24,7 +24,8 @@
     </section>
     
   <section class="notes">
-      <h2>Briefly</h2>
+      <h2>Notes</h2>
+      {# <div class="x-scroll-wrapper"> #}
       <ul>
       {% for note in collections.blog %}
       <li>
@@ -34,17 +35,17 @@
         </a>
       </li>
       {% endfor %}
-      <li><a href="#">More →</a></li>
+      <li><a href="#" class="small-text">More</a></li>
       </ul>
+      {# </div> #}
   </section>
       
 
   <section class="projects">
-    <h2>Ongoing</h2>
+    <h2>Projects</h2>
     <ul>
     {% for project in projects %}
     <li>
-    
     <p>
     <a href="{{ project.url }}">
     <strong>{{ project.name }}</strong> {{ project.desc }}

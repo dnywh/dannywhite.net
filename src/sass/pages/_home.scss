@@ -1,6 +1,6 @@
 .home {
   display: grid;
-  gap: var(--grid-gap-lg);
+  gap: var(--grid-gap-main);
 
   @media (min-width: 1024px) {
     // Match grid and gap from parent
@@ -19,7 +19,7 @@
   }
 
   .hero {
-    padding: calc(var(--padding-md) * 4) var(--padding-md);
+    padding: calc(var(--spacing-sm) * 4) var(--spacing-sm);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,30 +33,33 @@
         background-color: var(--color-background);
       }
       100% {
-        background-color: var(--color-hero);
+        background-color: var(--color-brown);
       }
     }
 
     h1 {
       font-weight: 400;
       text-align: center;
+      letter-spacing: var(--letter-spacing-tight);
     }
   }
 
   @media (min-width: 1024px) {
     .hero {
-      padding: 3rem;
+      padding: calc(var(--spacing-lg) * 2);
 
       h1 {
         text-align: left;
-        max-width: 17ch;
+        max-width: 18ch;
+        font-size: 56px;
+        letter-spacing: var(--letter-spacing-xtight);
       }
     }
   }
 
   .intro {
     .recently {
-      border-bottom: var(--stroke-thick) solid var(--color-primary);
+      border-bottom: var(--stroke-thick) solid var(--color-border-primary);
 
       // Begin styling collapsible functionality
       // https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
@@ -72,25 +75,21 @@
 
         // Break typography rule briefly
         p:last-child {
-          margin-bottom: var(--padding-md);
+          margin-bottom: var(--spacing-sm);
         }
       }
 
       .expand-btn {
         display: block;
-        padding: var(--grid-gap-sm);
-        border-top: var(--stroke-thin) solid var(--color-primary);
+        padding: calc(var(--spacing-sm) / 2);
+        border-top: var(--stroke-thin) solid var(--color-border-primary);
         cursor: pointer;
-
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 12px;
         font-weight: 600;
-        // color: var(--color-tertiary);
-        letter-spacing: 0.1em;
+        text-align: center;
+        transition: var(--transition-text-opacity);
 
         &:hover {
-          color: #7c5a0b;
+          opacity: var(--transition-text-opacity-result);
         }
       }
 
@@ -102,8 +101,8 @@
 
       // End styling collapsible functionality
       @media (min-width: 1024px) {
-        border-bottom: var(--stroke-thin) solid var(--color-primary);
-        padding-bottom: var(--grid-gap-lg);
+        border-bottom: var(--stroke-thin) solid var(--color-border-primary);
+        padding-bottom: var(--grid-gap-main);
 
         .expandable-content {
           max-height: fit-content;
@@ -120,16 +119,16 @@
     }
 
     .right-now {
-      margin-top: var(--grid-gap-lg);
+      margin-top: var(--grid-gap-main);
     }
   }
 
   .projects {
-    padding-top: var(--grid-gap-lg);
-    border-top: var(--stroke-thick) solid var(--color-primary);
+    padding-top: var(--grid-gap-main);
+    border-top: var(--stroke-thick) solid var(--color-border-primary);
 
     @media (min-width: 1024px) {
-      border-top: var(--stroke-thin) solid var(--color-primary);
+      border-top: var(--stroke-thin) solid var(--color-border-primary);
     }
 
     ul {
@@ -140,27 +139,18 @@
           content: " • ";
         }
 
-        a {
-          text-decoration: none;
-          //   text-decoration: underline;
-          //   text-decoration-color: transparent;
-          //   -webkit-text-decoration-color: transparent;
-          //   -moz-text-decoration-color: transparent;
-          //   transition: var(--transition-text-decoration-color);
-          // }
-
-          // a:hover {
-          //   text-decoration-color: black;
-          //   -webkit-text-decoration-color: black;
-          //   -moz-text-decoration-color: black;
-        }
-
         p {
           display: inline;
 
-          strong {
-            text-transform: uppercase;
-            text-decoration: underline;
+          a {
+            text-decoration: none;
+
+            strong {
+              text-transform: uppercase;
+              font-feature-settings: "cpsp" 1;
+              // TODO
+              // font-feature-settings: "smcp" 1;
+            }
           }
         }
       }
@@ -168,58 +158,94 @@
   }
 
   .notes {
-    padding-top: var(--grid-gap-lg);
-    border-top: var(--stroke-thick) solid var(--color-primary);
+    padding-top: var(--grid-gap-main);
+    border-top: var(--stroke-thick) solid var(--color-border-primary);
 
     @media (min-width: 1024px) {
-      border-top: var(--stroke-thin) solid var(--color-primary);
+      border-top: var(--stroke-thin) solid var(--color-border-primary);
     }
 
     display: flex;
     flex-direction: column;
 
-    // overflow-inline: scroll;
-    overflow-x: hidden;
+    // .x-scroll-wrapper {
+
+    //   //
+    //   overflow: hidden;
+    // }
+
+    overflow-x: scroll;
 
     ul {
-      display: flex;
-      gap: var(--grid-gap-lg);
-      flex-direction: row;
+      // Take full remaining height of area
       flex-grow: 1;
+      // Display notes items as flex too
+      display: flex;
+      gap: var(--spacing-sm);
 
-      overflow-x: scroll;
       // margin-left: -2rem;
 
       li {
         display: flex;
 
-        a {
-          //       color: var(--color-text-on-spot);
-          background-color: var(--color-hero);
-          //       transition: var(--transition-background-color);
-          padding: var(--padding-md);
+        // &:first-of-type {
+        //   // margin-left: 2rem;
+        // }
 
+        a {
+          padding: var(--spacing-sm);
           display: flex;
+
           flex-direction: column;
           justify-content: space-between;
-          //       text-decoration: none;
-          //       font-weight: 700;
+          gap: var(--spacing-lg);
 
-          //       &:hover {
-          //         background-color: var(--color-spot-hover);
-          //       }
+          @media (min-width: 1024px) {
+            gap: var(--spacing-xs);
+            // flex: 1;
+          }
+        }
+
+        &:not(:last-of-type) {
+          min-width: 20ch;
         }
 
         // 'More' button
         &:last-of-type {
-          width: 102px;
-          height: 102px;
+          background-color: var(--color-blue);
           align-self: center;
+          clip-path: circle();
+          // width: 102px;
+          flex-basis: 102px;
+          height: 102px;
+          flex-grow: 0;
+          flex-shrink: 0;
+
           a {
+            text-align: center;
+            justify-content: center;
             width: 100%;
-            border-radius: 100%;
+            height: 100%;
             padding: 0;
+            font-weight: 600;
           }
+        }
+
+        // Traffic light colors
+        &:nth-child(1) {
+          background-color: var(--color-red);
+        }
+        &:nth-child(2) {
+          background-color: var(--color-yellow);
+        }
+        &:nth-child(3) {
+          background-color: var(--color-green);
+        }
+
+        transition: var(--transition-text-opacity);
+
+        &:hover {
+          opacity: var(--transition-text-opacity-result);
         }
       }
     }

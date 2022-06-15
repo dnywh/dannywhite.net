@@ -6,7 +6,9 @@
   // https://www.digitalocean.com/community/tutorials/css-font-face
   font-display: optional;
   // https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
+  // https://css-tricks.com/almanac/properties/f/font-feature-settings/
   // font-feature-settings: normal;
+  font-feature-settings: "kern" 1, "pnum" 1;
 }
 
 @font-face {
@@ -19,10 +21,28 @@
 
 @font-face {
   font-family: "ITC Franklin Gothic";
+  src: url(/fonts/ITC-Franklin-Gothic_Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: optional;
+  font-feature-settings: "kern" 1;
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic";
+  src: url(/fonts/ITC-Franklin-Gothic_Medium-Italic.woff2) format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic";
   src: url(/fonts/ITC-Franklin-Gothic_Demi.woff2) format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: optional;
+  font-feature-settings: "kern" 1;
 }
 
 @font-face {
@@ -33,49 +53,81 @@
   font-display: optional;
 }
 
+// TODO: replace with mixin, @forward
+.small-text {
+  text-transform: uppercase;
+  font-feature-settings: "cpsp" 1;
+  font-size: 12px;
+  // font-weight: 600;
+  // color: var(--color-text-secondary);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
 body {
   font-family: "ITC Franklin Gothic", sans-serif;
+  color: var(--color-text-primary);
 }
 
 strong {
   font-weight: 600;
 }
 
-p > a {
-  text-decoration: underline;
-  cursor: pointer;
-  background-color: var(--color-background);
-  box-shadow: 0 0 0 1px var(--color-background);
-  transition: box-shadow 100ms, background-color 100ms;
-  // border-radius: 0.25px;
-
-  &:hover {
-    background-color: var(--color-hero);
-    box-shadow: 0 0 0 2px var(--color-hero);
-  }
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  font-size: smaller;
 }
 
-// a:hover {
-//   color: var(--color-spot);
-// }
-// /* Type */
-// body {
-//   color: var(--color-primary);
-// }
+sup {
+  // vertical-align: super;
+  top: -0.4em;
+  // TODO: Inspect why this doesn't visually change the glyph
+  font-feature-settings: "sups" 1;
+}
+
+sub {
+  // vertical-align: sub;
+  top: 0.4em;
+  // TODO: Inspect why this doesn't visually change the glyph
+  font-feature-settings: "subs" 1;
+}
+
+p > a {
+  text-decoration: underline;
+  // cursor: pointer;
+}
+
+p > a,
+li > a {
+  // background-color: var(--color-background);
+  // box-shadow: 0 0 0 1px var(--color-background);
+  // transition: box-shadow 100ms, background-color 100ms;
+  transition: var(--transition-text-opacity);
+
+  &:hover {
+    // background-color: var(--color-brown);
+    // box-shadow: 0 0 0 2px var(--color-brown);
+    opacity: var(--transition-text-opacity-result);
+  }
+}
 
 p,
 dt,
 dd,
 li {
-  font-size: 18px;
-  letter-spacing: calc(-1 * 18px * 0.008);
+  font-size: 17px;
+  letter-spacing: var(--letter-spacing-reg);
 }
 
 p {
-  line-height: var(--line-height-p);
+  line-height: var(--line-height-wide);
+
+  // Uses old style numbering to fit nicer with text
+  font-feature-settings: "onum" 1;
 
   &:not(:last-child) {
-    margin-bottom: var(--padding-md);
+    margin-bottom: var(--spacing-xs);
   }
 }
 
@@ -83,32 +135,31 @@ h1,
 h2,
 h3 {
   font-weight: 600;
-}
-
-h1,
-h2 {
-  line-height: var(--line-height-h);
+  letter-spacing: var(--letter-spacing-tight);
 }
 
 h1 {
-  font-size: 48px;
-  letter-spacing: calc(-1 * 48px * 0.015);
-  line-height: 120%;
+  font-size: 40px;
+  line-height: var(--line-height-xtight);
+
+  @media (min-width: 1024px) {
+    font-size: 64px;
+  }
 }
 
 h2 {
   font-size: 32px;
-  letter-spacing: calc(-1 * 32px * 0.01);
-  //   color: var(--color-secondary);
-  margin-bottom: var(--padding-md);
+  line-height: var(--line-height-xtight);
+  margin-bottom: var(--spacing-sm);
 }
 
 h3 {
   font-size: 21px;
-  letter-spacing: calc(-1 * 21px * 0.01);
+  line-height: var(--line-height-tight);
 }
 
 h4 {
   font-size: 1rem;
-  letter-spacing: calc(-1 * 1rem * 0.008);
+  font-weight: 500;
+  line-height: var(--line-height-tight);
 }

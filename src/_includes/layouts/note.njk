@@ -5,8 +5,7 @@
     <article>
         <header>
             <h1>{{ title }}</h1>
-            {# TODO: fix date formatting #}
-            <time itemprop="dateCreated datePublished" datetime="{{ date }}">{{ date }}</time>
+            <time itemprop="dateCreated datePublished" datetime="{{ date | w3PostDate }}" class="small-text">{{ date | postDate }}</time>
         </header>
         <div class="article-content">
             {{ content | safe }}
