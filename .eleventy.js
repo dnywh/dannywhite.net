@@ -4,6 +4,7 @@ module.exports = function (config) {
     // Copy folders into output directory
     config.addWatchTarget("./src/sass/");
     config.addPassthroughCopy("./src/img/");
+    config.addPassthroughCopy("./src/fonts/");
     config.addPassthroughCopy("./src/js/");
 
     // Year shortcode for copyright date(s)

@@ -1,5 +1,40 @@
+@font-face {
+  font-family: "ITC Franklin Gothic";
+  src: url(/fonts/ITC-Franklin-Gothic_Book.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  // https://www.digitalocean.com/community/tutorials/css-font-face
+  font-display: optional;
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
+  // font-feature-settings: normal;
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic";
+  src: url(/fonts/ITC-Franklin-Gothic_Italic.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic";
+  src: url(/fonts/ITC-Franklin-Gothic_Demi.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "ITC Franklin Gothic";
+  src: url(/fonts/ITC-Franklin-Gothic_Demi-Italic.woff2) format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: optional;
+}
+
 body {
-  font-family: franklin-gothic-urw, sans-serif;
+  font-family: "ITC Franklin Gothic", sans-serif;
 }
 
 strong {
@@ -45,8 +80,13 @@ p {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 600;
+}
+
+h1,
+h2 {
   line-height: var(--line-height-h);
 }
 
