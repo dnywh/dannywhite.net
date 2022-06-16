@@ -1,5 +1,6 @@
-const htmlmin = require("html-minifier");
 const { DateTime } = require("luxon");
+const htmlmin = require("html-minifier");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (config) {
     // Copy folders into output directory
@@ -7,6 +8,9 @@ module.exports = function (config) {
     config.addPassthroughCopy("./src/img/");
     config.addPassthroughCopy("./src/assets/");
     config.addPassthroughCopy("./src/js/");
+
+    // RSS (Atom) feed
+    config.addPlugin(pluginRss);
 
     // Readable dates filter for blog posts
     // https://11ty.rocks/eleventyjs/dates/
