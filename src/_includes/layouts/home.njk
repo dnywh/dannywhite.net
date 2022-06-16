@@ -28,14 +28,21 @@
       <div class="x-scroll-wrapper">
       <ul>
       {% for note in collections.blog | reverse %}
+      {# Limit to three items #}
+       {% if loop.index0 < 3 %} 
       <li>
+      {% if note.data.draft %} 
+        <a href="#/">
+        {% else %}
         <a href="{{ note.url }}">
+        {% endif %}
           <h3>{{ note.data.title }}</h3>
           <h4>{{ note.data.custTags[0] }}</h4>
         </a>
       </li>
+      {% endif %}
       {% endfor %}
-      <li><a href="#" class="small-text">More</a></li>
+      <li><a href="#/" class="small-text">More</a></li>
       </ul>
       </div>
   </section>

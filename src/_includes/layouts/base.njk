@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {# Meta #}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
+  {# Title #}
+  {% if title === "Home" %}
+      {% set pageTitle = "Danny White" %}
+    {% elif title %}
+      {% set pageTitle = title + " — " + "Danny White" %}
+    {% else %}
+      {% set pageTitle = "Danny White" %}
+    {% endif %}
+  <title>{{ pageTitle }}</title>
+  
+  {# Author #}
+  <meta name="author" content="Danny White" />
+
+  {% if description %}
+    {% set ogDescription = description %}
+  {% else %}
+    {% set ogDescription = "I design products that get us closer to net zero." %}
+  {% endif %}
+  <meta name="description" content="{{ ogDescription }}"/>
+
+  {# TODO: Bring in Open Graph and Twitter stuff #}
+
+  {# Pinterest #}
+  <meta name="p:domain_verify" content="ccc8f17a0887c3d97360e2249f884b86" />
+
   {# Stylesheets #}
   <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+  
+  {# Icons #}
+  <link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+  <link href="/assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+  <link href="/assets/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+  <link href="/assets/images/manifest.json" rel="manifest" />
+  <link color="#242434" href="/assets/images/safari-pinned-tab.svg" rel="mask-icon" />
+  <link href="/assets/images/favicon.ico" rel="shortcut icon" />
+  <meta content="/assets/images/browserconfig.xml" name="msapplication-config" />
+  <meta content="#ffffff" name="theme-color" />
   {# Splitbee #}
-  {# TODO #}
-  {# <script async src="https://cdn.splitbee.io/sb.js"></script> #}
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
   {# Anything bespoke to a page can go in these blocks #}
   {% block headContent %}{% endblock %}
 </head>

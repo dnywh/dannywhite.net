@@ -1,5 +1,5 @@
 ---
-title: Danny White
+title: Home
 layout: layouts/home
 ---
 
