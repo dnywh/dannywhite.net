@@ -8,13 +8,22 @@
 
     .hero,
     .notes {
+      grid-column: span 7;
+    }
+    .intro,
+    .projects {
+      grid-column: span 5;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hero,
+    .notes {
       grid-column: span 8;
-      // grid-row: 1;
     }
     .intro,
     .projects {
       grid-column: span 4;
-      // grid-row: 1;
     }
   }
 

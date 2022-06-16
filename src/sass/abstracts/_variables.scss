@@ -1,6 +1,7 @@
 // TODO: expose as Sass variable (@use) to other stylesheets
 // and remove use of hardcoded 1024px there
 // $mq-desktop: 1024px;
+// $mq-desktop-lg: 1280px;
 
 :root {
   // Spacing
@@ -38,10 +39,10 @@
   --transition-text-opacity-result: 0.5;
 
   // Colors
-  --color-text-primary: rgba(0 0 0 / 0.85);
-  --color-border-primary: rgba(0 0 0 / 0.7);
-  --color-text-secondary: #868686;
-  --color-border-secondary: #cccccc;
+  --color-text-primary: rgba(40 32 16 / 0.95);
+  --color-border-primary: rgba(40 32 16 / 0.75);
+  --color-text-secondary: rgba(145 137 129 / 0.95);
+  --color-border-secondary: rgba(145 137 129 / 0.35);
   --color-background: #ffffff;
   --color-brown: hsla(36, 58%, 59%, 0.12);
   --color-red: #f8e4d7;

@@ -36,6 +36,16 @@ body > footer {
     }
 
     .co2 {
+      grid-column: span 5;
+    }
+
+    .socials {
+      grid-column: 8 / 13;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .co2 {
       grid-column: span 4;
     }
 
