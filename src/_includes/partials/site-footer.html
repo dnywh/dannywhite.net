@@ -3,6 +3,7 @@
     {% include "partials/logo.svg" %}
   </a>
 
+  {% if title === "Home" %}
   <section class="co2">
     <p>
       Loading this page produces about 0.05 grams of
@@ -27,6 +28,7 @@
       >.
     </p>
   </section>
+  {% endif %}
 
   <ul class="socials">
     <li>{% include "partials/email.html" %}</li>

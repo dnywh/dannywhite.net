@@ -70,6 +70,11 @@
     .recently {
       border-bottom: var(--stroke-thick) solid var(--color-border-primary);
 
+      em {
+        font-style: normal;
+        color: #a86802;
+      }
+
       // Begin styling collapsible functionality
       // https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
       // https://www.digitalocean.com/community/tutorials/css-collapsible
@@ -222,11 +227,8 @@
 
         li {
           display: flex;
-
-          // &:first-of-type {
-          //   // margin-left: 2rem;
-          // }
-
+          // Take full width of container
+          flex: 1;
           a {
             padding: var(--spacing-sm);
             width: 100%;
