@@ -3,7 +3,7 @@
   gap: var(--grid-gap-main);
 
   @media (min-width: 1024px) {
-    // Match grid and gap from parent
+    // Match grid and gap from site-wide grid
     grid-template-columns: var(--grid-template-cols-main);
 
     .hero,

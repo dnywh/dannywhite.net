@@ -1,7 +1,9 @@
 // TODO: expose as Sass variable (@use) to other stylesheets
 // and remove use of hardcoded 1024px there
-// $mq-desktop: 1024px;
-// $mq-desktop-lg: 1280px;
+// $mq-desktop-sm: 1024px;
+// $mq-desktop-md: 1280px;
+// $mq-desktop-lg: 1536px;
+// $mq-desktop-xl: 2190px;
 
 :root {
   // Spacing
@@ -11,7 +13,6 @@
   --spacing-lg: 3.5rem;
 
   // Layout
-  --breakpoint-article: 640px;
   --grid-template-cols-main: repeat(12, 1fr);
   --grid-gap-main: var(--spacing-lg);
 

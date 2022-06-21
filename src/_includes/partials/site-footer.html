@@ -3,7 +3,12 @@
     {% include "partials/logo.svg" %}
   </a>
 
+  {% if title === "Home" %}
+  {# Visually offset the switch differently depending on whether co2 disclaimer is there #}
+  <div class="color-switch co2-offset">
+  {% else %}
   <div class="color-switch">
+  {% endif %}
     <div role="status" class="visually-hidden js-mode-status"></div>
     <button class="toggle-button js-mode-toggle">
       <div class="switch-side light">{% include "partials/icon-sun.svg" %}</div>

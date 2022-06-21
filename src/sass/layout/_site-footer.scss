@@ -27,11 +27,12 @@ body > footer {
   }
 
   @media (min-width: 1024px) {
-    // Match grid and gap from parent
+    // Match grid and gap from site-wide grid
     grid-template-columns: var(--grid-template-cols-main);
 
     .logo-link,
     .co2,
+    .color-switch,
     .socials {
       grid-row: 1;
     }
@@ -42,6 +43,15 @@ body > footer {
 
     .co2 {
       grid-column: span 5;
+    }
+
+    .color-switch {
+      grid-column: 7;
+    }
+
+    .color-switch.co2-offset {
+      // grid-column: 7;
+      justify-self: end;
     }
 
     .socials {
@@ -56,11 +66,23 @@ body > footer {
       grid-column: span 4;
     }
 
+    .color-switch.co2-offset {
+      grid-column: 8;
+      justify-self: end;
+    }
+
     .socials {
       grid-column: 9 / 13;
     }
   }
 
+  @media (min-width: 2190px) {
+    .color-switch {
+      grid-column: 5;
+    }
+  }
+
+  // CO2
   .co2 {
     p {
       font-size: 12px;

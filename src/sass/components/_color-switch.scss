@@ -25,8 +25,6 @@
   margin-bottom: var(--spacing-lg);
 
   @media (min-width: 1024px) {
-    grid-column: 8;
-    justify-self: end;
     // Extra vertical space probably not necessary
     margin-bottom: 0;
   }
