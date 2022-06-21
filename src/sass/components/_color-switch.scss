@@ -63,8 +63,11 @@
 
       svg > path {
         fill: var(--color-text-primary);
-        // Optically align
-        transform: translateY(-0.85px);
+
+        @media (min-width: 1024px) {
+          // Optically align
+          transform: translateY(-0.85px);
+        }
       }
     }
 
