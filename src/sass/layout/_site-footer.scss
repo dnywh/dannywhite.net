@@ -1,7 +1,7 @@
 body > footer {
   border-top: var(--stroke-thick) solid var(--color-border-primary);
   // box-shadow for second visual border
-  box-shadow: inset 0 4px 0 0 var(--color-background),
+  box-shadow: inset 0 4px 0 0 var(--color-backgroundd),
     inset 0 5px 0 0 var(--color-border-primary);
   // Increase padding-top to take into account above border
   padding-top: calc(var(--grid-gap-main) + 5px);
@@ -41,6 +41,8 @@ body > footer {
 
     .socials {
       grid-column: 8 / 13;
+      // Optically align
+      transform: translateY(-16px);
     }
   }
 

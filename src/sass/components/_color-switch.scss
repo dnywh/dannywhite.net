@@ -16,35 +16,61 @@
   position: absolute;
 }
 
-.color-switch button {
+.color-switch {
+  width: fit-content;
   height: fit-content;
-  width: 24px;
-  border: 1px solid var(--text-color);
-  .light,
-  .dark {
-    height: 24px;
+  // Extra vertical space for bottom toolbar controls
+  margin-bottom: var(--spacing-lg);
+
+  @media (min-width: 1024px) {
+    grid-column: 8;
+    justify-self: end;
+    // Extra vertical space probably not necessary
+    margin-bottom: 0;
   }
 
-  &:hover {
-    cursor: pointer;
-  }
+  .toggle-button {
+    border: 1px solid var(--color-text);
+    display: flex;
+    flex-direction: row;
 
-  .light {
-    // background: var(--color-light);
-    background: var(--color-light);
-    // color: var(--text-dark);
-
-    svg {
-      fill: var(--color-dark);
+    @media (min-width: 1024px) {
+      flex-direction: column;
     }
-  }
 
-  .dark {
-    background: var(--color-dark);
-    // color: var(--text-light);
+    .switch-side {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-    svg {
-      fill: var(--color-light);
+    &:hover {
+      cursor: pointer;
+    }
+
+    .light {
+      // background: var(--color-light);
+      background: var(--color-light);
+      // color: var(--text-dark);
+
+      svg {
+        fill: var(--color-dark);
+        // Optically align
+        transform: translateY(-0.85px);
+      }
+    }
+
+    .dark {
+      background: var(--color-dark);
+      // color: var(--text-light);
+
+      svg {
+        fill: var(--color-light);
+        // Optically align
+        transform: translateX(0.25px);
+      }
     }
   }
 }
@@ -64,7 +90,7 @@
 //   }
 // }
 [data-user-color-scheme="dark"] {
-  .color-switch button {
+  .color-switch .toggle-button {
     .light {
       background: var(--color-dark);
 
@@ -88,30 +114,4 @@
   max-width: 20rem;
   border-top: 1px solid var(--border-color);
   text-align: center;
-}
-
-// .toggle-button {
-//   display: inline-flex;
-//   background: var(--button-background);
-//   color: var(--button-color);
-//   border: none;
-//   font: inherit;
-//   font-size: 1.5rem;
-//   padding: 0.5rem 1rem;
-//   transition: background 500ms ease-in-out, color 200ms ease;
-// }
-
-.toggle-button__icon {
-  background: var(--button-icon);
-  width: 1.2em;
-  height: 1.2em;
-  margin: 0 0 0 0.5em;
-  filter: var(--button-icon-filter);
-  transform: translateY(1px); /* Optical adjustment */
-  transition: filter 500ms ease-in-out;
-}
-
-.toggle-button:focus {
-  outline: 1px solid var(--button-background);
-  outline-offset: 0.5rem;
 }

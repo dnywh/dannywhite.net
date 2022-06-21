@@ -35,20 +35,9 @@
   // Transitions
   --transition-text-decoration-color: text-decoration-color 150ms ease-in-out;
   --transition-text-opacity: opacity 150ms ease-in-out;
+  --transition-color-scheme: background 250ms ease-in-out, color 175ms ease;
   --transition-background-color: background-color 150ms ease-in-out;
   --transition-text-opacity-result: 0.5;
-
-  // Colors
-  --color-text-primary: rgba(40 32 16 / 0.95);
-  --color-border-primary: rgba(40 32 16 / 0.75);
-  --color-text-secondary: rgba(145 137 129 / 0.95);
-  --color-border-secondary: rgba(145 137 129 / 0.35);
-  --color-background: #ffffff;
-  --color-brown: hsla(36, 58%, 59%, 0.12);
-  --color-red: #f8e4d7;
-  --color-yellow: #faf8d2;
-  --color-green: #edf3da;
-  --color-blue: #e4fcf0;
 
   // Light and dark mode handling
   // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
@@ -58,16 +47,27 @@
 
   --color-light: #ffffff;
 
-  --background: var(--color-light);
-  --text-color: var(--color-dark);
+  --color-background: var(--color-light);
+  --color-text: var(--color-dark);
+
+  // Colors
+  --color-text-primary: var(--color-text);
+  --color-text-secondary: rgba(145 137 129 / 0.95);
+  --color-border-primary: rgba(40 32 16 / 0.75);
+  --color-border-secondary: rgba(145 137 129 / 0.35);
+  --color-brown: hsla(36, 58%, 59%, 0.12);
+  --color-red: #f8e4d7;
+  --color-yellow: #faf8d2;
+  --color-green: #edf3da;
+  --color-blue: #e4fcf0;
 }
 
 // Light and dark mode stuff continued
 // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
 body {
-  background: var(--background);
-  color: var(--text-color);
-  transition: background 250ms ease-in-out, color 175ms ease;
+  background: var(--color-background);
+  color: var(--color-text);
+  transition: var(--transition-color-scheme);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,12 +76,12 @@ body {
   }
 
   :root:not([data-user-color-scheme]) {
-    --background: var(--color-dark);
-    --text-color: var(--color-light);
+    --color-background: var(--color-dark);
+    --color-text: var(--color-light);
   }
 }
 
 [data-user-color-scheme="dark"] {
-  --background: var(--color-dark);
-  --text-color: var(--color-light);
+  --color-background: var(--color-dark);
+  --color-text: var(--color-light);
 }
