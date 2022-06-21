@@ -1,0 +1,117 @@
+// Styles the toggle that controls light/dark color scheme
+// https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
+// Don't show the switch if the user doesn't have JS enabled
+.no-js .color-switch {
+  display: none;
+}
+
+.visually-hidden {
+  display: block;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(1px);
+  white-space: nowrap;
+  position: absolute;
+}
+
+.color-switch button {
+  height: fit-content;
+  width: 24px;
+  border: 1px solid var(--text-color);
+  .light,
+  .dark {
+    height: 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .light {
+    // background: var(--color-light);
+    background: var(--color-light);
+    // color: var(--text-dark);
+
+    svg {
+      fill: var(--color-dark);
+    }
+  }
+
+  .dark {
+    background: var(--color-dark);
+    // color: var(--text-light);
+
+    svg {
+      fill: var(--color-light);
+    }
+  }
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --color-mode: "dark";
+//   }
+
+//   :root:not([data-user-color-scheme]) {
+//     .light {
+//       background: var(--color-dark);
+//     }
+//     .dark {
+//       background: var(--color-light);
+//     }
+//   }
+// }
+[data-user-color-scheme="dark"] {
+  .color-switch button {
+    .light {
+      background: var(--color-dark);
+
+      svg {
+        fill: var(--color-light);
+      }
+    }
+    .dark {
+      background: var(--color-light);
+
+      svg {
+        fill: var(--color-dark);
+      }
+    }
+  }
+}
+
+.user-toggle {
+  margin: 2rem auto 0 auto;
+  padding-top: 2.5rem;
+  max-width: 20rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+// .toggle-button {
+//   display: inline-flex;
+//   background: var(--button-background);
+//   color: var(--button-color);
+//   border: none;
+//   font: inherit;
+//   font-size: 1.5rem;
+//   padding: 0.5rem 1rem;
+//   transition: background 500ms ease-in-out, color 200ms ease;
+// }
+
+.toggle-button__icon {
+  background: var(--button-icon);
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0 0 0 0.5em;
+  filter: var(--button-icon-filter);
+  transform: translateY(1px); /* Optical adjustment */
+  transition: filter 500ms ease-in-out;
+}
+
+.toggle-button:focus {
+  outline: 1px solid var(--button-background);
+  outline-offset: 0.5rem;
+}

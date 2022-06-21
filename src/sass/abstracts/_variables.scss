@@ -49,4 +49,39 @@
   --color-yellow: #faf8d2;
   --color-green: #edf3da;
   --color-blue: #e4fcf0;
+
+  // Light and dark mode handling
+  // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
+  --color-mode: "light";
+
+  --color-dark: rgba(40 32 16 / 0.95);
+
+  --color-light: #ffffff;
+
+  --background: var(--color-light);
+  --text-color: var(--color-dark);
+}
+
+// Light and dark mode stuff continued
+// https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
+body {
+  background: var(--background);
+  color: var(--text-color);
+  transition: background 250ms ease-in-out, color 175ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+  }
+
+  :root:not([data-user-color-scheme]) {
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+  }
+}
+
+[data-user-color-scheme="dark"] {
+  --background: var(--color-dark);
+  --text-color: var(--color-light);
 }

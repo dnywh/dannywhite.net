@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   {# Meta #}
   <meta charset="UTF-8">
@@ -45,11 +45,15 @@
   <script async src="https://cdn.splitbee.io/sb.js"></script>
   {# Anything bespoke to a page can go in these blocks #}
   {% block headContent %}{% endblock %}
+  
 </head>
 
 <body>
   {% include "partials/site-header.html" %}
   {% block bodyContent %}{% endblock %}
-  {% include "partials/site-footer.html" %}
+  {% include "partials/site-footer.html" %} 
+  {# Site-wide scripts #}
+  <script src="/js/js-check.js"></script>
+  <script src="/js/color-switch.js"></script>
 </body>
 </html>
