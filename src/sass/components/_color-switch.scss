@@ -32,12 +32,16 @@
   }
 
   .toggle-button {
-    border: 1px solid var(--color-text);
+    border: 1px solid var(--color-border-primary);
     display: flex;
     flex-direction: row;
 
     @media (min-width: 1024px) {
       flex-direction: column;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
 
     .switch-side {
@@ -46,27 +50,31 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
 
-    &:hover {
-      cursor: pointer;
+      // Show any paths that might fall out of the container
+      overflow: visible;
+
+      svg {
+        // Show any paths that might fall out of the container
+        overflow: visible;
+      }
     }
 
     .light {
-      background: var(--color-light);
+      background-color: var(--color-background);
 
-      svg {
-        fill: var(--color-dark);
+      svg > path {
+        fill: var(--color-text-primary);
         // Optically align
         transform: translateY(-0.85px);
       }
     }
 
     .dark {
-      background: var(--color-dark);
+      background-color: var(--color-text-primary);
 
-      svg {
-        fill: var(--color-light);
+      svg > path {
+        fill: var(--color-background);
         // Optically align
         transform: translateX(0.25px);
       }
@@ -76,46 +84,46 @@
 
 // TODO: join @media and [data...] with repetitious bits into one @mixin
 // Make changes if user prefers dark color scheme
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-mode: "dark";
-  }
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --color-mode: "dark";
+//   }
 
-  :root:not([data-user-color-scheme]) {
-    .color-switch .toggle-button {
-      .light {
-        background: var(--color-dark);
+//   :root:not([data-user-color-scheme]) {
+//     .color-switch .toggle-button {
+//       .light {
+//         background-color: var(--color-background-dark);
 
-        svg {
-          fill: var(--color-light);
-        }
-      }
-      .dark {
-        background: var(--color-light);
+//         svg > path {
+//           fill: var(--color-background-light);
+//         }
+//       }
+//       .dark {
+//         background-color: var(--color-background-light);
 
-        svg {
-          fill: var(--color-dark);
-        }
-      }
-    }
-  }
-}
-// Repeats the above
-[data-user-color-scheme="dark"] {
-  .color-switch .toggle-button {
-    .light {
-      background: var(--color-dark);
+//         svg > path {
+//           fill: var(--color-background-dark);
+//         }
+//       }
+//     }
+//   }
+// }
+// // Repeats the above
+// [data-user-color-scheme="dark"] {
+//   .color-switch .toggle-button {
+//     .light {
+//       background-color: var(--color-background-dark);
 
-      svg {
-        fill: var(--color-light);
-      }
-    }
-    .dark {
-      background: var(--color-light);
+//       svg > path {
+//         fill: var(--color-background-light);
+//       }
+//     }
+//     .dark {
+//       background-color: var(--color-background-light);
 
-      svg {
-        fill: var(--color-dark);
-      }
-    }
-  }
-}
+//       svg > path {
+//         fill: var(--color-background-dark);
+//       }
+//     }
+//   }
+// }

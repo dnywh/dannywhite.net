@@ -40,7 +40,11 @@
   <link color="#242434" href="/assets/images/safari-pinned-tab.svg" rel="mask-icon" />
   <link href="/assets/images/favicon.ico" rel="shortcut icon" />
   <meta content="/assets/images/browserconfig.xml" name="msapplication-config" />
-  <meta content="#ffffff" name="theme-color" />
+  {# Theme color #}
+  {# TODO: have these variable, have them update with user color toggle too #}
+  {# TODO: update manifest to reflect this #}
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161a0d" media="(prefers-color-scheme: dark)">
   {# Splitbee #}
   <script async src="https://cdn.splitbee.io/sb.js"></script>
   {# Anything bespoke to a page can go in these blocks #}

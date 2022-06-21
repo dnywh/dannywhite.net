@@ -2,4 +2,8 @@
   width: 36px;
   height: auto;
   display: block;
+
+  > path {
+    fill: var(--color-text-primary);
+  }
 }

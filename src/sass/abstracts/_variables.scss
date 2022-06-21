@@ -35,42 +35,53 @@
   // Transitions
   --transition-text-decoration-color: text-decoration-color 150ms ease-in-out;
   --transition-text-opacity: opacity 150ms ease-in-out;
-  --transition-color-scheme: background 250ms ease-in-out, color 175ms ease;
+  // TODO: more smoothly animate box shadow (see footer top borders)
+  --transition-color-scheme: background-color 250ms ease-in-out,
+    border 250ms ease-in-out, box-shadow 250ms ease-in-out, color 175ms ease;
   --transition-background-color: background-color 150ms ease-in-out;
   --transition-text-opacity-result: 0.5;
 
-  // Light and dark mode handling
-  // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
-  // Storing the user's preferred color mode
-  --color-mode: "light";
-
-  --color-dark: rgba(40 32 16 / 0.95);
-
-  --color-light: #ffffff;
-
-  --color-background: var(--color-light);
-  --color-text: var(--color-dark);
-
   // Colors
-  --color-text-primary: var(--color-text);
-  --color-text-secondary: rgba(145 137 129 / 0.95);
-  --color-border-primary: rgba(40 32 16 / 0.75);
-  --color-border-secondary: rgba(145 137 129 / 0.35);
-  --color-brown: hsla(36, 58%, 59%, 0.12);
-  --color-red: #f8e4d7;
-  --color-yellow: #faf8d2;
-  --color-green: #edf3da;
-  --color-blue: #e4fcf0;
+  // On light ('light mode')
+  --color-background-on-light: #ffffff;
+  --color-text-primary-on-light: rgba(40 32 16 / 0.95);
+  --color-text-secondary-on-light: rgba(145 137 129 / 0.95);
+  --color-border-primary-on-light: rgba(40 32 16 / 0.75);
+  --color-border-secondary-on-light: rgba(145 137 129 / 0.35);
+  --color-swatch-hero-on-light: hsla(36, 58%, 59%, 0.12);
+  --color-swatch-a-on-light: #f8e4d7;
+  --color-swatch-b-on-light: #faf8d2;
+  --color-swatch-c-on-light: #edf3da;
+  --color-swatch-d-on-light: #e4fcf0;
+
+  // On dark ('dark mode')
+  --color-background-on-dark: #161a0d;
+  --color-text-primary-on-dark: #f3ffa6;
+  --color-text-secondary-on-dark: #f3ffa6;
+  --color-border-primary-on-dark: #f3ffa6;
+  --color-border-secondary-on-dark: #f3ffa683;
+  --color-swatch-hero-on-dark: rgba(243, 255, 166, 0.05);
+  --color-swatch-a-on-dark: rgba(243, 255, 166, 0.15);
+  --color-swatch-b-on-dark: rgba(243, 255, 166, 0.15);
+  --color-swatch-c-on-dark: rgba(243, 255, 166, 0.15);
+  --color-swatch-d-on-dark: rgba(243, 255, 166, 0.15);
+
+  // Set default colors (to light)
+  --color-mode: "light";
+  --color-background: var(--color-background-on-light);
+  --color-text-primary: var(--color-text-primary-on-light);
+  --color-text-secondary: var(--color-text-secondary-on-light);
+  --color-border-primary: var(--color-border-primary-on-light);
+  --color-border-secondary: var(--color-border-secondary-on-light);
+  --color-swatch-hero: var(--color-swatch-hero-on-light);
+  --color-swatch-a: var(--color-swatch-a-on-light);
+  --color-swatch-b: var(--color-swatch-b-on-light);
+  --color-swatch-c: var(--color-swatch-c-on-light);
+  --color-swatch-d: var(--color-swatch-d-on-light);
 }
 
-// Light and dark mode stuff continued
+// Light and dark mode handling
 // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
-body {
-  background: var(--color-background);
-  color: var(--color-text);
-  transition: var(--transition-color-scheme);
-}
-
 // TODO: join @media and [data...] with repetitious bits into one @mixin
 // Make changes if user prefers dark color scheme
 @media (prefers-color-scheme: dark) {
@@ -81,13 +92,29 @@ body {
 
   // Prevent the default from overriding a new user preference
   :root:not([data-user-color-scheme]) {
-    --color-background: var(--color-dark);
-    --color-text: var(--color-light);
+    --color-background: var(--color-background-on-dark);
+    --color-text-primary: var(--color-text-primary-on-dark);
+    --color-text-secondary: var(--color-text-secondary-on-dark);
+    --color-border-primary: var(--color-border-primary-on-dark);
+    --color-border-secondary: var(--color-border-secondary-on-dark);
+    --color-swatch-hero: var(--color-swatch-hero-on-dark);
+    --color-swatch-a: var(--color-swatch-a-on-dark);
+    --color-swatch-b: var(--color-swatch-b-on-dark);
+    --color-swatch-c: var(--color-swatch-c-on-dark);
+    --color-swatch-d: var(--color-swatch-d-on-dark);
   }
 }
 // Repeats the above
 // Keep an eye on a JS-set attribute and change if necessary
 [data-user-color-scheme="dark"] {
-  --color-background: var(--color-dark);
-  --color-text: var(--color-light);
+  --color-background: var(--color-background-on-dark);
+  --color-text-primary: var(--color-text-primary-on-dark);
+  --color-text-secondary: var(--color-text-secondary-on-dark);
+  --color-border-primary: var(--color-border-primary-on-dark);
+  --color-border-secondary: var(--color-border-secondary-on-dark);
+  --color-swatch-hero: var(--color-swatch-hero-on-dark);
+  --color-swatch-a: var(--color-swatch-a-on-dark);
+  --color-swatch-b: var(--color-swatch-b-on-dark);
+  --color-swatch-c: var(--color-swatch-c-on-dark);
+  --color-swatch-d: var(--color-swatch-d-on-dark);
 }

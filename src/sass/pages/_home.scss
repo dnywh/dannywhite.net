@@ -37,14 +37,16 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    @keyframes fadeIn {
-      0% {
-        background-color: var(--color-backgroundd);
-      }
-      100% {
-        background-color: var(--color-brown);
-      }
-    }
+    background-color: var(--color-swatch-hero);
+
+    // @keyframes fadeIn {
+    //   0% {
+    //     background-color: var(--color-background);
+    //   }
+    //   100% {
+    //     background-color: var(--color-swatch-hero);
+    //   }
+    // }
 
     h1 {
       font-weight: 400;
@@ -72,7 +74,7 @@
 
       em {
         font-style: normal;
-        color: #a86802;
+        // color: var(--color-swatch-a);
       }
 
       // Begin styling collapsible functionality
@@ -249,7 +251,7 @@
 
           // 'More' button
           &:last-of-type {
-            background-color: var(--color-blue);
+            background-color: var(--color-swatch-d);
             align-self: center;
             clip-path: circle();
             // width: 102px;
@@ -270,13 +272,13 @@
 
           // Traffic light colors
           &:nth-child(1) {
-            background-color: var(--color-red);
+            background-color: var(--color-swatch-a);
           }
           &:nth-child(2) {
-            background-color: var(--color-yellow);
+            background-color: var(--color-swatch-b);
           }
           &:nth-child(3) {
-            background-color: var(--color-green);
+            background-color: var(--color-swatch-c);
           }
 
           transition: var(--transition-text-opacity);

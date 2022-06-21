@@ -1,5 +1,7 @@
 /* Grid */
 body {
+  background-color: var(--color-background);
+  transition: var(--transition-color-scheme);
   // Purposefully independent of grid gap sizes
   padding: var(--spacing-sm);
 
