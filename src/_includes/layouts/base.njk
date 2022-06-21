@@ -45,6 +45,8 @@
   <script async src="https://cdn.splitbee.io/sb.js"></script>
   {# Anything bespoke to a page can go in these blocks #}
   {% block headContent %}{% endblock %}
+  {# Site-wide scripts #}
+  <script src="/js/js-check.js"></script>
   
 </head>
 
@@ -52,8 +54,7 @@
   {% include "partials/site-header.html" %}
   {% block bodyContent %}{% endblock %}
   {% include "partials/site-footer.html" %} 
-  {# Site-wide scripts #}
-  <script src="/js/js-check.js"></script>
+  {# Scripts continued #}
   <script src="/js/color-switch.js"></script>
 </body>
 </html>

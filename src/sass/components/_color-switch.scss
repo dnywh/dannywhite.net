@@ -1,10 +1,12 @@
 // Styles the toggle that controls light/dark color scheme
 // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
+
 // Don't show the switch if the user doesn't have JS enabled
 .no-js .color-switch {
   display: none;
 }
 
+// Hide the status label for a11y
 .visually-hidden {
   display: block;
   height: 1px;
@@ -51,9 +53,7 @@
     }
 
     .light {
-      // background: var(--color-light);
       background: var(--color-light);
-      // color: var(--text-dark);
 
       svg {
         fill: var(--color-dark);
@@ -64,7 +64,6 @@
 
     .dark {
       background: var(--color-dark);
-      // color: var(--text-light);
 
       svg {
         fill: var(--color-light);
@@ -75,20 +74,33 @@
   }
 }
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --color-mode: "dark";
-//   }
+// TODO: join @media and [data...] with repetitious bits into one @mixin
+// Make changes if user prefers dark color scheme
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+  }
 
-//   :root:not([data-user-color-scheme]) {
-//     .light {
-//       background: var(--color-dark);
-//     }
-//     .dark {
-//       background: var(--color-light);
-//     }
-//   }
-// }
+  :root:not([data-user-color-scheme]) {
+    .color-switch .toggle-button {
+      .light {
+        background: var(--color-dark);
+
+        svg {
+          fill: var(--color-light);
+        }
+      }
+      .dark {
+        background: var(--color-light);
+
+        svg {
+          fill: var(--color-dark);
+        }
+      }
+    }
+  }
+}
+// Repeats the above
 [data-user-color-scheme="dark"] {
   .color-switch .toggle-button {
     .light {
@@ -106,12 +118,4 @@
       }
     }
   }
-}
-
-.user-toggle {
-  margin: 2rem auto 0 auto;
-  padding-top: 2.5rem;
-  max-width: 20rem;
-  border-top: 1px solid var(--border-color);
-  text-align: center;
 }

@@ -41,6 +41,7 @@
 
   // Light and dark mode handling
   // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
+  // Storing the user's preferred color mode
   --color-mode: "light";
 
   --color-dark: rgba(40 32 16 / 0.95);
@@ -70,17 +71,22 @@ body {
   transition: var(--transition-color-scheme);
 }
 
+// TODO: join @media and [data...] with repetitious bits into one @mixin
+// Make changes if user prefers dark color scheme
 @media (prefers-color-scheme: dark) {
   :root {
+    // Change the color mode from which JS can hook on to
     --color-mode: "dark";
   }
 
+  // Prevent the default from overriding a new user preference
   :root:not([data-user-color-scheme]) {
     --color-background: var(--color-dark);
     --color-text: var(--color-light);
   }
 }
-
+// Repeats the above
+// Keep an eye on a JS-set attribute and change if necessary
 [data-user-color-scheme="dark"] {
   --color-background: var(--color-dark);
   --color-text: var(--color-light);
