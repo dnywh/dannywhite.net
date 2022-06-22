@@ -10,6 +10,12 @@ const COLOR_MODE_KEY = '--color-mode';
 const modeToggleButton = document.querySelector('.js-mode-toggle');
 const modeStatusElement = document.querySelector('.js-mode-status');
 
+// Get meta theme-color elements for later
+const metaThemeColorArray = document.querySelectorAll("meta[name=theme-color]");
+// Also get their values 
+const lightThemeColorSwatch = metaThemeColorArray[0].getAttribute("content");
+const darkThemeColorSwatch = metaThemeColorArray[1].getAttribute("content");
+
 // Spit out either 'light' or 'dark' depending on the media query
 const getCSSCustomProp = propKey => {
     let response = getComputedStyle(document.documentElement).getPropertyValue(propKey);
@@ -50,9 +56,13 @@ const toggleSetting = () => {
             break;
         case 'light':
             currentSetting = 'dark';
+            // Apply this new setting to the theme-color meta for browser chrome
+            metaThemeColorArray.forEach(el => el.setAttribute("content", `${darkThemeColorSwatch}`));
             break;
         case 'dark':
             currentSetting = 'light';
+            // Apply this new setting to the theme-color meta for browser chrome
+            metaThemeColorArray.forEach(el => el.setAttribute("content", `${lightThemeColorSwatch}`));
             break;
     }
     // No setting found in local storage, set from CSS
@@ -70,4 +80,5 @@ modeToggleButton.addEventListener('click', evt => {
 });
 
 // Run this by default to make sure the user's preference is applied on page load
+// TODO: Why does this conflict with prefers-color-scheme?
 // applySetting();

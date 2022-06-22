@@ -39,6 +39,7 @@
 
     background-color: var(--color-swatch-hero);
 
+    // TODO: Why does this default to the light --color-swatch-hero even if prefers-color-scheme is dark?
     // @keyframes fadeIn {
     //   0% {
     //     background-color: var(--color-background);
