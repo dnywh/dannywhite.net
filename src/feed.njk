@@ -19,6 +19,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
+  {# TODO: Check if this icon does anything, perhaps replace with regular favicon #}
   <icon>{{ metadata.url }}{{ metadata.feedIconUrl }}</icon>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>

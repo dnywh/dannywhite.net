@@ -6,6 +6,7 @@
         <header>
             <h1>{{ title }}</h1>
             <time itemprop="dateCreated datePublished" datetime="{{ date | w3PostDate }}" class="small-text">{{ date | postDate }}</time>
+            
         </header>
         <div class="article-content">
             {{ content | safe }}
