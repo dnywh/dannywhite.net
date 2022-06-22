@@ -7,6 +7,7 @@
     "subtitle": "I design products that get us closer to net zero.",
     "url": "https://dannywhite.org/",
     "feedUrl": "https://dannywhite.org/feed.xml",
+    "feedIconUrl": "assets/images/favicon-32x32.png",
     "author": {
       "name": "Danny White",
       "email": "endless.paces-03@icloud.com"
@@ -18,6 +19,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
+  <icon>{{ metadata.url }}{{ metadata.feedIconUrl }}</icon>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <updated>{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339 }}</updated>

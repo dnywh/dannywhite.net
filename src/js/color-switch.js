@@ -73,6 +73,7 @@ const toggleSetting = () => {
 };
 
 // Add an event to the button
+// TODO: Why does this need to be clicked twice to work? At least on iOS
 modeToggleButton.addEventListener('click', evt => {
     evt.preventDefault();
     // Apply the new setting
