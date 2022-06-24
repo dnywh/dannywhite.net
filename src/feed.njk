@@ -3,22 +3,16 @@
   "permalink": "feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "Danny White",
-    "subtitle": "I design products that get us closer to net zero.",
     "url": "https://dannywhite.org/",
     "feedUrl": "https://dannywhite.org/feed.xml",
-    "feedIconUrl": "assets/images/favicon-32x32.png",
-    "author": {
-      "name": "Danny White",
-      "email": "endless.paces-03@icloud.com"
-    }
+    "feedIconUrl": "assets/images/favicon-32x32.png"
   }
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.subtitle }}</subtitle>
   {# TODO: Check if this icon does anything, perhaps replace with regular favicon #}
   <icon>{{ metadata.url }}{{ metadata.feedIconUrl }}</icon>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
@@ -26,8 +20,8 @@
   <updated>{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
+    <name>{{ site.title }}</name>
+    <email>{{ site.publicEmail }}</email>
   </author>
   {%- for post in collections.blog %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
