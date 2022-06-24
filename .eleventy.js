@@ -14,7 +14,13 @@ module.exports = function (config) {
     config.addPlugin(pluginRss);
 
     // Syntax highlighting for code in blog posts
-    config.addPlugin(syntaxHighlight);
+    config.addPlugin(syntaxHighlight, {
+        // TODO: allow inline code to be styled like pre code. E.g:
+        // css> .some-class { background-color: red }
+        // As shown in Gatsby tutorial here...
+        // https://stephenweiss.dev/syntax-highlighting-prismjs-gatsby/#inline-code
+        inlineCodeMarker: '>',
+    });
 
     // Readable dates filter for blog posts
     // https://11ty.rocks/eleventyjs/dates/
