@@ -39,6 +39,7 @@
     "sass": "^1.37.5"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.2.0"
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
   }
 }
