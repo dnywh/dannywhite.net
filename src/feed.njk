@@ -10,27 +10,22 @@
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.title }}</title>
-  <subtitle>{{ site.subtitle }}</subtitle>
-  {# TODO: Check if this icon does anything, perhaps replace with regular favicon #}
-  <icon>{{ metadata.url }}{{ metadata.feedIconUrl }}</icon>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}</id>
-  <author>
-    <name>{{ site.title }}</name>
-    <email>{{ site.publicEmail }}</email>
-  </author>
-  {%- for post in collections.blog %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-  <entry>
-    <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-  </entry>
-  {%- endfor %}
-</feed>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}">
+  <channel>
+    <title>{{ site.title }}</title>
+    <link>{{ metadata.url }}</link>
+    <description>{{ site.subtitle }}</description>
+    <language>en</language>
+    {%- for post in collections.blog | reverse %}
+        {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+        <item>
+            <title>{{ post.data.title }}</title>
+            <link>{{ absolutePostUrl }}</link>
+            <description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+            <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+            <dc:creator>{{ site.title }}</dc:creator>
+            <guid>{{ absolutePostUrl }}</guid>
+        </item>
+    {%- endfor %}
+  </channel>
+</rss>
