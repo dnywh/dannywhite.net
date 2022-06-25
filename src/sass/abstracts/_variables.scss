@@ -54,6 +54,7 @@
   --color-swatch-b-on-light: #faf8d2;
   --color-swatch-c-on-light: #edf3da;
   --color-swatch-d-on-light: #e4fcf0;
+  --color-text-code-tag-on-light: #905;
 
   // On dark ('dark mode')
   --color-background-on-dark: #161a0d;
@@ -66,6 +67,7 @@
   --color-swatch-b-on-dark: rgba(243, 255, 166, 0.15);
   --color-swatch-c-on-dark: rgba(243, 255, 166, 0.15);
   --color-swatch-d-on-dark: rgba(243, 255, 166, 0.15);
+  --color-text-code-tag-on-dark: rgb(209, 3, 117);
 
   // Set default colors (to light)
   --color-mode: "light";
@@ -79,6 +81,7 @@
   --color-swatch-b: var(--color-swatch-b-on-light);
   --color-swatch-c: var(--color-swatch-c-on-light);
   --color-swatch-d: var(--color-swatch-d-on-light);
+  --color-text-code-tag: var(--color-text-code-tag-on-light);
 }
 
 // Light and dark mode handling
@@ -103,6 +106,7 @@
     --color-swatch-b: var(--color-swatch-b-on-dark);
     --color-swatch-c: var(--color-swatch-c-on-dark);
     --color-swatch-d: var(--color-swatch-d-on-dark);
+    --color-text-code-tag: var(--color-text-code-tag-on-dark);
   }
 }
 // Repeats the above
@@ -118,4 +122,5 @@
   --color-swatch-b: var(--color-swatch-b-on-dark);
   --color-swatch-c: var(--color-swatch-c-on-dark);
   --color-swatch-d: var(--color-swatch-d-on-dark);
+  --color-text-code-tag: var(--color-text-code-tag-on-dark);
 }

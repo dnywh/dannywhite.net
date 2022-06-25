@@ -96,7 +96,8 @@ sub {
 
 p > a {
   text-decoration: underline;
-  // cursor: pointer;
+  // Sit a little lower
+  text-underline-offset: 1.5px;
 }
 
 p > a,
@@ -133,56 +134,6 @@ p {
 
 em {
   font-style: italic;
-}
-
-// Lists
-ul,
-ol {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 2em;
-}
-
-ul {
-  list-style-type: square;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-// Code
-pre,
-code,
-p > code {
-  font-family: monospace;
-  font-size: 16px;
-  // font-size: inherit;
-}
-
-pre {
-  white-space: pre;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background-color: var(--color-swatch-hero);
-  padding: 1em;
-  // For long lines on mobile
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
-  max-width: 100%;
-}
-
-code {
-  // font-size: 1em;
-}
-
-p > code {
-  // font-size: 16px;
-
-  background-color: var(--color-swatch-hero);
 }
 
 // Headings

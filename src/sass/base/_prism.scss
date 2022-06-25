@@ -1,14 +1,46 @@
+// Custom
+// Code
+pre,
+code,
+p > code {
+  font-family: monospace;
+  font-size: 16px;
+  // font-size: inherit;
+}
+
+pre {
+  // white-space: pre-wrap;
+  // background-color: var(--color-swatch-hero);
+  // For long lines on mobile
+
+  // -webkit-overflow-scrolling: touch;
+  // overflow-x: scroll;
+  // max-width: 100%;
+}
+
+code {
+  // font-size: 1em;
+}
+
+p > code {
+  // font-size: 16px;
+  background-color: var(--color-swatch-hero);
+  // Extend the background just slightly
+  box-shadow: 0px 0px 0px 1px var(--color-swatch-hero);
+}
+
 /* PrismJS 1.28.0
 https://prismjs.com/download.html#themes=prism */
+// Begun overriding with custom CSS
 code[class*="language-"],
 pre[class*="language-"] {
   color: #000;
   background: 0 0;
-  text-shadow: 0 1px #fff;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1em;
   text-align: left;
-  white-space: pre;
+  // TODO: allow for overflow-x: scroll. Revert to pre?
+  white-space: pre-wrap;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
@@ -25,30 +57,36 @@ code[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 pre[class*="language-"] ::-moz-selection,
 pre[class*="language-"]::-moz-selection {
-  text-shadow: none;
-  background: #b3d4fc;
+  background: var(--color-swatch-hero);
 }
 code[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 pre[class*="language-"] ::selection,
 pre[class*="language-"]::selection {
-  text-shadow: none;
-  background: #b3d4fc;
+  background: var(--color-swatch-hero);
 }
-@media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
-    text-shadow: none;
-  }
+
+.article-content {
+  width: 100%;
 }
+
+code {
+  // overflow-x: scroll;
+}
+
 pre[class*="language-"] {
   padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
+  // Custom
+  margin: 1.5rem 0;
+  overflow-x: scroll;
+  // overflow: scroll;
+  // max-width: 100%;
+  white-space: pre-wrap;
+  display: block;
 }
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #f5f2f0;
+  background: var(--color-swatch-hero);
 }
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
@@ -74,7 +112,7 @@ pre[class*="language-"] {
 .token.property,
 .token.symbol,
 .token.tag {
-  color: #905;
+  color: var(--color-text-code-tag);
 }
 .token.attr-name,
 .token.builtin,
@@ -90,7 +128,7 @@ pre[class*="language-"] {
 .token.operator,
 .token.url {
   color: #9a6e3a;
-  background: hsla(0, 0%, 100%, 0.5);
+  background: var(--color-swatch-hero);
 }
 .token.atrule,
 .token.attr-value,
@@ -167,7 +205,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span {
   color: #bbb;
   font-size: 0.8em;
   padding: 0 0.5em;
-  background: #f5f2f0;
+  background: var(--color-swatch-hero);
   background: rgba(224, 224, 224, 0.2);
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;

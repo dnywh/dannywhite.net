@@ -4,12 +4,12 @@
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "url": "https://dannywhite.org/",
-    "feedUrl": "https://dannywhite.org/feed.xml",
-    "feedIconUrl": "assets/images/favicon-32x32.png"
+    "feedUrl": "https://dannywhite.org/feed.xml"
   }
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
+{# Served via RSS instead of Atom so iOS doesn't just link to raw XML #}
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}">
   <channel>
     <title>{{ site.title }}</title>

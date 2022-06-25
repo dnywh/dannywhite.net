@@ -10,6 +10,21 @@ module.exports = function (config) {
     config.addPassthroughCopy("./src/assets/");
     config.addPassthroughCopy("./src/js/");
 
+    //   Markdown footnotes
+    //   https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/#fn1
+    // set markdown footnote processor
+    let markdownIt = require("markdown-it");
+    let markdownItFootnote = require("markdown-it-footnote");
+    let options = {
+        html: true, // Enable HTML tags in source
+        breaks: false,  // Convert '\n' in paragraphs into <br>
+        linkify: false // Autoconvert URL-like text to links
+    };
+    // configure the library with options
+    let markdownLib = markdownIt(options).use(markdownItFootnote);
+    // set the library to process markdown files
+    config.setLibrary("md", markdownLib);
+
     // RSS (Atom) feed
     config.addPlugin(pluginRss);
 
