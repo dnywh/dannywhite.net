@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (config) {
     // Copy folders into output directory
@@ -11,6 +12,15 @@ module.exports = function (config) {
 
     // RSS (Atom) feed
     config.addPlugin(pluginRss);
+
+    // Syntax highlighting for code in blog posts
+    config.addPlugin(syntaxHighlight, {
+        // TODO: allow inline code to be styled like pre code. E.g:
+        // css> .some-class { background-color: red }
+        // As shown in Gatsby tutorial here...
+        // https://stephenweiss.dev/syntax-highlighting-prismjs-gatsby/#inline-code
+        inlineCodeMarker: '>',
+    });
 
     // Readable dates filter for blog posts
     // https://11ty.rocks/eleventyjs/dates/
