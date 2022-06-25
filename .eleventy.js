@@ -13,8 +13,10 @@ module.exports = function (config) {
     //   Markdown footnotes
     //   https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/#fn1
     // set markdown footnote processor
+    // TODO: should these 'require' bits be done above module.exports?
     let markdownIt = require("markdown-it");
     let markdownItFootnote = require("markdown-it-footnote");
+    // TODO: isn't 'options' a bit too vague?
     let options = {
         html: true, // Enable HTML tags in source
         breaks: false,  // Convert '\n' in paragraphs into <br>
