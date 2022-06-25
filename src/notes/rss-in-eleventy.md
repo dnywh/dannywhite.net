@@ -2,7 +2,7 @@
 title: The missing guide to RSS in Eleventy
 date: 2022-06-24
 custTags:
-	- Eleventy
+  - Eleventy
   - RSS
   - Web
 ---
@@ -43,4 +43,4 @@ So, if you're particular like me, use the RSS sample feed template from the [Ele
 [This CSS-Tricks post](https://css-tricks.com/working-with-web-feeds-its-more-than-rss/) article by Farai Gandiya demystified some of the grander mysteries (and histories!) of web feeds for me.
 The [W3C Feed Validation Service](https://validator.w3.org/feed/) helped me check the health of my feed as I tinkered.
 
-[^1]: And also contingent on that visitor having an RSS app installed. Which I think is almost always the case now on macOS and iOS with the built-in News app.
+[^1]: Contingent on the visitor having an RSS app installed. Which I think is almost always the case now on macOS and iOS with the built-in News app.
