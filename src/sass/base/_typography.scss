@@ -101,6 +101,7 @@ p > a {
   text-underline-offset: 1.5px;
 }
 
+.article-content a, // TODO: Should this go instead in note.scss?
 p > a,
 li > a {
   // background-color: var(--color-background);
