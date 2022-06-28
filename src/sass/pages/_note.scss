@@ -57,14 +57,21 @@
       }
 
       // Lists
+      // Give all lists some basic styling
       ul,
       ol {
         display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 2em;
+      }
+
+      // Only vertically space lists that aren't children of other lists
+      // In other words: give lists vertical space unless they are indented lists
+      p + ul,
+      ol + ul {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
       }
 
       ul {
