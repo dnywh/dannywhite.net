@@ -320,5 +320,3 @@
     });
 
 }());
-
-console.log("hello");

@@ -20,5 +20,3 @@ Array.from(expandButtons).forEach(expandButton => {
         expandButton.textContent = expandToggle.checked ? "Less" : "More";
     });
 });
-
-

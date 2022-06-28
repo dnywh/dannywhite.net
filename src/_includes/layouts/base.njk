@@ -52,11 +52,12 @@
   <meta name="theme-color" content="#161a0d" media="(prefers-color-scheme: dark)">
   {# Splitbee #}
   <script async src="https://cdn.splitbee.io/sb.js"></script>
-  {# Anything bespoke to a page can go in these blocks #}
-  {% block headContent %}{% endblock %}
   {# Site-wide scripts #}
   <script src="/js/js-check.js"></script>
   <script src="/js/prism-show-language.js"></script>
+  {# Anything bespoke to a page can go in these blocks #}
+  {% block headContent %}{% endblock %}
+  {# Wonder where a script is running from? Check layouts for custom headContent #}
 </head>
 
 <body>
