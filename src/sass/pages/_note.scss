@@ -51,6 +51,11 @@
         margin-bottom: 0.85rem;
       }
 
+      h3 {
+        margin-top: 3rem;
+        margin-bottom: 0.65rem;
+      }
+
       // Lists
       ul,
       ol {
@@ -91,6 +96,43 @@
 
       @media (min-width: 2190px) {
         grid-column: 5 / 9;
+      }
+    }
+
+    // Style the '#' anchor
+    // See eleventy.js for helpful articles
+    .heading-wrapper {
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+      // margin-left: -1rem; // Use in combination with `order`
+
+      // Show the `#` permanently unless it can be hovered
+      @media screen and (hover: hover) {
+        .anchor {
+          visibility: hidden;
+          transition: var(--transition-text-opacity);
+          opacity: 0;
+        }
+        &:hover {
+          .anchor {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+      .anchor {
+        // order: -1; Use in combination with above `margin-left`
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        transition: var(--transition-text-opacity);
+        &:hover {
+          opacity: var(--transition-text-opacity-result);
+        }
+
+        [hidden] {
+          display: block;
+        }
       }
     }
   }

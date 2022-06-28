@@ -2,6 +2,10 @@ const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
+const markdownItAnchor = require("markdown-it-anchor");
+const slugify = require("slugify");
 
 module.exports = function (config) {
     // Copy folders into output directory
@@ -10,22 +14,62 @@ module.exports = function (config) {
     config.addPassthroughCopy("./src/assets/");
     config.addPassthroughCopy("./src/js/");
 
-    //   Markdown footnotes
-    //   https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/#fn1
-    // set markdown footnote processor
-    // TODO: should these 'require' bits be done above module.exports?
-    let markdownIt = require("markdown-it");
-    let markdownItFootnote = require("markdown-it-footnote");
-    // TODO: isn't 'options' a bit too vague?
-    let options = {
+    // Prepare footnotes and automatic heading anchors
+    // https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/#fn1
+    // https://11ty.rocks/eleventyjs/slugs-anchors/
+    // https://rhianvanesch.com/posts/2021/02/09/adding-heading-anchor-links-to-an-eleventy-site/
+    const linkAfterHeader = markdownItAnchor.permalink.linkAfterHeader({
+        class: "anchor",
+        symbol: "<span hidden>#</span>",
+        style: "aria-labelledby",
+    });
+    const markdownItAnchorOptions = {
+        level: [1, 2, 3],
+        slugify: (str) =>
+            slugify(str, {
+                lower: true,
+                strict: true,
+                remove: /["]/g,
+            }),
+        tabIndex: false,
+        permalink(slug, opts, state, idx) {
+            state.tokens.splice(
+                idx,
+                0,
+                Object.assign(new state.Token("div_open", "div", 1), {
+                    // Add class "header-wrapper [h1 or h2 or h3]"
+                    attrs: [["class", `heading-wrapper ${state.tokens[idx].tag}`]],
+                    block: true,
+                })
+            );
+
+            state.tokens.splice(
+                idx + 4,
+                0,
+                Object.assign(new state.Token("div_close", "div", -1), {
+                    block: true,
+                })
+            );
+
+            linkAfterHeader(slug, opts, state, idx + 1);
+        },
+    };
+    //  Options for the `markdown-it` library
+    const markdownItOptions = {
         html: true, // Enable HTML tags in source
         breaks: false,  // Convert '\n' in paragraphs into <br>
-        linkify: false // Autoconvert URL-like text to links
+        linkify: false, // Autoconvert URL-like text to links
+        typographer: true // Enable some language-neutral replacement + quotes beautification
     };
-    // configure the library with options
-    let markdownLib = markdownIt(options).use(markdownItFootnote);
-    // set the library to process markdown files
-    config.setLibrary("md", markdownLib);
+    // Set custom Markdown overrides
+    let markdownLibrary = markdownIt(markdownItOptions).use(
+        markdownItFootnote
+    ).use(
+        markdownItAnchor,
+        markdownItAnchorOptions
+    );
+    // Tell Eleventy to swap to our custom Markdown config
+    config.setLibrary("md", markdownLibrary);
 
     // RSS (Atom) feed
     config.addPlugin(pluginRss);

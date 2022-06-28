@@ -1,4 +1,9 @@
 /* Grid */
+html {
+  // Smooth smoothly to anchor tags on the same page
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-background);
   transition: var(--transition-color-scheme);

@@ -94,6 +94,7 @@ sub {
   font-feature-settings: "subs" 1;
 }
 
+.article-content a, // TODO: Should this go instead in note.scss?
 p > a {
   text-decoration: underline;
   // Sit a little lower
