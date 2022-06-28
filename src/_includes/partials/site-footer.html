@@ -16,8 +16,8 @@
     </div>
   </div>
 
-  {% if title === "Home" %}
   <section class="co2">
+  {% if title === "Home" %}
     <p>
       Loading this page produces about 0.05 grams of
       CO<sub>2</sub>e<sup>*</sup>. Loading it 1000 more times would produce a
@@ -40,8 +40,10 @@
         >Website Carbon Calculator</a
       >.
     </p>
-  </section>
+  {% else %}
+  <p>{{ site.subtitle }}</p>
   {% endif %}
+  </section>
 
   <ul class="socials">
     <li>{% include "partials/email.html" %}</li>
