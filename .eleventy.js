@@ -18,6 +18,7 @@ module.exports = function (config) {
     // https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/#fn1
     // https://11ty.rocks/eleventyjs/slugs-anchors/
     // https://rhianvanesch.com/posts/2021/02/09/adding-heading-anchor-links-to-an-eleventy-site/
+    // TODO: this method causes some headings to hide on Safari Reader
     const linkAfterHeader = markdownItAnchor.permalink.linkAfterHeader({
         class: "anchor",
         symbol: "<span hidden>#</span>",
@@ -90,7 +91,7 @@ module.exports = function (config) {
         return DateTime.fromJSDate(dateObj).toFormat('MMMM yyyy');
     });
 
-    //  ISO format dates filter
+    // ISO format dates filter
     // It is used for <time> elements in places such as blog posts
     // https://learneleventyfromscratch.com/lesson/12.html#filters
     config.addFilter("w3PostDate", (dateObj) => {
