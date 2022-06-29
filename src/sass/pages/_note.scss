@@ -45,15 +45,33 @@
         margin: var(--spacing-lg) 0;
       }
 
-      // Headings
       h2 {
-        margin-top: 4rem;
         margin-bottom: 0.85rem;
       }
 
+      // Headings
+      h2 {
+        margin-top: 4rem;
+
+        @media (min-width: 1024px) {
+          margin-top: 6rem;
+        }
+      }
+
       h3 {
-        margin-top: 3rem;
         margin-bottom: 0.65rem;
+      }
+
+      .h2 + .h3 {
+        margin-top: 1rem;
+      }
+
+      p + .h3 {
+        margin-top: 3rem;
+
+        @media (min-width: 1024px) {
+          margin-top: 4.5rem;
+        }
       }
 
       // Lists
@@ -80,6 +98,47 @@
 
       ol {
         list-style-type: decimal;
+      }
+
+      // Blockquotes
+      // Based on:
+      // https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#aa-hey-what-about-the-figure-element
+      figure.quote {
+        border-top: 1px solid var(--color-border-secondary);
+        border-bottom: 1px solid var(--color-border-secondary);
+
+        margin: 1.5rem 0;
+        padding: 1.5rem 0;
+
+        blockquote {
+          p {
+            font-weight: 500;
+            font-size: 1.5rem;
+            letter-spacing: var(--letter-spacing-reg);
+            line-height: var(--line-height-reg);
+
+            // Quotes
+            &:before {
+              content: open-quote;
+            }
+            &:after {
+              content: close-quote;
+            }
+            hanging-punctuation: first last;
+          }
+        }
+
+        figcaption {
+          margin-top: 1rem;
+          // TODO: Merge with .small-text @mixin
+          text-transform: uppercase;
+          font-feature-settings: "cpsp" 1;
+          font-size: 12px;
+          // font-weight: 600;
+          color: var(--color-text-secondary);
+          letter-spacing: var(--letter-spacing-wide);
+          // Remember to add a <cite> element when reference creative work
+        }
       }
 
       // Tables
@@ -134,7 +193,7 @@
       display: flex;
       align-items: baseline;
       gap: 0.25rem;
-      // margin-left: -1rem; // Use in combination with `order`
+      margin-left: -0.8em; // Use in combination with `order`
 
       // Show the `#` permanently unless it can be hovered
       @media screen and (hover: hover) {
@@ -151,7 +210,7 @@
         }
       }
       .anchor {
-        // order: -1; Use in combination with above `margin-left`
+        order: -1; // Use in combination with above `margin-left`
         color: var(--color-text-secondary);
         text-decoration: none;
         transition: var(--transition-text-opacity);
