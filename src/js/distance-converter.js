@@ -11,7 +11,9 @@ let unit = "km"
 // Prepare function for updating the fieldset
 const updateRadioButtons = () => {
     for (const radioButton of radioButtons) {
+        // If this radio button has the same value as the current unit...
         if (radioButton.value === unit) {
+            // Set it as checked
             radioButton.checked = true;
             // No need to do `else` as only one can be checked
             break;
@@ -19,36 +21,100 @@ const updateRadioButtons = () => {
     }
 }
 
-// Prepare function for updating the text on the page
-const updateText = (newUnit) => {
+// Prepare function for updating the text throughout the page
+const updateTextOnPage = (newUnit) => {
+    // Go through each affected item
     listOfThingsToConvert.forEach(el => {
-        el.textContent = `999 ${newUnit}`
-        // Do things here like splice the numbers from the text
-        // If text was 'ft', do one form of math on the numbers and convert the text to 'm'
+        // Split up its string into sections
+        const stringSectionsArray = el.textContent.split(' ');
+        // TODO: Learn more about and swap the above with regular expressions because
+        // ...they are more succinct and less brittle than `split()`
+        // https://stackoverflow.com/a/1483287/2009441
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+        // const myRe = /(\d+)\s*(m|cm|km)/;
+        // const stringSectionsArray = myRe.exec(el.textContent)
+
+        // Get just the numbers in the string
+        // let numbers = stringSectionsArray.filter(i => !isNaN(i));
+        // console.log(numbers)
+
+        // let lastItem = stringSectionsArray.slice(-1)[0];
+        // console.log(lastItem)
         // If text was 'mi' or 'miles', do one form of math on the numbers and conver the text to 'km'
+        // If text was 'ft', do one form of math on the numbers and convert the text to 'm'
         // If text has class `inline` consider the text verbose and convert the text to 'miles' instead of 'mi' (and 'feet' instead of 'ft')
+
+        // Prepare empty array to store swapped parts of string in a second
+        const newStringArray = [];
+        // Loop through each bit of text and transform as necessary
+        stringSectionsArray.forEach(sec => {
+            // sec = "hello"
+            if (newUnit === "mi") {
+                // Check if *not* a number
+                if (isNaN(sec)) {
+                    // Is not a number
+                    // Check if "km"
+                    if (sec === "km") {
+                        // convert text to "mi"
+                        sec = "mi"
+                    }
+                } else {
+                    // Is number
+                    // Convert number from mi to km
+                    sec = (sec * 0.62137).toFixed(2)
+                }
+            } else if (newUnit === "km") {
+                /// Check if *not* a number
+                if (isNaN(sec)) {
+                    // Is not a number
+                    // Check if "mi"
+                    if (sec === "mi") {
+                        // convert text to "km"
+                        sec = "km"
+                    }
+                } else {
+                    // Is number
+                    // Convert number from mi to km
+                    sec = (sec / 0.62137).toFixed(2)
+                }
+            }
+
+            // Push this new section to the newStringArray array
+            newStringArray.push(sec);
+        })
+
+
+        // if (newUnit === "mi") {
+        //     if (lastItem === "km") {
+        //         lastItem = "mi"
+        //         // Convert from mi to km
+        //         numbers.forEach(number => number = number * 0.62137)
+        //         // console.log("new:", numbers)
+        //     }
+        // } else if (newUnit === "km") {
+        //     if (lastItem === "miles" || lastItem === "mi") {
+        //         lastItem = "km"
+        //     }
+        // }
+
+
+        // Set the final text
+        // el.textContent = `999 ${lastItem}`
+        el.textContent = newStringArray.join(" ");
     })
 }
 
 
 
 // Prepare main function for swapping between units
-const swapUnit = (selectedUnit) => {
-
-    // unit = "km"
-    // If the visitor has selected a specific radio button
+const switchUnit = (selectedUnit) => {
+    // If the visitor has expliclity selected a specific radio button...
     if (selectedUnit) {
-        // console.log("dealing with explicit choice in radio button")
-        console.log(`Swapping unit from ${unit} to ${selectedUnit.value}...`);
-
+        // Switch to (or stay with) this radio button's value
         unit = selectedUnit.value;
-
-        // Check first that they've selected the *other*, unchecked value
-
-
-        // Or, if there is no explicitly selected unit, it must be coming from an inline simple swap...
+        // Or if this is just a general swap after tapping on an inline item...
     } else {
-        // ...so just switch the unit to the other value
+        // Swap the unit
         // TODO: switch below to ternary like...
         // unit === "km" ? "mi" : "km";
         if (unit === "km") {
@@ -59,93 +125,26 @@ const swapUnit = (selectedUnit) => {
     }
 
     updateRadioButtons();
-    updateText(unit);
+    updateTextOnPage(unit);
 
 }
-
-// expandButton.textContent = expandToggle.checked ? "Less" : "More";
-// console.log(`new unit is: ${unit}`)
 
 // Swap units whenever an inline item is selected
 inlineThingsOnlyToConvert.forEach(el => {
     el.addEventListener("click", () => {
-        swapUnit();
+        switchUnit();
 
     })
 })
 
-// Swap units when the unchecked radio button becomes checked
+// Swap unit when a radio button becomes checked
 radioButtons.forEach(el => {
     el.addEventListener("click", () => {
-        swapUnit(el);
+        switchUnit(el);
     })
 })
-
-
 
 // Set one of the radio buttons to checked based on the default or newly updated unit
 updateRadioButtons();
 // Ensure all text on page matches this unit
-updateText(unit);
-
-
-
-
-
-
-
-
-
-// Scratchpad
-// https://bobbyhadz.com/blog/javascript-check-if-element-contains-text
-// console.log('apple'.includes('app'));
-
-
-// Old route
-// Check for kilometres
-// if (el.textContent.includes("km")) {
-//     // el.textContent = "km to miles"
-//     // Check for metres
-// } else if (el.textContent.includes("m")) {
-//     // el.textContent = "metres to inches"
-// }
-
-
-
-
-
-
-
-// Newer route
-// Array.from(listOfThingsToConvert).forEach(el => {
-//     // console.log(el);
-
-//     // Imperial to Metric
-
-//     // For strings like 'a 30 mile ride' or 'we rode 40 miles'
-//     if (el.classList.contains("miles-to-km")) {
-//         // End with 'a 48 km ride' or 'we rode 64 km'
-
-//         // Get numbers from string
-//         // Convert these numbers from miles to KM
-//         // Get the word 'mile' from the string
-//         // Change that word to 'km', leaving the optional 's' at the end untouched
-//         // el.textContent = "all of the above goes here"
-//     }
-
-//     // Metric to Imperial
-
-//     // For strings like '20.1 km'
-//     if (el.classList.contains("km-to-mi")) {
-//         // End with '12.5 mi'
-//     }
-//     // For strings like '400 m'
-//     if (el.classList.contains("m-to-ft")) {
-//         // End with '1312 ft'
-//     }
-
-// });
-
-
-
-
+updateTextOnPage(unit);

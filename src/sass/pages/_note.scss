@@ -42,7 +42,7 @@
       hr {
         display: block;
         border-bottom: 1px solid var(--color-border-secondary);
-        margin: var(--spacing-lg) 0;
+        margin-top: var(--spacing-lg);
       }
 
       h2 {
@@ -62,16 +62,16 @@
         margin-bottom: 0.65rem;
       }
 
-      .h2 + .h3 {
-        margin-top: 1rem;
-      }
-
-      p + .h3 {
+      .h3 {
         margin-top: 3rem;
 
         @media (min-width: 1024px) {
           margin-top: 4.5rem;
         }
+      }
+
+      .h2 + .h3 {
+        margin-top: 1rem;
       }
 
       // Lists

@@ -19,6 +19,8 @@ module.exports = function (config) {
     // https://11ty.rocks/eleventyjs/slugs-anchors/
     // https://rhianvanesch.com/posts/2021/02/09/adding-heading-anchor-links-to-an-eleventy-site/
     // TODO: this method causes some headings to hide on Safari Reader
+    // Does this help?
+    // https://www.sarasoueidan.com/blog/tips-for-reader-modes/
     const linkAfterHeader = markdownItAnchor.permalink.linkAfterHeader({
         class: "anchor",
         symbol: "<span hidden>#</span>",

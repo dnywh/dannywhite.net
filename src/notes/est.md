@@ -2,6 +2,8 @@
 title: "Riding the Empire State Trail: New York City to Montreal"
 description: "My brother Lukas and I recently rode the Empire State Trail from Manhattan to Rouses Point and continued on to Montreal, Canada. Here’s a recap and advice for folks planning a similar trip."
 date: 2022-06-29
+custTags:
+	- Ride
 # draft: true
 ---
 
@@ -85,20 +87,20 @@ Note that we pushed on to Montreal.
 
 {% include "partials/distance-converter.html" %}
 
-| Leg                                                                                                     | Distance                              | Elevation Gain                     |
-| :------------------------------------------------------------------------------------------------------ | :------------------------------------ | :--------------------------------- |
-| [Manhattan to Ardsley](https://www.strava.com/activities/7115492001)                                    | <span class="distance">44.52km</span> | <span class="distance">196m</span> |
-| [Ardsley to Brewster](https://www.strava.com/activities/7121387383)                                     | 68.89km                               | 475m                               |
-| [Brewster to Poughkeepsie](https://www.strava.com/activities/7126394083)                                | 67.12km                               | 238m                               |
-| [Poughkeepsie to Kingston](https://www.strava.com/activities/7132011514)                                | 45.63km                               | 181m                               |
-| [Kingston to Hudson](https://www.strava.com/activities/7136560114)                                      | 61.83km                               | 576m                               |
-| [Hudson to Albany](https://www.strava.com/activities/7142807965)                                        | 68.34km                               | 497m                               |
-| [Albany to Schuylerville](https://www.strava.com/activities/7148631579)                                 | 65.99km                               | 202m                               |
-| [Schuylerville to Ticonderoga](https://www.strava.com/activities/7153547176)                            | 105.54km                              | 963m                               |
-| [Ticonderoga to Westport](https://www.strava.com/activities/7159144031)                                 | 46.51km                               | 620m                               |
-| [Westport to Plattsburgh](https://www.strava.com/activities/7165283112)                                 | 77.96km                               | 841m                               |
-| [Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364) | 84.16km                               | 198m                               |
-| [Saint Jean-sur-Richelieu to Montreal](https://www.strava.com/activities/7175123103)                    | 53.83km                               | 131m                               |
+| Leg                                                                                                     | Distance                                | Elevation Gain                      |
+| :------------------------------------------------------------------------------------------------------ | :-------------------------------------- | :---------------------------------- |
+| [Manhattan to Ardsley](https://www.strava.com/activities/7115492001)                                    | <span class="distance">44.52 km</span>  | <span class="distance">196 m</span> |
+| [Ardsley to Brewster](https://www.strava.com/activities/7121387383)                                     | <span class="distance">68.89 km</span>  | 475 m                               |
+| [Brewster to Poughkeepsie](https://www.strava.com/activities/7126394083)                                | <span class="distance">67.12 km</span>  | 238 m                               |
+| [Poughkeepsie to Kingston](https://www.strava.com/activities/7132011514)                                | <span class="distance">45.63 km</span>  | 181 m                               |
+| [Kingston to Hudson](https://www.strava.com/activities/7136560114)                                      | <span class="distance">61.83 km</span>  | 576 m                               |
+| [Hudson to Albany](https://www.strava.com/activities/7142807965)                                        | <span class="distance">68.34 km</span>  | 497 m                               |
+| [Albany to Schuylerville](https://www.strava.com/activities/7148631579)                                 | <span class="distance">65.99 km</span>  | 202 m                               |
+| [Schuylerville to Ticonderoga](https://www.strava.com/activities/7153547176)                            | <span class="distance">105.54 km</span> | 963 m                               |
+| [Ticonderoga to Westport](https://www.strava.com/activities/7159144031)                                 | <span class="distance">46.51 km</span>  | 620 m                               |
+| [Westport to Plattsburgh](https://www.strava.com/activities/7165283112)                                 | <span class="distance">77.96 km</span>  | 841 m                               |
+| [Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364) | <span class="distance">84.16 km</span>  | 198 m                               |
+| [Saint Jean-sur-Richelieu to Montreal](https://www.strava.com/activities/7175123103)                    | <span class="distance">53.83 km</span>  | 131 m                               |
 
 ### Getting out of the city
 
