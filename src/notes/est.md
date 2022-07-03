@@ -45,7 +45,7 @@ Figure out how many miles you and your entourage can (or want to) comfortably ri
 Make bookings at least a few days ahead (particularly for weekends) so you can adjust your upcoming milage if necessary.
 Ideally these bookings are refundable so you have more flexibility.
 
-Our (comfort) cadence ended up being around <span class="distance inline">40 to 60 miles</span> per day.
+Our (comfort) cadence ended up being around <span class="distance inline">70 to 100 km</span> per day.
 That looked like riding from 9:30am to about 3:30pm with plenty of breaks.
 Geography permitting, we would alternate the longer days with shorter ones.
 
@@ -59,7 +59,7 @@ The remaining one was expensive.
 
 Practice in your full kit and fully-laden bike before the trip.
 
-Get at least one <span class="distance inline">30 mile</span> ride in or—even better—an overnighter or two.
+Get at least one <span class="distance inline">50 km</span> ride in or—even better—an overnighter or two.
 You might discover parts of your bike (or body) that need adjusting.
 It's much better to get injured or experience mechanical issues whilst at home than when on the road, miles from the closest bike shop or hospital.
 
@@ -135,3 +135,7 @@ I found these resources helpful during the planning phase of the trip:
 Once we were on the trail we followed an offline copy of my [RWGPS route](https://ridewithgps.com/routes/39225143) and heeded advice from locals.
 
 Oh, and you should grab a free physical copy of the trail map from the official site’s [Request a Map page](https://empiretrail.ny.gov/request-map).
+
+## Birds
+For the twitchers out there: if there were a bird mascot for the trail it would be the [Red-Winged Blackbird](https://www.audubon.org/field-guide/bird/red-winged-blackbird).
+It was the only one we saw all the way up.
