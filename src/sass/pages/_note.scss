@@ -100,6 +100,16 @@
         list-style-type: decimal;
       }
 
+      // Images
+      img {
+        // https://sia.codes/posts/eleventy-and-cloudinary-images/
+        // Relies on width and height being passed into the <img> tag so an aspect ratio can be deduced
+        max-width: 100%;
+        height: auto;
+        // Other styling
+        margin: var(--spacing-sm) 0;
+      }
+
       // Blockquotes
       // Based on:
       // https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#aa-hey-what-about-the-figure-element

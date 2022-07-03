@@ -6,6 +6,8 @@ const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAnchor = require("markdown-it-anchor");
 const slugify = require("slugify");
+// Shortcodes
+const { srcset, src } = require("./src/helpers/shortcodes");
 
 module.exports = function (config) {
     // Copy folders into output directory
@@ -117,6 +119,10 @@ module.exports = function (config) {
     // Year shortcode for copyright date(s)
     // https://11ty.rocks/eleventyjs/dates/#year-shortcode
     config.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+    // Image shortcodes from helpers/shortcodes.js
+    config.addShortcode("src", src);
+    config.addShortcode("srcset", srcset);
 
     // Minify HTML and some other things
     config.addTransform("htmlmin", function (content, outputPath) {
