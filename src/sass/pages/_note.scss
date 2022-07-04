@@ -1,15 +1,16 @@
 .note {
   article {
-    display: grid;
-
-    // flex-direction: column;
+    // display: grid;
+    display: flex;
+    flex-direction: column;
     gap: var(--grid-gap-main);
-    // max-width: fit-content;
-    // margin: 0 auto;
 
     @media (min-width: 1024px) {
+      max-width: fit-content;
+      margin: 0 auto;
+      align-items: center;
       // Match grid and gap from site-wide grid
-      grid-template-columns: var(--grid-template-cols-main);
+      // grid-template-columns: var(--grid-template-cols-main);
     }
 
     header {
@@ -17,18 +18,24 @@
       border-bottom: var(--stroke-thin) solid var(--color-border-primary);
 
       @media (min-width: 1024px) {
+        text-align: center;
         border-bottom: none;
-        grid-column: span 6;
+        margin-top: var(--spacing-lg);
+        // grid-column: span 6;
       }
 
-      @media (min-width: 2190px) {
-        grid-column: span 3;
-      }
+      // @media (min-width: 2190px) {
+      //   grid-column: span 3;
+      // }
 
       h1 {
         margin-bottom: var(--spacing-sm);
         // Keep line widths legible
-        max-width: 14ch;
+        max-width: 24ch;
+
+        @media (min-width: 1024px) {
+          // max-width: initial;
+        }
       }
 
       time {
@@ -39,19 +46,18 @@
 
     .article-content {
       // Layout
+      max-width: 720px;
+      // Dividers
       hr {
         display: block;
         border-bottom: 1px solid var(--color-border-secondary);
-        margin-top: var(--spacing-lg);
-      }
-
-      h2 {
-        margin-bottom: 0.85rem;
+        margin: var(--spacing-lg) 0;
       }
 
       // Headings
       h2 {
         margin-top: 4rem;
+        margin-bottom: 0.85rem;
 
         @media (min-width: 1024px) {
           margin-top: 6rem;
@@ -175,7 +181,7 @@
 
       // Media queries
       @media (min-width: 1024px) {
-        grid-column: span 6;
+        // grid-column: span 6;
         margin-bottom: var(--spacing-lg);
 
         // max-width: fit-content;
@@ -189,13 +195,13 @@
         }
       }
 
-      @media (min-width: 1536px) {
-        grid-column: span 5;
-      }
+      // @media (min-width: 1536px) {
+      //   grid-column: span 5;
+      // }
 
-      @media (min-width: 2190px) {
-        grid-column: 5 / 9;
-      }
+      // @media (min-width: 2190px) {
+      //   grid-column: 5 / 9;
+      // }
     }
 
     // Style the '#' anchor
