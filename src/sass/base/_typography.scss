@@ -99,6 +99,7 @@ p > a {
   text-decoration: underline;
   // Sit a little lower
   text-underline-offset: 1.5px;
+  text-decoration-color: var(--color-border-secondary);
 }
 
 .article-content a, // TODO: Should this go instead in note.scss?
@@ -141,7 +142,8 @@ em {
 // Headings
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 600;
   letter-spacing: var(--letter-spacing-tight);
 }
@@ -167,7 +169,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 18px;
   line-height: var(--line-height-tight);
+  margin-bottom: 0.25rem;
 }

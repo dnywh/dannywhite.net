@@ -232,6 +232,7 @@
           display: flex;
           // Take full width of container
           flex: 1;
+
           a {
             padding: var(--spacing-sm);
             width: 100%;
@@ -243,6 +244,11 @@
 
             @media (min-width: 1024px) {
               gap: var(--spacing-xs);
+            }
+
+            h4 {
+              font-size: 1rem;
+              font-weight: 500;
             }
           }
 

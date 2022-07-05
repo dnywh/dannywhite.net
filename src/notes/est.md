@@ -1,29 +1,36 @@
 ---
 title: "Riding the Empire State Trail: New York City to Montreal"
 description: "My brother Lukas and I recently rode the Empire State Trail from Manhattan to Rouses Point and continued on to Montreal, Canada. Here’s a recap and advice for folks planning a similar trip."
-date: 2022-06-29
+date: 2022-07-05
 custTags:
 	- Ride
 # draft: true
 ---
 
-My brother Lukas and I recently rode the Empire State Trail from Manhattan to Rouses Point and continued on to Montreal, Canada. Here’s a recap and advice for folks planning a similar trip.
+We recently rode the Empire State Trail from Manhattan to Rouses Point and continued on to Montreal, Canada. The trip took 11 days at a relaxed riding pace.
+What follows is some advice and a route recap for folks planning a similar trip.
 
-You can find my pre-ride Ride With GPS (RWGPS) routes [here](https://ridewithgps.com/collections/45795?privacy_code=FQSqiW1RcXuLBATK) and Strava logs [here](#our-route-in-detail).
+You can find my pre-ride Ride With GPS route collection [here](https://ridewithgps.com/collections/45795?privacy_code=FQSqiW1RcXuLBATK) and links to my Strava ride logs [below](#our-route-in-detail).
+
+<figure>
+<img src="/assets/images/est/myles-towners.jpeg"
+alt="TODO">
+<figcaption>Myles riding near Towners.</figcaption>
+</figure>
 
 ## Advice
 
-Here's the bare minimum of what I wish I knew before leaving:
+Here's what I wish I knew before leaving:
 
 1. Go after Memorial Day
 2. Know your daily cadence
 3. Warm up before the trip
 4. Pack utensils
 
-### 1. Go after Memorial Day
+### Go after Memorial Day
 
 Consider your timing and plan accordingly.
-Know that—unless you're in a big town—things are generally shut until Memorial Day (late May). From what I hear, things stay open until at least Labor Day (early September), maybe even Thanksgiving (late November).
+Know that stores and restaurants in small towns can be shut until Memorial Day (late May). From what I hear, things stay open until at least Labor Day (early September), maybe even Thanksgiving (late November).
 
 If I could do it over, I'd plan to leave New York City a day or two before Memorial Day so I hit the small towns _just_ as they open.
 It gets hot and crowded later in June when school breaks up.
@@ -33,9 +40,7 @@ That meant we would sometimes struggle to find places to eat or stock up on groc
 It also limited our range.
 For example, we might have taken a ferry to Vermont had we been on the road a few weeks later when that route opened.
 
-### 2. Know your daily cadence
-
-So you can book ahead.
+### Know your daily cadence
 
 You will likely find yourselves travelling over a weekend, in nice weather, in sparsely populated areas.
 Oh, with a big backlog of post-COVID weddings and local show-stoppers like paper mill closures (seriously).
@@ -55,7 +60,7 @@ Google Maps also tends to stick to the Empire State Trail route, for quick calcu
 We didn't figure out our cadence until a few days into the trip and got stung on a Saturday arrival in Hudson, NY where hotels were booked up.
 The remaining one was expensive.
 
-### 3. Warm up before the trip
+### Warm up before the trip
 
 Practice in your full kit and fully-laden bike before the trip.
 
@@ -67,7 +72,7 @@ I accidentally bled my hydraulic brakes when replacing brake pads but did this a
 
 Lukas wrecked his Achilles by the end of the trip because he was using new cleats and a slightly different saddle height.
 
-### 4. Pack utensils
+### Pack utensils
 
 Every hotel breakfast, cafe, diner, and even restaurant outside the major cities in the US tend to serve food, drink, and condiments in disposable packaging. Regardless of whether you were dining in or taking out.
 The amount of landfill we produced was shocking.
@@ -104,12 +109,103 @@ Note that we pushed on to Montreal.
 
 ### Getting out of the city
 
-We left Battery Park on a Monday morning with a group of friends.
+#### Manhattan to Ardsley
+
+Five of us left The Battery Park [starting point](https://goo.gl/maps/J83fTqYqjVKPQ9oR6) on a Monday morning.
+The ride out of the city is briefly difficult between Inwood and the Bronx or, in other words, on the streets between the Hudson River Greenway and Van Cortlandt Park.
+
+<figure>
+<img src="/assets/images/est/chauncey.jpeg"
+alt=“TODO”>
+<figcaption>Closing in on Ardsley. This is what the trail looks like after The Bronx.</figcaption>
+</figure>
+
+The scenery is beautiful from here on out.
+
+From here on for the **entirety of the trail** I don’t think we made a wrong turn or felt lost.
+The signage for the Empire State Trail is incredible. Just when I felt “hang on, are we going the right way?” creep in my head, I’d see another sign.
 
 We stopped loading the GPX file on to Lukas’ Garmin after a few days because the trail is so well signposted.
-Having a downloaded copy of [the overall RWPGS route](/#) was enough if we ever found ourselves off-course.
+Having an offline copy of my [Ride With GPS route](https://ridewithgps.com/routes/39225143) on our phones was good enough if we ever wanted to check.
 
-<!-- <div class='strava-embed-placeholder' data-embed-type='activity' data-embed-id='7170605364'></div><script src='https://strava-embeds.com/embed.js'></script> -->
+We spent our first night at a motel in Ardsley.
+I chose it because it was a modest distance for our first day (buffering for warming up, flats, and latecomers) and just off the Empire State Trail.
+I’d pick somewhere further down next time. Ardsley is still too close to the city and an awkward town for walking for food.
+
+<div class="two-up">
+<figure class="portrait">
+<img src="/assets/images/est/hotel-bagel.jpeg"
+alt="TODO">
+<figcaption>What you have to look forward to at a hotel breakfast.</figcaption>
+</figure>
+<figure class="landscape">
+<img src="/assets/images/est/commute.jpeg"
+alt="TODO">
+<figcaption>The commute from motel car park to trail entry.</figcaption>
+</figure>
+</div>
+
+#### Ardsley to Brewster
+
+The next day we rode 42.8 miles to Brewster all along the N Country Trailway.
+
+Had I followed my own advice to ‘know your daily cadence’ I would have pushed on and stayed somewhere more walkable.
+The hotel was beautiful but in a bicycle ‘deadzone’.
+
+#### Brewster to Poughkeepsie
+
+This day’s ride was beautiful. Marshy. Dutchess Rail Trail.
+
+Pop into Hopewell Junction for a sandwich.
+
+Poughkeepsie is a weird town. Not much to see here.
+
+Hop on your bike (or grab a cab like we did) to see FDR’s presidential library.
+
+#### Poughkeepsie to Kingston
+
+Take your time crossing the bridge.
+
+Stop into New Paltz for a sandwich and smoothie at X.
+
+A bit of compacted gravel around New Paltz. Leaving New Paltz felt like leaving the city in some ways.
+Very beautiful ride.
+Cold air pockets that felt like air conditioning but was just an abandoned mine with leftover frost.
+Bridges in the middle of nowhere.
+
+Kingston is a nice little town.
+
+Hotel with arcade through the window.
+
+#### Kingston to Hudson
+
+We said goodbye to Myles.
+
+Bard.
+
+On the open road.
+
+Cows. Black bears.
+
+Did I say beautiful?
+
+This is the night we got stung by not heading my ‘know your daily cadence’ advice once more: we had to stay somewhere expensive.
+
+As a former New Yorker I can say with confidence that Hudson is the furtherst out you will experience a sense of Brooklyn. People will still come this far for a long weekend. Nice town none the less.
+
+#### Hudson to Albany
+
+It just keeps getting more beautiful.
+On roads again, surrounded by farmland.
+Sometimes gravel.
+
+Back on rail trail.
+
+Tacos.
+
+Albany sucks.
+
+Motel 6. Mistake.
 
 ### Getting in to Albany
 
@@ -137,5 +233,6 @@ Once we were on the trail we followed an offline copy of my [RWGPS route](https:
 Oh, and you should grab a free physical copy of the trail map from the official site’s [Request a Map page](https://empiretrail.ny.gov/request-map).
 
 ## Birds
+
 For the twitchers out there: if there were a bird mascot for the trail it would be the [Red-Winged Blackbird](https://www.audubon.org/field-guide/bird/red-winged-blackbird).
 It was the only one we saw all the way up.
