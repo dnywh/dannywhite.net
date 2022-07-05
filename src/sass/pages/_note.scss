@@ -107,8 +107,17 @@
         list-style-type: decimal;
       }
 
+      // Images
+      // Image wrappers
+      .two-up {
+        @media (min-width: 1024px) {
+          display: flex;
+          gap: var(--grid-gap-main);
+        }
+      }
+
       figure {
-        margin: var(--spacing-sm) 0;
+        margin: var(--spacing-md) 0;
 
         figcaption {
           color: var(--color-text-secondary);
@@ -119,27 +128,6 @@
         }
       }
 
-      .two-up {
-        display: grid;
-
-        @media (min-width: 1024px) {
-          grid-template-columns: var(--grid-template-cols-main);
-          gap: var(--grid-gap-main);
-          figure {
-            grid-row: 1;
-
-            &.portrait {
-              grid-column: span 4;
-            }
-
-            &.landscape {
-              grid-column: span 8;
-            }
-          }
-        }
-      }
-
-      // Images
       img {
         // https://sia.codes/posts/eleventy-and-cloudinary-images/
         // Relies on width and height being passed into the <img> tag so an aspect ratio can be deduced

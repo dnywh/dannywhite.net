@@ -128,21 +128,34 @@ The signage for the Empire State Trail is incredible. Just when I felt “hang o
 We stopped loading the GPX file on to Lukas’ Garmin after a few days because the trail is so well signposted.
 Having an offline copy of my [Ride With GPS route](https://ridewithgps.com/routes/39225143) on our phones was good enough if we ever wanted to check.
 
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/first-day-beers.jpeg"
+    alt="TODO">
+    <figcaption>First day beers.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/est/brompton-test.jpeg"
+    alt="TODO">
+    <figcaption>Test riding Fisher's Brompton (which could have easily done the whole trail).</figcaption>
+  </figure>
+</div>
+
 We spent our first night at a motel in Ardsley.
 I chose it because it was a modest distance for our first day (buffering for warming up, flats, and latecomers) and just off the Empire State Trail.
 I’d pick somewhere further down next time. Ardsley is still too close to the city and an awkward town for walking for food.
 
 <div class="two-up">
-<figure class="portrait">
-<img src="/assets/images/est/hotel-bagel.jpeg"
-alt="TODO">
-<figcaption>What you have to look forward to at a hotel breakfast.</figcaption>
-</figure>
-<figure class="landscape">
-<img src="/assets/images/est/commute.jpeg"
-alt="TODO">
-<figcaption>The commute from motel car park to trail entry.</figcaption>
-</figure>
+  <figure>
+    <img src="/assets/images/est/hotel-bagel.jpeg"
+    alt="TODO">
+    <figcaption>What you have to look forward to at a hotel breakfast.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/est/commute.jpeg"
+    alt="TODO">
+    <figcaption>The commute from motel car park to trail entry.</figcaption>
+  </figure>
 </div>
 
 #### Ardsley to Brewster
