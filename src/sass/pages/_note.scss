@@ -112,18 +112,25 @@
       .two-up {
         @media (min-width: 1024px) {
           display: flex;
-          gap: var(--grid-gap-main);
+          gap: calc(var(--grid-gap-main) / 2);
         }
       }
 
       figure {
         margin: var(--spacing-md) 0;
+        // Set as flex so figcaption can be aligned to right
+        display: flex;
+        flex-direction: column;
+        align-items: end;
 
         figcaption {
           color: var(--color-text-secondary);
           font-size: var(--font-size-sm);
           text-align: right;
           max-width: 640px; // TODO variable the same as text width
+          margin-left: calc(
+            var(--grid-gap-main) / 2
+          ); // Visual padding for caption
           margin-top: 1rem;
         }
       }
@@ -208,11 +215,11 @@
         // justify-self: end;
 
         // Keep line widths legible
-        > p,
-        ul,
-        li {
-          max-width: 64ch;
-        }
+        // > p,
+        // ul,
+        // li {
+        //   max-width: 64ch;
+        // }
       }
 
       // @media (min-width: 1536px) {
