@@ -2,9 +2,9 @@
 title: "Riding the Empire State Trail: New York City to Montréal"
 description: "My brother Lukas and I recently rode the Empire State Trail from Manhattan to Rouses Point and continued on to Montréal, Canada. Here’s a recap and advice for folks planning a similar trip."
 date: 2022-07-05
-custTags:
+tags:
 	- Ride
-# draft: true
+# eleventyExcludeFromCollections: true
 ---
 
 We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. The trip took 11 days at a relaxed riding pace.

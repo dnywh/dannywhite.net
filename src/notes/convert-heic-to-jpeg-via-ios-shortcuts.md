@@ -2,7 +2,7 @@
 title: Convert HEIC to JPEG via iOS Shortcuts
 date: 2021-05-27
 description: I like HEIC as the default iOS image format but occasionally want to export a JPEG. Here's a shortcut for that.
-custTags:
+tags:
   - iOS
   - macos
   - shortcut

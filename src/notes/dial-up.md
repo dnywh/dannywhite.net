@@ -4,10 +4,10 @@ date: 2021-05-14
 description: How much are we losing from this presentation switch? I'd argue a fair bit. Particularly when it comes to affordances.
 featured_image: troopy-speedometer.jpg
 twitter_card_type: summary_large_image
-custTags:
+tags:
   - Process
   - Design
-draft: true
+eleventyExcludeFromCollections: true
 ---
 
 Campsites in bushfire-prone Western Australia often have this sign at their entrance:

@@ -16,7 +16,7 @@
     <link>{{ metadata.url }}</link>
     <description>{{ site.subtitle }}</description>
     <language>en</language>
-    {%- for post in collections.blog | reverse %}
+    {%- for post in collections.note | reverse %}
         {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
         <item>
             <title>{{ post.data.title }}</title>

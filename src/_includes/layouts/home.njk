@@ -30,17 +30,17 @@
       </div>
       <div class="x-scroll-wrapper">
       <ul>
-      {% for note in collections.blog | reverse %}
+      {% for item in collections.note | reverse %}
       {# Limit to three items #}
        {% if loop.index0 < 3 %} 
       <li>
-      {% if note.data.draft %} 
+      {% if item.data.draft %} 
         <a href="#/">
         {% else %}
-        <a href="{{ note.url }}">
+        <a href="{{ item.url }}">
         {% endif %}
-          <h3>{{ note.data.title }}</h3>
-          <h4>{{ note.data.custTags[0] }}</h4>
+          <h3>{{ item.data.title }}</h3>
+          <h4>{{ item.data.tags[1] }}</h4>
         </a>
       </li>
       {% endif %}

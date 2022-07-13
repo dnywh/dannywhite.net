@@ -3,7 +3,7 @@ title: Launching Origami
 date: 2016-11-01
 featured_image: facebook-ny.jpg
 twitter_card_type: summary_large_image
-draft: true
+eleventyExcludeFromCollections: true
 ---
 
 I've been fortunate enough to have been working with the Origami team at Facebook for the last six months or so. Without going into too much detail, our NYC launch last night was a super proud moment for myself and the team.

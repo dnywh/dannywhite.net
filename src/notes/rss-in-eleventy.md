@@ -1,13 +1,13 @@
 ---
 title: The missing guide to RSS in Eleventy
 date: 2022-06-24
-custTags:
+tags:
   - Eleventy
   - RSS
   - Web
 ---
 
-There are [plenty](https://bnijenhuis.nl/notes/2021-04-07-creating-a-feed-in-eleventy/) [of](https://learneleventyfromscratch.com/lesson/17.html) [guides](https://obsolete29.com/posts/2020/12/31/rss-a-love-letter-and-walkthrough-for-my-eleventy-site/) for adding an [RSS feed](https://www.11ty.dev/docs/plugins/rss/) to your Eleventy site.
+There are [plenty](https://bnijenhuis.nl/notes/2021-04-07-creating-a-feed-in-eleventy/) [of](https://learneleventyfromscratch.com/lesson/17.html) [guides](https://obsolete29.com/posts/2020/12/31/rss-a-love-letter-and-walkthrough-for-my-eleventy-site/) on adding an [RSS feed](https://www.11ty.dev/docs/plugins/rss/) to your Eleventy site.
 This little post covers two extracurricular points that are often missing from those guides.
 
 ## Subscribe from anywhere

@@ -1,7 +1,7 @@
 ---
 title: "On Deck: June 2022"
 date: 2022-06-30
-custTags:
+tags:
   - Monthly
 ---
 
@@ -28,16 +28,16 @@ A lot of other folks’ criticism seems to be about Gates’ billionaire persona
 
 The most intangible parts are the not-yet-achieved innovations we need to make, say, zero-carbon cement a reality and with a low enough Green Premium for governments and industry to switch to. Yet all of these technological challenges are addressed, explained simply, and primed for action.
 
-
 ### [Why Waste Food by Andrew F. Smith](https://literal.club/danny/book/andrew-f-smith-why-waste-food-oi3on)
 
 A little book that does well to break down a big issue. Food waste is divided into two overarching categories: production and consumption waste, which are further divided into six subcategories (e.g. farmed waste, restaurant waste, consumer waste).
 
 This book balances density with accessibility. Chapters necessarily touch on macroeconomics and chemistry but I never felt too out of depth. The constant mention of commercial and government applications was helpful. My only gripe is that some of these (restaurant, scheme, startup) examples are already out of date since the book’s publication only two years ago.
 
-
 ## Podcasts
+
 ### [Dr. Ayana Elizabeth Johnson Helps You Find Your Climate Superpower](https://open.spotify.com/episode/0dMgoqHF6HuLdx71S4rkVr?si=p_57mGIPQ0-WgCzpwMgZWA&context=spotify%3Ashow%3A1KzrasExlM5dgMYwgFHns6)
+
 A recent episode of Gimlet’s [How to Save a Planet](https://open.spotify.com/show/1KzrasExlM5dgMYwgFHns6?si=4a642925f0414b46) podcast that wraps Ayana’s recent [TED Talk](https://www.ted.com/talks/ayana_elizabeth_johnson_how_to_find_joy_in_climate_action). It has a eye-roll-ey title but stick with it.
 
 <figure class="quote">
@@ -57,7 +57,6 @@ My favourite piece of advice is doing the Venn diagram exercise, where you’re 
 
 That intersection is where you should put your climate action effort.
 
-
 ## Articles
 
 ### [Writing One Sentence Per Line](https://sive.rs/1s)
@@ -76,15 +75,14 @@ One of the few suggestions that became part of my writing practice soon after re
 As mentioned further down in Derek’s blog post, Markdown (in most configurations) cleans up line breaks automatically. That means you can publish straight from this writing method without needing to do any cleanup.
 
 ### [Touch Screens in Cars Solve a Problem We Didn’t Have](https://www.nytimes.com/2022/05/23/opinion/touch-screens-cars.html)
-Tactility is king. I dream of a [bubble](https://www.youtube.com/watch?v=gGA5ypnhMTg) [future](https://www.vox.com/2015/2/12/11558964/the-phorm-keyboard-bubbles-up-when-you-need-it-disappears-when-you).
 
+Tactility is king. I dream of a [bubble](https://www.youtube.com/watch?v=gGA5ypnhMTg) [future](https://www.vox.com/2015/2/12/11558964/the-phorm-keyboard-bubbles-up-when-you-need-it-disappears-when-you).
 
 ## Film
 
 ### [Prehistoric Planet](https://tv.apple.com/au/show/prehistoric-planet/umc.cmc.4lh4bmztauvkooqz400akxav)
 
 One of those “holy shit I can’t believe this is CGI” experiences made all the more real (and unsettling) with David Attenborough’s narration.
-
 
 ## Tools
 

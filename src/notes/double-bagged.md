@@ -1,7 +1,7 @@
 ---
 title: Double Bagged
 date: 2022-07-03
-custTags:
+tags:
   - Sustainability
   - Circular Design
   - Circular Economy
