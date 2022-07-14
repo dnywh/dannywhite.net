@@ -1,7 +1,7 @@
 ---
 title: "Riding the Empire State Trail: New York City to Montréal"
 description: "We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. Here’s some advice and a route recap for folks planning a similar trip."
-date: 2022-07-13
+date: 2022-07-15
 tags:
 	- Ride
 ---
@@ -177,7 +177,7 @@ The inn was beautiful but in a deadzone for non-drivers like us.
 
 ### Brewster to Poughkeepsie
 
-Riding long distances was already getting easy by the third day, where we rode <span class="distance inline">67.12 km</span> to Poughkeepsie.
+Riding long distances was already getting easy by the third day in which we rode <span class="distance inline">67.12 km</span> to Poughkeepsie.
 
 <figure>
   <img src="/assets/images/est/myles-towners.jpeg"
@@ -299,22 +299,57 @@ I think you could do it on any bicycle.
 
 <span class="distance inline">65.99 km</span>
 
-The entire trail until now has been tame.
-It could be done easily with most bicycles, but not for much further...
+Crossed paths with where our Empire State Trail route connects to the Erie Canalway Trail.
 
-Things started getting tough after Albany.
-But more rewarding also.
+Then along the Old Champlain Canal Trail before meeting up with the shared Hudson River Road until Schuylerville.
+Our longest continous stretch of shared road, which would become the norm for the rest of the Empire State Trail going north.
 
-Elevation-wise, terrain, and in terms of road safety. This is where I think you’d need at least 28mm tyres. I rode 43mm gravel tyres and was thankful or it.
-And you also need a solid level of fitness to get through tese never-ending hills.
-
-We stayed in a shipping container.
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/turtle-rescue.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/shipping-container.jpeg"
+    alt="TODO">
+    <figcaption>Shipping container accommodation.</figcaption>
+  </figure>
+</div>
 
 ### Schuylerville to Ticonderoga
 
 <span class="distance inline">105.54 km</span>
 
-We swam in Lake Champlain.
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/obstruction.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/schuylerville-bridge.jpeg"
+    alt="TODO">
+    <figcaption>TODO.</figcaption>
+  </figure>
+</div>
+
+The entire trail until now has been tame.
+It could be done easily with most bicycles, but not for much further...
+
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/state-route-22.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/black-point.jpeg"
+    alt="TODO">
+    <figcaption>Never-ending hills coming in to Ticonderoga followed by icey swim in Lake George.</figcaption>
+  </figure>
+</div>
+
+Things started getting tough after Whitehall.
+Elevation-wise, terrain, and in terms of road safety. This is where I think you’d need at least 28mm tyres. I rode 43mm gravel tyres and was thankful for it.
+And you also need a solid level of fitness to get through tese never-ending hills.
 
 ### Ticonderoga to Westport
 
