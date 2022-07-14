@@ -1,19 +1,18 @@
 ---
 title: "Riding the Empire State Trail: New York City to Montréal"
-description: "My brother Lukas and I recently rode the Empire State Trail from Manhattan to Rouses Point and continued on to Montréal, Canada. Here’s a recap and advice for folks planning a similar trip."
-date: 2022-07-05
+description: "We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. Here’s some advice and a route recap for folks planning a similar trip."
+date: 2022-07-13
 tags:
 	- Ride
-# eleventyExcludeFromCollections: true
 ---
 
 We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. The trip took 11 days at a relaxed riding pace.
 What follows is some advice and a route recap aimed at folks planning a similar trip.
 
 <figure>
-<img src="/assets/images/est/myles-towners.jpeg"
-alt="TODO">
-<figcaption>Heading from Brewster to Poughkeepsie. Weather and scenery par for the course.</figcaption>
+  <img src="/assets/images/est/myles-towners.jpeg"
+  alt="TODO">
+  <figcaption>Heading from Brewster to Poughkeepsie via the Maybrook Trailway. Weather and scenery par for the course.</figcaption>
 </figure>
 
 If you're just looking for an answer to "should I do the Empire State Trail?" I say yes.
@@ -32,34 +31,34 @@ Here's what I wish I knew before leaving:
 ### Go after Memorial Day
 
 Consider your timing and plan accordingly.
-Know that stores and restaurants in small towns can be shut until Memorial Day (late May). From what I hear, things stay open until at least Labor Day (early September).
-Maybe even Thanksgiving (late November).
+Know that stores and restaurants in small towns can be shut until Memorial Day (late May). From what I hear, they stay open until at least Labor Day (early September), maybe even to Thanksgiving (late November).
 
-If I could do it over, I'd plan to leave New York City a day or two before Memorial Day so I hit the small towns _just_ as they open.
+If I could do it over, I'd plan to leave New York City a day or two before Memorial Day so we hit the small towns _just_ as they open.
 It gets hot and crowded later in June when school breaks up.
 
 We went in early May which turned out to be earlier than most towns were open for season.
 That meant we would sometimes struggle to find places to eat or stock up on groceries.
 It also limited our range.
-For example, we might have taken a ferry to Vermont had we been on the road a few weeks later when that route opened.
+For example: we could have taken a ferry and explored Vermont had we been on the road a few weeks later when that route opened.
 
 ### Know your daily cadence
 
 You will likely find yourselves travelling over a weekend, in nice weather, in sparsely populated areas.
-Oh, with a big backlog of post-COVID weddings and local show-stoppers like paper mill closures (seriously).
-That means accommodation may become sparse.
+Oh, with a big backlog of post-COVID weddings and local events like paper mill closures.
+Seriously.
+All that means accommodation may become sparse.
 
 Figure out how many miles you and your entourage can (or want to) comfortably ride per day and calculate which towns you'll want to stay in.
-Make bookings at least a few days ahead (particularly for weekends) so you can adjust your upcoming milage if necessary.
+Make bookings at least a few days ahead—particularly for weekends—so you can adjust your upcoming milage if necessary.
 Try to make refundable bookings so you have more flexibility.
 
 Our (comfort) cadence ended up being around <span class="distance inline">70 to 100 km</span> per day.
-That looked like riding from 9:30am to about 3:30pm with plenty of breaks.
-Geography and availability permitting, we would alternate the longer days with shorter ones.
+That looked like riding from 9:30am to about 3:30pm with plenty of breaks in between.
+We alternated the longer days with shorter ones when geography and hotel availability allowed for it.
 
 Keep in mind that cadence will be affected by elevation.
-That is a serious factor once you pass Albany and enter the Adirondacks. Use my [Ride With GPS route](https://ridewithgps.com/routes/39225143) to plan both the distances and elevation gain for each leg.
-Google Maps is great for quick calculations as it tends to stick to the Empire State Trail route.
+That is a serious factor once you pass Albany and enter the Adirondacks. You can reference my [Ride With GPS route](https://ridewithgps.com/routes/39225143) to plan both the distances and elevation gain for each leg.
+Google Maps is surprisingly good for this too as it tends to stick to the Empire State Trail route.
 
 We didn't figure out our cadence until a few days into the trip and got stung on a Saturday arrival in Hudson, NY where hotels were almost booked up.
 The remaining one or two were widly expensive.
@@ -72,25 +71,25 @@ Get at least one <span class="distance inline">50 km</span> ride in or—even be
 You might discover parts of your bike (or body) that need adjusting.
 It's much better to get injured or experience mechanical issues whilst at home than when on the road, miles from the closest bike shop or hospital.
 
-I accidentally bled my hydraulic brakes when replacing brake pads but thankfully did this a few weeks prior to the trip. I was able to both get the fluid refilled and have another skill added to my bicycle mechanic repertoire from the comfort of home.
+I accidentally bled my hydraulic brakes when replacing brake pads.
+Luckily this happened a few weeks prior to the trip, where I was able to both get the fluid refilled and have another skill added to my bicycle mechanic repertoire from the comfort of home.
 
-Lukas wrecked his Achilles by the end of the trip because he used a slightly different saddle height and cleats he hadn't ridden long distances in for a while.
+Lukas wrecked his Achilles during the ride because he used a slightly different saddle height and wore cleats he hadn't used for a while. We were well on the way so he had to push on.
 
 ### Pack utensils
 
 Many hotel breakfasts, cafes, diners, and even restaurants outside the major cities in the US serve food, drink, and condiments in disposable packaging.
-The amount of landfill we produced was shocking.
+The trail of landfill we produced was shocking.
 
 The metal cutlery and a KeepCup I brought along avoided some waste and came in handy for the occasional roadside grapefruit.
-A camp-grade plate and bowl would have completed the package and avoided a lot more waste.
+A camp-grade plate and bowl would have completed the package and avoided a lot more of our waste.
 
 ---
 
 ## Our route in detail
 
-We did the _Hudson Valley Greenway_ to _Champlain Valley Trail_ parts of the Empire State Trail and part of the Canadian _La Route Verte_ to Montréal.
+We did the _Hudson Valley Greenway_ to _Champlain Valley Trail_ parts of the Empire State Trail and some of the Canadian _La Route Verte_ to Montréal.
 We didn't do the _Erie Canalway Trail_ and we did not camp.
-
 We stayed at hotels that struck a balance between affordability and proximity to the trail.
 Think _Motel 6_, _Holiday Inn Express_, and the like.
 
@@ -141,23 +140,21 @@ We stopped loading the GPX file on to Lukas’ Garmin after a few days and inste
   <figure>
     <img src="/assets/images/est/brompton-test.jpeg"
     alt="TODO">
-    <figcaption>Test riding Fisher's Brompton (which would have easily handled the entire trail).</figcaption>
   </figure>
 </div>
 
 We spent our first night at a motel in Ardsley.
-I chose Ardsley because <span class="distance inline">44.52 km</span> seemed like a modest distance for our first day (buffering for warming up, flats, and latecomers).
+I chose Ardsley because <span class="distance inline">44.52 km</span> seemed like a modest distance for our first day (buffering some time to warm up, repair flats, and wait for latecomers).
 The motel was also just off the trail's path.
 
 If I could do the trip over I'd pick somewhere further up.
 Ardsley was too short of a ride and an awkward town for walking around in.
-Riding a bit further in a day to reach a nicer hotel also revealed itself later in the trip to usually be worth the effort.
+Riding a bit further in a day to reach a nicer hotel revealed itself later in the trip to usually be worth the effort.
 
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/hotel-bagel.jpeg"
     alt="TODO">
-    <figcaption>What you have to look forward to at a hotel breakfast.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/commute.jpeg"
@@ -171,7 +168,7 @@ Riding a bit further in a day to reach a nicer hotel also revealed itself later 
 The next day we rode <span class="distance inline">68.89 km</span> to Brewster along the North Country Trailway.
 
 Had I followed my own advice to ‘know your daily cadence’ we would have pushed on and stayed somewhere more walkable for food and supplies.
-The inn was beautiful but in a bicycle ‘deadzone’.
+The inn was beautiful but in a deadzone for non-drivers like us.
 
 <figure>
   <img src="/assets/images/est/heidis-inn.jpeg"
@@ -181,64 +178,103 @@ The inn was beautiful but in a bicycle ‘deadzone’.
 
 <!-- #### Brewster to Poughkeepsie -->
 
-Railroad engineer?
+The distances were already getting easy by the third day, where we rode <span class="distance inline">67.12 km</span> to Poughkeepsie.
+This day’s ride was beautiful as shown in the photo up top.
+Particularly Maybrook Trailway section.
 
-This day’s ride was beautiful as shown in the photo up top. Marshy.
+<figure>
+  <img src="/assets/images/est/myles-towners.jpeg"
+  alt="TODO">
+  <figcaption>So good I had to show it twice.</figcaption>
+</figure>
+
+Maybrook Trailway becomes Dutchess Rail Trail at Hopewell Junction, which was a great spot for lunch.
+We stopped in to Frankie's Superette for a sub.
 
 <figure>
   <img src="/assets/images/est/lunch-subs.jpeg"
   alt="TODO">
-  <figcaption>Pop into Hopewell Junction for a sandwich.</figcaption>
+  <figcaption>Pitstop at Frankie's in Hopewell Junction.</figcaption>
 </figure>
 
-Dutchess Rail Trail.
+The Dutchess Rail Trail section to Poughkeepsie is equally beautiful.
+Poughkeepsie itself is a weird town. Don't stay longer than you need to here.
+
+Hop on your bike (or grab a cab like we did) to see FDR’s presidential library and museum.
+It's about a 15 minute cab drive or 30 minute cycle from downtown Poughkeepsie.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/dutchess-rail-trail-1.jpeg"
+    <img src="/assets/images/est/fdr-museum.jpeg"
     alt="TODO">
+    <figcaption>Checking out the Franklin D. Roosevelt Presidential Library and Museum.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/dutchess-rail-trail-2.jpeg"
+    <img src="/assets/images/est/fdr-bust.jpeg"
     alt="TODO">
-    <figcaption>The signage quality varied by county but was interesting all the way up.</figcaption>
   </figure>
 </div>
 
-Poughkeepsie is a weird town. Not much to see here.
-
-Hop on your bike (or grab a cab like we did) to see FDR’s presidential library.
-
 <!-- #### Poughkeepsie to Kingston -->
 
-Take your time crossing the bridge.
-It's got plenty to see.
+Had a rest day: only <span class="distance inline">45.63 km</span> to Kingston.
+Glad we did, a lot to see on this leg.
 
-Stop into New Paltz for a sandwich and smoothie at X.
+Took our time crossing the Mid-Hudson Bridge after leaving Poughkeepsie.
+Loitered in New Paltz with a sandwich and smoothie from Karma Road.
 
-A bit of compacted gravel around New Paltz. Leaving New Paltz felt like leaving the city in some ways.
+Leaving New Paltz takes you on the Wallkill Valley Rail Trail, which is the first bit of unpaved surface we encountered.
+It's well maintained.
+Compacted gravel.
+
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/wallkill-river.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/after-new-paltz.jpeg"
+    alt="TODO">
+  <figcaption>Coming out of New Paltz on the Wallkill Valley Rail Trail.</figcaption>
+  </figure>
+</div>
+
 Very beautiful ride.
 Cold air pockets that felt like air conditioning but was just an abandoned mine with leftover frost.
-Bridges in the middle of nowhere.
+You round a corner and there's the most picturesque bridge you've ever seen.
 
-Kingston is a nice little town.
+Note that a short section of the trail was under repair about 10 minutes north of Rosendale.
+We walked our bikes through but I'd expect it to be repaired by now.
 
-Hotel with arcade through the window.
+Kingston has a nice historic downtown.
+Do yourself a favour and _don't_ stay at Best Western unless you want your room window to look out into an indoor arcade area.
 
 <!-- #### Kingston to Hudson -->
 
-We said goodbye to Myles.
-He hopped on the train back to NYC.
+We said goodbye to Myles after Kingston.
+He rode to Rhinecliff to catch the Amtrak back to New York City.
+We rode <span class="distance inline">45.63 km</span> to Hudson.
 
-We rode through the Bard College area.
-On the open road yet safe.
+As I write this I keep thinking 'now that was the most beautiful day on the trip'.
+And I'm going to do it again:
+riding through the Bard College area was unbelievably beautiful.
+It was on the open road but safe given the low traffic.
 
-I think this (and early tomorrow) was my favourite day because you had the safety of sparse traffic mixed with being on the open road: being able to see more.
-That's the one downside to rail trails: it can get a bit boring. I want to see the sights, the houses, the mailboxes as I pass.
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/around-bard.jpeg"
+    alt="TODO">
+    <figcaption>Coming up to the Bard College area.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/est/cows.jpeg"
+    alt="TODO">
+  </figure>
+</div>
 
-Cows. Black bears.
-
-Did I say beautiful?
+Being on the open road alos made me realise rail trails—for all their safety—can be a bit boring. You're removed from traffic but also from much of life.
+I want to see the sights, the houses, the mailboxes as I pass.
+We got that today.
 
 Then we rolled into Hudson...
 
@@ -248,8 +284,12 @@ This is the night we got stung by not heading my ‘know your daily cadence’ a
 
 <!-- #### Hudson to Albany -->
 
-Okay, now we felt like we were leaving some psychological barrier.
+Only from here did it feel like were actually leaving New York City.
+
 As a former New Yorker I can say with confidence that Hudson is the furtherst out you will experience a sense of Brooklyn. People will still come this far for a long weekend. Nice town none the less.
+
+<span class="distance inline">68.34 km</span> from Hudson to Albany.
+Back to our usual cadence.
 
 It just keeps getting more beautiful.
 On roads again, surrounded by farmland.
@@ -259,6 +299,18 @@ Back on rail trail.
 
 Tacos.
 Now's the time to set up shop on the trail.
+
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/albany-hudson-electric.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/tacos-diablo.jpeg"
+    alt="TODO">
+    <figcaption>Following the Albany-Hundson Electric Trail. Stopping for Tacos Diablos in Nassau.</figcaption>
+  </figure>
+</div>
 
 Albany sucks.
 Motel 6. Mistake. Too far out of town.
@@ -358,7 +410,7 @@ It also seems like _[La Route Verte](https://www.routeverte.com/en/)_ has some p
 
 I found these resources helpful during the planning phase of the trip:
 
-- [My Ride With GPS (RWGPS) routes](https://ridewithgps.com/collections/45795?privacy_code=FQSqiW1RcXuLBATK)
+- [My Ride With GPS routes](https://ridewithgps.com/collections/45795?privacy_code=FQSqiW1RcXuLBATK)
   - [Empire State Trail](https://ridewithgps.com/routes/39225143)
   - [Rouses Point to Montréal](https://ridewithgps.com/routes/39236591)
   - [Erie Canalway Trail](https://ridewithgps.com/routes/39236954)
