@@ -86,12 +86,12 @@ A camp-grade plate and bowl would have completed the package and avoided a lot m
 
 ---
 
-## Our route in detail
+## Route
 
-We did the _Hudson Valley Greenway_ to _Champlain Valley Trail_ parts of the Empire State Trail and some of the Canadian _La Route Verte_ to Montréal.
-We didn't do the _Erie Canalway Trail_ and didn't camp either.
-We stayed at hotels that struck a balance between affordability and proximity to the trail.
-Think _Motel 6_, _Holiday Inn Express_, and the like.
+We did the Hudson Valley Greenway to Champlain Valley Trail parts of the Empire State Trail and some of the Canadian La Route Verte to Montréal.
+We didn't do the Erie Canalway Trail and didn't camp either.
+We stayed at hotels that struck a balance between affordability and proximity to the trail:
+Motel 6, Holiday Inn Express, and the like.
 
 Here's a daily breakdown of our ride.
 Click on a leg title to be taken to its Strava ride log, or read on for more detail.
@@ -113,7 +113,11 @@ Click on a leg title to be taken to its Strava ride log, or read on for more det
 | [Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364) | <span class="distance">84.16 km</span>  | 198 m                               |
 | [Saint Jean-sur-Richelieu to Montréal](https://www.strava.com/activities/7175123103)                    | <span class="distance">53.83 km</span>  | 131 m                               |
 
-### Manhattan to Ardsley
+<!-- ## Diary -->
+
+### Getting out of the city
+
+<!-- ### Manhattan to Ardsley -->
 
 Five of us left the [Battery Park starting point](https://goo.gl/maps/J83fTqYqjVKPQ9oR6) on a Monday morning.
 The ride out of the city was only difficult between Inwood and the Bronx: where we left the Hudson River Greenway and hadn't yet reached Van Cortlandt Park. The rest of the day—actually the entire ride to Albany—was peaceful, scenic, and mostly separated from cars.
@@ -125,9 +129,7 @@ alt=“TODO”>
 </figure>
 
 From here on for the _entirety of the trail_ I don’t think we made a wrong turn or felt lost.
-Kudos to the trail planners as the signage is well placed.
-
-We stopped loading the GPX file on to Lukas’ Garmin after a few days and instead occasionally referenced an offline copy of my [Ride With GPS route](https://ridewithgps.com/routes/39225143) on our phones.
+Kudos to the trail planners for the direct roads and plentiful signage.
 
 <div class="two-up">
   <figure>
@@ -160,34 +162,38 @@ Riding a bit further to reach a nicer hotel and/or nicer town soon revealed itse
   </figure>
 </div>
 
-### Ardsley to Brewster
+<!-- ### Ardsley to Brewster -->
 
-Day two matched the (rough) average daily pace for the trip, at <span class="distance inline">68.89 km</span>.
+<!-- Day two matched the (rough) average daily pace for the trip, at <span class="distance inline">68.89 km</span>.
 We rode from Ardsley to Brewster along the North Country Trailway.
 Existing rail trails like this one seem to make up the bulk of the Empire State Trail to Albany.
 
-As per Ardsley, had I followed my own advice to ‘know your daily cadence’, we would have pushed on (or hung back) and stayed somewhere more walkable for food and supplies.
+ -->
+
+We had a similar issue the second night in Brewster.
+Like Ardsley, had I followed my own advice to ‘know your daily cadence’, we would have pushed on (or hung back) and stayed somewhere more walkable for food and supplies.
 The inn was beautiful but in a deadzone for non-drivers like us.
 
 <figure>
   <img src="/assets/images/est/heidis-inn.jpeg"
   alt="TODO">
-  <figcaption>Heidi's Inn (...the middle of nowhere).</figcaption>
+  <figcaption>Heidi's Inn (...the middle of nowhere), Brewster.</figcaption>
 </figure>
 
-### Brewster to Poughkeepsie
+<!-- ### Brewster to Poughkeepsie -->
 
-Riding long distances was already getting easy by the third day in which we rode <span class="distance inline">67.12 km</span> to Poughkeepsie.
+<!-- Riding long distances was already getting easy by the third day in which we rode <span class="distance inline">67.12 km</span> to Poughkeepsie. -->
 
-<figure>
-  <img src="/assets/images/est/myles-towners.jpeg"
-  alt="TODO">
-  <figcaption>So scenic I had to put this photo up twice.</figcaption>
-</figure>
-
-The Maybrook Trailway from Brewster became the Dutchess Rail Trail at Hopewell Junction.
+<!-- The Maybrook Trailway from Brewster became the Dutchess Rail Trail at Hopewell Junction.
 Both trails were relatively flat, well-maintained, and scenic.
-I'm glad we didn't go any quicker so we could take it in.
+I'm glad we didn't go any quicker so we could take it in. -->
+
+From Brewster, the trail follows the existing Maybrook Trailway to Hopewell Junction.
+From there, it turns into the Dutchess Rail Trail to Poughkeepsie.
+Both trails were relatively flat, well-maintained, and scenic.
+
+High-quality, well-graded trails became the norm until we crossed the Erie Canal.
+I get the feeling that the state government's trail organisers funded and linked existing rail trails wherever possible.
 
 <figure>
   <img src="/assets/images/est/lunch-subs.jpeg"
@@ -195,9 +201,9 @@ I'm glad we didn't go any quicker so we could take it in.
   <figcaption>Pitstop at Frankie's Superette in Hopewell Junction.</figcaption>
 </figure>
 
-Poughkeepsie, on the other hand, was not much to behold.
-We instead took a cab to FDR's presidential library and museum and spent the afternoon there.
-You can also cycle this (albeit along a busy road) in about 30 minutes from downtown Poughkeepsie.
+Poughkeepsie was not much to behold.
+We took a cab to FDR's presidential library and museum and spent the afternoon there.
+You could also cycle this (albeit along a busy road) in about 30 minutes from downtown Poughkeepsie.
 
 <div class="two-up">
   <figure>
@@ -211,12 +217,10 @@ You can also cycle this (albeit along a busy road) in about 30 minutes from down
   </figure>
 </div>
 
-### Poughkeepsie to Kingston
+<!-- ### Poughkeepsie to Kingston -->
 
-This was a rest day, going only <span class="distance inline">45.63 km</span> to Kingston.
-I'm glad we had low milage because there was a lot to see.
-
-We took about thirty minutes crossing the Mid-Hudson Bridge (just after Poughkeepsie) because it was so damn scenic, and then loitered in New Paltz for the coffee and food.
+We took it easy going to Kingston, riding only <span class="distance inline">45.63 km</span>.
+I'm glad we did because it had the most natural 'stopping points' along the way.
 
 <div class="two-up">
   <figure>
@@ -229,6 +233,8 @@ We took about thirty minutes crossing the Mid-Hudson Bridge (just after Poughkee
     alt="TODO">
   </figure>
 </div>
+
+We took about thirty minutes crossing the Mid-Hudson Bridge (just after Poughkeepsie) because it was so damn scenic, and then loitered in New Paltz for the coffee and food.
 
 The Wallkill Valley Rail Trail after New Paltz was the first unpaved surface we encountered.
 No worries though as the gravel was compact and well-maintained.
@@ -253,10 +259,12 @@ You round a corner and there's the most picturesque bridge you've ever seen.
 A short section of the trail was under repair about 10 minutes north of Rosendale, but I'd expect this to be repaired by now.
 Walking our bikes through was easy enough.
 
-### Kingston to Hudson
+### Heading towards Albany
 
-We said goodbye to Myles after Kingston and continued on <span class="distance inline">45.63 km</span> to Hudson.
-He rode part of the way with us (back over the Hudson River) and then on to Rhinecliff to catch the train back home.
+<!-- ### Kingston to Hudson -->
+
+We said goodbye to Myles after Kingston.
+He rode part of the way with us toward Hudson and then on to Rhinecliff to catch the train back home.
 
 Riding through the Bard College area was particularly beautiful.
 Being on the open road—for the first time on the trail—with little traffic had a lot to do with that.
@@ -273,15 +281,10 @@ Being on the open road—for the first time on the trail—with little traffic h
   </figure>
 </div>
 
-### Hudson to Albany
+<!-- ### Hudson to Albany -->
 
-Only now after leaving Hudson did it feel like we were in the 'sticks'.
-That didn't last long though, as we picked up our average cadence to ride
-<span class="distance inline">68.34 km</span> to Albany.
-
+Only after leaving Hudson did it feel like we were in the 'sticks'.
 The entire day's ride was done on the unpaved Albany-Hundson Electric Trail.
-All of the (albeit short) unpaved legs to this point were compacted and well-maintained.
-I think you could do it on any bicycle.
 
 <div class="two-up">
   <figure>
@@ -295,14 +298,15 @@ I think you could do it on any bicycle.
   </figure>
 </div>
 
-### Albany to Schuylerville
+<!-- ### Albany to Schuylerville -->
 
-<span class="distance inline">65.99 km</span>
+<!-- <span class="distance inline">65.99 km</span> -->
 
+Albany wasn't much to behold.
+Just north of it is where things got interesting.
 Crossed paths with where our Empire State Trail route connects to the Erie Canalway Trail.
 
 Then along the Old Champlain Canal Trail before meeting up with the shared Hudson River Road until Schuylerville.
-Our longest continous stretch of shared road, which would become the norm for the rest of the Empire State Trail going north.
 
 <div class="two-up">
   <figure>
@@ -316,69 +320,62 @@ Our longest continous stretch of shared road, which would become the norm for th
   </figure>
 </div>
 
-### Schuylerville to Ticonderoga
+### Attacking the Adirondacks
 
-<span class="distance inline">105.54 km</span>
+<!-- ### Schuylerville to Ticonderoga -->
 
-<div class="two-up">
-  <figure>
-    <img src="/assets/images/est/obstruction.jpeg"
-    alt="TODO">
-  </figure>
-  <figure>
-    <img src="/assets/images/est/schuylerville-bridge.jpeg"
-    alt="TODO">
-    <figcaption>TODO.</figcaption>
-  </figure>
-</div>
+<!-- <span class="distance inline">105.54 km</span> -->
 
-The entire trail until now has been tame.
-It could be done easily with most bicycles, but not for much further...
-
-<div class="two-up">
-  <figure>
-    <img src="/assets/images/est/state-route-22.jpeg"
-    alt="TODO">
-  </figure>
-  <figure>
-    <img src="/assets/images/est/black-point.jpeg"
-    alt="TODO">
-    <figcaption>Never-ending hills coming in to Ticonderoga followed by icey swim in Lake George.</figcaption>
-  </figure>
-</div>
-
-Things started getting tough after Whitehall.
+Leaving Whitehall is where things got tough.
+Specifically after crossing the Old South Bay Bridge.
 Elevation-wise, terrain, and in terms of road safety. This is where I think you’d need at least 28mm tyres. I rode 43mm gravel tyres and was thankful for it.
 And you also need a solid level of fitness to get through tese never-ending hills.
 
-### Ticonderoga to Westport
+<div class="two-up">
+<figure>
+    <img src="/assets/images/est/leaving-schuylerville.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/state-route-22.jpeg"
+    alt="TODO">
+      <figcaption>Before and after Whitehall.</figcaption>
+  </figure>
+</div>
 
-<span class="distance inline">46.51 km</span>
+The hills didn't stop until Plattsburgh, but we were rewarded with some of the more stunning scenery and interesting small towns, like Ticonderoga.
 
-We climbed hills and hills and hills.
+<figure>
+  <img src="/assets/images/est/black-point.jpeg"
+  alt="TODO">
+  <figcaption>An icey swim in Lake George, Ticonderoga.</figcaption>
+</figure>
 
-We got stuck in a ghost town but were lent a car.
+<!-- ### Ticonderoga to Westport -->
 
-Essex town. Willsboro diner interactions.
+Westport is where we got stung by being 'out of season'.
+Every shop and restaurant within a rideable distance was closed.
 
-### Westport to Plattsburgh
+The snafus that came with this kind of remoteness were made worthwile by the experiences only possible in the spareseness of a place like the Adirondacks.
+Like our Westport hosts hosts being unbelievebly chariatable and lending us their car.
+Or having chats about fly fishing with the one other bloke and chef at the Willsboro Diner.
 
-<span class="distance inline">77.96 km</span>
+<div class="two-up">
+<figure>
+    <img src="/assets/images/est/ausable-chasm.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/submarine.jpeg"
+    alt="TODO">
+      <figcaption>Crossing the Ausable Chasm. Lunch for champions in Plattsburgh.</figcaption>
+  </figure>
+</div>
 
-We crossed the Ausable Chasm.
+### Onwards to Montréal
 
-### Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu
-
-<span class="distance inline">84.16 km</span>
-
-Got flat after Plattsburgh.
-
-Rouses Point is uneventful. Maybe that's the rain talking and making me grumpy.
-But the surrounding area is nice. Lakey.
-You can see Vermont.
-
-Empire State Trail done. Underwhelimg finish line.
-Hello Canada.
+The last part of Empire State Trail, from Plattsburgh to Rouses Point was surprisingly anti-climatic.
+It probably had something to do with the lack of rolling hills and over-supply of rain.
 
 <figure>
   <img src="/assets/images/est/canada-border.jpeg"
@@ -386,27 +383,33 @@ Hello Canada.
   <figcaption>Photo courtesy of border crossing agent.</figcaption>
 </figure>
 
+Entering Canada made up for that.
 Good roads and nice drivers, despite the rain.
-Nice cycling paths.
+Pitstopped in Saint Jean-sur-Richelieu.
 
-Crappy weather but the ride was nice.
+<div class="two-up">
+<figure>
+    <img src="/assets/images/est/rainy-canada.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/saint-jean.jpeg"
+    alt="TODO">
+      <figcaption>Saint Jean-sur-Richelieu in contrasting weather.</figcaption>
+  </figure>
+</div>
 
-Saint Jean-sur-Richelieu.
-Cool town.
-Walkable. Charming.
+<!-- ### Saint Jean-sur-Richelieu to Montréal -->
 
-### Saint Jean-sur-Richelieu to Montréal
+<!-- <span class="distance inline">53.83 km</span> -->
 
-<span class="distance inline">53.83 km</span>
-
-Canal bike path on gravel.
+The last day's ride to Montréal was idilic.
 Coffee in Chambly.
 Busy bike paths.
-
 New-looking bike path from Montréal suburbs direct to town.
 Some parts still under construction.
 
-### Unwinding in Montréal
+<!-- ### Unwinding in Montréal -->
 
 I'm glad we rode the extra 1.5 days to Montréal.
 It's a beautiful city.
@@ -426,6 +429,16 @@ And put aside at least a few days.
 </div>
 <div class="two-up">
   <figure>
+    <img src="/assets/images/est/downtown-montreal.jpeg"
+    alt="TODO">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/olympic-park.jpeg"
+    alt="TODO">
+  </figure>
+</div>
+<div class="two-up">
+  <figure>
     <img src="/assets/images/est/johan-family.jpeg"
     alt="TODO">
   </figure>
@@ -439,9 +452,7 @@ And put aside at least a few days.
 Although I expected a B-grade city to rest my legs in, I found myself riding similar distances as during the trail (<span class="distance inline">70 to 100 km</span> per day).
 Cycling was just the best way to see the city and get around.
 
-It also seems like _[La Route Verte](https://www.routeverte.com/en/)_ has some promising rides if you wanted to continue on through Québec.
-
-## Other resources
+## Resources
 
 I found these resources helpful during the planning phase of the trip:
 
@@ -451,6 +462,7 @@ I found these resources helpful during the planning phase of the trip:
   - [Erie Canalway Trail](https://ridewithgps.com/routes/39236954)
 - [Interactive map](https://empiretrail.ny.gov/map)
 - [BikeEmpireState Cue Sheets](https://bikeempirestate.com/cue-sheets.aspx)
+- [La Route Verte](https://www.routeverte.com/en/)
 
 Once we were on the trail we followed an offline copy of my [RWGPS route](https://ridewithgps.com/routes/39225143) and heeded advice from locals.
 
