@@ -11,7 +11,7 @@ What follows is some advice and a route recap aimed at folks planning a similar 
 
 <figure>
   <img src="/assets/images/est/myles-towners.jpeg"
-  alt="TODO">
+  alt="Myles riding on the bike path in marshland">
   <figcaption>Heading from Brewster to Poughkeepsie via the Maybrook Trailway. Weather and scenery par for the course.</figcaption>
 </figure>
 
@@ -44,12 +44,11 @@ For example: we could have taken a ferry and explored Vermont had we been on the
 ### Know your daily cadence
 
 You will likely find yourselves travelling over a weekend, in nice weather, in sparsely populated areas.
-Oh, with a big backlog of post-COVID weddings and local events like paper mill closures.
-Seriously.
-All that means accommodation may become sparse.
+Oh, with a big backlog of post-COVID weddings and the like.
+All that means accommodation may become scarce.
 
 Figure out how many miles you and your entourage can (or want to) comfortably ride per day and calculate which towns you'll want to stay in.
-Make bookings at least a few days ahead—particularly for weekends—so you can adjust your upcoming milage if necessary.
+Make bookings at least a few days ahead—particularly for weekends—so you can adjust your upcoming mileage if necessary.
 Try to make refundable bookings so you have more flexibility.
 
 Our (comfort) cadence ended up being around <span class="distance inline">70 to 100 km</span> per day.
@@ -61,7 +60,7 @@ That is a serious factor once you pass Albany and enter the Adirondacks. You can
 Google Maps is surprisingly good for this too as it tends to stick to the Empire State Trail route.
 
 We didn't figure out our cadence until a few days into the trip and got stung on a Saturday arrival in Hudson, NY where hotels were almost booked up.
-The remaining one or two were widly expensive.
+The remaining one or two were wildly expensive.
 
 ### Warm up before the trip
 
@@ -81,20 +80,20 @@ Lukas wrecked his Achilles during the ride because he used a slightly different 
 Many hotel breakfasts, cafes, diners, and even restaurants outside the major cities in the US serve food, drink, and condiments in disposable packaging.
 The trail of landfill we produced was shocking.
 
-The metal cutlery and a KeepCup I brought along avoided some waste and came in handy for the occasional roadside grapefruit.
+The metal cutlery and a KeepCup I brought along avoided waste and came in handy for the occasional roadside grapefruit.
 A camp-grade plate and bowl would have completed the package and avoided a lot more of our waste.
 
 ---
 
 ## Route
 
-We did the Hudson Valley Greenway to Champlain Valley Trail parts of the Empire State Trail and some of the Canadian La Route Verte to Montréal.
+We did the Hudson Valley Greenway Trail to Champlain Valley Trail parts of the Empire State Trail and some of the Canadian La Route Verte to Montréal.
 We didn't do the Erie Canalway Trail and didn't camp either.
 We stayed at hotels that struck a balance between affordability and proximity to the trail:
 Motel 6, Holiday Inn Express, and the like.
 
 Here's a daily breakdown of our ride.
-Click on a leg title to be taken to its Strava ride log, or read on for more detail.
+Click on a leg title to be taken to its Strava ride log, or read on for more details and photos.
 
 {% include "partials/distance-converter.html" %}
 
@@ -113,8 +112,6 @@ Click on a leg title to be taken to its Strava ride log, or read on for more det
 | [Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364) | <span class="distance">84.16 km</span>  | 198 m                               |
 | [Saint Jean-sur-Richelieu to Montréal](https://www.strava.com/activities/7175123103)                    | <span class="distance">53.83 km</span>  | 131 m                               |
 
-<!-- ## Diary -->
-
 ### Getting out of the city
 
 <!-- ### Manhattan to Ardsley -->
@@ -124,7 +121,7 @@ The ride out of the city was only difficult between Inwood and the Bronx: where 
 
 <figure>
 <img src="/assets/images/est/chauncey.jpeg"
-alt=“TODO”>
+alt="Myles riding on the bike path under a canopy">
 <figcaption>Closing in on Ardsley. This is generally what the trail looks like after the Bronx.</figcaption>
 </figure>
 
@@ -134,127 +131,115 @@ Kudos to the trail planners for the direct roads and plentiful signage.
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/first-day-beers.jpeg"
-    alt="TODO">
-    <figcaption>End-of-day beers just before Ardsley with the original quintet.</figcaption>
+    alt="Five friends around an outdoor table enjoying a beer">
+    <figcaption>End-of-day beers in Chauncey with the original quintet.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/brompton-test.jpeg"
-    alt="TODO">
+    alt="Danny riding a Brompton fold-up bicycle">
   </figure>
 </div>
 
 We spent our first night at a motel in Ardsley, just off the trail's path.
-I chose Ardsley because <span class="distance inline">44.52 km</span> seemed like a modest distance for our first day: buffering some time to warm up, repair flats, and wait for latecomers.
+I chose Ardsley because <span class="distance inline">44.52 km</span> seemed like a modest distance for our first day: buffering time to warm up, repair flats, and wait for latecomers.
 
 If I could do the trip over I'd pick somewhere further up.
 Ardsley was too short of a ride and an awkward for walking around in.
-Riding a bit further to reach a nicer hotel and/or nicer town soon revealed itself to be worth the effort.
+Riding further to reach a nicer hotel and/or nicer town soon revealed itself to be worth the effort.
 
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/hotel-bagel.jpeg"
-    alt="TODO">
+    alt="A bagel with butter and thick layer of jam">
   </figure>
   <figure>
     <img src="/assets/images/est/commute.jpeg"
-    alt="TODO">
+    alt="Myles and Lukas riding a short distance from motel car park to trail">
     <figcaption>At least the commute from motel car park to trail entry was short.</figcaption>
   </figure>
 </div>
 
 <!-- ### Ardsley to Brewster -->
 
-<!-- Day two matched the (rough) average daily pace for the trip, at <span class="distance inline">68.89 km</span>.
-We rode from Ardsley to Brewster along the North Country Trailway.
-Existing rail trails like this one seem to make up the bulk of the Empire State Trail to Albany.
-
- -->
-
 We had a similar issue the second night in Brewster.
 Like Ardsley, had I followed my own advice to ‘know your daily cadence’, we would have pushed on (or hung back) and stayed somewhere more walkable for food and supplies.
-The inn was beautiful but in a deadzone for non-drivers like us.
+The inn was beautiful but in a dead-zone for non-drivers like us.
 
 <figure>
   <img src="/assets/images/est/heidis-inn.jpeg"
-  alt="TODO">
+  alt="A rustic barn in morning light">
   <figcaption>Heidi's Inn (...the middle of nowhere), Brewster.</figcaption>
 </figure>
 
 <!-- ### Brewster to Poughkeepsie -->
 
-<!-- Riding long distances was already getting easy by the third day in which we rode <span class="distance inline">67.12 km</span> to Poughkeepsie. -->
+The trail followed the existing Maybrook Trailway from Brewster to Hopewell Junction.
+From there, it turned into the Dutchess Rail Trail to Poughkeepsie.
 
-<!-- The Maybrook Trailway from Brewster became the Dutchess Rail Trail at Hopewell Junction.
-Both trails were relatively flat, well-maintained, and scenic.
-I'm glad we didn't go any quicker so we could take it in. -->
-
-From Brewster, the trail follows the existing Maybrook Trailway to Hopewell Junction.
-From there, it turns into the Dutchess Rail Trail to Poughkeepsie.
-Both trails were relatively flat, well-maintained, and scenic.
-
-High-quality, well-graded trails became the norm until we crossed the Erie Canal.
-I get the feeling that the state government's trail organisers funded and linked existing rail trails wherever possible.
+Flat, well-maintained trails became the norm, staying this way until we met main roads after the Erie Canal.
+I got the feeling that the state government's trail organisers funded and linked existing rail trails wherever possible.
 
 <figure>
   <img src="/assets/images/est/lunch-subs.jpeg"
-  alt="TODO">
-  <figcaption>Pitstop at Frankie's Superette in Hopewell Junction.</figcaption>
+  alt="Myles and Lukas having a chat over lunch">
+  <figcaption>Pit stop at Frankie's Superette in Hopewell Junction.</figcaption>
 </figure>
 
-Poughkeepsie was not much to behold.
-We took a cab to FDR's presidential library and museum and spent the afternoon there.
+Poughkeepsie wasn't much to behold.
+We caught a cab to FDR's presidential library and museum and spent the afternoon there.
 You could also cycle this (albeit along a busy road) in about 30 minutes from downtown Poughkeepsie.
 
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/fdr-museum.jpeg"
-    alt="TODO">
+    alt="Myles reading a display at the museum">
     <figcaption>Checking out the Franklin D. Roosevelt Presidential Library and Museum.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/fdr-bust.jpeg"
-    alt="TODO">
+    alt="A bust of FDR with the American flag in the background">
   </figure>
 </div>
 
 <!-- ### Poughkeepsie to Kingston -->
 
-We took it easy going to Kingston, riding only <span class="distance inline">45.63 km</span>.
-I'm glad we did because it had the most natural 'stopping points' along the way.
+Poughkeepsie to Kingston was our next leg, and a short one at <span class="distance inline">45.63 km</span>.
+I'm glad we kept this day's distance short because it had the most natural stopping points along the way.
+We took about thirty minutes taking in the Walkway Over the Hudson (just after Poughkeepsie).
+Then we loitered around New Paltz for another hour to stock up on food and drink.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/mid-hudson-bridge.jpeg"
-    alt="TODO">
-    <figcaption>Crossing the Mid-Hudson Bridge and then on to the Hudson Valley Rail Trail to New Paltz.</figcaption>
+    <img src="/assets/images/est/walkway-over-the-hudson.jpeg"
+    alt="Looking south towards the Mid-Hudson Bridge">
+    <figcaption>Crossing the Walkway Over the Hudson.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/hudson-valley-rail-trail.jpeg"
-    alt="TODO">
+    alt="Danny passing Lukas on his bike">
   </figure>
 </div>
 
-We took about thirty minutes crossing the Mid-Hudson Bridge (just after Poughkeepsie) because it was so damn scenic, and then loitered in New Paltz for the coffee and food.
-
-The Wallkill Valley Rail Trail after New Paltz was the first unpaved surface we encountered.
-No worries though as the gravel was compact and well-maintained.
-
-This was one of my favourite legs of the trip.
-Riding under canopy.
-Cold air pockets that felt like air conditioning but was just an abandoned mine with leftover frost.
-You round a corner and there's the most picturesque bridge you've ever seen.
+The Wallkill Valley Rail Trail after New Paltz was the first unpaved trail we encountered.
+As mentioned earlier though, it was well-graded and well-maintained.
+I think you could do this part of the trip on most bikes.
 
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/wallkill-river.jpeg"
-    alt="TODO">
+    alt="Danny and Myles posing in front of an old bridge">
   </figure>
   <figure>
     <img src="/assets/images/est/after-new-paltz.jpeg"
-    alt="TODO">
-  <figcaption>Coming out of New Paltz on the Wallkill Valley Rail Trail.</figcaption>
+    alt="Lukas and Myles riding ahead on a gravel path lined with trees">
+  <figcaption>Leaving New Paltz via the Wallkill Valley Rail Trail.</figcaption>
   </figure>
 </div>
+
+This was one of my favourite legs of the trip.
+One minute we're riding under a canopy, the next we're crossing a surprise bridge.
+Add in the occasional wildcard like an abandoned mine sending out a pocket of cold air.
+Rinse and repeat.
 
 A short section of the trail was under repair about 10 minutes north of Rosendale, but I'd expect this to be repaired by now.
 Walking our bikes through was easy enough.
@@ -266,57 +251,55 @@ Walking our bikes through was easy enough.
 We said goodbye to Myles after Kingston.
 He rode part of the way with us toward Hudson and then on to Rhinecliff to catch the train back home.
 
-Riding through the Bard College area was particularly beautiful.
-Being on the open road—for the first time on the trail—with little traffic had a lot to do with that.
+Riding through the Bard College area was beautiful.
+Being on the open road for the first time with little traffic had a lot to do with that.
 
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/around-bard.jpeg"
-    alt="TODO">
+    alt="Lukas riding on a shared, windy, road in the countryside">
     <figcaption>Coming up to the Bard College area.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/cows.jpeg"
-    alt="TODO">
+    alt="Four cows looking at the camera">
   </figure>
 </div>
 
 <!-- ### Hudson to Albany -->
 
-Only after leaving Hudson did it feel like we were in the 'sticks'.
-The entire day's ride was done on the unpaved Albany-Hundson Electric Trail.
+Only after leaving Hudson did it feel like we were entering the 'sticks'.
+This entire day's ride was done on the (mostly) unpaved but well-graded Albany-Hudson Electric Trail.
 
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/albany-hudson-electric.jpeg"
-    alt="TODO">
+    alt="A windy gravel travel going uphill">
   </figure>
   <figure>
-    <img src="/assets/images/est/tacos-diablo.jpeg"
-    alt="TODO">
-    <figcaption>Stopping for Tacos Diablos in Nassau. Now's the time to set up shop along the trail, I reckon.</figcaption>
+    <img src="/assets/images/est/tacos-diablos.jpeg"
+    alt="Danny eating tacos on a park bench">
+    <figcaption>Stopping for Tacos Diablos in Nassau.</figcaption>
   </figure>
 </div>
 
 <!-- ### Albany to Schuylerville -->
 
-<!-- <span class="distance inline">65.99 km</span> -->
+Albany wasn't much to behold but it's northern, confluence, outskirts are.
+The Hudson River meets the Erie Canal and the Hudson Valley Greenway Trail meets the Erie Canalway Trail.
 
-Albany wasn't much to behold.
-Just north of it is where things got interesting.
-Crossed paths with where our Empire State Trail route connects to the Erie Canalway Trail.
-
-Then along the Old Champlain Canal Trail before meeting up with the shared Hudson River Road until Schuylerville.
+We pushed on with the former, heading along the Old Champlain Canal Trail before meeting up with the shared Hudson River Road to Schuylerville.
 
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/turtle-rescue.jpeg"
-    alt="TODO">
+    alt="Lukas holding a turtle to the camera and smiling">
+    <figcaption>Roadside turtle rescue.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/shipping-container.jpeg"
-    alt="TODO">
-    <figcaption>Shipping container accommodation.</figcaption>
+    alt="A shipping container converted into accommodation">
+    <figcaption>Shipping container accommodation in Schuylerville with a view of the Hudson River.</figcaption>
   </figure>
 </div>
 
@@ -324,78 +307,84 @@ Then along the Old Champlain Canal Trail before meeting up with the shared Hudso
 
 <!-- ### Schuylerville to Ticonderoga -->
 
-<!-- <span class="distance inline">105.54 km</span> -->
+Leaving Whitehall is where the trail got tough.
+Specifically after crossing its Old South Bay Bridge.
+Elevation, terrain, and drivers all stepped up from easy to intense.
 
-Leaving Whitehall is where things got tough.
-Specifically after crossing the Old South Bay Bridge.
-Elevation-wise, terrain, and in terms of road safety. This is where I think you’d need at least 28mm tyres. I rode 43mm gravel tyres and was thankful for it.
-And you also need a solid level of fitness to get through tese never-ending hills.
+From here on is where you need at least 28mm wide tyres given the diversity in road quality.
+I rode 43mm gravel tyres and quickly became thankful for it.
+You also need a fitness level and plenty of water to get over the drawn-out hill climbs.
 
 <div class="two-up">
-<figure>
+  <figure>
     <img src="/assets/images/est/leaving-schuylerville.jpeg"
-    alt="TODO">
+    alt="Lukas riding ahead on a dirt trail next to a river">
   </figure>
   <figure>
     <img src="/assets/images/est/state-route-22.jpeg"
-    alt="TODO">
-      <figcaption>Before and after Whitehall.</figcaption>
+    alt="The shoulder of a state highway going up and down hills">
+    <figcaption>Swapping flatland for rolling hills past Whitehall.</figcaption>
   </figure>
 </div>
 
-The hills didn't stop until Plattsburgh, but we were rewarded with some of the more stunning scenery and interesting small towns, like Ticonderoga.
+I'll get the rest of the bad news out of the way.
+The hills, narrow shoulders, and scarce accommodation didn't stop until Plattsburgh.
+The good news however is that the scenery, towns, and hospitality also stepped up a notch.
 
 <figure>
   <img src="/assets/images/est/black-point.jpeg"
-  alt="TODO">
-  <figcaption>An icey swim in Lake George, Ticonderoga.</figcaption>
+  alt="A wide-angle photo of Lukas swimming in a large lake">
+  <figcaption>Icy post-ride swim in Lake George, Ticonderoga.</figcaption>
 </figure>
 
 <!-- ### Ticonderoga to Westport -->
 
-Westport is where we got stung by being 'out of season'.
-Every shop and restaurant within a rideable distance was closed.
-
-The snafus that came with this kind of remoteness were made worthwile by the experiences only possible in the spareseness of a place like the Adirondacks.
-Like our Westport hosts hosts being unbelievebly chariatable and lending us their car.
-Or having chats about fly fishing with the one other bloke and chef at the Willsboro Diner.
-
-<div class="two-up">
-<figure>
-    <img src="/assets/images/est/ausable-chasm.jpeg"
-    alt="TODO">
-  </figure>
-  <figure>
-    <img src="/assets/images/est/submarine.jpeg"
-    alt="TODO">
-      <figcaption>Crossing the Ausable Chasm. Lunch for champions in Plattsburgh.</figcaption>
-  </figure>
-</div>
+We got stung by being 'out of season' in Westport.
+Every shop and restaurant within a rideable distance was closed and the weather was closing in.
+Luckily the hotel owners took pity and lent us their car, not before offering to make turkey sandwiches or thaw out a pizza.
 
 ### Onwards to Montréal
 
-The last part of Empire State Trail, from Plattsburgh to Rouses Point was surprisingly anti-climatic.
-It probably had something to do with the lack of rolling hills and over-supply of rain.
+Plattsburgh to Rouses Point was nice but uneventful.
+We were still on-road but the hills had stopped and civilization returned.
+
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/ausable-chasm.jpeg"
+    alt="Looking down at water rushing through the Ausable Chasm">
+    <figcaption>Crossing the Ausable Chasm, the "Grand Canyon of the Adirondacks".</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/est/submarine.jpeg"
+    alt="Danny's hand holding a submarine sandwich in its paper bag">
+    <figcaption>Lunch for champions in Plattsburgh.</figcaption>
+  </figure>
+</div>
+
+Don't expect much of a photo op at the end of the Empire State Trail in Rouses Point.
+Unlike at Battery Park in Manhattan, the sign here was no grander than those all along the trail.
+
+Canada had us covered, though.
 
 <figure>
   <img src="/assets/images/est/canada-border.jpeg"
-  alt="TODO">
-  <figcaption>Photo courtesy of border crossing agent.</figcaption>
+  alt="Lukas and Danny posing in front of the Canada border sign">
+  <figcaption>Photo courtesy of border crossing guard.</figcaption>
 </figure>
 
-Entering Canada made up for that.
-Good roads and nice drivers, despite the rain.
-Pitstopped in Saint Jean-sur-Richelieu.
+We had our first spell of rain this day, just as we crossed the border.
+Most of the ride from the border to Saint Jean-sur-Richelieu continued on the road's shoulder but its condition (and driver etiquette) was noticeably better than on the US side.
 
 <div class="two-up">
-<figure>
+  <figure>
     <img src="/assets/images/est/rainy-canada.jpeg"
-    alt="TODO">
+    alt="Me and Lukas riding bikes in wet weather">
+    <figcaption>Coming in to Saint Jean-sur-Richelieu.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/saint-jean.jpeg"
-    alt="TODO">
-      <figcaption>Saint Jean-sur-Richelieu in contrasting weather.</figcaption>
+    alt="A canal-side bike path on a sunny day">
+    <figcaption>Leaving Saint Jean-sur-Richelieu via the Chambly Canal.</figcaption>
   </figure>
 </div>
 
@@ -403,54 +392,39 @@ Pitstopped in Saint Jean-sur-Richelieu.
 
 <!-- <span class="distance inline">53.83 km</span> -->
 
-The last day's ride to Montréal was idilic.
-Coffee in Chambly.
-Busy bike paths.
-New-looking bike path from Montréal suburbs direct to town.
-Some parts still under construction.
+Saint Jean-sur-Richelieu was nice enough for a stop in.
+The last day's ride from there to Montréal however takes the cake for scenery.
+We followed the canal-side bike path up to Chambly and then took a straight-shot bike highway the rest of the way to Montréal.
 
 <!-- ### Unwinding in Montréal -->
 
-I'm glad we rode the extra 1.5 days to Montréal.
-It's a beautiful city.
-It's also one of the best cities for cycling I've been to, so save some of your energy.
-And put aside at least a few days.
-
-<div class="two-up">
-  <figure>
-    <img src="/assets/images/est/montreal-buildling-colours.jpeg"
-    alt="TODO">
-  </figure>
-  <figure>
-    <img src="/assets/images/est/montreal-market-cat.jpeg"
-    alt="TODO">
-    <figcaption><s>Bodega</s> Market cat.</figcaption>
-  </figure>
-</div>
-<div class="two-up">
-  <figure>
-    <img src="/assets/images/est/downtown-montreal.jpeg"
-    alt="TODO">
-  </figure>
-  <figure>
-    <img src="/assets/images/est/olympic-park.jpeg"
-    alt="TODO">
-  </figure>
-</div>
 <div class="two-up">
   <figure>
     <img src="/assets/images/est/johan-family.jpeg"
-    alt="TODO">
+    alt="A family riding bikes through Montréal">
+    <figcaption>New friends.</figcaption>
   </figure>
   <figure>
     <img src="/assets/images/est/montreal-ice-cream.jpeg"
-    alt="TODO">
-    <figcaption>Up on Mount Royal.</figcaption>
+    alt="An ice cream man riding his ice cream bike through a park">
+    <figcaption>Ice cream man scouting Parc du Mont-Royal.</figcaption>
   </figure>
 </div>
 
-Although I expected a B-grade city to rest my legs in, I found myself riding similar distances as during the trail (<span class="distance inline">70 to 100 km</span> per day).
-Cycling was just the best way to see the city and get around.
+Montréal itself was a cycling paradise, so don't expect to rest your legs.
+I found myself riding similar distances as during the trail (<span class="distance inline">70 to 100 km</span> per day) because it was the best way to get around and explore town.
+
+<div class="two-up">
+  <figure>
+    <img src="/assets/images/est/montreal-building-colours.jpeg"
+    alt="A close up of an apartment building painted with bright colours">
+  </figure>
+  <figure>
+    <img src="/assets/images/est/montreal-market-cat.jpeg"
+    alt="A cat standing up, inspecting plants at a market">
+    <figcaption><s>Bodega</s> Market cat.</figcaption>
+  </figure>
+</div>
 
 ## Resources
 
