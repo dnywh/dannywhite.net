@@ -10,13 +10,19 @@ We recently rode the Empire State Trail from Manhattan to Rouses Point, continui
 What follows is some advice and a route recap aimed at folks planning a similar trip.
 
 <figure>
-  <img src="/assets/images/est/myles-towners.jpeg"
-  alt="Myles riding on the bike path in marshland">
+  <img src="{% src 'est/myles-towners.jpg' %}"
+  srcset="{% srcset 'est/myles-towners.jpg' %}"
+  alt="Myles riding on the bike path in marshland"
+  width="3424"
+  height="1926"
+  loading="lazy">
   <figcaption>Heading from Brewster to Poughkeepsie via the Maybrook Trailway. Weather and scenery par for the course.</figcaption>
 </figure>
 
 If you're just looking for an answer to "should I do the Empire State Trail?" I say yes.
-Going from New York City to Albany seemed doable with most bikes and a general fitness level.
+At least the Hudson Valley Greenway Trail portion.
+That leg, from New York City to Albany, is doable in under a week with most bikes and a general fitness level.
+
 If you're just looking for the ride data, see my pre-ride Ride With GPS route collection [here](https://ridewithgps.com/collections/45795?privacy_code=FQSqiW1RcXuLBATK) and links to my Strava ride logs [below](#our-route-in-detail).
 
 ## Advice
@@ -31,9 +37,10 @@ Here's what I wish I knew before leaving:
 ### Go after Memorial Day
 
 Consider your timing and plan accordingly.
-Know that stores and restaurants in small towns can be shut until Memorial Day (late May). From what I hear, they stay open until at least Labor Day (early September), maybe even to Thanksgiving (late November).
+Know that stores and restaurants in small towns can be shut until Memorial Day (late May). From what I hear, they stay open until at least Labor Day (early September).
+Maybe even to Thanksgiving (late November).
 
-If I could do it over, I'd plan to leave New York City a day or two before Memorial Day so we hit the small towns _just_ as they open.
+If I could do it over, I'd plan to leave New York City a day or two before Memorial Day so we hit the small towns just as they open.
 It gets hot and crowded later in June when school breaks up.
 
 We went in early May which turned out to be earlier than most towns were open for season.
@@ -43,8 +50,7 @@ For example: we could have taken a ferry and explored Vermont had we been on the
 
 ### Know your daily cadence
 
-You will likely find yourselves travelling over a weekend, in nice weather, in sparsely populated areas.
-Oh, with a big backlog of post-COVID weddings and the like.
+You will likely find yourselves travelling over a weekend, in nice weather, in sparsely populated areas... with a big backlog of post-COVID weddings and the like.
 All that means accommodation may become scarce.
 
 Figure out how many miles you and your entourage can (or want to) comfortably ride per day and calculate which towns you'll want to stay in.
@@ -78,19 +84,20 @@ Lukas wrecked his Achilles during the ride because he used a slightly different 
 ### Pack utensils
 
 Many hotel breakfasts, cafes, diners, and even restaurants outside the major cities in the US serve food, drink, and condiments in disposable packaging.
-The trail of landfill we produced was shocking.
+We left a mount of landfill wherever we went.
 
-The metal cutlery and a KeepCup I brought along avoided waste and came in handy for the occasional roadside grapefruit.
-A camp-grade plate and bowl would have completed the package and avoided a lot more of our waste.
+The metal cutlery and a KeepCup I brought along avoided some waste and came in handy for the occasional roadside meal.
+A camp-grade plate and bowl would have completed the package and avoided a lot more of the waste.
 
 ---
 
 ## Route
 
-We did the Hudson Valley Greenway Trail to Champlain Valley Trail parts of the Empire State Trail and some of the Canadian La Route Verte to Montréal.
-We didn't do the Erie Canalway Trail and didn't camp either.
-We stayed at hotels that struck a balance between affordability and proximity to the trail:
-Motel 6, Holiday Inn Express, and the like.
+We did the Hudson Valley Greenway Trail and Champlain Valley Trail parts of the Empire State Trail and some of the Canadian La Route Verte to Montréal.
+We didn't do the Erie Canalway Trail and didn't camp.
+
+We stayed at hotels that struck a balance between affordability and proximity to the trail.
+Think Motel 6, Holiday Inn Express, and the like.
 
 Here's a daily breakdown of our ride.
 Click on a leg title to be taken to its Strava ride log, or read on for more details and photos.
@@ -117,26 +124,38 @@ Click on a leg title to be taken to its Strava ride log, or read on for more det
 <!-- ### Manhattan to Ardsley -->
 
 Five of us left the [Battery Park starting point](https://goo.gl/maps/J83fTqYqjVKPQ9oR6) on a Monday morning.
-The ride out of the city was only difficult between Inwood and the Bronx: where we left the Hudson River Greenway and hadn't yet reached Van Cortlandt Park. The rest of the day—actually the entire ride to Albany—was peaceful, scenic, and mostly separated from cars.
+The ride out of the city was only difficult between Inwood and the Bronx: where we left the Hudson River Greenway and hadn't yet reached Van Cortlandt Park. The rest of the day—actually the entire ride to Albany—was peaceful, scenic, and (mostly) separate from cars.
 
 <figure>
-<img src="/assets/images/est/chauncey.jpeg"
-alt="Myles riding on the bike path under a canopy">
-<figcaption>Closing in on Ardsley. This is generally what the trail looks like after the Bronx.</figcaption>
+  <img src="{% src 'est/myles-chauncey.jpg' %}"
+    srcset="{% srcset 'est/myles-chauncey.jpg' %}"
+    alt="Myles riding on the bike path under a canopy"
+    width="3590"
+    height="2690"
+    loading="lazy">
+  <figcaption>Closing in on Ardsley.</figcaption>
 </figure>
 
 From here on for the _entirety of the trail_ I don’t think we made a wrong turn or felt lost.
-Kudos to the trail planners for the direct roads and plentiful signage.
+Kudos to the trail planners for the direct routes and plentiful signage.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/first-day-beers.jpeg"
-    alt="Five friends around an outdoor table enjoying a beer">
+    <img src="{% src 'est/first-day-beers.jpg' %}"
+    srcset="{% srcset 'est/first-day-beers.jpg' %}"
+    alt="Five friends around an outdoor table enjoying a beer"
+    width="4032"
+    height="3024"
+    loading="lazy">
     <figcaption>End-of-day beers in Chauncey with the original quintet.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/brompton-test.jpeg"
-    alt="Danny riding a Brompton fold-up bicycle">
+    <img src="{% src 'est/brompton-test-ride.jpg' %}"
+    srcset="{% srcset 'est/brompton-test-ride.jpg' %}"
+    alt="Danny riding a Brompton fold-up bicycle"
+    width="2289 "
+    height=" 3117"
+    loading="lazy">
   </figure>
 </div>
 
@@ -149,12 +168,20 @@ Riding further to reach a nicer hotel and/or nicer town soon revealed itself to 
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/hotel-bagel.jpeg"
-    alt="A bagel with butter and thick layer of jam">
+    <img src="{% src 'est/hotel-bagel.jpg' %}"
+    srcset="{% srcset 'est/hotel-bagel.jpg' %}"
+    alt="A bagel with butter and thick layer of jam"
+    width="3024 "
+    height=" 4032"
+    loading="lazy">
   </figure>
   <figure>
-    <img src="/assets/images/est/commute.jpeg"
-    alt="Myles and Lukas riding a short distance from motel car park to trail">
+    <img src="{% src 'est/ardsley-commute.jpg' %}"
+    srcset="{% srcset 'est/ardsley-commute.jpg' %}"
+    alt="Myles and Lukas riding a short distance from motel car park to trail"
+    width="3394 "
+    height=" 2546"
+    loading="lazy">
     <figcaption>At least the commute from motel car park to trail entry was short.</figcaption>
   </figure>
 </div>
@@ -166,82 +193,113 @@ Like Ardsley, had I followed my own advice to ‘know your daily cadence’, we 
 The inn was beautiful but in a dead-zone for non-drivers like us.
 
 <figure>
-  <img src="/assets/images/est/heidis-inn.jpeg"
-  alt="A rustic barn in morning light">
+  <img src="{% src 'est/heidis-inn.jpg' %}"
+  srcset="{% srcset 'est/heidis-inn.jpg' %}"
+  alt="A rustic barn in morning light"
+  width="3924 "
+  height=" 2943"
+  loading="lazy">
   <figcaption>Heidi's Inn (...the middle of nowhere), Brewster.</figcaption>
 </figure>
 
 <!-- ### Brewster to Poughkeepsie -->
 
-The trail followed the existing Maybrook Trailway from Brewster to Hopewell Junction.
-From there, it turned into the Dutchess Rail Trail to Poughkeepsie.
+The trail follows the existing Maybrook Trailway from Brewster to Hopewell Junction.
+From there, it turns into the Dutchess Rail Trail until Poughkeepsie.
 
-Flat, well-maintained trails became the norm, staying this way until we met main roads after the Erie Canal.
-I got the feeling that the state government's trail organisers funded and linked existing rail trails wherever possible.
+Flat, well-maintained trails would become the norm until we met the Erie Canal.
+I get the feeling that the state government's trail organisers funded and linked existing rail trails wherever possible.
 
 <figure>
-  <img src="/assets/images/est/lunch-subs.jpeg"
-  alt="Myles and Lukas having a chat over lunch">
+  <img src="{% src 'est/lunch-subs.jpg' %}"
+  srcset="{% srcset 'est/lunch-subs.jpg' %}"
+  alt="Myles and Lukas having a chat over lunch"
+  width="3549 "
+  height=" 2662"
+  loading="lazy">
   <figcaption>Pit stop at Frankie's Superette in Hopewell Junction.</figcaption>
 </figure>
 
 Poughkeepsie wasn't much to behold.
-We caught a cab to FDR's presidential library and museum and spent the afternoon there.
+We caught a cab to FDR's nearby presidential library and spent the afternoon there instead.
 You could also cycle this (albeit along a busy road) in about 30 minutes from downtown Poughkeepsie.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/fdr-museum.jpeg"
-    alt="Myles reading a display at the museum">
+    <img src="{% src 'est/fdr-museum.jpg' %}"
+    srcset="{% srcset 'est/fdr-museum.jpg' %}"
+    alt="Myles reading a display at the museum"
+    width="3814 "
+    height="2860"
+    loading="lazy">
     <figcaption>Checking out the Franklin D. Roosevelt Presidential Library and Museum.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/fdr-bust.jpeg"
-    alt="A bust of FDR with the American flag in the background">
+    <img src="{% src 'est/fdr-bust.jpg' %}"
+    srcset="{% srcset 'est/fdr-bust.jpg' %}"
+    alt="A bust of FDR with the American flag in the background"
+    width="3024 "
+    height=" 4032"
+    loading="lazy">
   </figure>
 </div>
 
 <!-- ### Poughkeepsie to Kingston -->
 
 Poughkeepsie to Kingston was our next leg, and a short one at <span class="distance inline">45.63 km</span>.
-I'm glad we kept this day's distance short because it had the most natural stopping points along the way.
-We took about thirty minutes taking in the Walkway Over the Hudson (just after Poughkeepsie).
-Then we loitered around New Paltz for another hour to stock up on food and drink.
+I'm glad it worked out this way as it had a lot of natural stopping points along the way.
+We took about thirty minutes taking in the Walkway Over the Hudson (just after Poughkeepsie), then loitered around New Paltz for another hour to stock up on food and drink.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/walkway-over-the-hudson.jpeg"
-    alt="Looking south towards the Mid-Hudson Bridge">
+    <img src="{% src 'est/walkway-over-the-hudson.jpg' %}"
+    srcset="{% srcset 'est/walkway-over-the-hudson.jpg' %}"
+    alt="Looking south towards the Mid-Hudson Bridge"
+    width="3947 "
+    height="2220"
+    loading="lazy">
     <figcaption>Crossing the Walkway Over the Hudson.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/hudson-valley-rail-trail.jpeg"
-    alt="Danny passing Lukas on his bike">
+    <img src="{% src 'est/hudson-valley-rail-trail.jpg' %}"
+    srcset="{% srcset 'est/hudson-valley-rail-trail.jpg' %}"
+    alt="Danny passing Lukas on his bike"
+    width="3024"
+    height="4032"
+    loading="lazy">
   </figure>
 </div>
 
 The Wallkill Valley Rail Trail after New Paltz was the first unpaved trail we encountered.
-As mentioned earlier though, it was well-graded and well-maintained.
-I think you could do this part of the trip on most bikes.
+As mentioned earlier, I think you could do this part of the trip with most bikes.
+It was well-graded and well-maintained.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/wallkill-river.jpeg"
-    alt="Danny and Myles posing in front of an old bridge">
+    <img src="{% src 'est/wallkill-river.jpg' %}"
+    srcset="{% srcset 'est/wallkill-river.jpg' %}"
+    alt="Danny and Myles posing in front of an old bridge"
+    width="2595"
+    height="3460"
+    loading="lazy">
   </figure>
   <figure>
-    <img src="/assets/images/est/after-new-paltz.jpeg"
-    alt="Lukas and Myles riding ahead on a gravel path lined with trees">
-  <figcaption>Leaving New Paltz via the Wallkill Valley Rail Trail.</figcaption>
+    <img src="{% src 'est/after-new-paltz.jpg' %}"
+    srcset="{% srcset 'est/after-new-paltz.jpg' %}"
+    alt="Lukas and Myles riding ahead on a gravel path lined with trees"
+    width="3652"
+    height="2739"
+    loading="lazy">
+    <figcaption>Leaving New Paltz via the Wallkill Valley Rail Trail.</figcaption>
   </figure>
 </div>
 
 This was one of my favourite legs of the trip.
 One minute we're riding under a canopy, the next we're crossing a surprise bridge.
-Add in the occasional wildcard like an abandoned mine sending out a pocket of cold air.
+Add in the occasional wildcard like an abandoned mine blowing out a pocket of cold air.
 Rinse and repeat.
 
-A short section of the trail was under repair about 10 minutes north of Rosendale, but I'd expect this to be repaired by now.
+A short section of the trail was under repair about 10 minutes north of Rosendale but I'd expect this to be repaired by now.
 Walking our bikes through was easy enough.
 
 ### Heading towards Albany
@@ -252,17 +310,25 @@ We said goodbye to Myles after Kingston.
 He rode part of the way with us toward Hudson and then on to Rhinecliff to catch the train back home.
 
 Riding through the Bard College area was beautiful.
-Being on the open road for the first time with little traffic had a lot to do with that.
+Being on the open road for the first time with little traffic and plenty of wildlife had a lot to do with it.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/around-bard.jpeg"
-    alt="Lukas riding on a shared, windy, road in the countryside">
+    <img src="{% src 'est/around-bard.jpg' %}"
+    srcset="{% srcset 'est/around-bard.jpg' %}"
+    alt="Lukas riding on a shared, windy, road in the countryside"
+    width="3815"
+    height="2927"
+    loading="lazy">
     <figcaption>Coming up to the Bard College area.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/cows.jpeg"
-    alt="Four cows looking at the camera">
+    <img src="{% src 'est/ny-cows.jpg' %}"
+    srcset="{% srcset 'est/ny-cows.jpg' %}"
+    alt="Some cows looking at the camera"
+    width="1906"
+    height="2542"
+    loading="lazy">
   </figure>
 </div>
 
@@ -273,32 +339,46 @@ This entire day's ride was done on the (mostly) unpaved but well-graded Albany-H
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/albany-hudson-electric.jpeg"
-    alt="A windy gravel travel going uphill">
+    <img src="{% src 'est/albany-hudson-electric.jpg' %}"
+    srcset="{% srcset 'est/albany-hudson-electric.jpg' %}"
+    alt="A windy gravel travel going uphill"
+    width="2274"
+    height="3032"
+    loading="lazy">
   </figure>
   <figure>
-    <img src="/assets/images/est/tacos-diablos.jpeg"
-    alt="Danny eating tacos on a park bench">
+    <img src="{% src 'est/tacos-diablos.jpg' %}"
+    srcset="{% srcset 'est/tacos-diablos.jpg' %}"
+    alt="Danny eating tacos on a park bench"
+    width="2268"
+    height="3024"
+    loading="lazy">
     <figcaption>Stopping for Tacos Diablos in Nassau.</figcaption>
   </figure>
 </div>
 
 <!-- ### Albany to Schuylerville -->
 
-Albany wasn't much to behold but it's northern, confluence, outskirts are.
-The Hudson River meets the Erie Canal and the Hudson Valley Greenway Trail meets the Erie Canalway Trail.
-
+Just north of Albany is where the Hudson River meets the Erie Canal and the Hudson Valley Greenway Trail turns into the Erie Canalway Trail.
 We pushed on with the former, heading along the Old Champlain Canal Trail before meeting up with the shared Hudson River Road to Schuylerville.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/turtle-rescue.jpeg"
-    alt="Lukas holding a turtle to the camera and smiling">
+    <img src="{% src 'est/turtle-rescue.jpg' %}"
+    srcset="{% srcset 'est/turtle-rescue.jpg' %}"
+    alt="Lukas holding a turtle to the camera and smiling"
+    width="3024"
+    height="4029"
+    loading="lazy">
     <figcaption>Roadside turtle rescue.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/shipping-container.jpeg"
-    alt="A shipping container converted into accommodation">
+    <img src="{% src 'est/shipping-container.jpg' %}"
+    srcset="{% srcset 'est/shipping-container.jpg' %}"
+    alt="A shipping container converted into accommodation"
+    width="3862"
+    height="2896"
+    loading="lazy">
     <figcaption>Shipping container accommodation in Schuylerville with a view of the Hudson River.</figcaption>
   </figure>
 </div>
@@ -307,39 +387,51 @@ We pushed on with the former, heading along the Old Champlain Canal Trail before
 
 <!-- ### Schuylerville to Ticonderoga -->
 
-Leaving Whitehall is where the trail got tough.
+The trail got tough shortly after leaving Whitehall.
 Specifically after crossing its Old South Bay Bridge.
 Elevation, terrain, and drivers all stepped up from easy to intense.
 
-From here on is where you need at least 28mm wide tyres given the diversity in road quality.
-I rode 43mm gravel tyres and quickly became thankful for it.
+From here on is where you need at least 28mm wide tyres, given the diversity in road quality.
+I rode with 43mm wide gravel tyres and quickly became thankful for it.
 You also need a fitness level and plenty of water to get over the drawn-out hill climbs.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/leaving-schuylerville.jpeg"
-    alt="Lukas riding ahead on a dirt trail next to a river">
+    <img src="{% src 'est/leaving-schuylerville.jpg' %}"
+    srcset="{% srcset 'est/leaving-schuylerville.jpg' %}"
+    alt="Lukas riding ahead on a dirt trail next to a river"
+    width="2876"
+    height="3834"
+    loading="lazy">
   </figure>
   <figure>
-    <img src="/assets/images/est/state-route-22.jpeg"
-    alt="The shoulder of a state highway going up and down hills">
+    <img src="{% src 'est/state-route-22.jpg' %}"
+    srcset="{% srcset 'est/state-route-22.jpg' %}"
+    alt="The shoulder of a state highway going up and down hills"
+    width="2208"
+    height="2945"
+    loading="lazy">
     <figcaption>Swapping flatland for rolling hills past Whitehall.</figcaption>
   </figure>
 </div>
 
 I'll get the rest of the bad news out of the way.
 The hills, narrow shoulders, and scarce accommodation didn't stop until Plattsburgh.
-The good news however is that the scenery, towns, and hospitality also stepped up a notch.
+The good news however is that the scenery, towns, and hospitality stepped up to match.
 
 <figure>
-  <img src="/assets/images/est/black-point.jpeg"
-  alt="A wide-angle photo of Lukas swimming in a large lake">
-  <figcaption>Icy post-ride swim in Lake George, Ticonderoga.</figcaption>
+  <img src="{% src 'est/black-point.jpg' %}"
+  srcset="{% srcset 'est/black-point.jpg' %}"
+  alt="A wide-angle photo of Lukas swimming in a large lake"
+  width="4005"
+  height="2253"
+  loading="lazy">
+  <figcaption>Icy, pre-rain, post-ride swim in Lake George, Ticonderoga.</figcaption>
 </figure>
 
 <!-- ### Ticonderoga to Westport -->
 
-We got stung by being 'out of season' in Westport.
+We got stung by being 'out of season' in Westport, though.
 Every shop and restaurant within a rideable distance was closed and the weather was closing in.
 Luckily the hotel owners took pity and lent us their car, not before offering to make turkey sandwiches or thaw out a pizza.
 
@@ -350,14 +442,22 @@ We were still on-road but the hills had stopped and civilization returned.
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/ausable-chasm.jpeg"
-    alt="Looking down at water rushing through the Ausable Chasm">
+    <img src="{% src 'est/ausable-chasm.jpg' %}"
+    srcset="{% srcset 'est/ausable-chasm.jpg' %}"
+    alt="Looking down at water rushing through the Ausable Chasm"
+    width="2502"
+    height="3336"
+    loading="lazy">
     <figcaption>Crossing the Ausable Chasm, the "Grand Canyon of the Adirondacks".</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/submarine.jpeg"
-    alt="Danny's hand holding a submarine sandwich in its paper bag">
-    <figcaption>Lunch for champions in Plattsburgh.</figcaption>
+    <img src="{% src 'est/submarine.jpg' %}"
+    srcset="{% srcset 'est/submarine.jpg' %}"
+    alt="Danny's hand holding a submarine sandwich in its paper bag"
+    width="3709"
+    height="2782"
+    loading="lazy">
+    <figcaption>Lunch of champions in Plattsburgh.</figcaption>
   </figure>
 </div>
 
@@ -367,8 +467,12 @@ Unlike at Battery Park in Manhattan, the sign here was no grander than those all
 Canada had us covered, though.
 
 <figure>
-  <img src="/assets/images/est/canada-border.jpeg"
-  alt="Lukas and Danny posing in front of the Canada border sign">
+  <img src="{% src 'est/canada-border.jpg' %}"
+  srcset="{% srcset 'est/canada-border.jpg' %}"
+  alt="Lukas and Danny posing in front of the Canada border sign"
+  width="3919"
+  height="2204"
+  loading="lazy">
   <figcaption>Photo courtesy of border crossing guard.</figcaption>
 </figure>
 
@@ -377,20 +481,26 @@ Most of the ride from the border to Saint Jean-sur-Richelieu continued on the ro
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/rainy-canada.jpeg"
-    alt="Me and Lukas riding bikes in wet weather">
+    <img src="{% src 'est/rainy-canada.jpg' %}"
+    srcset="{% srcset 'est/rainy-canada.jpg' %}"
+    alt="Lukas and Danny riding bikes in wet weather"
+    width="2268"
+    height="3024"
+    loading="lazy">
     <figcaption>Coming in to Saint Jean-sur-Richelieu.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/saint-jean.jpeg"
-    alt="A canal-side bike path on a sunny day">
+    <img src="{% src 'est/saint-jean.jpg' %}"
+    srcset="{% srcset 'est/saint-jean.jpg' %}"
+    alt="A canal-side bike path on a sunny day"
+    width="3566"
+    height="2648"
+    loading="lazy">
     <figcaption>Leaving Saint Jean-sur-Richelieu via the Chambly Canal.</figcaption>
   </figure>
 </div>
 
 <!-- ### Saint Jean-sur-Richelieu to Montréal -->
-
-<!-- <span class="distance inline">53.83 km</span> -->
 
 Saint Jean-sur-Richelieu was nice enough for a stop in.
 The last day's ride from there to Montréal however takes the cake for scenery.
@@ -400,13 +510,21 @@ We followed the canal-side bike path up to Chambly and then took a straight-shot
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/johan-family.jpeg"
-    alt="A family riding bikes through Montréal">
+    <img src="{% src 'est/johan-family.jpg' %}"
+    srcset="{% srcset 'est/johan-family.jpg' %}"
+    alt="A family riding bikes through Montréal"
+    width="1757"
+    height="2342"
+    loading="lazy">
     <figcaption>New friends.</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/est/montreal-ice-cream.jpeg"
-    alt="An ice cream man riding his ice cream bike through a park">
+    <img src="{% src 'est/ice-cream-man.jpg' %}"
+    srcset="{% srcset 'est/ice-cream-man.jpg' %}"
+    alt="An ice cream man riding his ice cream bike through a park"
+    width="2918"
+    height="2188"
+    loading="lazy">
     <figcaption>Ice cream man scouting Parc du Mont-Royal.</figcaption>
   </figure>
 </div>
@@ -416,12 +534,20 @@ I found myself riding similar distances as during the trail (<span class="distan
 
 <div class="two-up">
   <figure>
-    <img src="/assets/images/est/montreal-building-colours.jpeg"
-    alt="A close up of an apartment building painted with bright colours">
+    <img src="{% src 'est/montreal-building-colours.jpg' %}"
+    srcset="{% srcset 'est/montreal-building-colours.jpg' %}"
+    alt="A close up of an apartment building painted with bright colours"
+    width="3976"
+    height="2982"
+    loading="lazy">
   </figure>
   <figure>
-    <img src="/assets/images/est/montreal-market-cat.jpeg"
-    alt="A cat standing up, inspecting plants at a market">
+    <img src="{% src 'est/montreal-market-cat.jpg' %}"
+    srcset="{% srcset 'est/montreal-market-cat.jpg' %}"
+    alt="A cat standing up, inspecting plants at a market"
+    width="2691"
+    height="3588"
+    loading="lazy">
     <figcaption><s>Bodega</s> Market cat.</figcaption>
   </figure>
 </div>

@@ -12,12 +12,12 @@ Does it survive the bumps of the road better?
 Will more people buy it than regular, in-husk, corn?
 
 <figure>
-<img src="{% src 'corn.jpg' %}"
-srcset="{% srcset 'corn.jpg' %}"
-alt="Three corn cobs neatly packaged in styrofoam and shrink wrap"
-width="2300"
-height="3066"
-loading="lazy">
+  <img src="{% src 'corn.jpg' %}"
+  srcset="{% srcset 'corn.jpg' %}"
+  alt="Three corn cobs neatly packaged in styrofoam and shrink wrap"
+  width="2300"
+  height="3066"
+  loading="lazy">
 </figure>
 
 Let’s go one shelf over.
@@ -27,12 +27,12 @@ Okay, sure.
 But this?
 
 <figure>
-<img src="{% src 'bananas.jpg' %}"
-srcset="{% srcset 'bananas.jpg' %}"
-alt="Banana bunches wrapped in plastic bags"
-width="3321"
-height="2490"
-loading="lazy">
+  <img src="{% src 'bananas.jpg' %}"
+  srcset="{% srcset 'bananas.jpg' %}"
+  alt="Banana bunches wrapped in plastic bags"
+  width="3321"
+  height="2490"
+  loading="lazy">
 </figure>
 
 I find it hard to believe that the extra materials and time it takes to bag these bananas outweighs the money saved from possible shelf-life extension.
@@ -40,12 +40,12 @@ I find it hard to believe that the extra materials and time it takes to bag thes
 I leave you with one last blood-boiler: The infamous styrofoam egg carton.
 
 <figure>
-<img src="{% src 'eggs.jpg' %}"
-srcset="{% srcset 'eggs.jpg' %}"
-alt="Styrofoam egg cartons"
-width="1897"
-height="2530"
-loading="lazy">
+  <img src="{% src 'eggs.jpg' %}"
+  srcset="{% srcset 'eggs.jpg' %}"
+  alt="Styrofoam egg cartons"
+  width="1897"
+  height="2530"
+  loading="lazy">
 </figure>
 
 Eggshells [break more](https://wamu.org/story/19/04/05/the-very-scientific-egg-carton-test/) in foam than in plastic or (the champion) cardboard.

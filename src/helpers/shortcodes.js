@@ -4,10 +4,12 @@
 // TODO: Set up {% defaultSizes %} as per paragraph that begins:
 // "The sizes attribute can be tricky to write by hand..."
 
-// Set constants for the Cloudinary URL and fallback widths for images when not supplied by the shorcode params
+// Set constants for the Cloudinary URL and fallback widths for images when not supplied by the shortcode params
 const CLOUDNAME = "dannywhite"
+// Assume we're looking directly in the 'notes' folder
 const FOLDER = "notes/"
 const BASE_URL = `https://res.cloudinary.com/${CLOUDNAME}/image/upload/`;
+// TODO: Why is each photo going with 1360 despite me passing in a 'width' attribute?
 const FALLBACK_WIDTHS = [300, 600, 680, 1360];
 const FALLBACK_WIDTH = 680;
 
