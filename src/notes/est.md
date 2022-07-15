@@ -107,17 +107,17 @@ Click on a leg title to be taken to its Strava ride log, or read on for more det
 | Leg                                                                                                     | Distance                                | Elevation Gain                      |
 | :------------------------------------------------------------------------------------------------------ | :-------------------------------------- | :---------------------------------- |
 | [Manhattan to Ardsley](https://www.strava.com/activities/7115492001)                                    | <span class="distance">44.52 km</span>  | <span class="distance">196 m</span> |
-| [Ardsley to Brewster](https://www.strava.com/activities/7121387383)                                     | <span class="distance">68.89 km</span>  | 475 m                               |
-| [Brewster to Poughkeepsie](https://www.strava.com/activities/7126394083)                                | <span class="distance">67.12 km</span>  | 238 m                               |
-| [Poughkeepsie to Kingston](https://www.strava.com/activities/7132011514)                                | <span class="distance">45.63 km</span>  | 181 m                               |
-| [Kingston to Hudson](https://www.strava.com/activities/7136560114)                                      | <span class="distance">61.83 km</span>  | 576 m                               |
-| [Hudson to Albany](https://www.strava.com/activities/7142807965)                                        | <span class="distance">68.34 km</span>  | 497 m                               |
-| [Albany to Schuylerville](https://www.strava.com/activities/7148631579)                                 | <span class="distance">65.99 km</span>  | 202 m                               |
-| [Schuylerville to Ticonderoga](https://www.strava.com/activities/7153547176)                            | <span class="distance">105.54 km</span> | 963 m                               |
-| [Ticonderoga to Westport](https://www.strava.com/activities/7159144031)                                 | <span class="distance">46.51 km</span>  | 620 m                               |
-| [Westport to Plattsburgh](https://www.strava.com/activities/7165283112)                                 | <span class="distance">77.96 km</span>  | 841 m                               |
-| [Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364) | <span class="distance">84.16 km</span>  | 198 m                               |
-| [Saint Jean-sur-Richelieu to Montréal](https://www.strava.com/activities/7175123103)                    | <span class="distance">53.83 km</span>  | 131 m                               |
+| [Ardsley to Brewster](https://www.strava.com/activities/7121387383)                                     | <span class="distance">68.89 km</span>  | <span class="distance">475 m</span> |
+| [Brewster to Poughkeepsie](https://www.strava.com/activities/7126394083)                                | <span class="distance">67.12 km</span>  | <span class="distance">238 m</span> |
+| [Poughkeepsie to Kingston](https://www.strava.com/activities/7132011514)                                | <span class="distance">45.63 km</span>  | <span class="distance">181 m</span> |
+| [Kingston to Hudson](https://www.strava.com/activities/7136560114)                                      | <span class="distance">61.83 km</span>  | <span class="distance">576 m</span> |
+| [Hudson to Albany](https://www.strava.com/activities/7142807965)                                        | <span class="distance">68.34 km</span>  | <span class="distance">497 m</span> |
+| [Albany to Schuylerville](https://www.strava.com/activities/7148631579)                                 | <span class="distance">65.99 km</span>  | <span class="distance">202 m</span> |
+| [Schuylerville to Ticonderoga](https://www.strava.com/activities/7153547176)                            | <span class="distance">105.54 km</span> | <span class="distance">963 m</span> |
+| [Ticonderoga to Westport](https://www.strava.com/activities/7159144031)                                 | <span class="distance">46.51 km</span>  | <span class="distance">620 m</span> |
+| [Westport to Plattsburgh](https://www.strava.com/activities/7165283112)                                 | <span class="distance">77.96 km</span>  | <span class="distance">841 m</span> |
+| [Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364) | <span class="distance">84.16 km</span>  | <span class="distance">198 m</span> |
+| [Saint Jean-sur-Richelieu to Montréal](https://www.strava.com/activities/7175123103)                    | <span class="distance">53.83 km</span>  | <span class="distance">131 m</span> |
 
 ### Getting out of the city
 
@@ -226,6 +226,14 @@ You could also cycle this (albeit along a busy road) in about 30 minutes from do
 
 <div class="two-up">
   <figure>
+    <img src="{% src 'est/fdr-bust.jpg' %}"
+    srcset="{% srcset 'est/fdr-bust.jpg' %}"
+    alt="A bust of FDR with the American flag in the background"
+    width="3024 "
+    height=" 4032"
+    loading="lazy">
+  </figure>
+  <figure>
     <img src="{% src 'est/fdr-museum.jpg' %}"
     srcset="{% srcset 'est/fdr-museum.jpg' %}"
     alt="Myles reading a display at the museum"
@@ -233,14 +241,6 @@ You could also cycle this (albeit along a busy road) in about 30 minutes from do
     height="2860"
     loading="lazy">
     <figcaption>Checking out the Franklin D. Roosevelt Presidential Library and Museum.</figcaption>
-  </figure>
-  <figure>
-    <img src="{% src 'est/fdr-bust.jpg' %}"
-    srcset="{% srcset 'est/fdr-bust.jpg' %}"
-    alt="A bust of FDR with the American flag in the background"
-    width="3024 "
-    height=" 4032"
-    loading="lazy">
   </figure>
 </div>
 
@@ -442,15 +442,6 @@ We were still on-road but the hills had stopped and civilization returned.
 
 <div class="two-up">
   <figure>
-    <img src="{% src 'est/ausable-chasm.jpg' %}"
-    srcset="{% srcset 'est/ausable-chasm.jpg' %}"
-    alt="Looking down at water rushing through the Ausable Chasm"
-    width="2502"
-    height="3336"
-    loading="lazy">
-    <figcaption>Crossing the Ausable Chasm, the "Grand Canyon of the Adirondacks".</figcaption>
-  </figure>
-  <figure>
     <img src="{% src 'est/submarine.jpg' %}"
     srcset="{% srcset 'est/submarine.jpg' %}"
     alt="Danny's hand holding a submarine sandwich in its paper bag"
@@ -458,6 +449,15 @@ We were still on-road but the hills had stopped and civilization returned.
     height="2782"
     loading="lazy">
     <figcaption>Lunch of champions in Plattsburgh.</figcaption>
+  </figure>
+    <figure>
+    <img src="{% src 'est/ausable-chasm.jpg' %}"
+    srcset="{% srcset 'est/ausable-chasm.jpg' %}"
+    alt="Looking down at water rushing through the Ausable Chasm"
+    width="2502"
+    height="3336"
+    loading="lazy">
+    <figcaption>Crossing the Ausable Chasm, the "Grand Canyon of the Adirondacks".</figcaption>
   </figure>
 </div>
 
@@ -510,15 +510,6 @@ We followed the canal-side bike path up to Chambly and then took a straight-shot
 
 <div class="two-up">
   <figure>
-    <img src="{% src 'est/johan-family.jpg' %}"
-    srcset="{% srcset 'est/johan-family.jpg' %}"
-    alt="A family riding bikes through Montréal"
-    width="1757"
-    height="2342"
-    loading="lazy">
-    <figcaption>New friends.</figcaption>
-  </figure>
-  <figure>
     <img src="{% src 'est/ice-cream-man.jpg' %}"
     srcset="{% srcset 'est/ice-cream-man.jpg' %}"
     alt="An ice cream man riding his ice cream bike through a park"
@@ -527,20 +518,21 @@ We followed the canal-side bike path up to Chambly and then took a straight-shot
     loading="lazy">
     <figcaption>Ice cream man scouting Parc du Mont-Royal.</figcaption>
   </figure>
+  <figure>
+    <img src="{% src 'est/johan-family.jpg' %}"
+    srcset="{% srcset 'est/johan-family.jpg' %}"
+    alt="A family riding bikes through Montréal"
+    width="1757"
+    height="2342"
+    loading="lazy">
+    <figcaption>New friends.</figcaption>
+  </figure>
 </div>
 
 Montréal itself was a cycling paradise, so don't expect to rest your legs.
 I found myself riding similar distances as during the trail (<span class="distance inline">70 to 100 km</span> per day) because it was the best way to get around and explore town.
 
 <div class="two-up">
-  <figure>
-    <img src="{% src 'est/montreal-building-colours.jpg' %}"
-    srcset="{% srcset 'est/montreal-building-colours.jpg' %}"
-    alt="A close up of an apartment building painted with bright colours"
-    width="3976"
-    height="2982"
-    loading="lazy">
-  </figure>
   <figure>
     <img src="{% src 'est/montreal-market-cat.jpg' %}"
     srcset="{% srcset 'est/montreal-market-cat.jpg' %}"
@@ -549,6 +541,14 @@ I found myself riding similar distances as during the trail (<span class="distan
     height="3588"
     loading="lazy">
     <figcaption><s>Bodega</s> Market cat.</figcaption>
+  </figure>
+  <figure>
+    <img src="{% src 'est/montreal-building-colours.jpg' %}"
+    srcset="{% srcset 'est/montreal-building-colours.jpg' %}"
+    alt="A close up of an apartment building painted with bright colours"
+    width="3976"
+    height="2982"
+    loading="lazy">
   </figure>
 </div>
 

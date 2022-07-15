@@ -30,6 +30,9 @@ const updateTextOnPage = (oldUnit, newUnit) => {
         listOfThingsToConvert.forEach(el => {
             // Split up its string into sections
             const stringSectionsArray = el.textContent.split(' ');
+            // Figure out each array's unit type (metres, feet, km, mi)
+            const stringUnit = stringSectionsArray[stringSectionsArray.length - 1]
+
             // TODO: Learn more about and swap the above with regular expressions because
             // ...they are more succinct and less brittle than `split()`
             // https://stackoverflow.com/a/1483287/2009441
@@ -37,94 +40,79 @@ const updateTextOnPage = (oldUnit, newUnit) => {
             // const myRe = /(\d+)\s*(m|cm|km)/;
             // const stringSectionsArray = myRe.exec(el.textContent)
 
-            // Get just the numbers in the string
-            // let numbers = stringSectionsArray.filter(i => !isNaN(i));
-            // console.log(numbers)
-
-            // let lastItem = stringSectionsArray.slice(-1)[0];
-            // console.log(lastItem)
-            // If text was 'mi' or 'miles', do one form of math on the numbers and conver the text to 'km'
+            // If text was 'mi' or 'miles', do one form of math on the numbers and convert the text to 'km'
             // If text was 'ft', do one form of math on the numbers and convert the text to 'm'
             // If text has class `inline` consider the text verbose and convert the text to 'miles' instead of 'mi' (and 'feet' instead of 'ft')
 
             // Prepare empty array to store swapped parts of string in a second
             const newStringArray = [];
             // Loop through each bit of text and transform as necessary
-            stringSectionsArray.forEach(sec => {
-                // sec = "hello"
+            stringSectionsArray.forEach(section => {
                 if (newUnit === "mi") {
-                    // Check if *not* a number
-                    if (isNaN(sec)) {
+                    // Check if *not* a number in order to get 'km', 'mi', etc
+                    if (isNaN(section)) {
                         // Is not a number
                         // Check if "km"
-                        if (sec === "km") {
-                            // convert text to "mi"
-                            sec = "mi"
+                        if (section === "km") {
+                            // Convert text from "km" to "mi"
+                            section = "mi"
+                        } else if (section === "m") {
+                            // Convert text from "km" to "mi"
+                            section = "ft"
                         }
                     } else {
-                        // Is number
-                        // Check if it contains decimals
-                        let decimalPlaces;
-                        if (sec.includes('.')) {
-                            // Store this length
-                            decimalPlaces = sec.split('.')[1].length;
-                        } else {
-                            // Does not contain any decimals
-                            decimalPlaces = 0;
+                        // Is number, prepare decimal places at an assumed 0
+                        let decimalPlaces = 0;
+                        // Check if it contains decimals places
+                        if (section.includes('.')) {
+                            // Store this length instead of the 0
+                            decimalPlaces = section.split('.')[1].length;
                         }
-                        // const decimalPlaces = 2;
-                        // Convert number from mi to km in the amount of decimal places it had before
-                        console.log(decimalPlaces)
-                        sec = (sec * 0.62137).toFixed(decimalPlaces);
+                        if (stringUnit === "km") {
+                            // Convert number from mi to km in the amount of decimal places it had before
+                            section = (section * 0.62137).toFixed(decimalPlaces);
+                        } else if (stringUnit === "m") {
+                            // Convert number from ft to m in the amount of decimal places it had before
+                            section = (section * 3.28084).toFixed(decimalPlaces);
+                        }
+                        // TODO: Add comma(s) to number if larger than 1,000(.00)
                     }
                 } else if (newUnit === "km") {
-                    /// Check if *not* a number
-                    if (isNaN(sec)) {
+                    // TODO: Replace everything here with reusable code from above
+                    // Check if *not* a number in order to get 'km', 'mi', etc
+                    if (isNaN(section)) {
                         // Is not a number
                         // Check if "mi"
-                        if (sec === "mi") {
-                            // convert text to "km"
-                            sec = "km"
+                        if (section === "mi") {
+                            // Convert text from "mi" to "km"
+                            section = "km"
+                        } else if (section === "ft") {
+                            // Convert text from "ft" to "m"
+                            section = "m"
                         }
                     } else {
-                        // Is number
-                        // Check if it contains decimals
-                        let decimalPlaces;
-                        if (sec.includes('.')) {
-                            // Store this length
-                            decimalPlaces = sec.split('.')[1].length;
-                        } else {
-                            // Does not contain any decimals
-                            decimalPlaces = 0;
+                        // Is number, prepare decimal places at an assumed 0
+                        let decimalPlaces = 0;
+                        // Check if it contains decimals places
+                        if (section.includes('.')) {
+                            // Store this length instead of the 0
+                            decimalPlaces = section.split('.')[1].length;
                         }
-                        // const decimalPlaces = 2;
-                        // Convert number from mi to km in the amount of decimal places it had before
-                        console.log(decimalPlaces)
-                        sec = (sec / 0.62137).toFixed(decimalPlaces);
+                        if (stringUnit === "mi") {
+                            // Convert number from mi to km in the amount of decimal places it had before
+                            section = (section * 1.60934).toFixed(decimalPlaces);
+                        } else if (stringUnit === "ft") {
+                            // Convert number from ft to m in the amount of decimal places it had before
+                            section = (section * 0.3048).toFixed(decimalPlaces);
+                        }
                     }
                 }
 
                 // Push this new section to the newStringArray array
-                newStringArray.push(sec);
+                newStringArray.push(section);
             })
 
-
-            // if (newUnit === "mi") {
-            //     if (lastItem === "km") {
-            //         lastItem = "mi"
-            //         // Convert from mi to km
-            //         numbers.forEach(number => number = number * 0.62137)
-            //         // console.log("new:", numbers)
-            //     }
-            // } else if (newUnit === "km") {
-            //     if (lastItem === "miles" || lastItem === "mi") {
-            //         lastItem = "km"
-            //     }
-            // }
-
-
             // Set the final text
-            // el.textContent = `999 ${lastItem}`
             el.textContent = newStringArray.join(" ");
         })
     }
