@@ -84,7 +84,7 @@ Lukas wrecked his Achilles during the ride because he used a slightly different 
 ### Pack utensils
 
 Many hotel breakfasts, cafes, diners, and even restaurants outside the major cities in the US serve food, drink, and condiments in disposable packaging.
-We left a mount of landfill wherever we went.
+We left a trail of landfill wherever we went.
 
 The metal cutlery and a KeepCup I brought along avoided some waste and came in handy for the occasional roadside meal.
 A camp-grade plate and bowl would have completed the package and avoided a lot more of the waste.

@@ -128,10 +128,14 @@
           font-size: var(--font-size-sm);
           text-align: right;
           max-width: 640px; // TODO variable the same as text width
-          margin-left: calc(
-            var(--grid-gap-main) / 2
-          ); // Visual padding for caption
           margin-top: 1rem;
+          // margin-left: 3rem;
+
+          @media (min-width: 1024px) {
+            margin-left: calc(
+              var(--grid-gap-main) / 2
+            ); // Visual padding for caption
+          }
         }
       }
 

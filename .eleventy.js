@@ -15,6 +15,9 @@ module.exports = function (config) {
     config.addPassthroughCopy("./src/img/");
     config.addPassthroughCopy("./src/assets/");
     config.addPassthroughCopy("./src/js/");
+    // Allow redirects
+    // https://daily-dev-tips.com/posts/adding-netlify-redirects-to-an-eleventy-site/
+    config.addPassthroughCopy("src/_redirects");
 
     // Prepare footnotes and automatic heading anchors
     // https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/#fn1

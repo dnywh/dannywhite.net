@@ -1,0 +1,7 @@
+# Redirects from what the browser requests to what we serve
+
+# https://docs.netlify.com/routing/redirects/
+
+# TODO: Automate redirects? See https://www.aleksandrhovhannisyan.com/blog/eleventy-netlify-redirects/
+
+/notes/2021/convert-heic-to-jpeg-via-ios-shortcuts/ /notes/convert-heic-to-jpeg-via-ios-shortcuts/

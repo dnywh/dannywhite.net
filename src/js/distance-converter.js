@@ -75,6 +75,7 @@ const updateTextOnPage = (oldUnit, newUnit) => {
                             // Convert number from ft to m in the amount of decimal places it had before
                             section = (section * 3.28084).toFixed(decimalPlaces);
                         }
+                        // TODO: remove trailing '0's such as the 0 in 91.20km
                         // TODO: Add comma(s) to number if larger than 1,000(.00)
                     }
                 } else if (newUnit === "km") {
@@ -123,7 +124,7 @@ const updateTextOnPage = (oldUnit, newUnit) => {
 // Prepare main function for swapping between units
 const switchUnit = (selectedUnit) => {
     const oldUnit = unit
-    // If the visitor has expliclity selected a specific radio button...
+    // If the visitor has explicitly selected a specific radio button...
     if (selectedUnit) {
         // Switch to (or stay with) this radio button's value
         unit = selectedUnit.value;
