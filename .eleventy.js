@@ -12,7 +12,6 @@ const { srcset, src } = require("./src/helpers/shortcodes");
 module.exports = function (config) {
     // Copy folders into output directory
     config.addWatchTarget("./src/sass/");
-    config.addPassthroughCopy("./src/img/");
     config.addPassthroughCopy("./src/assets/");
     config.addPassthroughCopy("./src/js/");
     // Allow redirects

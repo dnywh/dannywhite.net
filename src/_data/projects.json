@@ -13,5 +13,10 @@
     "name": "Museum of COVID",
     "url": "https://www.instagram.com/museumofcovid",
     "desc": "Preserving graphic design history from a 1.5 metre distance"
+  },
+  {
+    "name": "68",
+    "url": "https://68.netlify.app",
+    "desc": "Kevin Kelly's 68 Bits of Unsolicited Advice, One At a Time"
   }
 ]
