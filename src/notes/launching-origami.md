@@ -10,7 +10,7 @@ I've been fortunate enough to have been working with the Origami team at Faceboo
 
 <figure>
   <img src="https://ik.imagekit.io/dw/notes/launching-origami/facebook-ny.jpg" alt="Danny giving a presentation at Facebook NY">
-  <figcaption>At Facebook NY. Photo by <a href="http://twitter.com/tollerton" target="_blank" rel="noopener noreferrer">Shaun Tollerton</a>.</figcaption>
+  <figcaption>At Facebook NY. Photo by <a href="http://twitter.com/tollerton" target="_blank">Shaun Tollerton</a>.</figcaption>
 </figure>
 
 Thanks to Madelin for joining and then running the whole shebang. Also thanks to Matej, Andrew, Rob, Blair, Julius, John, and everyone else at Facebook[^facebook] for being both some of the nicest and smartest people I've been around.

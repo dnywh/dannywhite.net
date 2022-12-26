@@ -20,7 +20,7 @@ It’s like someone said “omit needless words” to the omnipresent, country-w
 
 <figure>
   <img src="https://ik.imagekit.io/dw/notes/dial-up/fire-danger-rating.jpg" alt="A standard Australian Fire Danger Rating sign which features a needle pointing to a section of a semi-circle with increasing severity of fire danger">
-  <figcaption>Photo from <a href="https://www.environment.sa.gov.au/news-hub/news/articles/2019/11/parks-close-with-catastrophic-fire-danger" target="_blank" rel="noopener noreferrer">this</a> Government of South Australia page.</figcaption>
+  <figcaption>Photo from <a href="https://www.environment.sa.gov.au/news-hub/news/articles/2019/11/parks-close-with-catastrophic-fire-danger" target="_blank">this</a> Government of South Australia page.</figcaption>
 </figure>
 
 I’m still thinking about that campfire sign, but not because of its sparseness. I’ve since realised analogue dials are dying off. Seeing one has become novel.
@@ -40,12 +40,12 @@ Consider the humble analogue speedometer:
 
 <figure>
   <img src="https://ik.imagekit.io/dw/notes/dial-up/toyota-prius-prime.jpg" alt="The interior of a car with a sole digital screen and heads-up display">
-  <figcaption>2021 Toyota Prius Prime. The boomerang-shaped meter is the 'Hybrid System Indicator’, not speed. Photo from Toyota’s <a href="https://www.toyota.com/priusprime/photo-gallery/interior/9" target="_blank" rel="noopener noreferrer">product page</a>.</figcaption>
+  <figcaption>2021 Toyota Prius Prime. The boomerang-shaped meter is the 'Hybrid System Indicator’, not speed. Photo from Toyota’s <a href="https://www.toyota.com/priusprime/photo-gallery/interior/9" target="_blank">product page</a>.</figcaption>
 </figure>
 
 <figure>
   <img src="https://ik.imagekit.io/dw/notes/dial-up/tesla-model-3.jpg" alt="The interior of a car with a sole digital screen">
-  <figcaption>2018 Tesla Model 3. Photo from <a href="https://www.usatoday.com/story/tech/talkingtech/2018/10/04/tesla-model-3-display-confuses-police-officer/1510873002/" target="_blank" rel="noopener noreferrer">this</a> USA Today article.</figcaption>
+  <figcaption>2018 Tesla Model 3. Photo from <a href="https://www.usatoday.com/story/tech/talkingtech/2018/10/04/tesla-model-3-display-confuses-police-officer/1510873002/" target="_blank">this</a> USA Today article.</figcaption>
 </figure>
 
 You get the gist: digital digits over dials and panels.
@@ -54,7 +54,7 @@ You get the gist: digital digits over dials and panels.
 
 ## Bounds
 
-Did you know that a square drawn on the ground will [entice cats to sit within its bounds](https://www.npr.org/2021/05/10/994262792/cats-take-if-i-fits-i-sits-seriously-even-if-the-space-is-just-an-illusion){:target="\_blank" rel="noopener noreferrer"}? I'm more of a dog person so here's another one: my beagle, Sally, hated car trips. She'd only cooperate if a sturdy cardboard box was brought along for her to curl up in and feel control over.
+Did you know that a square drawn on the ground will [entice cats to sit within its bounds](https://www.npr.org/2021/05/10/994262792/cats-take-if-i-fits-i-sits-seriously-even-if-the-space-is-just-an-illusion){:target="\_blank"}? I'm more of a dog person so here's another one: my beagle, Sally, hated car trips. She'd only cooperate if a sturdy cardboard box was brought along for her to curl up in and feel control over.
 
 A speedometer similarly provides bounds by describing how fast we can go and how far away that is from a stationary position.
 

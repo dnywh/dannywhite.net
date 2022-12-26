@@ -7,16 +7,16 @@
 
   {# Title #}
   {% if title === "Home" %}
-      {% set pageTitle = "Danny White" %}
+      {% set pageTitle = site.title %}
     {% elif title %}
-      {% set pageTitle = title + " — " + "Danny White" %}
+      {% set pageTitle = title + " — " + site.title %}
     {% else %}
-      {% set pageTitle = "Danny White" %}
+      {% set pageTitle = site.title %}
     {% endif %}
   <title>{{ pageTitle }}</title>
   
   {# Author #}
-  <meta name="author" content="Danny White" />
+  <meta name="author" content="{{ site.title }}" />
   
   {# Description #}
   {% if description %}
@@ -36,7 +36,7 @@
   <meta name="p:domain_verify" content="ccc8f17a0887c3d97360e2249f884b86" />
 
   {# Atom feed #}
-  <link rel="alternate" type="application/rss+xml" href="https://dannywhite.org/feed.xml" title="Danny White" />
+  <link rel="alternate" type="application/rss+xml" href="{{ site.feedUrl }}" title="{{ site.title }}" />
 
   {# Stylesheets #}
   <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />

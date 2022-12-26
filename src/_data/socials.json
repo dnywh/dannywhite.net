@@ -4,27 +4,27 @@
     "url": "https://read.cv/dannywhite"
   },
   {
-    "platform": "Instagram",
-    "url": "https://www.instagram.com/dannywhite/"
-  },
-  {
-    "platform": "Twitter",
-    "url": "https://twitter.com/dnywh/"
-  },
-  {
     "platform": "GitHub",
     "url": "https://www.github.com/dnywh/"
+  },
+  {
+    "platform": "Instagram",
+    "url": "https://www.instagram.com/dannywhite/"
   },
   {
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/in/dnywh"
   },
   {
-    "platform": "Pinterest",
-    "url": "https://pinterest.com/dnywhi/"
-  },
-  {
     "platform": "Literal",
     "url": "https://literal.club/danny"
+  },
+  {
+    "platform": "Mastodon",
+    "url": "https://c.im/@dannyw"
+  },
+  {
+    "platform": "Pinterest",
+    "url": "https://pinterest.com/dnywhi/"
   }
 ]
