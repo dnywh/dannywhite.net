@@ -10,9 +10,9 @@
     "desc": "A Twitter bot cousin of the Ephemera project. It checks for and tweets out new scraps of ephemera, daily"
   },
   {
-    "name": "Museum of COVID",
-    "url": "https://www.instagram.com/museumofcovid",
-    "desc": "Preserving graphic design history from a 1.5 metre distance"
+    "name": "Pi Frame",
+    "url": "https://github.com/dnywh/pi-frame",
+    "desc": "Print your own changing picture frame using an e-ink display and Raspberry Pi"
   },
   {
     "name": "68",
