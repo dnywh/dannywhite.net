@@ -7,6 +7,8 @@ tags:
   - netlify
   - figma
   - portfolio
+  - guide
+subject: Eleventy
 ---
 
 Suppose you have a Figma file that serves as your online portfolio. It looks something like this:

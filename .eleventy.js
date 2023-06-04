@@ -10,6 +10,9 @@ const slugify = require("slugify");
 const { srcset, src } = require("./src/helpers/shortcodes");
 
 module.exports = function (config) {
+    // Quieten console output
+    config.setQuietMode(true);
+
     // Copy folders into output directory
     config.addWatchTarget("./src/sass/");
     config.addPassthroughCopy("./src/assets/");
@@ -143,6 +146,26 @@ module.exports = function (config) {
         }
         return content;
     });
+
+    // Make a collection of guides
+    // https://github.com/11ty/eleventy/issues/1284#issuecomment-1026679407
+    config.addCollection("guidesBySubject", (collection) => {
+        const guides = collection.getFilteredByTag("guide");
+        const subjects = guides.map(guide => guide.data.subject)
+        const uniqueSubjects = [...new Set(subjects)]
+        const guidesBySubject = uniqueSubjects.reduce((prev, subject) => {
+            const filteredGuides = guides.filter(guide => guide.data.subject === subject);
+
+            return [
+                ...prev,
+                [subject, filteredGuides]
+            ]
+        }, []);
+
+        console.log(guidesBySubject)
+        return guidesBySubject;
+    });
+
 
     return {
         // Set which directories Eleventy reads from and writes to
