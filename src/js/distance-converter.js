@@ -6,13 +6,13 @@ const inlineThingsOnlyToConvert = document.querySelectorAll(".distance.inline")
 // Get radio form
 const radioButtons = document.querySelectorAll('input[name="unit-of-measurement"]');
 // Set a default unit
-let unitOfMeasurement = "km"
+let unit = "km"
 
 // Prepare function for updating the fieldset
 const updateRadioButtons = () => {
     for (const radioButton of radioButtons) {
         // If this radio button has the same value as the current unit...
-        if (radioButton.value === unitOfMeasurement) {
+        if (radioButton.value === unit) {
             // Set it as checked
             radioButton.checked = true;
             // No need to do `else` as only one can be checked
@@ -123,24 +123,24 @@ const updateTextOnPage = (oldUnit, newUnit) => {
 
 // Prepare main function for swapping between units
 const switchUnit = (selectedUnit) => {
-    const oldUnit = unitOfMeasurement
+    const oldUnit = unit
     // If the visitor has explicitly selected a specific radio button...
     if (selectedUnit) {
         // Switch to (or stay with) this radio button's value
-        unitOfMeasurement = selectedUnit.value;
+        unit = selectedUnit.value;
         // Or if this is just a general swap after tapping on an inline item...
     } else {
         // Swap the unit
         // TODO: switch below to ternary like...
         // unit === "km" ? "mi" : "km";
-        if (unitOfMeasurement === "km") {
-            unitOfMeasurement = "mi"
+        if (unit === "km") {
+            unit = "mi"
         } else {
-            unitOfMeasurement = "km"
+            unit = "km"
         }
     }
 
-    const newUnit = unitOfMeasurement
+    const newUnit = unit
 
     updateRadioButtons();
     updateTextOnPage(oldUnit, newUnit);
@@ -164,4 +164,4 @@ radioButtons.forEach(el => {
 // Set one of the radio buttons to checked based on the default or newly updated unit
 updateRadioButtons();
 // Ensure all text on page matches this unit
-updateTextOnPage(unitOfMeasurement);
+updateTextOnPage(unit);
