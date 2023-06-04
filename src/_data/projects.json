@@ -5,11 +5,6 @@
     "desc": "You know those scraps of paper and receipts that clog up your wallet and pockets? This is a living, digital archive of that"
   },
   {
-    "name": "Ephemerabot",
-    "url": "https://twitter.com/ephemerabot",
-    "desc": "A Twitter bot cousin of the Ephemera project. It checks for and tweets out new scraps of ephemera, daily"
-  },
-  {
     "name": "Pi Frame",
     "url": "https://github.com/dnywh/pi-frame",
     "desc": "Print your own changing picture frame using an e-ink display and Raspberry Pi"
@@ -18,5 +13,10 @@
     "name": "68",
     "url": "https://68.netlify.app",
     "desc": "Kevin Kelly's 68 Bits of Unsolicited Advice, One At a Time"
+  },
+  {
+    "name": "Brown Pages",
+    "url": "https://brownpages.org",
+    "desc": "Your local guide to composting, wherever you are."
   }
 ]
