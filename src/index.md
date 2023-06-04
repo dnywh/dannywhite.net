@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: layouts/home
+layout: layouts/home.njk
 ---
 
 **Recently** I was the founding product designer at _Future Super_, Australia’s first fossil free super fund. Before that I designed _Kickstarter_'s iOS and Android apps, as well as its [Environmental Resources Center](https://www.kickstarter.com/environment) and web creator tools. I’ve previously helped design apps like [Origami Studio](https://origami.design) and worked with clients including _Meta_, _Airbnb_, _Nike_, _Google_, _City of New York_, and _Unity_.
