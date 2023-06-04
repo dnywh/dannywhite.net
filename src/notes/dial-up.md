@@ -54,7 +54,7 @@ You get the gist: digital digits over dials and panels.
 
 ## Bounds
 
-Did you know that a square drawn on the ground will [entice cats to sit within its bounds](https://www.npr.org/2021/05/10/994262792/cats-take-if-i-fits-i-sits-seriously-even-if-the-space-is-just-an-illusion){:target="\_blank"}? I'm more of a dog person so here's another one: my beagle, Sally, hated car trips. She'd only cooperate if a sturdy cardboard box was brought along for her to curl up in and feel control over.
+Did you know that a square drawn on the ground will [entice cats to sit within its bounds](https://www.npr.org/2021/05/10/994262792/cats-take-if-i-fits-i-sits-seriously-even-if-the-space-is-just-an-illusion)? I'm more of a dog person so here's another one: my beagle, Sally, hated car trips. She'd only cooperate if a sturdy cardboard box was brought along for her to curl up in and feel control over.
 
 A speedometer similarly provides bounds by describing how fast we can go and how far away that is from a stationary position.
 
