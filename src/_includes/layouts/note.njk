@@ -1,8 +1,12 @@
 {% extends "layouts/base.njk" %}
+
+{% if clientJS %}
 {% block headContent %}
-  {# Add client spinner only to homepage, defer until document has been parsed as it relies on DOM elements #}
-  <script defer src="/js/distance-converter.js"></script>
+  {% for item in clientJS %}
+  <script defer src="/js/{{ item }}"></script>
+  {% endfor %}
 {% endblock %}
+{% endif %}
 
 {% block bodyContent %}
 <main class="note">

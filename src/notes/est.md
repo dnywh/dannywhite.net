@@ -4,6 +4,8 @@ description: "We recently rode the Empire State Trail from Manhattan to Rouses P
 date: 2022-07-15
 tags:
 	- Ride
+clientJS:
+  - "distance-converter.js"
 ---
 
 We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. The trip took 11 days at a relaxed riding pace.
