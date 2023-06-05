@@ -7,9 +7,10 @@
         <p>{{ subtitle }}</p>
     </header>
     <div>
-        {% for subject, guides in collections.guidesBySubject %}
         <section>
-        <h2>{{ subject }}</h2>
+        <h2>Guides</h2>
+        {% for subject, guides in collections.guidesBySubject %}
+        <h3>{{ subject }}</h3>
         <ul>
             {% for item in guides | reverse %}
             <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
