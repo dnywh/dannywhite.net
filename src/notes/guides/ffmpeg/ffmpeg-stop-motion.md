@@ -13,7 +13,7 @@ audience: People comfortable using Terminal. They probably have prior experience
 Here’s how to create a WEBM video based on still images using [FFmpeg](https://ffmpeg.org):
 
 ```bash
-ffmpeg -r 12 -i "frame-%02d.jpg" "output.webm"
+ffmpeg -r 12 -i "frame-%02d.jpg" output.webm
 ```
 
 That example:
