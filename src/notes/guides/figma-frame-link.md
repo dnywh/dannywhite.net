@@ -1,11 +1,13 @@
 ---
-title: Quickly copy a frame’s link in Figma
+title: Copy a Frame Link in Figma
 date: 2022-02-17
-description: Here's how to quickly select a Figma frame's URL via a keyboard shortcut.
+description: Here's how to quickly select a Figma frame’s URL via a keyboard shortcut.
 tags:
   - Figma
   - macOS
   - Shortcut
+  - guide
+subject: Figma
 ---
 
 The only way you used to be able to get the link for a frame in Figma was to:

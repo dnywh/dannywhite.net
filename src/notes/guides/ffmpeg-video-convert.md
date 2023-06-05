@@ -1,5 +1,5 @@
 ---
-title: Reduce Video File Size with FFmpeg
+title: Reduce Video File Size With FFmpeg
 date: 2023-06-04
 tags:
   - ffmpeg
@@ -7,7 +7,6 @@ tags:
   - terminal
   - guide
 subject: ffmpeg
-draft: false
 ---
 
 Here’s how to reduce the size of an MP4 file using [FFmpeg](https://ffmpeg.org):

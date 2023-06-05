@@ -162,7 +162,6 @@ module.exports = function (config) {
             ]
         }, []);
 
-        console.log(guidesBySubject)
         return guidesBySubject;
     });
 
