@@ -4,8 +4,9 @@
   {# Basic meta stuff #}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:site_name" content="{{ site.title }}" />
 
-  {# Title #}
+  {# Page title #}
   {% if title === "Home" %}
       {% set pageTitle = site.title %}
     {% elif title %}
@@ -14,6 +15,7 @@
       {% set pageTitle = site.title %}
     {% endif %}
   <title>{{ pageTitle }}</title>
+  <meta property="og:title" content="{{ pageTitle }}" />
   
   {# Author #}
   <meta name="author" content="{{ site.title }}" />

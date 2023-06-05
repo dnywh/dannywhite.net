@@ -81,9 +81,9 @@ module.exports = function (config) {
     // Tell Eleventy to swap to our custom Markdown config
     config.setLibrary("md", markdownLibrary);
 
+    // Plugins
     // RSS (Atom) feed
     config.addPlugin(pluginRss);
-
     // Syntax highlighting for code in blog posts
     config.addPlugin(syntaxHighlight, {
         // TODO: allow inline code to be styled like pre code. E.g:
@@ -93,6 +93,7 @@ module.exports = function (config) {
         inlineCodeMarker: '>',
     });
 
+    // Filters
     // Readable dates filter for blog posts
     // https://11ty.rocks/eleventyjs/dates/
     config.addFilter("postDate", (dateObj) => {

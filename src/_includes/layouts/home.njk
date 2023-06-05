@@ -1,5 +1,14 @@
 {% extends "layouts/base.njk" %}
 {% block headContent %}
+  {# https://developers.google.com/search/docs/appearance/site-names#guidelines #}
+  <script type="application/ld+json">
+      {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "{{ site.title }}",
+        "url" : "{{ site.url }}"
+      }
+  </script>
   {# Add client spinner only to homepage, defer until document has been parsed as it relies on DOM elements #}
   <script defer src="/js/accordion-expand.js"></script>
 {% endblock %}
