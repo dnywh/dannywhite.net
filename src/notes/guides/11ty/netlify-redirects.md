@@ -1,5 +1,5 @@
 ---
-title: Clean URLs for Figma links via Eleventy and Netlify
+title: Create Clean URLs for via Eleventy and Netlify Redirects
 date: 2022-08-11
 description: Using Netlify redirects to clean up Figma portfolio links.
 tags:
