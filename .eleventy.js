@@ -15,8 +15,9 @@ module.exports = function (config) {
 
     // Copy folders into output directory
     config.addWatchTarget("./src/sass/");
-    config.addPassthroughCopy("./src/assets/");
     config.addPassthroughCopy("./src/js/");
+    config.addPassthroughCopy("./src/assets/");
+    config.addPassthroughCopy("./src/site.webmanifest");
     // Allow redirects
     // https://daily-dev-tips.com/posts/adding-netlify-redirects-to-an-eleventy-site/
     config.addPassthroughCopy("src/_redirects");

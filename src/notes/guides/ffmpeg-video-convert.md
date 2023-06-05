@@ -7,6 +7,7 @@ tags:
   - terminal
   - guide
 subject: ffmpeg
+audience: People comfortable using Terminal. They probably have prior experience with FFmpeg or similar.
 ---
 
 Here’s how to reduce the size of an MP4 file using [FFmpeg](https://ffmpeg.org):
@@ -15,7 +16,7 @@ Here’s how to reduce the size of an MP4 file using [FFmpeg](https://ffmpeg.org
 ffmpeg -i "input.mp4" -vcodec libx264 -crf 28 "ouput.mp4"
 ```
 
-The `-crf 28` bit determines the quality and therefore also determines the file size. [A lower value means higher quality](https://superuser.com/a/677580/1680399). I find `28` a happy medium between a small file size and not much visual drop in quality.
+The `-crf 28` bit determines the quality and therefore also determines the file size. [A lower value means higher quality](https://superuser.com/a/677580/1680399). I find `28` a happy medium between a small file size and not much visual drop in quality. The file size ends up being about 5–6% of the original, in my experience.
 
 Here’s how to reduce the file size of an MOV file whilst also converting it to an MP4 file:
 
@@ -29,7 +30,15 @@ And here’s how to batch convert all MOV files within the current directory to 
 for i in *.mov; do ffmpeg -i "$i" -vcodec libx264 -crf 28 "${i%.*}.mp4";done
 ```
 
-I usually keep a dedicated folder on my Mac (Downloads ▸ Convert) in which I drop videos to convert. I can then just batch convert videos quickly with the same few keystrokes each time.
+Finally, here's the one I use most often: converting all MP4 files in the current directory to new MP4 files within a child directory called _Converted_:
+
+```bash
+for i in *.mp4; do ffmpeg -i "$i" -vcodec libx264 -crf 28 "Converted/${i%.*}.mp4";done
+```
+
+That child directory must already exist for the above to work. I usually keep a dedicated folder on my Mac (Downloads ▸ Convert) in which I drop videos to convert. That folder has an empty subfolder called _Converted_ (so Downloads ▸ Convert ▸ Converted) ready to catch the output.
+
+I can then just batch convert videos quickly with the same few keystrokes each time; with a predictable output location and without any change to the original file name.
 
 ## Backstory
 
