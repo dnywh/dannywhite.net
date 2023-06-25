@@ -15,7 +15,9 @@ audience: People who own a Kobo e-reader, use a Mac, and want to save their high
 
 I’m sick of relying on expensive, fickle, and/or cumbersome online services to store my Kobo highlights so built my own flow. Now I can just press a few buttons and paste the highlights (and notes) in Notion.
 
-The Kobo highlights are simply cleaned up and formatted as Markdown. That means you could use this flow to your Kobo highlights and notes to any app or service that supports Markdown, not just Notion.
+Each highlight appears as a native Notion quote block. Notes (or annotations) that accompany highlights can take on any Markdown/Notion syntax, such as `[]` to create a Notion todo item.
+
+As you might be able to guess: the flow highlights are simply cleaned up and formatted to Markdown. You could use this flow to your Kobo highlights and notes to any app or service that supports Markdown, not just Notion.
 
 ## Installation
 
