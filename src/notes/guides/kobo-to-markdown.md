@@ -69,3 +69,7 @@ Here’s what it looks like in practice:
   loading="lazy">
   <figcaption>Pasting the shortcut’s results into Notion (or similar) means that the text inherits Markdown formatting. Notice how the ‘Read Team Human’ note is formatted as a todo item. The surrounding highlights are formatted as blockquotes.</figcaption>
 </figure>
+
+## Give it to me straight
+
+See [this Python script](https://gist.github.com/dnywh/fd3fce09290b194e003c6870f153fd98) for a version you can run in Terminal.
