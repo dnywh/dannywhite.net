@@ -15,3 +15,6 @@ public
 
 # other things
 package-lock.json
+
+# Local Netlify folder
+.netlify
