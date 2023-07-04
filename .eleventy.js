@@ -8,6 +8,9 @@ const markdownItAnchor = require("markdown-it-anchor");
 const slugify = require("slugify");
 // Shortcodes
 const { srcset, src } = require("./src/helpers/shortcodes");
+// Link list
+const raindrop = require("./src/js/raindrop");
+require('dotenv').config();
 
 module.exports = function (config) {
     // Quieten console output

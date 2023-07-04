@@ -1,0 +1,39 @@
+.linked {
+  header {
+    margin-bottom: 6rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    li a {
+      display: flex;
+      flex-direction: row;
+      gap: 0.75rem;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        // aspect-ratio: 1 / 1;
+        object-fit: cover;
+      }
+
+      // Text
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        h3 {
+          font-weight: 500;
+          font-size: 1.25rem;
+        }
+
+        p {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
