@@ -1,0 +1,32 @@
+{% extends "layouts/base.njk" %}
+
+{% block bodyContent %}
+<main class="linked">
+    <header>
+        <h1>{{ title }}</h1>
+        <p>{{ subtitle }}</p>
+    </header>
+    <div>
+        <section>
+            <ul>
+            {% for item in links.items %}
+                <li>
+                <a href="{{ item.link }}" target="_blank" rel="noopener">
+                    {% if item.media[0].type == "image" %}
+                    <img src="{{ item.media[0].link }}" alt="The image accompanying this link.">
+                    {% endif %}
+                    <div>
+                        <h3>{{ item.title }}</h3>
+                        {% if item.note %}
+                        <p>{{ item.note }}</p>
+                        {% endif %}
+                        <p><small>{{ item.domain }}</small></p>
+                    </div>
+                </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</main>
+{% endblock %}
