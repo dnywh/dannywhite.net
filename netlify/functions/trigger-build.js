@@ -4,26 +4,25 @@
 const { schedule } = require("@netlify/functions");
 const EleventyFetch = require("@11ty/eleventy-fetch");
 
-function getRandomBoolean() {
-    return Math.random() < 0.5;
-}
-
+// Send build hook to Netlify
 const handler = async function () {
-    const url = "https://api.netlify.com/build_hooks/64a48b7e9f31641feffedf19"
+    const buildHookURL = "https://api.netlify.com/build_hooks/64a48b7e9f31641feffedf19"
 
-    const testCondition = getRandomBoolean();
+    // TODO: Make this condition only true if cache !== what's been pulled above in `raindrop`
+    const hasNewData = false;
 
-    if (testCondition) {
-        /* This returns a promise */
-        return EleventyFetch(url, {
-            duration: "0s", // Always fetch (post) new data
+    if (hasNewData) {
+        // Return promise
+        return EleventyFetch(buildHookURL, {
+            // duration: "0s", // Always fetch (post) new data
+            verbose: true,
             fetchOptions: {
                 statusCode: 200,
-                body: `${testCondition}: Netlify build triggered successfully`,
+                // body: `${testCondition}: Netlify build triggered successfully`,
                 method: "POST",
             }
         });
     }
 };
 
-exports.handler = schedule("@hourly", handler);
+exports.handler = schedule("@daily", handler);

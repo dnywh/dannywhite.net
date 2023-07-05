@@ -169,6 +169,24 @@ module.exports = function (config) {
         return guidesBySubject;
     });
 
+    // Make a collection of raindrops sorted by date saved, not date created
+    const raindrops = require("./src/_data/links.js")
+    config.addCollection('raindrops', async () => {
+        const data = await raindrops();
+        // Access the items within the child array
+        const items = data.items
+        // Sort by date
+        const sortedItems = items.sort((a, b) => {
+            // Compare the `lastUpdate` property of each item
+            const dateA = new Date(a.lastUpdate);
+            const dateB = new Date(b.lastUpdate);
+            return dateB - dateA; // Sort in descending order (latest first)
+        });
+
+        return sortedItems;
+    });
+
+
 
     return {
         // Set which directories Eleventy reads from and writes to
