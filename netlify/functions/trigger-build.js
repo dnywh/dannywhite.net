@@ -9,7 +9,8 @@ const handler = async function () {
     const buildHookURL = "https://api.netlify.com/build_hooks/64a48b7e9f31641feffedf19"
 
     // TODO: Make this condition only true if cache !== what's been pulled above in `raindrop`
-    const hasNewData = false;
+    // Right now this is hardcoded to always rebuild (assuming there is always fresh data)
+    const hasNewData = true;
 
     if (hasNewData) {
         // Return promise
