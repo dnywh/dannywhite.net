@@ -1,0 +1,13 @@
+body > footer {
+  margin-top: 5rem;
+  margin-left: var(--margin-sides);
+  margin-right: var(--margin-sides);
+
+  > p {
+    font-size: 0.75rem;
+  }
+
+  > a img {
+    width: 3rem;
+  }
+}

@@ -1,0 +1,34 @@
+/* body {
+  margin: 1rem;
+} */
+
+:root {
+  --spacing-margin-x-md: 1rem;
+  /* Basic left-and-right section margins, often on the entire page */
+  --margin-sides: 1rem;
+  @media (min-width: 1024px) {
+    --margin-sides: 5rem;
+  }
+}
+
+p {
+  margin: 1rem 0;
+}
+
+ul > li {
+  margin: 0.25rem 0;
+  > p {
+    margin: 0;
+  }
+}
+
+/* Don't show a JavaScript element if the user has it turned off */
+.no-js .js-content {
+  display: none;
+}
+
+main {
+  /* Set basic margins */
+  margin-left: var(--margin-sides);
+  margin-right: var(--margin-sides);
+}

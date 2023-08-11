@@ -1,0 +1,32 @@
+.sticky-wrapper {
+  /* Set an explicit height in order to cause shifting */
+  height: 20rem;
+}
+
+header.site-header {
+  border-top: 1px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* margin-bottom: 10rem; */
+  position: sticky;
+  top: 1rem;
+  /* padding-bottom: ; */
+  /* color: red; */
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .logo {
+    width: 36px;
+    height: auto;
+    display: block;
+
+    > path {
+      fill: var(--color-text-primary);
+    }
+  }
+}

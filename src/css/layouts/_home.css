@@ -1,0 +1,230 @@
+.home {
+  > body {
+    background-color: hsla(36, 100%, 92%, 1);
+    background-color: white;
+    transition: background-color 2s ease;
+
+    &.visible {
+      background-color: white;
+    }
+    /* margin: 0 auto; */
+    /* margin-top: 25vh; */
+
+    .crawl-header {
+      margin: 0;
+      /* Start slightly downward */
+      margin-top: 25vh;
+      max-width: 1800px;
+
+      display: grid;
+      gap: 0 2rem;
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        /* Set the side margins here since there won't be bleed on large displays */
+        margin: 40vh var(--margin-sides) 3rem;
+        /* margin-top: 40vh; */
+        /* display: flex; */
+        /* margin: 0 2.5rem; */
+        /* Add some breathing room at bottom */
+        padding-bottom: 25vh;
+      }
+
+      /* TODO: Do this media query dynamically */
+      /* min-width: calc(1800px + var(--margin-sides)) */
+      @media (min-width: calc(1960px)) {
+        margin: 40vh auto 3rem;
+      }
+
+      .header-text {
+        grid-column: 1;
+        /* Set the side margins here since there will be bleed on smaller displayers */
+        margin-left: var(--margin-sides);
+        margin-right: var(--margin-sides);
+
+        /* Set the fade-in animations  */
+        --fadein-duration: 3s;
+        /* Handle everything but the first paragraph */
+        &:not(:first-of-type) {
+          opacity: 0;
+          animation: var(--fadein-duration) ease 2s forwards fadein;
+        }
+        /* Now handle first paragraph */
+        /* It needs to be handled separately as it's split up into two parts */
+        &:first-of-type {
+          > p {
+            > span {
+              opacity: 0;
+              &:nth-child(1) {
+                /* Set an earlier delay here since we want it to appear first */
+                animation: var(--fadein-duration) ease 0.25s forwards fadein;
+              }
+              &:nth-child(2) {
+                animation: var(--fadein-duration) ease 1s forwards fadein;
+              }
+            }
+          }
+        }
+
+        @keyframes fadein {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        > p {
+          /* Style the left-side text */
+          font-size: 48px;
+          font-weight: 400;
+          line-height: 116%;
+          letter-spacing: -1.5px;
+          /* Keep an optical width */
+          max-width: 680px;
+
+          > span.highlight {
+            background-color: var(--color-bg-highlight);
+          }
+        }
+
+        &:first-of-type {
+          margin-bottom: 4rem;
+
+          & p:first-of-type {
+            font-weight: 500;
+          }
+        }
+      }
+
+      #client-roll {
+        grid-column: 1;
+        /* grid-row: 2; */
+
+        @media (min-width: 1024px) {
+          margin-top: 2rem; /* Should equal the margin-top of the corresponding p tag */
+          grid-column: 2;
+
+          position: sticky;
+          top: 30vh;
+        }
+
+        background-color: var(
+          --color-bg-highlight
+        ); /* Should match JavaScript and meta theme-color */
+        /* width: 100%; */
+        padding: 2.5rem 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        overflow-x: hidden;
+
+        /* Handle fade-in */
+        opacity: 0.35;
+        --marquee-transition: opacity 2s ease;
+        transition: var(--marquee-transition);
+        &.visible {
+          opacity: 1;
+          .marquee {
+            opacity: 1;
+          }
+        }
+
+        .marquee {
+          /* Handle fade-in */
+          opacity: 0;
+          /* Reenable marquee contents when visible is triggered */
+          transition: var(--marquee-transition);
+
+          /* Style marquee animation */
+          /* https://ryanmulligan.dev/blog/css-marquee/ */
+          --duration: 75s;
+          --gap: 2.5rem;
+
+          /* Set custom offsets and tweaks for each line */
+          /* TODO: Make durations happen via a calc() via Lightning CSS preprocessing */
+          &:nth-child(2) {
+            margin-left: -50vw;
+            --duration: 70s;
+          }
+          &:nth-child(3) {
+            margin-left: -100vw;
+            --duration: 82s;
+          }
+          &:nth-child(4) {
+            margin-left: -150vw;
+            --duration: 78s;
+          }
+
+          /* overflow: hidden; */
+          user-select: none;
+          /*  */
+          display: flex;
+          gap: var(--gap);
+
+          /* background: rgba(17, 0, 255, 0.078); */
+
+          .marquee-content {
+            /* Reset list styling */
+            list-style-type: none;
+            padding-inline-start: 0;
+
+            /* background: rgba(255, 0, 0, 0.1); */
+
+            /* Style marquee */
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: space-between;
+            /* Must have a fixed width because our items are variable width */
+            /* justify-content: space-around; */
+            /* min-width: 100%; */
+            /* gap: var(--gap); */
+            /* This value is calculated in JavaScript */
+            /* The below is a fallback */
+            width: 2216px;
+
+            /* Start animation */
+            animation: scroll var(--duration) linear infinite reverse; /* or reverse instead of normal */
+            /* animation-play-state: paused; */
+            @media (prefers-reduced-motion: reduce) {
+              animation-play-state: paused;
+            }
+
+            > li {
+              display: flex;
+              flex-shrink: 0;
+              /* align-items: center; */
+
+              gap: 0.5rem; /* The gap between image and text */
+
+              /* background: rgb(221, 255, 193); */
+
+              font-size: 64px;
+              font-weight: 500;
+              letter-spacing: -1.92px;
+              line-height: 100%;
+
+              > img {
+                width: 64px;
+                height: 64px;
+              }
+            }
+          }
+
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+
+            100% {
+              transform: translateX(calc(-100% - var(--gap)));
+            }
+          }
+        }
+      }
+    }
+  }
+}

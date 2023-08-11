@@ -1,5 +1,7 @@
 {% extends "layouts/base.njk" %}
+
 {% block headContent %}
+  {# Add Google Search data #}
   {# https://developers.google.com/search/docs/appearance/site-names#guidelines #}
   <script type="application/ld+json">
       {
@@ -9,72 +11,64 @@
         "url" : "{{ site.url }}"
       }
   </script>
-  {# Add client spinner only to homepage, defer until document has been parsed as it relies on DOM elements #}
-  <script defer src="/js/accordion-expand.js"></script>
 {% endblock %}
 
 {% block bodyContent %}
-  <main class="home">
-    <section class="hero">
-      <h1>I design products that get us closer to net zero.</h1>
-    </section>
-    <section class="intro">
-    <div class="recently">
-    <input type="checkbox" id="expand-toggle" />
-      <div class="expandable-content">
-        {{ content | safe }}
-      </div>
-      <label for="expand-toggle" class="expand-btn small-text" tabindex="0">More</label>
+  <header class="crawl-header">
+    <div class="header-text">
+      <p><span>Hello. </span><span>You’ve reached the internet home of Danny White, a freelance digital designer in Melbourne, Australia.</span></p>
     </div>
-    <div class="right-now">
-          <p><strong>Right now</strong> I’m running my freelance design practice. I’m also exploring how to lend my skills to alternate food production and food waste reduction ideas trying to survive the ‘valley of death’. Think circular economy projects like textiles or edible cutlery made from diverted (food) waste materials.</p>
-          <p>Please {% include "partials/email-reach-out.html" %} if you have ideas or just want to say hello.</p>
+    <div class="header-text">
+      <p>I design for screen. Maybe I’ve even designed for one of yours.</p>
     </div>
-    </section>
-    
-  <section class="notes">
-      <div class="header">
-        <h2><a href="/notes">Notes</a></h2>
-        <a class="rss" href="/feed.xml">RSS</a>
-      </div>
-      <div class="x-scroll-wrapper">
-      <ul>
-      {% for item in collections.note | reverse %}
-      {# Limit to three items #}
-       {% if loop.index0 < 3 %} 
-      <li>
-      {% if item.data.draft %} 
-        <a href="#/">
-        {% else %}
-        <a href="{{ item.url }}">
-        {% endif %}
-          <h3>{{ item.data.title }}</h3>
-          <h4>{{ item.data.tags[1] }}</h4>
-        </a>
-      </li>
-      {% endif %}
-      {% endfor %}
-      <li><a href="/notes" class="small-text">More</a></li>
-      </ul>
-      </div>
-  </section>
-      
+    <div class="header-text">
+      <p id="client-desc">These are some of the folks I’ve had the pleasure of working with over the last 8+ years...</p>
+    </div>
+    <div id="client-roll">
+      {% include "partials/client-roll-marquee.html" %} 
+    </div>
+    <div class="header-text">
+      <p>I am <span class="highlight">available</span> for new work starting <span class="highlight">November 1st 2023</span>.</p>
+      <p>Design prototyping, systems, and design engineering roles are my forte.</p>
+      <p>Sound like it could be a fit? <br><a href="#todo">Let’s chat</a>.</p>
+    </div>
+  </header>
+  <main>
+    {% include "partials/site-header.html" %}
 
-  <section class="projects">
-    <h2>Misc</h2>
+    <p>This is where everything else on the page goes. It will drag on a lot, so here's some dummy content:</p>
+
+  {# Trove #}
+  <section>
     <ul>
-    {% for project in projects %}
-    <li>
-    <p>
-    <a href="{{ project.url }}">
-    <strong>{{ project.name }}</strong> {{ project.desc }}
-    </a>
-    </p>
-    </li>
-    {% endfor %}
+    {% for item in collections.raindrops %}
+        <li>
+        <a href="{{ item.link }}" target="_blank" rel="noopener">
+            {% if item.media[0].type == "image" %}
+            <img src="{{ item.media[0].link }}" alt="The image accompanying this link.">
+            {% endif %}
+            <div>
+                <h3>{{ item.title }}</h3>
+                {% if item.note %}
+                <p>{{ item.note }}</p>
+                {% endif %}
+                <p><small>{{ item.domain }}</small></p>
+            </div>
+        </a>
+        </li>
+        {% endfor %}
     </ul>
-  </section>
-
-   
+</section>
   </main>
+{% endblock %}
+
+
+{% block pageJsContent %}
+  {# Page-specific scripts that depend on DOM elements #}
+    {% set pageJs %}
+        {# Adds intro behaviour #}
+        {% include "js/home-intro.js"%}
+    {% endset %}
+    {# Minify above scripts #}
+    <script>{{ pageJs | jsmin | safe }}</script>
 {% endblock %}

@@ -1,49 +1,14 @@
 <footer>
-  <a class="logo-link" href="/" aria-label="Home">
-    {% include "partials/logo.svg" %}
+  <a href="/">
+    <img
+      src="{{ '/assets/symbol.svg' | url }}"
+      alt="An eyeball made out of an @ symbol."
+    />
   </a>
-
-  <div class="color-switch">
-    <div role="status" class="visually-hidden js-mode-status"></div>
-    <button class="toggle-button js-mode-toggle">
-      <div class="switch-side light">{% include "partials/icon-sun.svg" %}</div>
-      <div class="switch-side dark">{% include "partials/icon-moon.svg" %}</div>
-    </button>
-  </div>
-
-  <section class="subtitle">
-    {% if title === "Home" %}
-    <p>
-      Loading this page produces about 0.05 grams of
-      CO<sub>2</sub>e<sup>*</sup>. Loading it 1000 more times would produce a
-      similar carbon footprint to growing a small potato or driving 200 metres
-      in a Toyota Corolla. Sparse use of imagery, limited fonts, and
-      <a
-        href="https://sustainablewebdesign.org/category/design/"
-        target="_blank"
-        >other tricks</a
-      >
-      help bring it down.
-    </p>
-    <p>
-      <sup>*</sup>as measured June 21, 2022 on
-      <a href="https://www.websitecarbon.com/" target="_blank"
-        >Website Carbon Calculator</a
-      >.
-    </p>
-    {# {% else %}
-    <p>{{ site.subtitle }}</p>
-    #} {% endif %}
-  </section>
-
-  <ul class="socials">
-    <li>{% include "partials/email.html" %}</li>
-    {% for social in socials %}
-    <li>
-      <a href="{{ social.url }}" rel="me" target="_blank"
-        >{{ social.platform }}</a
-      >
-    </li>
-    {% endfor %}
-  </ul>
+  <p>
+    This is a template by
+    <a href="https://dannywhite.org" target="_blank" rel="noopener"
+      >Danny White</a
+    >.
+  </p>
 </footer>

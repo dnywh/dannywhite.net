@@ -1,0 +1,48 @@
+{# Macros to handle repetition #} {% macro renderMarquee(repeated) %} {# If it's
+a repeated marquee, ARIA hide the whole thing #}
+<div {% if repeated %}aria-hidden="true" {% endif %} class="marquee">
+  {{ renderMarqueeInner() }} {% if repeated %} {{ renderMarqueeInner() }} {%
+  else %} {# If it's not a repeated marquee, ARIA hide the inner repetition only
+  #} {{ renderMarqueeInner(true) }} {% endif %}
+</div>
+{% endmacro %} {% macro renderMarqueeInner(repeated) %}
+<ul {% if repeated %}aria-hidden="true" {% endif %} class="marquee-content">
+  {% for client in clients %}
+  <li>
+    <img
+      src="/assets/images/clients/{{ client | slugify }}.png"
+      alt="The logo for {{ client }}"
+    />
+    {{ client }}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %} {{ renderMarquee() }} {{ renderMarquee(true) }} {{
+renderMarquee(true) }} {{ renderMarquee(true) }} {# The plain markup that is
+sliced-and-diced
+
+<div class="marquee">
+  <ul class="marquee-content">
+    {% for client in clients %}
+    <li>
+      <img
+        src="/assets/img/clients/{{ client | slugify }}.png"
+        alt="The logo for {{ client }}"
+      />
+      {{ client }}
+    </li>
+    {% endfor %}
+  </ul>
+  <ul aria-hidden="true" class="marquee-content">
+    {% for client in clients %}
+    <li>
+      <img
+        src="/assets/img/clients/{{ client | slugify }}.png"
+        alt="The logo for {{ client }}"
+      />
+      {{ client }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+#}

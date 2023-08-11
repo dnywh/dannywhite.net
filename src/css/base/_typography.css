@@ -1,0 +1,14 @@
+body {
+  font-family: "ITC Franklin Gothic", system-ui, sans-serif;
+  color: var(--color-text-primary);
+
+  & p {
+    > a {
+      color: inherit;
+      transition: color 0.15s ease;
+      &:hover {
+        color: var(--color-text-highlight);
+      }
+    }
+  }
+}

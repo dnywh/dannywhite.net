@@ -1,24 +1,14 @@
-<header>
-  <section class="meta">
-    <span class="small-text">☺ {% year %}</span>
-    <div>
-      <span class="small-text">Last updated {{ siteGeneratedDate }}</span>
-      <span class="small-text"
-        >∙ Edition
-        <a
-          class="edition-link"
-          href="{{ site.repoUrl }}/commits/main"
-          target="_blank"
-          >{{ ISOSiteGeneratedDate }}</a
-        ></span
-      >
+<div class="sticky-wrapper">
+  <header class="site-header">
+    <div class="left">
+      <a href="/" aria-label="Home"> {% include "partials/logo.svg" %}</a>
+      <span>☺ {% year %}</span>
     </div>
-  </section>
-
-  <section class="strip">
-    <a href="/" aria-label="Home">
-      <span class="small-text">{{ site.title }}</span>
-      {% include "partials/logo.svg" %}
-    </a>
-  </section>
-</header>
+    <span>
+      This is a template by
+      <a href="https://dannywhite.org" target="_blank" rel="noopener"
+        >Danny White</a
+      >.
+    </span>
+  </header>
+</div>

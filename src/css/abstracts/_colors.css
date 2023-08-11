@@ -1,0 +1,5 @@
+:root {
+  --color-text-primary: #000;
+  --color-bg-highlight: hsla(36, 100%, 92%, 1);
+  --color-text-highlight: hsla(36, 75%, 52%, 1);
+}
