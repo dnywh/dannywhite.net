@@ -126,7 +126,9 @@
         display: grid;
         gap: 0 2.5rem;
         @media (min-width: 1024px) {
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          /* minmax is necessary to stop long strings from overriding. Previously: */
+          /* grid-template-columns: repeat(4, 1fr); */
           grid-template-rows: masonry;
         }
         > li {
@@ -143,7 +145,6 @@
             /* The image component */
             > img {
               max-width: 100%;
-              margin-bottom: 1rem;
             }
             /* The text component */
             /* Reset standard link color and underline */
@@ -175,23 +176,34 @@
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
-
-                > small {
-                  margin-top: 0.75rem;
-                  /* Style */
-                  font-size: 12px;
-                  line-height: 115%; /* 13.8px */
-                  letter-spacing: -0.12px;
-                  /* Restore underline for the actual link */
-                  text-decoration: underline;
-                  /* Give it a nice little icon */
-                  /* Add flex for optical positioning*/
-                  display: flex;
-                  gap: 0.1875rem;
-                  &:after {
-                    content: url(/assets/images/arrow-se.svg);
-                  }
-                }
+              }
+            }
+            /* Style outbound link */
+            .outbound-link {
+              /* Reset margins */
+              margin: 0;
+              margin-top: 0.5rem;
+              /* padding: 0; */
+              /* Give it a nice little icon */
+              /* Add flex for optical positioning*/
+              display: flex;
+              gap: 0.1875rem;
+              align-items: center;
+              &:after {
+                content: url(/assets/images/arrow-se.svg);
+                opacity: 0.5;
+              }
+              > small {
+                /* Style */
+                color: var(--color-text-secondary);
+                font-size: 12px;
+                letter-spacing: -0.12px;
+                /* Show underline since it's visually a actual link */
+                text-decoration: underline;
+                /* Truncate text in case the URL is long */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
               }
             }
           }

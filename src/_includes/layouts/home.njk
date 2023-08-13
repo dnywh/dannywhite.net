@@ -45,18 +45,19 @@
     <ul class="plain trove">
     {% for item in collections.raindrops %}
         <li>
-        <a href="{{ item.link }}" target="_blank" rel="noopener">
-            {% if item.media[0].type == "image" %}
-              <img src="{{ item.media[0].link }}" alt="The image accompanying this link.">
+          <a href="{{ item.link }}" target="_blank" rel="noopener">
+            {% if item.type == "image" %}
+              <img src="{{ item.cover }}" alt="The image accompanying this link.">
+            {% else %}
+              <div>
+                  <h3>{{ item.title }}</h3>
+                  {% if item.note %}
+                    <p>{{ item.note }}</p>
+                  {% endif %}
+              </div>
             {% endif %}
-            <div>
-                <h3>{{ item.title }}</h3>
-                {% if item.note %}
-                <p>{{ item.note }}</p>
-                {% endif %}
-                <p><small>{{ item.domain }}</small></p>
-            </div>
-        </a>
+            <p class="outbound-link"><small>{{ item.domain }}</small></p>
+          </a>
         </li>
         {% endfor %}
     </ul>
