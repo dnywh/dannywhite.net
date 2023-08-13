@@ -1,5 +1,5 @@
 const introEl = document.querySelector("main > header")
-const clientRollEl = document.querySelector("div#client-roll")
+const clientRollEl = document.querySelector("div.client-roll")
 const marqueeItemsSample = document.querySelector(".marquee-content").children
 const marqueeContentAll = document.querySelectorAll(".marquee-content")
 const clientDescEl = document.querySelector("p#client-desc")
@@ -59,6 +59,6 @@ const observer = new IntersectionObserver(
             }
         });
     },
-    { threshold: [0.65] }
+    { threshold: [0.85] }
 );
 observer.observe(clientRollEl);

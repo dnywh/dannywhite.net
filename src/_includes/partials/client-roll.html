@@ -17,9 +17,13 @@ a repeated marquee, ARIA hide the whole thing #}
   </li>
   {% endfor %}
 </ul>
-{% endmacro %} {{ renderMarquee() }} {{ renderMarquee(true) }} {{
-renderMarquee(true) }} {{ renderMarquee(true) }} {# The plain markup that is
-sliced-and-diced
+{% endmacro %} {# Begin actual markup... #}
+<div class="client-roll">
+  {{ renderMarquee() }} {{ renderMarquee(true) }} {{ renderMarquee(true) }} {{
+  renderMarquee(true) }}
+</div>
+{# Begin commented-out plain markup of marquees for reference, which is
+sliced-and-diced above...
 
 <div class="marquee">
   <ul class="marquee-content">

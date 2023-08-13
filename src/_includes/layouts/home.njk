@@ -24,9 +24,7 @@
     <div class="header-text">
       <p id="client-desc">These are some of the folks I’ve had the pleasure of working with over the last 8+ years...</p>
     </div>
-    <div id="client-roll">
-      {% include "partials/client-roll-marquee.html" %} 
-    </div>
+    {% include "partials/client-roll.html" %} 
     <div class="header-text">
       <p>I am <span class="highlight">available</span> for new work starting <span class="highlight">November 1st 2023</span>.</p>
       <p>Design prototyping, systems, and design engineering roles are my forte.</p>
@@ -67,7 +65,7 @@
   {# Page-specific scripts that depend on DOM elements #}
     {% set pageJs %}
         {# Adds intro behaviour #}
-        {% include "js/home-intro.js"%}
+        {% include "js/client-roll.js"%}
     {% endset %}
     {# Minify above scripts #}
     <script>{{ pageJs | jsmin | safe }}</script>

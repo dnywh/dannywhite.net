@@ -1,0 +1,129 @@
+.client-roll {
+  grid-column: 1;
+  /* grid-row: 2; */
+
+  @media (min-width: 1024px) {
+    margin-top: 2rem; /* Should equal the margin-top of the corresponding p tag */
+    grid-column: 2;
+
+    position: sticky;
+    top: 30vh;
+  }
+  background-color: rgba(0, 0, 0, 0.06);
+
+  padding: 2.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  overflow-x: hidden;
+
+  /* Handle fade-in */
+  opacity: 0.35;
+  --marquee-transition: opacity 2s ease;
+  transition: var(--marquee-transition);
+  &.visible {
+    background-color: var(
+      --color-bg-highlight
+    ); /* Should match JavaScript and meta theme-color */
+    /* width: 100%; */
+
+    opacity: 1;
+    .marquee {
+      opacity: 1;
+    }
+  }
+
+  .marquee {
+    /* Handle fade-in */
+    opacity: 0;
+    /* Reenable marquee contents when visible is triggered */
+    transition: var(--marquee-transition);
+
+    /* Style marquee animation */
+    /* https://ryanmulligan.dev/blog/css-marquee/ */
+    --duration: 75s;
+    --gap: 2.5rem;
+
+    /* Set custom offsets and tweaks for each line */
+    /* TODO: Make durations happen via a calc() via Lightning CSS preprocessing */
+    &:nth-child(2) {
+      margin-left: -50vw;
+      --duration: 70s;
+    }
+    &:nth-child(3) {
+      margin-left: -100vw;
+      --duration: 82s;
+    }
+    &:nth-child(4) {
+      margin-left: -150vw;
+      --duration: 78s;
+    }
+
+    /* overflow: hidden; */
+    user-select: none;
+    /*  */
+    display: flex;
+    gap: var(--gap);
+
+    /* background: rgba(17, 0, 255, 0.078); */
+
+    .marquee-content {
+      /* Reset list styling */
+      list-style-type: none;
+      padding-inline-start: 0;
+
+      /* background: rgba(255, 0, 0, 0.1); */
+
+      /* Style marquee */
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+      /* Must have a fixed width because our items are variable width */
+      /* justify-content: space-around; */
+      /* min-width: 100%; */
+      /* gap: var(--gap); */
+      /* This value is calculated in JavaScript */
+      /* The below is a fallback */
+      width: 2216px;
+
+      /* Start animation */
+      animation: scroll var(--duration) linear infinite reverse; /* or reverse instead of normal */
+      /* animation-play-state: paused; */
+      @media (prefers-reduced-motion: reduce) {
+        animation-play-state: paused;
+      }
+
+      > li {
+        display: flex;
+        flex-shrink: 0;
+        /* align-items: center; */
+
+        gap: 0.5rem; /* The gap between image and text */
+
+        /* background: rgb(221, 255, 193); */
+
+        font-size: 64px;
+        font-weight: 500;
+        letter-spacing: -1.92px;
+        line-height: 100%;
+
+        > img {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-100% - var(--gap)));
+      }
+    }
+  }
+}
