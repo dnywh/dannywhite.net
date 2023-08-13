@@ -28,22 +28,26 @@
     <div class="header-text">
       <p>I am <span class="highlight">available</span> for new work starting <span class="highlight">November 1st 2023</span>.</p>
       <p>Design prototyping, systems, and design engineering roles are my forte.</p>
-      <p>Sound like it could be a fit? <br><a href="#todo">Let’s chat</a>.</p>
+      <p>Sound like it could be a fit? <br><a data-tooltip="Opens your email app" href="#todo">Let’s chat</a>.</p>
     </div>
   </header>
   <main>
     {% include "partials/site-header.html" %}
 
-    <p>This is where everything else on the page goes. It will drag on a lot, so here's some dummy content:</p>
+    {# <p>This is where everything else on the page goes. It will drag on a lot, so here's some dummy content:</p> #}
 
   {# Trove #}
-  <section>
-    <ul>
+  <section class="home-section">
+  <header>
+  <h2>Trove</h2>
+  <p>What I’ve found interesting lately around the web.</p>
+  </header>
+    <ul class="plain trove">
     {% for item in collections.raindrops %}
         <li>
         <a href="{{ item.link }}" target="_blank" rel="noopener">
             {% if item.media[0].type == "image" %}
-            <img src="{{ item.media[0].link }}" alt="The image accompanying this link.">
+              <img src="{{ item.media[0].link }}" alt="The image accompanying this link.">
             {% endif %}
             <div>
                 <h3>{{ item.title }}</h3>

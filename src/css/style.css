@@ -10,5 +10,6 @@
 @import "components/_client-roll.css";
 @import "components/_site-header.css";
 @import "components/_site-footer.css";
+@import "components/_tooltip.css";
 /* Page-specific styles */
 @import "layouts/_home.css";

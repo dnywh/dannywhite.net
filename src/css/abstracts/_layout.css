@@ -15,10 +15,20 @@ p {
   margin: 1rem 0;
 }
 
-ul > li {
-  margin: 0.25rem 0;
-  > p {
-    margin: 0;
+ul {
+  &.plain {
+    /* Reset list styling */
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+  &:not(.plain) {
+    /* Handle styles on normal bulleted lists */
+    > li {
+      margin: 0.25rem 0;
+      > p {
+        margin: 0;
+      }
+    }
   }
 }
 
