@@ -151,17 +151,18 @@
             padding: 1.5rem 0;
 
             /* Set up transitions */
-            /* Transform transition happens to the whole element */
-            transition: transform 0.3s ease;
+            /* Transform transitions happen only to image elements */
+            & img {
+              transition: opacity 0.3s ease, transform 0.3s ease;
+            }
             /* Opacity transitions are handled differently on child items */
-            & img,
             & h3,
             & p {
               transition: opacity 0.3s ease;
             }
             &:hover {
-              transform: scale(1.01);
               & img {
+                transform: scale(1.01);
                 opacity: 0.8;
               }
               & h3,
@@ -232,19 +233,6 @@
           }
           /* Style inner */
           > a {
-            /* Override some transitions */
-            /* Slow this down given these elements are bigger */
-            transition: transform 0.45s ease;
-            /* Match opacity timing */
-            & img,
-            & h3,
-            & p {
-              transition: opacity 0.45s ease;
-            }
-            &:hover {
-              /* Don't scale up as much */
-              transform: scale(1.0085);
-            }
             > div {
               > h3 {
                 font-size: 32px;
@@ -273,16 +261,11 @@
           }
           > a {
             /* Override some transitions */
-            /* Make origin closer to left to match most titles */
-            transform-origin: 15%;
-            transition: transform 0.25s ease;
             &:hover {
-              /* Don't scale up as much */
-              /* transform: scale(1.02); */
-              /* Make slightly lighter on over */
               & h3,
               & p {
-                opacity: 0.35;
+                /* Make slightly lighter on hover */
+                opacity: 0.4;
               }
             }
           }
