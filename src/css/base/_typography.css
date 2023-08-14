@@ -12,3 +12,30 @@ body {
     }
   }
 }
+
+/* Outbound links */
+.outbound {
+  /* Reset margins */
+  margin: 0;
+  /* Give it a nice little icon */
+  &:after {
+    padding-left: 0.11rem;
+    content: url(/assets/images/arrow-se.svg);
+    opacity: 0.5;
+    /* Optical alignment */
+    position: relative;
+    top: 0.1rem;
+  }
+  /* Style */
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  letter-spacing: -0.12px;
+  /* Restore underline if necessary */
+  text-decoration: underline;
+}
+
+/* Links to RSS */
+.rss {
+  font-size: 12px;
+  color: inherit;
+}

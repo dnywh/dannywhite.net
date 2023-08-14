@@ -157,16 +157,18 @@
             }
             /* Opacity transitions are handled differently on child items */
             & h3,
-            & p {
+            & p,
+            & span {
               transition: opacity 0.3s ease;
             }
             &:hover {
               & img {
                 transform: scale(1.01);
-                opacity: 0.8;
+                opacity: 0.75;
               }
               & h3,
-              & p {
+              & p,
+              & span {
                 opacity: 0.5;
               }
             }
@@ -180,34 +182,7 @@
               letter-spacing: -0.2px;
             }
 
-            /* Outbound links */
-            .outbound-link {
-              /* Reset margins */
-              margin: 0;
-              margin-top: 0.5rem;
-              /* padding: 0; */
-              /* Give it a nice little icon */
-              /* Add flex for optical positioning*/
-              display: flex;
-              gap: 0.1875rem;
-              align-items: center;
-              &:after {
-                content: url(/assets/images/arrow-se.svg);
-                opacity: 0.5;
-              }
-              > small {
-                /* Style */
-                color: var(--color-text-secondary);
-                font-size: 12px;
-                letter-spacing: -0.12px;
-                /* Show underline since it's visually a actual link */
-                text-decoration: underline;
-                /* Truncate text in case the URL is long */
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-              }
-            }
+            /* TODO */
           }
         }
       }
@@ -308,6 +283,19 @@
               -webkit-line-clamp: 4;
               -webkit-box-orient: vertical;
               overflow: hidden;
+            }
+          }
+
+          /* Customise the outbound slightly for this use-case */
+          .outbound {
+            margin-top: 0.5rem;
+            /* Add flex so the following truncation works */
+            display: flex;
+            /* Add truncation to inner URL */
+            > span {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
           }
         }

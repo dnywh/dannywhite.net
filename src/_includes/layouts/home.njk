@@ -49,7 +49,7 @@
           {% endif %}
           <div>
             <h3>{{ item.name }}</h3>
-            <p class="outbound-link"><small>{{ item.domain }}</small></p>
+            <span class="outbound">{{ item.domain }}</span>
             <p>{{ item.desc }}</p>
             <p>{{ item.status }}</p>
             </div>
@@ -63,7 +63,7 @@
     <section class="home-section">
       <header>
         <h2>Notes</h2>
-        <p>To self, to you, to whomever. What’s been on my mind. <a class="rss" href="/feed.xml">RSS</a></p>
+        <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
       </header>
       <ul class="plain notes">
         {# Go through pinned items first #}
@@ -120,7 +120,7 @@
                     {% endif %}
                 </div>
               {% endif %}
-              <p class="outbound-link"><small>{{ item.domain }}</small></p>
+              <span class="outbound"><span>{{ item.domain }}</span></span>
             </a>
           </li>
           {% endfor %}
