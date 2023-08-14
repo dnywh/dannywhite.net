@@ -1,22 +1,32 @@
 [
   {
     "name": "Ephemera",
+    "img": "#",
     "url": "https://ephemera.fyi",
-    "desc": "You know those scraps of paper and receipts that clog up your wallet and pockets? This is a living, digital archive of that"
+    "domain": "ephemera.fyi",
+    "desc": "You know those scraps of paper and receipts that clog up your wallet and pockets? This is a living, digital archive of that",
+    "status": "Ongoing"
   },
   {
     "name": "Pi Frame",
+    "img": "#",
     "url": "https://github.com/dnywh/pi-frame",
-    "desc": "Print your own changing picture frame using an e-ink display and Raspberry Pi"
+    "domain": "github.com",
+    "desc": "Print your own changing picture frame using an e-ink display and Raspberry Pi",
+    "status": "2022–2023"
   },
   {
     "name": "68",
     "url": "https://68.netlify.app",
-    "desc": "Kevin Kelly's 68 Bits of Unsolicited Advice, One At a Time"
+    "domain": "68.netlify.app",
+    "desc": "Kevin Kelly's 68 Bits of Unsolicited Advice, One At a Time",
+    "status": "2021"
   },
   {
     "name": "Brown Pages",
     "url": "https://brownpages.org",
-    "desc": "Your local guide to composting, wherever you are."
+    "domain": "brownpages.org",
+    "desc": "Your local guide to composting, wherever you are.",
+    "status": "Ongoing"
   }
 ]

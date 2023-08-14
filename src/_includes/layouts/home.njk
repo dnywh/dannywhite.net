@@ -28,40 +28,104 @@
     <div class="header-text">
       <p>I am <span class="highlight">available</span> for new work starting <span class="highlight">November 1st 2023</span>.</p>
       <p>Design prototyping, systems, and design engineering roles are my forte.</p>
-      <p>Sound like it could be a fit? <br><a data-tooltip="Opens your email app" href="#todo">Let’s chat</a>.</p>
+      <p>Sound like it could be a fit? <a data-tooltip="Opens your email app" href="#todo">Let’s chat</a>.</p>
     </div>
   </header>
   <main>
     {% include "partials/site-header.html" %}
 
-    {# <p>This is where everything else on the page goes. It will drag on a lot, so here's some dummy content:</p> #}
-
-  {# Trove #}
-  <section class="home-section">
-  <header>
-  <h2>Trove</h2>
-  <p>What I’ve found interesting lately around the web.</p>
-  </header>
-    <ul class="plain trove">
-    {% for item in collections.raindrops %}
-        <li>
-          <a href="{{ item.link }}" target="_blank" rel="noopener">
-            {% if item.type == "image" %}
-              <img src="{{ item.cover }}" alt="The image accompanying this link.">
-            {% else %}
-              <div>
-                  <h3>{{ item.title }}</h3>
-                  {% if item.note %}
-                    <p>{{ item.note }}</p>
-                  {% endif %}
-              </div>
-            {% endif %}
+    {# Projects #}
+    <section class="home-section">
+      <header>
+        <h2>Projects</h2>
+        <p>Select items, on the side.</p>
+      </header>
+      <ul class="plain projects">
+      {% for item in projects %}
+        <li {% if item.img %} class="featured" {% endif %}>
+          <a href="{{ item.url }}">
+          {% if item.img %}
+          <img src="{{ item.cover }}" alt="The hero image for {{ item.name }}.">
+          {% endif %}
+          <div>
+            <h3>{{ item.name }}</h3>
             <p class="outbound-link"><small>{{ item.domain }}</small></p>
+            <p>{{ item.desc }}</p>
+            <p>{{ item.status }}</p>
+            </div>
           </a>
         </li>
         {% endfor %}
-    </ul>
-</section>
+        </ul>
+    </section>
+
+    {# Notes #}
+    <section class="home-section">
+      <header>
+        <h2>Notes</h2>
+        <p>To self, to you, to whomever. What’s been on my mind. <a class="rss" href="/feed.xml">RSS</a></p>
+      </header>
+      <ul class="plain notes">
+        {# Go through pinned items first #}
+        {% for item in collections.note | reverse %}
+        {% if item.data.pinned %}
+        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
+        {# Ignore #}
+        {# {% else %} #}
+        {#  #}
+        <li class="pinned">
+          <a href="{{ item.url }}">
+            <h3>{{ item.data.title }}</h3>
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+
+        {# Go through non-pinned items from newest to olderst #}
+        {% for item in collections.note | reverse %}
+        {# Skip those that are pinned since they are already done above #}
+        {% if not item.data.pinned %}
+        {# Limit to X amount of items #}
+        {% if loop.index0 < 17 %} 
+        {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+        <li>
+          <a href="{{ item.url }}">
+            <h3>{{ item.data.title }}</h3>
+          </a>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        </ul>
+    </section>
+
+    {# Trove #}
+    <section class="home-section">
+      <header>
+        <h2>Trove</h2>
+        <p>What I’ve found interesting lately from around the web.</p>
+      </header>
+      <ul class="plain trove">
+      {% for item in collections.raindrops %}
+          <li>
+            <a href="{{ item.link }}" target="_blank" rel="noopener">
+              {% if item.type == "image" %}
+                <img src="{{ item.cover }}" alt="The image accompanying this link.">
+              {% else %}
+                <div>
+                    <h3>{{ item.title }}</h3>
+                    {% if item.note %}
+                      <p>{{ item.note }}</p>
+                    {% endif %}
+                </div>
+              {% endif %}
+              <p class="outbound-link"><small>{{ item.domain }}</small></p>
+            </a>
+          </li>
+          {% endfor %}
+      </ul>
+    </section> 
   </main>
 {% endblock %}
 

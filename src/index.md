@@ -1,4 +1,4 @@
 ---
-title: Hello World
+title: Index
 layout: "layouts/home.njk"
 ---

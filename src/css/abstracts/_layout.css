@@ -4,8 +4,10 @@
 
 :root {
   --spacing-margin-x-md: 1rem;
+  --spacing-margin-bottom: 15rem;
   /* Basic left-and-right section margins, often on the entire page */
   --margin-sides: 1rem;
+  --gap-md: 2.5rem;
   @media (min-width: 1024px) {
     --margin-sides: 5rem;
   }

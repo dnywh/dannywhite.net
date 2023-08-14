@@ -41,6 +41,11 @@
         /* Set the side margins here since there will be bleed on smaller displayers */
         margin-left: var(--margin-sides);
         margin-right: var(--margin-sides);
+        /* Cancel these out on larger displays, as it will be set at the parent  */
+        @media (min-width: 1024px) {
+          margin-left: 0;
+          margin-right: 0;
+        }
 
         /* Set the fade-in animations  */
         --fadein-duration: 3s;
@@ -100,10 +105,12 @@
     }
 
     .home-section {
+      margin-bottom: var(--spacing-margin-bottom);
       > header {
         border-top: 1px solid var(--color-border-primary);
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin-bottom: 5rem;
 
         > h2 {
           /* font-family: ITC Franklin Gothic Std; */
@@ -122,9 +129,10 @@
         }
       }
 
-      > ul.trove {
+      /* Shared styles across each section */
+      > ul {
         display: grid;
-        gap: 0 2.5rem;
+        gap: 0 var(--gap-md);
         @media (min-width: 1024px) {
           grid-template-columns: repeat(4, minmax(0, 1fr));
           /* minmax is necessary to stop long strings from overriding. Previously: */
@@ -134,51 +142,44 @@
         > li {
           border-top: 1px solid var(--color-border-secondary);
           > a {
-            display: block;
-            padding: 1.5rem 0;
-            /* Set up transition */
-            transition: opacity 0.3s ease;
-            &:hover {
-              opacity: 0.5;
-            }
-
-            /* The image component */
-            > img {
-              max-width: 100%;
-            }
             /* The text component */
             /* Reset standard link color and underline */
             color: inherit;
             text-decoration: none;
-            /* Style inside */
-            & div {
+            /* Style */
+            display: block;
+            padding: 1.5rem 0;
+
+            /* Set up transitions */
+            /* Transform transition happens to the whole element */
+            transition: transform 0.3s ease;
+            /* Opacity transitions are handled differently on child items */
+            & img,
+            & h3,
+            & p {
+              transition: opacity 0.3s ease;
+            }
+            &:hover {
+              transform: scale(1.01);
+              & img {
+                opacity: 0.8;
+              }
               & h3,
               & p {
-                margin: 0;
-              }
-              & h3 {
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 115%; /* 23px */
-                letter-spacing: -0.2px;
-              }
-              & p {
-                margin-top: 0.25rem;
-                /* Style */
-                color: var(--color-text-secondary);
-                font-size: 14px;
-                line-height: 125%; /* 17.5px */
-                letter-spacing: -0.14px;
-                /* Truncate text */
-                /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
-                display: -webkit-box;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+                opacity: 0.5;
               }
             }
-            /* Style outbound link */
+
+            /* Item header */
+            & h3 {
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 115%; /* 23px */
+              letter-spacing: -0.2px;
+            }
+
+            /* Outbound links */
             .outbound-link {
               /* Reset margins */
               margin: 0;
@@ -205,6 +206,125 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
               }
+            }
+          }
+        }
+      }
+
+      /* Section-specific styles */
+      > ul.projects {
+        gap: 5rem var(--gap-md);
+        > li {
+          @media (min-width: 1024px) {
+            grid-column: span 2;
+          }
+          &.featured {
+            @media (min-width: 1024px) {
+              grid-column: span 4;
+              > a {
+                display: flex;
+                gap: var(--gap-md);
+                > * {
+                  flex: 1;
+                }
+              }
+            }
+          }
+          /* Style inner */
+          > a {
+            /* Override some transitions */
+            /* Slow this down given these elements are bigger */
+            transition: transform 0.45s ease;
+            /* Match opacity timing */
+            & img,
+            & h3,
+            & p {
+              transition: opacity 0.45s ease;
+            }
+            &:hover {
+              /* Don't scale up as much */
+              transform: scale(1.0085);
+            }
+            > div {
+              > h3 {
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 115%; /* 55.2px */
+                letter-spacing: -0.96px;
+              }
+              > p {
+                font-size: 21px;
+                /* Style status paragraph */
+                &:last-of-type {
+                  color: var(--color-text-tertiary);
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      > ul.notes {
+        > li {
+          @media (min-width: 1024px) {
+            grid-column: span 2;
+          }
+          > a {
+            /* Override some transitions */
+            /* Make origin closer to left to match most titles */
+            transform-origin: 15%;
+            transition: transform 0.25s ease;
+            &:hover {
+              /* Don't scale up as much */
+              /* transform: scale(1.02); */
+              /* Make slightly lighter on over */
+              & h3,
+              & p {
+                opacity: 0.35;
+              }
+            }
+          }
+          /* Pinned styles */
+          &.pinned > a {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+            &:after {
+              content: url(/assets/images/pin.svg);
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+
+      > ul.trove {
+        > li > a {
+          /* The image component */
+          > img {
+            max-width: 100%;
+          }
+          /* Style inside */
+          & div {
+            & h3,
+            & p {
+              margin: 0;
+            }
+            & p {
+              margin-top: 0.25rem;
+              /* Style */
+              color: var(--color-text-secondary);
+              font-size: 14px;
+              line-height: 125%; /* 17.5px */
+              letter-spacing: -0.14px;
+              /* Truncate text */
+              /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
             }
           }
         }

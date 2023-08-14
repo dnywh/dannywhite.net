@@ -2,6 +2,7 @@
   /* Text */
   --color-text-primary: hsla(0, 0%, 0%, 1);
   --color-text-secondary: hsla(0, 0%, 25%, 1);
+  --color-text-tertiary: hsla(0, 0%, 70%, 1);
   --color-text-highlight: hsla(36, 75%, 52%, 1);
   /* Backgrounds */
   --color-bg-highlight: hsla(36, 100%, 92%, 1);
