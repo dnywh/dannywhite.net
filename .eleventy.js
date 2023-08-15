@@ -4,6 +4,8 @@ const lightningCSS = require("@11tyrocks/eleventy-plugin-lightningcss");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 // Import a JS minifier
 const { minify } = require("terser");
+// Import specific packages from markdown-it
+const mila = require("markdown-it-link-attributes");
 // Import my HTML minifier transform
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 // Import any shortcodes that are defined elsewhere
@@ -12,6 +14,9 @@ const { srcset, src } = require("./src/helpers/shortcodes");
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
+    // Quieten console output
+    eleventyConfig.setQuietMode(true);
+
     // Passthroughs
     eleventyConfig.addPassthroughCopy("./src/assets/");
     eleventyConfig.addPassthroughCopy("./src/js/");
@@ -68,6 +73,21 @@ module.exports = function (eleventyConfig) {
         return sortedItems;
     });
 
+    // Amendments
+    // Find any external links in Markdown and make them open in new tabs
+    const milaOptions = {
+        html: true,
+        matcher(href) {
+            return href.match(/^https?:\/\//);
+        },
+        attrs: {
+            target: "_blank",
+            rel: "noopener"
+        }
+    };
+    eleventyConfig.amendLibrary("md", mdLib => mdLib.use(mila, milaOptions));
+
+    // End
     // Set which directories Eleventy reads from and writes to
     return {
         dir: {
