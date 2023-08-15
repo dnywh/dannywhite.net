@@ -3,7 +3,7 @@ const EleventyFetch = require("@11ty/eleventy-fetch");
 console.log(process.env.RAINDROP_ACCESS_TOKEN)
 
 module.exports = async function () {
-    let url = "https://api.raindrop.io/rest/v1/raindrops/0?sort=-created&search=%23link-list";
+    let url = "https://api.raindrop.io/rest/v1/raindrops/0?sort=-created&search=%23trove";
 
     /* This returns a promise */
     return EleventyFetch(url, {
