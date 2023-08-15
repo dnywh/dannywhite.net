@@ -4,8 +4,8 @@ body {
 
   & p {
     > a {
-      color: inherit;
       transition: color 0.15s ease;
+      text-decoration: underline;
       &:hover {
         color: var(--color-text-highlight);
       }
@@ -13,29 +13,37 @@ body {
   }
 }
 
-/* Outbound links */
-.outbound {
-  /* Reset margins */
-  margin: 0;
-  /* Give it a nice little icon */
-  &:after {
-    padding-left: 0.11rem;
-    content: url(/assets/images/arrow-se.svg);
-    opacity: 0.5;
-    /* Optical alignment */
-    position: relative;
-    top: 0.1rem;
-  }
-  /* Style */
-  color: var(--color-text-secondary);
-  font-size: 12px;
-  letter-spacing: -0.12px;
-  /* Restore underline if necessary */
-  text-decoration: underline;
-}
-
 /* Links to RSS */
 .rss {
   font-size: 12px;
-  color: inherit;
+}
+
+.outbound,
+.locked {
+  &:after {
+    opacity: 0.75;
+    padding-left: 0.1rem;
+  }
+}
+/* Outbound links */
+.outbound {
+  &:after {
+    content: url(/assets/images/arrow-se.svg);
+  }
+
+  &.rss {
+    &:after {
+      position: relative;
+      top: 0.12rem;
+    }
+  }
+}
+
+/* Password-protected links like my portfolio */
+.locked {
+  &:after {
+    content: url(/assets/images/lock.svg);
+    /* This always precedes the .outbound icon, so apply an optical negative margin for it */
+    margin-right: -0.35rem;
+  }
 }

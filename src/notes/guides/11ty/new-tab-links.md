@@ -1,5 +1,5 @@
 ---
-title: Automatically Have External Links Open in New Tab
+title: Automatic Eleventy Markdown Links in New Tab
 date: 2023-08-15
 tags:
   - Eleventy

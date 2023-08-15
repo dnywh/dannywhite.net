@@ -5,6 +5,7 @@
   --color-text-tertiary: hsla(0, 0%, 70%, 1);
   --color-text-highlight: hsla(36, 75%, 52%, 1);
   /* Backgrounds */
+  --color-background: white;
   --color-bg-highlight: hsla(36, 100%, 92%, 1);
   /* Borders and strokes */
   --color-border-primary: var(--color-text-primary);

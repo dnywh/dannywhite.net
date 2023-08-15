@@ -1,10 +1,87 @@
 body > footer {
-  margin-top: 5rem;
-  margin-left: var(--margin-sides);
-  margin-right: var(--margin-sides);
+  margin-top: var(--margin-y);
+  margin-left: var(--margin-x);
+  margin-right: var(--margin-x);
+  margin-bottom: var(--margin-y);
+  @media (min-width: 1024px) {
+    margin-bottom: calc(var(--margin-y) * 2);
+  }
 
-  > p {
-    font-size: 0.75rem;
+  /* Borders */
+  border-top: var(--stroke-thick) solid var(--color-border-primary);
+  /* box-shadow for second visual border */
+  box-shadow: inset 0 4px 0 0 var(--color-background),
+    inset 0 5px 0 0 var(--color-border-primary);
+  /* Increase padding-top to take into account above border */
+  padding-top: calc(5px + var(--gap-md));
+
+  display: grid;
+  gap: var(--gap-md);
+
+  @media (min-width: 1024px) {
+    /* Match grid and gap from site-wide grid */
+    grid-template-columns: var(--grid-template-cols-main);
+
+    .controls {
+      grid-column: span 2;
+    }
+  }
+
+  .controls {
+    .color-switch {
+      margin-bottom: 1rem;
+      @media (min-width: 1024px) {
+        /* Set to align optically with content in other columns */
+        margin-bottom: 0.6rem;
+      }
+    }
+    > p {
+      margin: 0;
+      font-size: 0.75rem;
+      color: var(--color-text-secondary);
+      /* Optical width */
+      max-width: 80ch;
+      @media (min-width: 1024px) {
+        max-width: 55ch;
+      }
+    }
+  }
+
+  .here,
+  .there {
+    > h2 {
+      color: var(--color-text-tertiary);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+      margin-bottom: 1rem;
+    }
+    > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > li {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 130%; /* 20.8px */
+        letter-spacing: -0.16px;
+        color: var(--color-text-secondary);
+        transition: var(--transition-text-opacity);
+        &:hover {
+          opacity: var(--text-opacity-hovered);
+        }
+        > a {
+          &.outbound {
+            &:after {
+              padding-left: 0.25rem;
+            }
+          }
+        }
+      }
+    }
   }
 
   > a img {

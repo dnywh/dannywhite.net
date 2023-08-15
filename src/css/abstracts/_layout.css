@@ -3,14 +3,26 @@
 } */
 
 :root {
+  /* Spacing */
   --spacing-margin-x-md: 1rem;
-  --spacing-margin-bottom: 15rem;
-  /* Basic left-and-right section margins, often on the entire page */
-  --margin-sides: 1rem;
+  /* Borders */
+  --stroke-thick: 2px;
+  --stroke-thin: 1px;
+  /* Grids */
+  --grid-template-cols-main: repeat(4, 1fr);
   --gap-md: 2.5rem;
   @media (min-width: 1024px) {
-    --margin-sides: 5rem;
+    --gap-md: 3.25rem;
   }
+  /* Margins */
+  /* Basic left-and-right section margins, often on the entire page */
+  --margin-x: 1rem;
+  @media (min-width: 1024px) {
+    --margin-x: 5rem;
+  }
+  /* Basic top-and-bottom margins, often the entire page */
+  --margin-y: 5rem;
+  --spacing-margin-bottom: 15rem;
 }
 
 p {
@@ -41,6 +53,6 @@ ul {
 
 main {
   /* Set basic margins */
-  margin-left: var(--margin-sides);
-  margin-right: var(--margin-sides);
+  margin-left: var(--margin-x);
+  margin-right: var(--margin-x);
 }

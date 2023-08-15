@@ -1,0 +1,4 @@
+:root {
+  --transition-text-opacity: opacity 0.3s ease;
+  --text-opacity-hovered: 0.5;
+}

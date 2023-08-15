@@ -34,13 +34,18 @@
   <main>
     {% include "partials/site-header.html" %}
 
+    {# Interstitial #}
+    <section class="interstitial">
+      <p>Oh, hello. This is the interstitial. It should look a bit like the footer and help break up the above from the below.</p>
+    </section>
+
     {# Projects #}
     <section class="home-section">
       <header>
         <h2>Projects</h2>
         <p>Select items, on the side.</p>
       </header>
-      <ul class="plain projects">
+      <ul class="projects plain">
       {% for item in projects %}
         <li {% if item.img %} class="featured" {% endif %}>
           <a href="{{ item.url }}">
@@ -65,7 +70,7 @@
         <h2>Notes</h2>
         <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
       </header>
-      <ul class="plain notes">
+      <ul class="notes plain">
         {# Go through pinned items first #}
         {% for item in collections.note | reverse %}
         {% if item.data.pinned %}
@@ -106,7 +111,7 @@
         <h2>Trove</h2>
         <p>What I’ve found interesting lately from around the web.</p>
       </header>
-      <ul class="plain trove">
+      <ul class="trove plain">
       {% for item in collections.raindrops %}
           <li>
             <a href="{{ item.link }}" target="_blank" rel="noopener">

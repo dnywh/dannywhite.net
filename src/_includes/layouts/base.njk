@@ -12,7 +12,7 @@
     {# Site-wide scripts #}
     {% set js %}
         {# Checks if visitor has JavaScript enabled #}
-        {% include "js/js-check.js"%}
+        {% include "js/js-check.js" %}
     {% endset %}
     {# Minify above scripts #}
     <script>{{ js | jsmin | safe }}</script>
@@ -26,6 +26,13 @@
     {% block bodyContent %}{% endblock %}
     {# Site footer #}
     {% include "partials/site-footer.html" %} 
+    {# Site-wide scripts continued (ones that rely on DOM elements )#}
+    {% set js %}
+        {# Handles user-prompted theme changes #}
+        {% include "js/color-switch.js" %}
+    {% endset %}
+    {# Minify above scripts #}
+    <script>{{ js | jsmin | safe }}</script>
     {# Page-specific scripts that depend on DOM elements #}
     {% block pageJsContent %}{% endblock %}
 </body>

@@ -22,7 +22,7 @@
       @media (min-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
         /* Set the side margins here since there won't be bleed on large displays */
-        margin: 40vh var(--margin-sides) 3rem;
+        margin: 40vh var(--margin-x) 3rem;
         /* margin-top: 40vh; */
         /* display: flex; */
         /* margin: 0 2.5rem; */
@@ -31,7 +31,7 @@
       }
 
       /* TODO: Do this media query dynamically */
-      /* min-width: calc(1800px + var(--margin-sides)) */
+      /* min-width: calc(1800px + var(--margin-x)) */
       @media (min-width: calc(1960px)) {
         margin: 40vh auto 3rem;
       }
@@ -39,8 +39,8 @@
       .header-text {
         grid-column: 1;
         /* Set the side margins here since there will be bleed on smaller displayers */
-        margin-left: var(--margin-sides);
-        margin-right: var(--margin-sides);
+        margin-left: var(--margin-x);
+        margin-right: var(--margin-x);
         /* Cancel these out on larger displays, as it will be set at the parent  */
         @media (min-width: 1024px) {
           margin-left: 0;
@@ -104,6 +104,11 @@
       }
     }
 
+    .interstitial {
+      margin: 12rem 0;
+      font-size: 24px;
+    }
+
     .home-section {
       margin-bottom: var(--spacing-margin-bottom);
       > header {
@@ -142,10 +147,6 @@
         > li {
           border-top: 1px solid var(--color-border-secondary);
           > a {
-            /* The text component */
-            /* Reset standard link color and underline */
-            color: inherit;
-            text-decoration: none;
             /* Style */
             display: block;
             padding: 1.5rem 0;
@@ -153,13 +154,13 @@
             /* Set up transitions */
             /* Transform transitions happen only to image elements */
             & img {
-              transition: opacity 0.3s ease, transform 0.3s ease;
+              transition: var(--transition-text-opacity), transform 0.3s ease;
             }
             /* Opacity transitions are handled differently on child items */
             & h3,
             & p,
             & span {
-              transition: opacity 0.3s ease;
+              transition: var(--transition-text-opacity);
             }
             &:hover {
               & img {
@@ -169,7 +170,7 @@
               & h3,
               & p,
               & span {
-                opacity: 0.5;
+                opacity: var(--text-opacity-hovered);
               }
             }
 
@@ -182,7 +183,19 @@
               letter-spacing: -0.2px;
             }
 
-            /* TODO */
+            .outbound {
+              /* Style */
+              color: var(--color-text-secondary);
+              font-size: 12px;
+              letter-spacing: -0.12px;
+              &:after {
+                position: relative;
+                top: 0.1rem;
+                opacity: 0.6;
+              }
+              /* Restore underline if necessary */
+              text-decoration: underline;
+            }
           }
         }
       }

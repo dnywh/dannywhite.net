@@ -1,0 +1,23 @@
+{% extends "layouts/base.njk" %}
+
+{% block bodyContent %}
+<main class="note">
+    <article>
+        <header>
+            <h1>{{ title }}</h1>
+           
+        </header>
+
+        {% if audience %}
+        <aside class="audience">
+            <h2 class="small-text">Assumed audience</h2>
+            {{ audience }}
+        </aside>
+        {% endif %}
+
+        <div class="article-content">
+            {{ content | safe }}
+        </div>
+    </article>
+</main>
+{% endblock %}
