@@ -45,7 +45,7 @@
         <h2>Projects</h2>
         <p>Select items, on the side.</p>
       </header>
-      <ul class="projects plain">
+      <ul class="projects">
       {% for item in projects %}
         <li {% if item.img %} class="featured" {% endif %}>
           <a href="{{ item.url }}">
@@ -70,7 +70,7 @@
         <h2>Notes</h2>
         <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
       </header>
-      <ul class="notes plain">
+      <ul class="notes">
         {# Go through pinned items first #}
         {% for item in collections.note | reverse %}
         {% if item.data.pinned %}
@@ -111,19 +111,17 @@
         <h2>Trove</h2>
         <p>What I’ve found interesting lately from around the web.</p>
       </header>
-      <ul class="trove plain">
+      <ul class="trove">
       {% for item in collections.raindrops %}
           <li>
             <a href="{{ item.link }}" target="_blank" rel="noopener">
               {% if item.type == "image" %}
                 <img src="{{ item.cover }}" alt="The image accompanying this link.">
               {% else %}
-                <div>
-                    <h3>{{ item.title }}</h3>
-                    {% if item.note %}
-                      <p>{{ item.note }}</p>
-                    {% endif %}
-                </div>
+                <h3>{{ item.title }}</h3>
+              {% endif %}
+              {% if item.note %}
+                <p>{{ item.note }}</p>
               {% endif %}
               <span class="outbound"><span>{{ item.domain }}</span></span>
             </a>

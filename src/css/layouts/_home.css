@@ -278,25 +278,24 @@
             max-width: 100%;
           }
           /* Style inside */
-          & div {
-            & h3,
-            & p {
-              margin: 0;
-            }
-            & p {
-              margin-top: 0.25rem;
-              /* Style */
-              color: var(--color-text-secondary);
-              font-size: 14px;
-              line-height: 125%; /* 17.5px */
-              letter-spacing: -0.14px;
-              /* Truncate text */
-              /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
-              display: -webkit-box;
-              -webkit-line-clamp: 4;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-            }
+
+          & h3,
+          & p {
+            margin: 0;
+          }
+          & p {
+            margin-top: 0.25rem;
+            /* Style */
+            color: var(--color-text-secondary);
+            font-size: 14px;
+            line-height: 125%; /* 17.5px */
+            letter-spacing: -0.14px;
+            /* Truncate text */
+            /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
 
           /* Customise the outbound slightly for this use-case */

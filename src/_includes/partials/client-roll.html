@@ -6,16 +6,7 @@ a repeated marquee, ARIA hide the whole thing #}
   #} {{ renderMarqueeInner(true) }} {% endif %}
 </div>
 {% endmacro %} {% macro renderMarqueeInner(repeated) %}
-<ul
-  {%
-  if
-  repeated
-  %}aria-hidden="true"
-  {%
-  endif
-  %}
-  class="marquee-content plain"
->
+<ul {% if repeated %}aria-hidden="true" {% endif %} class="marquee-content">
   {% for client in clients %}
   <li>
     <img
