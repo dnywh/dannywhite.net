@@ -29,8 +29,8 @@ You can do this in Markdown (depending on which converter you use) _without_ nee
 
 [Source](https://michaelabrahamsen.com/posts/open-markdown-links-in-a-new-tab/)
 
-## Zooming out
+## Automate it
 
 I think a better approach to the above is to set programmatic rules. For example: if I want all external links (i.e. links to other websites) to open in a new tab, I can tell my site generator to do that whilst building the site.
 
-The advantage is that I don't need to add any special markup and I don't need to keep track. It just works. [Here's an example for Eleventy](https://github.com/11ty/eleventy/issues/563#issuecomment-1566454961).
+The advantage is that I don't need to add any special markup and I don't need to keep track. It just works. I've written how to do this [here](/new-tab-links).
