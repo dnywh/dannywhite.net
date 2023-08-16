@@ -22,12 +22,23 @@
             {% endif %}
         </header>
 
+        {% if stage %}
+        <aside class="stage">
+            <span>Updated 2 days ago</span>
+            <span>Published September 2023</span>
+        </aside>
+        {% endif %}
+
         {% if audience %}
         <aside class="audience">
             <h2 class="small">Assumed audience</h2>
             <p>{{ audience }}</p>
         </aside>
         {% endif %}
+
+        <aside class="toc">
+            <span>Table of contents go here</span>
+        </aside>
 
         <div class="article-content">
             {{ content | safe }} 

@@ -3,9 +3,6 @@ body > footer {
   margin-left: var(--margin-x);
   margin-right: var(--margin-x);
   margin-bottom: var(--margin-y);
-  @media (min-width: 1024px) {
-    margin-bottom: calc(var(--margin-y) * 2);
-  }
 
   /* Borders */
   border-top: var(--stroke-thick) solid var(--color-border-primary);
@@ -69,10 +66,7 @@ body > footer {
           line-height: 130%; /* 20.8px */
           letter-spacing: -0.16px;
           color: var(--color-text-secondary);
-          transition: var(--transition-text-opacity);
-          &:hover {
-            opacity: var(--text-opacity-hovered);
-          }
+
           > a {
             &.outbound {
               &:after {

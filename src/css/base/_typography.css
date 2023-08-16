@@ -13,13 +13,22 @@ body {
   font-family: "ITC Franklin Gothic", system-ui, sans-serif;
   color: var(--color-text-primary);
 
+  /* Set standard hover effect */
+  & h2,
+  & p,
+  & span,
+  & li {
+    > a {
+      transition: var(--transition-text-opacity);
+      &:hover {
+        opacity: var(--text-opacity-hovered);
+      }
+    }
+  }
+
   & p {
     > a {
-      transition: color 0.15s ease;
       text-decoration: underline;
-      &:hover {
-        color: var(--color-text-highlight);
-      }
     }
   }
 }

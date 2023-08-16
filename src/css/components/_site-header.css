@@ -1,16 +1,20 @@
 .sticky-wrapper {
   /* Set an explicit height in order to cause shifting */
-  height: 20rem;
+  /* height: 20rem; */
+  margin-top: 2rem;
 }
 
 header.site-header {
   /* Set basic margins */
   margin-left: var(--margin-x);
   margin-right: var(--margin-x);
+  /* Match this on top too */
+  margin-top: var(--margin-x);
   /* Style */
   border-top: 1px solid var(--color-border-primary);
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  /* padding-bottom: 1.5rem; */
+  padding-bottom: 3.5rem;
 
   position: sticky;
   top: 2rem;
@@ -48,7 +52,6 @@ header.site-header {
 
   /* Easter-egg link transition */
   .small > a {
-    transition: var(--transition-text-opacity);
     &:hover {
       opacity: 0.65;
     }
