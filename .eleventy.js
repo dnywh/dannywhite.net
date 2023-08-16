@@ -18,8 +18,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setQuietMode(true);
 
     // Passthroughs
-    eleventyConfig.addPassthroughCopy("./src/assets/");
     eleventyConfig.addPassthroughCopy("./src/js/");
+    eleventyConfig.addPassthroughCopy("./src/assets/");
+    eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
 
     // Plugins
     // Eleventy-flavoured Lightning CSS
