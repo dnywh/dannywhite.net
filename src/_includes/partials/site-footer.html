@@ -1,58 +1,60 @@
 <footer>
-  <section class="controls">
-    <div class="color-switch">
-      <div role="status" class="visually-hidden js-mode-status"></div>
-      <button class="toggle-button js-mode-toggle">
-        <div class="side light">{% include "partials/sun.svg" %}</div>
-        <div class="side dark">{% include "partials/moon.svg" %}</div>
-      </button>
-    </div>
-    <p>
-      This site was handmade using the
-      <a href="/colophon#todo">Eleventy</a>
-      static site generator. Loading it produced about 0.05 grams of CO2e. The
-      next 1,000 visitors will accumulate a carbon footprint similar to that of
-      growing a small potato.
-    </p>
-  </section>
+  <div class="layout-wrapper">
+    <section class="controls">
+      <div class="color-switch">
+        <div role="status" class="visually-hidden js-mode-status"></div>
+        <button class="toggle-button js-mode-toggle">
+          <div class="side light">{% include "partials/sun.svg" %}</div>
+          <div class="side dark">{% include "partials/moon.svg" %}</div>
+        </button>
+      </div>
+      <p>
+        This site was handmade using the
+        <a href="/colophon#todo">Eleventy</a>
+        static site generator. Loading it produced about 0.05 grams of CO2e. The
+        next 1,000 visitors will accumulate a carbon footprint similar to that
+        of growing a small potato.
+      </p>
+    </section>
 
-  <section class="here">
-    <h2>Here</h2>
-    <ul class="here">
-      <li>
-        <a href="/#skip">Index</a>
-      </li>
-      <li>
-        <a href="/colophon">Colophon</a>
-      </li>
-      <li>
-        <a
-          class="outbound"
-          href="{{ site.url }}/portfolio"
-          target="_blank"
-          rel="noopener"
-          ><span class="locked">Portfolio</span></a
-        >
-      </li>
-    </ul>
-  </section>
+    <section class="here">
+      <h2>Here</h2>
+      <ul class="here">
+        <li>
+          <a href="/#skip">Index</a>
+        </li>
+        <li>
+          <a href="/colophon">Colophon</a>
+        </li>
+        <li>
+          <a
+            class="outbound"
+            href="{{ site.url }}/portfolio"
+            target="_blank"
+            rel="noopener"
+            ><span class="locked">Portfolio</span></a
+          >
+        </li>
+      </ul>
+    </section>
 
-  <section class="there">
-    <h2>There</h2>
-    <ul class="plain">
-      <li>{% include "partials/email.html" %}</li>
-      {% for social in socials %} {% if social.featured %}
-      <li>
-        <a
-          class="outbound"
-          href="{{ social.url }}"
-          rel="me"
-          target="_blank"
-          rel="noopener"
-          >{{ social.platform }}</a
-        >
-      </li>
-      {% endif %} {% endfor %}
-    </ul>
-  </section>
+    <section class="there">
+      <h2>There</h2>
+      <ul class="plain">
+        <li>{% include "partials/email.html" %}</li>
+        {% for social in socials %} {% if social.featured %}
+        <li>
+          <a
+            class="outbound"
+            href="{{ social.url }}"
+            rel="me"
+            target="_blank"
+            rel="noopener"
+            >{{ social.platform }}</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+    </section>
+  </div>
 </footer>

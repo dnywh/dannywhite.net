@@ -3,6 +3,8 @@
 } */
 
 :root {
+  /* Widths */
+  --width-max: 1800px;
   /* Spacing */
   --spacing-margin-x-md: 1rem;
   /* Borders */

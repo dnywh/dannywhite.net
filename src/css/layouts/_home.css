@@ -1,20 +1,10 @@
 .home {
   > body {
-    /* background-color: hsla(36, 100%, 92%, 1);
-    background-color: white; */
-    /* transition: background-color 2s ease; */
-
-    &.visible {
-      /* background-color: white; */
-    }
-    /* margin: 0 auto; */
-    /* margin-top: 25vh; */
-
     .crawl-header {
       margin: 0;
       /* Start slightly downward */
       margin-top: 25vh;
-      max-width: 1800px;
+      max-width: var(--width-max);
 
       display: grid;
       gap: 0 2rem;
@@ -115,27 +105,20 @@
         border-top: 1px solid var(--color-border-primary);
         padding-top: 1rem;
         padding-bottom: 1rem;
-        margin-bottom: 5rem;
 
         > h2 {
-          /* font-family: ITC Franklin Gothic Std; */
           font-size: 56px;
-          /* font-style: normal; */
           font-weight: 500;
           line-height: 110%; /* 61.6px */
           letter-spacing: -1.75px;
         }
-        > p {
-          color: var(--color-text-secondary);
-          /* font-family: ITC Franklin Gothic Std; */
-          font-size: 24px;
-
-          letter-spacing: -0.8px;
-        }
       }
 
-      /* Shared styles across each section */
-      > ul {
+      > .inner {
+        /* Shared styles across each section */
+        max-width: var(--width-max);
+        margin: 0 auto;
+
         display: grid;
         gap: 0 var(--gap-md);
         @media (min-width: 1024px) {
@@ -144,171 +127,193 @@
           /* grid-template-columns: repeat(4, 1fr); */
           grid-template-rows: masonry;
         }
-        > li {
-          border-top: 1px solid var(--color-border-secondary);
-          > a {
-            /* Style */
-            display: block;
-            padding: 1.5rem 0;
 
-            /* Set up transitions */
-            /* Transform transitions happen only to image elements */
-            & img {
-              transition: var(--transition-text-opacity), transform 0.3s ease;
-            }
-            /* Opacity transitions are handled differently on child items */
-            & h3,
-            & p,
-            & span,
-            & svg {
-              transition: var(--transition-text-opacity);
-            }
-            &:hover {
+        /* Header or other large text */
+        > p {
+          color: var(--color-text-secondary);
+          font-size: 24px;
+          letter-spacing: -0.8px;
+          margin-bottom: 5rem;
+
+          grid-column: span 1;
+        }
+
+        > ul {
+          grid-column: span 4;
+          display: grid;
+          gap: 0 var(--gap-md);
+          @media (min-width: 1024px) {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            /* minmax is necessary to stop long strings from overriding. Previously: */
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-rows: masonry;
+          }
+          > li {
+            border-top: 1px solid var(--color-border-secondary);
+            > a {
+              /* Style */
+              display: block;
+              padding: 1.5rem 0;
+
+              /* Set up transitions */
+              /* Transform transitions happen only to image elements */
               & img {
-                transform: scale(1.01);
-                opacity: 0.75;
+                transition: var(--transition-text-opacity), transform 0.3s ease;
               }
+              /* Opacity transitions are handled differently on child items */
               & h3,
               & p,
               & span,
               & svg {
-                opacity: var(--text-opacity-hovered);
+                transition: var(--transition-text-opacity);
               }
-            }
-
-            /* Item header */
-            & h3 {
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 115%; /* 23px */
-              letter-spacing: -0.2px;
-            }
-
-            .outbound {
-              /* Style */
-              color: var(--color-text-secondary);
-              font-size: 12px;
-              letter-spacing: -0.12px;
-              &:after {
-                position: relative;
-                top: 0.1rem;
-                opacity: 0.6;
-              }
-              /* Restore underline if necessary */
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-
-      /* Section-specific styles */
-      > ul.projects {
-        gap: 5rem var(--gap-md);
-        > li {
-          @media (min-width: 1024px) {
-            grid-column: span 2;
-          }
-          &.featured {
-            @media (min-width: 1024px) {
-              grid-column: span 4;
-              > a {
-                display: flex;
-                gap: var(--gap-md);
-                > * {
-                  flex: 1;
+              &:hover {
+                & img {
+                  transform: scale(1.01);
+                  opacity: 0.75;
+                }
+                & h3,
+                & p,
+                & span,
+                & svg {
+                  opacity: var(--text-opacity-hovered);
                 }
               }
-            }
-          }
-          /* Style inner */
-          > a {
-            > div {
-              > h3 {
-                font-size: 32px;
+
+              /* Item header */
+              & h3 {
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 115%; /* 55.2px */
-                letter-spacing: -0.96px;
+                line-height: 115%; /* 23px */
+                letter-spacing: -0.2px;
               }
-              > p {
-                font-size: 21px;
-                /* Style status paragraph */
-                &:last-of-type {
-                  color: var(--color-text-tertiary);
-                  font-size: 1rem;
+
+              .outbound {
+                /* Style */
+                color: var(--color-text-secondary);
+                font-size: 12px;
+                letter-spacing: -0.12px;
+                &:after {
+                  position: relative;
+                  top: 0.1rem;
+                  opacity: 0.6;
+                }
+                /* Restore underline if necessary */
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        /* Section-specific styles */
+        > ul.projects {
+          gap: 5rem var(--gap-md);
+          > li {
+            @media (min-width: 1024px) {
+              grid-column: span 2;
+            }
+            &.featured {
+              @media (min-width: 1024px) {
+                grid-column: span 4;
+                > a {
+                  display: flex;
+                  gap: var(--gap-md);
+                  > * {
+                    flex: 1;
+                  }
+                }
+              }
+            }
+            /* Style inner */
+            > a {
+              > div {
+                > h3 {
+                  font-size: 32px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 115%; /* 55.2px */
+                  letter-spacing: -0.96px;
+                }
+                > p {
+                  font-size: 21px;
+                  /* Style status paragraph */
+                  &:last-of-type {
+                    color: var(--color-text-tertiary);
+                    font-size: 1rem;
+                  }
                 }
               }
             }
           }
         }
-      }
 
-      > ul.notes {
-        > li {
-          @media (min-width: 1024px) {
-            grid-column: span 2;
-          }
-          > a {
-            /* Override some transitions */
-            &:hover {
-              & h3,
-              & p {
-                /* Make slightly lighter on hover */
-                opacity: 0.4;
+        > ul.notes {
+          > li {
+            @media (min-width: 1024px) {
+              grid-column: span 2;
+            }
+            > a {
+              /* Override some transitions */
+              &:hover {
+                & h3,
+                & p {
+                  /* Make slightly lighter on hover */
+                  opacity: 0.4;
+                }
+              }
+            }
+            /* Pinned styles */
+            &.pinned > a {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 1rem;
+
+              /* &:after {
+                content: url(/assets/images/pin.svg);
+                opacity: 0.5;
+              } */
+              > svg > path {
+                fill: var(--color-text-tertiary);
               }
             }
           }
-          /* Pinned styles */
-          &.pinned > a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-
-            /* &:after {
-              content: url(/assets/images/pin.svg);
-              opacity: 0.5;
-            } */
-            > svg > path {
-              fill: var(--color-text-tertiary);
-            }
-          }
         }
-      }
 
-      > ul.trove {
-        > li > a {
-          /* Style inside */
-          & h3,
-          & p {
-            margin: 0;
-          }
-          & p {
-            margin-top: 0.25rem;
-            /* Style */
-            color: var(--color-text-secondary);
-            font-size: 14px;
-            line-height: 125%; /* 17.5px */
-            letter-spacing: -0.14px;
-            /* Truncate text */
-            /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-          }
-
-          /* Customise the outbound slightly for this use-case */
-          .outbound {
-            margin-top: 0.5rem;
-            /* Add flex so the following truncation works */
-            display: flex;
-            /* Add truncation to inner URL */
-            > span {
-              white-space: nowrap;
+        > ul.trove {
+          > li > a {
+            /* Style inside */
+            & h3,
+            & p {
+              margin: 0;
+            }
+            & p {
+              margin-top: 0.25rem;
+              /* Style */
+              color: var(--color-text-secondary);
+              font-size: 14px;
+              line-height: 125%; /* 17.5px */
+              letter-spacing: -0.14px;
+              /* Truncate text */
+              /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
               overflow: hidden;
-              text-overflow: ellipsis;
+            }
+
+            /* Customise the outbound slightly for this use-case */
+            .outbound {
+              margin-top: 0.5rem;
+              /* Add flex so the following truncation works */
+              display: flex;
+              /* Add truncation to inner URL */
+              > span {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
             }
           }
         }

@@ -43,93 +43,101 @@
     <section class="home-section">
       <header>
         <h2>Projects</h2>
-        <p>Select items, on the side.</p>
       </header>
-      <ul class="projects">
-      {% for item in projects %}
-        <li {% if item.img %} class="featured" {% endif %}>
-          <a href="{{ item.url }}">
-          {% if item.img %}
-          <img src="{{ item.cover }}" alt="The hero image for {{ item.name }}.">
-          {% endif %}
-          <div>
-            <h3>{{ item.name }}</h3>
-            <span class="outbound">{{ item.domain }}</span>
-            {# <div class="outbound"><span>{{ item.domain }}</span>{% include "partials/arrow-se.svg" %}</div> #}
-            <p>{{ item.desc }}</p>
-            <p>{{ item.status }}</p>
-            </div>
-          </a>
-        </li>
-        {% endfor %}
+      <div class="inner">
+        <p>Select items, on the side.</p>
+        <ul class="projects">
+        {% for item in projects %}
+          <li {% if item.img %} class="featured" {% endif %}>
+            <a href="{{ item.url }}">
+            {% if item.img %}
+            <img src="{{ item.cover }}" alt="The hero image for {{ item.name }}.">
+            {% endif %}
+            <div>
+              <h3>{{ item.name }}</h3>
+              <span class="outbound">{{ item.domain }}</span>
+              {# <div class="outbound"><span>{{ item.domain }}</span>{% include "partials/arrow-se.svg" %}</div> #}
+              <p>{{ item.desc }}</p>
+              <p>{{ item.status }}</p>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
         </ul>
+      </div>
     </section>
 
     {# Notes #}
     <section class="home-section">
       <header>
         <h2>Notes</h2>
-        <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
       </header>
-      <ul class="notes">
-        {# Go through pinned items first #}
-        {% for item in collections.note | reverse %}
-        {% if item.data.pinned %}
-        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
-        {# Ignore #}
-        {# {% else %} #}
-        {#  #}
-        <li class="pinned">
-          <a href="{{ item.url }}">
-            <h3>{{ item.data.title }}</h3>
-            {% include "partials/pin.svg" %}
-          </a>
-        </li>
-        {% endif %}
-        {% endfor %}
+      <div class="inner">
+        <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
+        <ul class="notes">
+          {# Go through pinned items first #}
+          {% for item in collections.note | reverse %}
+          {% if item.data.pinned %}
+          {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
+          {# Ignore #}
+          {# {% else %} #}
+          {#  #}
+          <li class="pinned">
+            <a href="{{ item.url }}">
+              <h3>{{ item.data.title }}</h3>
+              {% include "partials/pin.svg" %}
+            </a>
+          </li>
+          {% endif %}
+          {% endfor %}
 
-        {# Go through non-pinned items from newest to olderst #}
-        {% for item in collections.note | reverse %}
-        {# Skip those that are pinned since they are already done above #}
-        {% if not item.data.pinned %}
-        {# Limit to X amount of items #}
-        {% if loop.index0 < 17 %} 
-        {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-        <li>
-          <a href="{{ item.url }}">
-            <h3>{{ item.data.title }}</h3>
-          </a>
-        </li>
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        </ul>
+          {# Go through non-pinned items from newest to olderst #}
+          {% for item in collections.note | reverse %}
+          {# Skip those that are pinned since they are already done above #}
+          {% if not item.data.pinned %}
+          {# Limit to X amount of items #}
+          {% if loop.index0 < 17 %} 
+          {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+          <li>
+            <a href="{{ item.url }}">
+              <h3>{{ item.data.title }}</h3>
+            </a>
+          </li>
+          {% endif %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          </ul>
+          {# Link to all notes #}
+          <p><a href="/notes">See all {{ notes.count }} notes</a></p>
+        </div>
     </section>
 
     {# Trove #}
     <section class="home-section">
       <header>
         <h2>Trove</h2>
-        <p>What I’ve found interesting lately from around the web.</p>
       </header>
-      <ul class="trove">
-      {% for item in collections.raindrops %}
-          <li>
-            <a href="{{ item.link }}" target="_blank" rel="noopener">
-              {% if item.type == "image" %}
-                <img src="{{ item.cover }}" alt="The image accompanying this link.">
-              {% else %}
-                <h3>{{ item.title }}</h3>
-              {% endif %}
-              {% if item.note %}
-                <p>{{ item.note }}</p>
-              {% endif %}
-              <span class="outbound"><span>{{ item.domain }}</span></span>
-            </a>
-          </li>
-          {% endfor %}
-      </ul>
+      <div class="inner">
+        <p>What I’ve found interesting lately from around the web.</p>
+        <ul class="trove">
+        {% for item in collections.raindrops %}
+            <li>
+              <a href="{{ item.link }}" target="_blank" rel="noopener">
+                {% if item.type == "image" %}
+                  <img src="{{ item.cover }}" alt="The image accompanying this link.">
+                {% else %}
+                  <h3>{{ item.title }}</h3>
+                {% endif %}
+                {% if item.note %}
+                  <p>{{ item.note }}</p>
+                {% endif %}
+                <span class="outbound"><span>{{ item.domain }}</span></span>
+              </a>
+            </li>
+            {% endfor %}
+        </ul>
+      </div>
     </section> 
   </main>
 {% endblock %}
