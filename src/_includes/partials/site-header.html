@@ -1,14 +1,19 @@
 <div class="sticky-wrapper" id="skip">
   <header class="site-header">
     <div class="left">
-      <a href="/" aria-label="Home"> {% include "partials/logo.svg" %}</a>
-      <span>☺ {% year %}</span>
+      <a href="/#skip" aria-label="Home"> {% include "partials/logo.svg" %}</a>
+      {# Only show metadata on homepage #} {% if title === "Index" %}<span
+        class="small"
+        >☺ {% year %}</span
+      >{% endif %}
     </div>
-    <span>
-      This is a template by
-      <a href="https://dannywhite.org" target="_blank" rel="noopener"
-        >Danny White</a
-      >.
+    {# Only show metadata on homepage #} {% if title === "Index" %}
+    <span class="small">
+      Last updated {{ siteGeneratedDate }} ∙ Edition
+      <a href="{{ site.repoUrl }}/commits/main" target="_blank" rel="noopener"
+        >{{ ISOSiteGeneratedDate }}</a
+      >
     </span>
+    {% endif %}
   </header>
 </div>

@@ -30,6 +30,7 @@
     "@11ty/eleventy-fetch": "^4.0.0",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.1.2",
     "html-minifier": "^4.0.0",
+    "luxon": "^3.4.0",
     "markdown-it-link-attributes": "^4.0.1",
     "terser": "^5.19.2"
   }

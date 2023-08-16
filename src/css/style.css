@@ -4,14 +4,16 @@
 @import "abstracts/_fonts.css";
 @import "abstracts/_colors.css";
 @import "abstracts/_layout.css";
-@import "abstracts/_transitions.css";
+@import "abstracts/_motion.css";
 /* Base */
 @import "base/_typography.css";
 /* Components */
 @import "components/_color-switch.css";
+@import "components/_page-header.css";
 @import "components/_client-roll.css";
 @import "components/_site-header.css";
 @import "components/_site-footer.css";
 @import "components/_tooltip.css";
 /* Page-specific styles */
+@import "layouts/_article.css";
 @import "layouts/_home.css";

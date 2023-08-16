@@ -1,3 +1,14 @@
+:root {
+  --letter-spacing-wide: 0.1em;
+  --letter-spacing-reg: -0.005em;
+  --letter-spacing-tight: -0.0125em;
+  --letter-spacing-xtight: -0.02em;
+  --line-height-wide: 175%;
+  --line-height-reg: 150%;
+  --line-height-tight: 135%;
+  --line-height-xtight: 120%;
+  --font-size-sm: 14px;
+}
 body {
   font-family: "ITC Franklin Gothic", system-ui, sans-serif;
   color: var(--color-text-primary);
@@ -57,4 +68,12 @@ body {
     /* This always precedes the .outbound icon, so apply an optical negative margin for it */
     margin-right: -0.25rem;
   }
+}
+.small {
+  text-transform: uppercase;
+  font-feature-settings: "cpsp" 1;
+  font-size: 12px;
+  /* // font-weight: 600; */
+  /* // color: var(--color-text-secondary); */
+  letter-spacing: var(--letter-spacing-wide);
 }

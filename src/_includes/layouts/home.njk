@@ -31,9 +31,10 @@
       <p>Sound like it could be a fit? <a data-tooltip="Opens your email app" href="#todo">Let’s chat</a>.</p>
     </div>
   </header>
-  <main>
-    {% include "partials/site-header.html" %}
 
+  {% include "partials/site-header.html" %}
+
+  <main>
     {# Interstitial #}
     <section class="interstitial">
       <p>Oh, hello. This is the interstitial. It should look a bit like the footer and help break up the above from the below.</p>
@@ -41,7 +42,7 @@
 
     {# Projects #}
     <section class="home-section">
-      <header>
+      <header class="page-header">
         <h2>Projects</h2>
       </header>
       <div class="inner">
@@ -69,7 +70,7 @@
 
     {# Notes #}
     <section class="home-section">
-      <header>
+      <header class="page-header">
         <h2>Notes</h2>
       </header>
       <div class="inner">
@@ -115,7 +116,7 @@
 
     {# Trove #}
     <section class="home-section">
-      <header>
+      <header class="page-header">
         <h2>Trove</h2>
       </header>
       <div class="inner">

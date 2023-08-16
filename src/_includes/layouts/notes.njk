@@ -1,0 +1,46 @@
+{% extends "layouts/base.njk" %}
+
+{% block bodyContent %}
+{% include "partials/site-header.html" %}
+<main>
+    <header class="page-header">
+        <h1>{{ title }}</h1>
+        {% if subtitle %}
+        <p>{{ subtitle }}</p>
+        {% endif %}
+    </header>
+
+    <ul>
+        {# Go through pinned items first #}
+        {% for item in collections.note | reverse %}
+        {% if item.data.pinned %}
+        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
+        {# Ignore #}
+        {# {% else %} #}
+        {#  #}
+        <li class="pinned">
+        <a href="{{ item.url }}">
+            <h3>{{ item.data.title }}</h3>
+            {% include "partials/pin.svg" %}
+        </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+
+        {# Go through non-pinned items from newest to olderst #}
+        {% for item in collections.note | reverse %}
+        {# Skip those that are pinned since they are already done above #}
+        {% if not item.data.pinned %}
+
+        {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+        <li>
+        <a href="{{ item.url }}">
+            <h3>{{ item.data.title }}</h3>
+        </a>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        </ul>
+</main>
+{% endblock %}

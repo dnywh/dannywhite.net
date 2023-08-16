@@ -1,0 +1,14 @@
+.page-header {
+  border-top: 1px solid var(--color-border-primary);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  /* Handle both h1 or h2 inputs */
+  > h1,
+  > h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 110%; /* 61.6px */
+    letter-spacing: -1.75px;
+  }
+}

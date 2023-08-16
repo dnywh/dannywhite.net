@@ -1,0 +1,70 @@
+.article {
+  > body {
+    > main {
+      /* max-width: 1800px;
+      margin: 0 auto; */
+      > article {
+        max-width: 720px;
+        margin: 0 auto;
+
+        > header {
+          margin-top: 10rem;
+          > h1 {
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%; /* 79.2px */
+            letter-spacing: -2.52px;
+          }
+          > p {
+            /* TODO: replace with general styles also used in Home intros */
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.84px;
+            color: var(--color-text-secondary);
+          }
+        }
+
+        > aside.audience {
+          margin-top: 5rem;
+          margin-bottom: 7rem;
+          border-top: 1px solid var(--color-border-secondary);
+          border-bottom: 1px solid var(--color-border-secondary);
+          padding: 2rem 0 1.25rem;
+
+          > h2 {
+            margin-bottom: 0.5rem;
+            color: var(--color-text-tertiary);
+          }
+          > p {
+            /* font-size: var(--font-size-sm); */
+            color: var(--color-text-secondary);
+          }
+        }
+
+        .article-content {
+          margin-top: 5rem;
+          > h2 {
+            /* Re-use from somewhere else */
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%; /* 44px */
+            letter-spacing: -1.4px;
+          }
+
+          > p,
+          > dt,
+          > dd,
+          > li {
+            font-size: 18px;
+            letter-spacing: var(--letter-spacing-reg);
+            line-height: var(--line-height-wide);
+          }
+        }
+      }
+    }
+  }
+}

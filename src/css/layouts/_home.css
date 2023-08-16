@@ -38,7 +38,6 @@
         }
 
         /* Set the fade-in animations  */
-        --fadein-duration: 3s;
         /* Handle everything but the first paragraph */
         &:not(:first-of-type) {
           opacity: 0;
@@ -58,15 +57,6 @@
                 animation: var(--fadein-duration) ease 1s forwards fadein;
               }
             }
-          }
-        }
-
-        @keyframes fadein {
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
           }
         }
 
@@ -101,18 +91,6 @@
 
     .home-section {
       margin-bottom: var(--spacing-margin-bottom);
-      > header {
-        border-top: 1px solid var(--color-border-primary);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-
-        > h2 {
-          font-size: 56px;
-          font-weight: 500;
-          line-height: 110%; /* 61.6px */
-          letter-spacing: -1.75px;
-        }
-      }
 
       > .inner {
         /* Shared styles across each section */
