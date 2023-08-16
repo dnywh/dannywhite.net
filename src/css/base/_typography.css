@@ -23,12 +23,23 @@ body {
   &:after {
     opacity: 0.75;
     padding-left: 0.1rem;
+    /* Use mask method for easier color-scheme/theme changes */
+    /* As opposed to changing SVGs to partials in order to change their path fill */
+    /* https://stackoverflow.com/a/73196514/2009441 */
+    /* https://stackoverflow.com/a/42317014 */
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    mask-size: cover;
+    /* Set dynamic 'fill' now that masking will respect a simple background-color */
+    background-color: var(--color-text-primary);
   }
 }
 /* Outbound links */
 .outbound {
   &:after {
-    content: url(/assets/images/arrow-se.svg);
+    mask: url(/assets/images/arrow-se.svg) no-repeat 50% 50%;
   }
 
   &.rss {
@@ -42,8 +53,8 @@ body {
 /* Password-protected links like my portfolio */
 .locked {
   &:after {
-    content: url(/assets/images/lock.svg);
+    mask: url(/assets/images/lock.svg) no-repeat 50% 50%;
     /* This always precedes the .outbound icon, so apply an optical negative margin for it */
-    margin-right: -0.35rem;
+    margin-right: -0.25rem;
   }
 }

@@ -1,12 +1,12 @@
-/* // Styles the toggle that controls light/dark color scheme */
-/* // https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/ */
+/* Styles the toggle that controls light/dark color scheme */
+/* https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/ */
 
-/* // Don't show the switch if the user doesn't have JS enabled */
+/* Don't show the switch if the user doesn't have JS enabled */
 .no-js .color-switch {
   display: none;
 }
 
-/* // Hide the status label for a11y */
+/* Hide the status label for a11y */
 .visually-hidden {
   display: block;
   height: 1px;
@@ -21,11 +21,9 @@
 .color-switch {
   width: fit-content;
   height: fit-content;
-  /* // Extra vertical space for bottom toolbar controls */
-  /* margin-bottom: var(--spacing-lg); TODO */
 
   @media (min-width: 1024px) {
-    /* // Extra vertical space probably not necessary */
+    /* Extra vertical space probably not necessary */
     margin-bottom: 0;
   }
 
@@ -37,42 +35,46 @@
       cursor: pointer;
     }
 
-    .switch-side {
+    .side {
       width: 24px;
       height: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      /* // Show any paths that might fall out of the container */
+      /* Show any paths that might fall out of the container */
       overflow: visible;
 
       > svg {
-        /* // Show any paths that might fall out of the container */
+        /* Show any paths that might fall out of the container */
         overflow: visible;
       }
-    }
-
-    .light {
-      background-color: var(--color-background);
-
+      /* Set hover states */
       > svg > path {
-        fill: var(--color-text-primary);
-
-        @media (min-width: 1024px) {
-          /* // Optically align */
-          transform: translateY(-0.85px);
+        transition: var(--transition-text-opacity);
+      }
+      &.light:hover {
+        > svg > path {
+          opacity: 0.65;
+        }
+      }
+      &.dark:hover {
+        > svg > path {
+          opacity: 0.5;
         }
       }
     }
-
-    .dark {
+    /* Style */
+    .light {
       background-color: var(--color-text-primary);
-
       > svg > path {
         fill: var(--color-background);
-        /* // Optically align */
-        transform: translateX(0.25px);
+      }
+    }
+    .dark {
+      background-color: var(--color-background);
+      > svg > path {
+        fill: var(--color-text-primary);
       }
     }
   }

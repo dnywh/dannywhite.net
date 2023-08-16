@@ -1,11 +1,11 @@
 .home {
   > body {
-    background-color: hsla(36, 100%, 92%, 1);
-    background-color: white;
-    transition: background-color 2s ease;
+    /* background-color: hsla(36, 100%, 92%, 1);
+    background-color: white; */
+    /* transition: background-color 2s ease; */
 
     &.visible {
-      background-color: white;
+      /* background-color: white; */
     }
     /* margin: 0 auto; */
     /* margin-top: 25vh; */
@@ -90,7 +90,7 @@
           max-width: 680px;
 
           > span.highlight {
-            background-color: var(--color-bg-highlight);
+            background-color: var(--color-swatch-a);
           }
         }
 
@@ -159,7 +159,8 @@
             /* Opacity transitions are handled differently on child items */
             & h3,
             & p,
-            & span {
+            & span,
+            & svg {
               transition: var(--transition-text-opacity);
             }
             &:hover {
@@ -169,7 +170,8 @@
               }
               & h3,
               & p,
-              & span {
+              & span,
+              & svg {
                 opacity: var(--text-opacity-hovered);
               }
             }
@@ -261,11 +263,15 @@
           &.pinned > a {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             gap: 1rem;
 
-            &:after {
+            /* &:after {
               content: url(/assets/images/pin.svg);
               opacity: 0.5;
+            } */
+            > svg > path {
+              fill: var(--color-text-tertiary);
             }
           }
         }
@@ -273,12 +279,7 @@
 
       > ul.trove {
         > li > a {
-          /* The image component */
-          > img {
-            max-width: 100%;
-          }
           /* Style inside */
-
           & h3,
           & p {
             margin: 0;

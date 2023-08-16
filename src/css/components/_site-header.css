@@ -18,15 +18,15 @@ header.site-header {
   .left {
     display: flex;
     gap: 1rem;
-  }
 
-  .logo {
-    width: 36px;
-    height: auto;
-    display: block;
+    > a > svg {
+      width: 36px;
+      height: auto;
+      display: block;
 
-    > path {
-      fill: var(--color-text-primary);
+      > path {
+        fill: var(--color-text-primary);
+      }
     }
   }
 }

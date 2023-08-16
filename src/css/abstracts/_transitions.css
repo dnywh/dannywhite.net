@@ -1,4 +1,6 @@
 :root {
+  --transition-color-scheme: background-color 250ms ease-in-out,
+    border 250ms ease-in-out, box-shadow 250ms ease-in-out, color 175ms ease;
   --transition-text-opacity: opacity 0.3s ease;
   --text-opacity-hovered: 0.5;
 }

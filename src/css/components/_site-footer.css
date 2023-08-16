@@ -76,7 +76,7 @@ body > footer {
         > a {
           &.outbound {
             &:after {
-              padding-left: 0.25rem;
+              margin-left: 0.15rem;
             }
           }
         }

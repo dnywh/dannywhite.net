@@ -25,6 +25,11 @@
   --spacing-margin-bottom: 15rem;
 }
 
+html {
+  background-color: var(--color-background);
+  transition: var(--transition-color-scheme);
+}
+
 p {
   margin: 1rem 0;
 }

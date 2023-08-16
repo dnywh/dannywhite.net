@@ -55,6 +55,7 @@
           <div>
             <h3>{{ item.name }}</h3>
             <span class="outbound">{{ item.domain }}</span>
+            {# <div class="outbound"><span>{{ item.domain }}</span>{% include "partials/arrow-se.svg" %}</div> #}
             <p>{{ item.desc }}</p>
             <p>{{ item.status }}</p>
             </div>
@@ -81,6 +82,7 @@
         <li class="pinned">
           <a href="{{ item.url }}">
             <h3>{{ item.data.title }}</h3>
+            {% include "partials/pin.svg" %}
           </a>
         </li>
         {% endif %}
