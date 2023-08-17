@@ -26,14 +26,14 @@ let marqueeContentWidth = 0;
 let gap = 40;
 
 Array.from(marqueeItemsSample).forEach((item, index) => {
-    console.log(index, item.offsetWidth)
+    // console.log(index, item.offsetWidth)
     marqueeContentWidth += item.offsetWidth
     if (index < Array.from(marqueeItemsSample).length) {
         marqueeContentWidth += gap
     }
 })
 // This is the width that will be applied to each `marquee-content` element
-console.log(marqueeContentWidth)
+// console.log(marqueeContentWidth)
 
 Array.from(marqueeContentAll).forEach((item) => {
     item.style.width = marqueeContentWidth + "px";
@@ -46,13 +46,15 @@ const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                console.log("intro in view");
+                // console.log("intro in view");
                 bodyEl.classList.add("visible")
                 clientRollEl.classList.add("visible")
+
                 // TODO: enable below meta thing
                 // document.querySelector('meta[name="theme-color"]').setAttribute("content", "white");
             } else {
-                console.log("intro out of view");
+                // console.log("intro out of view");
+
                 // bodyEl.classList.remove("visible")
                 // clientRollEl.classList.remove("visible")
                 // TODO: disengage observer if I choose to go with this

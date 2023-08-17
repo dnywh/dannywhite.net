@@ -1,6 +1,7 @@
 ---
 title: Launching Origami
 date: 2016-11-01
+stage: 2
 featured_image: facebook-ny.jpg
 twitter_card_type: summary_large_image
 eleventyExcludeFromCollections: true

@@ -1,4 +1,5 @@
 .article {
+  scroll-behavior: smooth;
   > body {
     .page-header {
       margin-left: var(--margin-x);
@@ -6,19 +7,17 @@
     }
     > main {
       > article {
-        margin-top: 10rem;
         @media (min-width: 1024px) {
+          margin-top: 10rem;
           display: grid;
           grid-template-columns: 1fr minmax(auto, 720px) 1fr;
           /* grid-template-columns: 200px 720px 200px; */
-          gap: 5rem var(--gap-md);
+          gap: 0 var(--gap-md);
         }
 
         > header,
         > aside.audience,
         .article-content {
-          /* max-width: 720px; */
-          /* margin: 0 auto; */
           @media (min-width: 1024px) {
             grid-column: 2;
           }
@@ -47,19 +46,44 @@
           }
         }
 
+        > aside.stage,
+        > aside.left {
+          width: fit-content;
+          /* TODO: Unify text styles elsewhere */
+          font-size: 14px;
+          @media (min-width: 1024px) {
+            grid-row: 3;
+            /* Set sticky */
+            position: sticky;
+            top: var(--margin-x);
+            align-self: start;
+          }
+        }
+
+        .article-content,
+        > aside.stage,
+        > aside.left {
+          @media (min-width: 1024px) {
+            margin-top: var(--margin-x);
+          }
+        }
+
         > aside.audience {
+          margin-top: var(--margin-x);
+          border-top: 1px solid var(--color-border-secondary);
+          border-bottom: 1px solid var(--color-border-secondary);
+          padding: 2rem 0;
           @media (min-width: 1024px) {
             grid-row: 2;
+            padding: 3rem 0;
           }
           /* margin-top: 5rem; */
           /* margin-bottom: 7rem; */
-          border-top: 1px solid var(--color-border-secondary);
-          border-bottom: 1px solid var(--color-border-secondary);
-          padding: 2rem 0 1.25rem;
 
           > h2 {
             margin-bottom: 0.5rem;
-            color: var(--color-text-tertiary);
+            color: var(--color-text-secondary);
+            font-weight: 500;
           }
           > p {
             /* font-size: var(--font-size-sm); */
@@ -69,32 +93,86 @@
 
         > aside.stage {
           @media (min-width: 1024px) {
-            grid-row: 2;
             grid-column: 3;
-            /* justify-self: end;
-            align-self: end; */
+            justify-self: end;
+            /* align-self: end; */
             text-align: right;
           }
-          > span:first-of-type {
+          > p:first-of-type {
             color: var(--color-text-secondary);
           }
-          > span:last-of-type {
+          > p:last-of-type {
             color: var(--color-text-tertiary);
+          }
+
+          /* Add transitions to visibility (handled in JavaScript) */
+          opacity: 0;
+          transition: opacity 0.65s 2s ease;
+          &.visible {
+            transition: opacity 0.65s 0s ease;
+            opacity: 1;
+          }
+
+          .dots {
+            /* https://css-tricks.com/five-methods-for-five-star-ratings/ */
+            --dot-filled: var(--color-text-secondary);
+            --dot-unfilled: var(--color-text-tertiary);
+            --percent: calc(var(--stage) / 3 * 100%);
+
+            display: inline-block;
+            font-size: 24px;
+            /*  // make sure • appears correctly */
+            font-family: Times;
+            line-height: 1;
+
+            &::before {
+              content: "•••";
+              letter-spacing: 1.5px;
+              background: linear-gradient(
+                -90deg,
+                var(--dot-filled) var(--percent),
+                var(--dot-unfilled) var(--percent)
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
           }
         }
 
-        > aside.toc {
+        > aside.left {
+          /* Don't show unless on a larger breakpoint */
           display: none;
-          color: var(--color-text-tertiary);
           @media (min-width: 1024px) {
-            display: inherit;
-            grid-row: 2/3;
             grid-column: 1;
+
+            /* Display as flex in case there are multiple child sections */
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap-md);
+          }
+          /* Style */
+          color: var(--color-text-tertiary);
+
+          > section {
+            > h2 {
+              margin-bottom: 1rem;
+            }
+            > nav.toc > ol,
+            > nav.toc > ol > li > ol {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+            }
+            > nav.toc > ol {
+              > li > ol {
+                margin-top: 0.5rem;
+                padding-left: 1rem;
+              }
+            }
           }
         }
 
         .article-content {
-          /* margin-top: 5rem; */
           @media (min-width: 1024px) {
             grid-row: 3;
           }

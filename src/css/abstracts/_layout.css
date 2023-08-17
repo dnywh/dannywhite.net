@@ -14,13 +14,16 @@
   --grid-template-cols-main: repeat(4, 1fr);
   --gap-md: 2.5rem;
   @media (min-width: 1024px) {
-    --gap-md: 3.25rem;
+    --gap-md: 5rem;
   }
   /* Margins */
   /* Basic left-and-right section margins, often on the entire page */
   --margin-x: 1rem;
   @media (min-width: 1024px) {
-    --margin-x: 5rem;
+    --margin-x: 2.5rem;
+  }
+  @media (min-width: 1800px) {
+    --margin-x: 6rem;
   }
   /* Basic top-and-bottom margins, often the entire page */
   --margin-y: 5rem;
@@ -35,9 +38,9 @@ html {
   transition: var(--transition-color-scheme);
 }
 
-p {
+/* p {
   margin: 1rem 0;
-}
+} */
 
 /* Don't show a JavaScript element if the user has it turned off */
 .no-js .js-content {

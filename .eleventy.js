@@ -4,9 +4,14 @@ const { DateTime } = require("luxon");
 const lightningCSS = require("@11tyrocks/eleventy-plugin-lightningcss");
 // Import RSS functionality
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+// Import automatic table of contents
+const pluginTOC = require('eleventy-plugin-toc')
 // Import a JS minifier
 const { minify } = require("terser");
 // Import specific packages from markdown-it
+// Automatic anchor IDs
+const markdownItAnchor = require('markdown-it-anchor')
+// Find any external links in Markdown and make them open in new tabs
 const mila = require("markdown-it-link-attributes");
 // Import my HTML minifier transform
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
@@ -29,8 +34,37 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(lightningCSS);
     // RSS (Atom) feed
     eleventyConfig.addPlugin(pluginRss);
+    // Automatic table of contents
+    eleventyConfig.addPlugin(pluginTOC, {
+        tags: ['h2', 'h3'],
+    });
 
     // Filters
+    // Date filter for ISO8601 format (for further manipulation in JavaScript)
+    // https://www.aleksandrhovhannisyan.com/blog/useful-11ty-filters/#3-date-formatting
+    const toISOString = (dateString) => new Date(dateString).toISOString();
+    eleventyConfig.addFilter('toISOString', toISOString);
+    // Date filter for month and year only
+    eleventyConfig.addFilter("vagueDate", (dateObj) => {
+        // return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+        // Actually just using same format as `generatedDate` for now...
+        return new Intl.DateTimeFormat(
+            'en-GB', { month: "long", year: "numeric" }
+        ).format(dateObj);
+    });
+
+    // Date filter for last updated date
+    // https://11ty.rocks/eleventyjs/dates/#postdate-filter
+    // https://moment.github.io/luxon/docs/class/src/datetime.js~DateTime.html
+    eleventyConfig.addFilter("readableDate", (dateObj) => {
+        // return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+        // Actually just using same format as `generatedDate` for now...
+        return new Intl.DateTimeFormat(
+            'en-GB', { dateStyle: 'full' }
+        ).format(dateObj);
+    });
+
+    // JS minifier
     eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
         code,
         callback
@@ -66,9 +100,9 @@ module.exports = function (eleventyConfig) {
 
     // Transforms
     // Only minify HTML if we are in production because it slows builds down
-    if (process.env.ELEVENTY_RUN_MODE === "build") {
-        eleventyConfig.addTransform('htmlmin', htmlMinTransform);
-    }
+    // if (process.env.ELEVENTY_RUN_MODE === "build") {
+    eleventyConfig.addTransform('htmlmin', htmlMinTransform);
+    // }
 
     // Shortcodes
     // Year shortcode for copyright date(s): https://11ty.rocks/eleventyjs/dates/#year-shortcode
@@ -108,6 +142,7 @@ module.exports = function (eleventyConfig) {
         }
     };
     eleventyConfig.amendLibrary("md", mdLib => mdLib.use(mila, milaOptions));
+    eleventyConfig.amendLibrary("md", mdLib => mdLib.use(markdownItAnchor));
 
     // End
     // Set which directories Eleventy reads from and writes to

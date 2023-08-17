@@ -28,7 +28,8 @@
     <div class="header-text">
       <p>I am <span class="highlight">available</span> for new work starting <span class="highlight">November 1st 2023</span>.</p>
       <p>Design prototyping, systems, and design engineering roles are my forte.</p>
-      <p>Sound like it could be a fit? <a data-tooltip="Opens your email app" href="#todo">Let’s chat</a>.</p>
+      {# Force a space to prevent minifier from muddying up sentence #}
+      <p>Sound like it could be a fit?&#32;{% include "partials/email-lets-chat.html" %}.</p>
     </div>
   </header>
 
@@ -39,7 +40,7 @@
     <section class=" directory interstitial">
       <section>
         <h2 class="small">Now</h2>
-        <p>I’m in Melbourne, Australia. <span id="timestamp"></span></p>
+        <p>I’m in Melbourne, Australia<span id="timestamp"></span>.</p>
         <p>I’m working on a new project with friends at B-Reel LA. I’m also tinkering on the Pi Frame project, figuring out how to wax my bike chain, and reading The Monkey Wrench Gang by Edward Abbey.</p>
       </section>
       {% include "partials/here-there.html" %}

@@ -1,5 +1,6 @@
 {
   "layout": "layouts/article.njk",
   "tags": "note",
-  "permalink": "/{{ page.fileSlug }}/"
+  "permalink": "/{{ page.fileSlug }}/",
+  "stage": 1
 }

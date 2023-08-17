@@ -6,10 +6,11 @@ layout: "layouts/article.njk"
 
 This is where the page body content goes. TODO.
 
-<h2 id="eleventy">Eleventy</h2>
+## Eleventy
 
 This is hopefully where the footer link to 'Eleventy' goes.
+I use [Eleventy](https://www.11ty.dev) to make my site.
 
 ## Carbon measurements
 
-Maybe these links are done manually like `{:id="#foo}`, but what about pages like [est](/est)?
+This is where I go in detail about the carbon measurement in the website footer.

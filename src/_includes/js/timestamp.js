@@ -28,12 +28,14 @@ const formatTime = (time) => {
 
 function createTimestamp() {
     // Get time and date information based on location written above
-    let time = new Date().toLocaleTimeString('en-us', { timeZone: currentTimeZone, hour: "2-digit", minute: "2-digit" });
+    // "numeric" (e.g., 1)
+    // "2-digit" (e.g., 01)
+    let time = new Date().toLocaleTimeString('en-us', { timeZone: currentTimeZone, hour: "numeric", minute: "numeric" });
     let calendarDay = new Date().toLocaleDateString('en-us', { timeZone: currentTimeZone, day: "numeric" });
     let weekDay = new Date().toLocaleDateString('en-us', { timeZone: currentTimeZone, weekday: "long" });
     let month = new Date().toLocaleDateString('en-us', { timeZone: currentTimeZone, month: "long" });
     // Set in DOM
-    timestampEl.innerText = `It’s ${formatTime(time)} on ${weekDay} the ${calendarDay}${nthNumber(calendarDay)} of ${month} down here.`;
+    timestampEl.innerText = ` where it’s currently ${formatTime(time)} on ${weekDay} the ${calendarDay}${nthNumber(calendarDay)} of ${month}`;
 }
 
 // Run once on load
