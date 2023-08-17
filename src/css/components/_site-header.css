@@ -1,7 +1,9 @@
 .sticky-wrapper {
   /* Set an explicit height in order to cause shifting */
-  /* height: 20rem; */
-  margin-top: 2rem;
+  height: 20rem;
+  /* margin-bottom: 10rem; */
+  /* margin-top: var(--margin-x); */
+  /* padding-top: var(--margin-x); */
 }
 
 header.site-header {
@@ -17,7 +19,7 @@ header.site-header {
   padding-bottom: 3.5rem;
 
   position: sticky;
-  top: 2rem;
+  top: var(--margin-x);
 
   display: flex;
   justify-content: space-between;

@@ -1,0 +1,58 @@
+/* See also _site-footer.css for more specific styles */
+
+.directory {
+  max-width: var(--width-max);
+  margin: 0 auto;
+
+  display: grid;
+  gap: var(--gap-md);
+
+  @media (min-width: 1024px) {
+    /* Match grid and gap from site-wide grid */
+    grid-template-columns: var(--grid-template-cols-main);
+
+    & section:first-of-type {
+      grid-column: span 2;
+    }
+  }
+
+  /* General paragraph styling */
+  & p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    /* Optical width */
+    max-width: 80ch;
+    @media (min-width: 1024px) {
+      max-width: 55ch;
+    }
+  }
+  /* Column styling */
+  & section {
+    > h2 {
+      color: var(--color-text-tertiary);
+      margin-bottom: 1rem;
+    }
+    > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > li {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 130%; /* 20.8px */
+        letter-spacing: -0.16px;
+        color: var(--color-text-secondary);
+
+        > a {
+          &.outbound {
+            &:after {
+              margin-left: 0.15rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

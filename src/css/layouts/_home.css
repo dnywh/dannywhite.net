@@ -7,7 +7,7 @@
       max-width: var(--width-max);
 
       display: grid;
-      gap: 0 2rem;
+      gap: 0 var(--gap-md);
 
       @media (min-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
@@ -85,12 +85,18 @@
     }
 
     .interstitial {
-      margin: 12rem 0;
-      font-size: 24px;
+      margin-bottom: var(--margin-y);
     }
 
     .home-section {
       margin-bottom: var(--spacing-margin-bottom);
+
+      > .page-header {
+        > h2 {
+          /* Override .page-header standard styling just for home */
+          font-size: 56px;
+        }
+      }
 
       > .inner {
         /* Shared styles across each section */
@@ -113,7 +119,14 @@
           letter-spacing: -0.8px;
           margin-bottom: 5rem;
 
-          grid-column: span 1;
+          /* Width */
+          grid-column: span 4;
+          @media (min-width: 1024px) {
+            grid-column: span 2;
+          }
+          @media (min-width: 1800px) {
+            grid-column: span 1;
+          }
         }
 
         > ul {
@@ -192,13 +205,28 @@
               grid-column: span 2;
             }
             &.featured {
+              > a > img {
+                /* Fade off end part */
+                /* https://stackoverflow.com/a/51557089/2009441 */
+                mask-image: linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 1),
+                  rgba(0, 0, 0, 0)
+                );
+              }
               @media (min-width: 1024px) {
                 grid-column: span 4;
                 > a {
-                  display: flex;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
                   gap: var(--gap-md);
-                  > * {
-                    flex: 1;
+                }
+                /* Reverse order of every second row */
+                &:nth-of-type(even) {
+                  > a {
+                    > img {
+                      order: 1;
+                    }
                   }
                 }
               }
@@ -260,8 +288,13 @@
         }
 
         > ul.trove {
+          /* Fade off end part */
+          /* https://stackoverflow.com/a/51557089/2009441 */
+          mask-image: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
+          /* Set a negative margin to visually compensate for the footer */
+          margin-bottom: calc(-0.5 * var(--margin-y));
+          /* Style inside */
           > li > a {
-            /* Style inside */
             & h3,
             & p {
               margin: 0;

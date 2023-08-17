@@ -36,14 +36,19 @@
 
   <main>
     {# Interstitial #}
-    <section class="interstitial">
-      <p>Oh, hello. This is the interstitial. It should look a bit like the footer and help break up the above from the below.</p>
+    <section class=" directory interstitial">
+      <section>
+        <h2 class="small">Now</h2>
+        <p>I’m in Melbourne, Australia. <span id="timestamp"></span></p>
+        <p>I’m working on a new project with friends at B-Reel LA. I’m also tinkering on the Pi Frame project, figuring out how to wax my bike chain, and reading The Monkey Wrench Gang by Edward Abbey.</p>
+      </section>
+      {% include "partials/here-there.html" %}
     </section>
 
     {# Projects #}
     <section class="home-section">
       <header class="page-header">
-        <h2>Projects</h2>
+        <h2>Sidelines</h2>
       </header>
       <div class="inner">
         <p>Select items, on the side.</p>
@@ -52,7 +57,7 @@
           <li {% if item.img %} class="featured" {% endif %}>
             <a href="{{ item.url }}">
             {% if item.img %}
-            <img src="{{ item.cover }}" alt="The hero image for {{ item.name }}.">
+            <img src="{{ item.img }}" alt="The hero image for {{ item.name }}.">
             {% endif %}
             <div>
               <h3>{{ item.name }}</h3>
@@ -71,7 +76,7 @@
     {# Notes #}
     <section class="home-section">
       <header class="page-header">
-        <h2>Notes</h2>
+        <h2><a href="/notes">Notes</a></h2>
       </header>
       <div class="inner">
         <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
@@ -147,8 +152,10 @@
 {% block pageJsContent %}
   {# Page-specific scripts that depend on DOM elements #}
     {% set pageJs %}
+        {# Get current date and time #}
+        {% include "js/timestamp.js" %}
         {# Adds intro behaviour #}
-        {% include "js/client-roll.js"%}
+        {% include "js/client-roll.js" %}
     {% endset %}
     {# Minify above scripts #}
     <script>{{ pageJs | jsmin | safe }}</script>

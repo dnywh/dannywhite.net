@@ -8,7 +8,7 @@
     font-weight: 500;
     line-height: 110%; /* 61.6px */
     letter-spacing: -1.75px;
-    color: var(--color-text-secondary);
+    /* color: var(--color-text-secondary); */
   }
 
   > h1 {

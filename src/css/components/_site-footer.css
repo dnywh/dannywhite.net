@@ -1,3 +1,5 @@
+/* See also _directory.css for related styles */
+
 body > footer {
   margin-top: var(--margin-y);
   margin-left: var(--margin-x);
@@ -12,69 +14,13 @@ body > footer {
   /* Increase padding-top to take into account above border */
   padding-top: calc(5px + var(--gap-md));
 
-  .layout-wrapper {
-    max-width: var(--width-max);
-    margin: 0 auto;
-
-    display: grid;
-    gap: var(--gap-md);
-
-    @media (min-width: 1024px) {
-      /* Match grid and gap from site-wide grid */
-      grid-template-columns: var(--grid-template-cols-main);
-
-      .controls {
-        grid-column: span 2;
-      }
-    }
-
-    .controls {
-      .color-switch {
-        margin-bottom: 1rem;
-        @media (min-width: 1024px) {
-          /* Set to align optically with content in other columns */
-          margin-bottom: 0.6rem;
-        }
-      }
-
-      > p {
-        margin: 0;
-        font-size: 0.75rem;
-        color: var(--color-text-secondary);
-        /* Optical width */
-        max-width: 80ch;
-        @media (min-width: 1024px) {
-          max-width: 55ch;
-        }
-      }
-    }
-
-    .here,
-    .there {
-      > h2 {
-        color: var(--color-text-tertiary);
-        margin-bottom: 1rem;
-      }
-      > ul {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        > li {
-          font-size: 1rem;
-          font-weight: 500;
-          line-height: 130%; /* 20.8px */
-          letter-spacing: -0.16px;
-          color: var(--color-text-secondary);
-
-          > a {
-            &.outbound {
-              &:after {
-                margin-left: 0.15rem;
-              }
-            }
-          }
-        }
+  .controls {
+    .color-switch {
+      /* margin-top: -0.25rem; */
+      margin-bottom: 1rem;
+      @media (min-width: 1024px) {
+        /* Set to align optically with content in other columns */
+        margin-bottom: 0.75rem;
       }
     }
   }
