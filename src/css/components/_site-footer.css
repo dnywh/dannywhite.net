@@ -15,6 +15,8 @@ body > footer {
   padding-top: calc(5px + var(--gap-md));
 
   .controls {
+    /* Uses old style numbering to fit nicer with text */
+    font-feature-settings: "onum" 1;
     .color-switch {
       /* margin-top: -0.25rem; */
       margin-bottom: 1rem;

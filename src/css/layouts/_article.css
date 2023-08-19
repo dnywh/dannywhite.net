@@ -121,7 +121,7 @@
 
             display: inline-block;
             font-size: 24px;
-            /*  // make sure • appears correctly */
+            /* Make sure • appears correctly by using default font */
             font-family: Times;
             line-height: 1;
 
@@ -173,26 +173,118 @@
         }
 
         .article-content {
+          max-width: var(--width-max);
+          /* Cancel out any remaining margins or padding */
+          margin-trim: block;
           @media (min-width: 1024px) {
             grid-row: 3;
           }
 
-          > h2 {
-            /* Re-use from somewhere else */
-            font-size: 40px;
-            font-style: normal;
+          > h2,
+          > h3,
+          > h4 {
             font-weight: 500;
-            line-height: 110%; /* 44px */
-            letter-spacing: -1.4px;
           }
 
           > p,
           > dt,
           > dd,
-          > li {
+          > ol,
+          > ul {
             font-size: 18px;
             letter-spacing: var(--letter-spacing-reg);
             line-height: var(--line-height-wide);
+          }
+
+          > p {
+            /* Uses old style numbering to fit nicer with text */
+            font-feature-settings: "onum" 1;
+            /* margin-bottom: 1rem; */
+
+            /* &:not(:last-child) {
+            } */
+
+            /* text-indent: 3em; */
+            margin-bottom: 1rem;
+
+            &:first-child {
+              text-indent: 0;
+            }
+
+            /* &:not(:first-of-type) {
+            } */
+          }
+
+          > h2 {
+            /* Re-use from somewhere else */
+            font-size: 40px;
+
+            line-height: 110%; /* 44px */
+            letter-spacing: -1.4px;
+
+            /* Margins */
+            margin-top: 4rem;
+            margin-bottom: 0.85rem;
+            @media (min-width: 1024px) {
+              margin-top: 6rem;
+            }
+          }
+
+          > h3 {
+            font-size: 21px;
+            line-height: var(--line-height-tight);
+
+            /* Margins */
+            margin-top: 2rem;
+            margin-bottom: 0.65rem;
+            @media (min-width: 1024px) {
+              margin-top: 3rem;
+            }
+          }
+
+          > h4 {
+            font-size: 18px;
+            line-height: var(--line-height-tight);
+            margin-bottom: 0.25rem;
+          }
+
+          > ul {
+            list-style-type: square;
+          }
+
+          > ol {
+            list-style-type: decimal;
+          }
+
+          /* Images */
+          & figure {
+            margin: var(--spacing-md) 0;
+            /* Set as flex so figcaption can be aligned to right */
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            > figcaption {
+              color: var(--color-text-secondary);
+              font-size: var(--font-size-sm);
+              text-align: right;
+              max-width: 640px; /*  TODO variable the same as text width */
+              margin-top: 1rem;
+              /* margin-left: 3rem; */
+
+              @media (min-width: 1024px) {
+                margin-left: calc(
+                  var(--gap-md) / 2
+                ); /* Visual padding for caption */
+              }
+            }
+          }
+
+          .two-up {
+            @media (min-width: 1024px) {
+              display: flex;
+              gap: calc(var(--gap-md) / 2);
+            }
           }
         }
       }

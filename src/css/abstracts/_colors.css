@@ -3,7 +3,7 @@
   On light ('light mode') 
   */
   /* Text */
-  --color-text-primary-on-light: hsla(0, 0%, 0%, 1);
+  --color-text-primary-on-light: rgba(40, 32, 16, 0.95);
   --color-text-secondary-on-light: hsla(0, 0%, 25%, 1);
   --color-text-tertiary-on-light: hsla(0, 0%, 70%, 1);
   --color-text-highlight-on-light: hsla(36, 75%, 52%, 1);

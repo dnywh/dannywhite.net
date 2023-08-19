@@ -7,6 +7,7 @@
   --width-max: 1800px;
   /* Spacing */
   --spacing-margin-x-md: 1rem;
+  --spacing-md: 2.5rem;
   /* Borders */
   --stroke-thick: 2px;
   --stroke-thin: 1px;
@@ -53,7 +54,9 @@ main {
   margin-right: var(--margin-x);
 }
 
-.article-content {
-  max-width: var(--width-max);
-  /* margin: 0 auto; */
+img {
+  /* Override our reset to prevent stretched images */
+  height: auto;
+  /* Set a background fill whilst the image loads */
+  background-color: var(--color-swatch-a);
 }
