@@ -7,7 +7,7 @@
   display: grid;
   gap: var(--gap-md);
 
-  @media (min-width: 1024px) {
+  @media (--viewport-md) {
     /* Match grid and gap from site-wide grid */
     grid-template-columns: var(--grid-template-cols-main);
 
@@ -29,7 +29,7 @@
     } */
     /* Optical width */
     max-width: 80ch;
-    @media (min-width: 1024px) {
+    @media (--viewport-md) {
       max-width: 55ch;
     }
 

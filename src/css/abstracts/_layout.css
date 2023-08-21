@@ -1,6 +1,10 @@
-/* body {
-  margin: 1rem;
-} */
+/* Custom media queries */
+/* https://lightningcss.dev/transpilation.html#custom-media-queries
+ */
+@custom-media --viewport-sm (min-width: 732px);
+@custom-media --viewport-md (min-width: 1024px);
+@custom-media --viewport-lg (min-width: 1280px);
+@custom-media --viewport-xl (min-width: 1800px);
 
 :root {
   /* Widths */
@@ -17,22 +21,22 @@
   --grid-template-cols-main: repeat(4, 1fr);
   --gap-md: 2.5rem;
   --gap-lg: 3.5rem;
-  @media (min-width: 1024px) {
+  @media (--viewport-md) {
     --gap-md: 5rem;
   }
   /* Margins */
   /* Basic left-and-right section margins, often on the entire page */
   --margin-x: 1rem;
-  @media (min-width: 1024px) {
+  @media (--viewport-md) {
     --margin-x: 2.5rem;
   }
-  @media (min-width: 1800px) {
+  @media (--viewport-xl) {
     --margin-x: 6rem;
   }
   /* Basic top-and-bottom margins, often the entire page */
   --margin-y: 5rem;
   --spacing-margin-bottom: 15rem;
-  @media (min-width: 1024px) {
+  @media (--viewport-md) {
     --margin-y: 15rem;
   }
 }

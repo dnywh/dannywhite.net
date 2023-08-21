@@ -22,7 +22,7 @@
   width: fit-content;
   height: fit-content;
 
-  @media (min-width: 1024px) {
+  @media (--viewport-md) {
     /* Extra vertical space probably not necessary */
     margin-bottom: 0;
   }

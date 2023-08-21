@@ -1,7 +1,7 @@
 .site-header {
   /* Set an explicit height for sticky header effect */
   height: 28vh;
-  @media (min-width: 1024px) {
+  @media (--viewport-md) {
     height: 18vh;
   }
 

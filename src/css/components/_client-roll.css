@@ -11,7 +11,7 @@
   overflow: hidden;
   gap: 2.5rem;
 
-  @media (min-width: 1024px) {
+  @media (--viewport-md) {
     justify-content: space-between; /* TODO use `center` when VH is small, or clamp it between a range */
     padding: 5vh 0;
     margin-top: 0.75rem; /* Should visually equal the margin-top of the corresponding p tag */
@@ -111,7 +111,7 @@
         font-weight: 500;
         letter-spacing: -1.92px;
         line-height: 100%;
-        @media (min-width: 1024px) {
+        @media (--viewport-md) {
           font-size: 80px;
         }
 

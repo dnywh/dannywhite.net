@@ -16,3 +16,11 @@ I'm such a fan of Eleventy that you should read [all my posts tagged with it](/n
 ## Carbon measurements
 
 This is where I go in detail about the carbon measurement in the website footer.
+
+## Stages
+
+This is where I explain my stages and credit Maggie Appleton's garden metaphor.
+
+## Intended audience
+
+This is where I explain the intended audience bit and credit the person who invented it (see my notes on Notion) via Robin Sloan.

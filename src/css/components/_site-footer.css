@@ -20,7 +20,7 @@ body > footer {
     .color-switch {
       /* margin-top: -0.25rem; */
       margin-bottom: 1rem;
-      @media (min-width: 1024px) {
+      @media (--viewport-md) {
         /* Set to align optically with content in other columns */
         margin-bottom: 0.75rem;
       }

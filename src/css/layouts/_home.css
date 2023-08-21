@@ -9,7 +9,7 @@
       display: grid;
       gap: 0 var(--gap-md);
 
-      @media (min-width: 1024px) {
+      @media (--viewport-md) {
         grid-template-columns: repeat(2, 1fr);
         /* Set the side margins here since there won't be bleed on large displays */
         margin: 40vh var(--margin-x) 3rem;
@@ -32,7 +32,7 @@
         margin-left: var(--margin-x);
         margin-right: var(--margin-x);
         /* Cancel these out on larger displays, as it will be set at the parent  */
-        @media (min-width: 1024px) {
+        @media (--viewport-md) {
           margin-left: 0;
           margin-right: 0;
         }
@@ -67,7 +67,7 @@
         }
 
         &:last-of-type {
-          @media (min-width: 1024px) {
+          @media (--viewport-md) {
             margin-top: 25vh;
           }
         }
@@ -93,7 +93,7 @@
       /* Override existing explicit height for accentuated sticky header effect */
       /* height: 38vh; */
       /* height: 20rem; */
-      @media (min-width: 1024px) {
+      @media (--viewport-md) {
         /* height: 48vh; */
         /* Visually match the interstitial */
         height: var(--margin-y);
@@ -121,7 +121,7 @@
 
         display: grid;
         gap: 0 var(--gap-md);
-        @media (min-width: 1024px) {
+        @media (--viewport-md) {
           grid-template-columns: repeat(4, minmax(0, 1fr));
           /* minmax is necessary to stop long strings from overriding. Previously: */
           /* grid-template-columns: repeat(4, 1fr); */
@@ -137,10 +137,10 @@
 
           /* Width */
           grid-column: span 4;
-          @media (min-width: 1024px) {
+          @media (--viewport-md) {
             grid-column: span 2;
           }
-          @media (min-width: 1800px) {
+          @media (--viewport-xl) {
             grid-column: span 1;
           }
         }
@@ -149,7 +149,7 @@
           grid-column: span 4;
           display: grid;
           gap: 0 var(--gap-md);
-          @media (min-width: 1024px) {
+          @media (--viewport-md) {
             grid-template-columns: repeat(4, minmax(0, 1fr));
             /* minmax is necessary to stop long strings from overriding. Previously: */
             /* grid-template-columns: repeat(4, 1fr); */
@@ -219,7 +219,7 @@
         > ul.projects {
           gap: 5rem var(--gap-md);
           > li {
-            @media (min-width: 1024px) {
+            @media (--viewport-md) {
               grid-column: span 2;
             }
             &.featured {
@@ -232,7 +232,7 @@
                   rgba(0, 0, 0, 0)
                 );
               }
-              @media (min-width: 1024px) {
+              @media (--viewport-md) {
                 grid-column: span 4;
                 > a {
                   display: grid;
@@ -274,7 +274,7 @@
 
         > ul.notes {
           > li {
-            @media (min-width: 1024px) {
+            @media (--viewport-md) {
               grid-column: span 2;
             }
             > a {
