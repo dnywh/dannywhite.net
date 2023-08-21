@@ -208,6 +208,8 @@
                 }
                 /* Restore underline if necessary */
                 text-decoration: underline;
+                text-underline-offset: 1.5px;
+                text-decoration-color: var(--color-border-secondary);
               }
             }
           }

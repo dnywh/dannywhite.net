@@ -10,7 +10,7 @@ My Raspberry Pi is talking to the International Space Station, then talking to M
 
 ...Almost.
 
-I’ve been saying that ‘almost’ bit every day for the last three weekends.
+I’ve been saying that 'almost' bit every day for the last three weekends.
 
 Feels great regardless. Progress.
 

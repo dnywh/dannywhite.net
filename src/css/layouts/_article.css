@@ -187,16 +187,16 @@
             font-weight: 500;
           }
 
-          > p,
-          > dt,
-          > dd,
-          > ol,
-          > ul {
+          & p,
+          & dt,
+          & dd,
+          & ol,
+          & ul {
             font-size: var(--font-size-article);
             letter-spacing: var(--letter-spacing-reg);
           }
 
-          > p {
+          & p {
             line-height: var(--line-height-wide);
             /* Uses old style numbering to fit nicer with text */
             font-feature-settings: "onum" 1;
@@ -249,27 +249,44 @@
             margin-bottom: 0.25rem;
           }
 
+          /* Only vertically space lists that aren't children of other lists */
+          /* In other words: give lists vertical space unless they are indented lists */
+          > p + ul,
+          > ol + ul {
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+          }
+
           /* Lists */
-          > ul,
-          > ol {
+          & ul,
+          & ol {
             line-height: var(--line-height-xwide);
+
             /* Outset lists on larger breakpoints */
             padding-inline-start: 1.5rem;
             @media (min-width: 1024px) {
               padding-inline-start: 0;
             }
 
-            > li {
+            & li {
               > a {
                 text-decoration: underline;
+                text-underline-offset: 1.5px;
+                text-decoration-color: var(--color-border-secondary);
+              }
+
+              /* Indent child lists */
+              > ol,
+              > ul {
+                padding-inline-start: 1.5rem;
               }
             }
           }
-          > ul {
+          & ul {
             list-style-type: square;
           }
 
-          > ol {
+          & ol {
             list-style-type: decimal;
           }
 
@@ -277,6 +294,13 @@
           ::marker {
             color: var(--color-text-tertiary);
             font-feature-settings: "onum" 1;
+          }
+
+          /* Dividers including footnote separators */
+          & hr {
+            display: block;
+            border-bottom: 1px solid var(--color-border-secondary);
+            margin: var(--spacing-lg) 0;
           }
 
           /* Images */

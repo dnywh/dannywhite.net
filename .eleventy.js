@@ -9,8 +9,12 @@ const pluginTOC = require('eleventy-plugin-toc')
 // Import a JS minifier
 const { minify } = require("terser");
 // Import specific packages from markdown-it
+// First, markdown-it itself (since we extend it for smart quotes etc)
+const markdownIt = require("markdown-it");
 // Automatic anchor IDs
 const markdownItAnchor = require('markdown-it-anchor')
+// Automatic footnotes
+const markdownItFootnote = require("markdown-it-footnote");
 // Find any external links in Markdown and make them open in new tabs
 const mila = require("markdown-it-link-attributes");
 // Import my HTML minifier transform
@@ -129,10 +133,15 @@ module.exports = function (eleventyConfig) {
         return sortedItems;
     });
 
-    // Amendments
+    // Markdown library amendments
     // Find any external links in Markdown and make them open in new tabs
+    let markdownItOptions = {
+        html: true, // Enable HTML tags in source
+        breaks: false,  // Convert '\n' in paragraphs into <br>
+        linkify: false, // Autoconvert URL-like text to links
+        typographer: true, // Enable some language-neutral replacement + quotes beautification
+    };
     const milaOptions = {
-        html: true,
         matcher(href) {
             return href.match(/^https?:\/\//);
         },
@@ -141,8 +150,17 @@ module.exports = function (eleventyConfig) {
             rel: "noopener"
         }
     };
-    eleventyConfig.amendLibrary("md", mdLib => mdLib.use(mila, milaOptions));
-    eleventyConfig.amendLibrary("md", mdLib => mdLib.use(markdownItAnchor));
+
+    let mdLib = markdownIt(markdownItOptions);
+    eleventyConfig.amendLibrary("md", mdLib => mdLib
+        .use(mila, milaOptions)
+        .use(markdownItAnchor)
+        .use(markdownItFootnote)
+    );
+
+    eleventyConfig.setLibrary("md", mdLib);
+
+
 
     // End
     // Set which directories Eleventy reads from and writes to

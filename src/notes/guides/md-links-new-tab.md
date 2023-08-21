@@ -1,7 +1,6 @@
 ---
 title: Have Markdown links open in a new tab
 date: 2020-12-26
-stage: 1
 tags:
   - Markdown
   - HTML

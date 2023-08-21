@@ -23,6 +23,10 @@
     color: var(--color-text-secondary);
     letter-spacing: var(--letter-spacing-reg);
     margin-bottom: var(--para-gap-sm);
+    /* 
+    > a {
+      text-decoration-color: var(--color-border-primary);
+    } */
     /* Optical width */
     max-width: 80ch;
     @media (min-width: 1024px) {

@@ -1,7 +1,6 @@
 ---
 title: Bigger Than Us
 date: 2022-10-24
-stage: 1
 tags:
   - VR
   - Education

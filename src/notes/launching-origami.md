@@ -1,6 +1,7 @@
 ---
 title: Launching Origami
 date: 2016-11-01
+modified: 2016-11-24
 stage: 2
 featured_image: facebook-ny.jpg
 twitter_card_type: summary_large_image
@@ -22,7 +23,7 @@ The official Origami [tutorials](http://origami.design/tutorials/) and [examples
 
 <hr>
 
-## Update (24/11)
+## Update
 
 The full video of my demo has been uploaded on [Vimeo](http://vimeo.com/192805834). The other demos are under the [same username](http://vimeo.com/facebookorigami).
 

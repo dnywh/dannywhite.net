@@ -32,6 +32,8 @@ body {
   & p {
     > a {
       text-decoration: underline;
+      text-underline-offset: 1.5px;
+      text-decoration-color: var(--color-border-secondary);
     }
   }
 }
@@ -85,7 +87,28 @@ body {
   text-transform: uppercase;
   font-feature-settings: "cpsp" 1;
   font-size: 12px;
-  /* // font-weight: 600; */
-  /* // color: var(--color-text-secondary); */
+  /* font-weight: 600;
+  color: var(--color-text-secondary); */
   letter-spacing: var(--letter-spacing-wide);
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  font-size: smaller;
+}
+
+sup {
+  /* vertical-align: super; */
+  /* Replacing vertical-align with the below since the former affects the line spacing */
+  top: -0.4em;
+  font-feature-settings: "sups" 1;
+}
+
+sub {
+  /* vertical-align: sub; */
+  /* Replacing vertical-align with the below since the former affects the line spacing */
+  top: 0.4em;
+  font-feature-settings: "subs" 1;
 }
