@@ -2,13 +2,14 @@
 title: "Biking the Empire State Trail: New York City to Montréal"
 description: "We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. Here’s some advice and a route recap for folks planning a similar trip."
 date: 2022-07-15
-modified: 2023-03-12
+modified: 2023-08-21
 pinned: true
 stage: 3
 tags:
 	- Ride
 clientJS:
   - "distance-converter.js"
+audience: People planning to ride some or all of New York‘s Empire State Trail.
 ---
 
 We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. The trip took 11 days at a relaxed riding pace.
@@ -104,25 +105,186 @@ We didn't do the Erie Canalway Trail and didn't camp.
 We stayed at hotels that struck a balance between affordability and proximity to the trail.
 Think Motel 6, Holiday Inn Express, and the like.
 
-Here's a daily breakdown of our ride.
-Click on a leg title to be taken to its Strava ride log, or read on for more details and photos.
+Below is a daily breakdown of our ride.
+I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured rows to be taken to that section's write-up below, or click on an unbolded row to be taken straight to its Strava log.
 
 {% include "partials/distance-converter.html" %}
 
-| Leg                                                                                                     | Distance                                | Elevation Gain                      |
-| :------------------------------------------------------------------------------------------------------ | :-------------------------------------- | :---------------------------------- |
-| [Manhattan to Ardsley](https://www.strava.com/activities/7115492001)                                    | <span class="distance">44.52 km</span>  | <span class="distance">196 m</span> |
-| [Ardsley to Brewster](https://www.strava.com/activities/7121387383)                                     | <span class="distance">68.89 km</span>  | <span class="distance">475 m</span> |
-| [Brewster to Poughkeepsie](https://www.strava.com/activities/7126394083)                                | <span class="distance">67.12 km</span>  | <span class="distance">238 m</span> |
-| [Poughkeepsie to Kingston](https://www.strava.com/activities/7132011514)                                | <span class="distance">45.63 km</span>  | <span class="distance">181 m</span> |
-| [Kingston to Hudson](https://www.strava.com/activities/7136560114)                                      | <span class="distance">61.83 km</span>  | <span class="distance">576 m</span> |
-| [Hudson to Albany](https://www.strava.com/activities/7142807965)                                        | <span class="distance">68.34 km</span>  | <span class="distance">497 m</span> |
-| [Albany to Schuylerville](https://www.strava.com/activities/7148631579)                                 | <span class="distance">65.99 km</span>  | <span class="distance">202 m</span> |
-| [Schuylerville to Ticonderoga](https://www.strava.com/activities/7153547176)                            | <span class="distance">105.54 km</span> | <span class="distance">963 m</span> |
-| [Ticonderoga to Westport](https://www.strava.com/activities/7159144031)                                 | <span class="distance">46.51 km</span>  | <span class="distance">620 m</span> |
-| [Westport to Plattsburgh](https://www.strava.com/activities/7165283112)                                 | <span class="distance">77.96 km</span>  | <span class="distance">841 m</span> |
-| [Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364) | <span class="distance">84.16 km</span>  | <span class="distance">198 m</span> |
-| [Saint Jean-sur-Richelieu to Montréal](https://www.strava.com/activities/7175123103)                    | <span class="distance">53.83 km</span>  | <span class="distance">131 m</span> |
+<table>
+  <thead>
+    <tr>
+      <th>Leg</th>
+      <th>Distance</th>
+      <th>Elevation Gain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="chapter">
+      <td colspan="3">
+        <a href="#getting-out-of-the-city">Getting out of the city</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7115492001"
+          target="_blank"
+          rel="noopener"
+          >Manhattan to Ardsley</a
+        >
+      </td>
+      <td><span class="distance">44.52 km</span></td>
+      <td><span class="distance">196 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7121387383"
+          target="_blank"
+          rel="noopener"
+          >Ardsley to Brewster</a
+        >
+      </td>
+      <td><span class="distance">68.89 km</span></td>
+      <td><span class="distance">475 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7126394083"
+          target="_blank"
+          rel="noopener"
+          >Brewster to Poughkeepsie</a
+        >
+      </td>
+      <td><span class="distance">67.12 km</span></td>
+      <td><span class="distance">238 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7132011514"
+          target="_blank"
+          rel="noopener"
+          >Poughkeepsie to Kingston</a
+        >
+      </td>
+      <td><span class="distance">45.63 km</span></td>
+      <td><span class="distance">181 m</span></td>
+    </tr>
+    <tr class="chapter">
+      <td colspan="3">
+        <a href="#heading-towards-albany">Heading towards Albany</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7136560114"
+          target="_blank"
+          rel="noopener"
+          >Kingston to Hudson</a
+        >
+      </td>
+      <td><span class="distance">61.83 km</span></td>
+      <td><span class="distance">576 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7142807965"
+          target="_blank"
+          rel="noopener"
+          >Hudson to Albany</a
+        >
+      </td>
+      <td><span class="distance">68.34 km</span></td>
+      <td><span class="distance">497 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7148631579"
+          target="_blank"
+          rel="noopener"
+          >Albany to Schuylerville</a
+        >
+      </td>
+      <td><span class="distance">65.99 km</span></td>
+      <td><span class="distance">202 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7153547176"
+          target="_blank"
+          rel="noopener"
+          >Schuylerville to Ticonderoga</a
+        >
+      </td>
+      <td><span class="distance">105.54 km</span></td>
+      <td><span class="distance">963 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7159144031"
+          target="_blank"
+          rel="noopener"
+          >Ticonderoga to Westport</a
+        >
+      </td>
+      <td><span class="distance">46.51 km</span></td>
+      <td><span class="distance">620 m</span></td>
+    </tr>
+    <tr class="chapter">
+      <td colspan="3">
+        <a href="#attacking-the-adirondacks">Attacking the Adirondacks</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7165283112"
+          target="_blank"
+          rel="noopener"
+          >Westport to Plattsburgh</a
+        >
+      </td>
+      <td><span class="distance">77.96 km</span></td>
+      <td><span class="distance">841 m</span></td>
+    </tr>
+    <tr class="chapter">
+      <td colspan="3">
+        <a href="#onwards-to-montréal">Onwards to Montréal</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7170605364"
+          target="_blank"
+          rel="noopener"
+          >Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu</a
+        >
+      </td>
+      <td><span class="distance">84.16 km</span></td>
+      <td><span class="distance">198 m</span></td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="https://www.strava.com/activities/7175123103"
+          target="_blank"
+          rel="noopener"
+          >Saint Jean-sur-Richelieu to Montréal</a
+        >
+      </td>
+      <td><span class="distance">53.83 km</span></td>
+      <td><span class="distance">131 m</span></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Getting out of the city
 

@@ -20,7 +20,8 @@ body {
   & h2,
   & p,
   & span,
-  & li {
+  & li,
+  & td {
     > a {
       transition: var(--transition-text-opacity);
       &:hover {
@@ -83,13 +84,16 @@ body {
     margin-right: -0.25rem;
   }
 }
-.small {
+.small,
+legend {
   text-transform: uppercase;
   font-feature-settings: "cpsp" 1;
   font-size: 12px;
-  /* font-weight: 600;
-  color: var(--color-text-secondary); */
   letter-spacing: var(--letter-spacing-wide);
+}
+
+legend {
+  font-weight: 600;
 }
 
 sup,

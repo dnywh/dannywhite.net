@@ -32,6 +32,13 @@
     @media (min-width: 1024px) {
       max-width: 55ch;
     }
+
+    /* CO2e */
+    & sub {
+      /* color: red; */
+      font-feature-settings: inherit;
+      top: 0.15em;
+    }
   }
 
   /* Column styling */

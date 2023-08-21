@@ -303,6 +303,43 @@
             margin: var(--spacing-lg) 0;
           }
 
+          /* Tables */
+          > table {
+            width: 100%; /* Take full width of text area */
+
+            > thead tr {
+              border-bottom: 1px solid var(--color-border-primary);
+              /* Style same as .small text */
+              font-weight: 600;
+              text-transform: uppercase;
+              font-feature-settings: "cpsp" 1;
+              font-size: 12px;
+              letter-spacing: var(--letter-spacing-wide);
+            }
+
+            > tbody tr:not(:last-of-type) {
+              border-bottom: 1px solid var(--color-border-secondary);
+            }
+
+            & tr {
+              > th,
+              > td {
+                padding: 0.76rem 0.5rem;
+
+                > a {
+                  text-decoration: underline;
+                  text-underline-offset: 1.5px;
+                  text-decoration-color: var(--color-border-secondary);
+                }
+              }
+
+              &.chapter {
+                font-weight: 500;
+                background-color: var(--color-background-highlight);
+              }
+            }
+          }
+
           /* Images */
           & figure {
             margin: var(--spacing-md) 0;

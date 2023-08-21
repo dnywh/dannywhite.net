@@ -1,3 +1,27 @@
+/* Custom resets up top */
+/* https://thatemil.com/blog/2015/01/03/reset-your-fieldset/ */
+/* https://codepen.io/absolutholz/pen/jWgBMo */
+legend {
+  display: table;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  + * {
+    clear: both;
+  }
+}
+fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+body:not(:-moz-handler-blocked) fieldset {
+  display: table-cell;
+}
+
 /***
     The new CSS reset - version 1.9 (last updated 19.6.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset

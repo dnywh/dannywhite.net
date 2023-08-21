@@ -90,4 +90,9 @@
         {# Minify above scripts #}
         <script>{{ pageJs | jsmin | safe }}</script>
     {% endif %}{% endfor %}
+    {% if clientJS %}
+        {% for item in clientJS %}
+            <script src="/js/{{ item }}"></script>
+        {% endfor %}
+    {% endif %}
 {% endblock %}
