@@ -82,8 +82,8 @@
 
           > h2 {
             margin-bottom: 0.5rem;
-            color: var(--color-text-secondary);
-            font-weight: 500;
+            color: var(--color-text-tertiary);
+            font-weight: 600; /* Bold text slightly */
           }
           > p {
             /* font-size: var(--font-size-sm); */
@@ -174,7 +174,8 @@
 
         .article-content {
           max-width: var(--width-max);
-          /* Cancel out any remaining margins or padding */
+          /* Cancel out any remaining margins or padding on its children */
+          /* https://chriscoyier.net/2023/06/12/margin-trim-as-a-best-practice/ */
           margin-trim: block;
           @media (min-width: 1024px) {
             grid-row: 3;
@@ -191,12 +192,12 @@
           > dd,
           > ol,
           > ul {
-            font-size: 18px;
+            font-size: var(--font-size-article);
             letter-spacing: var(--letter-spacing-reg);
-            line-height: var(--line-height-wide);
           }
 
           > p {
+            line-height: var(--line-height-wide);
             /* Uses old style numbering to fit nicer with text */
             font-feature-settings: "onum" 1;
             /* margin-bottom: 1rem; */
@@ -248,12 +249,34 @@
             margin-bottom: 0.25rem;
           }
 
+          /* Lists */
+          > ul,
+          > ol {
+            line-height: var(--line-height-xwide);
+            /* Outset lists on larger breakpoints */
+            padding-inline-start: 1.5rem;
+            @media (min-width: 1024px) {
+              padding-inline-start: 0;
+            }
+
+            > li {
+              > a {
+                text-decoration: underline;
+              }
+            }
+          }
           > ul {
             list-style-type: square;
           }
 
           > ol {
             list-style-type: decimal;
+          }
+
+          /* Style list markers */
+          ::marker {
+            color: var(--color-text-tertiary);
+            font-feature-settings: "onum" 1;
           }
 
           /* Images */

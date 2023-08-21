@@ -576,4 +576,4 @@ Oh, and you should grab a free physical copy of the trail map from the official 
 ## Birds
 
 For the twitchers out there: if there were a bird mascot for the trail it would be the [Red-Winged Blackbird](https://www.audubon.org/field-guide/bird/red-winged-blackbird).
-It was the only bird that followed us the whole way.
+It followed us the whole way.

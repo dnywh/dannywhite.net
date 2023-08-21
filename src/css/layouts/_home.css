@@ -37,6 +37,8 @@
           margin-right: 0;
         }
 
+        /* margin-trim: block; */
+
         /* Set the fade-in animations  */
         /* Handle everything but the first paragraph */
         &:not(:first-of-type) {
@@ -46,7 +48,11 @@
         /* Now handle first paragraph */
         /* It needs to be handled separately as it's split up into two parts */
         &:first-of-type {
+          margin-bottom: 4rem;
           > p {
+            &:nth-child(1) {
+              font-weight: 500;
+            }
             > span {
               opacity: 0;
               &:nth-child(1) {
@@ -60,12 +66,19 @@
           }
         }
 
+        &:last-of-type {
+          @media (min-width: 1024px) {
+            margin-top: 40vh;
+          }
+        }
+
         > p {
           /* Style the left-side text */
           font-size: 48px;
           font-weight: 400;
-          line-height: 116%;
+          line-height: 130%;
           letter-spacing: -1.5px;
+          margin-bottom: 24px;
           /* Keep an optical width */
           max-width: 680px;
 
@@ -73,14 +86,17 @@
             background-color: var(--color-swatch-a);
           }
         }
+      }
+    }
 
-        &:first-of-type {
-          margin-bottom: 4rem;
-
-          & p:first-of-type {
-            font-weight: 500;
-          }
-        }
+    .site-header {
+      /* Override existing explicit height for accentuated sticky header effect */
+      /* height: 38vh; */
+      /* height: 20rem; */
+      @media (min-width: 1024px) {
+        /* height: 48vh; */
+        /* Visually match the interstitial */
+        height: var(--margin-y);
       }
     }
 

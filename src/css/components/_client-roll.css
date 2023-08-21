@@ -2,21 +2,26 @@
   grid-column: 1;
   /* grid-row: 2; */
 
-  @media (min-width: 1024px) {
-    margin-top: 2rem; /* Should equal the margin-top of the corresponding p tag */
-    grid-column: 2;
-
-    position: sticky;
-    top: 30vh;
-  }
   background-color: rgba(0, 0, 0, 0.06);
-
   padding: 2.5rem 0;
 
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  overflow: hidden;
   gap: 2.5rem;
-  overflow-x: hidden;
+
+  @media (min-width: 1024px) {
+    justify-content: space-between;
+    padding: 5vh 0;
+    margin-top: 0.75rem; /* Should visually equal the margin-top of the corresponding p tag */
+    grid-column: 2;
+
+    position: sticky;
+
+    top: 25vh; /* Should be calculated from height of the roll to be visually centered */
+    height: 50vh;
+  }
 
   /* Handle fade-in */
   opacity: 0.35;
@@ -94,7 +99,7 @@
       > li {
         display: flex;
         flex-shrink: 0;
-        /* align-items: center; */
+        /* align-items: baseline; */
 
         gap: 0.5rem; /* The gap between image and text */
 
@@ -104,10 +109,18 @@
         font-weight: 500;
         letter-spacing: -1.92px;
         line-height: 100%;
+        @media (min-width: 1024px) {
+          font-size: 80px;
+        }
+
+        color: rgba(0, 0, 0, 0.75);
 
         > img {
           width: 64px;
           height: 64px;
+          /* Optical offset */
+          position: relative;
+          top: 4px;
         }
       }
     }

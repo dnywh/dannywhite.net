@@ -3,11 +3,14 @@
   --letter-spacing-reg: -0.005em;
   --letter-spacing-tight: -0.0125em;
   --letter-spacing-xtight: -0.02em;
-  --line-height-wide: 175%;
+  --line-height-xwide: 200%; /* Lists */
+  --line-height-wide: 175%; /* Article text */
   --line-height-reg: 150%;
   --line-height-tight: 135%;
   --line-height-xtight: 120%;
-  --font-size-sm: 14px;
+  --font-size-sm: 0.875rem;
+  --font-size-article: 18px;
+  --para-gap-sm: 0.4375rem;
 }
 body {
   font-family: "ITC Franklin Gothic", system-ui, sans-serif;

@@ -19,16 +19,22 @@
   /* General paragraph styling */
   & p {
     margin: 0;
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
+    letter-spacing: var(--letter-spacing-reg);
+    margin-bottom: var(--para-gap-sm);
     /* Optical width */
     max-width: 80ch;
     @media (min-width: 1024px) {
       max-width: 55ch;
     }
   }
+
   /* Column styling */
   & section {
+    /* Trim any paragraph margins */
+    margin-trim: block;
+
     > h2 {
       color: var(--color-text-tertiary);
       margin-bottom: 1rem;
