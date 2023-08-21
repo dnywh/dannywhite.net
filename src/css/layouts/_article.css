@@ -7,24 +7,29 @@
     }
     > main {
       > article {
-        @media (min-width: 1024px) {
-          margin-top: 10rem;
+        @media (min-width: 732px) {
           display: grid;
+          grid-template-columns: minmax(auto, 720px) 1fr;
+          gap: 0 var(--gap-lg);
+        }
+        @media (min-width: 1280px) {
+          margin-top: 10rem;
           grid-template-columns: 1fr minmax(auto, 720px) 1fr;
-          /* grid-template-columns: 200px 720px 200px; */
-          gap: 0 var(--gap-md);
         }
 
         > header,
         > aside.audience,
         .article-content {
-          @media (min-width: 1024px) {
+          @media (min-width: 732px) {
+            grid-column: 1;
+          }
+          @media (min-width: 1280px) {
             grid-column: 2;
           }
         }
 
         > header {
-          @media (min-width: 1024px) {
+          @media (min-width: 1280px) {
             grid-row: 1;
           }
 
@@ -48,24 +53,24 @@
 
         > aside.stage,
         > aside.left {
-          width: fit-content;
+          min-width: 200px;
+          /* width: fit-content; */
           /* TODO: Unify text styles elsewhere */
           font-size: 14px;
-          @media (min-width: 1024px) {
+
+          @media (min-width: 732px) {
+            /* grid-row: 2; */
+          }
+
+          @media (min-width: 1280px) {
             grid-row: 3;
-            /* Set sticky */
-            position: sticky;
-            top: var(--margin-x);
-            align-self: start;
           }
         }
 
         .article-content,
         > aside.stage,
         > aside.left {
-          @media (min-width: 1024px) {
-            margin-top: var(--margin-x);
-          }
+          margin-top: var(--margin-x);
         }
 
         > aside.audience {
@@ -73,7 +78,8 @@
           border-top: 1px solid var(--color-border-secondary);
           border-bottom: 1px solid var(--color-border-secondary);
           padding: 2rem 0;
-          @media (min-width: 1024px) {
+
+          @media (min-width: 1280px) {
             grid-row: 2;
             padding: 3rem 0;
           }
@@ -92,11 +98,16 @@
         }
 
         > aside.stage {
-          @media (min-width: 1024px) {
+          @media (min-width: 1280px) {
             grid-column: 3;
             justify-self: end;
             /* align-self: end; */
             text-align: right;
+
+            /* Set sticky */
+            position: sticky;
+            top: var(--margin-x);
+            align-self: start;
           }
           > p:first-of-type {
             color: var(--color-text-secondary);
@@ -142,13 +153,20 @@
         > aside.left {
           /* Don't show unless on a larger breakpoint */
           display: none;
-          @media (min-width: 1024px) {
-            grid-column: 1;
+          @media (min-width: 732px) {
+            position: sticky;
+            top: var(--margin-x);
+            align-self: start;
 
+            grid-column: 2;
+            /* grid-row: 3; */
             /* Display as flex in case there are multiple child sections */
             display: flex;
             flex-direction: column;
             gap: var(--gap-md);
+          }
+          @media (min-width: 1280px) {
+            grid-column: 1;
           }
           /* Style */
           color: var(--color-text-tertiary);
@@ -177,7 +195,8 @@
           /* Cancel out any remaining margins or padding on its children */
           /* https://chriscoyier.net/2023/06/12/margin-trim-as-a-best-practice/ */
           margin-trim: block;
-          @media (min-width: 1024px) {
+
+          @media (min-width: 1280px) {
             grid-row: 3;
           }
 
@@ -226,7 +245,7 @@
             /* Margins */
             margin-top: 4rem;
             margin-bottom: 0.85rem;
-            @media (min-width: 1024px) {
+            @media (min-width: 1280px) {
               margin-top: 6rem;
             }
           }
@@ -238,7 +257,7 @@
             /* Margins */
             margin-top: 2rem;
             margin-bottom: 0.65rem;
-            @media (min-width: 1024px) {
+            @media (min-width: 1280px) {
               margin-top: 3rem;
             }
           }
@@ -264,7 +283,7 @@
 
             /* Outset lists on larger breakpoints */
             padding-inline-start: 1.5rem;
-            @media (min-width: 1024px) {
+            @media (min-width: 1280px) {
               padding-inline-start: 0;
             }
 
@@ -352,11 +371,11 @@
               color: var(--color-text-secondary);
               font-size: var(--font-size-sm);
               text-align: right;
-              max-width: 640px; /*  TODO variable the same as text width */
+              max-width: 600px; /*  TODO variable the same as text width */
               margin-top: 1rem;
               /* margin-left: 3rem; */
 
-              @media (min-width: 1024px) {
+              @media (min-width: 1280px) {
                 margin-left: calc(
                   var(--gap-md) / 2
                 ); /* Visual padding for caption */
@@ -365,7 +384,7 @@
           }
 
           .two-up {
-            @media (min-width: 1024px) {
+            @media (min-width: 1280px) {
               display: flex;
               gap: calc(var(--gap-md) / 2);
             }

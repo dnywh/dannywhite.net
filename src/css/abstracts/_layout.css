@@ -16,6 +16,7 @@
   /* Grids */
   --grid-template-cols-main: repeat(4, 1fr);
   --gap-md: 2.5rem;
+  --gap-lg: 3.5rem;
   @media (min-width: 1024px) {
     --gap-md: 5rem;
   }

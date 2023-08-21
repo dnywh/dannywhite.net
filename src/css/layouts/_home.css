@@ -68,7 +68,7 @@
 
         &:last-of-type {
           @media (min-width: 1024px) {
-            margin-top: 40vh;
+            margin-top: 25vh;
           }
         }
 

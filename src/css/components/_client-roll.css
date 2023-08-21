@@ -12,7 +12,7 @@
   gap: 2.5rem;
 
   @media (min-width: 1024px) {
-    justify-content: space-between;
+    justify-content: space-between; /* TODO use `center` when VH is small, or clamp it between a range */
     padding: 5vh 0;
     margin-top: 0.75rem; /* Should visually equal the margin-top of the corresponding p tag */
     grid-column: 2;
@@ -85,7 +85,9 @@
       /* justify-content: space-around; */
       /* min-width: 100%; */
       /* gap: var(--gap); */
+
       /* This value is calculated in JavaScript */
+      /* TODO: Update again on resize (see JavaScript) */
       /* The below is a fallback */
       width: 2216px;
 
