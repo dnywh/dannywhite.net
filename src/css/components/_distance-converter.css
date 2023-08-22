@@ -2,8 +2,8 @@
 
 /* Only style inline items to be interactive if JS is enabled */
 html:not(.no-js) p .distance {
-  background-color: var(--color-swatch-a);
-  box-shadow: 0 0 0 1px var(--color-swatch-a); /* Extend the background slightly */
+  background-color: var(--color-swatch-highlight);
+  box-shadow: 0 0 0 1px var(--color-swatch-highlight); /* Extend the background slightly */
   transition: var(--transition-text-opacity);
 
   &:hover {

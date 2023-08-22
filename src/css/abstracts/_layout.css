@@ -65,5 +65,5 @@ img {
   /* Override our reset to prevent stretched images */
   height: auto;
   /* Set a background fill whilst the image loads */
-  background-color: var(--color-swatch-a);
+  background-color: var(--color-swatch-highlight);
 }

@@ -12,7 +12,7 @@ audience: People comfortable using Terminal. They probably have prior experience
 
 Here's how to double the speed of a video using FFmpeg:
 
-```bash
+```shell
 ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" output.mp4
 ```
 

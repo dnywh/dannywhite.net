@@ -4,7 +4,7 @@
   --letter-spacing-tight: -0.0125em;
   --letter-spacing-xtight: -0.02em;
   --line-height-xwide: 200%; /* Lists */
-  --line-height-wide: 175%; /* Article text */
+  --line-height-wide: 176%; /* Article text */
   --line-height-reg: 150%;
   --line-height-tight: 135%;
   --line-height-xtight: 120%;
@@ -92,8 +92,21 @@ legend {
   letter-spacing: var(--letter-spacing-wide);
 }
 
+/* Revert normal paragraph styles */
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+s {
+  text-decoration: line-through;
+}
+
 legend {
-  font-weight: 600;
+  font-weight: 5=600;
 }
 
 sup,

@@ -83,7 +83,7 @@
           max-width: 680px;
 
           > span.highlight {
-            background-color: var(--color-swatch-a);
+            background-color: var(--color-swatch-highlight);
           }
         }
       }

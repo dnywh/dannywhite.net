@@ -29,7 +29,7 @@
   transition: var(--marquee-transition);
   &.visible {
     background-color: var(
-      --color-swatch-a
+      --color-swatch-highlight
     ); /* Should match JavaScript and meta theme-color */
     /* width: 100%; */
 

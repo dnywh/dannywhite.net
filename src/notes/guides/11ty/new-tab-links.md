@@ -16,7 +16,7 @@ Good news. You can automate this. Here's how:
 
 First, install the package:
 
-```bash
+```shell
 npm install markdown-it-link-attributes
 ```
 

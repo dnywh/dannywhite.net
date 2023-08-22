@@ -159,7 +159,8 @@
             align-self: start;
 
             grid-column: 2;
-            /* grid-row: 3; */
+            grid-row: 2 / 4;
+
             /* Display as flex in case there are multiple child sections */
             display: flex;
             flex-direction: column;
@@ -167,6 +168,7 @@
           }
           @media (--viewport-lg) {
             grid-column: 1;
+            grid-row: 3;
           }
           /* Style */
           color: var(--color-text-tertiary);
@@ -251,8 +253,9 @@
           }
 
           > h3 {
-            font-size: 21px;
-            line-height: var(--line-height-tight);
+            font-size: 28px;
+            line-height: 110%; /* 44px */
+            letter-spacing: -1px;
 
             /* Margins */
             margin-top: 2rem;
@@ -263,8 +266,10 @@
           }
 
           > h4 {
-            font-size: 18px;
-            line-height: var(--line-height-tight);
+            font-size: 21px;
+            line-height: 110%; /* 44px */
+            letter-spacing: -0.75px;
+
             margin-bottom: 0.25rem;
           }
 

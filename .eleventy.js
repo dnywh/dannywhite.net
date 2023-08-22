@@ -2,6 +2,8 @@
 const { DateTime } = require("luxon");
 // Import LightningCSS which minifies and improves CSS
 const lightningCSS = require("@11tyrocks/eleventy-plugin-lightningcss");
+// Import syntax (code) highlighting
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 // Import RSS functionality
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 // Import automatic table of contents
@@ -36,6 +38,8 @@ module.exports = function (eleventyConfig) {
     // Plugins
     // Eleventy-flavoured Lightning CSS
     eleventyConfig.addPlugin(lightningCSS);
+    // Code highlighting
+    eleventyConfig.addPlugin(syntaxHighlight);
     // RSS (Atom) feed
     eleventyConfig.addPlugin(pluginRss);
     // Automatic table of contents

@@ -12,7 +12,8 @@
   /* Backgrounds and swatches */
   --color-background-on-light: white;
   --color-background-highlight-on-light: rgb(249, 249, 249);
-  --color-swatch-a-on-light: hsla(36, 100%, 92%, 1);
+  --color-swatch-highlight-on-light: hsla(36, 100%, 92%, 1);
+  --color-swatch-code-on-light: #f5f2f0;
 
   /* 
   On dark ('dark mode')
@@ -27,7 +28,8 @@
   /* Backgrounds and swatches */
   --color-background-on-dark: #161a0d;
   --color-background-highlight-on-dark: rgba(243, 255, 166, 0.1);
-  --color-swatch-a-on-dark: rgba(243, 255, 166, 0.05);
+  --color-swatch-highlight-on-dark: rgba(243, 255, 166, 0.05);
+  --color-swatch-code-on-dark: var(--color-background-highlight-on-dark);
 
   /* 
   Set default colors (to 'on light') 
@@ -40,8 +42,8 @@
   --color-text-tertiary: var(--color-text-tertiary-on-light);
   --color-border-primary: var(--color-border-primary-on-light);
   --color-border-secondary: var(--color-border-secondary-on-light);
-  --color-swatch-a: var(--color-swatch-a-on-light);
-  /* --color-text-code-tag: var(--color-text-code-tag-on-light); */
+  --color-swatch-highlight: var(--color-swatch-highlight-on-light);
+  --color-swatch-code: var(--color-swatch-code-on-light);
 }
 
 /* Light and dark mode handling */
@@ -62,7 +64,8 @@
     --color-text-tertiary: var(--color-text-tertiary-on-dark);
     --color-border-primary: var(--color-border-primary-on-dark);
     --color-border-secondary: var(--color-border-secondary-on-dark);
-    --color-swatch-a: var(--color-swatch-a-on-dark);
+    --color-swatch-highlight: var(--color-swatch-highlight-on-dark);
+    --color-swatch-code: var(--color-swatch-code-on-dark);
   }
 }
 /* Repeats the above */
@@ -75,5 +78,6 @@
   --color-text-tertiary: var(--color-text-tertiary-on-dark);
   --color-border-primary: var(--color-border-primary-on-dark);
   --color-border-secondary: var(--color-border-secondary-on-dark);
-  --color-swatch-a: var(--color-swatch-a-on-dark);
+  --color-swatch-highlight: var(--color-swatch-highlight-on-dark);
+  --color-swatch-code: var(--color-swatch-code-on-dark);
 }
