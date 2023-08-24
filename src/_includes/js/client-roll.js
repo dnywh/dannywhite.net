@@ -66,6 +66,7 @@ const observer = new IntersectionObserver(
 observer.observe(clientRollEl);
 
 // Recalculate when resized
+// https://web.dev/resize-observer/
 var ro = new ResizeObserver(entries => {
     for (let entry of entries) {
         const cr = entry.contentRect;

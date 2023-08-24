@@ -40,6 +40,18 @@ body {
   }
 }
 
+/* Common text styling */
+.handsome {
+  /* Item header */
+  & h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 23px */
+    letter-spacing: -0.2px;
+  }
+}
+
 /* Links to RSS */
 .rss {
   font-size: 12px;

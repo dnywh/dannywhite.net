@@ -187,15 +187,6 @@
                 }
               }
 
-              /* Item header */
-              & h3 {
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 115%; /* 23px */
-                letter-spacing: -0.2px;
-              }
-
               .outbound {
                 /* Style */
                 color: var(--color-text-secondary);
@@ -267,39 +258,6 @@
                     font-size: 1rem;
                   }
                 }
-              }
-            }
-          }
-        }
-
-        > ul.notes {
-          > li {
-            @media (--viewport-md) {
-              grid-column: span 2;
-            }
-            > a {
-              /* Override some transitions */
-              &:hover {
-                & h3,
-                & p {
-                  /* Make slightly lighter on hover */
-                  opacity: 0.4;
-                }
-              }
-            }
-            /* Pinned styles */
-            &.pinned > a {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              gap: 1rem;
-
-              /* &:after {
-                content: url(/assets/images/pin.svg);
-                opacity: 0.5;
-              } */
-              > svg > path {
-                fill: var(--color-text-tertiary);
               }
             }
           }

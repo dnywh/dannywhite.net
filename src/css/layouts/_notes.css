@@ -16,11 +16,13 @@
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.0125rem;
-    transition: background-color 0.2s ease;
+    /* Fade off slowly */
+    transition: background-color 0.75s ease;
 
     &:hover {
       background-color: var(--color-swatch-code);
-
+      /* Fade in quickly */
+      transition: background-color 0.3s ease;
       /* Reset more global styles */
       opacity: 1;
     }
@@ -32,6 +34,39 @@
 
       &:hover {
         background-color: var(--color-text-secondary);
+      }
+    }
+  }
+}
+
+.note-preview {
+  > li {
+    @media (--viewport-md) {
+      grid-column: span 2;
+    }
+    > a {
+      /* Override some transitions */
+      &:hover {
+        & h3,
+        & p {
+          /* Make slightly lighter on hover */
+          opacity: 0.4;
+        }
+      }
+    }
+    /* Pinned styles */
+    &.pinned > a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      /* &:after {
+          content: url(/assets/images/pin.svg);
+          opacity: 0.5;
+        } */
+      > svg > path {
+        fill: var(--color-text-tertiary);
       }
     }
   }

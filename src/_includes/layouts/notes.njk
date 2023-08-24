@@ -17,6 +17,7 @@
         <button onclick="filterNotes('macos')">Filter item</button>
     </div> #}
 
+
 {# Show only tags that have been used a few times #}
 {# https://lea.verou.me/blog/2023/11ty-indices/ #}
 {# https://github.com/LeaVerou/lea.verou.me/blob/main/blog/tags-index.njk #}
@@ -35,51 +36,61 @@
     {# TODO: if I'm on a niche tag page, this tag should show here as selected #}
     </ul>
 
-    <ul class="results">
+    {% from 'macros/note-preview.njk' import notePreview %}
+    <ul class="results handsome">
         {# Go through pinned items first #}
-        {% for item in collections.note | reverse %}
-        {% if item.data.pinned %}
-        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
-        {# Ignore #}
-        {# {% else %} #}
-        {#  #}
-        <li class="pinned">
-        <a href="{{ item.url }}">
-            <h3>{{ item.data.title }}</h3>
-            {% include "partials/pin.svg" %}
-        </a>
-        </li>
+        {# All pinned items if on normal Notes page #}
+        {% if title === "Notes" %}
+            {% for item in collections.note | reverse %}
+                {% if item.data.pinned %}
+                    {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
+                    {# Ignore #}
+                    {# {% else %} #}
+                    {{ notePreview(item) }}
+                    {# {% endif %} #}
+                {% endif %}
+            {% endfor %}
+        {# Tag-specific pinned items if on tagged page #}
+        {% else %}
+            {% for loopedTag, notesWithTag in collections.notesByTag %}
+                    {% if loopedTag === tag %}
+                        {% for item in notesWithTag | reverse %}
+                        {% if item.data.pinned %}
+                                {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+                                    {{ notePreview(item) }}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
         {% endif %}
-        {% endfor %}
 
 
         {# Go through non-pinned items from newest to oldest #}
+        {# All non-pinned items if on normal Notes page #}
         {% if title === "Notes" %}
             {% for item in collections.note | reverse %}
-                {# Skip those that are pinned since they are already done above #}
                 {% if not item.data.pinned %}
-                    {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-                        <li>
-                        <a href="{{ item.url }}"><h3>{{ item.data.title }}</h3></a>
-                    </li>
-                    {% endif %}
+                    {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
+                    {# Ignore #}
+                    {# {% else %} #}
+                    {{ notePreview(item) }}
+                    {# {% endif %} #}
                 {% endif %}
             {% endfor %}
+        {# Tag-specific pinned items if on tagged page #}
         {% else %}
             {% for loopedTag, notesWithTag in collections.notesByTag %}
-                {% if loopedTag === tag %}
-                {% for item in notesWithTag | reverse %}
-                {# Skip those that are pinned since they are already done above #}
-                {% if not item.data.pinned %}
-                    {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-                        <li>
-                        <a href="{{ item.url }}"><h3>{{ item.data.title }}</h3></a>
-                    </li>
+                    {% if loopedTag === tag %}
+                        {% for item in notesWithTag | reverse %}
+                        {% if not item.data.pinned %}
+                                {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+                                    {{ notePreview(item) }}
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
                     {% endif %}
-                    {% endif %}
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
+                {% endfor %}
         {% endif %}
         </ul>
 </main>

@@ -85,7 +85,7 @@
       </header>
       <div class="inner">
         <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
-        <ul class="notes">
+        <ul class="note-preview handsome">
           {# Go through pinned items first #}
           {% for item in collections.note | reverse %}
           {% if item.data.pinned %}
@@ -103,7 +103,7 @@
           {% endfor %}
 
           {# Go through non-pinned items from newest to olderst #}
-          {% for item in collections.notes | reverse %}
+          {% for item in collections.note | reverse %}
           {# Skip those that are pinned since they are already done above #}
           {% if not item.data.pinned %}
           {# Limit to X amount of items #}
@@ -131,7 +131,7 @@
       </header>
       <div class="inner">
         <p>What I’ve found interesting lately from around the web.</p>
-        <ul class="trove">
+        <ul class="trove handsome">
         {% for item in collections.raindrops %}
             <li>
               <a href="{{ item.link }}" target="_blank" rel="noopener">
