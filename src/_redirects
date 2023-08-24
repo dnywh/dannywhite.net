@@ -6,15 +6,13 @@
 
 # Remapping
 
-/notes/2021/convert-heic-to-jpeg-via-ios-shortcuts/ /heic-to-jpg
+/notes/2021/convert-heic-to-jpeg-via-ios-shortcuts/ /notes/heic-to-jpg/
 
-/notes/convert-heic-to-jpeg-via-ios-shortcuts/ /heic-to-jpg
+/notes/convert-heic-to-jpeg-via-ios-shortcuts/ /notes/heic-to-jpg/
 
-/notes/heic-to-jpg/ /heic-to-jpg
+/heic-to-jpg/ /notes/heic-to-jpg/
 
-/notes/2022/quickly-copy-a-frame-s-link-in-figma/ /figma-frame-link
-
-/notes/figma-frame-link/ /figma-frame-link
+/notes/2022/quickly-copy-a-frame-s-link-in-figma/ /notes/figma-frame-link/
 
 # Shortcuts
 

@@ -4,8 +4,6 @@ date: 2018-04-07
 tags:
   - Terminal
   - macOS
-  - guide
-subject: Terminal
 audience: People already comfortable using Terminal.
 ---
 

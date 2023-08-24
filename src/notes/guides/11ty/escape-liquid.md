@@ -5,11 +5,9 @@ tags:
   - Eleventy
   - Liquid
   - Web
-  - guide
-subject: Eleventy
 ---
 
-Add `{``%` `raw` `%``}` before a Liquid tag and `{``%` `endraw` `%``}` after. (Remove the redundant backticks placed here just so it renders.)
+Add ` {``% ` `raw` ` %``} ` before a Liquid tag and ` {``% ` `endraw` ` %``} ` after. (Remove the redundant backticks placed here just so it renders.)
 
 Useful for if you want to document and talk about Liquid tags inline {% raw %}`{{ like.this }}`{% endraw %} without actually having the Eleventy engine process them.
 

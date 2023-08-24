@@ -6,8 +6,6 @@ tags:
   - LightningCSS
   - Web
   - Eleventy
-  - guide
-subject: CSS
 audience: CSS developers looking to make reusable media queries and/or values within those media queries.
 ---
 

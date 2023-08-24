@@ -41,7 +41,7 @@
 
         {% if audience %}
         <aside class="audience">
-            <h2 class="small">Assumed audience</h2>
+            <h2 class="small"><a href="/colophon#assumed-audience">Assumed audience</a></h2>
             <p>{{ audience }}</p>
         </aside>
         {% endif %}
@@ -71,8 +71,21 @@
         </aside>
 
         <div class="article-content">
-            {{ content | safe }} 
+            {{ content | safe }}
         </div>
+        
+        <div>
+        TODO Tagged with:
+        <ul class="tag-list">
+            {% for tag in tags %}
+                {% if tag !== "note" %}
+                    <li>
+                        <a href="/notes/tagged/{{ tag | slugify }}">{{ tag }}</a>
+                    </li>
+            {% endif %}
+        {% endfor %}
+        </div>
+        </ul>
     </article>
 </main>
 {% endblock %}

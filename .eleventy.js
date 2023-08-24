@@ -137,6 +137,31 @@ module.exports = function (eleventyConfig) {
         return sortedItems;
     });
 
+
+    // Make a collection of note tags
+    eleventyConfig.addCollection("notesByTag", (collectionApi) => {
+        // Re-use notes collection from above
+        const notes = collectionApi.getFilteredByTag("note")
+        let ret = {};
+
+        for (let note of notes) {
+            if (note.data.tags) {
+                for (let tag of note.data.tags) {
+                    // Exclude the 'note' tag itself from entering the collection
+                    if (tag !== "note") {
+                        ret[tag] ??= [];
+                        ret[tag].push(note);
+                    }
+                }
+            }
+        }
+
+        // Now sort, and reconstruct the object
+        ret = Object.fromEntries(Object.entries(ret).sort((a, b) => b[1].length - a[1].length));
+
+        return ret;
+    });
+
     // Markdown library amendments
     // Find any external links in Markdown and make them open in new tabs
     let markdownItOptions = {

@@ -2,11 +2,9 @@
 title: Create a Stop-Motion Video With FFmpeg
 date: 2021-01-06
 tags:
-  - ffmpeg
+  - FFmpeg
   - macOS
-  - terminal
-  - guide
-subject: ffmpeg
+  - Terminal
 audience: People comfortable using Terminal. They probably have prior experience with FFmpeg or similar.
 ---
 

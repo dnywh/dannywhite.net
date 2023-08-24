@@ -4,8 +4,6 @@ date: 2021-01-06
 tags:
   - JavaScript
   - CSS
-  - guide
-subject: JavaScript
 audience: People already comfortable writing JavaScript and CSS.
 ---
 

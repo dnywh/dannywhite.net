@@ -103,7 +103,7 @@
           {% endfor %}
 
           {# Go through non-pinned items from newest to olderst #}
-          {% for item in collections.note | reverse %}
+          {% for item in collections.notes | reverse %}
           {# Skip those that are pinned since they are already done above #}
           {% if not item.data.pinned %}
           {# Limit to X amount of items #}

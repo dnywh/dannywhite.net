@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections.notesByTag
+  size: 1
+  alias: tag
+  filter:
+    - notes
+    - note
+override:tags: []
+eleventyComputed:
+  title: "Tagged with {{ tag }}"
+layout: layouts/notes.njk
+permalink: "/notes/tagged/{{ tag | slugify }}/"
+
+---
+
+Tag: {{ tag }}
+
+{# https://github.com/11ty/eleventy-base-blog/blob/main/content/tags.njk #}
+{# https://eleventy-base-blog.netlify.app/tags/posts-with-two-tags/ #}
+{# https://lea.verou.me/blog/2023/11ty-indices/ #}
+{# https://github.com/LeaVerou/lea.verou.me/blob/main/blog/tags-index.njk #}

@@ -2,11 +2,9 @@
 title: Reduce Video File Size With FFmpeg
 date: 2023-06-04
 tags:
-  - ffmpeg
+  - FFmpeg
   - macOS
-  - terminal
-  - guide
-subject: ffmpeg
+  - Terminal
 audience: People comfortable using Terminal and at least know of FFmpeg.
 ---
 

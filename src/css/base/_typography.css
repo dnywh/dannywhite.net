@@ -17,6 +17,7 @@ body {
   color: var(--color-text-primary);
 
   /* Set standard hover effect */
+  & h1,
   & h2,
   & p,
   & span,

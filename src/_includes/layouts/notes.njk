@@ -4,13 +4,38 @@
 {% include "partials/site-header.html" %}
 <main>
     <header class="page-header">
-        <h1>{{ title }}</h1>
-        {% if subtitle %}
-        <p>{{ subtitle }}</p>
-        {% endif %}
+    {% if tag %}
+        {# Show interactive Notes header only if we're on a tagged page #}
+        <h1><a href="/notes">Notes</a></h1>
+    {% else %}
+        {# We're on the root /notes page #}
+        <h1>Notes</h1>
+    {% endif %}
     </header>
 
-    <ul>
+    {# <div>
+        <button onclick="filterNotes('macos')">Filter item</button>
+    </div> #}
+
+{# Show only tags that have been used a few times #}
+{# https://lea.verou.me/blog/2023/11ty-indices/ #}
+{# https://github.com/LeaVerou/lea.verou.me/blob/main/blog/tags-index.njk #}
+    <ul class="tag-list">
+        <li>
+            {# Show either the currently selected tag or, if on the root /notes page, 'Everything' #}
+            <a {% if title === "Notes" %}class="selected"{% endif %} href="/notes">Everything</a>
+        </li>
+    {% for loopedTag, notesWithTag in collections.notesByTag %}
+        {% if notesWithTag.length > 3 %}
+	        <li>
+                <a {% if loopedTag === tag %}class="selected"{% endif %} href="/notes/tagged/{{ loopedTag | slugify }}">{{ loopedTag }}</a>
+            </li>
+        {% endif %}
+    {% endfor %}
+    {# TODO: if I'm on a niche tag page, this tag should show here as selected #}
+    </ul>
+
+    <ul class="results">
         {# Go through pinned items first #}
         {% for item in collections.note | reverse %}
         {% if item.data.pinned %}
@@ -27,20 +52,37 @@
         {% endif %}
         {% endfor %}
 
-        {# Go through non-pinned items from newest to olderst #}
-        {% for item in collections.note | reverse %}
-        {# Skip those that are pinned since they are already done above #}
-        {% if not item.data.pinned %}
 
-        {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-        <li>
-        <a href="{{ item.url }}">
-            <h3>{{ item.data.title }}</h3>
-        </a>
-        </li>
+        {# Go through non-pinned items from newest to oldest #}
+        {% if title === "Notes" %}
+            {% for item in collections.note | reverse %}
+                {# Skip those that are pinned since they are already done above #}
+                {% if not item.data.pinned %}
+                    {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+                        <li>
+                        <a href="{{ item.url }}"><h3>{{ item.data.title }}</h3></a>
+                    </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% for loopedTag, notesWithTag in collections.notesByTag %}
+                {% if loopedTag === tag %}
+                {% for item in notesWithTag | reverse %}
+                {# Skip those that are pinned since they are already done above #}
+                {% if not item.data.pinned %}
+                    {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+                        <li>
+                        <a href="{{ item.url }}"><h3>{{ item.data.title }}</h3></a>
+                    </li>
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
         {% endif %}
-        {% endif %}
-        {% endfor %}
         </ul>
 </main>
 {% endblock %}
+
+

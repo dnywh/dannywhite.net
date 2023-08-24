@@ -4,8 +4,6 @@ subtitle: This is where I talk about how I made stuff on my website.
 layout: "layouts/article.njk"
 ---
 
-This is where the page body content goes. TODO.
-
 ## Eleventy
 
 This is hopefully where the footer link to 'Eleventy' goes.
@@ -21,6 +19,15 @@ This is where I go in detail about the carbon measurement in the website footer.
 
 This is where I explain my stages and credit Maggie Appleton's garden metaphor.
 
-## Intended audience
+## Assumed audience
 
-This is where I explain the intended audience bit and credit the person who invented it (see my notes on Notion) via Robin Sloan.
+I believe [Chris Krycho](https://v4.chriskrycho.com/2018/assumed-audiences.html) came up with this idea. I found it through [Robin Sloan](https://www.robinsloan.com/colophon#assumed-audiences). He writes:
+
+> I appreciate the way they push back against the “context collapse” of the internet, in which every public post is, by default, addressed to everyone.
+
+I like this idea because I find myself often:
+
+- Writing a lot of preamble before or after something technical
+- Watering down a design musing to it’s more generic and therefore available to a non-design audience
+
+Here’s Robin Sloan explained how Assumed Audiences might solve that:

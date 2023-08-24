@@ -5,12 +5,10 @@ tags:
   - Eleventy
   - Markdown
   - Web
-  - guide
-subject: Eleventy
 audience: People using Eleventy to make websites and wondering how to have links behave in a systematic way.
 ---
 
-I wrote a while back about how to [append `target="_blank"` to links in Markdown](/md-links-new-tab). That's fine for the odd link here and there, but what if you want to have this happen systematically? A realistic example is that you might want all external links (i.e. links to pages on other people's websites) to open in a new tab.
+I wrote a while back about how to append `target="_blank"` [to links in Markdown](/notes/md-links-new-tab). That's fine for the odd link here and there, but what if you want to have this happen systematically? A realistic example is that you might want all external links (i.e. links to pages on other people's websites) to open in a new tab.
 
 Good news. You can automate this. Here's how:
 

@@ -20,3 +20,4 @@
 /* Page-specific styles */
 @import "layouts/_article.css";
 @import "layouts/_home.css";
+@import "layouts/_notes.css";

@@ -4,9 +4,7 @@ date: 2021-05-28
 tags:
   - ImageMagick
   - macOS
-  - terminal
-  - guide
-subject: ImageMagick
+  - Terminal
 ---
 
 [ImageMagick](https://imagemagick.org) is a neat little command line library for image editing. I use it a lot for bulk image edits like resizing or cropping a bunch of photos in a folder. You could also use it to watermark, composite, or alter images in some other way you might do in Photoshop.

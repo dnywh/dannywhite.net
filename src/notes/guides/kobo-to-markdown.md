@@ -10,8 +10,6 @@ tags:
   - Notion
   - Kobo
   - Markdown
-  - guide
-subject: Shortcuts
 audience: People who own a Kobo e-reader, use a Mac, and want to save their highlights and notes in Markdown format for tools like Notion.
 ---
 

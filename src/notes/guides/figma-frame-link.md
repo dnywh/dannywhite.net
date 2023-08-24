@@ -5,9 +5,7 @@ description: Here's how to quickly select a Figma frame’s URL via a keyboard s
 tags:
   - Figma
   - macOS
-  - Shortcut
-  - guide
-subject: Figma
+  - shortcut
 ---
 
 The only way you used to be able to get the link for a frame in Figma was to:
