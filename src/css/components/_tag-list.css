@@ -30,7 +30,6 @@
     }
 
     &.selected {
-      font-weight: 500;
       background-color: var(--color-text-primary);
       color: var(--color-background);
 
