@@ -46,10 +46,6 @@ html {
   transition: var(--transition-color-scheme);
 }
 
-/* p {
-  margin: 1rem 0;
-} */
-
 /* Don't show a JavaScript element if the user has it turned off */
 .no-js .js-content {
   display: none;
@@ -66,4 +62,140 @@ img {
   height: auto;
   /* Set a background fill whilst the image loads */
   background-color: var(--color-swatch-highlight);
+}
+
+/* Shared styles across home page sections and notes page(s) */
+.inner {
+  max-width: var(--width-max);
+  margin: 0 auto;
+
+  display: grid;
+  gap: 0 var(--gap-md);
+  @media (--viewport-md) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* minmax is necessary to stop long strings from overriding. Previously: */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: masonry; */
+  }
+
+  /* Header or other large text */
+  > p {
+    color: var(--color-text-secondary);
+    font-size: 24px;
+    letter-spacing: -0.8px;
+    margin-bottom: 5rem;
+
+    /* Width */
+    grid-column: span 4;
+    @media (--viewport-md) {
+      grid-column: span 2;
+    }
+    @media (--viewport-xl) {
+      grid-column: span 1;
+    }
+  }
+
+  /* Make every child take the full grid width by default */
+  > * {
+    grid-column: span 4;
+  }
+
+  > ul.tiled {
+    display: grid;
+    gap: 0 var(--gap-md);
+    @media (--viewport-md) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      /* minmax is necessary to stop long strings from overriding. Previously: */
+      /* grid-template-columns: repeat(4, 1fr); */
+      grid-template-rows: masonry;
+    }
+
+    > li {
+      border-top: 1px solid var(--color-border-secondary);
+      > a {
+        /* Style */
+        display: block;
+        padding: 1.5rem 0;
+
+        /* Set up transitions */
+        /* Transform transitions happen only to image elements */
+        & img {
+          /* transition: var(--transition-text-opacity), transform 0.3s ease; */
+          transition: transform 0.3s ease;
+        }
+        /* Opacity transitions are handled differently on child items */
+        &:hover {
+          & img {
+            transform: scale(1.01);
+            /* opacity: 0.75; */
+          }
+        }
+
+        /* Item header */
+        & h3 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 115%; /* 23px */
+          letter-spacing: -0.2px;
+        }
+
+        & p {
+          margin: 1rem 0;
+        }
+
+        .outbound {
+          /* Style */
+          color: var(--color-text-secondary);
+          font-size: 12px;
+          letter-spacing: -0.12px;
+          &:after {
+            position: relative;
+            top: 0.1rem;
+            opacity: 0.6;
+          }
+          /* Restore underline if necessary */
+          text-decoration: underline;
+          text-underline-offset: 1.5px;
+          text-decoration-color: var(--color-border-secondary);
+        }
+      }
+    }
+    /* Overrides */
+    &.notes {
+      > li {
+        @media (--viewport-md) {
+          grid-column: span 2;
+        }
+        > a {
+          /* Override some transitions */
+          &:hover {
+            /* opacity: 0; */
+            & h3,
+            & span,
+            & p {
+              /* Make slightly lighter on hover */
+              /* opacity: 1; */
+            }
+          }
+          /* Make space for description if relevant */
+          > p {
+            margin-top: 0.5rem;
+            color: var(--color-text-tertiary);
+          }
+        }
+        /* Pinned styles */
+        &.pinned > a > span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+
+          > svg > path {
+            fill: var(--color-text-quaternary);
+          }
+        }
+      }
+    }
+  }
 }

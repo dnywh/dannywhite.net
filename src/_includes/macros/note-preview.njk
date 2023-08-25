@@ -1,9 +1,11 @@
-{% macro notePreview(note) %}
+{% macro notePreview(note, showPreview) %}
   <li {% if note.data.pinned %}class="pinned"{% endif %}>
     <a href="{{ note.url }}">
-      <h3>{{ note.data.title }}</h3>
-      {% if note.data.pinned %}{% include "partials/pin.svg" %}{% endif %}
-      {% if note.data.description %}
+      <span>
+        <h3>{{ note.data.title }}</h3>
+        {% if note.data.pinned %}{% include "partials/pin.svg" %}{% endif %}
+      </span>
+      {% if note.data.description and showPreview %}
         <p>{{ note.data.description }}</p>
       {% endif %}
     </a>

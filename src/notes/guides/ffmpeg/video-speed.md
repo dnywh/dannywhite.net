@@ -6,6 +6,10 @@ tags:
   - macOS
   - Terminal
 audience: People comfortable using Terminal. They probably have prior experience with FFmpeg or similar.
+related:
+  - convert-video
+  - stop-motion
+  - video-border
 ---
 
 Here's how to double the speed of a video using FFmpeg:

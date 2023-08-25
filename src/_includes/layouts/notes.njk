@@ -13,86 +13,72 @@
     {% endif %}
     </header>
 
-    {# <div>
-        <button onclick="filterNotes('macos')">Filter item</button>
-    </div> #}
+    <div class="inner">
+        <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
+        
+        {% include "partials/tag-list.html" %}
 
-
-{# Show only tags that have been used a few times #}
-{# https://lea.verou.me/blog/2023/11ty-indices/ #}
-{# https://github.com/LeaVerou/lea.verou.me/blob/main/blog/tags-index.njk #}
-    <ul class="tag-list">
-        <li>
-            {# Show either the currently selected tag or, if on the root /notes page, 'Everything' #}
-            <a {% if title === "Notes" %}class="selected"{% endif %} href="/notes">Everything</a>
-        </li>
-    {% for loopedTag, notesWithTag in collections.notesByTag %}
-        {% if notesWithTag.length > 3 %}
-	        <li>
-                <a {% if loopedTag === tag %}class="selected"{% endif %} href="/notes/tagged/{{ loopedTag | slugify }}">{{ loopedTag }}</a>
-            </li>
-        {% endif %}
-    {% endfor %}
-    {# TODO: if I'm on a niche tag page, this tag should show here as selected #}
-    </ul>
-
-    {% from 'macros/note-preview.njk' import notePreview %}
-    <ul class="results handsome">
-        {# Go through pinned items first #}
-        {# All pinned items if on normal Notes page #}
-        {% if title === "Notes" %}
-            {% for item in collections.note | reverse %}
-                {% if item.data.pinned %}
-                    {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
-                    {# Ignore #}
-                    {# {% else %} #}
-                    {{ notePreview(item) }}
-                    {# {% endif %} #}
-                {% endif %}
-            {% endfor %}
-        {# Tag-specific pinned items if on tagged page #}
-        {% else %}
-            {% for loopedTag, notesWithTag in collections.notesByTag %}
-                    {% if loopedTag === tag %}
-                        {% for item in notesWithTag | reverse %}
-                        {% if item.data.pinned %}
-                                {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-                                    {{ notePreview(item) }}
-                                {% endif %}
-                            {% endif %}
-                        {% endfor %}
+        {# List notes based on above tag selection #}
+        {% from 'macros/note-preview.njk' import notePreview %}
+        <ul class="tiled notes">
+            {# Go through pinned items first #}
+            {# All pinned items if on normal Notes page #}
+            {% if title === "Notes" %}
+                {% for item in collections.note | reverse %}
+                    {% if item.data.pinned %}
+                        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
+                        {# {% if not item.data.draft %} #}
+                        {# Ignore #}
+                        {# {% else %} #}
+                        {{ notePreview(item, true) }}
+                        {# {% endif %} #}
                     {% endif %}
                 {% endfor %}
-        {% endif %}
-
-
-        {# Go through non-pinned items from newest to oldest #}
-        {# All non-pinned items if on normal Notes page #}
-        {% if title === "Notes" %}
-            {% for item in collections.note | reverse %}
-                {% if not item.data.pinned %}
-                    {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
-                    {# Ignore #}
-                    {# {% else %} #}
-                    {{ notePreview(item) }}
-                    {# {% endif %} #}
-                {% endif %}
-            {% endfor %}
-        {# Tag-specific pinned items if on tagged page #}
-        {% else %}
-            {% for loopedTag, notesWithTag in collections.notesByTag %}
-                    {% if loopedTag === tag %}
-                        {% for item in notesWithTag | reverse %}
-                        {% if not item.data.pinned %}
-                                {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-                                    {{ notePreview(item) }}
+            {# Tag-specific pinned items if on tagged page #}
+            {% else %}
+                {% for loopedTag, notesWithTag in collections.notesByTag %}
+                        {% if loopedTag === tag %}
+                            {% for item in notesWithTag | reverse %}
+                                {% if item.data.pinned %}
+                                    {# {% if not item.data.draft or not (env.eleventyRunMode === "build") %} #}
+                                        {{ notePreview(item, true) }}
+                                    {# {% endif %} #}
                                 {% endif %}
-                            {% endif %}
-                        {% endfor %}
+                            {% endfor %}
                     {% endif %}
                 {% endfor %}
-        {% endif %}
-        </ul>
+            {% endif %}
+
+
+            {# Go through non-pinned items from newest to oldest #}
+            {# All non-pinned items if on normal Notes page #}
+            {% if title === "Notes" %}
+                {% for item in collections.note | reverse %}
+                    {% if not item.data.pinned %}
+                        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
+                        {# Ignore #}
+                        {# {% else %} #}
+                        {# {% if not item.data.draft %} #}
+                            {{ notePreview(item, true) }}
+                        {# {% endif %} #}
+                    {% endif %}
+                {% endfor %}
+            {# Tag-specific pinned items if on tagged page #}
+            {% else %}
+                {% for loopedTag, notesWithTag in collections.notesByTag %}
+                        {% if loopedTag === tag %}
+                            {% for item in notesWithTag | reverse %}
+                            {% if not item.data.pinned %}
+                                    {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
+                                        {{ notePreview(item, true) }}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+            {% endif %}
+            </ul>
+        </div>
 </main>
 {% endblock %}
 

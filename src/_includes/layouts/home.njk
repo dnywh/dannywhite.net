@@ -30,7 +30,7 @@
       <p>Before that, I led iOS and Android app design at Kickstarter, and helped design Origami Studio at Meta.</p>
       <p>Design prototyping, systems, and design engineering roles are my forte. You could say <span class="highlight">design technologist</span> for short.</p>
       {# <p></p> #}
-      <p>I am <span class="highlight">available</span> for new work starting <span class="highlight">November 1st 2023</span>.</p>
+      <p>I am <span class="highlight">available</span> for new work starting <span class="highlight">{{ me.available }}</span>.</p>
       {# Force a space to prevent minifier from muddying up sentence #}
       <p>Sound like it could be a fit?&#32;{% include "partials/email-lets-chat.html" %}.</p>
       <p></p>
@@ -57,7 +57,7 @@
       </header>
       <div class="inner">
         <p>Select items, on the side.</p>
-        <ul class="projects">
+        <ul class="tiled projects">
         {% for item in projects %}
           <li {% if item.img %} class="featured" {% endif %}>
             <a href="{{ item.url }}">
@@ -85,7 +85,11 @@
       </header>
       <div class="inner">
         <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
-        <ul class="note-preview handsome">
+        
+        {% include "partials/tag-list.html" %}
+
+        {% from 'macros/note-preview.njk' import notePreview %}
+        <ul class="tiled notes">
           {# Go through pinned items first #}
           {% for item in collections.note | reverse %}
           {% if item.data.pinned %}
@@ -93,12 +97,7 @@
           {# Ignore #}
           {# {% else %} #}
           {#  #}
-          <li class="pinned">
-            <a href="{{ item.url }}">
-              <h3>{{ item.data.title }}</h3>
-              {% include "partials/pin.svg" %}
-            </a>
-          </li>
+          {{ notePreview(item, false) }}
           {% endif %}
           {% endfor %}
 
@@ -106,14 +105,10 @@
           {% for item in collections.note | reverse %}
           {# Skip those that are pinned since they are already done above #}
           {% if not item.data.pinned %}
-          {# Limit to X amount of items #}
-          {% if loop.index0 < 17 %} 
+          {# Limit to X (odd number because 0 is counted) amount of items #}
+          {% if loop.index0 < 9 %} 
           {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-          <li>
-            <a href="{{ item.url }}">
-              <h3>{{ item.data.title }}</h3>
-            </a>
-          </li>
+          {{ notePreview(item, false) }}
           {% endif %}
           {% endif %}
           {% endif %}
@@ -131,7 +126,7 @@
       </header>
       <div class="inner">
         <p>What I’ve found interesting lately from around the web.</p>
-        <ul class="trove handsome">
+        <ul class="tiled trove">
         {% for item in collections.raindrops %}
             <li>
               <a href="{{ item.link }}" target="_blank" rel="noopener">

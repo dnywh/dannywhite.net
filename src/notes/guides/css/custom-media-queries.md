@@ -2,8 +2,8 @@
 title: Custom media queries in CSS
 date: 2023-08-22
 tags:
-  - CSS
   - LightningCSS
+  - CSS
   - Web
   - Eleventy
 audience: CSS developers looking to make reusable media queries and/or values within those media queries.

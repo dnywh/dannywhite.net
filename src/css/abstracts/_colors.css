@@ -4,8 +4,9 @@
   */
   /* Text */
   --color-text-primary-on-light: rgba(40, 32, 16, 0.95);
-  --color-text-secondary-on-light: hsla(0, 0%, 25%, 1);
-  --color-text-tertiary-on-light: hsla(0, 0%, 70%, 1);
+  --color-text-secondary-on-light: hsla(0, 0%, 28%, 1);
+  --color-text-tertiary-on-light: hsla(0, 0%, 42%, 1);
+  --color-text-quaternary-on-light: hsla(0, 0%, 70%, 1);
   /* Borders and strokes */
   --color-border-primary-on-light: var(--color-text-primary);
   --color-border-secondary-on-light: hsla(0, 0%, 88%, 1);
@@ -22,6 +23,7 @@
   --color-text-primary-on-dark: #f3ffa6;
   --color-text-secondary-on-dark: #f3ffa6;
   --color-text-tertiary-on-dark: #f3ffa687;
+  --color-text-quaternary-on-dark: #f3ffa687;
   /* Borders and strokes */
   --color-border-primary-on-dark: var(--color-text-primary);
   --color-border-secondary-on-dark: #f3ffa683;
@@ -40,6 +42,7 @@
   --color-text-primary: var(--color-text-primary-on-light);
   --color-text-secondary: var(--color-text-secondary-on-light);
   --color-text-tertiary: var(--color-text-tertiary-on-light);
+  --color-text-quaternary: var(--color-text-quaternary-on-light);
   --color-border-primary: var(--color-border-primary-on-light);
   --color-border-secondary: var(--color-border-secondary-on-light);
   --color-swatch-highlight: var(--color-swatch-highlight-on-light);
@@ -62,6 +65,7 @@
     --color-text-primary: var(--color-text-primary-on-dark);
     --color-text-secondary: var(--color-text-secondary-on-dark);
     --color-text-tertiary: var(--color-text-tertiary-on-dark);
+    --color-text-quaternary: var(--color-text-quaternary-on-dark);
     --color-border-primary: var(--color-border-primary-on-dark);
     --color-border-secondary: var(--color-border-secondary-on-dark);
     --color-swatch-highlight: var(--color-swatch-highlight-on-dark);
@@ -76,6 +80,7 @@
   --color-text-primary: var(--color-text-primary-on-dark);
   --color-text-secondary: var(--color-text-secondary-on-dark);
   --color-text-tertiary: var(--color-text-tertiary-on-dark);
+  --color-text-quaternary: var(--color-text-quaternary-on-dark);
   --color-border-primary: var(--color-border-primary-on-dark);
   --color-border-secondary: var(--color-border-secondary-on-dark);
   --color-swatch-highlight: var(--color-swatch-highlight-on-dark);

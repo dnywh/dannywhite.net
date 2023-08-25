@@ -8,8 +8,9 @@
   --line-height-reg: 150%;
   --line-height-tight: 135%;
   --line-height-xtight: 120%;
-  --font-size-sm: 0.875rem;
-  --font-size-article: 18px;
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-normal: 1rem; /* 16px */
+  --font-size-article: 1.125rem; /* 18px */
   --para-gap-sm: 0.4375rem;
 }
 body {
@@ -40,21 +41,11 @@ body {
   }
 }
 
-/* Common text styling */
-.handsome {
-  /* Item header */
-  & h3 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 115%; /* 23px */
-    letter-spacing: -0.2px;
-  }
-}
-
 /* Links to RSS */
 .rss {
-  font-size: 12px;
+  white-space: nowrap;
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-reg);
 }
 
 .outbound,
@@ -97,7 +88,10 @@ body {
     margin-right: -0.25rem;
   }
 }
-.small,
+
+h2.small,
+h3.small,
+span.small,
 legend {
   text-transform: uppercase;
   font-feature-settings: "cpsp" 1;

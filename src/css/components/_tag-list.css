@@ -1,18 +1,20 @@
 .tag-list {
-  --tag-margin-x: 0.5rem;
+  --tag-margin-y: 0.5rem;
+  --tag-margin-x: 0.75rem;
 
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-left: calc(-1 * var(--tag-margin-x));
-  margin-bottom: var(--margin-y);
+  margin-bottom: 5rem;
 
   > li > a {
     display: block;
-    padding: var(--tag-margin-x) 0.75rem;
+    padding: var(--tag-margin-y) var(--tag-margin-x);
     border-radius: 2rem;
+    border: 1px solid var(--color-swatch-code);
     color: var(--color-text-primary);
-    font-size: 1rem;
+    font-size: var(--font-size-normal);
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.0125rem;
@@ -37,37 +39,14 @@
       }
     }
   }
-}
 
-.note-preview {
-  > li {
-    @media (--viewport-md) {
-      grid-column: span 2;
-    }
-    > a {
-      /* Override some transitions */
-      &:hover {
-        & h3,
-        & p {
-          /* Make slightly lighter on hover */
-          opacity: 0.4;
-        }
-      }
-    }
-    /* Pinned styles */
-    &.pinned > a {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
+  &.small {
+    --tag-margin-y: 0.35rem;
+    --tag-margin-x: 0.5rem;
+    gap: 0.25rem;
 
-      /* &:after {
-          content: url(/assets/images/pin.svg);
-          opacity: 0.5;
-        } */
-      > svg > path {
-        fill: var(--color-text-tertiary);
-      }
+    > li > a {
+      font-size: var(--font-size-sm);
     }
   }
 }

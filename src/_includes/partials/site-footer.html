@@ -8,6 +8,7 @@
           <div class="side dark">{% include "partials/moon.svg" %}</div>
         </button>
       </div>
+      {% if title === "Index" %}
       <p>
         This site was handmade using the
         <a href="/colophon#eleventy">Eleventy</a>
@@ -16,6 +17,14 @@
         >. The next 1,000 visitors will accumulate a carbon footprint similar to
         that of growing a small potato.
       </p>
+      {% else %} {# Show different text #}
+      <p>
+        You’ve reached the internet home of <a href="/">Danny White</a>, a
+        freelance digital designer in Melbourne, Australia. I am available for
+        new work starting {{ me.available }}. Like what you see?&#32;{% include
+        "partials/email-lets-chat.html" %}.
+      </p>
+      {% endif %}
     </section>
 
     {% include "partials/here-there.html" %}

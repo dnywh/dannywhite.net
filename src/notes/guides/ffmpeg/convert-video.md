@@ -5,6 +5,10 @@ tags:
   - FFmpeg
   - macOS
   - Terminal
+related:
+  - video-speed
+  - stop-motion
+  - video-border
 audience: People comfortable using Terminal and at least know of FFmpeg.
 ---
 
