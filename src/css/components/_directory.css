@@ -4,17 +4,11 @@
   max-width: var(--width-max);
   margin: 0 auto;
 
+  /* Match grid and gap from site-wide grid */
   display: grid;
-  gap: var(--gap-md);
-
-  @media (--viewport-md) {
-    /* Match grid and gap from site-wide grid */
-    grid-template-columns: var(--grid-template-cols-main);
-
-    & section:first-of-type {
-      grid-column: span 2;
-    }
-  }
+  grid-template-columns: var(--grid-template-cols-main);
+  /* Have larger y axis gap for smaller breakpoints */
+  gap: var(--gap-lg) var(--gap-md);
 
   /* General paragraph styling */
   & p {
@@ -69,6 +63,22 @@
             }
           }
         }
+      }
+    }
+
+    /* Align to grid */
+    grid-column: span 2;
+    &:first-of-type {
+      grid-column: span 4;
+    }
+
+    @media (--viewport-md) {
+      &:first-of-type {
+        grid-column: span 2;
+      }
+
+      &:not(:first-of-type) {
+        grid-column: span 1;
       }
     }
   }

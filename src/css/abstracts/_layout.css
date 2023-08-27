@@ -191,8 +191,12 @@ img {
           align-items: center;
           gap: 1rem;
 
-          > svg > path {
-            fill: var(--color-text-quaternary);
+          > svg {
+            /* Stop these from getting clipped */
+            overflow: visible;
+            > path {
+              fill: var(--color-text-quaternary);
+            }
           }
         }
       }

@@ -34,11 +34,14 @@
           }
 
           > h1 {
-            font-size: 72px;
+            font-size: 48px;
             font-style: normal;
             font-weight: 500;
             line-height: 110%; /* 79.2px */
             letter-spacing: -2.52px;
+            @media (--viewport-md) {
+              font-size: 72px;
+            }
           }
           > p {
             /* TODO: replace with general styles also used in Home intros */
@@ -98,10 +101,16 @@
         }
 
         > aside.stage {
+          @media (--viewport-md) {
+            /* Align to top by removing shared margin */
+            margin-top: 0;
+          }
           @media (--viewport-lg) {
+            /* Restore shared margin */
+            margin-top: var(--margin-x);
+            /* Style */
             grid-column: 3;
             justify-self: end;
-            /* align-self: end; */
             text-align: right;
 
             /* Set sticky */
@@ -403,7 +412,9 @@
 
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: var(--gap-md);
+          /* Have larger y axis gap for smaller breakpoints */
+          /* This matches that in .directory */
+          gap: var(--gap-lg) var(--gap-md);
           /* flex-direction: column; */
           /* gap: 2rem; */
 

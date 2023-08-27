@@ -189,7 +189,11 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.setLibrary("md", mdLib);
 
-
+    eleventyConfig.setServerOptions({
+        // Show local network IP addresses for device testing (TODO: doesn't seem to work)
+        // https://www.11ty.dev/docs/dev-server/
+        showAllHosts: true,
+    });
 
     // End
     // Set which directories Eleventy reads from and writes to

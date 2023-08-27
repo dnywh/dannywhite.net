@@ -5,8 +5,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-left: calc(-1 * var(--tag-margin-x));
   margin-bottom: 5rem;
+
+  @media (--viewport-md) {
+    margin-left: calc(-1 * var(--tag-margin-x));
+  }
 
   > li > a {
     display: block;
