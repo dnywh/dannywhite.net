@@ -21,6 +21,7 @@
 
     top: 25vh; /* Should be calculated from height of the roll to be visually centered */
     height: 50vh;
+    /* TODO: Use clamp for these two values to always keep a nice visual balance */
   }
 
   /* Handle fade-in */
@@ -36,6 +37,10 @@
     opacity: 1;
     .marquee {
       opacity: 1;
+      .marquee-content {
+        /* Start playing! */
+        animation-play-state: running;
+      }
     }
   }
 
@@ -47,22 +52,22 @@
 
     /* Style marquee animation */
     /* https://ryanmulligan.dev/blog/css-marquee/ */
-    --duration: 75s;
+    --duration: 270s;
     --gap: 2.5rem;
 
     /* Set custom offsets and tweaks for each line */
     /* TODO: Make durations happen via a calc() via Lightning CSS preprocessing */
     &:nth-child(2) {
       margin-left: -50vw;
-      --duration: 70s;
+      --duration: calc(270s * 0.85);
     }
     &:nth-child(3) {
       margin-left: -100vw;
-      --duration: 82s;
+      --duration: calc(270s * 1.08);
     }
     &:nth-child(4) {
       margin-left: -150vw;
-      --duration: 78s;
+      --duration: calc(270s * 1.18);
     }
 
     /* overflow: hidden; */
@@ -93,7 +98,8 @@
 
       /* Start animation */
       animation: scroll var(--duration) linear infinite reverse; /* or reverse instead of normal */
-      /* animation-play-state: paused; */
+      animation-play-state: paused;
+
       @media (prefers-reduced-motion: reduce) {
         animation-play-state: paused;
       }
@@ -107,22 +113,19 @@
 
         /* background: rgb(221, 255, 193); */
 
-        font-size: 64px;
+        font-size: var(--step-4);
         font-weight: 500;
-        letter-spacing: -1.92px;
-        line-height: 100%;
-        @media (--viewport-md) {
-          font-size: 80px;
-        }
+        letter-spacing: var(--letter-spacing-xtight);
+        line-height: var(--line-height-single-line);
 
         color: rgba(0, 0, 0, 0.75);
 
         > img {
-          width: 64px;
-          height: 64px;
+          width: var(--step-4);
+          height: var(--step-4);
           /* Optical offset */
           position: relative;
-          top: 4px;
+          top: -0.05em;
         }
       }
     }

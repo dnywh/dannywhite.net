@@ -55,9 +55,12 @@ const observer = new IntersectionObserver(
             } else {
                 // console.log("intro out of view");
 
-                // bodyEl.classList.remove("visible")
-                // clientRollEl.classList.remove("visible")
+                bodyEl.classList.remove("visible")
+                clientRollEl.classList.remove("visible")
+
                 // TODO: disengage observer if I choose to go with this
+                // Or even better: pause (or slow animation drastically) but keep visible instead of fading to grey
+                // Adjust rootmargin to make this transition better
             }
         });
     },

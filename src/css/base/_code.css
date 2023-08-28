@@ -167,7 +167,7 @@ pre[class*="language-"]:before {
   top: 0.8em;
   right: 1em;
   font-size: 0.75rem;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-quaternary);
 }
 
 pre[class~="language-js"]:before {

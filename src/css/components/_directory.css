@@ -13,9 +13,8 @@
   /* General paragraph styling */
   & p {
     margin: 0;
-    font-size: var(--font-size-sm);
+    font-size: var(--step--1);
     color: var(--color-text-secondary);
-    letter-spacing: var(--letter-spacing-reg);
     margin-bottom: var(--para-gap-sm);
     /* 
     > a {
@@ -50,10 +49,11 @@
       gap: 0.5rem;
 
       > li {
-        font-size: 1rem;
+        font-size: var(--step--1);
+        /* font-size: 1rem; */
         font-weight: 500;
-        line-height: 130%; /* 20.8px */
-        letter-spacing: -0.16px;
+        line-height: var(--line-height-tight);
+        letter-spacing: var(--letter-spacing-tight);
         color: var(--color-text-secondary);
 
         > a {

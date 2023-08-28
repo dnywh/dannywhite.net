@@ -4,7 +4,7 @@
     "img": "https://user-images.githubusercontent.com/3104761/80896885-7346ed80-8d36-11ea-961f-59fee197bb59.jpg",
     "url": "https://ephemera.fyi",
     "domain": "ephemera.fyi",
-    "desc": "You know those scraps of paper and receipts that clog up your wallet and pockets? This is a living, digital archive of that",
+    "desc": "You know those scraps of paper and receipts that clog up your wallet and pockets? This is a living, digital archive of that.",
     "status": "Ongoing"
   },
   {
@@ -12,21 +12,21 @@
     "img": "https://camo.githubusercontent.com/621fff599fb619c97d79fe9a4c38f7249006e4a71fe70396cde801d3a4babe27/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f64616e6e7977686974652f696d6167652f75706c6f61642f76313637323938343831392f6769746875622f70692d6672616d652d73657175656e63652e676966",
     "url": "https://github.com/dnywh/pi-frame",
     "domain": "github.com",
-    "desc": "Print your own changing picture frame using an e-ink display and Raspberry Pi",
+    "desc": "Print your own changing picture frame using an e-ink display and Raspberry Pi.",
     "status": "2022–2023"
   },
   {
     "name": "68",
     "url": "https://68.netlify.app",
     "domain": "68.netlify.app",
-    "desc": "Kevin Kelly's 68 Bits of Unsolicited Advice, one at a time",
+    "desc": "Kevin Kelly's 68 Bits of Unsolicited Advice, one at a time.",
     "status": "2021"
   },
   {
     "name": "Brown Pages",
     "url": "https://brownpages.org",
     "domain": "brownpages.org",
-    "desc": "Your local guide to composting, wherever you are",
+    "desc": "Your local guide to composting, wherever you are.",
     "status": "Ongoing"
   }
 ]

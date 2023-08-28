@@ -1,18 +1,48 @@
 :root {
   --letter-spacing-wide: 0.1em;
   --letter-spacing-reg: -0.005em;
-  --letter-spacing-tight: -0.0125em;
-  --letter-spacing-xtight: -0.02em;
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-xtight: -0.04em;
   --line-height-xwide: 200%; /* Lists */
   --line-height-wide: 176%; /* Article text */
   --line-height-reg: 150%;
   --line-height-tight: 135%;
-  --line-height-xtight: 120%;
+  --line-height-xtight: 110%;
+  --line-height-single-line: 100%;
   --font-size-sm: 0.875rem; /* 14px */
   --font-size-normal: 1rem; /* 16px */
   --font-size-article: 1.125rem; /* 18px */
   --para-gap-sm: 0.4375rem;
 }
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  /* Step -2: 12.50px → 11.26px */
+  --step--2: clamp(0.7rem, calc(0.81rem + -0.13vw), 0.78rem);
+
+  /* Step -1: 15.00px → 15.00px */
+  --step--1: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);
+
+  /* Step 0: 18.00px → 20.00px */
+  --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+
+  /* Step 1: 21.60px → 26.66px */
+  --step-1: clamp(1.35rem, calc(1.24rem + 0.55vw), 1.67rem);
+
+  /* Step 2: 25.92px → 35.54px */
+  --step-2: clamp(1.62rem, calc(1.41rem + 1.05vw), 2.22rem);
+
+  /* Step 3: 31.10px → 47.37px */
+  --step-3: clamp(1.94rem, calc(1.59rem + 1.77vw), 2.96rem);
+
+  /* Step 4: 37.32px → 63.15px */
+  --step-4: clamp(2.33rem, calc(1.77rem + 2.81vw), 3.95rem);
+
+  /* Step 5: 44.79px → 84.17px */
+  --step-5: clamp(2.8rem, calc(1.94rem + 4.28vw), 5.26rem);
+}
+
 body {
   font-family: "ITC Franklin Gothic", system-ui, sans-serif;
   color: var(--color-text-primary);
@@ -32,6 +62,36 @@ body {
     }
   }
 
+  /* Headings */
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    font-weight: 500;
+    line-height: var(--line-height-xtight);
+  }
+
+  & h1 {
+    letter-spacing: var(--letter-spacing-xtight);
+  }
+
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    letter-spacing: var(--letter-spacing-tight);
+  }
+
+  & p,
+  & dt,
+  & dd,
+  & ol,
+  & ul,
+  & figcaption {
+    letter-spacing: var(--letter-spacing-reg);
+  }
+
   & p {
     > a {
       text-decoration: underline;
@@ -41,11 +101,60 @@ body {
   }
 }
 
+h2.small,
+h3.small,
+span.small,
+legend {
+  text-transform: uppercase;
+  font-feature-settings: "cpsp" 1;
+  font-size: var(--step--2);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Revert normal paragraph styles */
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+legend {
+  font-weight: 500;
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  font-size: smaller;
+}
+
+sup {
+  /* vertical-align: super; */
+  /* Replacing vertical-align with the below since the former affects the line spacing */
+  top: -0.4em;
+  font-feature-settings: "sups" 1;
+}
+
+sub {
+  /* vertical-align: sub; */
+  /* Replacing vertical-align with the below since the former affects the line spacing */
+  top: 0.4em;
+  font-feature-settings: "subs" 1;
+}
+
 /* Links to RSS */
 .rss {
   white-space: nowrap;
-  font-size: var(--font-size-sm);
+  font-size: var(--step--1);
   letter-spacing: var(--letter-spacing-reg);
+  color: var(--color-text-tertiary);
 }
 
 .outbound,
@@ -87,52 +196,4 @@ body {
     /* This always precedes the .outbound icon, so apply an optical negative margin for it */
     margin-right: -0.25rem;
   }
-}
-
-h2.small,
-h3.small,
-span.small,
-legend {
-  text-transform: uppercase;
-  font-feature-settings: "cpsp" 1;
-  font-size: 12px;
-  letter-spacing: var(--letter-spacing-wide);
-}
-
-/* Revert normal paragraph styles */
-strong {
-  font-weight: 500;
-}
-
-em {
-  font-style: italic;
-}
-
-s {
-  text-decoration: line-through;
-}
-
-legend {
-  font-weight: 5=600;
-}
-
-sup,
-sub {
-  vertical-align: baseline;
-  position: relative;
-  font-size: smaller;
-}
-
-sup {
-  /* vertical-align: super; */
-  /* Replacing vertical-align with the below since the former affects the line spacing */
-  top: -0.4em;
-  font-feature-settings: "sups" 1;
-}
-
-sub {
-  /* vertical-align: sub; */
-  /* Replacing vertical-align with the below since the former affects the line spacing */
-  top: 0.4em;
-  font-feature-settings: "subs" 1;
 }

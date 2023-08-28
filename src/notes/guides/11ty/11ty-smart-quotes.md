@@ -5,7 +5,7 @@ tags:
   - Eleventy
   - Markdown
   - Web
-audience: "Web folks who already use Eleventy and care about typography. Warning: knowing the difference between dumb and smart quotes may ruin subtitles, signage, and most text on the internet for you."
+audience: "Web folks who already use Eleventy and care about typography. Warning: knowing the difference between straight and smart quotes may ruin subtitles, signage, and most text on the internet for you."
 ---
 
 Compare the pair:

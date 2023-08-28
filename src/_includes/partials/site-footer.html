@@ -3,7 +3,10 @@
     <section class="controls">
       <div class="color-switch">
         <div role="status" class="visually-hidden js-mode-status"></div>
-        <button class="toggle-button js-mode-toggle">
+        <button
+          aria-label="Toggle Colour Scheme"
+          class="toggle-button js-mode-toggle"
+        >
           <div class="side light">{% include "partials/sun.svg" %}</div>
           <div class="side dark">{% include "partials/moon.svg" %}</div>
         </button>
@@ -11,10 +14,10 @@
       {% if title === "Index" %}
       <p>
         This site was handmade using the
-        <a href="/colophon#eleventy">Eleventy</a>
+        <a href="/colophon/#eleventy">Eleventy</a>
         static site generator. Loading it produced about
-        <a href="/colophon#carbon-measurements">0.05 grams of CO<sub>2</sub>e</a
-        >. The next 1,000 visitors will accumulate a carbon footprint similar to
+        <a href="/colophon/#carbon-footprint">0.05 grams of CO<sub>2</sub>e</a>.
+        The next 1,000 visitors will accumulate a carbon footprint similar to
         that of growing a small potato.
       </p>
       {% else %} {# Show different text #}

@@ -50,7 +50,11 @@
         &:first-of-type {
           margin-bottom: 4rem;
           > p {
+            /* Style first paragraph */
             &:nth-child(1) {
+              font-size: var(--step-4);
+              letter-spacing: var(--letter-spacing-xtight);
+              line-height: var(--line-height-xtight);
               font-weight: 500;
             }
             > span {
@@ -68,27 +72,22 @@
 
         &:last-of-type {
           @media (--viewport-md) {
-            margin-top: 25vh;
+            margin-top: 24vh;
           }
         }
 
         > p {
-          /* Style the left-side text */
-          font-weight: 400;
-          font-size: 2.5rem;
-          letter-spacing: -2px;
-          line-height: 130%;
+          /* Style the remaining left-side text */
+
+          font-size: var(--step-2);
+          letter-spacing: var(--letter-spacing-tight);
+          line-height: var(--line-height-tight);
           margin-bottom: 24px;
           /* Keep an optical width */
           max-width: 680px;
 
           > span.highlight {
             background-color: var(--color-swatch-highlight);
-          }
-
-          @media (--viewport-md) {
-            font-size: 48px;
-            letter-spacing: -1.5px;
           }
         }
       }
@@ -115,7 +114,8 @@
       > .page-header {
         > h2 {
           /* Override .page-header standard styling just for home */
-          font-size: 56px;
+          font-size: var(--step-4);
+          letter-spacing: var(--letter-spacing-xtight);
         }
       }
 
@@ -132,55 +132,42 @@
         }
         /* Projects */
         > ul.projects {
-          gap: 5rem var(--gap-md);
+          /* gap: 5rem var(--gap-md); */
           > li {
             @media (--viewport-md) {
               grid-column: span 2;
             }
-            &.featured {
-              > a > img {
-                /* Fade off end part */
-                /* https://stackoverflow.com/a/51557089/2009441 */
-                /* mask-image: linear-gradient(
-                  to bottom,
-                  rgba(0, 0, 0, 1),
-                  rgba(0, 0, 0, 0)
-                );
-              } */
-                @media (--viewport-md) {
-                  grid-column: span 4;
-                  > a {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: var(--gap-md);
+            > a {
+              > div {
+                > h3 {
+                  font-size: var(--step-1);
+                }
+                > p {
+                  /* Style status paragraph */
+                  &:last-of-type {
+                    color: var(--color-text-quaternary);
+                    font-size: var(--step--1);
                   }
-                  /* Reverse order of every second row */
-                  &:nth-of-type(even) {
-                    > a {
-                      > img {
-                        order: 1;
-                      }
-                    }
+                }
+              }
+            }
+            &.featured {
+              /* Reverse order of every second row */
+              &:nth-of-type(even) {
+                > a {
+                  > img {
+                    order: 1;
                   }
                 }
               }
               /* Style inner */
               > a {
+                > img {
+                  margin-bottom: 1rem;
+                }
                 > div {
                   > h3 {
-                    font-size: 32px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 115%; /* 55.2px */
-                    letter-spacing: -0.96px;
-                  }
-                  > p {
-                    font-size: 21px;
-                    /* Style status paragraph */
-                    &:last-of-type {
-                      color: var(--color-text-tertiary);
-                      font-size: 1rem;
-                    }
+                    /* font-size: var(--step-2); */
                   }
                 }
               }
@@ -251,9 +238,7 @@
                 margin-top: 0.25rem;
                 /* Style */
                 color: var(--color-text-secondary);
-                font-size: 14px;
-                line-height: 125%; /* 17.5px */
-                letter-spacing: -0.14px;
+                font-size: var(--step--1);
                 /* Truncate text */
                 /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
                 display: -webkit-box;

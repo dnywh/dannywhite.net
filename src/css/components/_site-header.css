@@ -68,7 +68,7 @@
           }
         }
         > svg {
-          width: 64px;
+          width: var(--step-4);
           height: auto;
           display: block;
           transition: var(--transition-text-opacity);

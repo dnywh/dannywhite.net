@@ -34,23 +34,16 @@
           }
 
           > h1 {
-            font-size: 48px;
+            font-size: var(--step-5);
             font-style: normal;
-            font-weight: 500;
-            line-height: 110%; /* 79.2px */
-            letter-spacing: -2.52px;
-            @media (--viewport-md) {
-              font-size: 72px;
-            }
           }
           > p {
+            /* Optional page subtitle */
             /* TODO: replace with general styles also used in Home intros */
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: -0.84px;
+            font-size: var(--step-2);
+            line-height: var(--line-height-tight);
             color: var(--color-text-secondary);
+            margin-top: var(--gap-sm);
           }
         }
 
@@ -59,7 +52,7 @@
           min-width: 200px;
           /* width: fit-content; */
           /* TODO: Unify text styles elsewhere */
-          font-size: 14px;
+          font-size: var(--step--1);
 
           @media (--viewport-sm) {
             /* grid-row: 2; */
@@ -133,49 +126,56 @@
             opacity: 1;
           }
 
-          .dots {
-            /* https://css-tricks.com/five-methods-for-five-star-ratings/ */
-            --dot-filled: var(--color-text-secondary);
-            --dot-unfilled: var(--color-text-quaternary);
-            --percent: calc(var(--stage) / 3 * 100%);
+          /* Dots styles have been extracted (serach for `.dots`) so they can be shown in the Colophon explainer */
+        }
 
-            display: inline-block;
-            font-size: 24px;
-            /* Make sure • appears correctly by using default font */
-            font-family: Times;
-            line-height: 1;
+        .dots {
+          /* https://css-tricks.com/five-methods-for-five-star-ratings/ */
+          --dot-filled: var(--color-text-secondary);
+          --dot-unfilled: var(--color-text-quaternary);
+          --percent: calc(var(--stage) / 3 * 100%);
 
-            &::before {
-              content: "•••";
-              letter-spacing: 1.5px;
-              background: linear-gradient(
-                -90deg,
-                var(--dot-filled) var(--percent),
-                var(--dot-unfilled) var(--percent)
-              );
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
+          display: inline-block;
+          font-size: 24px;
+          /* Make sure • appears correctly by using default font */
+          font-family: Times;
+          line-height: 1;
+
+          &::before {
+            content: "•••";
+            letter-spacing: 1.5px;
+            background: linear-gradient(
+              90deg,
+              var(--dot-filled) var(--percent),
+              var(--dot-unfilled) var(--percent)
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         }
 
         > aside.left {
           /* Don't show unless on a larger breakpoint */
           display: none;
+
           @media (--viewport-sm) {
-            position: sticky;
+            /* Move to right */
             top: var(--margin-x);
             align-self: start;
-
+            justify-self: end;
             grid-column: 2;
             grid-row: 2 / 4;
-
+            /* Make sticky */
+            position: sticky;
             /* Display as flex in case there are multiple child sections */
             display: flex;
             flex-direction: column;
             gap: var(--gap-md);
           }
           @media (--viewport-lg) {
+            /* Move to left */
+            justify-self: start;
             grid-column: 1;
             grid-row: 3;
           }
@@ -222,8 +222,7 @@
           & dd,
           & ol,
           & ul {
-            font-size: var(--font-size-article);
-            letter-spacing: var(--letter-spacing-reg);
+            font-size: var(--step-0);
           }
 
           & p {
@@ -248,10 +247,7 @@
 
           > h2 {
             /* Re-use from somewhere else */
-            font-size: 40px;
-
-            line-height: 110%; /* 44px */
-            letter-spacing: -1.4px;
+            font-size: var(--step-3);
 
             /* Margins */
             margin-top: 4rem;
@@ -262,9 +258,7 @@
           }
 
           > h3 {
-            font-size: 28px;
-            line-height: 110%; /* 44px */
-            letter-spacing: -1px;
+            font-size: var(--step-2);
 
             /* Margins */
             margin-top: 2rem;
@@ -275,9 +269,7 @@
           }
 
           > h4 {
-            font-size: 21px;
-            line-height: 110%; /* 44px */
-            letter-spacing: -0.75px;
+            font-size: var(--step-1);
 
             margin-bottom: 0.25rem;
           }
@@ -336,6 +328,48 @@
             margin: var(--spacing-lg) 0;
           }
 
+          /* Blockquotes */
+          /* See the below for why I wrap blockquotes in figure elements */
+          /* https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/#aa-hey-what-about-the-figure-element */
+          > figure.quote {
+            /* border-top: 1px solid var(--color-border-secondary); */
+            /* border-bottom: 1px solid var(--color-border-secondary); */
+            /* background-color: var(--color-swatch-code); */
+            margin: var(--gap-sm) 0;
+            padding: 1.5rem 1.5rem;
+
+            > blockquote {
+              margin-trim: block;
+              > p {
+                font-weight: 400;
+                font-style: italic;
+                /* text-align: right; */
+                font-size: var(--step-1);
+                line-height: var(--line-height-reg);
+
+                /* Quotes */
+                &:before {
+                  content: open-quote;
+                }
+                &:after {
+                  content: close-quote;
+                }
+
+                hanging-punctuation: first last;
+              }
+            }
+
+            > figcaption {
+              margin-top: 1rem;
+              /* TODO: Merge with .small-text @mixin */
+              text-transform: uppercase;
+              font-feature-settings: "cpsp" 1;
+              font-size: var(--step--2);
+              color: var(--color-text-secondary);
+              /* Remember to add a <cite> element when referencing creative work */
+            }
+          }
+
           /* Tables */
           > table {
             width: 100%; /* Take full width of text area */
@@ -346,7 +380,7 @@
               font-weight: 500;
               text-transform: uppercase;
               font-feature-settings: "cpsp" 1;
-              font-size: 12px;
+              font-size: var(--step--2);
               letter-spacing: var(--letter-spacing-wide);
             }
 
@@ -383,7 +417,7 @@
 
             > figcaption {
               color: var(--color-text-tertiary);
-              font-size: var(--font-size-sm);
+              font-size: var(--step--2);
               text-align: right;
               max-width: 600px; /*  TODO variable the same as text width */
               margin-top: 1rem;

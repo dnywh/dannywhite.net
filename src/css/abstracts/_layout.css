@@ -19,9 +19,11 @@
   --stroke-thin: 1px;
   /* Grids */
   --grid-template-cols-main: repeat(4, 1fr);
+  --gap-sm: 0.5rem;
   --gap-md: 2.5rem;
   --gap-lg: 3.5rem;
   @media (--viewport-md) {
+    --gap-sm: 1rem;
     --gap-md: 5rem;
   }
   /* Margins */
@@ -80,9 +82,9 @@ img {
 
   /* Header or other large text */
   > p {
-    color: var(--color-text-secondary);
-    font-size: 24px;
-    letter-spacing: -0.8px;
+    /* color: var(--color-text-secondary); */
+    font-size: var(--step-1);
+    letter-spacing: var(--letter-spacing-tight);
     margin-bottom: 5rem;
 
     /* Width */
@@ -133,25 +135,23 @@ img {
 
         /* Item header */
         & h3 {
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 115%; /* 23px */
-          letter-spacing: -0.2px;
+          font-size: var(--step-0);
+          line-height: var(--line-height-xtight);
         }
 
         & p {
           margin: 1rem 0;
+
+          font-size: var(--step-0);
         }
 
         .outbound {
           /* Style */
           color: var(--color-text-secondary);
-          font-size: 12px;
-          letter-spacing: -0.12px;
+          font-size: var(--step--2);
           &:after {
             position: relative;
-            top: 0.1rem;
+            top: 0.1em;
             opacity: 0.6;
           }
           /* Restore underline if necessary */

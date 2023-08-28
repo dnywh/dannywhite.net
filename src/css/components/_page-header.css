@@ -12,17 +12,14 @@
 
   > h1,
   > h2 {
-    font-weight: 500;
-    line-height: 110%; /* 61.6px */
-    letter-spacing: -1.75px;
-    /* color: var(--color-text-secondary); */
+    line-height: var(--line-height-xtight);
   }
 
   > h1 {
-    font-size: 56px;
+    font-size: var(--step-4);
   }
 
   > h2 {
-    font-size: 40px;
+    font-size: var(--step-3);
   }
 }
