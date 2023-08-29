@@ -1,6 +1,8 @@
 ---
 title: A beginner’s guide to ImageMagick
 date: 2021-05-28
+modified: 2023-08-29
+pinned: true
 tags:
   - ImageMagick
   - macOS
@@ -24,7 +26,7 @@ ImageMagick has two main commands:
 convert my-original-image.png -resize 50% my-new-smaller-image.jpg
 ```
 
-`mogrify` takes an input command, looks for any images in the directory that match that command, and _replaces_ any matching images. Here's an example that looks for any PNG files starting with _step-_ and then resizes them to 10% of their original size:
+`mogrify` takes an input command, looks for any images in the directory that match that command, and _replaces_ any matching images. Here's an example that looks for any PNG files that start with the text _step-_ and then resizes any matches to 10% of their original size:
 
 ```shell
 mogrify -resize 10% step-*.jpg
@@ -32,15 +34,48 @@ mogrify -resize 10% step-*.jpg
 
 ## Understanding the wildcard selector
 
-You might have noticed the weird `*` in the above command. That tells ImageMagick that _any_ character from that point forward is a match. E.g. step-1.jpg, step-2.jpg, step-wet-paint.jpg, etc.
+You may have noticed the `*` in the above command. That tells ImageMagick that _any_ character from that point forward is a match. E.g. step-1.jpg, step-2.jpg, step-wet-paint.jpg, etc.
 
-The `*` wildcard selector a common programming convention. You'll often see it in [CSS](css), for example.
+The `*` wildcard selector a common programming convention. You'll often see it in [CSS](/notes/tagged/css), for example.
 
 Here's a more basic example of the wildcard selector that accepts any JPG in the current directory:
 
 ```shell
 mogrify -resize 10% *.jpg
 ```
+
+## Add a colour border to a selection of images
+
+This is simple as long as you're good with fixed border sizing and simple colours. Here's an example that adds a 100px border to all sides of each JPG file in the current directory:
+
+```shell
+mogrify -bordercolor white -border 100x100 *.jpg
+```
+
+And here's what that looks like:
+
+<div class="two-up">
+  <figure>
+    <img src="{% src 'paul-gauguin-hina-no-border.jpg' %}"
+    srcset="{% srcset 'paul-gauguin-hina-no-border.jpg' %}"
+    alt="Paul Gauguin’s Tahitian Idol wood-block print."
+    width="740"
+    height="450"
+    loading="lazy">
+    <figcaption>Paul Gauguin’s <a href="https://www.artic.edu/artworks/63079/tahitian-idol-the-goddess-hina" rel="noopener">Tahitian Idol</a> wood-block print.</figcaption>
+  </figure>
+  <figure>
+    <img src="{% src 'paul-gauguin-hina-border-skyblue.jpg' %}"
+    srcset="{% srcset 'paul-gauguin-hina-border-skyblue.jpg' %}"
+    alt="The same image but with a 100px border on each side."
+    width="740"
+    height="450"
+    loading="lazy">
+    <figcaption>The same image but with a 100px border (set to skyblue for clarity) on each side.</figcaption>
+  </figure>
+</div>
+
+See [this legacy documentation page](https://legacy.imagemagick.org/Usage/crop/#border) for more information. Proportional borders or custom fills require [some more maths](https://stackoverflow.com/questions/46050190/imagemagick-frame-a-picture-with-border-color-from-a-file#comment79080336_46052653).
 
 ## Resize, flip, or rotate a selection of images
 

@@ -8,6 +8,8 @@ draft: true
 
 Some things I've picked up along the way:
 
-- Read the termination clause and factor it in. I never took it seriously until a recent project where it got enacted. I'd just committed to office space and said no to other opportunities. Had I realised it was even a thing I'd have had backups ready.
+- Get comfortable with selling yourself. Then get good at it.
+
+- Understand the termination clause in each contract. Prepare for the case where it gets enacted.
 
 - Don't buckle on your rate. Except for charity.

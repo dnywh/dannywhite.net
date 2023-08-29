@@ -27,6 +27,16 @@ And here are some ways I plan to reduce it further in the future:
 - More aggressive image optimisation (WEBP)
 - Variable fonts
 
+## Layout
+
+- Min: 320px
+- Max: 1280px
+- Article Max: 720px
+
+## Typography
+
+The entire site is set in ITC Franklin Gothic, licensed through Paratype. I used [Utopia](https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12) to calculate and handle a fluid type scale. It goes from Minor Third (1.2) to Perfect Fourth (1.333).
+
 ## Stages
 
 I write a lot of technical notes-to-self on this site. Some of them I revisit and improve over time. I also write the occasional musing or experiment.
@@ -63,10 +73,6 @@ Like Maggie, I use three stages:
     </tr>
     </tbody>
 </table>
-
-## Typography
-
-The entire site is set in ITC Franklin Gothic, licensed through Paratype. I used [Utopia](https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12) to calculate and handle a fluid type scale. It goes from Minor Third (1.2) to Perfect Fourth (1.333).
 
 ## Assumed audience
 
