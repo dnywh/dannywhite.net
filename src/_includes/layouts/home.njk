@@ -63,7 +63,7 @@
           <li {% if item.img %} class="featured" {% endif %}>
             <a href="{{ item.url }}">
             {% if item.img %}
-              <img src="{{ item.img }}" alt="The hero image for {{ item.name }}.">
+              <img src="{{ item.img }}" alt="The hero image for {{ item.name }}." loading="lazy">
             {% endif %}
               <div>
                 <h3>{{ item.name }}</h3>
