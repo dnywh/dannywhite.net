@@ -2,8 +2,8 @@
   scroll-behavior: smooth;
   > body {
     .page-header {
-      margin-left: var(--margin-x);
-      margin-right: var(--margin-x);
+      margin-left: var(--grid-gutter);
+      margin-right: var(--grid-gutter);
     }
     > main {
       > article {
@@ -66,11 +66,11 @@
         .article-content,
         > aside.stage,
         > aside.left {
-          margin-top: var(--margin-x);
+          margin-top: var(--grid-gutter);
         }
 
         > aside.audience {
-          margin-top: var(--margin-x);
+          margin-top: var(--grid-gutter);
           border-top: 1px solid var(--color-border-secondary);
           border-bottom: 1px solid var(--color-border-secondary);
           padding: 2rem 0;
@@ -100,7 +100,7 @@
           }
           @media (--viewport-lg) {
             /* Restore shared margin */
-            margin-top: var(--margin-x);
+            margin-top: var(--grid-gutter);
             /* Style */
             grid-column: 3;
             justify-self: end;
@@ -108,7 +108,7 @@
 
             /* Set sticky */
             position: sticky;
-            top: var(--margin-x);
+            top: var(--grid-gutter);
             align-self: start;
           }
           > p:first-of-type {
@@ -202,7 +202,7 @@
         }
 
         .article-content {
-          max-width: var(--width-max);
+          max-width: var(--grid-max-width);
           /* Cancel out any remaining margins or padding on its children */
           /* https://chriscoyier.net/2023/06/12/margin-trim-as-a-best-practice/ */
           margin-trim: block;

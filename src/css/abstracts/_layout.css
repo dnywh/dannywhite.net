@@ -8,7 +8,7 @@
 
 :root {
   /* Widths */
-  --width-max: 1800px;
+  --grid-max-width: 1800px;
   /* Spacing */
   --spacing-margin-x-md: 1rem;
   --spacing-xs: 1rem;
@@ -43,6 +43,88 @@
   }
 }
 
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1280,21,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  /* Space 3xs: 5px → 5px */
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
+
+  /* Space 2xs: 9px → 11px */
+  --space-2xs: clamp(0.56rem, calc(0.52rem + 0.21vw), 0.69rem);
+
+  /* Space xs: 14px → 16px */
+  --space-xs: clamp(0.88rem, calc(0.83rem + 0.21vw), 1rem);
+
+  /* Space s: 18px → 21px */
+  --space-s: clamp(1.13rem, calc(1.06rem + 0.31vw), 1.31rem);
+
+  /* Space m: 27px → 32px */
+  --space-m: clamp(1.69rem, calc(1.58rem + 0.52vw), 2rem);
+
+  /* Space l: 36px → 42px */
+  --space-l: clamp(2.25rem, calc(2.13rem + 0.63vw), 2.63rem);
+
+  /* Space xl: 54px → 63px */
+  --space-xl: clamp(3.38rem, calc(3.19rem + 0.94vw), 3.94rem);
+
+  /* Space 2xl: 72px → 84px */
+  --space-2xl: clamp(4.5rem, calc(4.25rem + 1.25vw), 5.25rem);
+
+  /* Space 3xl: 108px → 126px */
+  --space-3xl: clamp(6.75rem, calc(6.38rem + 1.88vw), 7.88rem);
+
+  /* One-up pairs */
+  /* Space 3xs-2xs: 5px → 11px */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.19rem + 0.63vw), 0.69rem);
+
+  /* Space 2xs-xs: 9px → 16px */
+  --space-2xs-xs: clamp(0.56rem, calc(0.42rem + 0.73vw), 1rem);
+
+  /* Space xs-s: 14px → 21px */
+  --space-xs-s: clamp(0.88rem, calc(0.73rem + 0.73vw), 1.31rem);
+
+  /* Space s-m: 18px → 32px */
+  --space-s-m: clamp(1.13rem, calc(0.83rem + 1.46vw), 2rem);
+
+  /* Space m-l: 27px → 42px */
+  --space-m-l: clamp(1.69rem, calc(1.38rem + 1.56vw), 2.63rem);
+
+  /* Space l-xl: 36px → 63px */
+  --space-l-xl: clamp(2.25rem, calc(1.69rem + 2.81vw), 3.94rem);
+
+  /* Space xl-2xl: 54px → 84px */
+  --space-xl-2xl: clamp(3.38rem, calc(2.75rem + 3.13vw), 5.25rem);
+
+  /* Space 2xl-3xl: 72px → 126px */
+  --space-2xl-3xl: clamp(4.5rem, calc(3.38rem + 5.63vw), 7.88rem);
+
+  /* Custom pairs */
+  /* Space s-l: 18px → 42px */
+  --space-s-l: clamp(1.13rem, calc(0.63rem + 2.5vw), 2.63rem);
+}
+
+/* @link https://utopia.fyi/grid/calculator?c=318,18,1.2,1827,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,xl,2xl,12 */
+
+:root {
+  --grid-max-width: 114.19rem;
+  --grid-gutter: var(
+    --space-s-xl,
+    clamp(1.13rem, calc(0.53rem + 2.98vw), 3.94rem)
+  );
+  --grid-columns: 12;
+}
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.u-grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
+
 html {
   background-color: var(--color-background);
   transition: var(--transition-color-scheme);
@@ -55,8 +137,8 @@ html {
 
 main {
   /* Set basic margins */
-  margin-left: var(--margin-x);
-  margin-right: var(--margin-x);
+  margin-left: var(--grid-gutter);
+  margin-right: var(--grid-gutter);
 }
 
 img {
@@ -68,11 +150,11 @@ img {
 
 /* Shared styles across home page sections and notes page(s) */
 .inner {
-  max-width: var(--width-max);
-  margin: 0 auto;
+  max-width: var(--grid-max-width);
+  margin: auto;
 
   display: grid;
-  gap: 0 var(--gap-md);
+  gap: var(--grid-gutter);
   @media (--viewport-md) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     /* minmax is necessary to stop long strings from overriding. Previously: */
@@ -85,7 +167,7 @@ img {
     /* color: var(--color-text-secondary); */
     font-size: var(--step-1);
     letter-spacing: var(--letter-spacing-tight);
-    margin-bottom: 5rem;
+    margin-bottom: var(--space-xl);
 
     /* Width */
     grid-column: span 4;
@@ -104,7 +186,7 @@ img {
 
   > ul.tiled {
     display: grid;
-    gap: 0 var(--gap-md);
+    gap: 0 var(--grid-gutter);
     @media (--viewport-md) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
       /* minmax is necessary to stop long strings from overriding. Previously: */

@@ -4,7 +4,7 @@
       margin: 0;
       /* Start slightly downward */
       margin-top: 25vh;
-      max-width: var(--width-max);
+      max-width: var(--grid-max-width);
 
       display: grid;
       gap: 0 var(--gap-md);

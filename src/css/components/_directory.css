@@ -1,14 +1,14 @@
 /* See also _site-footer.css for more specific styles */
 
 .directory {
-  max-width: var(--width-max);
+  max-width: var(--grid-max-width);
   margin: 0 auto;
 
   /* Match grid and gap from site-wide grid */
   display: grid;
   grid-template-columns: var(--grid-template-cols-main);
   /* Have larger y axis gap for smaller breakpoints */
-  gap: var(--gap-lg) var(--gap-md);
+  gap: var(--space-xl) var(--space-s-m);
 
   /* General paragraph styling */
   & p {

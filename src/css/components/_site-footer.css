@@ -1,10 +1,10 @@
 /* See also _directory.css for related styles */
 
 body > footer {
-  margin-top: var(--margin-y);
-  margin-left: var(--margin-x);
-  margin-right: var(--margin-x);
-  margin-bottom: var(--margin-y);
+  margin-top: var(--grid-gutter);
+  margin-left: var(--grid-gutter);
+  margin-right: var(--grid-gutter);
+  margin-bottom: var(--space-2xl);
 
   /* Borders */
   border-top: var(--stroke-thick) solid var(--color-border-primary);
@@ -18,10 +18,9 @@ body > footer {
     /* Uses old style numbering to fit nicer with text */
     font-feature-settings: "onum" 1;
     .color-switch {
-      /* margin-top: -0.25rem; */
+      /* Set margin to align optically with content in other columns */
       margin-bottom: 1rem;
       @media (--viewport-md) {
-        /* Set to align optically with content in other columns */
         margin-bottom: 0.75rem;
       }
     }

@@ -15,32 +15,34 @@
   --para-gap-sm: 0.4375rem;
 }
 
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1800,21,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1280,21,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
-  /* Step -2: 12.50px → 11.26px */
-  --step--2: clamp(0.7rem, calc(0.81rem + -0.13vw), 0.78rem);
+  /* Step -2: 12.50px → 11.82px */
+  --step--2: clamp(0.74rem, calc(0.8rem + -0.07vw), 0.78rem);
 
-  /* Step -1: 15.00px → 15.00px */
-  --step--1: clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem);
+  /* Step -1: 15.00px → 15.75px */
+  --step--1: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
 
-  /* Step 0: 18.00px → 20.00px */
-  --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  /* Step 0: 18.00px → 21.00px */
+  --step-0: clamp(1.13rem, calc(1.06rem + 0.31vw), 1.31rem);
 
-  /* Step 1: 21.60px → 26.66px */
-  --step-1: clamp(1.35rem, calc(1.24rem + 0.55vw), 1.67rem);
+  /* Step 1: 21.60px → 27.99px */
+  --step-1: clamp(1.35rem, calc(1.22rem + 0.67vw), 1.75rem);
 
-  /* Step 2: 25.92px → 35.54px */
-  --step-2: clamp(1.62rem, calc(1.41rem + 1.05vw), 2.22rem);
+  /* Step 2: 25.92px → 37.31px */
+  --step-2: clamp(1.62rem, calc(1.38rem + 1.19vw), 2.33rem);
 
-  /* Step 3: 31.10px → 47.37px */
-  --step-3: clamp(1.94rem, calc(1.59rem + 1.77vw), 2.96rem);
+  /* Step 3: 31.10px → 49.74px */
+  --step-3: clamp(1.94rem, calc(1.56rem + 1.94vw), 3.11rem);
 
-  /* Step 4: 37.32px → 63.15px */
-  --step-4: clamp(2.33rem, calc(1.77rem + 2.81vw), 3.95rem);
+  /* Step 4: 37.32px → 66.30px */
+  --step-4: clamp(2.33rem, calc(1.73rem + 3.02vw), 4.14rem);
 
-  /* Step 5: 44.79px → 84.17px */
-  --step-5: clamp(2.8rem, calc(1.94rem + 4.28vw), 5.26rem);
+  /* Step 5: 44.79px → 88.38px */
+  --step-5: clamp(2.8rem, calc(1.89rem + 4.54vw), 5.52rem);
 }
 
 body {
@@ -92,7 +94,8 @@ body {
     letter-spacing: var(--letter-spacing-reg);
   }
 
-  & p {
+  & p,
+  & figcaption {
     > a {
       text-decoration: underline;
       text-underline-offset: 1.5px;
