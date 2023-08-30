@@ -7,7 +7,6 @@ twitter_card_type: summary_large_image
 tags:
   - Process
   - Design
-eleventyExcludeFromCollections: true
 ---
 
 Campsites in bushfire-prone Western Australia often have this sign at their entrance:

@@ -6,7 +6,9 @@ layout: "layouts/article.njk"
 
 ## Carbon footprint
 
-I regularly estimate my website's carbon footprint using the [Website Carbon Calculator](https://www.websitecarbon.com). The most recent calculation put its footprint at TODO 0.05 grams of CO<sub>2</sub>e</a>. I used X and Y datasets to make the comparative emissions comparison of driving a Toyota Yaris 100m.
+I regularly estimate my website's carbon footprint using the [Website Carbon Calculator](https://www.websitecarbon.com). The [most recent calculation](https://www.websitecarbon.com/website/dannywhite-org/) put its footprint at TODO 0.05 grams of CO<sub>2</sub>e</a>. I used X and Y datasets to make the comparative emissions comparison of driving a Toyota Yaris 100m.
+
+Prior measurements have put it as high as 1.40 grams of CO<sub>2</sub>e</a>.
 
 Here are some ways I've reduced the carbon footprint of my site:
 
