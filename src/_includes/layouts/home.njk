@@ -92,26 +92,20 @@
         <ul class="tiled notes">
           {# Go through pinned items first #}
           {% for item in collections.note | reverse %}
-          {% if item.data.pinned %}
-          {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
-          {# Ignore #}
-          {# {% else %} #}
-          {#  #}
-          {{ notePreview(item, false) }}
-          {% endif %}
+            {% if item.data.pinned %}
+              {{ notePreview(item, false) }}
+            {% endif %}
           {% endfor %}
 
-          {# Go through non-pinned items from newest to olderst #}
+          {# Go through non-pinned items from newest to oldest #}
           {% for item in collections.note | reverse %}
-          {# Skip those that are pinned since they are already done above #}
-          {% if not item.data.pinned %}
-          {# Limit to X (odd number because 0 is counted) amount of items #}
-          {% if loop.index0 < 9 %} 
-          {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-          {{ notePreview(item, false) }}
-          {% endif %}
-          {% endif %}
-          {% endif %}
+            {# Skip those that are pinned since they are already done above #}
+            {% if not item.data.pinned %}
+            {# Limit that subset to X (0 is also counted) amount of items #}
+            {% if loop.index0 < 9 %} 
+              {{ notePreview(item, false) }}
+            {% endif %}  
+            {% endif %}
           {% endfor %}
           </ul>
           {# Link to all notes #}
@@ -131,7 +125,7 @@
             <li>
               <a href="{{ item.link }}" target="_blank" rel="noopener">
                 {% if item.type == "image" %}
-                  <img src="{{ item.cover }}" alt="The image accompanying this link.">
+                  <img src="{{ item.cover }}" alt="The image accompanying this link."  loading="lazy">
                 {% else %}
                   <h3>{{ item.title }}</h3>
                 {% endif %}

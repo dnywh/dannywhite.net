@@ -8,6 +8,8 @@ tags:
 
 [Not Just Bikes](https://www.youtube.com/c/NotJustBikes/featured) is my new favourite YouTube channel. Here’s a few bits from their [new-ish video on pedestrian urban mobility](https://www.youtube.com/watch?v=_ByEBjf9ktY&t=180s):
 
+https://www.youtube.com/watch?v=_ByEBjf9ktY&t=180s
+
 <figure class="quote">
   <blockquote>
     <p>North American traffic engineers value the convenience of the people who drive more than the lives of the people who walk.</p>

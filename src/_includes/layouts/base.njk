@@ -72,9 +72,9 @@
 
     {# Analytics #}
     {% if (env.eleventyRunMode === "build") %}
-    <script async src="https://cdn.splitbee.io/sb.js"></script>
-    <script data-goatcounter="https://dannywhite.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-  {% endif %}
+      <script async src="https://cdn.splitbee.io/sb.js"></script>
+      <script data-goatcounter="https://dannywhite.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    {% endif %}
 
     {# Anything bespoke to a page can go in these blocks #}
     {% block headContent %}{% endblock %}

@@ -1,6 +1,5 @@
 ---
 title: Saving Kobo Highlights to Markdown or Notion
-draft: false
 date: 2023-06-25
 modified: 2023-08-16
 pinned: true
@@ -12,6 +11,7 @@ tags:
   - Kobo
   - Markdown
 audience: People who own a Kobo e-reader, use a Mac, and want to save their highlights and notes in Markdown format for tools like Notion.
+eleventyExcludeFromCollections: true
 ---
 
 I’m sick of relying on expensive, fickle, and/or cumbersome online services to store my Kobo highlights so I built my own flow. Now I can just press a few buttons and paste the highlights (and notes) in Notion.

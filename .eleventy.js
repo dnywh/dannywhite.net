@@ -19,6 +19,10 @@ const markdownItAnchor = require('markdown-it-anchor')
 const markdownItFootnote = require("markdown-it-footnote");
 // Find any external links in Markdown and make them open in new tabs
 const mila = require("markdown-it-link-attributes");
+// Handle Vimeo embeds
+const embedVimeo = require("eleventy-plugin-vimeo-embed");
+// Handle YouTube embeds
+const embedYouTube = require("eleventy-plugin-youtube-embed");
 // Import my HTML minifier transform
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 // Import any shortcodes that are defined elsewhere
@@ -45,6 +49,17 @@ module.exports = function (eleventyConfig) {
     // Automatic table of contents
     eleventyConfig.addPlugin(pluginTOC, {
         tags: ['h2', 'h3'],
+    });
+    // Vimeo embeds
+    eleventyConfig.addPlugin(embedVimeo, {
+        embedClass: 'video'
+    });
+    // YouTube embeds
+    eleventyConfig.addPlugin(embedYouTube, {
+        // just an example, see default values below:
+        embedClass: 'video',
+        lite: true,
+        lazy: true, // Ignored when `lite` is true
     });
 
     // Filters

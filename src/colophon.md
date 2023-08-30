@@ -4,12 +4,6 @@ subtitle: A not-so-brief summary of how this website works.
 layout: "layouts/article.njk"
 ---
 
-## Eleventy
-
-I use [Eleventy](https://www.11ty.dev) to build and publish my site. I like how flexible and agnostic it is.
-
-I'm such a fan of Eleventy that you should read [all my posts tagged with it](/notes/tagged/eleventy).
-
 ## Carbon footprint
 
 I regularly estimate my website's carbon footprint using the [Website Carbon Calculator](https://www.websitecarbon.com). The most recent calculation put its footprint at TODO 0.05 grams of CO<sub>2</sub>e</a>. I used X and Y datasets to make the comparative emissions comparison of driving a Toyota Yaris 100m.
@@ -26,16 +20,6 @@ And here are some ways I plan to reduce it further in the future:
 - Solar-powered server ala Low Tech Magazine
 - More aggressive image optimisation (WEBP)
 - Variable fonts
-
-## Layout
-
-- Min: 320px
-- Max: 1280px
-- Article Max: 720px
-
-## Typography
-
-The entire site is set in ITC Franklin Gothic, licensed through Paratype. I used [Utopia](https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12) to calculate and handle a fluid type scale. It goes from Minor Third (1.2) to Perfect Fourth (1.333).
 
 ## Stages
 
@@ -90,9 +74,45 @@ Writing an assumed audience selection frees me up to write (unapologetically) to
 
 ---
 
-## Markup
+## Design
+
+### Layout
+
+- Min: 320px
+- Max: 1280px
+- Article Max: 720px
+
+### Typography
+
+The entire site is set in ITC Franklin Gothic, licensed through Paratype. I use [Utopia](https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12) to calculate and handle a fluid type scale. It goes from Minor Third (1.2) to Perfect Fourth (1.333).
+
+---
+
+## Build
 
 Read on if you're a nerd. It's really just a collection of notes-to-self on how I maintain the website. A style guide, if you will.
+
+### Eleventy
+
+I use [Eleventy](https://www.11ty.dev) to build and publish my site. I like how flexible and agnostic it is.
+
+I'm such a fan of Eleventy that you should read [all my posts tagged with it](/notes/tagged/eleventy).
+
+#### Collections
+
+##### Drafts
+
+I exclude drafts by using the following in collection frontmatter:
+
+```md
+---
+eleventyExcludeFromCollections: true
+---
+
+Draft blog post contents here.
+```
+
+It's a simple brute-force way to exclude the file anywhere it might be looped through, such as on the [Notes](/notes) page. This lets me continue working on a draft post whilst seeing it in the browser (at its URL) without needing to set `if` statements everywhere to exclude files with some bespoke `item.data.draft` frontmatter value.
 
 ### Markdown
 
@@ -128,3 +148,38 @@ Regular Markdown content below.
 ```
 
 I could figure out how to have the HTML write itself from Markdown automatically, probably in the same way I sweep up and turn [straight quotes into smart quotes](/notes/11ty-smart-quotes/). For another day.
+
+### Embeds
+
+I use [Graham F. Scott](https://gfscott.com)'s [Embed Everything](https://gfscott.com/embed-everything/) plugins for any [YouTube](https://www.npmjs.com/package/eleventy-plugin-youtube-embed) and [Vimeo](https://www.npmjs.com/package/eleventy-plugin-vimeo-embed) video embeds. Graham's plugins detect media from plain text (such as in your Markdown files) and automatically creates embeds. They look like this:
+
+```md
+Here's some Markdown content followed by a YouTube video:
+
+https://www.youtube.com/watch?v=_ByEBjf9ktY&t=180s
+
+That will be turned into a nicely formatted `<iframe>` during build.
+```
+
+I've turned onPaul Irish’s [Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed) method for the YouTube embed.
+
+### Images
+
+I add `loading="lazy"` to all images except for those [above-the-fold](https://sia.codes/posts/eleventy-and-cloudinary-images/#lazy-load-offscreen-images-for-performance).
+
+### RSS
+
+See [feed.njk](TODO). It loops through my note collection and excludes drafts.
+
+### CSS
+
+Once a member of the Sass cult, I now process all my CSS with LightningCSS. I do this via Stephanie Eckles' [LightningCSS Eleventy plugin](https://github.com/5t3ph/eleventy-plugin-lightningcss) for reasons she's already explained on [her blog](https://thinkdobecreate.com/articles/is-it-time-to-replace-sass/). In summary:
+
+- Regular CSS now does a lot of the things we used to use Sass for (such as variables and nesting)
+- LightningCSS fills in the gaps more elegantly
+
+One [quirk](https://github.com/11ty/eleventy/discussions/2850#discussioncomment-5254892) on Eleventy is that it might process the CSS as a collection. That's why I have a [css.json](TODO) file with the following:
+
+```json
+"eleventyExcludeFromCollections": true;
+```

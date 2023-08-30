@@ -1,9 +1,9 @@
 ---
 title: Lessons learnt after two years of freelancing
 date: 2023-08-25
-draft: true
-# tags:
-#   - Freelance
+eleventyExcludeFromCollections: true
+tags:
+  - Freelance
 ---
 
 Some things I've picked up along the way:

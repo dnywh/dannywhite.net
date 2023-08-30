@@ -18,7 +18,7 @@
         
         {% include "partials/tag-list.html" %}
 
-        {# List notes based on above tag selection #}
+        {# List notes #}
         {% from 'macros/note-preview.njk' import notePreview %}
         <ul class="tiled notes">
             {# Go through pinned items first #}
@@ -26,12 +26,7 @@
             {% if title === "Notes" %}
                 {% for item in collections.note | reverse %}
                     {% if item.data.pinned %}
-                        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
-                        {# {% if not item.data.draft %} #}
-                        {# Ignore #}
-                        {# {% else %} #}
                         {{ notePreview(item, true) }}
-                        {# {% endif %} #}
                     {% endif %}
                 {% endfor %}
             {# Tag-specific pinned items if on tagged page #}
@@ -40,9 +35,7 @@
                         {% if loopedTag === tag %}
                             {% for item in notesWithTag | reverse %}
                                 {% if item.data.pinned %}
-                                    {# {% if not item.data.draft or not (env.eleventyRunMode === "build") %} #}
                                         {{ notePreview(item, true) }}
-                                    {# {% endif %} #}
                                 {% endif %}
                             {% endfor %}
                     {% endif %}
@@ -55,12 +48,7 @@
             {% if title === "Notes" %}
                 {% for item in collections.note | reverse %}
                     {% if not item.data.pinned %}
-                        {# {% if env.eleventyRunMode === "build" and if item.data.draft %} #}
-                        {# Ignore #}
-                        {# {% else %} #}
-                        {# {% if not item.data.draft %} #}
-                            {{ notePreview(item, true) }}
-                        {# {% endif %} #}
+                        {{ notePreview(item, true) }}
                     {% endif %}
                 {% endfor %}
             {# Tag-specific pinned items if on tagged page #}
@@ -68,10 +56,8 @@
                 {% for loopedTag, notesWithTag in collections.notesByTag %}
                         {% if loopedTag === tag %}
                             {% for item in notesWithTag | reverse %}
-                            {% if not item.data.pinned %}
-                                    {% if not item.data.draft or not (env.eleventyRunMode === "build") %}
-                                        {{ notePreview(item, true) }}
-                                    {% endif %}
+                                {% if not item.data.pinned %}
+                                    {{ notePreview(item, true) }}
                                 {% endif %}
                             {% endfor %}
                         {% endif %}
