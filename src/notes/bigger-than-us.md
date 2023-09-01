@@ -16,8 +16,8 @@ Neptune had nice parking.
 Here’s a photo:
 
 <figure>
-  <img src="{% src 'neptune.jpg' %}"
-  srcset="{% srcset 'neptune.jpg' %}"
+  <img src="{% extSrc 'neptune.jpg' %}"
+  srcset="{% extSrcset 'neptune.jpg' %}"
   alt="A fibreglass model of Neptune on the side of the road"
   width="2745"
   height="3661"

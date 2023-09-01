@@ -27,7 +27,8 @@ function getSrc(file, width) {
 }
 
 // Export the two shortcodes to be able to access them in our Eleventy config
+// I've prepended these with `ext` to make it clear that this is coming externally, from Cloudinary
 module.exports = {
-    srcset: (file, widths) => getSrcset(file, widths),
-    src: (file, width) => getSrc(file, width),
+    extSrcset: (file, widths) => getSrcset(file, widths),
+    extSrc: (file, width) => getSrc(file, width),
 }

@@ -116,6 +116,12 @@ Draft blog post contents here.
 
 It's a simple brute-force way to exclude the file anywhere it might be looped through, such as on the [Notes](/notes) page. This lets me continue working on a draft post whilst seeing it in the browser (at its URL) without needing to set `if` statements everywhere to exclude files with some bespoke `item.data.draft` frontmatter value.
 
+### Trove
+
+The [Trove](/#trove) is a pinboard-esque section on my homepage that shows off what I've 'pinned' lately from around the web. I use [Raindrop](https://raindrop.io) to collect these 'pins' and their [API](https://developer.raindrop.io) to pull them into my site. I use the [eleventy-fetch plugin](https://www.11ty.dev/docs/plugins/fetch/) to cache these pins.
+
+See the [Images](#images) section of this page for how I process pinned imagery.
+
 ### Markdown
 
 I use Markdown for anything longform on this site: pretty much just [notes](/notes) and this page here, Colophon. I call this content type `article` in code.
@@ -166,6 +172,10 @@ That will be turned into a nicely formatted `<iframe>` during build.
 I've turned onPaul Irish’s [Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed) method for the YouTube embed.
 
 ### Images
+
+Aside from minor ones like favicons, I host most images on Cloudinary. I use [shortcodes.js](TODO) to process [responsive image sizes](https://web.dev/learn/design/responsive-images/#sizes) and prepend image URLs with my Cloudinary URL.
+
+The [Trove](/#trove) section of the homepage is an exception to my Cloudinary setup. Instead, I use the [eleventy-img plugin](https://www.11ty.dev/docs/plugins/image/) to download, reformat, and resize Trove image via the `troveImg` shortcode. I like this method because eleventy-img will generate HTML according to what image sizes are available. For example: if the original image for a Trove item is lower resolution than one or more of my desired widths, it will only [generate HTML](<https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)>) for the ones it can supply.
 
 I add `loading="lazy"` to all images except for those [above-the-fold](https://sia.codes/posts/eleventy-and-cloudinary-images/#lazy-load-offscreen-images-for-performance).
 

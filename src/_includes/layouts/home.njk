@@ -63,7 +63,9 @@
           <li {% if item.img %} class="featured" {% endif %}>
             <a href="{{ item.url }}">
             {% if item.img %}
-              <img src="{{ item.img }}" alt="The hero image for {{ item.name }}." loading="lazy">
+              {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+              {% set alt = "The hero image for " + item.name + "." %}
+              {% projectImage item.img, alt %}
             {% endif %}
               <div>
                 <h3>{{ item.name }}</h3>
@@ -114,7 +116,7 @@
     </section>
 
     {# Trove #}
-    <section class="home-section">
+    <section id="trove" class="home-section">
       <header class="page-header">
         <h2>Trove</h2>
       </header>
@@ -125,7 +127,8 @@
             <li>
               <a href="{{ item.link }}" target="_blank" rel="noopener">
                 {% if item.type == "image" %}
-                  <img src="{{ item.cover }}" alt="The image accompanying this link."  loading="lazy">
+                  {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+                  {% troveImage item.cover, item.title %}
                 {% else %}
                   <h3>{{ item.title }}</h3>
                 {% endif %}

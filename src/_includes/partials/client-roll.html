@@ -10,6 +10,7 @@ a repeated marquee, ARIA hide the whole thing #}
   {% for client in clients %}
   <li>
     <img
+      draggable="false"
       src="/assets/images/clients/{{ client | slugify }}.png"
       alt="The logo for {{ client }}"
     />

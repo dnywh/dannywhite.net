@@ -8,6 +8,8 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 // Import automatic table of contents
 const pluginTOC = require('eleventy-plugin-toc')
+// Import image processing for Trove images
+const Image = require("@11ty/eleventy-img");
 // Import a JS minifier
 const { minify } = require("terser");
 // Import specific packages from markdown-it
@@ -26,8 +28,8 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 // Import my HTML minifier transform
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 // Import any shortcodes that are defined elsewhere
-const { srcset, src } = require("./src/helpers/shortcodes");
-// Import dotenv so I can use custom environment variables, such as the Raindrop trove
+const { extSrcset, extSrc } = require("./src/helpers/shortcodes");
+// Import dotenv so I can use custom environment variables, such as the Raindrop API key
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
@@ -130,13 +132,58 @@ module.exports = function (eleventyConfig) {
     // Shortcodes
     // Year shortcode for copyright date(s): https://11ty.rocks/eleventyjs/dates/#year-shortcode
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-    // Image shortcodes from helpers/shortcodes.js
-    eleventyConfig.addShortcode("src", src);
-    eleventyConfig.addShortcode("srcset", srcset);
+    // Trove image shortcode
+    // https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)
+    eleventyConfig.addShortcode("troveImage", async function (src, alt) {
+        let metadata = await Image(src, {
+            formats: ["webp"],
+            // Calculated widths by multiplying physical max-width of img area (320px) by 2x and 3x
+            widths: [320, 640, 960],
+            outputDir: "./public/assets/images/trove",
+            urlPath: '/assets/images/trove',
+        });
+
+        let imageAttributes = {
+            // Alt must be defined in use otherwise it will throw an error
+            alt,
+            // Approximate sizes based on .trove CSS
+            // https://web.dev/learn/design/responsive-images/#sizes
+            sizes: '(min-width: 1024px) 25vw, 50vw',
+            loading: "lazy",
+            decoding: "async",
+        };
+        // You bet we throw an error on a missing alt (alt="" works okay)
+        return Image.generateHTML(metadata, imageAttributes);
+    });
+    // General image shortcode, currently used for project imagery
+    eleventyConfig.addShortcode("projectImage", async function (src, alt) {
+        let metadata = await Image(src, {
+            formats: ["webp"],
+            // Calculated widths by inspecting possible physical container sizes and multiplying by 2x, 3x
+            // TODO: Recalculate with future layout
+            widths: [456, 945, 1362, 2835],
+            outputDir: "./public/assets/images/projects",
+            urlPath: '/assets/images/projects'
+            // TODO: Optional: custom filename based on original file slug:
+            // https://www.11ty.dev/docs/plugins/image/#custom-filenames
+        });
+
+        let imageAttributes = {
+            alt,
+            sizes: '(min-width: 1024px) 50vw, 100vw',
+            loading: "lazy",
+            decoding: "async",
+        };
+        // You bet we throw an error on a missing alt (alt="" works okay)
+        return Image.generateHTML(metadata, imageAttributes);
+    });
+    // Cloudinary image shortcodes from helpers/shortcodes.js
+    eleventyConfig.addShortcode("extSrc", extSrc);
+    eleventyConfig.addShortcode("extSrcset", extSrcset);
 
     // Collections
     // Make a collection of raindrops sorted by date saved, not date created
-    const raindrops = require("./src/_data/trove.js")
+    const raindrops = require("./src/_data/trove.js");
     eleventyConfig.addCollection('raindrops', async () => {
         const data = await raindrops();
         // Access the items within the child array

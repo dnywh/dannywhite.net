@@ -56,8 +56,8 @@ And here's what that looks like:
 
 <div class="two-up">
   <figure>
-    <img src="{% src 'paul-gauguin-hina-no-border.jpg' %}"
-    srcset="{% srcset 'paul-gauguin-hina-no-border.jpg' %}"
+    <img src="{% extSrc 'paul-gauguin-hina-no-border.jpg' %}"
+    srcset="{% extSrcset 'paul-gauguin-hina-no-border.jpg' %}"
     alt="Paul Gauguin’s Tahitian Idol wood-block print."
     width="740"
     height="450"
@@ -65,8 +65,8 @@ And here's what that looks like:
     <figcaption>Paul Gauguin’s <a href="https://www.artic.edu/artworks/63079/tahitian-idol-the-goddess-hina" rel="noopener">Tahitian Idol</a> wood-block print.</figcaption>
   </figure>
   <figure>
-    <img src="{% src 'paul-gauguin-hina-border-skyblue.jpg' %}"
-    srcset="{% srcset 'paul-gauguin-hina-border-skyblue.jpg' %}"
+    <img src="{% extSrc 'paul-gauguin-hina-border-skyblue.jpg' %}"
+    srcset="{% extSrcset 'paul-gauguin-hina-border-skyblue.jpg' %}"
     alt="The same image but with a 100px border on each side."
     width="740"
     height="450"

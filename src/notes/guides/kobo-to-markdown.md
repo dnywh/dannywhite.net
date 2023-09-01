@@ -41,8 +41,8 @@ You need to follow these steps each time you want to save a book's highlights an
 Here’s what it looks like in practice:
 
 <figure>
-  <img src="{% src 'kobo-shortcut.png' %}"
-  srcset="{% srcset 'kobo-shortcut.png' %}"
+  <img src="{% extSrc 'kobo-shortcut.png' %}"
+  srcset="{% extSrcset 'kobo-shortcut.png' %}"
   alt="A screenshot of macOS Finder."
   width="1088"
   height="260"
@@ -51,8 +51,8 @@ Here’s what it looks like in practice:
 </figure>
 
 <figure>
-  <img src="{% src 'kobo-markdown.png' %}"
-  srcset="{% srcset 'kobo-markdown.png' %}"
+  <img src="{% extSrc 'kobo-markdown.png' %}"
+  srcset="{% extSrcset 'kobo-markdown.png' %}"
   alt="A screenshot of plain text formatted as Markdown."
   width="1716"
   height="388"
@@ -61,8 +61,8 @@ Here’s what it looks like in practice:
 </figure>
 
 <figure>
-  <img src="{% src 'kobo-notion.png' %}"
-  srcset="{% srcset 'kobo-notion.png' %}"
+  <img src="{% extSrc 'kobo-notion.png' %}"
+  srcset="{% extSrcset 'kobo-notion.png' %}"
   alt="A screenshot of the same text formatted visually in Notion as blockquotes and a todo item."
   width="1488"
   height="386"

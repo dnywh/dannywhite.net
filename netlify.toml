@@ -1,0 +1,7 @@
+# Persist the (Trove) cache between builds
+# https://www.11ty.dev/docs/plugins/fetch/#running-this-on-your-build-server
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [ ".cache" ]

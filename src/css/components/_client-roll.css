@@ -71,6 +71,7 @@
     }
 
     /* overflow: hidden; */
+    /* Stop text from being selectable */
     user-select: none;
     /*  */
     display: flex;

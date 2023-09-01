@@ -13,3 +13,7 @@ Some things I've picked up along the way:
 - Understand the termination clause in each contract. Prepare for the case where it gets enacted.
 
 - Don't buckle on your rate. Except for charity.
+
+- Carve out your holidays. Otherwise you'll never take them.
+
+- Similarly, set your own schedule or your life will revolve around the whims of (potential) clients.
