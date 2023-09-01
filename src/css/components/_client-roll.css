@@ -27,18 +27,18 @@
   /* Handle fade-in */
   opacity: 0.35;
   --marquee-transition: opacity 2s ease;
-  transition: var(--marquee-transition);
-  &.visible {
-    background-color: var(
-      --color-swatch-highlight
-    ); /* Should match JavaScript and meta theme-color */
-    /* width: 100%; */
+  transition: var(--marquee-transition), background-color 0.5s ease;
 
+  &.visible {
+    background-color: var(--color-swatch-highlight);
     opacity: 1;
+
     .marquee {
       opacity: 1;
+
       .marquee-content {
         /* Start playing! */
+        /* animation-delay: 3s; */
         animation-play-state: running;
       }
     }
@@ -52,22 +52,25 @@
 
     /* Style marquee animation */
     /* https://ryanmulligan.dev/blog/css-marquee/ */
-    --duration: 270s;
+    --duration-base: 270s;
     --gap: 2.5rem;
 
     /* Set custom offsets and tweaks for each line */
-    /* TODO: Make durations happen via a calc() via Lightning CSS preprocessing */
+    &:nth-child(1) {
+      margin-left: -1rem;
+      --duration: calc(var(--duration-base) * 1);
+    }
     &:nth-child(2) {
       margin-left: -50vw;
-      --duration: calc(270s * 0.85);
+      --duration: calc(var(--duration-base) * 0.85);
     }
     &:nth-child(3) {
       margin-left: -100vw;
-      --duration: calc(270s * 1.08);
+      --duration: calc(var(--duration-base) * 1.08);
     }
     &:nth-child(4) {
       margin-left: -150vw;
-      --duration: calc(270s * 1.18);
+      --duration: calc(var(--duration-base) * 1.18);
     }
 
     /* overflow: hidden; */
@@ -76,6 +79,8 @@
     /*  */
     display: flex;
     gap: var(--gap);
+    /* Must define a width, using fit-content because it fluctuates depending on string, breakpoint */
+    width: fit-content;
 
     /* background: rgba(17, 0, 255, 0.078); */
 
@@ -87,19 +92,12 @@
       flex-shrink: 0;
       align-items: center;
       justify-content: space-between;
-      /* Must have a fixed width because our items are variable width */
-      /* justify-content: space-around; */
-      /* min-width: 100%; */
-      /* gap: var(--gap); */
-
-      /* This value is calculated in JavaScript */
-      /* TODO: Update again on resize (see JavaScript) */
-      /* The below is a fallback */
-      width: 2216px;
+      gap: var(--gap);
 
       /* Start animation */
-      animation: scroll var(--duration) linear infinite reverse; /* or reverse instead of normal */
+      animation: var(--duration) linear infinite reverse scroll; /* or reverse instead of normal */
       animation-play-state: paused;
+      /* animation-delay: 3s; */
 
       @media (prefers-reduced-motion: reduce) {
         animation-play-state: paused;

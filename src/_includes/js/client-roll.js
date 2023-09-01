@@ -1,59 +1,32 @@
-const introEl = document.querySelector("main > header")
 const clientRollEl = document.querySelector("div.client-roll")
-const marqueeItemsSample = document.querySelector(".marquee-content").children
-const marqueeContentAll = document.querySelectorAll(".marquee-content")
-const clientDescEl = document.querySelector("p#client-desc")
 const bodyEl = document.querySelector(".home body")
 
-// console.log(bodyEl)
-
-// const intersectPos = clientDescEl.getBoundingClientRect().top;
-// console.log(clientDescEl.getBoundingClientRect(), intersectPos)
-
-// introEl.style.marginTop = "25vh"
-// clientRollEl.style.marginTop = intersectPos + "px";
-
-
-// Style Client Roll
-// TODO: change the CSS `top` property to make it stick in the optical vertical center
-// 1. Calc the height of the Client Roll. 
-// 2. Calc the height of the window 
-// 3. Do the math to find the offset from the top to make that Client Roll rectangle be visibly centered
-
-
-// Sets a new dynamic width based on the client names' widths
-let marqueeContentWidth = 0;
-let gap = 40;
-
-Array.from(marqueeItemsSample).forEach((item, index) => {
-    // console.log(index, item.offsetWidth)
-    marqueeContentWidth += item.offsetWidth
-    if (index < Array.from(marqueeItemsSample).length) {
-        marqueeContentWidth += gap
-    }
-})
-// This is the width that will be applied to each `marquee-content` element
-// console.log(marqueeContentWidth)
-
-Array.from(marqueeContentAll).forEach((item) => {
-    item.style.width = marqueeContentWidth + "px";
-})
-
 // Handle fade-in of Client Roll
-// bodyEl.classList.add("visible")
-// clientRollEl.classList.add("visible")
+let options = {
+    // Using default root of viewport
+    // root: document.querySelector("#parent"),
+
+    // rootMargin
+    // Bleed over top so it doesn't stop until visibly gone
+    // Bottom 100px is just an experiment
+    // TODO: seperate background color change from animation start/stop so when you scroll back up it isn't jarring
+    rootMargin: "50% 0 100px 0",
+    threshold: 1.0,
+};
+
+
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                // console.log("intro in view");
+                console.log("intersecting");
                 bodyEl.classList.add("visible")
                 clientRollEl.classList.add("visible")
 
                 // TODO: enable below meta thing
                 // document.querySelector('meta[name="theme-color"]').setAttribute("content", "white");
             } else {
-                // console.log("intro out of view");
+                console.log("no longer intersecting");
 
                 bodyEl.classList.remove("visible")
                 clientRollEl.classList.remove("visible")
@@ -64,20 +37,6 @@ const observer = new IntersectionObserver(
             }
         });
     },
-    { threshold: [0.85] }
+    options
 );
 observer.observe(clientRollEl);
-
-// Recalculate when resized
-// https://web.dev/resize-observer/
-var ro = new ResizeObserver(entries => {
-    for (let entry of entries) {
-        const cr = entry.contentRect;
-        console.log('Element:', entry.target);
-        console.log(`Element size: ${cr.width}px x ${cr.height}px`);
-        console.log(`Element padding: ${cr.top}px ; ${cr.left}px`);
-    }
-});
-
-// Observe one or multiple elements
-ro.observe(clientRollEl);
