@@ -53,24 +53,38 @@
     /* Style marquee animation */
     /* https://ryanmulligan.dev/blog/css-marquee/ */
     --duration-base: 270s;
-    --gap: 2.5rem;
+    --gap: calc(0.66 * var(--step-5));
 
     /* Set custom offsets and tweaks for each line */
     &:nth-child(1) {
-      margin-left: -1rem;
+      margin-left: 0;
       --duration: calc(var(--duration-base) * 1);
     }
     &:nth-child(2) {
-      margin-left: -50vw;
+      margin-left: -100vw;
       --duration: calc(var(--duration-base) * 0.85);
     }
     &:nth-child(3) {
-      margin-left: -100vw;
-      --duration: calc(var(--duration-base) * 1.08);
+      /* Hide by default on smaller displays */
+      display: none;
+
+      /* TODO: candidate for container queries */
+      @media (min-height: 50rem) {
+        display: flex;
+        margin-left: -200vw;
+
+        --duration: calc(var(--duration-base) * 1.08);
+      }
     }
     &:nth-child(4) {
-      margin-left: -150vw;
-      --duration: calc(var(--duration-base) * 1.18);
+      /* Hide by default on smaller displays */
+      display: none;
+
+      @media (min-height: 70rem) {
+        display: flex;
+        margin-left: -200vw;
+        --duration: calc(var(--duration-base) * 1.18);
+      }
     }
 
     /* overflow: hidden; */
@@ -92,6 +106,7 @@
       flex-shrink: 0;
       align-items: center;
       justify-content: space-between;
+      justify-content: center;
       gap: var(--gap);
 
       /* Start animation */
@@ -108,23 +123,28 @@
         flex-shrink: 0;
         /* align-items: baseline; */
 
-        gap: 0.5rem; /* The gap between image and text */
+        gap: calc(0.165 * var(--step-5)); /* The gap between image and text */
 
         /* background: rgb(221, 255, 193); */
 
-        font-size: var(--step-4);
+        font-size: var(--step-5);
         font-weight: 500;
         letter-spacing: var(--letter-spacing-xtight);
         line-height: var(--line-height-single-line);
 
-        color: rgba(0, 0, 0, 0.75);
+        /* Mix colors instead of opacity in case tracking causes overlap */
+        color: color-mix(
+          in srgb,
+          var(--color-swatch-highlight) 20%,
+          var(--color-text-primary)
+        );
 
         > img {
           width: var(--step-4);
           height: var(--step-4);
           /* Optical offset */
           position: relative;
-          top: -0.05em;
+          top: calc(0.33 * (var(--step-5) - var(--step-4)));
         }
       }
     }

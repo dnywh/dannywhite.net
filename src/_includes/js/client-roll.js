@@ -1,42 +1,43 @@
 const clientRollEl = document.querySelector("div.client-roll")
-const bodyEl = document.querySelector(".home body")
+const marqueeContentEls = document.querySelectorAll(".marquee-content")
 
-// Handle fade-in of Client Roll
+// Prepare intersection observer
 let options = {
     // Using default root of viewport
-    // root: document.querySelector("#parent"),
-
-    // rootMargin
     // Bleed over top so it doesn't stop until visibly gone
-    // Bottom 100px is just an experiment
-    // TODO: seperate background color change from animation start/stop so when you scroll back up it isn't jarring
-    rootMargin: "50% 0 100px 0",
-    threshold: 1.0,
+    rootMargin: "50% 0 0 0",
+    threshold: 0.5,
 };
-
 
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                console.log("intersecting");
-                bodyEl.classList.add("visible")
+                // Intersecting / in view
                 clientRollEl.classList.add("visible")
-
-                // TODO: enable below meta thing
-                // document.querySelector('meta[name="theme-color"]').setAttribute("content", "white");
             } else {
-                console.log("no longer intersecting");
-
-                bodyEl.classList.remove("visible")
-                clientRollEl.classList.remove("visible")
-
-                // TODO: disengage observer if I choose to go with this
-                // Or even better: pause (or slow animation drastically) but keep visible instead of fading to grey
-                // Adjust rootmargin to make this transition better
+                // No longer intersecting / out of view
+                // Commented-out the below so the container doesn't fade back to grey
+                // clientRollEl.classList.remove("visible")
+                // Simply restart animation
+                restartAnimation()
             }
         });
     },
     options
 );
 observer.observe(clientRollEl);
+
+
+// Prepare animation restart function so marquees always start at optimal place
+// https://www.kirupa.com/animations/restarting_css_animations.htm
+function restartAnimation() {
+    marqueeContentEls.forEach(el => {
+        el.style.animationName = "none";
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                el.style.animationName = ""
+            }, 0);
+        });
+    })
+}

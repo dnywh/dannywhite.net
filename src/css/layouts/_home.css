@@ -3,7 +3,7 @@
     .crawl-header {
       margin: 0;
       /* Start slightly downward */
-      margin-top: 25vh;
+      margin-top: 35vh;
       max-width: var(--grid-max-width);
 
       display: grid;
@@ -23,7 +23,7 @@
       /* TODO: Do this media query dynamically */
       /* min-width: calc(1800px + var(--margin-x)) */
       @media (min-width: calc(1960px)) {
-        margin: 40vh auto 3rem;
+        margin: 35vh auto 3rem;
       }
 
       .header-text {
