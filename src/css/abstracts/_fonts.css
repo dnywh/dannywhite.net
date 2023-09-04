@@ -1,6 +1,10 @@
 @font-face {
   font-family: "ITC Franklin Gothic";
-  src: url(/assets/fonts/ITC-Franklin-Gothic_Book.woff2) format("woff2");
+  /* Give precedence to local() in your src list: listing local('Font Name') first in your src list ensures that HTTP requests aren't made for fonts that are already installed.
+   */
+  /* https://web.dev/reduce-webfont-size/#web-font-size-optimization-checklist */
+  src: local("ITC Franklin Gothic"),
+    url(/assets/fonts/ITC-Franklin-Gothic_Book.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +13,8 @@
 
 @font-face {
   font-family: "ITC Franklin Gothic";
-  src: url(/assets/fonts/ITC-Franklin-Gothic_Italic.woff2) format("woff2");
+  src: local("ITC Franklin Gothic"),
+    url(/assets/fonts/ITC-Franklin-Gothic_Italic.woff2) format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -17,7 +22,8 @@
 
 @font-face {
   font-family: "ITC Franklin Gothic";
-  src: url(/assets/fonts/ITC-Franklin-Gothic_Medium.woff2) format("woff2");
+  src: local("ITC Franklin Gothic"),
+    url(/assets/fonts/ITC-Franklin-Gothic_Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -26,8 +32,8 @@
 
 @font-face {
   font-family: "ITC Franklin Gothic";
-  src: url(/assets/fonts/ITC-Franklin-Gothic_Medium-Italic.woff2)
-    format("woff2");
+  src: local("ITC Franklin Gothic"),
+    url(/assets/fonts/ITC-Franklin-Gothic_Medium-Italic.woff2) format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -35,7 +41,8 @@
 
 @font-face {
   font-family: "ITC Franklin Gothic";
-  src: url(/assets/fonts/ITC-Franklin-Gothic_Demi.woff2) format("woff2");
+  src: local("ITC Franklin Gothic"),
+    url(/assets/fonts/ITC-Franklin-Gothic_Demi.woff2) format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -44,7 +51,8 @@
 
 @font-face {
   font-family: "ITC Franklin Gothic";
-  src: url(/assets/fonts/ITC-Franklin-Gothic_Demi-Italic.woff2) format("woff2");
+  src: local("ITC Franklin Gothic"),
+    url(/assets/fonts/ITC-Franklin-Gothic_Demi-Italic.woff2) format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;

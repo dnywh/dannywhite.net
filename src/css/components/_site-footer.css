@@ -1,27 +1,33 @@
 /* See also _directory.css for related styles */
 
 body > footer {
-  margin-top: var(--grid-gutter);
+  margin-top: var(--space-2xl);
   margin-left: var(--grid-gutter);
   margin-right: var(--grid-gutter);
   margin-bottom: var(--space-2xl);
 
+  --optical-inset: 4px;
+
   /* Borders */
   border-top: var(--stroke-thick) solid var(--color-border-primary);
   /* box-shadow for second visual border */
-  box-shadow: inset 0 4px 0 0 var(--color-background),
-    inset 0 5px 0 0 var(--color-border-primary);
+  box-shadow: inset 0 var(--optical-inset) 0 0 var(--color-background),
+    inset 0 calc(var(--optical-inset) + 1px) 0 0 var(--color-border-primary);
   /* Increase padding-top to take into account above border */
-  padding-top: calc(5px + var(--gap-md));
+  padding-top: calc(var(--optical-inset) + 1px + var(--gap-md));
 
   .controls {
     /* Uses old style numbering to fit nicer with text */
     font-feature-settings: "onum" 1;
+    /* Set margin to align optically with content in other columns */
+    @media (--viewport-md) {
+      margin-top: calc(-1 * var(--optical-inset));
+    }
     .color-switch {
       /* Set margin to align optically with content in other columns */
       margin-bottom: 1rem;
       @media (--viewport-md) {
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.6rem;
       }
     }
   }

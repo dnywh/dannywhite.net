@@ -225,6 +225,11 @@
             font-size: var(--step-0);
           }
 
+          & p,
+          & li {
+            margin-bottom: var(--space-s);
+          }
+
           & p {
             line-height: var(--line-height-wide);
             /* Uses old style numbering to fit nicer with text */
@@ -235,7 +240,6 @@
             } */
 
             /* text-indent: 3em; */
-            margin-bottom: 1rem;
 
             &:first-child {
               text-indent: 0;
@@ -285,8 +289,6 @@
           /* Lists */
           & ul,
           & ol {
-            line-height: var(--line-height-xwide);
-
             /* Outset lists on larger breakpoints */
             padding-inline-start: 1.5rem;
             @media (--viewport-lg) {
@@ -304,6 +306,8 @@
               > ol,
               > ul {
                 padding-inline-start: 1.5rem;
+                /* Match more general margins */
+                margin-top: var(--space-s);
               }
             }
           }
@@ -440,9 +444,9 @@
         }
 
         > aside.meta {
-          margin-top: var(--margin-y);
+          margin-top: var(--space-xl);
           border-top: 1px solid var(--color-border-secondary);
-          padding-top: 2rem;
+          padding-top: var(--space-l);
 
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -455,7 +459,6 @@
           @media (--viewport-lg) {
             grid-column: 2;
             grid-row: 4;
-            padding-top: 3rem;
           }
 
           > section {

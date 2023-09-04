@@ -8,22 +8,19 @@ This website is entirely open source. Check it out on [GitHub](TODO). Read on fo
 
 ## Carbon footprint
 
-I regularly estimate my website's carbon footprint using the [Website Carbon Calculator](https://www.websitecarbon.com). The [most recent calculation](https://www.websitecarbon.com/website/dannywhite-org/) put its footprint at TODO 0.10 grams of CO<sub>2</sub>e</a>. I used X and Y datasets to make the comparative emissions comparison of driving a Toyota Yaris 100m.
+I regularly estimate my website's carbon footprint using the [Website Carbon Calculator](https://www.websitecarbon.com). The [most recent calculation](https://www.websitecarbon.com/website/dannywhite-org/) put its footprint at {{ site.footprint }} grams of CO<sub>2</sub>e</a>.
 
-Prior measurements have put it as high as 1.40 grams of CO<sub>2</sub>e</a>.
+My homepage footer shows an equivalent amount of phones charged after about 1,000 visits. I use the [EPA's Greenhouse Gas Equivalencies Calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to get that figure. They explain the smartphone emissions math [here](https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#smartphones).
 
 Here are some ways I've reduced the carbon footprint of my site:
 
-- Switched to web hosting that runs on sustainable energy
-- y
+- [Subset and optimised fonts](#fonts)
+- [Aggressively optimised images](#images)
+- Switched to web hosting that mostly[^1] runs on sustainable energy
+- Minimised the use of imagery and video
+- Cached assets where possible
 
-And here are some ways I plan to reduce it further in the future:
-
-- Pressure for greener hosting
-- Switch hosting
-- Solar-powered server ala Low Tech Magazine
-- More aggressive image optimisation (WEBP)
-- Variable fonts
+See [Sustainable Web Design](https://sustainablewebdesign.org/category/design/) for a full list of best practices which I am trying my best to stick to.
 
 ## Stages
 
@@ -89,6 +86,8 @@ Writing an assumed audience selection frees me up to write (unapologetically) to
 ### Typography
 
 The entire site is set in ITC Franklin Gothic, licensed through Paratype. I use [Utopia](https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12) to calculate and handle a fluid type scale. It goes from Minor Third (1.2) to Perfect Fourth (1.333).
+
+See the [Fonts](#fonts) section for implementation details.
 
 ---
 
@@ -183,6 +182,14 @@ The [Trove](/#trove) section of the homepage is an exception to my Cloudinary se
 
 I add `loading="lazy"` to all images except for those [above-the-fold](https://sia.codes/posts/eleventy-and-cloudinary-images/#lazy-load-offscreen-images-for-performance).
 
+### Fonts
+
+I use WOFF2 across the board. Fonts have been [subset](https://web.dev/reduce-webfont-size/#unicode-range-subsetting) using [pyftsubset](https://github.com/fonttools/fonttools). I can't find a record of what I subset the fonts to exactly, but I'm pretty sure it was Latin characters and a subset of common Unicode ones.
+
+I'll update this section next time I run the subsetting, or when I make the subsetting happen automatically upon build based on what characters are actually used on the site.
+
+See the [Typography](#typography) section for design details.
+
 ### RSS
 
 See [feed.njk](TODO). It loops through my note collection and excludes drafts.
@@ -199,3 +206,5 @@ One [quirk](https://github.com/11ty/eleventy/discussions/2850#discussioncomment-
 ```json
 "eleventyExcludeFromCollections": true;
 ```
+
+[^1]: My site is hosted by Netlify, who use a global CDN. Most of their locations use clean energy (via [AWS and Google Cloud](https://www.netlify.com/sustainability)) but whether or not the _your_ visit to the site is running on clean energy depends on where you are visiting from and at what time.

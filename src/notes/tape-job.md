@@ -4,6 +4,7 @@ date: 2023-08-21
 tags:
   - Food waste
   - Design
+eleventyExcludeFromCollections: true
 ---
 
 I rode past this bus stop shelter ad yesterday:

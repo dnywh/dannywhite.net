@@ -55,7 +55,8 @@ body {
   & p,
   & span,
   & li,
-  & td {
+  & td,
+  & sup {
     > a {
       transition: var(--transition-text-opacity);
       &:hover {
@@ -150,6 +151,13 @@ sub {
   /* Replacing vertical-align with the below since the former affects the line spacing */
   top: 0.4em;
   font-feature-settings: "subs" 1;
+}
+
+/* Footnotes */
+.footnote-ref {
+  background-color: var(--color-swatch-code);
+  padding: 0 0.1em;
+  margin-left: 0.1em;
 }
 
 /* Links to RSS */

@@ -9,13 +9,12 @@
       display: grid;
       gap: 0 var(--gap-md);
 
+      padding-bottom: var(--space-2xl);
+
       @media (--viewport-md) {
         grid-template-columns: repeat(2, 1fr);
         /* Set the side margins here since there won't be bleed on large displays */
         margin: 40vh var(--margin-x) 3rem;
-        /* margin-top: 40vh; */
-        /* display: flex; */
-        /* margin: 0 2.5rem; */
         /* Add some breathing room at bottom */
         padding-bottom: 25vh;
       }
@@ -31,7 +30,7 @@
         /* Set the side margins here since there will be bleed on smaller displayers */
         margin-left: var(--margin-x);
         margin-right: var(--margin-x);
-        /* Cancel these out on larger displays, as it will be set at the parent  */
+        /* Cancel these marginsout on larger displays, as it will be set at the parent  */
         @media (--viewport-md) {
           margin-left: 0;
           margin-right: 0;
@@ -78,16 +77,22 @@
 
         > p {
           /* Style the remaining left-side text */
-
           font-size: var(--step-2);
           letter-spacing: var(--letter-spacing-tight);
           line-height: var(--line-height-tight);
-          margin-bottom: 24px;
+          margin-bottom: var(--step-1);
           /* Keep an optical width */
           max-width: 680px;
 
           > span.highlight {
             background-color: var(--color-swatch-highlight);
+          }
+
+          &.extra {
+            display: none;
+            @media (--viewport-md) {
+              display: inherit;
+            }
           }
         }
       }

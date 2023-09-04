@@ -16,9 +16,10 @@
         This site was handmade using the
         <a href="/colophon/#eleventy">Eleventy</a>
         static site generator. Loading it produced about
-        <a href="/colophon/#carbon-footprint">0.05 grams of CO<sub>2</sub>e</a>.
-        The next 1,000 visitors will accumulate a carbon footprint similar to
-        that of growing a small potato.
+        <a href="/colophon/#carbon-footprint"
+          >{{ site.footprint }} grams of CO<sub>2</sub>e</a
+        >. You, along with the next 1,000 visitors, will accumulate a carbon
+        footprint similar to that of charging 12 phones.
       </p>
       {% else %} {# Show different text #}
       <p>
