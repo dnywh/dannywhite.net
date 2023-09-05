@@ -273,14 +273,28 @@
 
           > h4 {
             font-size: var(--step-1);
+            margin-bottom: 0.55rem;
+          }
 
-            margin-bottom: 0.25rem;
+          > h5 {
+            font-size: var(--step-0);
+            margin-bottom: 0.4rem;
+          }
+
+          > h4 + h5 {
+            margin-top: 1rem;
           }
 
           /* Only vertically space lists that aren't children of other lists */
           /* In other words: give lists vertical space unless they are indented lists */
+          > h2 + ul,
+          > h2 + ol,
+          > h3 + ul,
+          > h3 + ol,
           > p + ul,
-          > ol + ul {
+          > p + ol,
+          > ol + ul,
+          > ul + ol {
             margin-block-start: 1em;
             margin-block-end: 1em;
           }

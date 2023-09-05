@@ -63,7 +63,7 @@ Like Maggie, I use three stages:
 
 Sometimes I will prepend a note with a short explanation of what type of person it is written for. [Here's one](/notes/video-border) example. [Here's](/notes/bash-your-profile) another.
 
-I copied this idea from [Robin Sloan](https://www.robinsloan.com/colophon#assumed-audiences) who got it from [Chris Krycho](https://v4.chriskrycho.com/2018/assumed-audiences.html). Here's Robin explaining (much more eloquently than I could) why assumed audience sections are a good idea:
+I copied this idea from [Robin Sloan](https://www.robinsloan.com/colophon#assumed-audiences) who got it from [Chris Krycho](https://v4.chriskrycho.com/2018/assumed-audiences.html). Here's Robin explaining why assumed audience sections are a good idea, much more eloquently than I could:
 
 <figure class="quote">
   <blockquote>
@@ -71,13 +71,15 @@ I copied this idea from [Robin Sloan](https://www.robinsloan.com/colophon#assume
   </blockquote>
 </figure>
 
-Writing an assumed audience selection frees me up to write (unapologetically) to a specific audience without preamble or watering the whole thing down.
+Writing an assumed audience selection frees me up to write unapologetically to a specific audience without preamble or watering the whole thing down.
 
 ---
 
 ## Design
 
 ### Layout
+
+This is still in flux. Here are the values I use in Utopia at the moment:
 
 - Min: 320px
 - Max: 1280px
@@ -97,9 +99,9 @@ Read on if you're a nerd. It's really just a collection of notes-to-self on how 
 
 ### Eleventy
 
-I use [Eleventy](https://www.11ty.dev) to build and publish my site. I like how flexible and agnostic it is.
+I use [Eleventy](https://www.11ty.dev) to build and publish my site. I'm such a fan of Eleventy that I've written [a bunch of notes about it](/notes/tagged/eleventy).
 
-I'm such a fan of Eleventy that you should read [all my posts tagged with it](/notes/tagged/eleventy).
+Assume everything build-related in this colophon is heavily Eleventy-flavoured.
 
 #### Collections
 
@@ -119,7 +121,7 @@ It's a simple brute-force way to exclude the file anywhere it might be looped th
 
 ### Trove
 
-The [Trove](/#trove) is a pinboard-esque section on my homepage that shows off what I've 'pinned' lately from around the web. I use [Raindrop](https://raindrop.io) to collect these 'pins' and their [API](https://developer.raindrop.io) to pull them into my site. I use the [eleventy-fetch plugin](https://www.11ty.dev/docs/plugins/fetch/) to cache these pins.
+The [Trove](/#trove) is a pinboard-esque section on my homepage that shows off what I've 'pinned' lately from around the web. I use [Raindrop](https://raindrop.io) to collect these 'pins' and their [API](https://developer.raindrop.io) to pull them into my site. I use the [eleventy-fetch](https://www.11ty.dev/docs/plugins/fetch/) plugin to cache these pins.
 
 In terms of keeping the site 'fresh' with Trove data: I no longer use Netlify's [Scheduled Functions](https://www.raymondcamden.com/2022/02/04/an-early-look-at-netlify-scheduled-functions) and instead just use this tension as healthy pressure to regularly update the site (thus refreshing Trove data along the way). I made a macOS and iOS [Shortcut](https://alejandromp.com/blog/netlify-deployment-with-ios-shortcut/) for manual builds using Netlify's Build Hooks for the scenario where I want to force a rebuild.
 
@@ -127,7 +129,7 @@ See the [Images](#images) section of this page for how I process pinned imagery.
 
 ### Markdown
 
-I use Markdown for anything longform on this site: pretty much just [notes](/notes) and this page here, Colophon. I call this content type `article` in code.
+I use Markdown for anything longform on this site: pretty much just [notes](/notes) and this page here. I refer to this content type as `article` in code.
 
 ### Blockquotes
 
@@ -172,11 +174,11 @@ https://www.youtube.com/watch?v=_ByEBjf9ktY&t=180s
 That will be turned into a nicely formatted `<iframe>` during build.
 ```
 
-I've turned onPaul Irish’s [Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed) method for the YouTube embed.
+I've turned on Paul Irish’s [Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed) method for the YouTube embed.
 
 ### Images
 
-Aside from minor ones like favicons, I host most images on Cloudinary. I use [shortcodes.js]({{ site.repoUrl }}/blob/main/src/helpers/shortcodes.js) to process [responsive image sizes](https://web.dev/learn/design/responsive-images/#sizes) and prepend image URLs with my Cloudinary URL.
+Aside from minor images like favicons, I host most of them on Cloudinary. I use [shortcodes.js]({{ site.repoUrl }}/blob/main/src/helpers/shortcodes.js) to process [responsive image sizes](https://web.dev/learn/design/responsive-images/#sizes) and prepend image URLs with my Cloudinary URL.
 
 The [Trove](/#trove) section of the homepage is an exception to my Cloudinary setup. Instead, I use the [eleventy-img plugin](https://www.11ty.dev/docs/plugins/image/) to download, reformat, and resize Trove image via the `troveImg` shortcode. I like this method because eleventy-img will generate HTML according to what image sizes are available. For example: if the original image for a Trove item is lower resolution than one or more of my desired widths, it will only [generate HTML](<https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)>) for the ones it can supply.
 

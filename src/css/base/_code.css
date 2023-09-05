@@ -22,7 +22,7 @@ pre {
   background: none;
   /* text-shadow: 0 1px white; */
   font-family: var(--font-family-code);
-  font-size: 0.9375rem; /* 15px */
+
   text-align: left;
   white-space: pre-wrap; /* was `pre` but I want the code to wrap */
   word-spacing: normal;
@@ -65,10 +65,11 @@ code ::selection {
 
 /* Code blocks */
 pre {
-  padding: 1.5rem 1rem;
-  margin: 1.5rem 0;
+  padding: var(--space-m);
+  margin: var(--space-s) 0;
   overflow: scroll;
   max-width: 100%;
+  font-size: var(--step--1);
 }
 
 :not(pre) > code,
@@ -81,6 +82,7 @@ pre {
   padding: 0.3em 0.2em;
   border-radius: 0.3em;
   white-space: normal;
+  font-size: smaller;
 }
 
 .token.comment,

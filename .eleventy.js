@@ -180,9 +180,9 @@ module.exports = function (eleventyConfig) {
 
     // Collections
     // Make a collection of raindrops sorted by date saved, not date created
-    const raindrops = require("./src/_data/trove.js");
-    eleventyConfig.addCollection('raindrops', async () => {
-        const data = await raindrops();
+    const trove = require("./src/_data/trove.js");
+    eleventyConfig.addCollection('trove', async () => {
+        const data = await trove();
         // Access the items within the child array
         const items = data.items
         // Sort by date
