@@ -187,11 +187,11 @@ img {
   > ul.tiled {
     display: grid;
     gap: 0 var(--grid-gutter);
+    grid-template-rows: masonry;
     @media (--viewport-md) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
       /* minmax is necessary to stop long strings from overriding. Previously: */
       /* grid-template-columns: repeat(4, 1fr); */
-      grid-template-rows: masonry;
     }
 
     > li {

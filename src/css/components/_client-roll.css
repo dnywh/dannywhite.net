@@ -3,27 +3,30 @@
   /* grid-row: 2; */
 
   background-color: rgba(0, 0, 0, 0.06);
-  padding: 2.5rem 0;
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   overflow: hidden;
-  gap: 2.5rem;
 
-  /* Cancel out paragraph margin above it whilst also setting a general top and bottom margin*/
+  padding: var(--space-l) 0;
+  gap: 5vb;
+
+  /* Cancel out paragraph margin above it whilst also setting a general top and bottom margin */
   margin: calc((-1 * var(--step-1)) + var(--space-l)) 0 var(--space-l);
 
   @media (--viewport-md) {
-    justify-content: space-between; /* TODO use `center` when VH is small, or clamp it between a range */
-    padding: 5vh 0;
+    /* TODO use `center` when VH is small, or clamp it between a range */
+    /* justify-content: space-between; */
+    /* padding: 5vh 0; */
     margin: 0.75rem 0 0 0; /* Should visually equal the margin-top of the corresponding p tag */
     grid-column: 2;
 
     position: sticky;
-
+    gap: 5vb;
     top: 25vh; /* Should be calculated from height of the roll to be visually centered */
     height: 50vh;
+    padding: 0;
     /* TODO: Use clamp for these two values to always keep a nice visual balance */
   }
 
@@ -57,6 +60,7 @@
     /* https://ryanmulligan.dev/blog/css-marquee/ */
     --duration-base: 270s;
     --gap: calc(0.66 * var(--step-5));
+    display: flex;
 
     /* Set custom offsets and tweaks for each line */
     &:nth-child(1) {
@@ -68,20 +72,12 @@
       --duration: calc(var(--duration-base) * 0.85);
     }
     &:nth-child(3) {
-      display: flex;
       margin-left: -100vw;
       --duration: calc(var(--duration-base) * 1.08);
     }
     &:nth-child(4) {
-      /* Hide by default on smaller displays */
-      display: none;
-
-      /* TODO: candidate for container queries */
-      @media (min-height: 70rem) {
-        display: flex;
-        margin-left: -300vw;
-        --duration: calc(var(--duration-base) * 1.18);
-      }
+      margin-left: -50vw;
+      --duration: calc(var(--duration-base) * 1.18);
     }
 
     /* overflow: hidden; */
@@ -102,7 +98,7 @@
       display: flex;
       flex-shrink: 0;
       align-items: center;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       justify-content: center;
       gap: var(--gap);
 
@@ -142,6 +138,8 @@
           /* Optical offset */
           position: relative;
           top: calc(0.33 * (var(--step-5) - var(--step-4)));
+          /* Reset background */
+          background-color: transparent;
         }
       }
     }

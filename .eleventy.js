@@ -111,10 +111,7 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(now).toFormat('X');
     });
 
-    // Last build date 'X hours ago'
-    // https://www.stefanjudis.com/snippets/how-to-display-the-build-date-in-eleventy/#edit%3A-eleventy-1.0-comes-with-%60addglobaldata%60
-    // TODO: convert from date to relative time
-    // https://writingjavascript.com/format-5-days-ago-localized-relative-date-strings-in-a-few-lines-with-native-javascript
+    // Last build date
     eleventyConfig.addGlobalData("siteGeneratedDate", () => {
         let now = new Date();
         return DateTime.fromJSDate(now).toFormat('EEEE, MMMM d');

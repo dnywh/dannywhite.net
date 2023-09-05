@@ -68,7 +68,6 @@
         {% for tag in tags %}{% if tag === "note" %}
             <aside class="meta">
                 <section class="tagged">
-                    {# TODO Tagged with: #}
                     <h3 class="small">Tagged with</h3>
                     <ul class="tag-list small">
                     {% for tag in tags %}
@@ -83,7 +82,6 @@
                 {# It requires 'related' in frontmatter #}
                 {% if related %}
                 <section class="related">
-                {# TODO: Manual related articles: #}
                 <h3 class="small">See also</h3>
                     <ul>
                         {% for relatedItemSlug in related %}
@@ -107,7 +105,6 @@
                     {# NOTE: this is brittle. The ul still shows for items who are the only users of a tag. In other words: I should set a rule to never implement a new tag unless it is used 2+ times #}
                     {# This also adds a solid 1s to my build time #}
                      {# {% if tags.length > 1 %} #}
-                     {# TODO: Automatic related articles: #}
                     {# <ul> #}
                     {# Skip the first "note" tag and jump to the real 'first' tag; the one first listed in frontmatter #}
                     {# {% for tag in tags %}

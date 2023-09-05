@@ -4,13 +4,13 @@ subtitle: A not-so-brief summary of how this website works.
 layout: "layouts/article.njk"
 ---
 
-This website is entirely open source. Check it out on [GitHub](TODO). Read on for details.
+This website is entirely open source. Check it out on [GitHub]({{ site.repoUrl }}). Read on for details.
 
 ## Carbon footprint
 
 I regularly estimate my website's carbon footprint using the [Website Carbon Calculator](https://www.websitecarbon.com). The [most recent calculation](https://www.websitecarbon.com/website/dannywhite-org/) put its footprint at {{ site.footprint }} grams of CO<sub>2</sub>e</a>.
 
-My homepage footer shows an equivalent amount of phones charged after about 1,000 visits. I use the [EPA's Greenhouse Gas Equivalencies Calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to get that figure. They explain the smartphone emissions math [here](https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#smartphones).
+My homepage footer shows an an equivalent amount of unique visits per phone charge. I use the [EPA's Greenhouse Gas Equivalencies Calculator](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) to get that figure. They explain the smartphone emissions math [here](https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#smartphones).
 
 Here are some ways I've reduced the carbon footprint of my site:
 
@@ -176,7 +176,7 @@ I've turned onPaul Irish’s [Lite YouTube Embed](https://github.com/paulirish/l
 
 ### Images
 
-Aside from minor ones like favicons, I host most images on Cloudinary. I use [shortcodes.js](TODO) to process [responsive image sizes](https://web.dev/learn/design/responsive-images/#sizes) and prepend image URLs with my Cloudinary URL.
+Aside from minor ones like favicons, I host most images on Cloudinary. I use [shortcodes.js]({{ site.repoUrl }}/blob/main/src/helpers/shortcodes.js) to process [responsive image sizes](https://web.dev/learn/design/responsive-images/#sizes) and prepend image URLs with my Cloudinary URL.
 
 The [Trove](/#trove) section of the homepage is an exception to my Cloudinary setup. Instead, I use the [eleventy-img plugin](https://www.11ty.dev/docs/plugins/image/) to download, reformat, and resize Trove image via the `troveImg` shortcode. I like this method because eleventy-img will generate HTML according to what image sizes are available. For example: if the original image for a Trove item is lower resolution than one or more of my desired widths, it will only [generate HTML](<https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)>) for the ones it can supply.
 
@@ -192,7 +192,7 @@ See the [Typography](#typography) section for design details.
 
 ### RSS
 
-See [feed.njk](TODO). It loops through my note collection and excludes drafts.
+See [feed.njk]({{ site.repoUrl }}/blob/main/src/feed.njk). It loops through my note collection and excludes drafts.
 
 ### CSS
 
@@ -201,7 +201,7 @@ Once a member of the Sass cult, I now process all my CSS with LightningCSS. I do
 - Regular CSS now does a lot of the things we used to use Sass for (such as variables and nesting)
 - LightningCSS fills in the gaps more elegantly
 
-One [quirk](https://github.com/11ty/eleventy/discussions/2850#discussioncomment-5254892) on Eleventy is that it might process the CSS as a collection. That's why I have a [css.json](TODO) file with the following:
+One [quirk](https://github.com/11ty/eleventy/discussions/2850#discussioncomment-5254892) on Eleventy is that it might process the CSS as a collection. That's why I have a [css.json]({{ site.repoUrl }}/blob/main/src/css/css.json) file with the following:
 
 ```json
 "eleventyExcludeFromCollections": true;
