@@ -41,10 +41,7 @@
         <span class="highlight">{{ me.available }}</span>.
       </p>
       {# Force a space to prevent minifier from muddying up sentence #}
-      <p>
-        Sound like it could be a fit?&#32;{% include
-      "partials/email-lets-chat.html" %}.
-      </p>
+      <p>Sound like it could be a fit?&#32;{% include "partials/email-lets-chat.html" %}.</p>
     </div>
   </header>
   {% include "partials/site-header.html" %}
@@ -74,7 +71,7 @@
               <a href="{{ item.url }}">
                 {% if item.img %}
                   {# Use our shortcode to create the most
-                                                                                                                                                                                                                                                                                                                                                appropriate image based on resolution, availability #}
+                                                                                                                                                                                                                                                                                                                                                                  appropriate image based on resolution, availability #}
                   {% set alt =
             "The hero image for " + item.name + "." %}
                   {% projectImage item.img,
@@ -147,7 +144,7 @@
               <a href="{{ item.link }}" target="_blank" rel="noopener">
                 {% if item.type == "image" %}
                   {# Use our shortcode to create the
-                                                                                                                                                                                                                                                                                                                                                most appropriate image based on resolution, availability #}
+                                                                                                                                                                                                                                                                                                                                                                  most appropriate image based on resolution, availability #}
                   {% troveImage item.cover, item.title %}
                 {% else %}
                   <h3>{{ item.title }}</h3>
