@@ -1,0 +1,273 @@
+.home {
+  > body {
+    .crawl-header {
+      margin: 0;
+      /* Start slightly downward */
+      margin-top: 35vh;
+      max-width: var(--grid-max-width);
+
+      display: grid;
+      gap: 0 var(--gap-md);
+
+      padding-bottom: var(--space-2xl);
+
+      @media (--viewport-md) {
+        grid-template-columns: repeat(2, 1fr);
+        /* Set the side margins here since there won't be bleed on large displays */
+        margin: 40vh var(--margin-x) 3rem;
+        /* Add some breathing room at bottom */
+        padding-bottom: 25vh;
+      }
+
+      /* TODO: Do this media query dynamically */
+      /* min-width: calc(1800px + var(--margin-x)) */
+      @media (min-width: calc(1960px)) {
+        margin: 35vh auto 3rem;
+      }
+
+      .header-text {
+        grid-column: 1;
+        /* Set the side margins here since there will be bleed on smaller displayers */
+        margin-left: var(--margin-x);
+        margin-right: var(--margin-x);
+        /* Cancel these marginsout on larger displays, as it will be set at the parent  */
+        @media (--viewport-md) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        /* margin-trim: block; */
+
+        /* Set the fade-in animations  */
+        /* Handle everything but the first paragraph */
+        &:not(:first-of-type) {
+          opacity: 0;
+          animation: var(--fadein-duration) ease 2s forwards fadein;
+        }
+        /* Now handle first paragraph */
+        /* It needs to be handled separately as it's split up into two parts */
+        &:first-of-type {
+          margin-bottom: 4rem;
+          > p {
+            /* Style first paragraph */
+            &:nth-child(1) {
+              font-size: var(--step-4);
+              letter-spacing: var(--letter-spacing-xtight);
+              line-height: var(--line-height-xtight);
+              font-weight: 500;
+            }
+            > span {
+              opacity: 0;
+              &:nth-child(1) {
+                /* Set an earlier delay here since we want it to appear first */
+                animation: var(--fadein-duration) ease 0.25s forwards fadein;
+              }
+              &:nth-child(2) {
+                animation: var(--fadein-duration) ease 1s forwards fadein;
+              }
+            }
+          }
+        }
+
+        &:last-of-type {
+          @media (--viewport-md) {
+            margin-top: 24vh;
+          }
+        }
+
+        > p {
+          /* Style the remaining left-side text */
+          font-size: var(--step-2);
+          letter-spacing: var(--letter-spacing-tight);
+          line-height: var(--line-height-tight);
+          margin-bottom: var(--step-1);
+          /* Keep an optical width */
+          max-width: 680px;
+
+          > span.highlight {
+            background-color: var(--color-swatch-highlight);
+          }
+
+          &.extra {
+            display: none;
+            @media (--viewport-md) {
+              display: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    .site-header {
+      /* Override existing explicit height for accentuated sticky header effect */
+      /* height: 38vh; */
+      /* height: 20rem; */
+      @media (--viewport-md) {
+        /* height: 48vh; */
+        /* Visually match the interstitial */
+        height: var(--margin-y);
+      }
+    }
+
+    .interstitial {
+      margin-bottom: var(--margin-y);
+    }
+
+    .home-section {
+      margin-bottom: var(--spacing-margin-bottom);
+
+      > .page-header {
+        > h2 {
+          /* Override .page-header standard styling just for home */
+          font-size: var(--step-4);
+          letter-spacing: var(--letter-spacing-xtight);
+        }
+      }
+
+      /* Section-specific styles that override more global styles in layout.css */
+      > .inner {
+        /* Notes */
+        > ul.notes {
+          /* Fade off end part */
+          /* https://stackoverflow.com/a/51557089/2009441 */
+          mask-image: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
+        }
+        > ul.notes + p {
+          margin-top: 5rem;
+        }
+        /* Projects */
+        > ul.projects {
+          /* gap: 5rem var(--gap-md); */
+          > li {
+            @media (--viewport-md) {
+              grid-column: span 2;
+            }
+            > a {
+              > div {
+                > h3 {
+                  font-size: var(--step-1);
+                }
+                > p {
+                  /* Style status paragraph */
+                  &:last-of-type {
+                    color: var(--color-text-quaternary);
+                    font-size: var(--step--1);
+                  }
+                }
+              }
+            }
+            &.featured {
+              /* Reverse order of every second row */
+              &:nth-of-type(even) {
+                > a {
+                  > img {
+                    order: 1;
+                  }
+                }
+              }
+              /* Style inner */
+              > a {
+                > img {
+                  margin-bottom: 1rem;
+                }
+                > div {
+                  > h3 {
+                    /* font-size: var(--step-2); */
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        /* Trove */
+        > ul.trove {
+          /* Make two-column grid even on tiny breakpoints */
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          /* Get another column on smallish breakpoints */
+          @media (--viewport-sm) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+          /* Take on the normal grid columns (4) from layout.css */
+          @media (--viewport-md) {
+            grid-template-columns: inherit;
+          }
+          /* And then get progressively bigger as the viewport width increases */
+          @media (--viewport-lg) {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+          }
+          @media (--viewport-xl) {
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+          }
+          /* Fade off end part */
+          /* https://stackoverflow.com/a/51557089/2009441 */
+          mask-image: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));
+          /* Set a negative margin to visually compensate for the footer */
+          margin-bottom: calc(-0.5 * var(--margin-y));
+          /* Style inside */
+
+          > li {
+            /* Only show a select few items unless on a bigger breakpoint */
+            /* TODO: is there a way to limit the amount of <li> items being rendered in HTML in the first place, by breakpoint? */
+            &:nth-of-type(1n + 9) {
+              display: none;
+            }
+            @media (--viewport-md) {
+              &:nth-of-type(1n + 9) {
+                display: list-item;
+              }
+            }
+            /* TODO: progressively show more */
+            /* @media (--viewport-sm) {
+              &:nth-of-type(1n + 5) {
+                display: list-item;
+              }
+            }
+            @media (--viewport-md) {
+              &:nth-of-type(1n + 19) {
+                display: list-item;
+              }
+            }
+            @media (--viewport-lg) {
+              &:nth-of-type(1n + 99) {
+                display: list-item;
+              }
+            } */
+
+            > a {
+              & h3,
+              & p {
+                margin: 0;
+              }
+              & p {
+                margin-top: 0.25rem;
+                /* Style */
+                color: var(--color-text-secondary);
+                font-size: var(--step--1);
+                /* Truncate text */
+                /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+
+              /* Customise the outbound slightly for this use-case */
+              .outbound {
+                margin-top: 0.5rem;
+                /* Add flex so the following truncation works */
+                display: flex;
+                /* Add truncation to inner URL */
+                > span {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

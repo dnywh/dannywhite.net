@@ -6,7 +6,11 @@ const inlineThingsOnlyToConvert = document.querySelectorAll(".distance.inline")
 // Get radio form
 const radioButtons = document.querySelectorAll('input[name="unit-of-measurement"]');
 // Set a default unit
-let unit = "km"
+// TODO: Set to KM unless the visitor is prefers US
+// This currently doesn't show MI by default on page load, if that is true
+// const userLocale = navigator.languages[0];
+// let unit = (userLocale === "en-US") ? "mi" : "km"
+let unit = "km";
 
 // Prepare function for updating the fieldset
 const updateRadioButtons = () => {
@@ -118,8 +122,6 @@ const updateTextOnPage = (oldUnit, newUnit) => {
         })
     }
 }
-
-
 
 // Prepare main function for swapping between units
 const switchUnit = (selectedUnit) => {

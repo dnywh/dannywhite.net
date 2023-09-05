@@ -1,0 +1,88 @@
+:root {
+  /* 
+  On light ('light mode') 
+  */
+  /* Text */
+  --color-text-primary-on-light: rgba(40, 32, 16, 0.95);
+  --color-text-secondary-on-light: hsla(0, 0%, 28%, 1);
+  --color-text-tertiary-on-light: hsla(0, 0%, 42%, 1);
+  --color-text-quaternary-on-light: hsla(0, 0%, 70%, 1);
+  /* Borders and strokes */
+  --color-border-primary-on-light: var(--color-text-primary);
+  --color-border-secondary-on-light: hsla(0, 0%, 88%, 1);
+  /* Backgrounds and swatches */
+  --color-background-on-light: white;
+  --color-background-highlight-on-light: rgb(249, 249, 249);
+  --color-swatch-highlight-on-light: hsla(36, 100%, 92%, 1);
+  --color-swatch-code-on-light: #f5f2f0;
+
+  /* 
+  On dark ('dark mode')
+  */
+  /* Text */
+  --color-text-primary-on-dark: #f3ffa6;
+  --color-text-secondary-on-dark: #f3ffa6;
+  --color-text-tertiary-on-dark: #f3ffa687;
+  --color-text-quaternary-on-dark: #f3ffa687;
+  /* Borders and strokes */
+  --color-border-primary-on-dark: var(--color-text-primary);
+  --color-border-secondary-on-dark: #f3ffa683;
+  /* Backgrounds and swatches */
+  --color-background-on-dark: #161a0d;
+  --color-background-highlight-on-dark: rgba(243, 255, 166, 0.1);
+  --color-swatch-highlight-on-dark: rgba(243, 255, 166, 0.05);
+  --color-swatch-code-on-dark: var(--color-background-highlight-on-dark);
+
+  /* 
+  Set default colors (to 'on light') 
+  */
+  --color-mode: "light";
+  --color-background: var(--color-background-on-light);
+  --color-background-highlight: var(--color-background-highlight-on-light);
+  --color-text-primary: var(--color-text-primary-on-light);
+  --color-text-secondary: var(--color-text-secondary-on-light);
+  --color-text-tertiary: var(--color-text-tertiary-on-light);
+  --color-text-quaternary: var(--color-text-quaternary-on-light);
+  --color-border-primary: var(--color-border-primary-on-light);
+  --color-border-secondary: var(--color-border-secondary-on-light);
+  --color-swatch-highlight: var(--color-swatch-highlight-on-light);
+  --color-swatch-code: var(--color-swatch-code-on-light);
+}
+
+/* Light and dark mode handling */
+/* https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/ */
+/* Make changes if user prefers dark color scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Change the color mode from which JS can hook on to */
+    --color-mode: "dark";
+  }
+
+  /* Prevent the default from overriding a new user preference */
+  :root:not([data-user-color-scheme]) {
+    --color-background: var(--color-background-on-dark);
+    --color-background-highlight: var(--color-background-highlight-on-dark);
+    --color-text-primary: var(--color-text-primary-on-dark);
+    --color-text-secondary: var(--color-text-secondary-on-dark);
+    --color-text-tertiary: var(--color-text-tertiary-on-dark);
+    --color-text-quaternary: var(--color-text-quaternary-on-dark);
+    --color-border-primary: var(--color-border-primary-on-dark);
+    --color-border-secondary: var(--color-border-secondary-on-dark);
+    --color-swatch-highlight: var(--color-swatch-highlight-on-dark);
+    --color-swatch-code: var(--color-swatch-code-on-dark);
+  }
+}
+/* Repeats the above */
+/* Keep an eye on a JS-set attribute and change if necessary */
+[data-user-color-scheme="dark"] {
+  --color-background: var(--color-background-on-dark);
+  --color-background-highlight: var(--color-background-highlight-on-dark);
+  --color-text-primary: var(--color-text-primary-on-dark);
+  --color-text-secondary: var(--color-text-secondary-on-dark);
+  --color-text-tertiary: var(--color-text-tertiary-on-dark);
+  --color-text-quaternary: var(--color-text-quaternary-on-dark);
+  --color-border-primary: var(--color-border-primary-on-dark);
+  --color-border-secondary: var(--color-border-secondary-on-dark);
+  --color-swatch-highlight: var(--color-swatch-highlight-on-dark);
+  --color-swatch-code: var(--color-swatch-code-on-dark);
+}

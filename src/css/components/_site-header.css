@@ -1,0 +1,114 @@
+.site-header {
+  /* Set an explicit height for sticky header effect */
+  /* height: 28vh;
+  @media (--viewport-md) {
+    height: 18vh;
+  } */
+
+  /* Set an explicit height for sticky header effect */
+  height: max(5.5rem, 24vh);
+  @media (--viewport-md) {
+    height: max(5.5rem, 18vh);
+  }
+
+  /* Inner contents are set apart to allow for sticky header effect */
+  > header {
+    /* Set basic margins */
+    margin-left: var(--grid-gutter);
+    margin-right: var(--grid-gutter);
+    /* Match this on top too */
+    margin-top: var(--grid-gutter);
+    /* Style */
+    /* border-top: 1px solid var(--color-border-primary); */
+    /* padding-top: 1.5rem; */
+
+    /* padding-bottom: 3.5rem; */
+    /* padding-bottom: 2rem; */
+
+    /* Borders */
+    border-top: var(--stroke-thick) solid var(--color-border-primary);
+    /* box-shadow for second visual border */
+    box-shadow: inset 0 4px 0 0 var(--color-background),
+      inset 0 5px 0 0 var(--color-border-primary);
+    /* Increase padding-top to take into account above border */
+    padding-top: calc(5px + 1.5rem);
+    /* Match at bottom */
+    padding-bottom: 1.5rem;
+
+    position: sticky;
+    top: var(--grid-gutter);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Text */
+    color: var(--color-text-tertiary);
+    @media (--viewport-md) {
+      color: var(--color-text-quaternary);
+    }
+
+    .left {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      /* Take full width on smaller breakpoints */
+      justify-content: space-between;
+      width: 100%;
+      @media (--viewport-md) {
+        justify-content: flex-start;
+        width: auto;
+      }
+
+      > a {
+        &:hover {
+          > svg {
+            opacity: 0.5;
+          }
+        }
+        > svg {
+          width: var(--step-4);
+          height: auto;
+          display: block;
+          transition: var(--transition-text-opacity);
+
+          > path {
+            fill: var(--color-text-primary);
+          }
+        }
+      }
+      > span {
+        /* Show the year and a smiley face */
+        display: flex;
+        align-items: center;
+        gap: 0.15rem;
+        &:before {
+          font-size: larger;
+          font-weight: bolder;
+          /* Show ☺︎ character without converting to emoji */
+          /* https://r12a.github.io/app-conversion/ */
+          content: "\263A \FE0E";
+        }
+      }
+    }
+
+    /* Animate any metadata if returning back to homepage */
+    & span {
+      opacity: 0;
+      animation: var(--fadein-duration) ease forwards fadein;
+      /* // Get slashed zero to work */
+      font-feature-settings: "zero";
+      font-variant-numeric: slashed-zero;
+    }
+
+    /* Right-side only */
+    > span {
+      /* Only show on larger screens */
+      display: none;
+      @media (--viewport-md) {
+        display: block;
+      }
+    }
+  }
+}

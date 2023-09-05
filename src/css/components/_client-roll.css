@@ -1,0 +1,157 @@
+.client-roll {
+  grid-column: 1;
+  /* grid-row: 2; */
+
+  background-color: rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  padding: var(--space-l) 0;
+  gap: 5vb;
+
+  /* Cancel out paragraph margin above it whilst also setting a general top and bottom margin */
+  margin: calc((-1 * var(--step-1)) + var(--space-l)) 0 var(--space-l);
+
+  @media (--viewport-md) {
+    /* TODO use `center` when VH is small, or clamp it between a range */
+    /* justify-content: space-between; */
+    /* padding: 5vh 0; */
+    margin: 0.75rem 0 0 0; /* Should visually equal the margin-top of the corresponding p tag */
+    grid-column: 2;
+
+    position: sticky;
+    gap: 5vb;
+    top: 25vh; /* Should be calculated from height of the roll to be visually centered */
+    height: 50vh;
+    padding: 0;
+    /* TODO: Use clamp for these two values to always keep a nice visual balance */
+  }
+
+  /* Handle fade-in */
+  opacity: 0.35;
+  --marquee-transition: opacity 2s ease;
+  transition: var(--marquee-transition), background-color 0.5s ease;
+
+  &.visible {
+    background-color: var(--color-swatch-highlight);
+    opacity: 1;
+
+    .marquee {
+      opacity: 1;
+
+      .marquee-content {
+        /* Start playing! */
+        /* animation-delay: 3s; */
+        animation-play-state: running;
+      }
+    }
+  }
+
+  .marquee {
+    /* Handle fade-in */
+    opacity: 0;
+    /* Reenable marquee contents when visible is triggered */
+    transition: var(--marquee-transition);
+
+    /* Style marquee animation */
+    /* https://ryanmulligan.dev/blog/css-marquee/ */
+    --duration-base: 270s;
+    --gap: calc(0.66 * var(--step-5));
+    display: flex;
+
+    /* Set custom offsets and tweaks for each line */
+    &:nth-child(1) {
+      margin-left: 0;
+      --duration: calc(var(--duration-base) * 1);
+    }
+    &:nth-child(2) {
+      margin-left: -200vw;
+      --duration: calc(var(--duration-base) * 0.85);
+    }
+    &:nth-child(3) {
+      margin-left: -100vw;
+      --duration: calc(var(--duration-base) * 1.08);
+    }
+    &:nth-child(4) {
+      margin-left: -50vw;
+      --duration: calc(var(--duration-base) * 1.18);
+    }
+
+    /* overflow: hidden; */
+    /* Stop text from being selectable */
+    user-select: none;
+    /*  */
+    display: flex;
+    gap: var(--gap);
+    /* Must define a width, using fit-content because it fluctuates depending on string, breakpoint */
+    width: fit-content;
+
+    /* background: rgba(17, 0, 255, 0.078); */
+
+    .marquee-content {
+      /* background: rgba(255, 0, 0, 0.1); */
+
+      /* Style marquee */
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      /* justify-content: space-between; */
+      justify-content: center;
+      gap: var(--gap);
+
+      /* Start animation */
+      animation: var(--duration) linear infinite reverse scroll; /* or reverse instead of normal */
+      animation-play-state: paused;
+      /* animation-delay: 3s; */
+
+      @media (prefers-reduced-motion: reduce) {
+        animation-play-state: paused;
+      }
+
+      > li {
+        display: flex;
+        flex-shrink: 0;
+        /* align-items: baseline; */
+
+        gap: calc(0.165 * var(--step-5)); /* The gap between image and text */
+
+        /* background: rgb(221, 255, 193); */
+
+        font-size: var(--step-5);
+        font-weight: 500;
+        letter-spacing: var(--letter-spacing-xtight);
+        line-height: var(--line-height-single-line);
+
+        /* Mix colors instead of opacity in case tracking causes overlap */
+        color: color-mix(
+          in srgb,
+          var(--color-swatch-highlight) 20%,
+          var(--color-text-primary)
+        );
+
+        > img {
+          width: var(--step-4);
+          height: var(--step-4);
+          /* Optical offset */
+          position: relative;
+          top: calc(0.33 * (var(--step-5) - var(--step-4)));
+          /* Reset background */
+          background-color: transparent;
+        }
+      }
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-100% - var(--gap)));
+      }
+    }
+  }
+}

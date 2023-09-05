@@ -5,8 +5,6 @@ tags:
   - p5.js
   - JavaScript
   - Web
-  - guide
-subject: p5.js
 ---
 
 [`saveCanvas()`](https://p5js.org/reference/#/p5/saveCanvas) is purpose-built for this. Here are some ways to use it:

@@ -4,8 +4,6 @@ date: 2021-01-04
 tags:
   - CSS
   - Web
-  - guide
-subject: CSS
 ---
 
 Setting margin and/or padding won't work, as `td` is `inline`. Setting `td` to `display: block` ruins the table layout.

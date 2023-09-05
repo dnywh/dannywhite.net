@@ -4,8 +4,6 @@ date: 2020-12-25
 tags:
   - JavaScript
   - Intersection Observer
-  - guide
-subject: JavaScript
 audience: People already comfortable writing JavaScript and who have experience using the Intersection Observer API.
 ---
 

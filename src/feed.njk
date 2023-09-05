@@ -16,16 +16,16 @@
     <link>{{ metadata.url }}</link>
     <description>{{ site.subtitle }}</description>
     <language>en</language>
-    {%- for post in collections.note | reverse %}
-        {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-        <item>
-            <title>{{ post.data.title }}</title>
-            <link>{{ absolutePostUrl }}</link>
-            <description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
-            <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-            <dc:creator>{{ site.title }}</dc:creator>
-            <guid>{{ absolutePostUrl }}</guid>
-        </item>
+    {%- for note in collections.note | reverse %}
+      {% set absoluteUrl %}{{ note.url | url | absoluteUrl(metadata.url) }}{% endset %}
+      <item>
+          <title>{{ note.data.title }}</title>
+          <link>{{ absoluteUrl }}</link>
+          <description>{{ note.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
+          <pubDate>{{ note.date | dateToRfc822 }}</pubDate>
+          <dc:creator>{{ site.title }}</dc:creator>
+          <guid>{{ absoluteUrl }}</guid>
+      </item>
     {%- endfor %}
   </channel>
 </rss>

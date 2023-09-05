@@ -1,0 +1,156 @@
+{% extends "layouts/base.njk" %}
+
+{% block bodyContent %}
+
+{% include "partials/site-header.html" %}
+
+{# Only include 'breadcrumb' second header if this is a note #}
+{% for tag in tags %}{% if tag === "note" %}
+    <header class="page-header">
+        <h2><a href="/notes">Notes</a></h2>
+    </header>
+{% endif %}{% endfor %}
+
+<main>
+    <article>
+        <header>
+            <h1 id="title">{{ title }}</h1>
+           {% if subtitle %}
+            <p>{{ subtitle }}</p>
+            {% endif %}
+        </header>
+
+        {# Only include stage or publish date if this is a note #}
+        {% for tag in tags %}{% if tag === "note" %}
+        <aside class="stage visible">
+        {# https://symbl.cc/en/search/?q=circle #}
+        {# https://css-tricks.com/five-methods-for-five-star-ratings/ #}
+            {# <span>⦿⦿⦿⊙</span> #}
+            <div class="dots" style="--stage: {{ stage }};" aria-label="{{ stage }} out of 3"></div>
+            {# <p>Updated 2 days ago</p> #}
+            {# <p>Published September 2023</p> #}
+            {# <time itemprop="dateCreated datePublished" datetime="{{ date | w3PostDate }}"{{ date | postDate }}</time> #}
+
+            {# textContent falls back to a readable, semantic, default if JavaScript is disabled or relative-date-formatter.js doesn't work  #}
+            {% if modified %}
+                <p>Updated <span class="relative-date" data-iso-date="{{ modified | toISOString }}"><time datetime="{{ modified }}">{{ modified | readableDate }}</time></span></p>
+            {% endif %}
+            <p>Published <time datetime="{{ date }}">{{ date | vagueDate }}</time></p>
+        </aside>
+        {% endif %}{% endfor %}
+
+        {% if audience %}
+        <aside class="audience">
+            <h2 class="small"><a href="/colophon#assumed-audience">Assumed audience</a></h2>
+            <p>{{ audience }}</p>
+        </aside>
+        {% endif %}
+
+        <aside class="left">
+            {% if content | toc %}
+                <section>
+                    {# <h2 class="small">Contents</h2> #}
+                    <nav class="toc">
+                        <ol>
+                        <li><a href="#title">⌃</a></li>
+                        </ol>
+                    </nav>
+                    {{ content | toc | safe }}
+                </section>
+            {% endif %}
+        </aside>
+
+        <div class="article-content">
+            {{ content | safe }}
+        </div>
+        
+        {# Only include this content if is a note #}
+        {% for tag in tags %}{% if tag === "note" %}
+            <aside class="meta">
+                <section class="tagged">
+                    <h3 class="small">Tagged with</h3>
+                    <ul class="tag-list small">
+                    {% for tag in tags %}
+                        {% if tag !== "note" %}
+                            <li><a href="/notes/tagged/{{ tag | slugify }}">{{ tag }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </section>
+
+                {# This is the 'easy' way: manually entering related notes and then linking to them here #}
+                {# It requires 'related' in frontmatter #}
+                {% if related %}
+                <section class="related">
+                <h3 class="small">See also</h3>
+                    <ul>
+                        {% for relatedItemSlug in related %}
+                            {% for note in collections.note %}
+                                {% if note.fileSlug === relatedItemSlug %}
+                                    <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
+                    </section>
+                {% endif %}
+                    {# See also: https://www.raymondcamden.com/2021/09/24/creating-a-manual-related-posts-feature-in-eleventy #}
+
+                    {# A smarter way would be to build a list of related articles based on articles that share the same tags #}
+                    {# Sorted by the amount of tags shared #}
+                    {# But this is tricky because you need to filter out duplicates #}
+                    {# ...and just becaues they share the same tag doesn't mean they are highly relevant #}
+                    {# A simpler solution is to just look at the *first* listed tag (after 'note' like so: #}
+                    {# If there are more tags than just the default "note"... #}
+                    {# NOTE: this is brittle. The ul still shows for items who are the only users of a tag. In other words: I should set a rule to never implement a new tag unless it is used 2+ times #}
+                    {# This also adds a solid 1s to my build time #}
+                     {# {% if tags.length > 1 %} #}
+                    {# <ul> #}
+                    {# Skip the first "note" tag and jump to the real 'first' tag; the one first listed in frontmatter #}
+                    {# {% for tag in tags %}
+                        {% if loop.index === 2 %}
+                            {% for loopedTag, notesWithTag in collections.notesByTag %}
+                                {% if tag === loopedTag %}
+                                        {% for item in notesWithTag | reverse %}
+                                            {% if item.data.title !== title %}
+                                                <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+                                            {% endif %}
+                                        {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                    {% endif %} #}
+                    
+
+                    <section class="subscribe">
+                    {# <p>Subscribe via <a class="outbound rss" href="/feed.xml">RSS</a></p> #}
+                        <h3 class="small">Subscribe</h3>
+                        <p><a class="outbound rss" href="/feed.xml">RSS</a></p>
+                    </section>
+            </aside>
+        {% endif %}{% endfor %}
+    </article>
+</main>
+{% endblock %}
+
+{% block pageJsContent %}
+    {# Only include stage or date information if is a note #}
+    {% for tag in tags %}{% if tag === "note" %}
+    {# Page-specific scripts that depend on DOM elements #}
+        {% set pageJs %}
+            {# Set relative dates #}
+            {% include "js/relative-date-formatter.js" %}
+            {# Fade in/out stage element #}
+            {% include "js/stage-fade.js" %}
+        {% endset %}
+        {# Minify above scripts #}
+        <script>{{ pageJs | jsmin | safe }}</script>
+    {% endif %}{% endfor %}
+    {% if clientJS %}
+        {% for item in clientJS %}
+            <script src="/js/{{ item }}"></script>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

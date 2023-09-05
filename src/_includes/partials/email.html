@@ -61,4 +61,7 @@
   for (var i = 0; i < ucpyah.length; i++)
     document.write(atob(ucpyah[i] + "=="));
 </script>
-<noscript>hi@myname.org</noscript>
+{# Fallback to vague email address if JavaScript is not enabled #}
+<noscript>
+  <a href="mailto:{{ site.publicEmail }}">Email</a>
+</noscript>

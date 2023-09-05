@@ -1,8 +1,6 @@
 ---
 title: "On Deck: June 2022"
 date: 2022-06-30
-tags:
-  - Monthly
 ---
 
 _Inspired by [Jim Nielsen](https://blog.jim-nielsen.com/2022/reading-notes-may/), here’s a shortlist of things I’ve found, read, listened to, or watched over the last month that I think are worth sharing._

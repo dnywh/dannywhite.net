@@ -1,0 +1,85 @@
+/* See also _site-footer.css for more specific styles */
+
+.directory {
+  max-width: var(--grid-max-width);
+  margin: 0 auto;
+
+  /* Match grid and gap from site-wide grid */
+  display: grid;
+  grid-template-columns: var(--grid-template-cols-main);
+  /* Have larger y axis gap for smaller breakpoints */
+  gap: var(--space-xl) var(--space-s-m);
+
+  /* General paragraph styling */
+  & p {
+    margin: 0;
+    font-size: var(--step--1);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--para-gap-sm);
+    /* 
+    > a {
+      text-decoration-color: var(--color-border-primary);
+    } */
+    /* Optical width */
+    max-width: 80ch;
+    @media (--viewport-md) {
+      max-width: 55ch;
+    }
+
+    /* CO2e */
+    & sub {
+      /* color: red; */
+      font-feature-settings: inherit;
+      top: 0.15em;
+    }
+  }
+
+  /* Column styling */
+  & section {
+    /* Trim any paragraph margins */
+    margin-trim: block;
+
+    > h2 {
+      color: var(--color-text-tertiary);
+      margin-bottom: 1rem;
+    }
+    > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > li {
+        font-size: var(--step--1);
+        /* font-size: 1rem; */
+        font-weight: 500;
+        line-height: var(--line-height-tight);
+        letter-spacing: var(--letter-spacing-tight);
+        color: var(--color-text-secondary);
+
+        > a {
+          &.outbound {
+            &:after {
+              margin-left: 0.15rem;
+            }
+          }
+        }
+      }
+    }
+
+    /* Align to grid */
+    grid-column: span 2;
+    &:first-of-type {
+      grid-column: span 4;
+    }
+
+    @media (--viewport-md) {
+      &:first-of-type {
+        grid-column: span 2;
+      }
+
+      &:not(:first-of-type) {
+        grid-column: span 1;
+      }
+    }
+  }
+}

@@ -5,8 +5,6 @@ tags:
   - Eleventy
   - RSS
   - Web
-  - guide
-subject: Eleventy
 ---
 
 There are [plenty](https://bnijenhuis.nl/notes/2021-04-07-creating-a-feed-in-eleventy/) [of](https://learneleventyfromscratch.com/lesson/17.html) [guides](https://obsolete29.com/posts/2020/12/31/rss-a-love-letter-and-walkthrough-for-my-eleventy-site/) on adding an [RSS feed](https://www.11ty.dev/docs/plugins/rss/) to your Eleventy site.

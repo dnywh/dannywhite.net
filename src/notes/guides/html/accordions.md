@@ -4,8 +4,6 @@ date: 2021-01-05
 tags:
   - HTML
   - Web
-  - guide
-subject: HTML
 ---
 
 Using the HTML Details element (`<details>`) is an easy way to add an accordion to a site. It's built-in, well-supported, and easy to use.

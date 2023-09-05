@@ -1,0 +1,81 @@
+/* Styles the toggle that controls light/dark color scheme */
+/* https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/ */
+
+/* Don't show the switch if the user doesn't have JS enabled */
+.no-js .color-switch {
+  display: none;
+}
+
+/* Hide the status label for a11y */
+.visually-hidden {
+  display: block;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(1px);
+  white-space: nowrap;
+  position: absolute;
+}
+
+.color-switch {
+  width: fit-content;
+  height: fit-content;
+
+  @media (--viewport-md) {
+    /* Extra vertical space probably not necessary */
+    margin-bottom: 0;
+  }
+
+  .toggle-button {
+    border: 1px solid var(--color-border-primary);
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .side {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /* Show any paths that might fall out of the container */
+      overflow: visible;
+
+      > svg {
+        /* Show any paths that might fall out of the container */
+        overflow: visible;
+      }
+      /* Set hover states */
+      > svg > path {
+        transition: var(--transition-text-opacity);
+      }
+      &.light:hover {
+        > svg > path {
+          opacity: 0.65;
+        }
+      }
+      &.dark:hover {
+        > svg > path {
+          opacity: 0.5;
+        }
+      }
+    }
+    /* Style */
+    .light {
+      background-color: var(--color-text-primary);
+      > svg > path {
+        fill: var(--color-background);
+      }
+    }
+    .dark {
+      background-color: var(--color-background);
+      > svg > path {
+        fill: var(--color-text-primary);
+      }
+    }
+  }
+}

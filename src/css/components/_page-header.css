@@ -1,0 +1,25 @@
+.page-header {
+  border-top: 1px solid var(--color-border-primary);
+  padding-top: 1rem;
+  /* padding-bottom: clamp(1.5rem, 14vh, 14vh);
+  @media (--viewport-lg) {
+  }
+   */
+  padding-bottom: max(1.5rem, 14vh);
+  @media (--viewport-lg) {
+    padding-bottom: 14rem;
+  }
+
+  > h1,
+  > h2 {
+    line-height: var(--line-height-xtight);
+  }
+
+  > h1 {
+    font-size: var(--step-4);
+  }
+
+  > h2 {
+    font-size: var(--step-3);
+  }
+}

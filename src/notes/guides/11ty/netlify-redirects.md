@@ -3,12 +3,10 @@ title: Create Clean URLs for via Eleventy and Netlify Redirects
 date: 2022-08-11
 description: Using Netlify redirects to clean up Figma portfolio links.
 tags:
-  - eleventy
-  - netlify
-  - figma
+  - Eleventy
+  - Netlify
+  - Figma
   - portfolio
-  - guide
-subject: Eleventy
 ---
 
 Suppose you have a Figma file that serves as your online portfolio. It looks something like this:

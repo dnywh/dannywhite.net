@@ -1,0 +1,43 @@
+/* Distance converter */
+
+/* Only style inline items to be interactive if JS is enabled */
+html:not(.no-js) p .distance {
+  background-color: var(--color-swatch-highlight);
+  box-shadow: 0 0 0 1px var(--color-swatch-highlight); /* Extend the background slightly */
+  transition: var(--transition-text-opacity);
+
+  &:hover {
+    cursor: pointer;
+    opacity: var(--text-opacity-hovered);
+  }
+}
+
+/* Only show distance converter fieldset if JS is enabled */
+.no-js .distance-converter {
+  display: none;
+}
+
+.distance-converter {
+  display: block;
+  margin: 1.5rem 0;
+  > legend {
+    margin-bottom: 0.5rem;
+  }
+  /* padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-width: min-content; */
+  /* Begin custom styles */
+  /* margin-bottom: var(--spacing-sm); */
+  /* border: 1px solid var(--color-border-primary); */
+  /* padding: 0.75rem 1rem; */
+}
+
+input[type="radio"] {
+  appearance: radio;
+  cursor: pointer;
+}
+input[type="radio"] + label {
+  cursor: pointer;
+}

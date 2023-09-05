@@ -1,24 +1,19 @@
-<header>
-  <section class="meta">
-    <span class="small-text">☺ {% year %}</span>
-    <div>
-      <span class="small-text">Last updated {{ siteGeneratedDate }}</span>
-      <span class="small-text"
-        >∙ Edition
-        <a
-          class="edition-link"
-          href="{{ site.repoUrl }}/commits/main"
-          target="_blank"
-          >{{ ISOSiteGeneratedDate }}</a
-        ></span
-      >
+<div class="site-header" id="skip">
+  <header>
+    <div class="left">
+      <a href="/#skip" aria-label="Home"> {% include "partials/logo.svg" %}</a>
+      {# Only show metadata on homepage #} {% if title === "Index" %}<span
+        class="small"
+        ><span>{% year %}</span
+      >{% endif %}
     </div>
-  </section>
-
-  <section class="strip">
-    <a href="/" aria-label="Home">
-      <span class="small-text">{{ site.title }}</span>
-      {% include "partials/logo.svg" %}
-    </a>
-  </section>
-</header>
+    {# Only show metadata on homepage #} {% if title === "Index" %}
+    <span class="small">
+      Last updated {{ siteGeneratedDate }} ∙ Edition
+      <a href="{{ site.repoUrl }}/commits/main" target="_blank" rel="noopener"
+        >{{ ISOSiteGeneratedDate }}</a
+      >
+    </span>
+    {% endif %}
+  </header>
+</div>

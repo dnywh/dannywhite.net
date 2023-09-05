@@ -5,8 +5,6 @@ tags:
   - p5.js
   - JavaScript
   - Web
-  - guide
-subject: p5.js
 ---
 
 Use the [CCapture JavaScript library](https://github.com/spite/ccapture.js) to compile the frames from your p5.js sketch into a webm file, and then convert this webm file to MP4 (or other useful formats) using [FFmpeg](/notes/convert-video).

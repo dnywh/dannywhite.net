@@ -1,15 +1,14 @@
 ---
 title: Bash your profile
 date: 2018-04-07
+modified: 2020-12-25
 tags:
   - Terminal
   - macOS
-  - guide
-subject: Terminal
 audience: People already comfortable using Terminal.
 ---
 
-## Update (December 2020)
+## Update
 
 The default macOS shell has changed from Bash to zsh as of macOS Catalina. This post's advice is _generally_ applicable to zsh but with syntax differences. E.g. `nano .zshenv` instead of the above `nano .bash_profile`.
 

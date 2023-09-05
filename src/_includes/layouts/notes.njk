@@ -1,23 +1,71 @@
 {% extends "layouts/base.njk" %}
 
 {% block bodyContent %}
+{% include "partials/site-header.html" %}
 <main>
-    <header>
-        <h1>{{ title }}</h1>
-        <p>{{ subtitle }}</p>
+    <header class="page-header">
+    {% if tag %}
+        {# Show interactive Notes header only if we're on a tagged page #}
+        <h1><a href="/notes">Notes</a></h1>
+    {% else %}
+        {# We're on the root /notes page #}
+        <h1>Notes</h1>
+    {% endif %}
     </header>
-    <div>
-        <section>
-        <h2>Guides</h2>
-        {% for subject, guides in collections.guidesBySubject %}
-        <h3>{{ subject }}</h3>
-        <ul>
-            {% for item in guides | reverse %}
-            <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
-            {% endfor %}
-        </ul>
-        </section>
-        {% endfor %}
-    </div>
+
+    <div class="inner">
+        <p>To self, to you, to whomever. What’s been on my mind. <a class="outbound rss" href="/feed.xml">RSS</a></p>
+        
+        {% include "partials/tag-list.html" %}
+
+        {# List notes #}
+        {% from 'macros/note-preview.njk' import notePreview %}
+        <ul class="tiled notes">
+            {# Go through pinned items first #}
+            {# All pinned items if on normal Notes page #}
+            {% if title === "Notes" %}
+                {% for item in collections.note | reverse %}
+                    {% if item.data.pinned %}
+                        {{ notePreview(item, true) }}
+                    {% endif %}
+                {% endfor %}
+            {# Tag-specific pinned items if on tagged page #}
+            {% else %}
+                {% for loopedTag, notesWithTag in collections.notesByTag %}
+                        {% if loopedTag === tag %}
+                            {% for item in notesWithTag | reverse %}
+                                {% if item.data.pinned %}
+                                        {{ notePreview(item, true) }}
+                                {% endif %}
+                            {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+
+            {# Go through non-pinned items from newest to oldest #}
+            {# All non-pinned items if on normal Notes page #}
+            {% if title === "Notes" %}
+                {% for item in collections.note | reverse %}
+                    {% if not item.data.pinned %}
+                        {{ notePreview(item, true) }}
+                    {% endif %}
+                {% endfor %}
+            {# Tag-specific pinned items if on tagged page #}
+            {% else %}
+                {% for loopedTag, notesWithTag in collections.notesByTag %}
+                        {% if loopedTag === tag %}
+                            {% for item in notesWithTag | reverse %}
+                                {% if not item.data.pinned %}
+                                    {{ notePreview(item, true) }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+            {% endif %}
+            </ul>
+        </div>
 </main>
 {% endblock %}
+
+

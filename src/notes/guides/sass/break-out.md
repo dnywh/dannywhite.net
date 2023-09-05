@@ -5,8 +5,6 @@ tags:
   - Sass
   - CSS
   - Web
-  - guide
-subject: Sass
 ---
 
 Say you're applying styles to a nested element like so:

@@ -2,17 +2,19 @@
 title: Speed up or slow down a video with FFmpeg
 date: 2021-01-06
 tags:
-  - ffmpeg
+  - FFmpeg
   - macOS
-  - terminal
-  - guide
-subject: ffmpeg
+  - Terminal
 audience: People comfortable using Terminal. They probably have prior experience with FFmpeg or similar.
+related:
+  - convert-video
+  - stop-motion
+  - video-border
 ---
 
 Here's how to double the speed of a video using FFmpeg:
 
-```bash
+```shell
 ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" output.mp4
 ```
 

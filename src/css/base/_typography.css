@@ -1,0 +1,210 @@
+:root {
+  --letter-spacing-wide: 0.1em;
+  --letter-spacing-reg: -0.005em;
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-xtight: -0.04em;
+  --line-height-xwide: 200%; /* Lists */
+  --line-height-wide: 176%; /* Article text */
+  --line-height-reg: 150%;
+  --line-height-tight: 135%;
+  --line-height-xtight: 110%;
+  --line-height-single-line: 100%;
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-normal: 1rem; /* 16px */
+  --font-size-article: 1.125rem; /* 18px */
+  --para-gap-sm: 0.4375rem;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1800,21,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1280,21,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  /* Step -2: 12.50px → 11.82px */
+  --step--2: clamp(0.74rem, calc(0.8rem + -0.07vw), 0.78rem);
+
+  /* Step -1: 15.00px → 15.75px */
+  --step--1: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
+
+  /* Step 0: 18.00px → 21.00px */
+  --step-0: clamp(1.13rem, calc(1.06rem + 0.31vw), 1.31rem);
+
+  /* Step 1: 21.60px → 27.99px */
+  --step-1: clamp(1.35rem, calc(1.22rem + 0.67vw), 1.75rem);
+
+  /* Step 2: 25.92px → 37.31px */
+  --step-2: clamp(1.62rem, calc(1.38rem + 1.19vw), 2.33rem);
+
+  /* Step 3: 31.10px → 49.74px */
+  --step-3: clamp(1.94rem, calc(1.56rem + 1.94vw), 3.11rem);
+
+  /* Step 4: 37.32px → 66.30px */
+  --step-4: clamp(2.33rem, calc(1.73rem + 3.02vw), 4.14rem);
+
+  /* Step 5: 44.79px → 88.38px */
+  --step-5: clamp(2.8rem, calc(1.89rem + 4.54vw), 5.52rem);
+}
+
+body {
+  font-family: "ITC Franklin Gothic", system-ui, sans-serif;
+  color: var(--color-text-primary);
+
+  /* Set standard hover effect */
+  & h1,
+  & h2,
+  & p,
+  & span,
+  & li,
+  & td,
+  & sup {
+    > a {
+      transition: var(--transition-text-opacity);
+      &:hover {
+        opacity: var(--text-opacity-hovered);
+      }
+    }
+  }
+
+  /* Headings */
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    font-weight: 500;
+    line-height: var(--line-height-xtight);
+  }
+
+  & h1 {
+    letter-spacing: var(--letter-spacing-xtight);
+  }
+
+  & h2,
+  & h3,
+  & h4,
+  & h5 {
+    letter-spacing: var(--letter-spacing-tight);
+  }
+
+  & p,
+  & dt,
+  & dd,
+  & ol,
+  & ul,
+  & figcaption {
+    letter-spacing: var(--letter-spacing-reg);
+  }
+
+  & p,
+  & figcaption {
+    > a {
+      text-decoration: underline;
+      text-underline-offset: 1.5px;
+      text-decoration-color: var(--color-border-secondary);
+    }
+  }
+}
+
+h2.small,
+h3.small,
+span.small,
+legend {
+  text-transform: uppercase;
+  font-feature-settings: "cpsp" 1;
+  font-size: var(--step--2);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Revert normal paragraph styles */
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+legend {
+  font-weight: 500;
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  font-size: smaller;
+}
+
+sup {
+  /* vertical-align: super; */
+  /* Replacing vertical-align with the below since the former affects the line spacing */
+  top: -0.4em;
+  font-feature-settings: "sups" 1;
+}
+
+sub {
+  /* vertical-align: sub; */
+  /* Replacing vertical-align with the below since the former affects the line spacing */
+  top: 0.4em;
+  font-feature-settings: "subs" 1;
+}
+
+/* Footnotes */
+.footnote-ref {
+  background-color: var(--color-swatch-code);
+  padding: 0 0.1em;
+  margin-left: 0.1em;
+}
+
+/* Links to RSS */
+.rss {
+  white-space: nowrap;
+  font-size: var(--step--1);
+  letter-spacing: var(--letter-spacing-reg);
+  color: var(--color-text-tertiary);
+}
+
+.outbound,
+.locked {
+  &:after {
+    opacity: 0.75;
+    padding-left: 0.1rem;
+    /* Use mask method for easier color-scheme/theme changes */
+    /* As opposed to changing SVGs to partials in order to change their path fill */
+    /* https://stackoverflow.com/a/73196514/2009441 */
+    /* https://stackoverflow.com/a/42317014 */
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    mask-size: cover;
+    /* Set dynamic 'fill' now that masking will respect a simple background-color */
+    background-color: var(--color-text-primary);
+  }
+}
+/* Outbound links */
+.outbound {
+  &:after {
+    mask: url(/assets/images/arrow-se.svg) no-repeat 50% 50%;
+  }
+
+  &.rss {
+    &:after {
+      position: relative;
+      top: 0.12rem;
+    }
+  }
+}
+
+/* Password-protected links like my portfolio */
+.locked {
+  &:after {
+    mask: url(/assets/images/lock.svg) no-repeat 50% 50%;
+    /* This always precedes the .outbound icon, so apply an optical negative margin for it */
+    margin-right: -0.25rem;
+  }
+}

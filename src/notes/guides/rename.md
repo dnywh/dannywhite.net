@@ -4,9 +4,7 @@ date: 2021-05-29
 tags:
   - Rename
   - macOS
-  - terminal
-  - guide
-subject: Rename
+  - Terminal
 ---
 
 Sometimes the [built-in](https://support.apple.com/en-au/guide/mac-help/mchlp1144/mac#apdecbd8036ee564) macOS Finder renaming tool doesn't cut the mustard. Enter [Rename](https://formulae.brew.sh/formula/rename); a handy Homebrew formula for batch renaming files using your Terminal.

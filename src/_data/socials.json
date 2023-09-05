@@ -1,27 +1,30 @@
 [
   {
-    "platform": "CV",
-    "url": "https://read.cv/dannywhite"
+    "platform": "Threads",
+    "url": "https://www.threads.net/@dannywhite",
+    "featured": true
+  },
+  {
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/in/dnywh",
+    "featured": true
   },
   {
     "platform": "GitHub",
-    "url": "https://www.github.com/dnywh/"
+    "url": "https://www.github.com/dnywh/",
+    "featured": true
+  },
+  {
+    "platform": "CV",
+    "url": "https://read.cv/dannywhite"
   },
   {
     "platform": "Instagram",
     "url": "https://www.instagram.com/dannywhite/"
   },
   {
-    "platform": "LinkedIn",
-    "url": "https://www.linkedin.com/in/dnywh"
-  },
-  {
     "platform": "Literal",
     "url": "https://literal.club/danny"
-  },
-  {
-    "platform": "Threads",
-    "url": "https://www.threads.net/@dannywhite"
   },
   {
     "platform": "Pinterest",

@@ -13,7 +13,7 @@ Thumbs.db
 node_modules
 public
 
-# other things
+# Other things
 package-lock.json
 
 # Local Netlify folder
