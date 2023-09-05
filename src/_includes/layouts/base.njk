@@ -3,10 +3,11 @@
 
 <!DOCTYPE html>
 <html lang="en" class="no-js {{ currentLayout }}">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta
+    property="og:site_name" content="{{ site.title }}"/>
 
     {# Page title #}
     {% if title === "Index" %}
@@ -19,53 +20,38 @@
     <title>{{ pageTitle }}</title>
 
     {# Author #}
-    <meta name="author" content="{{ site.author }}" />
+    <meta
+    name="author" content="{{ site.author }}"/>
 
     {# Description #}
     {% if description %}
-        {% set ogDescription = description %}
+      {% set ogDescription = description %}
     {% else %}
-        {% set ogDescription = site.subtitle %}
+      {% set ogDescription = site.subtitle %}
     {% endif %}
-    <meta name="description" content="{{ ogDescription }}"/>
-
-    {# Pinterest #}
-    <meta name="p:domain_verify" content="ccc8f17a0887c3d97360e2249f884b86" />
-
-    {# Atom feed #}
-    <link rel="alternate" type="application/rss+xml" href="{{ site.feedUrl }}" title="{{ site.title }}" />
-
-    {# Manifest #}
-    {# TODO: Dynamic colors? #}
-    <link rel="manifest" href="/site.webmanifest">
-    
-    {# Styles #}
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-
-    {# Icons and theming #}
+    <meta
+    name="description" content="{{ ogDescription }}"/> {# Pinterest #}
+    <meta
+    name="p:domain_verify" content="ccc8f17a0887c3d97360e2249f884b86"/> {# Atom feed #}
+    <link rel="alternate" type="application/rss+xml" href="{{ site.feedUrl }}" title="{{ site.title }}"/> {# Manifest #}
+    {# TODO: Dynamic colors? #} <link
+    rel="manifest" href="/site.webmanifest"> {# Styles #}
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}"> {# Icons and theming #}
     {# Update this image URL each time for scraping #}
     {# Below is modified from https://realfavicongenerator.net/ #}
-    {# Definitive guide: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs #}
-    <meta property="og:image" content="/assets/images/og-a-2023.png" />
+    {# Definitive guide: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs #} <meta property="og:image" content="/assets/images/og-a-2023.png"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
-
-    {# Theme color #}
+    <link rel="shortcut icon" href="/assets/images/favicon.ico"> {# Theme color #}
     {# TODO: have these variable, have them update with user color toggle too #}
-    {# TODO: update manifest to reflect this #}
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#161a0d" media="(prefers-color-scheme: dark)">
-
-    {# Eleventy #}
-    {# https://darn.es/you-should-add-a-generator-tag-to-your-eleventy-site/ #}
-    <meta name="generator" content="{{ eleventy.generator }}">
-
-    {# Site-wide scripts #}
+    {# TODO: update manifest to reflect this #} <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#161a0d" media="(prefers-color-scheme: dark)"> {# Eleventy #}
+    {# https://darn.es/you-should-add-a-generator-tag-to-your-eleventy-site/ #} <meta
+    name="generator" content="{{ eleventy.generator }}"> {# Site-wide scripts #}
     {% set js %}
-        {# Checks if visitor has JavaScript enabled #}
-        {% include "js/js-check.js" %}
+    {# Checks if visitor has JavaScript enabled #}
+    {% include "js/js-check.js" %}
     {% endset %}
     {# Minify above scripts #}
     <script>{{ js | jsmin | safe }}</script>
@@ -78,21 +64,21 @@
 
     {# Anything bespoke to a page can go in these blocks #}
     {% block headContent %}{% endblock %}
-</head>
+  </head>
 
-<body>
+  <body>
     {# Include the `main` element within the bodyContent of the next layout #}
     {% block bodyContent %}{% endblock %}
     {# Site footer #}
-    {% include "partials/site-footer.html" %} 
+    {% include "partials/site-footer.html" %}
     {# Site-wide scripts continued (ones that rely on DOM elements )#}
     {% set js %}
-        {# Handles user-prompted theme changes #}
-        {% include "js/color-switch.js" %}
+    {# Handles user-prompted theme changes #}
+    {% include "js/color-switch.js" %}
     {% endset %}
     {# Minify above scripts #}
     <script>{{ js | jsmin | safe }}</script>
     {# Page-specific scripts that depend on DOM elements #}
     {% block pageJsContent %}{% endblock %}
-</body>
+  </body>
 </html>

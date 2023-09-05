@@ -255,8 +255,8 @@ module.exports = function (eleventyConfig) {
     });
 
     // End
-    // Set which directories Eleventy reads from and writes to
     return {
+        // Set which directories Eleventy reads from and writes to
         dir: {
             input: "src",
             output: "public",
