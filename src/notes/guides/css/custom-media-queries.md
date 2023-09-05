@@ -7,6 +7,7 @@ tags:
   - Web
   - Eleventy
 audience: CSS developers looking to make reusable media queries and/or values within those media queries.
+eleventyExcludeFromCollections: true
 ---
 
 Using [LightningCSS](https://lightningcss.dev/transpilation.html#custom-media-queries) to use [custom media queries](https://drafts.csswg.org/mediaqueries-5/#custom-mq) before they are fully supported across browsers.

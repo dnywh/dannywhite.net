@@ -6,6 +6,7 @@ tags:
   - Markdown
   - Web
 audience: "Web folks who already use Eleventy and care about typography. Warning: knowing the difference between straight and smart quotes may ruin subtitles, signage, and most text on the internet for you."
+eleventyExcludeFromCollections: true
 ---
 
 Compare the pair:
