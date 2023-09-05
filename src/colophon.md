@@ -123,7 +123,9 @@ It's a simple brute-force way to exclude the file anywhere it might be looped th
 
 The [Trove](/#trove) is a pinboard-esque section on my homepage that shows off what I've 'pinned' lately from around the web. I use [Raindrop](https://raindrop.io) to collect these 'pins' and their [API](https://developer.raindrop.io) to pull them into my site. I use the [eleventy-fetch](https://www.11ty.dev/docs/plugins/fetch/) plugin to cache these pins.
 
-In terms of keeping the site 'fresh' with Trove data: I no longer use Netlify's [Scheduled Functions](https://www.raymondcamden.com/2022/02/04/an-early-look-at-netlify-scheduled-functions) and instead just use this tension as healthy pressure to regularly update the site (thus refreshing Trove data along the way). I made a macOS and iOS [Shortcut](https://alejandromp.com/blog/netlify-deployment-with-ios-shortcut/) for manual builds using Netlify's Build Hooks for the scenario where I want to force a rebuild.
+In terms of keeping the site 'fresh' with Trove data: I no longer use Netlify's [Scheduled Functions](https://www.raymondcamden.com/2022/02/04/an-early-look-at-netlify-scheduled-functions) and instead just use this tension as healthy pressure to regularly update the site (thus refreshing Trove data along the way).
+
+I made a macOS and iOS [Shortcut](https://alejandromp.com/blog/netlify-deployment-with-ios-shortcut/) for manual builds using Netlify's Build Hooks for the scenario where I want to force a rebuild. That doesn't visibly change the site if the data has already been refreshed in the last day, given that I have the [netlify-plugin-cache](https://www.11ty.dev/docs/plugins/fetch/#running-this-on-your-build-server) package installed.
 
 See the [Images](#images) section of this page for how I process pinned imagery.
 

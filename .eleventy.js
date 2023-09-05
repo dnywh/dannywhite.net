@@ -122,9 +122,9 @@ module.exports = function (eleventyConfig) {
 
     // Transforms
     // Only minify HTML if we are in production because it slows builds down
-    // if (process.env.ELEVENTY_RUN_MODE === "build") {
-    eleventyConfig.addTransform('htmlmin', htmlMinTransform);
-    // }
+    if (process.env.ELEVENTY_RUN_MODE === "build") {
+        eleventyConfig.addTransform('htmlmin', htmlMinTransform);
+    }
 
     // Shortcodes
     // Year shortcode for copyright date(s): https://11ty.rocks/eleventyjs/dates/#year-shortcode
