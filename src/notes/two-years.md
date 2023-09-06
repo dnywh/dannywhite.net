@@ -21,7 +21,7 @@ It's been just over two years since I (re)started my freelance practice. Here ar
 
 - Keep a regular routine between gigs. Use that time to update your presence or scratch an itch.
 
-- A project isn't 'on' until everyone has signed the contract. Don't start without it and keep pursuing other jobs until it lands.
+- A project isn't 'on' until both sides have signed the contract. Don't start without it and keep pursuing other jobs until it lands.
 
 - Even with a signed contract, understand the termination clause. Prepare for the case in which it gets enacted.
 
