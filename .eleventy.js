@@ -46,6 +46,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/js/");
     eleventyConfig.addPassthroughCopy("./src/assets/");
     eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
+    // Allow redirects
+    // https://daily-dev-tips.com/posts/adding-netlify-redirects-to-an-eleventy-site/
+    eleventyConfig.addPassthroughCopy("./src/_redirects");
 
     // Plugins
     // Eleventy-flavoured Lightning CSS
