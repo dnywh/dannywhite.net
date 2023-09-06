@@ -5,6 +5,11 @@
   {% include "partials/site-header.njk" %}
 
   <main>
+    <header class="page-header">
+      <h1>{{ title }}</h1>
+      <p>{{ collections.books.length }} books sorted from most recently added to oldest.</p>
+    </header>
+
     <ul>
       {% for item in collections.books %}
         {% set title = item.properties.Title.title[0].plain_text %}

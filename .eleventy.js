@@ -232,14 +232,6 @@ module.exports = function (eleventyConfig) {
         const data = await notion();
         // Access the items within the child array
         const items = data.results
-        console.log(items.length)
-        // Sort by date
-        // const sortedItems = items.sort((a, b) => {
-        //     // Compare the `lastUpdate` property of each item
-        //     const dateA = new Date(a.lastUpdate);
-        //     const dateB = new Date(b.lastUpdate);
-        //     return dateB - dateA; // Sort in descending order (latest first)
-        // });
 
         return items;
     });

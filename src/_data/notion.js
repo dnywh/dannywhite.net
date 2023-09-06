@@ -11,6 +11,7 @@ module.exports = async function () {
     return EleventyFetch(url, {
         duration: "1d",
         type: "json",
+        verbose: true,
         fetchOptions: {
             method: "POST",
             headers: {
