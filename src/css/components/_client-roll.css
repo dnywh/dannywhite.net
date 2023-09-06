@@ -16,19 +16,19 @@
   margin: calc((-1 * var(--step-1)) + var(--space-l)) 0 var(--space-l);
 
   @media (--viewport-md) {
-    /* TODO use `center` when VH is small, or clamp it between a range */
-    /* justify-content: space-between; */
-    /* padding: 5vh 0; */
     margin: 0.75rem 0 0 0; /* Should visually equal the margin-top of the corresponding p tag */
     grid-column: 2;
 
     position: sticky;
-    gap: 5vb;
-    top: 25vh; /* Should be calculated from height of the roll to be visually centered */
-    height: 50vh;
     padding: 0;
-    /* TODO: Use clamp for these two values to always keep a nice visual balance */
+    /* The below two values should add up to 100 (*2 for `top`) */
+    top: 25vb;
+    height: 50vb;
   }
+
+  /* @media (--viewport-xl) {
+    gap: 6.5vb;
+  } */
 
   /* Handle fade-in */
   opacity: 0.35;
@@ -68,15 +68,15 @@
       --duration: calc(var(--duration-base) * 1);
     }
     &:nth-child(2) {
-      margin-left: -200vw;
+      margin-left: -200%;
       --duration: calc(var(--duration-base) * 0.85);
     }
     &:nth-child(3) {
-      margin-left: -100vw;
-      --duration: calc(var(--duration-base) * 1.08);
+      margin-left: -400%;
+      --duration: calc(var(--duration-base) * 1.04);
     }
     &:nth-child(4) {
-      margin-left: -50vw;
+      margin-left: -600%;
       --duration: calc(var(--duration-base) * 1.18);
     }
 
