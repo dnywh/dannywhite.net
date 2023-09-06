@@ -56,7 +56,7 @@
     {# Minify above scripts #}
     <script>{{ js | jsmin | safe }}</script>
 
-    {# Analytics #}
+    {# Analytics (only activated on build) #}
     {% if (env.eleventyRunMode === "build") %}
       <script async src="https://cdn.splitbee.io/sb.js"></script>
       <script data-goatcounter="https://dannywhite.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
