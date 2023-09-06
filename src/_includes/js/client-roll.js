@@ -6,7 +6,7 @@ let options = {
     // Using default root of viewport
     // Bleed over top so it doesn't stop until visibly gone
     // https://blog.webdevsimplified.com/2022-01/intersection-observer/
-    rootMargin: "50% 0 0 0",
+    rootMargin: "50% 0% 0% 0%",
     threshold: 0.5,
 };
 

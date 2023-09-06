@@ -17,11 +17,11 @@ It's been just over two years since I (re)started my freelance practice. Here ar
 
 - Try to work only on projects that push you upward. Poor-quality projects both burn you out and deteriorate your portfolio.
 
-- Actively carve out holidays. Otherwise they will revolve around the whims of clients or never even happen.
+- Actively carve out holidays. Otherwise they will revolve around the whims of clients or never happen at all.
 
 - Keep a regular routine between gigs. Use that time to update your presence or scratch an itch.
 
-- A project isn't 'on' until everyone has signed the contract. Don't start without it and don't turn down other jobs until it lands.
+- A project isn't 'on' until everyone has signed the contract. Don't start without it and keep pursuing other jobs until it lands.
 
 - Even with a signed contract, understand the termination clause. Prepare for the case in which it gets enacted.
 
