@@ -2,7 +2,7 @@
 title: OzHarvest’s tape job
 date: 2023-08-21
 tags:
-  - Food waste
+  - Food Waste
   - Design
 eleventyExcludeFromCollections: true
 ---

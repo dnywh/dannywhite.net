@@ -1,19 +1,28 @@
 ---
-title: Lessons learnt after two years of freelancing
-date: 2023-08-25
-eleventyExcludeFromCollections: true
+title: Two Years of Freelance
+description: Things I've learnt along the way.
+date: 2023-09-25
 tags:
   - Freelance
+  - Process
 ---
 
-Some things I've picked up along the way:
+It's been just over two years since I (re)started my freelance practice. Here are some things I've learnt along the way:
+
+- Carve out your own niche. The broader your offering, the more competition you have.
 
 - Get comfortable with selling yourself. Then get good at it.
 
-- Understand the termination clause in each contract. Prepare for the case where it gets enacted.
+- Don't buckle on your rate. Except for non-profit work. Ideally increase it with every engagement.
 
-- Don't buckle on your rate. Except for charity.
+- Try to work only on projects that push you upward. Poor-quality projects both burn you out and deteriorate your portfolio.
 
-- Carve out your holidays. Otherwise you'll never take them.
+- Actively carve out holidays. Otherwise they will revolve around the whims of clients or never even happen.
 
-- Similarly, set your own schedule or your life will revolve around the whims of (potential) clients.
+- Keep a regular routine between gigs. Use that time to update your presence or scratch an itch.
+
+- A project isn't 'on' until everyone has signed the contract. Don't start without it and don't turn down other jobs until it lands.
+
+- Even with a signed contract, understand the termination clause. Prepare for the case in which it gets enacted.
+
+- Surround yourself with other makers. Freelancing gets lonely, particularly when done at a distance.
