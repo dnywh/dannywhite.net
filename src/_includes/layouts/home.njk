@@ -70,12 +70,9 @@
             <li {% if item.img %} class="featured" {% endif %}>
               <a href="{{ item.url }}">
                 {% if item.img %}
-                  {# Use our shortcode to create the most
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                              appropriate image based on resolution, availability #}
-                  {% set alt =
-            "The hero image for " + item.name + "." %}
-                  {% projectImage item.img,
-            alt %}
+                  {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+                  {% set alt = "The hero image for " + item.name + "." %}
+                  {% projectImage item.img, alt %}
                 {% endif %}
                 <div>
                   <h3>{{ item.name }}</h3>
@@ -143,8 +140,7 @@
             <li>
               <a href="{{ item.link }}" target="_blank" rel="noopener">
                 {% if item.type == "image" %}
-                  {# Use our shortcode to create the
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                              most appropriate image based on resolution, availability #}
+                  {# Use our shortcode to create the most appropriate image based on resolution, availability #}
                   {% troveImage item.cover, item.title %}
                 {% else %}
                   <h3>{{ item.title }}</h3>

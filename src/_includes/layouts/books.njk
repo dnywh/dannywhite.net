@@ -1,0 +1,25 @@
+{% extends "layouts/base.njk" %}
+
+{% block bodyContent %}
+
+  {% include "partials/site-header.njk" %}
+
+  <main>
+    <ul>
+      {% for item in collections.books %}
+        {% set title = item.properties.Title.title[0].plain_text %}
+        {% set author = item.properties.Author.select.name %}
+        {% set imgUrl = item.properties.Cover.files[0].file.url %}
+        <li>
+          {% if imgUrl %}
+            {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+            {% set alt = "The book cover for " + title + "." %}
+            {% bookImage imgUrl, alt %}
+          {% endif %}
+          {{ title }} by {{ author }}
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+
+{% endblock %}

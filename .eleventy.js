@@ -161,6 +161,27 @@ module.exports = function (eleventyConfig) {
         // You bet we throw an error on a missing alt (alt="" works okay)
         return Image.generateHTML(metadata, imageAttributes);
     });
+    // Bookshelf image shortcode
+    eleventyConfig.addShortcode("bookImage", async function (src, alt) {
+        let metadata = await Image(src, {
+            formats: ["webp"],
+            // Calculated widths by multiplying physical max-width of img area (320px) by 2x and 3x
+            widths: [320],
+            outputDir: "./public/assets/images/books",
+            urlPath: '/assets/images/books',
+        });
+
+        let imageAttributes = {
+            // Alt must be defined in use otherwise it will throw an error
+            alt,
+            // Approximate sizes based on .trove CSS
+            // https://web.dev/learn/design/responsive-images/#sizes
+            sizes: '(min-width: 1024px) 25vw, 50vw',
+            loading: "lazy",
+            decoding: "async",
+        };
+        return Image.generateHTML(metadata, imageAttributes);
+    });
     // General image shortcode, currently used for project imagery
     eleventyConfig.addShortcode("projectImage", async function (src, alt) {
         let metadata = await Image(src, {
@@ -204,6 +225,25 @@ module.exports = function (eleventyConfig) {
 
         return sortedItems;
     });
+
+    // Make a collection of raindrops sorted by date saved, not date created
+    const notion = require("./src/_data/notion.js");
+    eleventyConfig.addCollection('books', async () => {
+        const data = await notion();
+        // Access the items within the child array
+        const items = data.results
+        console.log(items.length)
+        // Sort by date
+        // const sortedItems = items.sort((a, b) => {
+        //     // Compare the `lastUpdate` property of each item
+        //     const dateA = new Date(a.lastUpdate);
+        //     const dateB = new Date(b.lastUpdate);
+        //     return dateB - dateA; // Sort in descending order (latest first)
+        // });
+
+        return items;
+    });
+
 
 
     // Make a collection of note tags
@@ -258,11 +298,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.setLibrary("md", mdLib);
 
-    eleventyConfig.setServerOptions({
-        // Show local network IP addresses for device testing (TODO: doesn't seem to work)
-        // https://www.11ty.dev/docs/dev-server/
-        showAllHosts: true,
-    });
+
 
     // End
     return {
