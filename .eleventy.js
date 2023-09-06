@@ -35,6 +35,12 @@ require('dotenv').config();
 module.exports = function (eleventyConfig) {
     // Quieten console output
     eleventyConfig.setQuietMode(true);
+    eleventyConfig.setServerOptions({
+        // Whether DOM diffing updates are applied where possible instead of page reloads
+        // Turned off because it was causing issues when updating .md files
+        // Nothing would render except for the 'Let's chat' footer link
+        domDiff: false, // default is `true`
+    });
 
     // Passthroughs
     eleventyConfig.addPassthroughCopy("./src/js/");
@@ -220,6 +226,7 @@ module.exports = function (eleventyConfig) {
 
         return ret;
     });
+
 
     // Markdown library amendments
     // Find any external links in Markdown and make them open in new tabs
