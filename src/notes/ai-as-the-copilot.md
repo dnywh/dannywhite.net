@@ -51,11 +51,11 @@ Using natural language for higher-level interactions feels right: back-and-forth
 ## More broadly
 
 The invention, maturation, and manipulation of this GUI will form the bulk of design work going forward.
-Work designing bespoke interfaces directly for consumer products will decrease. Work designing or manipulating interfaces _for AI to design those interfaces_ will increase.
+Work designing bespoke interfaces directly for consumer products will decrease. Work designing or manipulating interfaces _for AI to design those interfaces_ will increase (for a select few).
 
-In other words: designers will focus on either the designing of these aforementioned tools (technical product design) or focus on 'prompt engineering' to turn problems or opportunities into the right inputs (service design). The broader team[^1] will absorb and assume the role that designers like myself currently take: compose and iterate on interfaces.
+In other words: designers will focus on either the designing of these aforementioned tools (technical product design) or focus on 'prompt engineering' to turn problems or opportunities into the right inputs (service design). The broader team[^1] will absorb and assume the role that designers like myself currently take: composing and iterating on interfaces.
 
-I see this shared role playing out in interactions similar to what [Noah Levin shared](https://www.figma.com/blog/ai-the-next-chapter-in-design/) in this year's Figma conference, just more aggressively than what was demoed:
+I see this shared role playing out in interactions similar to what [Noah Levin shared](https://www.figma.com/blog/ai-the-next-chapter-in-design/) in this year's Figma conference, just more aggressively (and democratically) than what was demoed:
 
 https://youtu.be/bslH4Mv1ZHA?si=k269AhtBOcPFiZZY&t=768
 
@@ -64,7 +64,7 @@ https://youtu.be/bslH4Mv1ZHA?si=k269AhtBOcPFiZZY&t=768
 Most designers or technologists I’ve tested this on disagree with me. The general response is something like "our specific role is too nebulous and difficult to be automated any time soon".
 I think that's a blind spot created by a fear of redundancy[^2].
 
-[Brad Frost writes](https://bradfrost.com/blog/link/ai-the-next-chapter-in-design-figma-blog/) many predictions (of which I assume mine fits the bill) are "reactive, myopic, and short-sighted". He also writes in response to AI doing rote design work:
+[Brad Frost writes](https://bradfrost.com/blog/link/ai-the-next-chapter-in-design-figma-blog/) that many predictions on this subject (of which I assume mine fits the bill) are "reactive, myopic, and short-sighted". He also writes the following in response to a bit about AI taking over rote design work:
 
 <figure class="quote">
   <blockquote>
