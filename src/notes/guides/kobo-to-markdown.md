@@ -2,7 +2,6 @@
 title: Saving Kobo Highlights to Markdown or Notion
 date: 2023-06-25
 modified: 2023-08-16
-pinned: true
 description: A macOS shortcut for turning highlights and notes from your Kobo into Markdown.
 tags:
   - macOS

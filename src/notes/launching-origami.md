@@ -30,5 +30,3 @@ The official Origami [tutorials](http://origami.design/tutorials/) and [examples
 The full video of my demo has been uploaded on [Vimeo](http://vimeo.com/192805834). The other demos are under the [same username](http://vimeo.com/facebookorigami).
 
 http://vimeo.com/192805834
-
-Testing the above inline video.
