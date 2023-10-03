@@ -426,7 +426,8 @@
 
           /* Images and media */
           & figure,
-          & .video {
+          & .video,
+          & .asset {
             margin: var(--space-l) 0;
           }
 

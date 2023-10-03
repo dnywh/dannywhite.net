@@ -11,7 +11,22 @@ tags:
   - photos
 ---
 
-I like HEIC as the default iOS image format but occasionally want to export a JPEG, usually for macOS apps that don't yet support HEIC. iOS doesn't let you convert image formats, making this workflow fairly painful:
+I like HEIC as the default iOS image format but occasionally want to export a JPEG, usually for macOS apps that don't yet support HEIC. Here's a shortcut I made to do just that:
+
+<div class="asset">
+    <img src="/assets/images/outbound-assets/shortcuts.png" alt="An icon for this asset">
+    <div>
+      <h3>Convert to JPEG then AirDrop</h3>
+      <p>An Apple Shortcut for iOS</p>
+    </div>
+    <a href="https://www.icloud.com/shortcuts/f2f351b0c7a24af5ac9616def7708629" target="_blank" class="outbound">View in Shortcuts</a>
+</div>
+
+After installing, navigate to any photo, open a Share Sheet, and then tap _Edit Actions_. You'll need to enable the shortcut before you can use it.
+
+## In detail
+
+At time of writing, iOS doesn't natively support image format conversion. That makes the HEIC to JPEG conversion process tedious:
 
 1. Select the photo(s) on my iPhone
 2. Open the Share Sheet
@@ -21,13 +36,22 @@ I like HEIC as the default iOS image format but occasionally want to export a JP
 6. Export the HEIC image as JPEG
 7. Use the JPEG on my Mac
 
-Here's my new workflow:
+With the [aforementioned shortcut](https://www.icloud.com/shortcuts/f2f351b0c7a24af5ac9616def7708629) you instead just do the following:
 
 1. Select the photo(s) on my iPhone
 2. Open the Share Sheet
 3. Tap _Convert to JPEG then AirDrop_
 4. Use the JPEG on my Mac
 
-I got it down to four steps (and a couple of seconds instead of a minute or two) by making an iOS shortcut called _Convert to JPEG then AirDrop_. You can download it [here](https://www.icloud.com/shortcuts/f2f351b0c7a24af5ac9616def7708629). Just make sure you tap _Edit Actions_ on your Share Sheet to enable it.
+## Via photo selection
 
-I also made a version of the shortcut that launches the 'Select photos' modal instead of relying on the Share Sheet. You can download that one [here](https://www.icloud.com/shortcuts/d18a40fa00f04f9cab39ea8671bf9949).
+I also made a version of the shortcut that launches the 'Select photos' modal instead of relying on the Share Sheet. You can download that one too:
+
+<div class="asset">
+    <img src="/assets/images/outbound-assets/shortcuts.png" alt="An icon for this asset">
+    <div>
+      <h3>Select, Convert to JPEG, then AirDrop</h3>
+      <p>Another Apple Shortcut for iOS</p>
+    </div>
+    <a href="https://www.icloud.com/shortcuts/d18a40fa00f04f9cab39ea8671bf9949" target="_blank" class="outbound">View in Shortcuts</a>
+</div>

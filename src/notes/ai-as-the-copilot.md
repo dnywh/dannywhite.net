@@ -2,9 +2,12 @@
 title: AI as the Copilot
 description: Musings on AI as it affects the design industry.
 date: 2023-09-22
+pinned: true
 tags:
   - AI
   - Design
+related:
+  - feeling-forward
 audience: Designers, makers, and other technologists.
 ---
 
@@ -55,7 +58,7 @@ Work designing bespoke interfaces directly for consumer products will decrease. 
 
 In other words: designers will focus on either the designing of these aforementioned tools (technical product design) or focus on 'prompt engineering' to turn problems or opportunities into the right inputs (service design). The broader team[^1] will absorb and assume the role that designers like myself currently take: composing and iterating on interfaces.
 
-I see this shared role playing out in interactions similar to what [Noah Levin shared](https://www.figma.com/blog/ai-the-next-chapter-in-design/) in this year's Figma conference, just more aggressively (and democratically) than what was demoed:
+I see this shared role playing out in interactions similar to what [Noah Levin shared](https://www.figma.com/blog/ai-the-next-chapter-in-design/) in this year's Figma Config conference, just more aggressively (and democratically) than what was demoed onstage:
 
 https://youtu.be/bslH4Mv1ZHA?si=k269AhtBOcPFiZZY&t=768
 
@@ -68,9 +71,7 @@ I think that's a blind spot created by a fear of redundancy[^2].
 
 <figure class="quote">
   <blockquote>
-    <p>
-      But it still requires human discretion and decision-making (and don’t forget that important moral compass!) in order to separate the wheat from the chaff.
-    </p>
+    <p>But it still requires human discretion and decision-making (and don’t forget that important moral compass!) in order to separate the wheat from the chaff.</p>
   </blockquote>
 </figure>
 

@@ -56,7 +56,9 @@ body {
   & span,
   & li,
   & td,
-  & sup {
+  & sup,
+  & cite,
+  & .asset {
     > a {
       transition: var(--transition-text-opacity);
       &:hover {
@@ -96,7 +98,9 @@ body {
   }
 
   & p,
-  & figcaption {
+  & figcaption,
+  & figcaption > cite,
+  & .asset {
     > a {
       text-decoration: underline;
       text-underline-offset: 1.5px;

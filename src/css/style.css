@@ -9,6 +9,7 @@
 @import "base/_typography.css";
 @import "base/_code.css";
 /* Components */
+@import "components/_asset.css";
 @import "components/_color-switch.css";
 @import "components/_page-header.css";
 @import "components/_client-roll.css";
