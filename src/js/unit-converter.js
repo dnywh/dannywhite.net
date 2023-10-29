@@ -1,8 +1,8 @@
-// Converts between Imperial and Metric units
+// Converts between Imperial and Metric distance units
 // TODO: Keep user's choice in local storage across site
 // Get all applicable elements on page
-const listOfThingsToConvert = document.querySelectorAll(".distance")
-const inlineThingsOnlyToConvert = document.querySelectorAll(".distance.inline")
+const listOfThingsToConvert = document.querySelectorAll(".unit")
+const inlineThingsOnlyToConvert = document.querySelectorAll(".unit.inline")
 // Get radio form
 const radioButtons = document.querySelectorAll('input[name="unit-of-measurement"]');
 // Set a default unit

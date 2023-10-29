@@ -2,13 +2,13 @@
 title: "Biking the Empire State Trail: New York City to Montréal"
 description: "We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. Here’s some advice and a route recap for folks planning a similar trip."
 date: 2022-07-15
-modified: 2023-08-21
+modified: 2023-10-28
 pinned: true
 stage: 3
 tags:
 	- Ride
 clientJS:
-  - "distance-converter.js"
+  - "unit-converter.js"
 audience: People planning to ride some or all of New York‘s Empire State Trail.
 ---
 
@@ -63,7 +63,7 @@ Figure out how many miles you and your entourage can (or want to) comfortably ri
 Make bookings at least a few days ahead—particularly for weekends—so you can adjust your upcoming mileage if necessary.
 Try to make refundable bookings so you have more flexibility.
 
-Our (comfort) cadence ended up being around <span class="distance inline">70 to 100 km</span> per day.
+Our (comfort) cadence ended up being around <span class="unit inline">70 to 100 km</span> per day.
 That looked like riding from 9:30am to about 3:30pm with plenty of breaks in between.
 We alternated the longer days with shorter ones when geography and hotel availability allowed for it.
 
@@ -78,7 +78,7 @@ The remaining one or two were wildly expensive.
 
 Practice in your full kit and fully-laden bike before the trip.
 
-Get at least one <span class="distance inline">50 km</span> ride in or—even better—an overnighter or two.
+Get at least one <span class="unit inline">50 km</span> ride in or—even better—an overnighter or two.
 You might discover parts of your bike (or body) that need adjusting.
 It's much better to get injured or experience mechanical issues whilst at home than when on the road, miles from the closest bike shop or hospital.
 
@@ -102,13 +102,19 @@ A camp-grade plate and bowl would have completed the package and avoided a lot m
 We did the Hudson Valley Greenway Trail and Champlain Valley Trail parts of the Empire State Trail and some of the Canadian La Route Verte to Montréal.
 We didn't do the Erie Canalway Trail and didn't camp.
 
+Here's a [Ride With GPS route](https://ridewithgps.com/routes/39225143) I prepared before the trip:
+
+<iframe src="https://ridewithgps.com/embeds?type=route&id=39225143&sampleGraph=true" style="width: 1px; min-width: 100%; height: 700px; border: none;" scrolling="no"></iframe>
+
+I prepared [another one](https://ridewithgps.com/routes/39236663) for after we crossed into Canada, but we ended up going a different way, [through Saint Jean-sur-Richelieu](https://www.strava.com/activities/7170605364).
+
 We stayed at hotels that struck a balance between affordability and proximity to the trail.
 Think Motel 6, Holiday Inn Express, and the like.
 
 Below is a daily breakdown of our ride.
 I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured rows to be taken to that section's write-up below, or click on an unbolded row to be taken straight to its Strava log.
 
-{% include "partials/distance-converter.html" %}
+{% include "partials/unit-converter.html" %}
 
 <table>
   <thead>
@@ -133,8 +139,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Manhattan to Ardsley</a
         >
       </td>
-      <td><span class="distance">44.52 km</span></td>
-      <td><span class="distance">196 m</span></td>
+      <td><span class="unit">44.52 km</span></td>
+      <td><span class="unit">196 m</span></td>
     </tr>
     <tr>
       <td>
@@ -145,8 +151,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Ardsley to Brewster</a
         >
       </td>
-      <td><span class="distance">68.89 km</span></td>
-      <td><span class="distance">475 m</span></td>
+      <td><span class="unit">68.89 km</span></td>
+      <td><span class="unit">475 m</span></td>
     </tr>
     <tr>
       <td>
@@ -157,8 +163,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Brewster to Poughkeepsie</a
         >
       </td>
-      <td><span class="distance">67.12 km</span></td>
-      <td><span class="distance">238 m</span></td>
+      <td><span class="unit">67.12 km</span></td>
+      <td><span class="unit">238 m</span></td>
     </tr>
     <tr>
       <td>
@@ -169,8 +175,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Poughkeepsie to Kingston</a
         >
       </td>
-      <td><span class="distance">45.63 km</span></td>
-      <td><span class="distance">181 m</span></td>
+      <td><span class="unit">45.63 km</span></td>
+      <td><span class="unit">181 m</span></td>
     </tr>
     <tr class="chapter">
       <td colspan="3">
@@ -186,8 +192,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Kingston to Hudson</a
         >
       </td>
-      <td><span class="distance">61.83 km</span></td>
-      <td><span class="distance">576 m</span></td>
+      <td><span class="unit">61.83 km</span></td>
+      <td><span class="unit">576 m</span></td>
     </tr>
     <tr>
       <td>
@@ -198,8 +204,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Hudson to Albany</a
         >
       </td>
-      <td><span class="distance">68.34 km</span></td>
-      <td><span class="distance">497 m</span></td>
+      <td><span class="unit">68.34 km</span></td>
+      <td><span class="unit">497 m</span></td>
     </tr>
     <tr>
       <td>
@@ -210,8 +216,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Albany to Schuylerville</a
         >
       </td>
-      <td><span class="distance">65.99 km</span></td>
-      <td><span class="distance">202 m</span></td>
+      <td><span class="unit">65.99 km</span></td>
+      <td><span class="unit">202 m</span></td>
     </tr>
     <tr>
       <td>
@@ -222,8 +228,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Schuylerville to Ticonderoga</a
         >
       </td>
-      <td><span class="distance">105.54 km</span></td>
-      <td><span class="distance">963 m</span></td>
+      <td><span class="unit">105.54 km</span></td>
+      <td><span class="unit">963 m</span></td>
     </tr>
     <tr>
       <td>
@@ -234,8 +240,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Ticonderoga to Westport</a
         >
       </td>
-      <td><span class="distance">46.51 km</span></td>
-      <td><span class="distance">620 m</span></td>
+      <td><span class="unit">46.51 km</span></td>
+      <td><span class="unit">620 m</span></td>
     </tr>
     <tr class="chapter">
       <td colspan="3">
@@ -251,8 +257,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Westport to Plattsburgh</a
         >
       </td>
-      <td><span class="distance">77.96 km</span></td>
-      <td><span class="distance">841 m</span></td>
+      <td><span class="unit">77.96 km</span></td>
+      <td><span class="unit">841 m</span></td>
     </tr>
     <tr class="chapter">
       <td colspan="3">
@@ -268,8 +274,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Plattsburgh to Rouses Point to Saint Jean-sur-Richelieu</a
         >
       </td>
-      <td><span class="distance">84.16 km</span></td>
-      <td><span class="distance">198 m</span></td>
+      <td><span class="unit">84.16 km</span></td>
+      <td><span class="unit">198 m</span></td>
     </tr>
     <tr>
       <td>
@@ -280,8 +286,8 @@ I've grouped the 12 legs into four sections. Tap on one of the bolded, coloured 
           >Saint Jean-sur-Richelieu to Montréal</a
         >
       </td>
-      <td><span class="distance">53.83 km</span></td>
-      <td><span class="distance">131 m</span></td>
+      <td><span class="unit">53.83 km</span></td>
+      <td><span class="unit">131 m</span></td>
     </tr>
   </tbody>
 </table>
@@ -327,7 +333,7 @@ Kudos to the trail planners for the direct routes and plentiful signage.
 </div>
 
 We spent our first night at a motel in Ardsley, just off the trail's path.
-I chose Ardsley because <span class="distance inline">44.52 km</span> seemed like a modest distance for our first day: buffering time to warm up, repair flats, and wait for latecomers.
+I chose Ardsley because <span class="unit inline">44.52 km</span> seemed like a modest distance for our first day: buffering time to warm up, repair flats, and wait for latecomers.
 
 If I could do the trip over I'd pick somewhere further up.
 Ardsley was too short of a ride and an awkward for walking around in.
@@ -413,7 +419,7 @@ You could also cycle this (albeit along a busy road) in about 30 minutes from do
 
 <!-- ### Poughkeepsie to Kingston -->
 
-Poughkeepsie to Kingston was our next leg, and a short one at <span class="distance inline">45.63 km</span>.
+Poughkeepsie to Kingston was our next leg, and a short one at <span class="unit inline">45.63 km</span>.
 I'm glad it worked out this way as it had a lot of natural stopping points along the way.
 We took about thirty minutes taking in the Walkway Over the Hudson (just after Poughkeepsie), then loitered around New Paltz for another hour to stock up on food and drink.
 
@@ -697,7 +703,7 @@ We followed the canal-side bike path up to Chambly and then took a straight-shot
 </div>
 
 Montréal itself was a cycling paradise, so don't expect to rest your legs.
-I found myself riding similar distances as during the trail (<span class="distance inline">70 to 100 km</span> per day) because it was the best way to get around and explore town.
+I found myself riding similar distances as during the trail (<span class="unit inline">70 to 100 km</span> per day) because it was the best way to get around and explore town.
 
 <div class="two-up">
   <figure>

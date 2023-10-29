@@ -1,7 +1,9 @@
 ---
-title: Feeling Our Way Forward
+title: "Feeling Our Way Forward"
 description: Designing for platforms we haven’t yet grasped.
 date: 2023-10-03
+modified: 2023-10-04
+stage: 2
 pinned: true
 tags:
   - AI
@@ -47,7 +49,7 @@ Said another way, **application-based computing** necessitates knobs and dials t
 **Task-based computing** may work well for booking a flight, ordering dinner, or giving creative direction on a poster. I predict **application-based computing** will remain relevant for lower-level interactions: playing audio, editing video, or manipulating images.
 AI will itself have a low-level role in these cases; preparing transcripts, suggesting edits, and extending the toolset.
 
-This is a good place to bring up an interesting point from [Barton](https://www.threads.net/@bartonsmith/post/CxfmInrr3dp): there may come a time where AI does a better job of designing these interfaces than we do, thus controlling the evolution of its own own interface design.
+This is a good place to bring up a point from [Barton](https://www.threads.net/@bartonsmith/post/CxfmInrr3dp): there may come a time where AI does a better job of designing these interfaces than we do, thus controlling the evolution of its own own interface design.
 
 ## Keeping score
 
@@ -55,7 +57,7 @@ I'd like to maintain a visual record irrespective of how and when (and by whom) 
 
 [Davo](https://www.threads.net/@pixelbeat/post/Cxyt9RSRVDC) put me onto [Futurepedia](https://www.futurepedia.io) and [Future Tools](https://www.futuretools.io).
 Mobbin maintains [app](https://mobbin.com/search/ios/apps?filter=appCategories.Artificial+Intelligence) and [web](https://mobbin.com/search/web/apps?filter=appCategories.Artificial+Intelligence) categories for 'Artificial Intelligence'.
-But I haven't yet found a concentrated repository of AI-infused interfaces organised by interaction types. So here's my starting point:
+But I've yet to find a concentrated repository of AI-infused interfaces organised by interaction types. Here's my starting point:
 
 <div class="asset">
   <img src="/assets/images/outbound-assets/airtable.png" alt="An icon for this asset">
@@ -66,12 +68,14 @@ But I haven't yet found a concentrated repository of AI-infused interfaces organ
   <a href="https://airtable.com/appsh9UrplQtzOEt7/shrtS2GPhEvRCLyoZ" target="_blank" class="outbound">View on Airtable</a>
 </div>
 
-I've updated this Airtable base each time I've come across an AI-infused interface over the last week. Its more useful formats are probably the filtered gallery tables, which include:
+That Airtable Airtable has been updated each time I've come across an AI-infused interface over the last week or so. Its more useful formats are probably the filtered gallery tables, which include:
 
 - [Gallery: Region Selection](https://airtable.com/appsh9UrplQtzOEt7/shrttUnFReK7wB8tk)
 - [Gallery: Plain Text to Plain Text](https://airtable.com/appsh9UrplQtzOEt7/shrPOPMvnT4JRNyun)
 
 I'll add more examples, galleries, and perhaps create a front-end if this repository continues to have legs.
 
+**Update:** Davo sent me
+
 [^1]: It's often referred to as the earliest motion picture ever made. A Louis Le Prince film however [predates it by seven years](https://www.acmi.net.au/works/5476--workers-leaving-the-lumiere-factory/).
-[^2]: Is 'natural' a better way to describe these? 'Conversational' is too prescriptive given that isn't always the logical pattern.
+[^2]: Is 'natural' a better way to describe these? 'Conversational' is too prescriptive given that isn't always the pattern.

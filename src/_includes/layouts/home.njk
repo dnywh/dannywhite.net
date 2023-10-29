@@ -38,7 +38,7 @@
         I am
         <span class="highlight">available</span>
         for new work starting
-        <span class="highlight">{{ me.available }}</span>.
+        <span class="highlight">{{ availability.from }}</span>.
       </p>
       {# Force a space to prevent minifier from muddying up sentence #}
       <p>Sound like it could be a fit?&#32;{% include "partials/email-lets-chat.html" %}.</p>
@@ -57,37 +57,6 @@
         </p>
       </section>
       {% include "partials/here-there.njk" %}
-    </section>
-    {# Projects #}
-    <section class="home-section">
-      <header class="page-header">
-        <h2>Sidelines</h2>
-      </header>
-      <div class="inner">
-        <p>Select items, served on the side.</p>
-        <ul class="tiled projects">
-          {% for item in projects %}
-            <li {% if item.img %} class="featured" {% endif %}>
-              <a href="{{ item.url }}">
-                {% if item.img %}
-                  {# Use our shortcode to create the most
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                appropriate image based on resolution, availability #}
-                  {% set alt =
-            "The hero image for " + item.name + "." %}
-                  {% projectImage item.img,
-            alt %}
-                {% endif %}
-                <div>
-                  <h3>{{ item.name }}</h3>
-                  <span class="outbound">{{ item.domain }}</span>
-                  <p>{{ item.desc }}</p>
-                  <p>{{ item.status }}</p>
-                </div>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
     </section>
     {# Notes #}
     <section class="home-section">
@@ -131,6 +100,37 @@
         </p>
       </div>
     </section>
+    {# Projects #}
+    <section class="home-section">
+      <header class="page-header">
+        <h2>Sidelines</h2>
+      </header>
+      <div class="inner">
+        <p>Select items, served on the side.</p>
+        <ul class="tiled projects">
+          {% for item in projects %}
+            <li {% if item.img %} class="featured" {% endif %}>
+              <a href="{{ item.url }}">
+                {% if item.img %}
+                  {# Use our shortcode to create the most
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  appropriate image based on resolution, availability #}
+                  {% set alt =
+            "The hero image for " + item.name + "." %}
+                  {% projectImage item.img,
+            alt %}
+                {% endif %}
+                <div>
+                  <h3>{{ item.name }}</h3>
+                  <span class="outbound">{{ item.domain }}</span>
+                  <p>{{ item.desc }}</p>
+                  <p>{{ item.status }}</p>
+                </div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
     {# Trove #}
     <section id="trove" class="home-section">
       <header class="page-header">
@@ -144,7 +144,7 @@
               <a href="{{ item.link }}" target="_blank" rel="noopener">
                 {% if item.type == "image" %}
                   {# Use our shortcode to create the
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                most appropriate image based on resolution, availability #}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  most appropriate image based on resolution, availability #}
                   {% troveImage item.cover, item.title %}
                 {% else %}
                   <h3>{{ item.title }}</h3>

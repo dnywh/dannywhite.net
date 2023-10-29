@@ -431,6 +431,16 @@
             margin: var(--space-l) 0;
           }
 
+          & table,
+          & fieldset {
+            margin: var(--space-m) 0;
+          }
+
+          & iframe {
+            /* Things like RWGPS embeds */
+            margin: var(--space-s) 0;
+          }
+
           & figure {
             /* Set as flex so figcaption can be aligned to right */
             display: flex;
