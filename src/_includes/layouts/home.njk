@@ -51,9 +51,9 @@
       <section>
         <h2 class="small">Now</h2>
         <p>
-          I’m in Melbourne, Australia<span id="timestamp"></span>. You’ll find me tinkering on the Pi Frame project, figuring out how to wax my bike chain, and reading
-          <em>The Monkey Wrench Gang</em>
-          by Edward Abbey.
+          I’m in Melbourne, Australia<span id="timestamp"></span>. You’ll find me tinkering on the Pi Frame project, finding spots along the Yarra for a swim, and reading
+          <em>The Shallows</em>
+          by Nicholas Carr.
         </p>
       </section>
       {% include "partials/here-there.njk" %}
@@ -112,8 +112,7 @@
             <li {% if item.img %} class="featured" {% endif %}>
               <a href="{{ item.url }}">
                 {% if item.img %}
-                  {# Use our shortcode to create the most
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  appropriate image based on resolution, availability #}
+                  {# Use our shortcode to create the most appropriate image based on resolution, availability #}
                   {% set alt =
             "The hero image for " + item.name + "." %}
                   {% projectImage item.img,
@@ -143,8 +142,7 @@
             <li>
               <a href="{{ item.link }}" target="_blank" rel="noopener">
                 {% if item.type == "image" %}
-                  {# Use our shortcode to create the
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  most appropriate image based on resolution, availability #}
+                  {# Use our shortcode to create the most appropriate image based on resolution, availability #}
                   {% troveImage item.cover, item.title %}
                 {% else %}
                   <h3>{{ item.title }}</h3>

@@ -10,6 +10,7 @@ tags:
   - Design
 related:
   - ai-as-the-copilot
+  - stamper
 audience: Designers, makers, and other technologists.
 ---
 
