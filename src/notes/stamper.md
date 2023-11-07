@@ -2,7 +2,8 @@
 title: "Stamper: Audio Bookmarking"
 description: A short exploration in automated audio annotation, summation, and thematic interlinking, with the help of generative AI.
 date: 2023-11-01
-pinned: true
+# pinned: true
+eleventyExcludeFromCollections: true
 tags:
   - AI
   - Design
