@@ -2,12 +2,12 @@
 title: AI as the Copilot
 description: Musings on AI as it affects the design industry.
 date: 2023-09-22
-pinned: true
 tags:
   - AI
   - Design
 related:
   - feeling-forward
+  - agency-not-agents
 audience: Designers, makers, and other technologists.
 ---
 
@@ -23,7 +23,7 @@ So here's my current thinking on artificial intelligence as it affects the desig
 ## On Windows Copilot
 
 'Copilot' feels like the right way to describe our relationship to AI as makers.
-AI tools are the there-if-you-need-them navigator (and soon to be better driver) sitting in the passenger seat of your car.
+AI tools are the there-if-you-need-them navigator (and soon to be better driver[^1]) sitting in the passenger seat of your car.
 
 The natural language interactions (dictating and typing out commands) however looks cumbersome for half of the things demoed in the above video: changing colour schemes, window management, and music selection.
 To me it's akin to using the terminal to get things done before the invention of the GUI.
@@ -56,7 +56,7 @@ Using natural language for higher-level interactions feels right: back-and-forth
 The invention, maturation, and manipulation of this GUI will form the bulk of design work going forward.
 Work designing bespoke interfaces directly for consumer products will decrease. Work designing or manipulating interfaces _for AI to design those interfaces_ will increase (for a select few).
 
-In other words: designers will focus on either the designing of these aforementioned tools (technical product design) or focus on 'prompt engineering' to turn problems or opportunities into the right inputs (service design). The broader team[^1] will absorb and assume the role that designers like myself currently take: composing and iterating on interfaces.
+In other words: designers will focus on either the designing of these aforementioned tools (technical product design) or focus on 'prompt engineering' to turn problems or opportunities into the right inputs (service design). The broader team[^3] will absorb and assume the role that designers like myself currently take: composing and iterating on interfaces.
 
 I see this shared role playing out in interactions similar to what [Noah Levin shared](https://www.figma.com/blog/ai-the-next-chapter-in-design/) in this year's Figma Config conference, just more aggressively (and democratically) than what was demoed onstage:
 
@@ -75,10 +75,11 @@ I think that's a blind spot created by a fear of redundancy[^2].
   </blockquote>
 </figure>
 
-I'm not sure about that. Look at the case of Alpha Zero's triumph over Alpha Go[^3]; it's _because_ of a lack of human discretion and design-making that Zero became creative enough to win a notoriously complex game against its well-trained opponent.
+I'm not sure about that. Look at the case of Alpha Zero's triumph over Alpha Go[^4]; it's _because_ of a lack of human discretion and design-making that Zero became creative enough to win a notoriously complex game against its well-trained opponent.
 
 We'll see how this shakes out. And probably pretty soon.
 
-[^1]: I suppose this could be any team member with design sensibilities. If a product manager has design sensibilities (as a lot of them do), a designer might come in to tie loose ends.
-[^2]: This seems to be a common response from people in white-collar jobs. I think all these jobs have unhappy endings, but that's a musing for another time.
-[^3]: The Demis Hassabis (of DeepMind) [episode of the Ezra Klein show](https://www.nytimes.com/2023/07/11/opinion/ezra-klein-podcast-demis-hassabis.html) explains the Alpha Go and Alpha Zero story well. Skip to about 30–40 minutes in.
+[^1]: A better driver [isn't necessarily a better future](/notes/agency-not-agents).
+[^2]: I suppose this could be any team member with design sensibilities. If a product manager has design sensibilities (as a lot of them do), a designer might come in to tie loose ends.
+[^3]: This seems to be a common response from people in white-collar jobs. I think all these jobs have unhappy endings, but that's a musing for another time.
+[^4]: The Demis Hassabis (of DeepMind) [episode of the Ezra Klein show](https://www.nytimes.com/2023/07/11/opinion/ezra-klein-podcast-demis-hassabis.html) explains the Alpha Go and Alpha Zero story well. Skip to about 30–40 minutes in.

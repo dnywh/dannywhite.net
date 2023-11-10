@@ -10,7 +10,7 @@ tags:
   - Design
 related:
   - ai-as-the-copilot
-  - stamper
+  - agency-not-agents
 audience: Designers, makers, and other technologists.
 ---
 
@@ -41,7 +41,7 @@ Distilling an interface down to its core task(s) and then working outward may ge
   <blockquote>
     <p>I think it's possible we'll shift from an app-centric world, where we're opening big monolithic containers and clicking around to express our intents, to more dynamic task-based computing. Emerging tech like ChatGPT might move us away from websites and apps back to what we've been doing since the dawn of Google: typing in questions and getting answers.</p>
   </blockquote>
-  <figcaption>&mdash; Noah Levin, <cite><a href="https://youtu.be/bslH4Mv1ZHA?si=Q9uzVfRuwkmAYBri&t=310" target="_blank">AI: The next chapter in design</a></cite></figcaption>
+  <figcaption>Noah Levin, <cite><a href="https://youtu.be/bslH4Mv1ZHA?si=Q9uzVfRuwkmAYBri&t=310" target="_blank">AI: The next chapter in design</a></cite></figcaption>
 </figure>
 
 Said another way, **application-based computing** necessitates knobs and dials to pre-empt anything you might need to do within its bounds.
