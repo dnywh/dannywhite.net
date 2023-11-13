@@ -19,6 +19,7 @@ This is an idea that I've kicked around for a while. It also turns out to be uno
 <figure>
   <video playsinline controls loop muted preload="metadata" style="aspect-ratio:1/1">
     <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-clipping.webm#t=0.1">
+    <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-clipping.mp4#t=0.1">
   </video>
   <figcaption>Fathom’s clipping feature. Dubious podcast choice not mine.</figcaption>
 </figure>
@@ -177,6 +178,7 @@ I also think of Fathom—the podcast app I mentioned earlier—which allows for 
 <figure>
   <video playsinline controls loop muted preload="metadata" style="aspect-ratio:1/1">
     <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-search.webm#t=0.1">
+    <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-search.mp4#t=0.1">
   </video>
   <figcaption>Fathom’s search feature, which also works across its ‘podcast universe’.</figcaption>
 </figure>
