@@ -1,7 +1,7 @@
 ---
 title: "Agency, Not Agents"
 description: A short exploration in automated audio bookmark summation and thematic interlinking, with the help of generative AI.
-date: 2023-11-11
+date: 2023-11-13
 pinned: true
 tags:
   - AI
