@@ -18,8 +18,8 @@ This is an idea that I've kicked around for a while. It also turns out to be uno
 
 <figure>
   <video playsinline controls loop muted preload="metadata" style="aspect-ratio:1/1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-clipping.webm#t=0.1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-clipping.mp4#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699949510/temp/fathom-clipping.webm#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699949510/temp/fathom-clipping.mp4#t=0.1">
   </video>
   <figcaption>Fathom’s clipping feature. Dubious podcast choice not mine.</figcaption>
 </figure>
@@ -39,7 +39,7 @@ I also built-out a podcast app prototype that takes the source audio, transcript
 
 <figure>
   <video playsinline controls loop preload="metadata" style="aspect-ratio:1/1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/notes/agency-not-agents/stamper-overview.webm#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/temp/stamper-overview.webm#t=0.1">
   </video>
   <figcaption>Say hello to <em>Stamper</em>, a text-friendly podcast player.</figcaption>
 </figure>
@@ -107,7 +107,7 @@ This lack of usefulness became even pronounced when summary types were placed in
 
 <figure>
   <video playsinline controls loop preload="metadata" style="aspect-ratio:1/1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/notes/agency-not-agents/stamper-summary-short.webm#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/temp/stamper-summary-short.webm#t=0.1">
   </video>
 </figure>
 
@@ -116,13 +116,13 @@ Let alone to myself, having also heard the source material verbatim.
 
 <figure>
   <video playsinline controls loop preload="metadata" style="aspect-ratio:1/1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/notes/agency-not-agents/stamper-summary-long.webm#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/temp/stamper-summary-long.webm#t=0.1">
   </video>
 </figure>
 
 <figure>
   <video playsinline controls loop preload="metadata" style="aspect-ratio:1/1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/notes/agency-not-agents/stamper-title-and-summary-short.webm#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/f_auto,q_auto:good,w_1440,c_limit,ar_1:1,c_fill/v1699844130/temp/stamper-title-and-summary-short.webm#t=0.1">
   </video>
 </figure>
 
@@ -177,8 +177,8 @@ I also think of Fathom—the podcast app I mentioned earlier—which allows for 
 
 <figure>
   <video playsinline controls loop muted preload="metadata" style="aspect-ratio:1/1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-search.webm#t=0.1">
-    <source src="https://res.cloudinary.com/dannywhite/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699673868/notes/agency-not-agents/fathom-search.mp4#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699949510/temp/fathom-search.webm#t=0.1">
+    <source src="https://res.cloudinary.com/ephemera/video/upload/bo_140px_solid_black/q_auto,ar_1:1,b_black,w_1440,c_pad/v1699949510/temp/fathom-search.mp4#t=0.1">
   </video>
   <figcaption>Fathom’s search feature, which also works across its ‘podcast universe’.</figcaption>
 </figure>
@@ -187,6 +187,6 @@ I suppose I'm conflating 'heathy AI' with assistance that is largely grunt work,
 This reminds me of the "ChatGPT as an intern" analogy, used to make the point that the current state of technology is only so useful.
 
 I wonder if that is perhaps the right way to treat virtual aids permanently, irrespective of how powerful they become.
-Artificial assistance should be used for _additive work_ that we otherwise wouldn't do. Freeing us up for more agency, not less.
+Artificial assistance should be used for _additive work_ that we otherwise wouldn't do. Freeing us humans up for more agency, not less.
 
 [^1]: I judged response quality based on how well it could jog my memory on the point discussed. I also judged it on how well the summation might work on someone who came to it afresh. Could they understand the point without having to listen to the source?
