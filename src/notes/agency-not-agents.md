@@ -2,6 +2,8 @@
 title: "Agency, Not Agents"
 description: A short exploration in automated audio bookmark summation and thematic interlinking, with the help of generative AI.
 date: 2023-11-13
+modified: 2023-12-13
+stage: 2
 pinned: true
 tags:
   - AI
@@ -188,5 +190,9 @@ This reminds me of the "ChatGPT as an intern" analogy, used to make the point th
 
 I wonder if that is perhaps the right way to treat virtual aids permanently, irrespective of how powerful they become.
 Artificial assistance should be used for _additive work_ that we otherwise wouldn't do. Freeing us humans up for more agency, not less.
+
+### Updates
+
+I've come back to this to link to Jess Fong's excellent Vox video [AI can do your homework. Now what?](https://www.youtube.com/watch?v=bEJ0_TVXh-I&t=678s). _The science of learning_ chapter hits these same notes. It also more neatly proposes a healthy relationship with AI: using it to test our thinking which happens elsewhere, manually.
 
 [^1]: I judged response quality based on how well it could jog my memory on the point discussed. I also judged it on how well the summation might work on someone who came to it afresh. Could they understand the point without having to listen to the source?
