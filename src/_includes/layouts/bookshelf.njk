@@ -13,7 +13,8 @@
     <ul>
       {% for item in collections.books %}
         {% set title = item.properties.Title.title[0].plain_text %}
-        {% set author = item.properties.Author.select.name %}
+        {% set author = item.properties.Author.multi_select[0].name %}
+        {# TODO: loop through the multi_select above to capture any other authors #}
         {% set imgUrl = item.properties.Cover.files[0].file.url %}
         <li>
           {% if imgUrl %}
