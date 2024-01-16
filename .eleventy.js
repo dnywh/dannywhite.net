@@ -226,7 +226,7 @@ module.exports = function (eleventyConfig) {
         return sortedItems;
     });
 
-    // Make a collection of raindrops sorted by date saved, not date created
+    // Make a collection of Notion books sorted by date saved, not date created
     const notion = require("./src/_data/notion.js");
     eleventyConfig.addCollection('books', async () => {
         const data = await notion();
