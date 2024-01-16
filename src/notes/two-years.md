@@ -1,7 +1,7 @@
 ---
 title: Two Years of Freelance
 description: Things I've learnt along the way.
-date: 2023-09-25
+date: 2023-09-06
 tags:
   - Freelance
   - Process

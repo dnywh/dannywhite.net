@@ -2,7 +2,6 @@
 title: A Beginner’s Guide to ImageMagick
 date: 2021-05-28
 modified: 2023-08-29
-pinned: true
 tags:
   - ImageMagick
   - macOS

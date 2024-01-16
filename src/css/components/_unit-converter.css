@@ -1,7 +1,7 @@
-/* Distance converter */
+/* Unit converter for distances and elevation */
 
 /* Only style inline items to be interactive if JS is enabled */
-html:not(.no-js) p .distance {
+html:not(.no-js) p .unit {
   background-color: var(--color-swatch-highlight);
   box-shadow: 0 0 0 1px var(--color-swatch-highlight); /* Extend the background slightly */
   transition: var(--transition-text-opacity);
@@ -12,14 +12,13 @@ html:not(.no-js) p .distance {
   }
 }
 
-/* Only show distance converter fieldset if JS is enabled */
-.no-js .distance-converter {
+/* Only show unit converter fieldset if JS is enabled */
+.no-js .unit-converter {
   display: none;
 }
 
-.distance-converter {
+.unit-converter {
   display: block;
-  margin: 1.5rem 0;
   > legend {
     margin-bottom: 0.5rem;
   }

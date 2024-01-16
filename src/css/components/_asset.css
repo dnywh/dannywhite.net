@@ -1,0 +1,49 @@
+.asset,
+.article > body > main > article .article-content .asset {
+  background: var(--color-swatch-code);
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (--viewport-sm) {
+    flex-direction: row;
+    text-align: left;
+    > a {
+      text-align: right;
+    }
+  }
+
+  gap: 1rem;
+  align-items: center;
+
+  > img {
+    width: 4rem;
+    height: 4rem;
+    background: none;
+
+    /* TODO: Hide on Safari reader mode instead */
+    /* https://www.sarasoueidan.com/blog/tips-for-reader-modes/#1.-if-your-idea-requires-css-to-visualize%2C-provide-a-markup-only-alternative. */
+    /* TODO: Whilst I'm at it, improve print layouts */
+    /* @media print {
+      display: none;
+    } */
+  }
+
+  > div {
+    /* Take remaining space */
+    flex-grow: 1;
+    /* Style text */
+    /* Trim any paragraph margins */
+    margin-trim: block;
+    > h3 {
+      font-size: var(--step--1);
+    }
+    > p {
+      margin: 0;
+      color: var(--color-text-secondary);
+      font-size: var(--step--1);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 ---
-title: Automatic Smart Quotes in Eleventy Markdown
+title: Automatic Smart Quotes in Eleventy Markdown Templates
 description: Convert Markdown straight quotes into smart quotes (also known as curly quotes).
 date: 2023-09-07
 tags:
@@ -7,7 +7,6 @@ tags:
   - Markdown
   - Web
 audience: "Web folks who already use Eleventy and care about typography. Warning: knowing the difference between straight and smart quotes may ruin subtitles, signage, and most text on the internet for you."
-eleventyExcludeFromCollections: true
 ---
 
 Compare the pair:
@@ -33,7 +32,7 @@ npm install markdown-it
 
 Yes, (part of) markdown-it already comes with Eleventy. But you need to install the full package to access all its [options](https://github.com/markdown-it/markdown-it#init-with-presets-and-options), one of which we will use.
 
-Next, add the following to your .eleventy.js file:
+Add the following to your .eleventy.js file:
 
 ```js
 module.exports = function (eleventyConfig) {
@@ -45,9 +44,9 @@ module.exports = function (eleventyConfig) {
 };
 ```
 
-The `typographer` option replaces the quotes. It also handles some '[language-neutral replacement](https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js)'.
+The `typographer` option handles the straight to smart quote replacement. It also handles some [language-neutral replacement](https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js).
 
-Note that we must use `setLibrary` and not the [newer](https://www.11ty.dev/docs/languages/markdown/#optional-amend-the-library-instance) `amendLibrary`. This may cause a headache if you have other amendments, such as `markdown-it-footnote` or `markdown-it-anchor`.
+Note that we must use `eleventyConfig.setLibrary` and not the [newer](https://www.11ty.dev/docs/languages/markdown/#optional-amend-the-library-instance) `eleventyConfig.amendLibrary`. This may cause a headache if you have other amendments, such as `markdown-it-footnote` or `markdown-it-anchor`.
 
 I have a bunch of these other amendments. Here's how I combined them all with the `typographer` option:
 

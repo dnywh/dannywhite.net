@@ -384,6 +384,43 @@
               font-size: var(--step--2);
               color: var(--color-text-secondary);
               /* Remember to add a <cite> element when referencing creative work */
+
+              &:before {
+                content: "— ";
+              }
+            }
+          }
+
+          > figure.prompt {
+            &:before {
+              content: "Prompt";
+              color: var(--color-text-quaternary);
+              margin-bottom: var(--space-s);
+              /* Manually get styling similar to .small */
+              text-transform: uppercase;
+              font-feature-settings: "cpsp" 1;
+              font-size: var(--step--2);
+              letter-spacing: var(--letter-spacing-wide);
+            }
+
+            border: 1px solid var(--color-border-secondary);
+            padding: var(--space-s) var(--space-m);
+
+            > p,
+            > ol > li {
+              font-size: var(--step--1);
+            }
+
+            > p {
+              margin-bottom: var(--space-xs);
+            }
+
+            > ol {
+              list-style-position: inside;
+              padding-left: 0 !important; /* Override browser inset which is necessary elsewhere */
+              > li {
+                margin-bottom: var(--space-2xs);
+              }
             }
           }
 
@@ -426,28 +463,34 @@
 
           /* Images and media */
           & figure,
-          & .video {
+          & .video,
+          & .asset {
             margin: var(--space-l) 0;
           }
 
+          & table,
+          & fieldset {
+            margin: var(--space-m) 0;
+          }
+
+          & iframe {
+            /* Things like RWGPS embeds */
+            margin: var(--space-s) 0;
+          }
+
           & figure {
-            /* Set as flex so figcaption can be aligned to right */
             display: flex;
             flex-direction: column;
-            align-items: end;
 
             > figcaption {
               color: var(--color-text-tertiary);
               font-size: var(--step--2);
               text-align: right;
-              max-width: 600px; /*  TODO variable the same as text width */
               margin-top: var(--space-xs);
               /* margin-left: 3rem; */
 
               @media (--viewport-lg) {
-                margin-left: calc(
-                  var(--gap-md) / 2
-                ); /* Visual padding for caption */
+                margin-left: var(--space-s); /* Visual padding for caption */
               }
             }
           }

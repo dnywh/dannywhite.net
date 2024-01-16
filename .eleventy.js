@@ -290,8 +290,6 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.setLibrary("md", mdLib);
 
-
-
     // End
     return {
         // Set which directories Eleventy reads from and writes to

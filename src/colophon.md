@@ -1,10 +1,10 @@
 ---
 title: Colophon
-subtitle: A not-so-brief summary of how this website works.
+subtitle: This site is handmade. Here’s now.
 layout: "layouts/article.njk"
 ---
 
-This website is entirely open source. Check it out on [GitHub]({{ site.repoUrl }}). Read on for details.
+It's also open source. Find it on [GitHub]({{ site.repoUrl }}) or read on for details.
 
 ## Carbon footprint
 
@@ -79,7 +79,7 @@ Writing an assumed audience selection frees me up to write unapologetically to a
 
 ### Layout
 
-This is still in flux. Here are the values I use in Utopia at the moment:
+This is still in flux. Here are the values I use in [Utopia](https://utopia.fyi/space/calculator/?c=320,18,1.2,1638,21,1.333,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,xl,3xl,8) at the moment:
 
 - Min: 320px
 - Max: 1280px
@@ -123,7 +123,7 @@ It's a simple brute-force way to exclude the file anywhere it might be looped th
 
 The [Trove](/#trove) is a pinboard-esque section on my homepage that shows off what I've 'pinned' lately from around the web. I use [Raindrop](https://raindrop.io) to collect these 'pins' and their [API](https://developer.raindrop.io) to pull them into my site. I use the [eleventy-fetch](https://www.11ty.dev/docs/plugins/fetch/) plugin to cache these pins.
 
-In terms of keeping the site 'fresh' with Trove data: I no longer use Netlify's [Scheduled Functions](https://www.raymondcamden.com/2022/02/04/an-early-look-at-netlify-scheduled-functions) and instead just use this tension as healthy pressure to regularly update the site (thus refreshing Trove data along the way).
+In terms of keeping the site 'fresh' with Trove data: I no longer use Netlify's [Scheduled Functions](https://www.raymondcamden.com/2022/02/04/an-early-look-at-netlify-scheduled-functions) and instead just use this tension as healthy pressure to regularly update the site (thus refreshing Trove data along the way)[^2].
 
 I made a macOS and iOS [Shortcut](https://alejandromp.com/blog/netlify-deployment-with-ios-shortcut/) for manual builds using Netlify's Build Hooks for the scenario where I want to force a rebuild. That doesn't visibly change the site if the data has already been refreshed in the last day, given that I have the [netlify-plugin-cache](https://www.11ty.dev/docs/plugins/fetch/#running-this-on-your-build-server) package installed.
 
@@ -212,3 +212,4 @@ One [quirk](https://github.com/11ty/eleventy/discussions/2850#discussioncomment-
 ```
 
 [^1]: My site is hosted by Netlify, who use a global CDN. Most of their locations use clean energy (via [AWS and Google Cloud](https://www.netlify.com/sustainability)) but whether or not the _your_ visit to the site is running on clean energy depends on where you are visiting from and at what time.
+[^2]: There is a mystery bug where my site will auto-deploy every few weeks on its own. I'm guessing it's got something to do with the [netlify-plugin-cache](https://www.11ty.dev/docs/plugins/fetch/#running-this-on-your-build-server) package but that's for another day.
