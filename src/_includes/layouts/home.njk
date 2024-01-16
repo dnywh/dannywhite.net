@@ -113,9 +113,10 @@
             <a href="{{ item.url }}">
               {% if item.img %}
                 {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+                {% set imgSrc = "https://res.cloudinary.com/dannywhite/image/upload/v1705373724/projects/" + item.name | slugify %}
                 {% set alt =
             "The hero image for " + item.name + "." %}
-                {% projectImage item.img,
+                {% projectImage imgSrc,
             alt %}
               {% endif %}
               <div>
