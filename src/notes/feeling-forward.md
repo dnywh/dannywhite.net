@@ -76,7 +76,5 @@ That Airtable Airtable has been updated each time I've come across an AI-infused
 
 I'll add more examples, galleries, and perhaps create a front-end if this repository continues to have legs.
 
-**Update:** Davo sent me
-
 [^1]: It's often referred to as the earliest motion picture ever made. A Louis Le Prince film however [predates it by seven years](https://www.acmi.net.au/works/5476--workers-leaving-the-lumiere-factory/).
 [^2]: Is 'natural' a better way to describe these? 'Conversational' is too prescriptive given that isn't always the pattern.

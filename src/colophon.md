@@ -79,7 +79,7 @@ Writing an assumed audience selection frees me up to write unapologetically to a
 
 ### Layout
 
-This is still in flux. Here are the values I use in Utopia at the moment:
+This is still in flux. Here are the values I use in [Utopia](https://utopia.fyi/space/calculator/?c=320,18,1.2,1638,21,1.333,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,xl,3xl,8) at the moment:
 
 - Min: 320px
 - Max: 1280px
