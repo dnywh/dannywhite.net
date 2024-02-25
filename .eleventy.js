@@ -29,7 +29,7 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 // Import any shortcodes that are defined elsewhere
 const { extSrcset, extSrc } = require("./src/helpers/shortcodes");
-// Import dotenv so I can use custom environment variables, such as the Raindrop API key
+// Import dotenv so I can use custom environment variables such as the Raindrop API key
 require('dotenv').config();
 
 module.exports = function (eleventyConfig) {
