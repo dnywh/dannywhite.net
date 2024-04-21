@@ -20,7 +20,7 @@ Repeatedly typing in the same commands into Terminal is annoying, takes time, an
 
 To navigate to my personal site's local folder, I'd manually type:
 
-`cd ~/projects/dannywhite.net`
+`cd ~/projects/dannywhite.org`
 
 That would almost always be followed up by the command to start the local Jekyll server to preview changes to that site:
 
