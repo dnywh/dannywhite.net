@@ -76,4 +76,4 @@ eleventyConfig.amendLibrary("md", (mdLib) =>
 eleventyConfig.setLibrary("md", mdLib);
 ```
 
-See my [eleventy.js](https://github.com/dnywh/dannywhite.org/blob/ea8a622ede31d4cf66c7cdad5a9ec1b62a617f57/.eleventy.js#L224-L249) file for a full example.
+See my [eleventy.js](https://github.com/dnywh/dannywhite.net/blob/ea8a622ede31d4cf66c7cdad5a9ec1b62a617f57/.eleventy.js#L224-L249) file for a full example.
