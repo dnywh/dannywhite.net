@@ -1,5 +1,5 @@
 {
-  "name": "dannywhite.org",
+  "name": "dannywhite.net",
   "version": "3.0.0",
   "description": "My home on the internet.",
   "main": ".eleventy.js",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dnywh/dannywhite.org.git"
+    "url": "git+https://github.com/dnywh/dannywhite.net.git"
   },
   "keywords": [],
   "author": {
     "name": "Danny White",
-    "url": "https://dannywhite.org/"
+    "url": "https://dannywhite.net/"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dnywh/dannywhite.org/issues"
+    "url": "https://github.com/dnywh/dannywhite.net/issues"
   },
-  "homepage": "https://github.com/dnywh/dannywhite.org#readme",
+  "homepage": "https://github.com/dnywh/dannywhite.net#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
