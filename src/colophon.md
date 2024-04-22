@@ -1,6 +1,6 @@
 ---
 title: Colophon
-subtitle: This site is handmade. Here’s now.
+subtitle: This site is handmade. Here’s how.
 layout: "layouts/article.njk"
 ---
 
