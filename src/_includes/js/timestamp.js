@@ -2,7 +2,7 @@
 const timestampEl = document.querySelector("#timestamp");
 // Set location
 // https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-const currentTimeZone = 'Australia/Melbourne'
+const currentTimeZone = 'Europe/Berlin'
 
 // Add suffixes
 // https://www.freecodecamp.org/news/format-dates-with-ordinal-number-suffixes-javascript/
@@ -35,7 +35,7 @@ function createTimestamp() {
     let weekDay = new Date().toLocaleDateString('en-us', { timeZone: currentTimeZone, weekday: "long" });
     let month = new Date().toLocaleDateString('en-us', { timeZone: currentTimeZone, month: "long" });
     // Set in DOM
-    timestampEl.innerText = ` where it’s currently ${formatTime(time)} on ${weekDay} the ${calendarDay}${nthNumber(calendarDay)} of ${month}`;
+    timestampEl.innerText = ` where it is currently ${formatTime(time)} on ${weekDay} the ${calendarDay}${nthNumber(calendarDay)} of ${month}`;
 }
 
 // Run once on load

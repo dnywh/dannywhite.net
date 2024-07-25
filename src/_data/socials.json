@@ -1,10 +1,5 @@
 [
   {
-    "platform": "Threads",
-    "url": "https://www.threads.net/@dannywhite",
-    "featured": true
-  },
-  {
     "platform": "LinkedIn",
     "url": "https://www.linkedin.com/in/dnywh",
     "featured": true
@@ -15,13 +10,20 @@
     "featured": true
   },
   {
+    "platform": "Instagram",
+    "url": "https://www.instagram.com/dannywhite/",
+    "featured": true
+  },
+  {
+    "platform": "Threads",
+    "url": "https://www.threads.net/@dannywhite",
+    "featured": true
+  },
+  {
     "platform": "CV",
     "url": "https://read.cv/dannywhite"
   },
-  {
-    "platform": "Instagram",
-    "url": "https://www.instagram.com/dannywhite/"
-  },
+
   {
     "platform": "Literal",
     "url": "https://literal.club/danny"
