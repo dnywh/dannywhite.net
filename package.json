@@ -41,7 +41,7 @@
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-link-attributes": "^4.0.1",
     "netlify-plugin-cache": "^1.0.3",
-    "sharp": "^0.33.3",
+    "sharp": "^0.32.6",
     "terser": "^5.19.2"
   }
 }

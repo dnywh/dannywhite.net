@@ -20,7 +20,7 @@ Here are some ways I've reduced the carbon footprint of my site:
 - Minimised the use of imagery and video
 - Cached assets where possible
 
-See [Sustainable Web Design](https://sustainablewebdesign.org/category/design/) for a full list of best practices which I am trying my best to stick to.
+[Sustainable Web Design](https://sustainablewebdesign.org/category/design/) is a list of best practices and provocations that I've tried to follow.
 
 ## Stages
 
