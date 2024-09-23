@@ -3,7 +3,6 @@ title: "Biking the Empire State Trail: New York City to Montréal"
 description: "We recently rode the Empire State Trail from Manhattan to Rouses Point, continuing on to Montréal, Canada. Here’s some advice and a route recap for folks planning a similar trip."
 date: 2022-07-15
 modified: 2023-10-28
-pinned: true
 stage: 3
 tags:
 	- Ride
