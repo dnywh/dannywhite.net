@@ -13,7 +13,7 @@ eleventyExcludeFromCollections: true
     <description>{{ site.subtitle }}</description>
     <language>en</language>
     {%- for note in collections.note | reverse -%}
-      {%- set absoluteUrl -%}{{ note.url | url | absoluteUrl(url) }}{%- endset -%}
+      {%- set absoluteUrl -%}{{ note.url | url | absoluteUrl(site.url) }}{%- endset -%}
       <item>
         <title>{{ note.data.title }}</title>
         <link>{{ absoluteUrl }}</link>
