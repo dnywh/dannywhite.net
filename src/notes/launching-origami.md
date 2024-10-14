@@ -3,7 +3,7 @@ title: Launching Origami
 date: 2016-11-01
 modified: 2016-11-24
 stage: 2
-featured_image: facebook-ny.jpg
+cardImage: "notes/launching-origami/facebook-ny"
 twitter_card_type: summary_large_image
 tags:
   - Origami
