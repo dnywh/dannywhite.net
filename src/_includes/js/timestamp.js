@@ -2,7 +2,7 @@
 const timestampEl = document.querySelector("#timestamp");
 // Set location
 // https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-const currentTimeZone = 'Europe/Berlin'
+const currentTimeZone = 'Australia/Brisbane'
 
 // Add suffixes
 // https://www.freecodecamp.org/news/format-dates-with-ordinal-number-suffixes-javascript/
