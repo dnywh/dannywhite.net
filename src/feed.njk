@@ -12,6 +12,18 @@ eleventyExcludeFromCollections: true
     <link>{{ site.url }}</link>
     <description>{{ site.subtitle }}</description>
     <language>en</language>
+
+    {%- for bit in collections.bit | reverse -%}
+      {%- set absoluteUrl -%}{{ bit.url | url | absoluteUrl(site.url) }}{%- endset -%}
+      <item>
+        <title>Bit {{ bit.fileSlug }}</title>
+        <link>{{ absoluteUrl }}</link>
+        <description>{{ bit.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
+        <pubDate>{{ bit.date | dateToRfc822 }}</pubDate>
+        <dc:creator>{{ site.title }}</dc:creator>
+        <guid>{{ absoluteUrl }}</guid>
+      </item>
+    {%- endfor -%}
     {%- for note in collections.note | reverse -%}
       {%- set absoluteUrl -%}{{ note.url | url | absoluteUrl(site.url) }}{%- endset -%}
       <item>
