@@ -1,0 +1,27 @@
+{% extends "layouts/base.njk" %}
+{% block bodyContent %}
+  {% include "partials/site-header.njk" %}
+  <main>
+    <header class="page-header">
+
+      <h1>Bits</h1>
+
+    </header>
+
+    <div class="inner">
+      <p>A testing ground for ‘little bits’. More about this soon, maybe.
+        <a class="outbound rss" href="/feed.xml">RSS</a>
+      </p>
+
+      <ul class="tiled notes">
+        {% for item in collections.bit | reverse %}
+          <li>
+            {{ item.templateContent | safe }}
+            <a href="{{ item.url | url }}">#</a>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+  </main>
+{% endblock %}
