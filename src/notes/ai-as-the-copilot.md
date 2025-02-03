@@ -30,8 +30,8 @@ To me it's akin to using the terminal to get things done before the invention of
 
 <div class="two-up">
   <figure>
-    <img src="{% extSrc 'windows-copilot-dark-mode.png' %}"
-    srcset="{% extSrcset 'windows-copilot-dark-mode.png' %}"
+    <img src="{% extSrc 'notes/windows-copilot-dark-mode.png' %}"
+    srcset="{% extSrcset 'notes/windows-copilot-dark-mode.png' %}"
     alt="A screenshot of a user prompting the computer to change to dark mode."
     width="4213"
     height="2371"
@@ -39,8 +39,8 @@ To me it's akin to using the terminal to get things done before the invention of
     <figcaption>Writing 17 characters to turn off a light switch.</figcaption>
   </figure>
   <figure>
-    <img src="{% extSrc 'windows-copilot-remove-background.png' %}"
-    srcset="{% extSrcset 'windows-copilot-remove-background.png' %}"
+    <img src="{% extSrc 'notes/windows-copilot-remove-background.png' %}"
+    srcset="{% extSrcset 'notes/windows-copilot-remove-background.png' %}"
     alt="A screenshot of a user prompting the computer to remove the background of a photo."
     width="2450"
     height="2452"

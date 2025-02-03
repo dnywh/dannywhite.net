@@ -22,8 +22,11 @@ eleventyExcludeFromCollections: true
         <pubDate>{{ bit.date | dateToRfc822 }}</pubDate>
         <dc:creator>{{ site.title }}</dc:creator>
         <guid>{{ absoluteUrl }}</guid>
+        <category>Bit</category>
+        <content:encoded><![CDATA[{{ bit.templateContent | safe }}]]></content:encoded>
       </item>
     {%- endfor -%}
+    
     {%- for note in collections.note | reverse -%}
       {%- set absoluteUrl -%}{{ note.url | url | absoluteUrl(site.url) }}{%- endset -%}
       <item>
@@ -33,6 +36,8 @@ eleventyExcludeFromCollections: true
         <pubDate>{{ note.date | dateToRfc822 }}</pubDate>
         <dc:creator>{{ site.title }}</dc:creator>
         <guid>{{ absoluteUrl }}</guid>
+        <category>Note</category>
+        <content:encoded><![CDATA[{{ note.templateContent | safe }}]]></content:encoded>
       </item>
     {%- endfor -%}
   </channel>

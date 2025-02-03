@@ -12,8 +12,8 @@ Does it survive the bumps of the road better?
 Will more people buy it than regular, in-husk, corn?
 
 <figure>
-  <img src="{% extSrc 'corn.jpg' %}"
-  srcset="{% extSrcset 'corn.jpg' %}"
+  <img src="{% extSrc 'notes/corn.jpg' %}"
+  srcset="{% extSrcset 'notes/corn.jpg' %}"
   alt="Three corn cobs neatly packaged in styrofoam and shrink wrap"
   width="2300"
   height="3066"
@@ -27,8 +27,8 @@ Okay, sure.
 But this?
 
 <figure>
-  <img src="{% extSrc 'bananas.jpg' %}"
-  srcset="{% extSrcset 'bananas.jpg' %}"
+  <img src="{% extSrc 'notes/bananas.jpg' %}"
+  srcset="{% extSrcset 'notes/bananas.jpg' %}"
   alt="Banana bunches wrapped in plastic bags"
   width="3321"
   height="2490"
@@ -40,8 +40,8 @@ I find it hard to believe that the extra materials and time it takes to bag thes
 I leave you with one last blood-boiler: The infamous styrofoam egg carton.
 
 <figure>
-  <img src="{% extSrc 'eggs.jpg' %}"
-  srcset="{% extSrcset 'eggs.jpg' %}"
+  <img src="{% extSrc 'notes/eggs.jpg' %}"
+  srcset="{% extSrcset 'notes/eggs.jpg' %}"
   alt="Styrofoam egg cartons"
   width="1897"
   height="2530"

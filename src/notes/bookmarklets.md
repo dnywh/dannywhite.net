@@ -11,8 +11,8 @@ audience: People who are familiar with bookmarklets
 [Bookmarklets](https://bookmarklets.org/what-is-a-bookmarklet/) have been out of fashion for a while now. I've relied on them for years but only just made the connection that I can roll my own for prepend services[^prepend-services] like [12ft.io](https://12ft.io) or [Cooked](https://cooked.wiki). Here's how, using Cooked as an example.
 
 <figure>
-  <img src="{% extSrc 'cooked-demo.jpg' %}"
-  srcset="{% extSrcset 'cooked-demo.jpg' %}"
+  <img src="{% extSrc 'notes/cooked-demo.jpg' %}"
+  srcset="{% extSrcset 'notes/cooked-demo.jpg' %}"
   alt="Screenshots of the Cooked summary service in action."
   width="859"
   height="804"

@@ -89,8 +89,8 @@ Here's what I found provided the best results:
 And here's what that look like in practice:
 
 <figure>
-  <img src="{% extSrc 'agency-not-agents/gpt-builder-example' %}"
-  srcset="{% extSrcset 'agency-not-agents/gpt-builder-example' %}"
+  <img src="{% extSrc 'notes/agency-not-agents/gpt-builder-example' %}"
+  srcset="{% extSrcset 'notes/agency-not-agents/gpt-builder-example' %}"
   alt="A screenshot of OpenAI's GPT Builder tool showing what is being discussed at a specific timestamp"
   width="1490"
   height="1327"

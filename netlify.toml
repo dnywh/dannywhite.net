@@ -5,3 +5,6 @@ package = "netlify-plugin-cache"
 
   [plugins.inputs]
   paths = [ ".cache" ]
+# 
+# [build.environment]
+#  NODE_VERSION = "20"

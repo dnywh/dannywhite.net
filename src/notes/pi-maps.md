@@ -15,8 +15,8 @@ I’ve been saying that 'almost' bit every day for the last three weekends.
 Feels great regardless. Progress.
 
 <figure>
-  <img src="{% extSrc 'map-tile-2022-11-21-18-22-53-rendered.jpg' %}"
-    srcset="{% extSrcset 'map-tile-2022-11-21-18-22-53-rendered.jpg' %}"
+  <img src="{% extSrc 'notes/map-tile-2022-11-21-18-22-53-rendered.jpg' %}"
+    srcset="{% extSrcset 'notes/map-tile-2022-11-21-18-22-53-rendered.jpg' %}"
     alt="A failed map tile render test"
     width="800"
     height="400"
@@ -25,8 +25,8 @@ Feels great regardless. Progress.
 </figure>
 
 <figure>
-  <img src="{% extSrc 'map-tile-2022-11-21-18-16-40-rendered.jpg' %}"
-    srcset="{% extSrcset 'map-tile-2022-11-21-18-16-40-rendered.jpg' %}"
+  <img src="{% extSrc 'notes/map-tile-2022-11-21-18-16-40-rendered.jpg' %}"
+    srcset="{% extSrcset 'notes/map-tile-2022-11-21-18-16-40-rendered.jpg' %}"
     alt="A better map tile render test"
     width="800"
     height="400"

@@ -118,8 +118,8 @@ Sandhurst Reservoir marks the beginning of sanity.
 This is where you meet up with the Coliban Main Channel and ride alongside it for about <span class="unit inline">7 km</span> to Goom Gooruduron-yeran campsite and rainwater tank.
 
 <figure>
-  <img src="{% extSrc 'bendigo-graveleur/coliban-main-channel' %}"
-  srcset="{% extSrcset 'bendigo-graveleur/coliban-main-channel' %}"
+  <img src="{% extSrc 'notes/bendigo-graveleur/coliban-main-channel' %}"
+  srcset="{% extSrcset 'notes/bendigo-graveleur/coliban-main-channel' %}"
   alt="An unsealed road following a water channel"
   width="3984"
   height="2988"
@@ -136,8 +136,8 @@ Bring a water filter[^4] as you'll be relying on rainwater tanks like this one u
 
 <div class="two-up">
 <figure>
-    <img src="{% extSrc 'bendigo-graveleur/tent-goom-gooruduron-yeran' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/tent-goom-gooruduron-yeran' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/tent-goom-gooruduron-yeran' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/tent-goom-gooruduron-yeran' %}"
     alt="A tent at a grassy campsite"
     width="4032"
     height="3024"
@@ -145,8 +145,8 @@ Bring a water filter[^4] as you'll be relying on rainwater tanks like this one u
     <figcaption>My tent setup at Goom Gooruduron-yeran.</figcaption>
   </figure>
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/leanganook-track-water-tank' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/leanganook-track-water-tank' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/leanganook-track-water-tank' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/leanganook-track-water-tank' %}"
     alt="A rainwater tank and bicycle"
     width="3024"
     height="4032"
@@ -157,8 +157,8 @@ Bring a water filter[^4] as you'll be relying on rainwater tanks like this one u
 
 <div class="two-up">
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/goldfields-track-post' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/goldfields-track-post' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/goldfields-track-post' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/goldfields-track-post' %}"
     alt="A tent at a grassy campsite"
     width="2993"
     height="3991"
@@ -166,8 +166,8 @@ Bring a water filter[^4] as you'll be relying on rainwater tanks like this one u
     <figcaption>One of the better trail markers.</figcaption>
   </figure>
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/everlasting-flower' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/everlasting-flower' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/everlasting-flower' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/everlasting-flower' %}"
     alt="A rainwater tank and bicycle"
     width="2987"
     height="2240"
@@ -193,8 +193,8 @@ Metcalfe itself isn't much worth stopping for, although I didn't allow myself th
 I should have done this in retrospect, considering Turpins Falls is now permanently closed.
 
 <figure>
-    <img src="{% extSrc 'bendigo-graveleur/fork-in-the-road' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/fork-in-the-road' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/fork-in-the-road' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/fork-in-the-road' %}"
     alt="Two unsealed roads diverging from the center"
     width="4026"
     height="2263"
@@ -202,8 +202,8 @@ I should have done this in retrospect, considering Turpins Falls is now permanen
     <figcaption>One of many forks in the road.</figcaption>
   </figure>
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/metcalfe-sheep' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/metcalfe-sheep' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/metcalfe-sheep' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/metcalfe-sheep' %}"
     alt="A lot of sheep hanging around an old tree"
     width="4032"
     height="3024"
@@ -220,8 +220,8 @@ Prepare for a huge concrete barrier and needing to shimmy your bike through shee
 Obviously have your wits about you too. It's closed for good reason: it's dangerous. People die here.
 
 <figure>
-  <img src="{% extSrc 'bendigo-graveleur/turpins-falls' %}"
-  srcset="{% extSrcset 'bendigo-graveleur/turpins-falls' %}"
+  <img src="{% extSrc 'notes/bendigo-graveleur/turpins-falls' %}"
+  srcset="{% extSrcset 'notes/bendigo-graveleur/turpins-falls' %}"
   alt="A lush waterfall surrounded by greenery"
   width="3479"
   height="2609"
@@ -260,16 +260,16 @@ It's also the start of the O'Keefe Rail Trail.
 
 <div class="two-up">
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/rail-trail-post' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/rail-trail-post' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/rail-trail-post' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/rail-trail-post' %}"
     alt="A street post signifying the start of the rail trail"
     width="3024"
     height="4032"
     loading="lazy">
   </figure>
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/rail-trail-sign.jpg' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/rail-trail-sign.jpg' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/rail-trail-sign.jpg' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/rail-trail-sign.jpg' %}"
     alt="A map showing the entirety of the rail trail"
     width="4011"
     height="3008"
@@ -288,8 +288,8 @@ Maybe I just wanted to get home.
 
 <div class="two-up">
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/rifle-butts' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/rifle-butts' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/rifle-butts' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/rifle-butts' %}"
     alt="An old train station called 'Rifle Butts'"
     width="4032"
     height="3024"
@@ -297,8 +297,8 @@ Maybe I just wanted to get home.
     <figcaption>One of the old stations along the rail trail.</figcaption>
   </figure>
   <figure>
-    <img src="{% extSrc 'bendigo-graveleur/gelato.jpg' %}"
-    srcset="{% extSrcset 'bendigo-graveleur/gelato.jpg' %}"
+    <img src="{% extSrc 'notes/bendigo-graveleur/gelato.jpg' %}"
+    srcset="{% extSrcset 'notes/bendigo-graveleur/gelato.jpg' %}"
     alt="Me holding an ice cream"
     width="2898"
     height="3838"

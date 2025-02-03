@@ -55,8 +55,8 @@ Do this for some or all of the following categories:
 Sticky notes can go up as they are created, or at the end of the 20 minutes. It depends on whether you want to encourage idea-riffing or encourage originality, respectively.
 
 <figure>
-  <img src="{% extSrc 'metamorphosis/metamorphosis' %}"
-  srcset="{% extSrcset 'metamorphosis/metamorphosis' %}"
+  <img src="{% extSrc 'notes/metamorphosis/metamorphosis' %}"
+  srcset="{% extSrcset 'notes/metamorphosis/metamorphosis' %}"
   alt="A collection of categories printed out and stuck to the wall with tape, with sticky notes for each."
   width="1280"
   height="853"
@@ -71,8 +71,8 @@ Spend a few minutes as a group observing and clarifying the results of the prior
 Example: sticky notes (taken across categories) such as ‘warm’, ‘dependable’, ‘wise’, and ‘role-model’ might be collected in a theme called ‘Guiding Light’.
 
 <figure>
-  <img src="{% extSrc 'metamorphosis/organizing-attributes' %}"
-  srcset="{% extSrcset 'metamorphosis/organizing-attributes' %}"
+  <img src="{% extSrc 'notes/metamorphosis/organizing-attributes' %}"
+  srcset="{% extSrcset 'notes/metamorphosis/organizing-attributes' %}"
   alt="A person putting sticky notes on a wall."
   width="1280"
   height="853"
@@ -97,8 +97,8 @@ Create tangible attributes under the following areas for each of your new themes
 Stop when you feel attribute additions slowing or becoming worse in quality. Play back the attributes to the group to make sure they resonate. It’s much harder to deviate later on if you’ve all previously agreed on the guardrails.
 
 <figure>
-  <img src="{% extSrc 'metamorphosis/brand-attributes' %}"
-  srcset="{% extSrcset 'metamorphosis/brand-attributes' %}"
+  <img src="{% extSrc 'notes/metamorphosis/brand-attributes' %}"
+  srcset="{% extSrcset 'notes/metamorphosis/brand-attributes' %}"
   alt="Sticky notes arranged on a wall."
   width="1280"
   height="1707"
