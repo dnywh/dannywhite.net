@@ -19,7 +19,7 @@
     </div>
     <div class="header-text">
       <p id="client-desc">
-        These are some of the folks I’ve had the pleasure of working with over the last 8+ years...
+        These are some of the folks I’ve had the pleasure of working with over the last 10+ years...
       </p>
     </div>
     {% include "partials/client-roll.njk" %}
@@ -45,124 +45,115 @@
     <section>
       <h2 id="now" class="small">Now</h2>
       <p>
-        I’m in Coolum Beach, Queensland<span id="timestamp"></span>. It’s summer break. I’m hard at work on the next version of
-          Brown Pages: a website to faciliate local composting of food waste. My current read is
-        <em>Meditations for Mortals</em>
-        by Oliver Burkeman.
-      </p>
-    </section>
-    {% include "partials/here-there.njk" %}
+        I’m on the road somewhere on the east coast of Australia, where it’s currently <span id="timestamp"/></span>.
+      <a href="https://www.attie.app">Attie</a>
+      is on my mind. My current read is
+      <em>Superbloom</em>
+      by Nicholas Carr.
+    </p>
   </section>
-  {# Notes #}
-  <section class="home-section">
-    <header class="page-header">
-      <h2>
-        <a href="/notes">Notes</a>
-      </h2>
-    </header>
-    <div class="inner">
-      <p>
-        To self, to you, to whomever. What’s been on my mind.
-        <a class="outbound rss" href="/feed.xml">RSS</a>
-      </p>
-      {% include "partials/tag-list.njk" %}
-      {% from 'macros/note-preview.njk'
+  {% include "partials/here-there.njk" %}
+</section>
+{# Notes #}
+<section class="home-section">
+  <header class="page-header">
+    <h2>
+      <a href="/notes">Notes</a>
+    </h2>
+  </header>
+  <div class="inner">
+    <p>
+      To self, to you, to whomever. What’s been on my mind.
+      <a class="outbound rss" href="/feed.xml">RSS</a>
+    </p>
+    {% include "partials/tag-list.njk" %}
+    {% from 'macros/note-preview.njk'
       import notePreview %}
-      <ul
-        class="tiled notes">
-        {# Go through pinned items first #}
-        {% for item in collections.note |
+    <ul
+      class="tiled notes">
+      {# Go through pinned items first #}
+      {% for item in collections.note |
         reverse %}
-          {% if item.data.pinned %}
+        {% if item.data.pinned %}
+          {{ notePreview(item, false) }}
+        {% endif %}
+      {% endfor %}
+      {# Go through non-pinned items from newest to oldest #}
+      {% for item in collections.note | reverse %}
+        {# Skip those that are pinned since they are already done above #}
+        {% if not
+        item.data.pinned %}
+          {# Limit that subset to X (0 is also counted) amount of items #}
+          {% if loop.index0 < 9 %}
             {{ notePreview(item, false) }}
           {% endif %}
-        {% endfor %}
-        {# Go through non-pinned items from newest to oldest #}
-        {% for item in collections.note | reverse %}
-          {# Skip those that are pinned since they are already done above #}
-          {% if not
-        item.data.pinned %}
-            {# Limit that subset to X (0 is also counted) amount of items #}
-            {% if loop.index0 < 9 %}
-              {{ notePreview(item, false) }}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </ul>
-      {# Link to all notes #}
-      <p>
-        <a href="/notes">See all {{ notes.count }} notes</a>
-      </p>
-    </div>
-  </section>
-  {# Projects #}
-  <section class="home-section">
-    <header class="page-header">
-      <h2>Sidelines</h2>
-    </header>
-    <div class="inner">
-      <p>Select items, served on the side.</p>
-      <ul class="tiled projects">
-        {% for item in projects %}
-          <li {% if item.img %} class="featured" {% endif %}>
-            <a href="{{ item.url }}">
-              {% if item.img %}
-                {# Use our shortcode to create the most appropriate image based on resolution, availability #}
-                {% set imgSrc = "https://res.cloudinary.com/dannywhite/image/upload/v1705373724/projects/" + item.name | slugify %}
-                {% set alt =
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {# Link to all notes #}
+    <p>
+      <a href="/notes">See all {{ notes.count }} notes</a>
+    </p>
+  </div>
+</section>
+{# Projects #}
+<section class="home-section">
+  <header class="page-header">
+    <h2>Sidelines</h2>
+  </header>
+  <div class="inner">
+    <p>Select items, served on the side.</p>
+    <ul class="tiled projects">
+      {% for item in projects %}
+        <li {% if item.img %} class="featured" {% endif %}>
+          <a href="{{ item.url }}">
+            {% if item.img %}
+              {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+              {% set imgSrc = "https://res.cloudinary.com/dannywhite/image/upload/v1705373724/projects/" + item.name | slugify %}
+              {% set alt =
             "The hero image for " + item.name + "." %}
-                {% projectImage imgSrc,
+              {% projectImage imgSrc,
             alt %}
-              {% endif %}
-              <div>
-                <h3>{{ item.name }}</h3>
-                <span class="outbound">{{ item.domain }}</span>
-                <p>{{ item.desc }}</p>
-                <p>{{ item.status }}</p>
-              </div>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-  {# Trove #}
-  <section id="trove" class="home-section">
-    <header class="page-header">
-      <h2>Trove</h2>
-    </header>
-    <div class="inner">
-      <p>What I’ve found interesting lately from around the web.</p>
-      <ul class="tiled trove">
-        {% for item in collections.trove %}
-          <li>
-            <a href="{{ item.link }}" target="_blank" rel="noopener">
-              {% if item.type == "image" %}
-                {# Use our shortcode to create the most appropriate image based on resolution, availability #}
-                {% troveImage item.cover, item.title %}
-              {% else %}
-                <h3>{{ item.title }}</h3>
-              {% endif %}
-              {% if item.note %}
-                <p>{{ item.note }}</p>
-              {% endif %}
-              <span class="outbound">
-                <span>{{ item.domain }}</span>
-              </span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-</main>{% endblock %}{% block pageJsContent %}
-{# Page-specific scripts that depend on DOM elements #}
-{% set pageJs %}
-{# Get current date and time #}
-{% include "js/timestamp.js" %}
-{# Adds intro behaviour #}
-{% include "js/client-roll.js" %}
-{% endset %}
-{# Minify above scripts #}
-<script>
-  {{ pageJs | jsmin | safe }}</script>{% endblock %}
+            {% endif %}
+            <div>
+              <h3>{{ item.name }}</h3>
+              <span class="outbound">{{ item.domain }}</span>
+              <p>{{ item.desc }}</p>
+              <p>{{ item.status }}</p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{# Trove #}
+<section id="trove" class="home-section">
+  <header class="page-header">
+    <h2>Trove</h2>
+  </header>
+  <div class="inner">
+    <p>What I’ve found interesting lately from around the web.</p>
+    <ul class="tiled trove">
+      {% for item in collections.trove %}
+        <li>
+          <a href="{{ item.link }}" target="_blank" rel="noopener">
+            {% if item.type == "image" %}
+              {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+              {% troveImage item.cover, item.title %}
+            {% else %}
+              <h3>{{ item.title }}</h3>
+            {% endif %}
+            {% if item.note %}
+              <p>{{ item.note }}</p>
+            {% endif %}
+            <span class="outbound">
+              <span>{{ item.domain }}</span>
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section></main>{% endblock %}{% block pageJsContent %}{# Page-specific scripts that depend on DOM elements #}{% set pageJs %}{# Get current date and time #}{% include "js/timestamp.js" %}{# Adds intro behaviour #}{% include "js/client-roll.js" %}{% endset %}{# Minify above scripts #}<script>
+{{ pageJs | jsmin | safe }}</script>{% endblock %}

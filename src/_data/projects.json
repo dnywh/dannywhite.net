@@ -23,6 +23,13 @@
     "status": "Ongoing"
   },
   {
+    "name": "Attie",
+    "url": "https://www.attie.app",
+    "domain": "attie.app",
+    "desc": "Get the results without the scores.",
+    "status": "Ongoing"
+  },
+  {
     "name": "68",
     "url": "https://68.netlify.app",
     "domain": "68.netlify.app",
