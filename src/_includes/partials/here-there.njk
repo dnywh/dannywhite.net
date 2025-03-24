@@ -23,11 +23,9 @@
   <ul class="plain">
     <li>{% include "partials/email.html" %}</li>
     {% for social in socials %}
-      {% if social.featured %}
-        <li>
-          <a class="outbound" href="{{ social.url }}" rel="me" target="_blank" rel="noopener">{{ social.platform }}</a>
-        </li>
-      {% endif %}
+      <li>
+        <a class="outbound" href="{{ social.url }}" rel="me" target="_blank" rel="noopener">{{ social.platform }}</a>
+      </li>
     {% endfor %}
   </ul>
 </section>

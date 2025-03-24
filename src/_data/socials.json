@@ -1,35 +1,18 @@
 [
   {
     "platform": "LinkedIn",
-    "url": "https://www.linkedin.com/in/dnywh",
-    "featured": true
+    "url": "https://www.linkedin.com/in/dnywh"
   },
   {
     "platform": "GitHub",
-    "url": "https://www.github.com/dnywh/",
-    "featured": true
+    "url": "https://www.github.com/dnywh/"
   },
   {
     "platform": "Instagram",
-    "url": "https://www.instagram.com/dannywhite/",
-    "featured": true
+    "url": "https://www.instagram.com/dannywhite/"
   },
   {
-    "platform": "Threads",
-    "url": "https://www.threads.net/@dannywhite",
-    "featured": true
-  },
-  {
-    "platform": "CV",
-    "url": "https://read.cv/dannywhite"
-  },
-
-  {
-    "platform": "Literal",
-    "url": "https://literal.club/danny"
-  },
-  {
-    "platform": "Pinterest",
-    "url": "https://pinterest.com/dnywhi/"
+    "platform": "Bluesky",
+    "url": "https://bsky.app/profile/dannywhite.net"
   }
 ]
