@@ -6,12 +6,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-    property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
 
     {# Page title #}
     {% if title === "Index" %}
-      {% set pageTitle = site.title %}
+        {% set pageTitle = site.title %}
+    {% elif title === "Bit" %}
+        {% set pageTitle = "Bit #" + page.fileSlug + " — " + site.title %}
     {% elif title %}
       {% set pageTitle = title + " — " + site.title %}
     {% else %}
@@ -20,8 +21,7 @@
     <title>{{ pageTitle }}</title>
 
     {# Author #}
-    <meta
-    name="author" content="{{ site.author }}"/>
+    <meta name="author" content="{{ site.author }}"/>
 
     {# Description #}
     {% if description %}

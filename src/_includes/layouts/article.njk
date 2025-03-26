@@ -12,13 +12,23 @@
           <a href="/notes">Notes</a>
         </h2>
       </header>
+    {% elif title === "Bit" %}
+      <header class="page-header">
+        <h2>
+          <a href="/bits">Bits</a>
+        </h2>
+      </header>
     {% endif %}
   {% endfor %}
 
   <main>
     <article>
       <header>
-        <h1 id="title">{{ title }}</h1>
+        {% if title === "Bit" %}
+          <h1 id="title" class="old-style">{{ page.fileSlug }}</h1>
+        {% else %}
+          <h1 id="title">{{ title }}</h1>
+        {% endif %}
         {% if subtitle %}
           <p>{{ subtitle }}</p>
         {% endif %}
@@ -126,20 +136,20 @@
             {# <ul> #}
             {# Skip the first "note" tag and jump to the real 'first' tag; the one first listed in frontmatter #}
             {# {% for tag in tags %}
-                                                                                    {% if loop.index === 2 %}
-                                                                                        {% for loopedTag, notesWithTag in collections.notesByTag %}
-                                                                                            {% if tag === loopedTag %}
-                                                                                                    {% for item in notesWithTag | reverse %}
-                                                                                                        {% if item.data.title !== title %}
-                                                                                                            <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+                                                                                                {% if loop.index === 2 %}
+                                                                                                    {% for loopedTag, notesWithTag in collections.notesByTag %}
+                                                                                                        {% if tag === loopedTag %}
+                                                                                                                {% for item in notesWithTag | reverse %}
+                                                                                                                    {% if item.data.title !== title %}
+                                                                                                                        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+                                                                                                                    {% endif %}
+                                                                                                                {% endfor %}
                                                                                                         {% endif %}
                                                                                                     {% endfor %}
-                                                                                            {% endif %}
-                                                                                        {% endfor %}
-                                                                                    {% endif %}
-                                                                                {% endfor %}
-                                                                                </ul>
-                                                                                {% endif %} #}
+                                                                                                {% endif %}
+                                                                                            {% endfor %}
+                                                                                            </ul>
+                                                                                            {% endif %} #}
 
               <section
               class="subscribe"> {# <p>Subscribe via <a class="outbound rss" href="/feed.xml">RSS</a></p> #}

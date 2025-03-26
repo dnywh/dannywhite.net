@@ -36,6 +36,9 @@
           > h1 {
             font-size: var(--step-5);
             font-style: normal;
+            &.old-style {
+              font-variant-numeric: oldstyle-nums;
+            }
           }
           > p {
             /* Optional page subtitle */
