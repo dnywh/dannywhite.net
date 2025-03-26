@@ -176,6 +176,10 @@ pre[class~="language-js"]:before {
   content: "js";
 }
 
+pre[class~="language-jsx"]:before {
+  content: "jsx";
+}
+
 pre[class~="language-ts"]:before {
   content: "ts";
 }
