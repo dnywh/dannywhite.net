@@ -1,7 +1,7 @@
 ---
 title: Next Link and Mailto in Safari
 date: 2025-03-26
-description: The Next.js Link component doesn’t play nice with mailto email links in Safari. You need to swap those instances out for regular anchor elements.
+description: The Next.js Link component doesn’t play nice with ‘mailto’ email links in Safari. You need to swap those instances out for regular anchor elements.
 tags:
   - React
   - Next.js
@@ -25,7 +25,7 @@ Using the [Next.js Link](https://nextjs.org/docs/app/api-reference/components/li
   <figcaption>“This website has been blocked from automatically composing an email.”</figcaption>
 </figure>
 
-It’s probably caused by the Link component doing some fancy [intercepting](https://stackoverflow.com/a/42540729/2009441), which looks suspect to the browser. **You can fix this by just using a regular `<a>` anchor element for `mailto` email links**.
+It’s probably caused by the Link component doing some fancy [intercepting](https://stackoverflow.com/a/42540729/2009441), which looks suspect to the browser. **You can fix this by just using a regular `<a>` tag instead**.
 
 In other words, take this problematic starting point:
 
@@ -41,9 +41,11 @@ And just swap out the `<Link>` with a regular HTML `<a>` tag:
 <a href="mailto:you@example.com">Email me</a>
 ```
 
+The same problem and solution applies to `tel` and `sms` links, too.
+
 ## Better
 
-I personally roll-up my own `HyperLink` component with an `as` prop. It renders either a `Link` component or `<a>` tag depending on what I pass through as a value to an `as` prop. Here’s what it looks like in practice:
+I personally roll-up my own `Hyperlink` component with an `as` prop. It renders either a `Link` component or `<a>` tag depending on what I pass through as a value to an `as` prop. Here’s what it looks like in practice:
 
 ```jsx
 <Hyperlink as="anchor" href="mailto:you@example.com">
@@ -90,7 +92,7 @@ export default function Hyperlink({ as = Link, children, href, ...props }) {
 }
 ```
 
-There’s probably a way to do that automatically by reading the `href` contents but that’s a little too fancy for me.
+There’s probably a way to do that automatically by reading the `href` contents but that’s a little too fancy for my liking. I prefer to be explicit about what’s being rendered, when.
 
 ## Best
 
