@@ -13,7 +13,7 @@ related:
 audience: People building websites with Next.js.
 ---
 
-Using the [Next.js Link](https://nextjs.org/docs/app/api-reference/components/link) component for `mailto` email links works fine everywhere except for Safari, which throws the following JavaScript alert upon tap:
+Using the [Next.js Link](https://nextjs.org/docs/app/api-reference/components/link) component for `mailto` email links works fine everywhere except for Safari on macOS, which throws the following JavaScript alert upon tap:
 
 <figure>
   <img src="{% extSrc 'notes/safari-mailto-next-link' %}"

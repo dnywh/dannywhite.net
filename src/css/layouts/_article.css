@@ -373,6 +373,11 @@
                 }
 
                 hanging-punctuation: first last;
+
+                /* Highlighted bits */
+                span.highlight {
+                  background-color: var(--color-swatch-highlight);
+                }
               }
             }
 
