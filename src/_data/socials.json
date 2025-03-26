@@ -1,18 +1,18 @@
 [
   {
-    "platform": "LinkedIn",
-    "url": "https://www.linkedin.com/in/dnywh"
-  },
-  {
     "platform": "GitHub",
     "url": "https://www.github.com/dnywh/"
   },
   {
-    "platform": "Instagram",
-    "url": "https://www.instagram.com/dannywhite/"
-  },
-  {
     "platform": "Bluesky",
     "url": "https://bsky.app/profile/dannywhite.net"
+  },
+  {
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/in/dnywh"
+  },
+  {
+    "platform": "Instagram",
+    "url": "https://www.instagram.com/dannywhite/"
   }
 ]
