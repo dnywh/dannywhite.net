@@ -16,8 +16,9 @@
       <ul class="tiled notes">
         {% for item in collections.bit | reverse %}
           <li>
-            {{ item.templateContent | safe }}
-            <a href="{{ item.url | url }}">#</a>
+            <a href="{{ item.url | url }}">
+              <h3 class="old-style">{{ item.fileSlug }}</h3>
+            </a>
           </li>
         {% endfor %}
 

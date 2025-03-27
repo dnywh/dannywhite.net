@@ -172,6 +172,11 @@ sub {
   color: var(--color-text-tertiary);
 }
 
+/* The occasional (mostly for Bits) old-style numeral */
+.old-style {
+  font-variant-numeric: oldstyle-nums;
+}
+
 .outbound,
 .locked {
   &:after {
