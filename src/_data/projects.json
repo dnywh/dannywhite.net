@@ -1,5 +1,19 @@
 [
   {
+    "name": "Peels",
+    "url": "https://www.peels.app",
+    "domain": "peels.app",
+    "desc": "Find a home for your food scraps, wherever you are.",
+    "status": "Ongoing"
+  },
+  {
+    "name": "Attie",
+    "url": "https://www.attie.app",
+    "domain": "attie.app",
+    "desc": "Get the results without the scores.",
+    "status": "Ongoing"
+  },
+  {
     "name": "Ephemera",
     "img": true,
     "url": "https://ephemera.dannywhite.net",
@@ -14,20 +28,6 @@
     "domain": "github.com",
     "desc": "Print your own changing picture frame using an e-ink display and Raspberry Pi.",
     "status": "2022–2023"
-  },
-  {
-    "name": "Peels",
-    "url": "https://www.peels.app",
-    "domain": "peels.app",
-    "desc": "Find a home for your food scraps, wherever you are.",
-    "status": "Ongoing"
-  },
-  {
-    "name": "Attie",
-    "url": "https://www.attie.app",
-    "domain": "attie.app",
-    "desc": "Get the results without the scores.",
-    "status": "Ongoing"
   },
   {
     "name": "68",
