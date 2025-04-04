@@ -35,7 +35,7 @@ function createTimestamp() {
     let weekDay = new Date().toLocaleDateString('en-us', { timeZone: currentTimeZone, weekday: "long" });
     let month = new Date().toLocaleDateString('en-us', { timeZone: currentTimeZone, month: "long" });
     // Set in DOM
-    timestampEl.innerText = `${formatTime(time)} on ${weekDay} the ${calendarDay}${nthNumber(calendarDay)} of ${month}`;
+    timestampEl.innerText = `${formatTime(time)} on ${weekDay} the ${calendarDay}${nthNumber(calendarDay)} of ${month}. `;
 }
 
 // Run once on load
