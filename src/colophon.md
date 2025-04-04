@@ -196,7 +196,7 @@ See the [Typography](#typography) section for design details.
 
 ### RSS
 
-See [feed.njk]({{ site.repoUrl }}/blob/main/src/feed.njk). It loops through my note collection and excludes drafts.
+Yes, [this site has an RSS feed](/rss). See [feed.njk]({{ site.repoUrl }}/blob/main/src/feed.njk) for the technical details. It loops through my note collection and excludes drafts.
 
 ### CSS
 
