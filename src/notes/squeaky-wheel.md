@@ -1,5 +1,6 @@
 ---
 title: Squeaky Wheel
+description: The squeaky wheel doesn't just get the oil, it gets promoted over the others.
 date: 2025-04-27
 tags:
   - Design
