@@ -29,4 +29,4 @@ He gives examples like the trusty vegetable peeler we all have in the top drawer
   </blockquote>
 </figure>
 
-Don't trust a Webby or Red Dot Award. People pay hundreds of dollars just to enter those things. And don't even get me started on [Forbes 30 Under 30](https://www.reddit.com/r/starterpacks/comments/12kvj1d/how_to_get_on_forbes_30_under_30_list_starter_pack/).
+Don't trust a Webby or Red Dot Award. People pay hundreds of dollars just to enter those things. Similar advice applies to personal accolades. They're often fluff.
