@@ -1,6 +1,6 @@
 ---
 title: In Defense of Screens, Maybe
-description: Screens are neutral but their role as memory surrogates makes for cognitive atrophy.
+description: Screens are neutral but their role as memory surrogates isn’t.
 cardImage: "notes/del-cartwright-greenwich"
 date: 2025-05-10
 tags:
