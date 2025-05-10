@@ -7,7 +7,7 @@ tags:
   - Process
 ---
 
-[This post](https://www.chrbutler.com/you-can-be-a-great-designer-and-be-completely-unknown) by Chris Butler hits at something I've long felt yet struggled to articulate: we've found ourselves in a system that prioritises being noticed over being useful.
+[This post](https://www.chrbutler.com/you-can-be-a-great-designer-and-be-completely-unknown) by Christopher Butler hits at something I've long felt yet struggled to articulate: we've found ourselves in a system that prioritises being noticed over being useful.
 
 It's now advantageous to say something—_anything_—even if what you're saying is hollow. Your worth as a designer is equated with how often you tweet glossy psuedo-UI, how often you ask rhetorical questions on LinkedIn, and how often you appear at conferences.
 
@@ -29,4 +29,8 @@ He gives examples like the trusty vegetable peeler we all have in the top drawer
   </blockquote>
 </figure>
 
-Don't trust a Webby or Red Dot Award. People pay hundreds of dollars just to enter those things. Similar advice applies to personal accolades. They're often fluff.
+Don't trust a Webby or Red Dot Award. People pay hundreds of dollars just to enter those things. Similar advice applies to personal accolades. They're often fluff, and just as often a sign of a squeaky wheel.
+
+## Update
+
+Christopher Butler strikes again. See [this subsequent note](/notes/screens-maybe) about screens as neutral technology (with a price).
