@@ -94,6 +94,7 @@
 
         > aside.stage {
           @media (--viewport-md) {
+            place-self: start end;
             /* Align to top by removing shared margin */
             margin-top: 0;
           }
@@ -102,7 +103,6 @@
             margin-top: var(--grid-gutter);
             /* Style */
             grid-column: 3;
-            justify-self: end;
             text-align: right;
 
             /* Set sticky */
@@ -478,8 +478,8 @@
             margin: var(--space-m) 0;
           }
 
-          & iframe {
-            /* Things like RWGPS embeds */
+          /* Things like RWGPS embeds, directly in article-content (not things like lite-youtube which are nested) */
+          & > iframe {
             margin: var(--space-s) 0;
           }
 
