@@ -131,6 +131,7 @@
       </ul>
     </div>
   </section>
+
   {# Trove #}
   <section id="trove" class="home-section">
     <header class="page-header">
@@ -138,13 +139,38 @@
     </header>
     <div class="inner">
       <p>What I’ve found interesting lately from around the web.</p>
-      <ul class="tiled trove">
+      <ul
+        class="tiled trove">
+        {# Manual additions #}
+        {% for item in collections.link | reverse %}
+          <li>
+            <a href="{{ item.data.link }}" target="_blank" rel="noopener">
+              {% if item.data.cover %}
+                {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+                {% troveImg item.data.cover, item.data.title %}
+                {# {% elseif item.data.quote %}
+                                <blockquote>{{ item.data.quote }}</blockquote> #}
+              {% endif %}
+              <h3>{{ item.data.title }}</h3>
+              {% if item.content %}
+                <p>{{ item.content | safe }}</p>
+              {% endif %}
+
+              {% if item.data.domain %}
+                <span class="outbound">
+                  <span>{{ item.data.domain }}</span>
+                </span>
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+        {# Raindrop additions #}
         {% for item in collections.trove %}
           <li>
             <a href="{{ item.link }}" target="_blank" rel="noopener">
               {% if item.type == "image" %}
                 {# Use our shortcode to create the most appropriate image based on resolution, availability #}
-                {% troveImage item.cover, item.title %}
+                {% troveImg item.cover, item.title %}
               {% else %}
                 <h3>{{ item.title }}</h3>
               {% endif %}

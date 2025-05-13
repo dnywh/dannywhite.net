@@ -140,7 +140,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     // Trove image shortcode
     // https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)
-    eleventyConfig.addShortcode("troveImage", async function (src, alt) {
+    eleventyConfig.addShortcode("troveImg", async function (src, alt) {
         let metadata = await Image(src, {
             formats: ["webp"],
             // Calculated widths by multiplying physical max-width of img area (320px) by 2x and 3x

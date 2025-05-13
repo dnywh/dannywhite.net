@@ -44,7 +44,7 @@ Driven designers seek out opportunities to do work that resonates. It’s an itc
 
 The satisfying clack of the Dolphin torch reminds me of Twitter’s pull-to-refresh gesture. **Both are craft-driven moments of visceral resonance. But one serves us, the other divides and corrodes us**. The swindle—and the deeper resonance—lies in the application of our craft.
 
-To be clear, I’m not above this vulnerability. I’ve sometimes talked myself into ethically dubious work because the craft aspect was seductive. Part of me is writing this to hold my future self accountable.
+To be clear, I’m not above this vulnerability. I’ve sometimes talked myself into ethically dubious or shallow work because the craft aspect was seductive. Part of me is writing this to hold my future self accountable.
 
 A larger part of me has seen a collective loosening of scruples in our industry that should be discussed. It’s evident in the general criticism I see of this Ive talk; airing nuance and pondering ramifications is rejected as indulgent. Or, to quote Jurassic Park:
 

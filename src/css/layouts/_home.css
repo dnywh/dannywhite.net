@@ -239,17 +239,37 @@
               & p {
                 margin: 0;
               }
-              & p {
+              & p,
+              blockquote {
                 margin-top: 0.25rem;
                 /* Style */
-                color: var(--color-text-secondary);
-                font-size: var(--step--1);
                 /* Truncate text */
                 /* https://css-tricks.com/almanac/properties/l/line-clamp/ */
                 display: -webkit-box;
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
+              }
+
+              p {
+                font-size: var(--step--1);
+                color: var(--color-text-tertiary);
+              }
+
+              blockquote {
+                /* See also article blockquote styling */
+                margin-trim: block;
+                font-weight: 400;
+                /* font-style: italic; */
+                font-size: var(--step-0);
+                color: var(--color-text-secondary);
+
+                &:before {
+                  content: open-quote;
+                }
+                &:after {
+                  content: close-quote;
+                }
               }
 
               /* Customise the outbound slightly for this use-case */
