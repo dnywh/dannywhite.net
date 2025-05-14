@@ -272,6 +272,15 @@
                 }
               }
 
+              img,
+              video {
+                /* Ground white images against white background */
+                /* Or, in the case of dark mode, dull them slightly */
+                filter: var(--color-filter);
+                /* Add a bit of visual margin for text below */
+                margin-bottom: 0.65rem;
+              }
+
               /* Customise the outbound slightly for this use-case */
               .outbound {
                 margin-top: 0.5rem;

@@ -1,4 +1,5 @@
 {
   "layout": "layouts/article.njk",
-  "tags": "link"
+  "tags": "link",
+  "coverType": "image"
 }

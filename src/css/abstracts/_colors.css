@@ -15,6 +15,8 @@
   --color-background-highlight-on-light: rgb(249, 249, 249);
   --color-swatch-highlight-on-light: hsla(36, 100%, 92%, 1);
   --color-swatch-code-on-light: #f5f2f0;
+  /* Filters (e.g. for images) to stand out on backgrounds */
+  --color-filter-on-light: brightness(0.95) contrast(1.05);
 
   /* 
   On dark ('dark mode')
@@ -32,6 +34,8 @@
   --color-background-highlight-on-dark: rgba(243, 255, 166, 0.1);
   --color-swatch-highlight-on-dark: rgba(243, 255, 166, 0.05);
   --color-swatch-code-on-dark: var(--color-background-highlight-on-dark);
+  /* Filters (e.g. for images) to dull against backgrounds */
+  --color-filter-on-dark: brightness(0.85) contrast(1);
 
   /* 
   Set default colors (to 'on light') 
@@ -47,6 +51,7 @@
   --color-border-secondary: var(--color-border-secondary-on-light);
   --color-swatch-highlight: var(--color-swatch-highlight-on-light);
   --color-swatch-code: var(--color-swatch-code-on-light);
+  --color-filter: var(--color-filter-on-light);
 }
 
 /* Light and dark mode handling */
@@ -70,6 +75,7 @@
     --color-border-secondary: var(--color-border-secondary-on-dark);
     --color-swatch-highlight: var(--color-swatch-highlight-on-dark);
     --color-swatch-code: var(--color-swatch-code-on-dark);
+    --color-filter: var(--color-filter-on-dark);
   }
 }
 /* Repeats the above */
@@ -85,4 +91,5 @@
   --color-border-secondary: var(--color-border-secondary-on-dark);
   --color-swatch-highlight: var(--color-swatch-highlight-on-dark);
   --color-swatch-code: var(--color-swatch-code-on-dark);
+  --color-filter: var(--color-filter-on-dark);
 }
