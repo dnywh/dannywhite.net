@@ -31,6 +31,8 @@ const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 const { extSrcset, extSrc } = require("./src/helpers/shortcodes");
 // Import dotenv so I can use custom environment variables, such as the Raindrop API key
 require('dotenv').config();
+// Import site data
+const site = require("./src/_data/site.json");
 
 module.exports = function (eleventyConfig) {
     // Quieten console output
@@ -140,7 +142,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     // Trove image shortcode
     // https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)
-    eleventyConfig.addShortcode("troveImg", async function (src, alt, format = "webp") {
+    eleventyConfig.addShortcode("troveImg", async function (src, alt, format = "webp", isRss = false) {
         let metadata = await Image(src, {
             formats: [format],
             // Enable animated GIFs
@@ -163,6 +165,21 @@ module.exports = function (eleventyConfig) {
             loading: "lazy",
             decoding: "async",
         };
+
+        // If this is for RSS, make the URLs absolute
+        if (isRss) {
+            // metadata is an object with format keys (e.g. 'webp', 'gif')
+            Object.keys(metadata).forEach(format => {
+                metadata[format].forEach(image => {
+                    image.url = `${site.url}${image.url}`;
+                    image.srcset = image.srcset.split(', ').map(src => {
+                        const [url, width] = src.split(' ');
+                        return `${site.url}${url} ${width}`;
+                    }).join(', ');
+                });
+            });
+        }
+
         // You bet we throw an error on a missing alt (alt="" works okay)
         return Image.generateHTML(metadata, imageAttributes);
     });

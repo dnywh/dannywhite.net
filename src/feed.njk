@@ -27,12 +27,12 @@ eleventyExcludeFromCollections: true
           <![CDATA[
           {% if link.data.cover %}
             {% if link.data.coverType === "image" %}
-              {% troveImg link.data.cover, link.data.title %}
+              {% troveImg link.data.cover, link.data.title, "webp", true %}
             {% elseif link.data.coverType === "gif" %}
-              {% troveImg link.data.cover, link.data.title, "gif" %}
+              {% troveImg link.data.cover, link.data.title, "gif", true %}
             {% elseif link.data.coverType === "video" %}
               <video playsinline loop muted autoplay preload="metadata" style="width: 100%">
-                <source src="{{ link.data.cover }}#t=0.5">
+                <source src="{{ link.data.cover | absoluteUrl(site.url) }}#t=0.5">
               </video>
             {% endif %}
           {% endif %}
