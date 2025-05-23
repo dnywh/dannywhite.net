@@ -27,7 +27,17 @@
         {% if title === "Bit" %}
           <h1 id="title" class="old-style">{{ page.fileSlug }}</h1>
         {% else %}
-          <h1 id="title">{{ title }}</h1>
+          {% for tag in tags %}
+            {% if tag === "link" %}
+              <h1 id="title" class="outbound">
+                <a href="{{ link }}">
+                  {{ title }}
+                </a>
+              </h1>
+            {% elseif tag === "note" %}
+              <h1 id="title">{{ title }}</h1>
+            {% endif %}
+          {% endfor %}
         {% endif %}
         {% if subtitle %}
           <p>{{ subtitle }}</p>
@@ -72,7 +82,6 @@
       <aside class="left">
         {% if content | toc %}
           <section>
-            {# <h2 class="small">Contents</h2> #}
             <nav class="toc">
               <ol>
                 <li><a href="#title">⌃</a></li>
@@ -84,105 +93,133 @@
       </aside>
 
       <div class="article-content">
-        {{ content | safe }}
-      </div>
+        {# Repeat image logic from home.njk #}
+        {# TODO: use proper & figure, .video, and .asset styling to inherit margins, etc #}
+          {% for tag in tags %}
+            {% if tag === "link" %}
+              {% if cover %}
+                {% if coverType === "image" %}
+                {# Use our shortcode to create the most appropriate image based on resolution, availability #}
+                {% troveImg cover, title %}
+              {% elseif coverType === "gif" %}
+                {% troveImg cover, title, "gif" %}
+              {% elseif coverType === "video" %}
+                <video playsinline loop muted autoplay preload="metadata" style="width: 100%">
+                  <source src="{{ cover }}#t=0.5"></video>
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
 
-      {# Only include this content if is a note #}
-      {% for tag in tags %}
-        {% if tag === "note" %}
-          <aside class="meta">
-            <section class="tagged">
-              <h3 class="small">Tagged with</h3>
-              <ul class="tag-list small">
-                {% for tag in tags %}
-                  {% if tag !== "note" %}
-                    <li>
-                      <a href="/notes/tagged/{{ tag | slugify }}">{{ tag }}</a>
-                    </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </section>
+          {{ content | safe }}
 
-            {# This is the 'easy' way: manually entering related notes and then linking to them here #}
-            {# It requires 'related' in frontmatter #}
-            {% if related %}
-              <section class="related">
-                <h3 class="small">See also</h3>
-                <ul>
-                  {% for relatedItemSlug in related %}
-                    {% for note in collections.note %}
-                      {% if note.fileSlug === relatedItemSlug %}
-                        <li>
-                          <a href="{{ note.url }}">{{ note.data.title }}</a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
+          {# Only include outbound link if this is a "link" type #}
+          {% for tag in tags %}
+            {% if tag === "link" %}
+              <p class="outbound">
+                <a href="{{ link }}">Link</a>
+              </p>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+
+        {# Only include this content if is a note #}
+        {% for tag in tags %}
+          {% if tag === "note" %}
+            <aside class="meta">
+              <section class="tagged">
+                <h3 class="small">Tagged with</h3>
+                <ul class="tag-list small">
+                  {% for tag in tags %}
+                    {% if tag !== "note" %}
+                      <li>
+                        <a href="/notes/tagged/{{ tag | slugify }}">{{ tag }}</a>
+                      </li>
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </section>
-            {% endif %}
-            {# See also: https://www.raymondcamden.com/2021/09/24/creating-a-manual-related-posts-feature-in-eleventy #}
 
-            {# A smarter way would be to build a list of related articles based on articles that share the same tags #}
-            {# Sorted by the amount of tags shared #}
-            {# But this is tricky because you need to filter out duplicates #}
-            {# ...and just becaues they share the same tag doesn't mean they are highly relevant #}
-            {# A simpler solution is to just look at the *first* listed tag (after 'note' like so: #}
-            {# If there are more tags than just the default "note"... #}
-            {# NOTE: this is brittle. The ul still shows for items who are the only users of a tag. In other words: I should set a rule to never implement a new tag unless it is used 2+ times #}
-            {# This also adds a solid 1s to my build time #}
-            {# {% if tags.length > 1 %} #}
-            {# <ul> #}
-            {# Skip the first "note" tag and jump to the real 'first' tag; the one first listed in frontmatter #}
-            {# {% for tag in tags %}
-                                                                                                {% if loop.index === 2 %}
-                                                                                                    {% for loopedTag, notesWithTag in collections.notesByTag %}
-                                                                                                        {% if tag === loopedTag %}
-                                                                                                                {% for item in notesWithTag | reverse %}
-                                                                                                                    {% if item.data.title !== title %}
-                                                                                                                        <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
-                                                                                                                    {% endif %}
-                                                                                                                {% endfor %}
-                                                                                                        {% endif %}
-                                                                                                    {% endfor %}
-                                                                                                {% endif %}
-                                                                                            {% endfor %}
-                                                                                            </ul>
-                                                                                            {% endif %} #}
+              {# This is the 'easy' way: manually entering related notes and then linking to them here #}
+              {# It requires 'related' in frontmatter #}
+              {% if related %}
+                <section class="related">
+                  <h3 class="small">See also</h3>
+                  <ul>
+                    {% for relatedItemSlug in related %}
+                      {% for note in collections.note %}
+                        {% if note.fileSlug === relatedItemSlug %}
+                          <li>
+                            <a href="{{ note.url }}">{{ note.data.title }}</a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                  </ul>
+                </section>
+              {% endif %}
+              {# See also: https://www.raymondcamden.com/2021/09/24/creating-a-manual-related-posts-feature-in-eleventy #}
 
-              <section
-              class="subscribe"> {# <p>Subscribe via <a class="outbound rss" href="/feed.xml">RSS</a></p> #}
-              <h3 class="small">Subscribe</h3>
-              <p>
-                <a class="outbound rss" href="/feed.xml">RSS</a>
-              </p>
-            </section>
-          </aside>
-        {% endif %}
-      {% endfor %}
-    </article>
-  </main>
-{% endblock %}
+              {# A smarter way would be to build a list of related articles based on articles that share the same tags #}
+              {# Sorted by the amount of tags shared #}
+              {# But this is tricky because you need to filter out duplicates #}
+              {# ...and just becaues they share the same tag doesn't mean they are highly relevant #}
+              {# A simpler solution is to just look at the *first* listed tag (after 'note' like so: #}
+              {# If there are more tags than just the default "note"... #}
+              {# NOTE: this is brittle. The ul still shows for items who are the only users of a tag. In other words: I should set a rule to never implement a new tag unless it is used 2+ times #}
+              {# This also adds a solid 1s to my build time #}
+              {# {% if tags.length > 1 %} #}
+              {# <ul> #}
+              {# Skip the first "note" tag and jump to the real 'first' tag; the one first listed in frontmatter #}
+              {# {% for tag in tags %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        {% if loop.index === 2 %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            {% for loopedTag, notesWithTag in collections.notesByTag %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                {% if tag === loopedTag %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {% for item in notesWithTag | reverse %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {% if item.data.title !== title %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        {% endfor %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                {% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            {% endfor %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        {% endif %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    {% endfor %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    {% endif %} #}
 
-{% block pageJsContent %}
-  {# Only include stage or date information if is a note #}
-  {% for tag in tags %}
-    {% if tag === "note" %}
-      {# Page-specific scripts that depend on DOM elements #}
-      {% set pageJs %}
-      {# Set relative dates #}
-      {% include "js/relative-date-formatter.js" %}
-      {# Fade in/out stage element #}
-      {% include "js/stage-fade.js" %}
-      {% endset %}
-      {# Minify above scripts #}
-      <script>{{ pageJs | jsmin | safe }}</script>
-    {% endif %}
-  {% endfor %}
-  {% if clientJS %}
-    {% for item in clientJS %}
-      <script src="/js/{{ item }}"></script>
+                <section
+                class="subscribe"> {# <p>Subscribe via <a class="outbound rss" href="/feed.xml">RSS</a></p> #}
+                <h3 class="small">Subscribe</h3>
+                <p>
+                  <a class="outbound rss" href="/feed.xml">RSS</a>
+                </p>
+              </section>
+            </aside>
+          {% endif %}
+        {% endfor %}
+      </article>
+    </main>
+  {% endblock %}
+
+  {% block pageJsContent %}
+    {# Only include stage or date information if is a note #}
+    {% for tag in tags %}
+      {% if tag === "note" %}
+        {# Page-specific scripts that depend on DOM elements #}
+        {% set pageJs %}
+        {# Set relative dates #}
+        {% include "js/relative-date-formatter.js" %}
+        {# Fade in/out stage element #}
+        {% include "js/stage-fade.js" %}
+        {% endset %}
+        {# Minify above scripts #}
+        <script>{{ pageJs | jsmin | safe }}</script>
+      {% endif %}
     {% endfor %}
-  {% endif %}
-{% endblock %}
+    {% if clientJS %}
+      {% for item in clientJS %}
+        <script src="/js/{{ item }}"></script>
+      {% endfor %}
+    {% endif %}
+  {% endblock %}

@@ -116,7 +116,7 @@
                 {% set imgSrc = "https://res.cloudinary.com/dannywhite/image/upload/v1705373724/projects/" + item.name | slugify %}
                 {% set alt =
             "The hero image for " + item.name + "." %}
-                {% projectImage imgSrc,
+                {% projectImg imgSrc,
             alt %}
               {% endif %}
               <div>
@@ -144,11 +144,15 @@
         {# Manual additions #}
         {% for item in collections.link | reverse %}
           <li>
-            <a href="{{ item.data.link }}" target="_blank" rel="noopener">
+            <a
+              href="{{ item.data.link }}" target="_blank" rel="noopener">
+              {# Repeat image logic from article.njk #}
               {% if item.data.cover %}
                 {% if item.data.coverType === "image" %}
                   {# Use our shortcode to create the most appropriate image based on resolution, availability #}
                   {% troveImg item.data.cover, item.data.title %}
+                {% elseif item.data.coverType === "gif" %}
+                  {% troveImg item.data.cover, item.data.title, "gif" %}
                 {% elseif item.data.coverType === "video" %}
                   <video playsinline loop muted autoplay preload="metadata" style="width: 100%">
                     <source src="{{ item.data.cover }}#t=0.5"></video>

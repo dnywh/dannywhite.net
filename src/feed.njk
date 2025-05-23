@@ -24,7 +24,19 @@ eleventyExcludeFromCollections: true
         <guid>{{ absoluteUrl }}</guid>
         <category>link</category>
         <content:encoded>
-          <![CDATA[{{ link.templateContent | safe }}
+          <![CDATA[
+          {% if link.data.cover %}
+            {% if link.data.coverType === "image" %}
+              {% troveImg link.data.cover, link.data.title %}
+            {% elseif link.data.coverType === "gif" %}
+              {% troveImg link.data.cover, link.data.title, "gif" %}
+            {% elseif link.data.coverType === "video" %}
+              <video playsinline loop muted autoplay preload="metadata" style="width: 100%">
+                <source src="{{ link.data.cover }}#t=0.5">
+              </video>
+            {% endif %}
+          {% endif %}
+          {{ link.templateContent | safe }}
           <p class="permalink"><a href="{{ absoluteUrl }}">Permalink</a></p>]]>
         </content:encoded>
       </item>

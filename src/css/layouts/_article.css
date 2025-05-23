@@ -467,9 +467,16 @@
           }
 
           /* Images and media */
+          & > img {
+            /* Ground white images against white background */
+            /* Or, in the case of dark mode, dull them slightly */
+            filter: var(--color-filter);
+          }
+
           & figure,
           & .video,
-          & .asset {
+          & .asset,
+          > img /* The rare img that is not in a figure, like trove (link) images*/ {
             margin: var(--space-l) 0;
           }
 

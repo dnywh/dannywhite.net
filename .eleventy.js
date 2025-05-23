@@ -140,9 +140,14 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     // Trove image shortcode
     // https://www.11ty.dev/docs/plugins/image/#nunjucks-liquid-javascript-(asynchronous-shortcodes)
-    eleventyConfig.addShortcode("troveImg", async function (src, alt) {
+    eleventyConfig.addShortcode("troveImg", async function (src, alt, format = "webp") {
         let metadata = await Image(src, {
-            formats: ["webp"],
+            formats: [format],
+            // Enable animated GIFs
+            sharpOptions: {
+                animated: format === "gif" ? true : false,
+            },
+
             // Calculated widths by multiplying physical max-width of img area (320px) by 2x and 3x
             widths: [320, 640, 960],
             outputDir: "./public/assets/images/trove",
@@ -162,7 +167,7 @@ module.exports = function (eleventyConfig) {
         return Image.generateHTML(metadata, imageAttributes);
     });
     // General image shortcode, currently used for project imagery
-    eleventyConfig.addShortcode("projectImage", async function (src, alt) {
+    eleventyConfig.addShortcode("projectImg", async function (src, alt) {
         let metadata = await Image(src, {
             formats: ["webp"],
             // Calculated widths by inspecting possible physical container sizes and multiplying by 2x, 3x
