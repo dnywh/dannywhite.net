@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
     {%- for link in collections.link | reverse -%}
       {%- set absoluteUrl -%}{{ link.url | url | absoluteUrl(site.url) }}{%- endset -%}
       <item>
-        <title>{{ link.data.title }}</title>
+        <title>Link: {{ link.data.title }}</title>
         <link>{{ link.data.link }}</link>
         <description>{{ link.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
         <pubDate>{{ link.date | dateToRfc822 }}</pubDate>
