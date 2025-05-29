@@ -1,5 +1,5 @@
 ---
-title: Hawksbury River
+title: Hawkesbury River
 cardImage: "notes/hawkesbury-river"
 description: Window seat, always.
 date: 2025-05-28

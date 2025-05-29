@@ -160,7 +160,7 @@
                 {% endif %}
                 <h3>{{ item.data.title }}</h3>
                 {% if item.content %}
-                  <p>{{ item.content | safe }}</p>
+                  {{ item.content | safe }}
                 {% endif %}
                 {% if item.data.domain %}
                   <span class="outbound">
