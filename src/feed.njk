@@ -5,7 +5,8 @@ eleventyExcludeFromCollections: true
 
 {#- Make sure to save without formatting as Prettier doesn't play nice with XML -#}
 {#- Make sure to keep `-` in `{#-` and `{%-` Nunjucks comments and tags to trim whitespace -#}
-<?xml version="1.0" encoding="utf-8"?> {#- Served via RSS instead of Atom so iOS doesn't just link to raw XML -#}
+<?xml
+version="1.0" encoding="utf-8"?> {#- Served via RSS instead of Atom so iOS doesn't just link to raw XML -#}
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xml:base="{{ site.url }}">
   <channel>
     <title>{{ site.title }}</title>
@@ -13,65 +14,82 @@ eleventyExcludeFromCollections: true
     <description>{{ site.subtitle }}</description>
     <language>en</language>
 
-    {%- for link in collections.link | reverse -%}
-      {%- set absoluteUrl -%}{{ link.url | url | absoluteUrl(site.url) }}{%- endset -%}
-      <item>
-        <title>Link: {{ link.data.title }}</title>
-        <link>{{ link.data.link }}</link>
-        <description>{{ link.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
-        <pubDate>{{ link.date | dateToRfc822 }}</pubDate>
-        <dc:creator>{{ site.title }}</dc:creator>
-        <guid>{{ absoluteUrl }}</guid>
-        <category>link</category>
-        <content:encoded>
-          <![CDATA[
-          {% if link.data.cover %}
-            {% if link.data.coverType === "image" %}
-              {% troveImg link.data.cover, link.data.title, "webp", true %}
-            {% elseif link.data.coverType === "gif" %}
-              {% troveImg link.data.cover, link.data.title, "gif", true %}
-            {% elseif link.data.coverType === "video" %}
-              <video playsinline loop muted autoplay preload="metadata" style="width: 100%">
-                <source src="{{ link.data.cover | absoluteUrl(site.url) }}#t=0.5">
-              </video>
-            {% endif %}
-          {% endif %}
-          {{ link.templateContent | safe }}
-          <p class="permalink"><a href="{{ absoluteUrl }}">Permalink</a></p>]]>
-        </content:encoded>
-      </item>
-    {%- endfor -%}
+    {#- Use unified, globally date-sorted feed collection -#}
+    {%- for item in collections.feedUnified -%}
+      {%- if item.url -%}
+        {%- set tags = item.data.tags -%}
+        {%- set isLink = (tags == 'link') or ('link' in tags) -%}
+        {%- set isNote = (tags == 'note') or ('note' in tags) -%}
+        {%- set isBit  = (tags == 'bit')  or ('bit'  in tags) -%}
 
-    {%- for bit in collections.bit | reverse -%}
-      {%- set absoluteUrl -%}{{ bit.url | url | absoluteUrl(site.url) }}{%- endset -%}
-      <item>
-        <title>Bit #{{ bit.fileSlug }}</title>
-        <link>{{ absoluteUrl }}</link>
-        <description>{{ bit.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
-        <pubDate>{{ bit.date | dateToRfc822 }}</pubDate>
-        <dc:creator>{{ site.title }}</dc:creator>
-        <guid>{{ absoluteUrl }}</guid>
-        <category>Bit</category>
-        <content:encoded>
-          <![CDATA[{{ bit.templateContent | safe }}]]>
-        </content:encoded>
-      </item>
-    {%- endfor -%}
+        {%- if isLink or isNote or isBit -%}
+          {%- set absoluteUrl -%}{{ item.url | url | absoluteUrl(site.url) }}{%- endset -%}
 
-    {%- for note in collections.note | reverse -%}
-      {%- set absoluteUrl -%}{{ note.url | url | absoluteUrl(site.url) }}{%- endset -%}
-      <item>
-        <title>{{ note.data.title }}</title>
-        <link>{{ absoluteUrl }}</link>
-        <description>{{ note.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
-        <pubDate>{{ note.date | dateToRfc822 }}</pubDate>
-        <dc:creator>{{ site.title }}</dc:creator>
-        <guid>{{ absoluteUrl }}</guid>
-        <category>Note</category>
-        <content:encoded>
-          <![CDATA[{{ note.templateContent | safe }}]]>
-        </content:encoded>
-      </item>
+          {%- if isLink -%}
+            <item>
+              <title>Link: {{ item.data.title }}</title>
+              <link>{{ item.data.link }}</link>
+              <description>{{ item.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
+              <pubDate>{{ item.date | dateToRfc822 }}</pubDate>
+              <dc:creator>{{ site.title }}</dc:creator>
+              <guid>{{ absoluteUrl }}</guid>
+              <category>link</category>
+              <content:encoded>
+                <![CDATA[
+                
+                  
+                    
+                  
+                    
+                  
+                    <video playsinline loop muted autoplay preload="metadata" style="width: 100%">
+                      <source src="{{ item.data.cover | absoluteUrl(site.url) }}#t=0.5">
+                    </video>
+                  
+                
+                {{ item.templateContent | safe }}
+                <p class="permalink"><a href="{{ absoluteUrl }}">Permalink</a></p>]]>
+                {% if item.data.cover %}
+                  {% if item.data.coverType === "image" %}
+                    {% troveImg item.data.cover, item.data.title, "webp", true %}
+                  {% elseif item.data.coverType === "gif" %}
+                    {% troveImg item.data.cover, item.data.title, "gif", true %}
+                    {% elseif item.data.coverType === "video" %}
+                  {% endif %}
+                {% endif %}
+              </content:encoded>
+            </item>
+
+          {%- elseif isBit -%}
+            <item>
+              <title>Bit #{{ item.fileSlug }}</title>
+              <link>{{ absoluteUrl }}</link>
+              <description>{{ item.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
+              <pubDate>{{ item.date | dateToRfc822 }}</pubDate>
+              <dc:creator>{{ site.title }}</dc:creator>
+              <guid>{{ absoluteUrl }}</guid>
+              <category>Bit</category>
+              <content:encoded>
+                <![CDATA[{{ item.templateContent | safe }}]]>
+              </content:encoded>
+            </item>
+
+          {%- elseif isNote -%}
+            <item>
+              <title>{{ item.data.title }}</title>
+              <link>{{ absoluteUrl }}</link>
+              <description>{{ item.templateContent | htmlToAbsoluteUrls(absoluteUrl) }}</description>
+              <pubDate>{{ item.date | dateToRfc822 }}</pubDate>
+              <dc:creator>{{ site.title }}</dc:creator>
+              <guid>{{ absoluteUrl }}</guid>
+              <category>Note</category>
+              <content:encoded>
+                <![CDATA[{{ item.templateContent | safe }}]]>
+              </content:encoded>
+            </item>
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
     {%- endfor -%}
   </channel>
 </rss>
