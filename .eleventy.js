@@ -101,6 +101,11 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // Slicer for lighterweight RSS feeds
+  eleventyConfig.addNunjucksFilter("limit", (arr, limit) =>
+    arr.slice(0, limit)
+  );
+
   // JS minifier
   eleventyConfig.addNunjucksAsyncFilter(
     "jsmin",
@@ -229,18 +234,6 @@ module.exports = function (eleventyConfig) {
     });
 
     return sortedItems;
-  });
-
-  // Unified feed collection: merge links, bits, and notes; sort by date desc
-  eleventyConfig.addCollection("feedUnified", (collectionApi) => {
-    const links = collectionApi.getFilteredByTag("link") || [];
-    const bits = collectionApi.getFilteredByTag("bit") || [];
-    const notes = collectionApi.getFilteredByTag("note") || [];
-
-    const merged = [...links, ...bits, ...notes];
-    // Sort newest first using real Date objects
-    merged.sort((a, b) => b.date - a.date);
-    return merged;
   });
 
   // Make a collection of note tags
