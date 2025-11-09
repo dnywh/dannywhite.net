@@ -9,6 +9,4 @@ tags:
   - Photography
 ---
 
-I’ve tried a few times photo-journal a bike or road trip. Could never get it to feel right. This is beautiful.
-
-(Yes, this is the third _The Pudding_ link I’ve shared in as about as many months. They represent the small slither of good on the internet.)
+I’ve tried a few times now to photo-journal a bikepacking or otherwise multi-day trip. Could never get it to feel right. This one nails it.
