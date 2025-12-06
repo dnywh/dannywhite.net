@@ -126,6 +126,9 @@
 
       /* Section-specific styles that override more global styles in layout.css */
       > .inner {
+        > p {
+          text-wrap: balance;
+        }
         /* Notes */
         > ul.notes {
           /* Fade off end part */
