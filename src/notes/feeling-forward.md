@@ -61,7 +61,7 @@ Mobbin maintains [app](https://mobbin.com/search/ios/apps?filter=appCategories.A
 But I've yet to find a concentrated repository of AI-infused interfaces organised by interaction types. Here's my starting point:
 
 <div class="asset">
-  <img src="/assets/images/outbound-assets/airtable.png" alt="An icon for this asset">
+  <img src="/assets/images/outbound-assets/airtable.png" alt="Airtable icon">
   <div>
     <h3>Generative AI Interfaces</h3>
     <p>An Airtable base</p>

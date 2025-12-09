@@ -5,7 +5,8 @@ date: 2022-07-15
 modified: 2023-10-28
 stage: 3
 tags:
-	- Ride
+  - Trail
+  - Ride
 clientJS:
   - "unit-converter.js"
 audience: People planning to ride some or all of New York‘s Empire State Trail.

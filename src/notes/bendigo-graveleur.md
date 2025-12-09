@@ -4,7 +4,8 @@ description: "A 2–3 day Bendigo loop via the Goldfields Track and O’Keefe Ra
 cardImage: "notes/bendigo-graveleur/turpins-falls"
 date: 2023-10-29
 tags:
-	- Ride
+  - Trail
+  - Ride
 clientJS:
   - "unit-converter.js"
 audience: People planning to bikepack around Bendigo and central Victoria. Or folks looking into the Goldfields Track or the O’Keefe Rail Trail.
