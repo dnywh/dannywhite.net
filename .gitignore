@@ -22,3 +22,6 @@ package-lock.json
 # Drafts
 src/notes/drafts
 src/bits/drafts
+
+# R2 static bucket mirror folder
+static/
