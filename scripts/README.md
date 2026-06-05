@@ -18,10 +18,11 @@ So these are mainly instructions-to-self for when I set this repo up on a new ma
 
 ```text
 static/
-├── ephemera/
-├── img/
-├── assets/
-├── video/
+├── ephemera/       # scanned bits and bobs
+├── img/            # miscellaneous
+├── photos/         # visual diary
+├── assets/         # catch-all for PDFs etc
+├── video/          # catch-all for video
 └── _drafts/        # never synced (see below)
 ```
 
@@ -71,3 +72,40 @@ Then, only when you’re happy nothing will be deleted, run the real thing:
 ./scripts/static-sync.sh
 ./scripts/static-pull.sh
 ```
+
+## Quilt photo feed
+
+Quilt photo records live in `src/content/photos/photos.json` in the `quilt` repo. The image files themselves should live in this repo's local `static/photos/` mirror and be published to R2 with `static-sync.sh`.
+
+Use stable, date-prefixed paths:
+
+```text
+static/photos/2026/2026-05-28-waratah-mosaic.jpg
+```
+
+The matching Quilt content record should store the R2-relative path, without the local `static/` prefix:
+
+```json
+{
+  "id": "waratah-mosaic",
+  "title": "Waratah mosaic",
+  "date": "2026-05-28",
+  "images": [
+    {
+      "src": "photos/2026/2026-05-28-waratah-mosaic.jpg",
+      "width": 2000,
+      "height": 1500,
+      "alt": "A mosaic that looks like a waratah"
+    }
+  ],
+  "caption": "A mosaic that looks like a waratah.",
+  "tags": ["patterns", "flowers"]
+}
+```
+
+For now this is intentionally manual:
+
+1. Add the exported image to `static/photos/<year>/`.
+2. Run `./scripts/static-sync.sh --dry-run`.
+3. If the dry run looks right, run `./scripts/static-sync.sh`.
+4. Add or update the matching record in Quilt.

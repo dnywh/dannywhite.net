@@ -514,6 +514,31 @@
               gap: calc(var(--gap-md) / 2);
             }
           }
+
+          .three-up {
+            display: grid;
+            gap: calc(var(--gap-md) / 2);
+            margin: var(--space-l) 0;
+
+            @media (--viewport-md) {
+              grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            @media (--viewport-lg) {
+              grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            & figure {
+              margin: 0;
+            }
+
+            & img {
+              aspect-ratio: 1 / 1;
+              height: 100%;
+              object-fit: cover;
+              width: 100%;
+            }
+          }
         }
 
         > aside.meta {
